@@ -1,0 +1,38 @@
+$res_mobile : "only screen and (max-width: 768px)";
+$res_tablet : "only screen and (max-width: 480px)";
+$res_pclow : "only screen and (max-width: 991px)";
+@mixin responsive_mobile() {
+    @media #{$res_mobile} {
+        @content;
+    }
+}
+
+@mixin responsive_tablet() {
+    @media #{$res_tablet} {
+        @content;
+    }
+}
+
+@mixin responsive_pclow() {
+    @media #{$res_pclow} {
+        @content;
+    }
+}
+
+
+html,
+body {
+  overflow-x: hidden;
+}
+@mixin font-face($font-name, $path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: quote($font-name);
+    src: url($path + '.eot');
+    src: url($path + '.eot?#iefix') format('embedded-opentype'),
+    url($path + '.woff') format('woff'),
+    url($path + '.ttf') format('truetype'),
+    url($path + '.svg##{$font-name}') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}

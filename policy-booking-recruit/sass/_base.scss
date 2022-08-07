@@ -1,0 +1,49 @@
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "SVN-Gliroy",sans-serif;
+    line-height: 1em;
+    color: #000;
+    box-sizing: border-box;
+}
+a:hover {
+    text-decoration: none;     
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.btn {
+    font-size:1.6rem;
+    font-weight: 600;
+    max-width: 48.4rem;
+    max-height: 8.4rem;
+    background-color: #FFD00F;
+}
+.active {
+    display: inline-block !important;
+    color: #000;
+}
+.active:hover {
+    cursor: pointer;
+}
+.container-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.pd-top12 {
+    padding-top: 13.5rem;
+}
+.border-1 {
+    border: 1px solid #FFD00F;
+}
+.show {
+    display: block !important;
+}
