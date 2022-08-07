@@ -1,0 +1,212 @@
+.container-max{
+    margin-top: 15rem;
+    // margin-bottom: 15rem;
+}
+
+.container{
+    max-width: 1200px;
+}
+.cart{
+    &-product{
+        position: relative;
+        padding: 2rem 0;
+        display: flex;
+        &-header{
+            &__title{
+                text-align: center;
+                font-weight: 600;
+                font-size: 2rem;
+            }
+            &__img{
+                // width: 7rem;
+                height: 17rem;
+                margin-top: 5rem;
+                margin-bottom: 4rem;
+                margin-left: 3.4rem;
+            }
+            &__text{
+                font-size: 1.6rem;
+                text-align: center;
+            }
+            &__price{
+                font-size: 1.6rem;
+                margin-top: 12rem;
+                text-align: center;
+            }
+            &__option{
+                display: flex;
+                margin-top: 12rem;
+                justify-content: space-evenly;
+                &--plus{
+                    font-size: 1.6rem;
+                    border: 1px solid $border;
+                    padding: 0.3rem 0.6rem;
+                }
+                &--amount{
+                    padding: 0.3rem;
+                    font-size: 1.6rem;
+                }
+                &--minus{
+                    font-size: 1.6rem;
+                    border: 1px solid $border;
+                    padding: 0.3rem 0.6rem;
+                }
+            }
+        }
+        &-store{
+            position: absolute;
+            display: flex;
+            margin-top: 37rem;
+            margin-left: 0;
+            width: 24rem;
+            background-color: $orange;
+            padding: 1.4rem 1rem;
+            i{
+                font-size: 2rem;
+                padding-left: 2rem;
+            }
+            h3{
+                padding-left: 3rem;
+                font-size: 1.75rem;
+            }
+        }
+
+        &-store__one{
+            position: absolute;
+            display: flex;
+            margin-top: 37rem;
+            margin-left: 0;
+            width: 24rem;
+            border: 1px solid$border;
+            padding: 1.4rem 1rem;
+            i{
+                font-size: 2rem;
+            }
+            h3{
+                padding-left: 2rem;
+                font-size: 1.75rem;
+            }
+        }
+    }
+    &-product-border{
+        padding: 2rem 0;
+        border: 1px solid$border;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+
+        &__title{
+            font-weight: 600;
+            text-align: center;
+            font-size: 2rem;
+        }
+        &__one{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 9rem;
+            padding: 0 2rem;
+            &-text{
+                font-size: 1.6rem;
+              
+            }
+            &-price{
+                font-size: 1.6rem;
+               
+            }
+        }
+        &__one::after{
+            content: "";
+            position: absolute;
+            margin-top: 1rem;
+            width: 35rem;
+            border-bottom: 1px solid $colorSolid;
+            padding-bottom: 2rem;
+        }
+
+        &__two{
+            position: relative;
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 2rem;
+            &-text{
+                font-size: 1.6rem;
+                // padding-left: 1rem;
+            }
+            &-sub{
+                font-size: 1.4rem;
+            }
+        }
+        &__two::after{
+            content: "";
+            position: absolute;
+            margin-top: 1rem;
+            width: 35rem;
+            border-bottom: 1px solid $colorSolid;
+            padding-bottom: 2rem;
+        }
+        &__three{
+            margin-top: 2rem;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 2rem;
+            &-text{
+                font-size: 1.6rem;
+            }
+            &-price{
+                font-size: 1.6rem;
+                h3{
+                    padding-left: 6rem;
+                }
+            }
+        }
+        &__three::after{
+            content: "";
+            position: absolute;
+            margin-top: 1rem;
+            width: 35rem;
+            border-bottom: 1px solid $colorSolid;
+            padding-bottom: 2rem;
+        }
+        &__pay{
+            padding: 0.4rem 0;
+            margin-top: 5rem;
+           margin-left: 50%;
+              transform: translateX(-50%);
+           
+            text-align: center;
+            border: 1px solid $border;
+            background-color: $orange;
+            a{
+                color: #000 !important ;
+                text-decoration: none !important;
+                h2{
+                    font-size: 2rem;
+                }
+            }
+        }
+        &__code{
+            font-size: 1.6rem;
+           width: 90%;
+            padding: 0.6rem 1rem;
+            border: 2px solid $border;
+            margin-top: 2rem;    
+            margin-left: 50%;
+            transform: translateX(-50%);   
+            outline: none; 
+        }
+        &__submit{
+            text-align: center;
+            font-size: 1.6rem;
+            background-color: #e6e6e6;
+            color: #999999;   
+            outline: none;
+            border: none; 
+            padding: 0.6rem 1rem;
+            margin: 2rem;
+        }
+    }
+}

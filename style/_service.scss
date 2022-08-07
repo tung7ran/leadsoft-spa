@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+.wapper{
+    position: relative;
+}
+.service-content {
+    background-color: $background-content;
+
+}
+.service-container {
+    padding-top: 2.4rem;
+}
+.service{
+    padding-bottom: 14.6rem;
+    &--detail{
+        background-color: $white;
+        padding: 7.5rem 5rem 4rem 5rem;
+        border-radius: 2rem;
+        &__heading{
+            text-transform: uppercase;
+            color: $color-title;
+            font-weight: bold;
+            font-size: 4rem;
+            line-height: 1.1;
+            max-width: 90%;
+        }
+        &__btn{
+            @include buttonStyle;
+            text-transform: uppercase;
+            color: $black;
+            font-size: 1.8rem;
+            position: relative;
+            margin: 2.5rem 0;
+        }
+        &__btn::after{
+            @include buttonAfter;
+        }
+        .service--detailing{
+            .form-contact{
+                border-radius: 2rem;
+                border: 1px solid $more-color;
+                padding: 2.05rem;
+            }
+            &__item{
+                padding-bottom: 4rem;
+
+                &--text{
+                    padding-left: 0.35rem;
+                    // padding-bottom: 2.8rem;
+                    padding-bottom: 2.1rem;
+
+                    &--title{
+                        color: $color-title;
+                        font-size: 2rem;
+                        font-weight: bold;
+                        padding-bottom: 2.2rem;
+                    }
+                    &--desc{
+                        font-size: 1.6rem;
+                        padding-bottom: 2.4rem;
+                    }
+                }
+                &--reason{
+                    border: 1px solid $black;
+                    border-radius: 2rem;
+                    padding: 2rem;
+                    background-color: $background-form;
+                    margin-bottom: 2.6rem;
+                    &--title{
+                        font-weight: bold;
+                        font-size: 1.8rem;
+                        margin-bottom: 1rem;
+
+                    }
+                    &--list{
+                        &--title{
+                            font-size: 1.8rem;
+                            font-weight: bold;
+                            line-height: 1.4;
+                        }
+                        &--desc{
+                            font-size: 1.6rem;
+                            line-height: 1.4;
+                            .icon-down{
+                                color: $color-icon;
+                                line-height: 2.24rem;
+                               padding-right: 0.5rem;
+                            }
+                        }
+                    }
+                }
+                &--subsection{
+                    margin-top: 3.65rem;
+                    margin-bottom: 1.65rem;
+                    font-size: 1.6rem;
+                    &--title{
+                        margin-bottom: 2.55rem;
+                    }
+                    &--desc{
+                    line-height: 1.4;
+
+                    }
+                }
+                &--images{
+                    width: 70%;
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                    
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+             
+                &--logo{
+                    width: 13.85rem;
+                    height: 6.2rem;
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &--heading{
+                    font-size: 3rem;
+                    font-weight: bold;
+                    color: $more-color;
+                    line-height: 1.2;
+                    text-align: center;
+                    // margin-left: 50%;
+                    transform: translateX(-50%);
+                    margin: 2.35rem 0 3.1rem 50%;
+                }
+                &--contact{
+                    &--form{
+                        .form-group{
+                            .form-control{
+                                height: 4.35rem;
+                                width: 100%;
+                                font-size: 1.6rem;
+                                border-radius: 1rem;
+                                outline: none;
+                                border: 1px solid $more-color;
+                            }
+                        }
+                    }
+                    .button-submit{
+                        margin-left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+                &--header{
+                    font-size: 2.6rem;
+                    text-align: center;
+                    color: $more-color;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    margin: 5.6rem 0;
+                }
+                &--result{
+                    &--list{
+                        &__item{
+                            &--images{
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            &--desc{
+                                font-size: 1.4rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .detail-news {
+        background-color: $white;
+        border-radius: 2rem;
+       margin-bottom: 2rem;
+        padding: 2.75rem 0;
+        &--title {
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            color: $color-title;
+            padding-bottom: 1.8rem;
+        }
+
+        &--menu {
+            padding: 0 1rem;
+            &__list {
+                margin-bottom: 2.35rem;
+                &--item {
+                    display: flex;
+                    position: relative;
+                    &--images {
+                        background-image: url(../images/trainning/22.png);
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        -o-object-fit: cover;
+                        object-fit: cover;
+                        width: 100%;
+                        height: 9rem;
+                    }
+
+                    &--desc {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        text-transform: uppercase;
+                        font-size: 1.1rem;
+                        font-weight: bold;
+                        max-width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// --------------------------------------------------------------------
+.hide{
+    display: none;
+}
+.form--contact {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    &__inner{
+        background-image: url(../images/modal.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 60.38rem;
+        height: 63.8rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: calc((100vh - 63.8rem) / 2);
+        overflow: hidden;
+        animation: showModal linear 0.3s;
+        position: relative;
+        &--logo{
+            padding-top: 1.3rem;
+            width: 40%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            &--image{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &--contact{
+            margin-top: 5.5rem;
+            padding: 0 3rem;
+            &--form{
+                &-group{
+                    .form-control{
+                        width: 100%;
+                        height: 4.2rem;
+                        font-size: 1.8rem;
+                        border: 1px solid $more-color;
+                        border-radius: 1rem;
+                        outline: none;
+                        padding: 0 1.5rem;
+                    }
+                    .form-textarea{
+                        width: 100%;
+                        font-size: 1.8rem;
+                        border: 1px solid $more-color;
+                        border-radius: 1rem;
+                        outline: none;
+                        padding: 2rem;
+                        height: 13.4rem;
+                    }
+                }
+            }
+            .send-contact__btn{
+                @include buttonStyle();
+                text-transform: uppercase;
+                font-weight: 600;
+                color: $white;
+                margin-left: 50%;
+                transform: translateX(-50%);
+                background-color: $more-color;
+                position: relative;
+            }
+            .send-contact__btn::after{
+                @include buttonAfter();
+            }
+            &--text{
+                font-size: 1.8rem;
+                font-weight: bold;
+                text-align: center;
+              padding: 2rem 12rem;
+                .phone-number{
+                    color: $more-color;
+                }
+            }
+        }
+    }
+  }
+

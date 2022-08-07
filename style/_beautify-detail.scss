@@ -1,0 +1,197 @@
+.content-beautify-detail {
+    background-color: $background-content;
+
+}
+
+.tips-beautify-container {
+    padding-top: 2.4rem;
+}
+
+.tips-beautify {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    &--detail {
+        background-color: $white;
+        padding: 7.5rem 5rem 4rem 5rem;
+        border-radius: 2rem;
+
+        &__heading {
+            text-transform: uppercase;
+            color: $color-title;
+            font-weight: bold;
+            font-size: 4rem;
+            line-height: 1.1;
+            max-width: 90%;
+        }
+
+        .tips-beautify--detailing {
+            margin-top: 4.75rem;
+
+            &__item {
+                padding-bottom: 4rem;
+
+                &--text {
+                    padding-left: 0.35rem;
+                    padding-bottom: 2.8rem;
+
+                    &--title {
+                        color: $color-title;
+                        font-size: 2rem;
+                        font-weight: bold;
+                        padding-bottom: 2.2rem;
+                    }
+
+                    &--desc {
+                        font-size: 1.6rem;
+                        padding-bottom: 2.4rem;
+                    }
+
+
+                }
+
+                &--images {
+                    width: 100%;
+                    // height: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    &--category {
+        &__list {
+            background-color: $white;
+            padding: 2.55rem 0;
+            border-radius: 2rem;
+
+            &--item {
+                text-align: center;
+                margin-bottom: 2.5rem;
+
+                &--link {
+                    color: #808080;
+                    text-transform: uppercase;
+                    font-size: 2rem;
+                    border-radius: 1rem;
+                    padding: 0.7rem 2rem 0.5rem 1rem;
+                }
+            }
+        }
+
+        .detail-news {
+            background-color: $white;
+            border-radius: 2rem;
+            margin-top: 1.5rem;
+            padding: 2.75rem 0;
+            &--title {
+                font-size: 1.6rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                text-align: center;
+                color: $color-title;
+                padding-bottom: 1.8rem;
+            }
+
+            &--menu {
+                padding: 0 1rem;
+                &__list {
+                    margin-bottom: 2.35rem;
+                    &--item {
+                        display: flex;
+                        position: relative;
+                        &--images {
+                            background-image: url(../images/trainning/22.png);
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            -o-object-fit: cover;
+                            object-fit: cover;
+                            width: 100%;
+                            height: 9rem;
+                        }
+
+                        &--desc {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            text-transform: uppercase;
+                            font-size: 1.1rem;
+                            font-weight: bold;
+                            max-width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.tips-new {
+    padding-top: 12rem;
+    padding-bottom: 10rem;
+
+    &-item {
+        &__heading {
+            padding-bottom: 6.35rem;
+
+            &--title {
+                text-align: center;
+                text-transform: uppercase;
+                color: $color-title;
+                font-weight: bold;
+                font-size: 2.5rem;
+            }
+        }
+
+        &__body {
+            &--list {
+                display: flex;
+                justify-content: space-evenly;
+
+                &--item {
+                    width: 25.85rem;
+
+                    &-images {
+                        height: 26rem;
+                        position: relative;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .image-pseudo::after {
+                        content: " ";
+                        display: block;
+                        position: absolute;
+                        border-right: 2px solid #000000;
+                        height: 16.5rem;
+                        right: -5.5rem;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+
+                    &-title {
+                        // text-align: center;
+                        font-size: 1.6rem;
+                        padding: 3.5rem 0 1.5rem 0;
+                        text-transform: uppercase;
+                        font-weight: bold;
+
+                    }
+
+                    &-desc {
+                        font-size: 1.6rem;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}

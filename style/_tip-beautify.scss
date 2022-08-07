@@ -1,0 +1,125 @@
+.beautify-container {
+    padding-top: 11.24rem;
+    padding-bottom: 9.13rem;
+}
+
+.beautify {
+    &-program {
+        &-list {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            &__item {
+                margin: 0 1.79rem 6.55rem 1.79rem;
+                position: relative;
+                width: 20.5rem;
+
+                &--image {
+                    width: 20.5rem;
+                    height: 20.6rem;
+                    position: relative;
+
+                    &--product {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .image-pseudo--tips::after{
+                    content: " ";
+                    display: block;
+                    position: absolute;
+                    border-right: 2px solid #000000;
+                    height: 16.5rem;
+                    right: -4.3rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                &--text {
+                    &--title {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                        padding: 3.5rem 0 1.5rem 0;
+                    }
+
+                    &--desc {
+                        font-size: 1.6rem;
+                        text-align: justify;
+                    }
+                }
+
+                &--calendar {
+                    position: absolute;
+                    top: -3.1rem;
+                    right: 0;
+                    width: 6.2rem;
+                    height: 6.2rem;
+                    border-radius: 50%;
+                    background-color: $orange;
+
+                    &--date {
+                        width: 100%;
+                        height: 100%;
+                        font-weight: bold;
+                        text-align: center;
+                        font-size: 2.4rem;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        .product-pagination {
+            margin-top: 1rem;
+            &-list{
+                list-style: none;
+                justify-content:center;
+                align-items: center;
+                margin: 0;
+                &__item {
+                    background-color: #FFD00F;
+                    border: 0.1rem solid #FFD00F;
+                    border-radius: 1.2rem;
+                    margin-right: 0.6rem;
+                    &--link {
+                        padding: 1.8rem 2.3rem;
+                        font-size: 2.8rem;
+                        margin-top: 0.4rem;
+                        margin-right: 0.1rem;
+                        color: #fff;
+                        display: block;
+                        font-weight: bold;
+                    }
+                    &--link:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+            &-next {
+                img {
+                    width: 1.8rem;
+                    height:1.7rem;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+    &--program{
+        &__category{
+            &--list{
+                &-item{
+                    margin: 1.25rem 0;
+                    &-link{
+                        color: $color-text;
+                        text-transform: uppercase;
+                        font-size: 2rem;
+                        border-radius: 1rem;
+                        padding: 0.7rem 2rem 0.5rem 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

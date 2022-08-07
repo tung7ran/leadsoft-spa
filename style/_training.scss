@@ -1,0 +1,126 @@
+.container-max{
+    margin-top: 11rem;
+    margin-bottom: 14rem;
+}
+.headers{
+    background-color: $background-group;
+    height: 60rem;
+    padding-top: 10rem;
+    &-image{
+        position: relative;
+        text-align: center;
+        &__one{
+            height: 26rem;
+        }
+        &__two{
+            height: 31.4rem;
+            position: absolute;
+            margin-left: -8rem;
+            margin-top: -3rem;
+        }
+        &__three{
+            height: 40rem;
+            z-index: 1000;
+            position: absolute;
+            margin-top: -7rem;
+            margin-left: 7rem;
+            border: 3px solid $orange;
+            border-top-left-radius: 3rem;
+            border-top-right-radius: 3rem;
+            border-bottom-left-radius: 3rem;
+            border-bottom-right-radius: 3rem;
+        }
+        &__four{
+            height: 31.4rem;
+            padding-left: 27.6rem;
+            position: absolute;
+            margin-top: -3rem;
+        }
+        &__five{
+            height: 26rem;
+            padding-left:44.2rem;
+        }
+    }
+    &-title{
+        margin-top: 10rem;
+        text-align: center;
+        color: $white;
+        &-heading{
+            line-height: 1.2;
+            font-size: 3rem;
+            font-weight: 900;
+            transform: skew(0.5turn, 355deg);
+            -webkit-text-stroke: 2px $more-color;
+        }
+    }
+}
+
+.content{
+    margin-top: 4rem;
+    &-img{
+        text-align: center;
+        img{
+            width: 12rem;
+        }
+    }
+    &-title{
+        text-align: center;
+        margin-top: 1rem;
+        h1{
+            font-size: 3rem;
+            font-weight: 700;
+        }
+    }
+    &-product{
+        display: flex;
+        margin-top: 5rem;
+        &-image{
+            width: 25rem;
+            position: relative;
+            z-index: 100;
+            border: 3px solid $orange;
+            border-top-left-radius: 3rem;
+            border-top-right-radius: 3rem;
+            border-bottom-left-radius: 3rem;
+            border-bottom-right-radius: 3rem;
+        }
+        &-courses{
+            position: absolute;
+            background-color: $background-icon;
+            display: flex;
+            padding-top: 4rem;
+            padding-bottom: 1rem;
+            margin-top: -3rem;
+            width: 25rem;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+
+            &__icon{
+                width: 8rem;
+                position: relative;
+                z-index: 100;
+            }
+            &__text{
+                position: absolute;
+                font-size: 1.3rem;
+                font-weight: 600;
+                border: 1px solid $orange;
+                background-color: $orange;
+                border-top-left-radius: 2rem;
+                border-top-right-radius: 2rem;
+                border-bottom-left-radius: 2rem;
+                border-bottom-right-radius: 2rem;
+                height: 5rem;
+                margin-top: 1.5rem;
+                padding-left: 4rem;
+                width: 19rem;
+                margin-left: 4rem;
+                padding-top: 0.5rem;
+                text-align: center;
+            }
+        }
+        .col{
+            margin-bottom: 16rem;
+        }
+    }
+}
