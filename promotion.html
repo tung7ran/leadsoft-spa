@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khuyến Mãi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+    <div class="wapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="header-container-heading">
+                    <div class="header-container-heading__title">
+                        <div class="header-container-heading__title--text">
+                            <span class="header-container-heading__title--text-name">Hơn 50 chi nhánh trên toàn quốc</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-contact d-flex">
+                    <div class="header-contact-left">
+                        <form role="search" method="get" action="">
+                            <input type="search" name="" class="header-contact-left__search"
+                                placeholder="Thông tin tìm kiếm"/>
+                            <button type="submit" class="header-contact-left__button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search header-contact-left__button--icon" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                  </svg>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="header-contact-right d-flex">
+                        <div class="header-contact-right__cart">
+                            <button class="btn header-contact-right__cart--btn">
+                                <img src="./images/store.png" alt="" >
+                            </button>
+                            <div class="header-cart--notify border-1">
+                                <div class="header-cart--notify__info">
+                                    <div class="row header-cart--notify__info--top">
+                                        <div class="col-lg-4">
+                                            <div class="header-cart--notify__info--top-image">
+                                                <img src="./images/product/img-6.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 p-0">
+                                            <div class="header-cart--notify__info--top-detail">
+                                                <h3>Tẩy tế bào chết chiết xuất từ hạt trái mơ</h3>
+                                                <div class="top-detail-amount">
+                                                    <span class="top-detail-amount__number">1</span>
+                                                    <span class="top-detail-amount_cal">x</span>
+                                                    <span class="top-detail-amount__price">70,000 đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header-cart--notify__info--top-icon">
+                                            <button>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                                  </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="header-cart--notify__info--main">
+                                        <h3 class="header-cart--notify__info--main-heading">Tổng cộng: 70,000 Đ</h3>
+                                    </div>
+                                    <div class="header-cart--notify__info--bottom">
+                                        <button class="btn header-cart--notify__info--bottom-view">Xem giỏ hàng</button>
+                                        <button class="btn header-cart--notify__info--bottom-pay">Thang toán</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="header-contact-right__tel">
+                            <span class="header-contact-right__tel--number">hotline 0909 999 999</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-logo">
+                <div class="header-logo__page">
+                    <a href="index.html">
+                        <img src="./images/footerImg.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="header-main-nav">
+                    <ul class="header-main-nav__list d-flex">
+                        <li class="header-main-nav__list--item">
+                            <a href="./about.html" class="header-main-nav__list--item-link">Về Shynh Beauty</a>
+                        </li>
+                        <li class="header-main-nav__list--item">
+                            <a href="./service.html" class="header-main-nav__list--item-link">Dịch vụ</a>
+                            <div class="header-main__subnav">
+                                <div class="header-main__subnav--list row">
+                                    <div class="header-main__subnav--list--item col l-6">
+                                        <h2 class="header-main__subnav--list--item--title">Điều trị mụn</h2>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn lưng</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn chuyên sâu</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn y khoa</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn 2x</a>
+                                    </div>
+                                    <div class="header-main__subnav--list--item col l-6">
+                                        <h2 class="header-main__subnav--list--item--title">Điều trị mụn</h2>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn lưng</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn chuyên sâu</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn y khoa</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn 2x</a>
+                                    </div>
+                                    <div class="header-main__subnav--list--item col l-6">
+                                        <h2 class="header-main__subnav--list--item--title">Điều trị mụn</h2>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn lưng</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn chuyên sâu</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn y khoa</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn 2x</a>
+                                    </div>
+                                    <div class="header-main__subnav--list--item col l-6">
+                                        <h2 class="header-main__subnav--list--item--title">Điều trị mụn</h2>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn lưng</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn chuyên sâu</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn y khoa</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn 2x</a>
+                                    </div>
+                                    <div class="header-main__subnav--list--item col l-6">
+                                        <h2 class="header-main__subnav--list--item--title">Điều trị mụn</h2>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn lưng</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn chuyên sâu</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn y khoa</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn 2x</a>
+                                    </div>
+                                    <div class="header-main__subnav--list--item col l-6">
+                                        <h2 class="header-main__subnav--list--item--title">Điều trị mụn</h2>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn lưng</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn chuyên sâu</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn y khoa</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn 2x</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header-main-nav__list--item">
+                            <a href="./result.html" class="header-main-nav__list--item-link">Kết Quả Điều Trị</a>
+                        </li>
+                        <li class="header-main-nav__list--item">
+                            <a href="./training.html" class="header-main-nav__list--item-link">Đào tạo Spa</a>
+                        </li>
+                        <li class="header-main-nav__list--item">
+                            <a href="./tip-beautify.html" class="header-main-nav__list--item-link">Mẹo làm đẹp</a>
+                        </li>
+                        <li class="header-main-nav__list--item">
+                            <a href="./store.html" class="header-main-nav__list--item-link">Cửa hàng</a>
+                        </li>
+                        <li class="header-main-nav__list--item">
+                            <a href="./contact.html" class="header-main-nav__list--item-link">Liên Hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+           <div class="promotion">
+                <h2 class="promotion__heading">Ưu đãi</h2>
+                <div class="promotion--container">
+                    <div class="promotion--container--body grid wide">
+                        <div class="promotion--container--body__list row">
+                            <div class="promotion--container--body__list--item col l-5">
+                                <div class="promotion--container--body__list--item--content row">
+                                    <div class="promotion--container--body__list--item--content--images col l-5">
+                                        <img src="./images/sale/sale1.png" alt="">
+                                    </div>
+                                    <div class="promotion--container--body__list--item--content--text col l-7">
+                                        <h1 class="promotion--container--body__list--item--content--text--title">Mừng ngày gia đình việt nam shynh beauty spa tặng ưu đãi cho cả gia đình</h1>
+                                        <p class="promotion--container--body__list--item--content--text--desc">Nhân ngày Gia Đình Việt Nam 28/06, Shynh Beauty Spa chúc cả nhà ta lúc nào cũng tràn ngập tiếng cười, vui vẻ, lạc quan bên nhau và gia đình ta luôn hạnh phúc.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="promotion--container--body__list--item col l-5">
+                                <div class="promotion--container--body__list--item--content row">
+                                    <div class="promotion--container--body__list--item--content--images col l-5">
+                                        <img src="./images/sale/sale1.png" alt="">
+                                    </div>
+                                    <div class="promotion--container--body__list--item--content--text col l-7">
+                                        <h1 class="promotion--container--body__list--item--content--text--title">Mừng ngày gia đình việt nam shynh beauty spa tặng ưu đãi cho cả gia đình</h1>
+                                        <p class="promotion--container--body__list--item--content--text--desc">Nhân ngày Gia Đình Việt Nam 28/06, Shynh Beauty Spa chúc cả nhà ta lúc nào cũng tràn ngập tiếng cười, vui vẻ, lạc quan bên nhau và gia đình ta luôn hạnh phúc.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="promotion--container--body__list--item col l-5">
+                                <div class="promotion--container--body__list--item--content row">
+                                    <div class="promotion--container--body__list--item--content--images col l-5">
+                                        <img src="./images/sale/sale1.png" alt="">
+                                    </div>
+                                    <div class="promotion--container--body__list--item--content--text col l-7">
+                                        <h1 class="promotion--container--body__list--item--content--text--title">Mừng ngày gia đình việt nam shynh beauty spa tặng ưu đãi cho cả gia đình</h1>
+                                        <p class="promotion--container--body__list--item--content--text--desc">Nhân ngày Gia Đình Việt Nam 28/06, Shynh Beauty Spa chúc cả nhà ta lúc nào cũng tràn ngập tiếng cười, vui vẻ, lạc quan bên nhau và gia đình ta luôn hạnh phúc.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="promotion--container--body__list--item col l-5">
+                                <div class="promotion--container--body__list--item--content row">
+                                    <div class="promotion--container--body__list--item--content--images col l-5">
+                                        <img src="./images/sale/sale1.png" alt="">
+                                    </div>
+                                    <div class="promotion--container--body__list--item--content--text col l-7">
+                                        <h1 class="promotion--container--body__list--item--content--text--title">Mừng ngày gia đình việt nam shynh beauty spa tặng ưu đãi cho cả gia đình</h1>
+                                        <p class="promotion--container--body__list--item--content--text--desc">Nhân ngày Gia Đình Việt Nam 28/06, Shynh Beauty Spa chúc cả nhà ta lúc nào cũng tràn ngập tiếng cười, vui vẻ, lạc quan bên nhau và gia đình ta luôn hạnh phúc.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="promotion--container--body__list--item col l-5">
+                                <div class="promotion--container--body__list--item--content row">
+                                    <div class="promotion--container--body__list--item--content--images col l-5">
+                                        <img src="./images/sale/sale1.png" alt="">
+                                    </div>
+                                    <div class="promotion--container--body__list--item--content--text col l-7">
+                                        <h1 class="promotion--container--body__list--item--content--text--title">Mừng ngày gia đình việt nam shynh beauty spa tặng ưu đãi cho cả gia đình</h1>
+                                        <p class="promotion--container--body__list--item--content--text--desc">Nhân ngày Gia Đình Việt Nam 28/06, Shynh Beauty Spa chúc cả nhà ta lúc nào cũng tràn ngập tiếng cười, vui vẻ, lạc quan bên nhau và gia đình ta luôn hạnh phúc.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="promotion--container--body__list--item col l-5">
+                                <div class="promotion--container--body__list--item--content row">
+                                    <div class="promotion--container--body__list--item--content--images col l-5">
+                                        <img src="./images/sale/sale1.png" alt="">
+                                    </div>
+                                    <div class="promotion--container--body__list--item--content--text col l-7">
+                                        <h1 class="promotion--container--body__list--item--content--text--title">Mừng ngày gia đình việt nam shynh beauty spa tặng ưu đãi cho cả gia đình</h1>
+                                        <p class="promotion--container--body__list--item--content--text--desc">Nhân ngày Gia Đình Việt Nam 28/06, Shynh Beauty Spa chúc cả nhà ta lúc nào cũng tràn ngập tiếng cười, vui vẻ, lạc quan bên nhau và gia đình ta luôn hạnh phúc.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+           </div>
+           <div class="paging">
+            <ul class="paging-list d-flex">
+                <div class="paging-list__prev"></div>
+                <li class="paging-list__item active-white">
+                    <a href="" class="paging-list__item--link">1</a>
+                </li>
+                <li class="paging-list__item">
+                    <a href="" class="paging-list__item--link">2</a>
+                </li>
+                <li class="paging-list__item">
+                    <a href="" class="paging-list__item--link">3</a>
+                </li>
+                <div class="paging-list__next">
+                    <a href="">
+                        <img src="./images/arrow.jpg" alt="">
+                    </a>
+                </div>
+            </ul>
+        </div>
+           
+          
+          
+            
+            <div class="advise-contact promotion--advise-contact">
+                <div class="advise-contact__body grid wide">
+                    <div class="contact-body row">
+                        <div class="contact-body__left col l-5">
+                            <div class="contact-body__column">
+                                <div class="contact-logo">
+                                    <img src="./images/contact/call.png" alt="" class="icon__call">
+                                </div>
+                                <div class="contact__title">Liên hệ hotline</div>
+                                <div class="contact__name">1900 0000 00</div>
+                                <div class="contact__desc">Giải đáp tất cả thắc mắc của quý khách hàng, phục vụ tận tâm
+                                    24/7</div>
+                            </div>
+                            <div class="contact-body__column">
+                                <div class="contact-logo">
+                                    <img src="./images/contact/calendar.png" alt="" class="icon__call">
+                                </div>
+                                <div class="contact__title">đặt lịch hẹn</div>
+                                <div class="contact__name">Nhận ưu đãi</div>
+                                <div class="contact__desc">Đặt ngay lịch hẹn hôm nay để nhận hàng ngàn ưu đãi</div>
+                            </div>
+
+                        </div>
+                        <div class="contact-body__right col l-7">
+                            <div class="contact-body__right-heading">
+
+                                <img src="./images/contact/register.png" alt="" class="contact__heading">
+                            </div>
+                            <div class="contact-body__right-info">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="họ tên">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" placeholder="số điện thoại">
+                                </div>
+                                <button class="btn-exception">Gửi ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container footer-width">
+                    <div class="row footer-after">
+                        <div class="col-lg-4 pd-top12">
+                            <div class="footer-top-interactive">
+                                <div class="interactive-logo d-flex">
+                                    <img src="./images/footerImg.png" alt="">
+                                </div>
+                                <h3 class="interactive-caption">SHYNH BEAUTY luôn nỗ lực không ngừng để đem đến cho
+                                    khách hàng nhưng dịch vụ hoàn hảo nhất</h3>
+                                <div class="interactive-image d-flex">
+                                    <img src="./images/footer.jpg" alt="">
+                                    <div class="footer-top-interactive__share--top d-flex">
+                                        <img class="footer-top-interactive__share--top-image"
+                                            src="./images/footer/footer-img.png" alt="">
+                                        <h5>Shynh Beauty Spa</h5>
+                                    </div>
+                                    <div class="footer-top-interactive__share--bottom d-flex">
+                                        <div class="footer-top-interactive__share--bottom-left">
+                                            <a href="" class="d-flex">
+                                                <img src="./images/footer/imgFb.png" alt="">
+                                                <h5>Thích Trang</h5>
+                                            </a>
+                                        </div>
+                                        <div class="footer-top-interactive__share--bottom-right">
+                                            <a href="" class="d-flex">
+                                                <img src="./images/footer/share.png" alt="">
+                                                <h5>Chia Sẻ</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footer-top-contact">
+                                <div class="footer-top-contact__tel">
+                                    <h3 class="contact-title">
+                                        HOTLINE
+                                    </h3>
+                                    <a href="#">0909 999 999 - 0888 888 888</a>
+                                </div>
+                                <div class="footer-top-contact__info">
+                                    <h3 class="contact-title">
+                                        Thông tin liên hệ
+                                    </h3>
+                                    <ul class="footer-top-contact__info-list">
+                                        <li class="footer-top-contact__info-list--item">
+                                            <a href="">cskh@shynhbeauty.vn</a>
+                                        </li>
+                                        <li class="footer-top-contact__info-list--item">
+                                            <a href="">info@shynhbeauty.vn</a>
+                                        </li>
+                                        <li class="footer-top-contact__info-list--item">
+                                            <a href="">13/9 Kỳ Đồng,P.9,Q3 TP HCM</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-top-contact__time">
+                                    <h3 class="contact-title">
+                                        Thời gian làm việc
+                                    </h3>
+                                    <span class="fz16">8H30 - 19H00 Từ thứ hai đến CN(Kể cả lễ,tết)</span>
+                                </div>
+                                <div class="footer-top-contact__app d-flex">
+                                    <a href="" class="footer-top-contact__app--googleplay">
+                                        <img src="./images/icon/icon-app-02.png" alt="">
+                                    </a>
+                                    <a href="" class="footer-top-contact__app--appstore">
+                                        <img src="./images/icon/icon-app-03.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footer-top-menu">
+                                <h3 class="contact-title">
+                                    Menu
+                                </h3>
+                                <ul class="footer-top-menu__list">
+                                    <li class="footer-top-menu__list">
+                                        <a class="footer-top-menu__list--link" href="">Chính sách bảo mật</a>
+                                    </li>
+                                    <li class="footer-top-menu__list">
+                                        <a class="footer-top-menu__list--link" href="">Hướng dẫn đặt lịch</a>
+                                    </li>
+                                    <li class="footer-top-menu__list">
+                                        <a class="footer-top-menu__list--link" href="">Tuyển dụng Shynh Beauty Spa</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-width">
+                    <h3 class="footer-title">SHYNH BEAUTY SPA - Thẩm mỹ viện hàng đầu việt nam với 50 chi nhánh trên
+                        toàn quốc</h3>
+                    <div class="footer-contact">
+                        <ul class="footer-contact-list">
+                            <li class="footer-contact-list__item">
+                                <a class="footer-contact-list__item--link fz16" href="">Hotline: 0999 999 999</a>
+                            </li>
+                            <li class="footer-contact-list__item">
+                                <a class="footer-contact-list__item--link fz16" href="">Website: shynhbeauty.com.vn</a>
+                            </li>
+                            <li class="footer-contact-list__item">
+                                <a class="footer-contact-list__item--link fz16" href="">Mail:info@shynhbeauty.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

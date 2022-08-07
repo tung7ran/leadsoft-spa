@@ -1717,6 +1717,7 @@ a:hover {
   background-color: #fff;
   border-radius: 1rem;
   display: none;
+  z-index: 1;
 }
 .header-contact-right__cart .header-cart--notify__info {
   width: 30.4rem;
@@ -3672,6 +3673,89 @@ a:hover {
 }
 .form--contact__inner--contact--text .phone-number {
   color: #a1710f;
+}
+
+.promotion {
+  margin-top: 7rem;
+}
+.promotion__heading {
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #fdf9e8;
+  color: #a1710f;
+  padding-top: 4.35rem;
+  width: 45.5rem;
+  margin: 0 auto;
+  border-top-left-radius: 70rem;
+  border-top-right-radius: 70rem;
+}
+.promotion--container {
+  background-color: #fdf9e8;
+}
+.promotion--container--body__list {
+  justify-content: center;
+  padding-top: 4.65rem;
+  padding-bottom: 5.5rem;
+}
+.promotion--container--body__list--item {
+  margin: 0 0.5rem 2.95rem 0.5rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  border: 2px solid #ffd00f;
+  padding: 0.7rem 5rem 3.5rem 1.38rem;
+}
+.promotion--container--body__list--item--content--images {
+  width: 20.5rem;
+}
+.promotion--container--body__list--item--content--images img {
+  width: 100%;
+  height: 100%;
+}
+.promotion--container--body__list--item--content--text--title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.11rem;
+}
+.promotion--container--body__list--item--content--text--desc {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+.paging {
+  margin-top: 3rem;
+  margin-bottom: 13.85rem;
+}
+.paging-list {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.paging-list__item {
+  background-color: #ffd00f;
+  border: 0.2rem solid #ffd00f;
+  border-radius: 1.2rem;
+  margin-right: 0.6rem;
+}
+.paging-list__item--link {
+  padding: 1.8rem 2.3rem;
+  font-size: 2.8rem;
+  margin-top: 0.4rem;
+  margin-right: 0.1rem;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+}
+.paging-list__next a img {
+  width: 1.8rem;
+  height: 1.7rem;
+  margin-left: 1rem;
+}
+
+.promotion--advise-contact {
+  margin-bottom: 22rem;
 }
 
 .top-banner .top-banner-1 {
