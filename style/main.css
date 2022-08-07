@@ -97,8 +97,6 @@ video {
   font: inherit;
   vertical-align: baseline;
   outline: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -283,6 +281,17 @@ a:hover {
   font-weight: 600;
   background-color: #ffd00f;
   color: #000;
+}
+
+@-webkit-keyframes showModal {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 @keyframes showModal {
@@ -2866,7 +2875,8 @@ a:hover {
 .main-logo img {
   width: 100%;
   height: 101%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .main-info-image {
   position: relative;
@@ -3086,7 +3096,8 @@ a:hover {
 .main-team > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .main-team-image {
   position: absolute;
@@ -3578,14 +3589,16 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 60.38rem;
   height: 63.8rem;
   margin-left: 50%;
   transform: translateX(-50%);
   margin-top: calc((100vh - 63.8rem) / 2);
   overflow: hidden;
-  animation: showModal linear 0.3s;
+  -webkit-animation: showModal linear 0.3s;
+          animation: showModal linear 0.3s;
   position: relative;
 }
 .form--contact__inner--logo {
@@ -3666,7 +3679,8 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 59.1rem;
 }
 
@@ -3786,7 +3800,8 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 50.1rem;
   position: relative;
 }
@@ -3811,7 +3826,8 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 49rem;
 }
 
@@ -4022,7 +4038,8 @@ a:hover {
   border-radius: 2rem;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .beauty-store .container-item .container-body .product-list .product-slider .product-slider-item .product-item__name {
   font-size: 1.8rem;
@@ -4103,7 +4120,8 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
   height: 76.7rem;
 }
@@ -4119,7 +4137,8 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 37.6rem;
   height: 26.5rem;
   margin: 1.5rem 0;
@@ -4158,7 +4177,8 @@ a:hover {
 .advise-contact .advise-contact__body .contact-body .contact-body__right .contact-body__right-heading {
   width: auto;
   height: 20.7rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .advise-contact .advise-contact__body .contact-body .contact-body__right .contact-body__right-heading .contact__heading {
   width: 100%;
@@ -4269,7 +4289,8 @@ a:hover {
 .address .location-details-list__item .location-details-left img {
   width: 100%;
   height: 18rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 2.6rem;
 }
 .address .location-details-list__item .location-details-right {
@@ -4331,6 +4352,4 @@ a:hover {
   border-bottom-right-radius: 8rem;
   border-top-left-radius: 8rem;
   border-top-right-radius: 8rem;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
