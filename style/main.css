@@ -3684,25 +3684,25 @@ a:hover {
   padding-bottom: 28.2rem;
   margin-top: 5.6rem;
 }
-.main-booking .m-b46 {
+.main-booking .mb-46 {
   margin-bottom: 4.6rem;
 }
-.main-booking .m-b42 {
+.main-booking .mb-42 {
   margin-bottom: 4.2rem;
 }
-.main-booking .m-b32 {
+.main-booking .mb-32 {
   margin-bottom: 3.2rem;
 }
-.main-booking .m-b30 {
+.main-booking .mb-30 {
   margin-bottom: 3rem;
 }
-.main-booking .m-b25 {
+.main-booking .mb-25 {
   margin-bottom: 2.5rem;
 }
-.main-booking .m-b22 {
+.main-booking .mb-22 {
   margin-bottom: 2.2rem;
 }
-.main-booking .m-b20 {
+.main-booking .mb-20 {
   margin-bottom: 2rem;
 }
 .main-booking-content {
@@ -3720,6 +3720,7 @@ a:hover {
 }
 .main-booking-content__info {
   line-height: 1.3em;
+  font-size: 1.6rem;
 }
 .main-booking-content__title {
   font-size: 2rem;
@@ -3728,6 +3729,7 @@ a:hover {
 }
 .main-booking-content__text {
   line-height: 1.3em;
+  font-size: 1.6rem;
   margin: 0;
 }
 
@@ -3737,25 +3739,25 @@ a:hover {
   padding-bottom: 28.2rem;
   margin-top: 5.6rem;
 }
-.main-policy .m-b46 {
+.main-policy .mb-46 {
   margin-bottom: 4.6rem;
 }
-.main-policy .m-b42 {
+.main-policy .mb-42 {
   margin-bottom: 4.2rem;
 }
-.main-policy .m-b32 {
+.main-policy .mb-32 {
   margin-bottom: 3.2rem;
 }
-.main-policy .m-b30 {
+.main-policy .mb-30 {
   margin-bottom: 3rem;
 }
-.main-policy .m-b25 {
+.main-policy .mb-25 {
   margin-bottom: 2.5rem;
 }
-.main-policy .m-b22 {
+.main-policy .mb-22 {
   margin-bottom: 2.2rem;
 }
-.main-policy .m-b20 {
+.main-policy .mb-20 {
   margin-bottom: 2rem;
 }
 .main-policy-content {
@@ -3773,6 +3775,7 @@ a:hover {
 }
 .main-policy-content__info {
   line-height: 1.3em;
+  font-size: 1.6rem;
 }
 .main-policy-content__title {
   font-size: 2rem;
@@ -3780,6 +3783,7 @@ a:hover {
   font-weight: 600;
 }
 .main-policy-content__text {
+  font-size: 1.6rem;
   line-height: 1.3em;
   margin: 0;
 }
@@ -3789,10 +3793,10 @@ a:hover {
   padding-top: 12.6rem;
   margin-top: 5.6rem;
 }
-.main-recruit .m-b27 {
+.main-recruit .mb-27 {
   margin-bottom: 2.7rem;
 }
-.main-recruit .m-b25 {
+.main-recruit .mb-25 {
   margin-bottom: 2.5rem;
 }
 .main-recruit-content {
@@ -3812,6 +3816,7 @@ a:hover {
 .main-recruit-content__text {
   line-height: 1.3em;
   margin: 0;
+  font-size: 1.6rem;
 }
 .main-recruit-content__image {
   width: 48.7rem;
@@ -3840,10 +3845,12 @@ a:hover {
 .main-recruit-content__skin span {
   display: block;
   margin-bottom: 3rem;
+  font-size: 1.6rem;
   color: #808080;
 }
 .main-recruit-content__skin--list {
   line-height: 1.3em;
+  font-size: 1.6rem;
 }
 .main-recruit-content__skin--btn {
   border: none;

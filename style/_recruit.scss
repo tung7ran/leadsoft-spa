@@ -1,8 +1,8 @@
 .main-recruit {
-    .m-b27 {
+    .mb-27 {
         margin-bottom: 2.7rem;
     }
-    .m-b25 {
+    .mb-25 {
         margin-bottom: 2.5rem;
     }
     background-color: $background-content;
@@ -25,6 +25,7 @@
         &__text {
             line-height: 1.3em;
             margin: 0;
+            font-size: 1.6rem;
         }
         &__image {
             width: 48.7rem;
@@ -52,13 +53,12 @@
             span {
                 display: block;
                 margin-bottom: 3rem;
+                font-size: 1.6rem;
                 color: $color-text;
             }
             &--list {
                 line-height: 1.3em;
-                &-item {
-
-                }
+                font-size: 1.6rem;
             }
             &--btn {
                 border: none;

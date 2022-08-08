@@ -1,24 +1,24 @@
 @import 'variables';
 .main-policy {
-    .m-b46 {
+    .mb-46 {
         margin-bottom: 4.6rem;
     }
-    .m-b42 {
+    .mb-42 {
         margin-bottom: 4.2rem;
     }
-    .m-b32 {
+    .mb-32 {
         margin-bottom: 3.2rem;
     }
-    .m-b30 {
+    .mb-30 {
         margin-bottom: 3rem;
     }
-    .m-b25 {
+    .mb-25 {
         margin-bottom: 2.5rem;
     }
-    .m-b22 {
+    .mb-22 {
         margin-bottom: 2.2rem;
     }
-    .m-b20 {
+    .mb-20 {
         margin-bottom: 2rem;
     }
     background-color: $background-content;
@@ -39,9 +39,7 @@
         }
         &__info {
             line-height: 1.3em;
-            &--item {
-    
-            }
+            font-size: 1.6rem;
         }
         &__title {
             font-size: 2rem;
@@ -49,6 +47,7 @@
             font-weight: 600;
         }
         &__text {
+            font-size: 1.6rem;
             line-height: 1.3em;
             margin: 0;
         }
