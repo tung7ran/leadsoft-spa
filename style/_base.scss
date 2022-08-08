@@ -276,6 +276,9 @@ a:hover {
     background-color: #ffd00f;
     color: $black;
 }
+.show {
+  display: block !important;
+}
 @keyframes showModal {
   from {
     top: -200px;

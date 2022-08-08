@@ -1,0 +1,56 @@
+@import 'variables';
+.main-policy {
+    .mb-46 {
+        margin-bottom: 4.6rem;
+    }
+    .mb-42 {
+        margin-bottom: 4.2rem;
+    }
+    .mb-32 {
+        margin-bottom: 3.2rem;
+    }
+    .mb-30 {
+        margin-bottom: 3rem;
+    }
+    .mb-25 {
+        margin-bottom: 2.5rem;
+    }
+    .mb-22 {
+        margin-bottom: 2.2rem;
+    }
+    .mb-20 {
+        margin-bottom: 2rem;
+    }
+    background-color: $background-content;
+    padding-top: 12.6rem;
+    padding-bottom: 28.2rem;
+    margin-top: 5.6rem;
+    &-content {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 4.9rem 9.4rem 8.8rem 6.3rem;
+        background-color:$white;
+        &__heading {
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: $more-color;
+            margin-bottom: 5.3rem;
+            text-transform: uppercase;
+        }
+        &__info {
+            line-height: 1.3em;
+            font-size: 1.6rem;
+        }
+        &__title {
+            font-size: 2rem;
+            color: $more-color;
+            font-weight: 600;
+        }
+        &__text {
+            font-size: 1.6rem;
+            line-height: 1.3em;
+            margin: 0;
+        }
+
+    }
+}

@@ -42,7 +42,6 @@ tabCategory.forEach((tab, index) => {
 const cart = document.querySelector('.header-contact-right__cart')
 const notify =  document.querySelector('.header-cart--notify')
 const close =  document.querySelector('.header-cart--notify__info--top-icon')
-console.log(close)
 cart.addEventListener('click', () => {
     close.classList.toggle('show')
 })
@@ -60,10 +59,25 @@ function toggleModal() {
   modal.classList.toggle("hide");
 }
 
-openModalBtn.addEventListener("click", toggleModal);
+// openModalBtn.addEventListener("click", toggleModal);
 // iconCloseModal.addEventListener("click", toggleModal);
 // buttonCloseModal.addEventListener("click", toggleModal);
 
-modal.addEventListener("click", (e) => {
-  if (e.target == e.currentTarget) toggleModal();
-});
+// modal.addEventListener("click", (e) => {
+//   if (e.target == e.currentTarget) toggleModal();
+// });
+
+
+const tabRecruit =$$('.recruit-pagination-list__item')
+const paneRecruit =$$('.main-recruit-content__list')
+
+tabRecruit.forEach((tab,index) => {
+    const pane = paneRecruit[index]
+    tab.onclick = function () {
+      $('.recruit-pagination-list__item.active').classList.remove('active');
+      $('.main-recruit-content__list.show').classList.remove('show');
+  
+      this.classList.add('active');
+      pane.classList.add('show');
+    }
+})
