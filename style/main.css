@@ -1227,6 +1227,7 @@ a:hover {
   background-color: #ffd00f;
   border-radius: 8rem;
   font-weight: bold;
+  text-transform: uppercase;
   position: relative;
   border-radius: 2rem;
   padding: 1rem 3rem;
@@ -1610,6 +1611,7 @@ a:hover {
   background-color: #ffd00f;
   border-radius: 8rem;
   font-weight: bold;
+  text-transform: uppercase;
   position: relative;
   border-radius: 2rem;
   padding: 1rem 3.2rem;
@@ -3241,6 +3243,9 @@ a:hover {
   font-size: 1.6rem;
   padding-bottom: 2.4rem;
 }
+.tips-beautify--detail .tips-beautify--detailing__item--text--description {
+  font-size: 1.6rem;
+}
 .tips-beautify--detail .tips-beautify--detailing__item--images {
   width: 100%;
 }
@@ -3267,7 +3272,7 @@ a:hover {
 .tips-beautify--category .detail-news {
   background-color: #fff;
   border-radius: 2rem;
-  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   padding: 2.75rem 0;
 }
 .tips-beautify--category .detail-news--title {
@@ -3395,6 +3400,7 @@ a:hover {
   background-color: #ffd00f;
   border-radius: 8rem;
   font-weight: bold;
+  text-transform: uppercase;
   text-transform: uppercase;
   color: #000;
   font-size: 1.8rem;
@@ -3578,6 +3584,7 @@ a:hover {
   display: none;
 }
 
+.form--register,
 .form--contact {
   position: fixed;
   top: 0;
@@ -3588,6 +3595,7 @@ a:hover {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
 }
+.form--register__inner,
 .form--contact__inner {
   background-image: url(../images/modal.png);
   background-size: cover;
@@ -3605,20 +3613,24 @@ a:hover {
           animation: showModal linear 0.3s;
   position: relative;
 }
+.form--register__inner--logo,
 .form--contact__inner--logo {
   padding-top: 1.3rem;
   width: 40%;
   margin-left: 50%;
   transform: translateX(-50%);
 }
+.form--register__inner--logo--image,
 .form--contact__inner--logo--image {
   width: 100%;
   height: 100%;
 }
+.form--register__inner--contact,
 .form--contact__inner--contact {
   margin-top: 5.5rem;
   padding: 0 3rem;
 }
+.form--register__inner--contact--form-group .form-control,
 .form--contact__inner--contact--form-group .form-control {
   width: 100%;
   height: 4.2rem;
@@ -3628,6 +3640,7 @@ a:hover {
   outline: none;
   padding: 0 1.5rem;
 }
+.form--register__inner--contact--form-group .form-textarea,
 .form--contact__inner--contact--form-group .form-textarea {
   width: 100%;
   font-size: 1.8rem;
@@ -3637,6 +3650,7 @@ a:hover {
   padding: 2rem;
   height: 13.4rem;
 }
+.form--register__inner--contact .send-contact__btn,
 .form--contact__inner--contact .send-contact__btn {
   font-size: 1.6rem;
   padding: 1.5rem 5.2rem;
@@ -3647,6 +3661,7 @@ a:hover {
   border-radius: 8rem;
   font-weight: bold;
   text-transform: uppercase;
+  text-transform: uppercase;
   font-weight: 600;
   color: #fff;
   margin-left: 50%;
@@ -3654,6 +3669,7 @@ a:hover {
   background-color: #a1710f;
   position: relative;
 }
+.form--register__inner--contact .send-contact__btn::after,
 .form--contact__inner--contact .send-contact__btn::after {
   content: "";
   position: absolute;
@@ -3668,12 +3684,14 @@ a:hover {
   border-top-left-radius: 8rem;
   border-top-right-radius: 8rem;
 }
+.form--register__inner--contact--text,
 .form--contact__inner--contact--text {
   font-size: 1.8rem;
   font-weight: bold;
   text-align: center;
   padding: 2rem 12rem;
 }
+.form--register__inner--contact--text .phone-number,
 .form--contact__inner--contact--text .phone-number {
   color: #a1710f;
 }
@@ -3929,6 +3947,7 @@ a:hover {
   padding-bottom: 5.5rem;
 }
 .promotion--container--body__list--item {
+  cursor: pointer;
   margin: 0 0.5rem 2.95rem 0.5rem;
   background-color: #fff;
   border-radius: 2rem;
@@ -3989,6 +4008,7 @@ a:hover {
 
 .promotion--detail__item--images {
   width: 64.7rem;
+  margin-bottom: 7rem;
 }
 .promotion--detail__item--images img {
   width: 100%;
@@ -3996,7 +4016,59 @@ a:hover {
 }
 .promotion--detail__item--subsection--title {
   font-size: 1.5rem;
+  margin-bottom: 2.55rem;
 }
+.promotion--detail__item--subsection--desc {
+  font-size: 1.6rem;
+}
+.promotion--detail__item--subsection--desc:nth-child(8) {
+  margin-bottom: 2.6rem;
+}
+
+.service--detail--button {
+  text-align: center;
+  margin-top: 5.8rem;
+}
+.service--detail--button .promotion--detail__btn {
+  font-size: 1.6rem;
+  padding: 1.5rem 5.2rem;
+  border: none;
+  outline: none;
+  color: #a1710f;
+  background-color: #ffd00f;
+  border-radius: 8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  padding: 1.2rem 3rem;
+}
+.service--detail--button .promotion--detail__btn .icon--gift {
+  padding-right: 1rem;
+}
+
+.promotion-news {
+  padding-top: 0;
+}
+
+.form--contact__inner--extend {
+  position: absolute;
+  top: 5rem;
+  right: 43rem;
+}
+.form--contact__inner--extend--list--item {
+  cursor: pointer;
+  font-size: 1.8rem;
+  background-color: #ffd00f;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+  max-width: 14rem;
+}
+.form--contact__inner--extend--list--item .icon-extend {
+  padding-right: 1rem;
+}
+
 .top-banner .top-banner-1 {
   background-image: url("../images/banner1.png");
   background-size: cover;
@@ -4249,6 +4321,7 @@ a:hover {
   background-color: #ffd00f;
   border-radius: 8rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .sale {
@@ -4420,6 +4493,7 @@ a:hover {
   border-radius: 8rem;
   font-weight: bold;
   text-transform: uppercase;
+  text-transform: uppercase;
   color: #000;
   position: relative;
 }
@@ -4533,6 +4607,7 @@ a:hover {
   background-color: #ffd00f;
   border-radius: 8rem;
   font-weight: bold;
+  text-transform: uppercase;
   text-transform: uppercase;
   color: #000;
   position: relative;

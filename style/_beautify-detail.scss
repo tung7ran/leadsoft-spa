@@ -46,6 +46,10 @@
                         font-size: 1.6rem;
                         padding-bottom: 2.4rem;
                     }
+                    &--description{
+                        font-size: 1.6rem;
+
+                    }
 
 
                 }
@@ -85,7 +89,7 @@
         .detail-news {
             background-color: $white;
             border-radius: 2rem;
-            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
             padding: 2.75rem 0;
             &--title {
                 font-size: 1.6rem;
