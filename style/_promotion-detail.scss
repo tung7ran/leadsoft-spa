@@ -1,0 +1,21 @@
+.promotion--detail{
+    &__item{
+        &--images{
+            width: 64.7rem;
+            // height: 64.7rem;
+            img{
+                width: 100%;
+                height: 100%;
+               
+            }
+        }
+        &--subsection{
+            &--title{
+                font-size: 1.5rem;
+            }
+            &--desc{
+
+            }
+        }
+    }
+}

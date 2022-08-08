@@ -1,0 +1,107 @@
+.promotion {
+    margin-top: 7rem;
+
+    &__heading {
+        font-size: 2.8rem;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: $background-home;
+        color: $more-color;
+        padding-top: 4.35rem;
+        width: 45.5rem;
+        margin: 0 auto;
+        border-top-left-radius: 70rem;
+        border-top-right-radius: 70rem;
+    }
+
+    &--container {
+        background-color: $background-home;
+
+        &--body {
+            &__list {
+                justify-content: center;
+                padding-top: 4.65rem;
+                padding-bottom: 5.5rem;
+
+                &--item {
+                    margin: 0 0.5rem 2.95rem 0.5rem;
+                    background-color: $white;
+                    border-radius: 2rem;
+                    border: 2px solid $orange;
+                    padding: 0.7rem 5rem 3.5rem 1.38rem;
+
+                    &--content {
+                        &--images {
+                            width: 20.5rem;
+
+                            // height: 20.6rem;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        &--text {
+                            &--title {
+                                font-size: 1.6rem;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                                letter-spacing: 0.11rem;
+                            }
+
+                            &--desc {
+                                font-size: 1.4rem;
+                                text-align: justify;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.paging {
+    margin-top: 3rem;
+    margin-bottom: 13.85rem;
+    &-list {
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+        &__item {
+            background-color: $orange;
+            border: 0.2rem solid $orange;
+            border-radius: 1.2rem;
+            margin-right: 0.6rem;
+
+            &--link {
+                padding: 1.8rem 2.3rem;
+                font-size: 2.8rem;
+                margin-top: 0.4rem;
+                margin-right: 0.1rem;
+                color: #fff;
+                display: block;
+                font-weight: bold;
+            }
+        }
+
+        &__prev {}
+
+        &__next {
+            a {
+
+                img {
+                    width: 1.8rem;
+                    height: 1.7rem;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}
+.promotion--advise-contact{
+    margin-bottom: 22rem;
+}
