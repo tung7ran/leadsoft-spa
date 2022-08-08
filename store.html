@@ -7,7 +7,7 @@
     <title>Danh sách sản phẩm</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="./css/base.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
@@ -22,8 +22,8 @@
                     </div>
                 </div>
                 <div class="header-contact d-flex">
-                    <div class="header-contact-left">
-                        <form role="search" method="get" action="">
+                    <div class="header-contact-left ">
+                        <form role="search" method="get" action="" class="dp-none ">
                             <input type="search" name="" class="header-contact-left__search"
                                 placeholder="Thông tin tìm kiếm" />
                                 <button type="submit" class="header-contact-left__button">
@@ -32,15 +32,99 @@
                                       </svg>
                                 </button>
                         </form>
+
+                        <button class="navbar-mobile" type="button">
+                            <i class="fa-solid fa-bars"></i>
+                            <div class="header-main dp-block">
+                                <div class="header-main-nav">
+                                    <ul class="header-main-nav__list d-flex">
+                                        <li class="header-main-nav__list--item">
+                                            <a href="./about.html" class="header-main-nav__list--item-link">Về Shynh Beauty</a>
+                                        </li>
+                                        <li class="header-main-nav__list--item">
+                                            <a href="#!" class="header-main-nav__list--item-link">Dịch vụ</a>
+                                            <!-- <div class="header-main__subnav">
+                                                <div class="header-main__subnav--list row">
+                                                    <div class="header-main__subnav--list--item col l-6">
+                                                        <h2 class="header-main__subnav--list--item--title">Điều trị mụn</h2>
+                                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn lưng</a>
+                                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn chuyên sâu</a>
+                                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn y khoa</a>
+                                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn 2x</a>
+                                                    </div>
+                                                    <div class="header-main__subnav--list--item col l-6">
+                                                        <h2 class="header-main__subnav--list--item--title">Điều trị mụn</h2>
+                                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn lưng</a>
+                                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn chuyên sâu</a>
+                                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn y khoa</a>
+                                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn 2x</a>
+                                                    </div>
+                                                    <div class="header-main__subnav--list--item col l-6">
+                                                        <h2 class="header-main__subnav--list--item--title">Điều trị mụn</h2>
+                                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn lưng</a>
+                                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn chuyên sâu</a>
+                                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn y khoa</a>
+                                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn 2x</a>
+                                                    </div>
+                                                    <div class="header-main__subnav--list--item col l-6">
+                                                        <h2 class="header-main__subnav--list--item--title">Điều trị mụn</h2>
+                                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn lưng</a>
+                                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn chuyên sâu</a>
+                                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn y khoa</a>
+                                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn 2x</a>
+                                                    </div>
+                                                    <div class="header-main__subnav--list--item col l-6">
+                                                        <h2 class="header-main__subnav--list--item--title">Điều trị mụn</h2>
+                                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn lưng</a>
+                                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn chuyên sâu</a>
+                                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn y khoa</a>
+                                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn 2x</a>
+                                                    </div>
+                                                    <div class="header-main__subnav--list--item col l-6">
+                                                        <h2 class="header-main__subnav--list--item--title">Điều trị mụn</h2>
+                                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn lưng</a>
+                                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn chuyên sâu</a>
+                                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn y khoa</a>
+                                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn 2x</a>
+                                                    </div>
+                
+                                                </div>
+                                            </div> -->
+                                        </li>
+                                        <li class="header-main-nav__list--item">
+                                            <a href="#!" class="header-main-nav__list--item-link">Kết Quả Điều Trị</a>
+                                        </li>
+                                        <li class="header-main-nav__list--item">
+                                            <a href="./training.html" class="header-main-nav__list--item-link">Đào tạo Spa</a>
+                                        </li>
+                                        <li class="header-main-nav__list--item">
+                                            <a href="./tip-beautify.html" class="header-main-nav__list--item-link">Mẹo làm đẹp</a>
+                                        </li>
+                                        <li class="header-main-nav__list--item active">
+                                            <a href="./store.html" class="header-main-nav__list--item-link font-weight-bold active">Cửa hàng</a>
+                                        </li>
+                                        <li class="header-main-nav__list--item">
+                                            <a href="./contact.html" class="header-main-nav__list--item-link">Liên Hệ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </button>
                     </div>
                     <div class="header-contact-right d-flex">
+                        <button type="submit" class="search-mobile dp-block ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#fff" class="bi bi-search header-contact-left__button--icon" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg>
+                        </button>
                         <div class="header-contact-right__cart">
-                            <a href="">
+                            <a href="" class="dp-block">
                                 <img src="./images/store.png" alt="" class="header-contact-right__cart--image">
-                                <span class="header-contact-right__cart--number">5+</span>
+                                <span class="header-contact-right__cart--number dp-none ">5+</span>
+                                <span class="header-contact-right__cart--mobile">1</span>
                             </a>
                         </div>
-                        <button class="header-contact-right__tel">
+                        <button class="header-contact-right__tel dp-none">
                             <span class="header-contact-right__tel--number">hotline 0909 999 999</span>
                         </button>
                     </div>
@@ -53,7 +137,7 @@
                     </a>
                 </div>
             </div>
-            <div class="header-main">
+            <div class="header-main dp-none">
                 <div class="header-main-nav">
                     <ul class="header-main-nav__list d-flex">
                         <li class="header-main-nav__list--item">
@@ -61,7 +145,7 @@
                         </li>
                         <li class="header-main-nav__list--item">
                             <a href="#!" class="header-main-nav__list--item-link">Dịch vụ</a>
-                            <div class="header-main__subnav">
+                            <!-- <div class="header-main__subnav">
                                 <div class="header-main__subnav--list row">
                                     <div class="header-main__subnav--list--item col l-6">
                                         <h2 class="header-main__subnav--list--item--title">Điều trị mụn</h2>
@@ -107,7 +191,7 @@
                                     </div>
 
                                 </div>
-                            </div>
+                            </div> -->
                         </li>
                         <li class="header-main-nav__list--item">
                             <a href="#!" class="header-main-nav__list--item-link">Kết Quả Điều Trị</a>
@@ -128,7 +212,7 @@
                 </div>
             </div>
         </header>
-
+        <div class="overlay"></div>
         <div class="main">
             <div class="main-logo-store">
                 <div class="main-logo__image">

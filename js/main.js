@@ -81,3 +81,5 @@ tabRecruit.forEach((tab,index) => {
       pane.classList.add('show');
     }
 })
+
+//menu mobile
