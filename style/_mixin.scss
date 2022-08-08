@@ -1,5 +1,5 @@
-$res_mobile : "only screen and (max-width: 768px)";
-$res_tablet : "only screen and (max-width: 480px)";
+$res_mobile : "only screen and (max-width: 480px)";
+$res_tablet : "only screen and (max-width: 768px)";
 $res_pclow : "only screen and (max-width: 991px)";
 
 @mixin responsive_mobile() {

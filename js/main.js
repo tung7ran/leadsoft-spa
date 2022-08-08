@@ -67,3 +67,18 @@ openModalBtn.addEventListener("click", toggleModal);
 modal.addEventListener("click", (e) => {
   if (e.target == e.currentTarget) toggleModal();
 });
+
+
+const tabRecruit =$$('.recruit-pagination-list__item')
+const paneRecruit =$$('.main-recruit-content__list')
+
+tabRecruit.forEach((tab,index) => {
+    const pane = paneRecruit[index]
+    tab.onclick = function () {
+      $('.recruit-pagination-list__item.active').classList.remove('active');
+      $('.main-recruit-content__list.show').classList.remove('show');
+  
+      this.classList.add('active');
+      pane.classList.add('show');
+    }
+})
