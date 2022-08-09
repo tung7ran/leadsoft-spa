@@ -3696,56 +3696,200 @@ a:hover {
   color: #a1710f;
 }
 
-.main-booking {
+.form--again {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.form--again__inner {
+  background-image: url(../images/modal.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 60.38rem;
+  height: 63.8rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: calc((100vh - 63.8rem) / 2);
+  overflow: hidden;
+  -webkit-animation: showModal linear 0.3s;
+          animation: showModal linear 0.3s;
+  position: relative;
+}
+.form--again__inner--logo {
+  padding-top: 1.3rem;
+  width: 40%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.form--again__inner--logo--image {
+  width: 100%;
+  height: 100%;
+}
+.form--again__inner--title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.form--again__inner--info {
+  width: 60%;
+  text-align: center;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+.form--again__inner--info-image {
+  padding: 1rem 0;
+  width: 4rem;
+  margin: 0 auto;
+}
+.form--again__inner--info-image img {
+  width: 100%;
+}
+.form--again__inner--info-text {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #a0710e;
+  letter-spacing: 0.01rem;
+}
+.form--again__inner--info-text p {
+  padding: 0 9rem;
+}
+.form--again__inner--info-line {
+  text-align: center;
+  padding: 0 3.6rem;
+}
+.form--again__inner--info-line img {
+  width: 100%;
+}
+.form--again__inner--info-client-text {
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  color: #a0710e;
+}
+.form--again__inner--info-client-name {
+  font-size: 2.2rem;
+  color: #a0710e;
+  font-weight: 600;
+}
+.form--again__inner--info-time {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.form--again__inner--info-time-day .form-controls {
+  width: 86%;
+  height: 4.2rem;
+  font-size: 1.6rem;
+  border: 1px solid #a1710f;
+  border-radius: 1rem;
+  outline: none;
+  padding: 0 1.5rem;
+  color: #a0710e;
+}
+.form--again__inner--info-thank {
+  margin-bottom: 1rem;
+}
+.form--again__inner--info-thank p {
+  padding: 0rem 8rem;
+  font-size: 1.2rem;
+  color: #a0710e;
+  font-style: italic;
+}
+.form--again__inner .send-contact__btn {
+  font-size: 1.6rem;
+  padding: 1.5rem 5.2rem;
+  border: none;
+  outline: none;
+  color: #a1710f;
+  background-color: #ffd00f;
+  border-radius: 8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background-color: #a1710f;
+  position: relative;
+  margin-top: 3rem;
+}
+.form--again__inner .send-contact__btn::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 0;
+  width: 98%;
+  height: 90%;
+  border: 0.2rem dashed #fff;
+  border-bottom-left-radius: 8rem;
+  border-bottom-right-radius: 8rem;
+  border-top-left-radius: 8rem;
+  border-top-right-radius: 8rem;
+}
+
+.main-policy-security {
   background-color: #fff6d2;
   padding-top: 12.6rem;
   padding-bottom: 28.2rem;
   margin-top: 5.6rem;
 }
-.main-booking .mb-46 {
+.main-policy-security .mb-46 {
   margin-bottom: 4.6rem;
 }
-.main-booking .mb-42 {
+.main-policy-security .mb-42 {
   margin-bottom: 4.2rem;
 }
-.main-booking .mb-32 {
+.main-policy-security .mb-32 {
   margin-bottom: 3.2rem;
 }
-.main-booking .mb-30 {
+.main-policy-security .mb-30 {
   margin-bottom: 3rem;
 }
-.main-booking .mb-25 {
+.main-policy-security .mb-25 {
   margin-bottom: 2.5rem;
 }
-.main-booking .mb-22 {
+.main-policy-security .mb-22 {
   margin-bottom: 2.2rem;
 }
-.main-booking .mb-20 {
+.main-policy-security .mb-20 {
   margin-bottom: 2rem;
 }
-.main-booking-content {
+.main-policy-security-content {
   width: 1000px;
   margin: 0 auto;
   padding: 4.9rem 9.4rem 8.8rem 6.3rem;
   background-color: #fff;
 }
-.main-booking-content__heading {
+.main-policy-security-content__heading {
   font-size: 2.2rem;
   font-weight: 600;
   color: #a1710f;
   margin-bottom: 5.3rem;
   text-transform: uppercase;
 }
-.main-booking-content__info {
+.main-policy-security-content__info {
   line-height: 1.3em;
   font-size: 1.6rem;
 }
-.main-booking-content__title {
+.main-policy-security-content__title {
   font-size: 2rem;
   color: #a1710f;
   font-weight: 600;
 }
-.main-booking-content__text {
+.main-policy-security-content__text {
   line-height: 1.3em;
   font-size: 1.6rem;
   margin: 0;
@@ -4067,6 +4211,111 @@ a:hover {
 }
 .form--contact__inner--extend--list--item .icon-extend {
   padding-right: 1rem;
+}
+
+.booking {
+  background-color: #fef7d9;
+  width: 100%;
+  height: 58rem;
+  margin-top: 20rem;
+  position: relative;
+}
+.booking-title {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+.booking-title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.booking-form {
+  width: 40%;
+  margin: 0 auto;
+}
+.booking-forms {
+  width: 31%;
+  margin: 0 auto;
+}
+.booking-forms-image img {
+  width: 7rem;
+}
+.booking-forms-text p {
+  padding: 0 18rem;
+  font-size: 2rem;
+  line-height: 1.2em;
+}
+.booking-forms-line {
+  padding: 0rem 8rem;
+}
+.booking-forms-client {
+  line-height: 3em;
+}
+.booking-forms-client-text {
+  font-size: 3rem;
+}
+.booking-forms-client-name {
+  font-size: 3rem;
+}
+.booking-forms-time {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.booking-forms-thank p {
+  padding: 0 19rem;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+.booking .send-contact__btn {
+  font-size: 1.6rem;
+  padding: 1.5rem 5.2rem;
+  border: none;
+  outline: none;
+  color: #a1710f;
+  background-color: #ffd00f;
+  border-radius: 8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background-color: #a1710f;
+  position: relative;
+  margin-top: 3rem;
+}
+.booking .send-contact__btn::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 0;
+  width: 98%;
+  height: 90%;
+  border: 0.2rem dashed #fff;
+  border-bottom-left-radius: 8rem;
+  border-bottom-right-radius: 8rem;
+  border-top-left-radius: 8rem;
+  border-top-right-radius: 8rem;
+}
+.booking-after::after {
+  content: "";
+  position: absolute;
+  top: -5.8rem;
+  width: 43.8rem;
+  height: 5.8rem;
+  background-color: #fef7d9;
+  border-top-left-radius: 150px 100px;
+  border-top-right-radius: 150px 100px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.address-image-booking {
+  width: 7rem;
 }
 
 .top-banner .top-banner-1 {

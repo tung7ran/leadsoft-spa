@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đặt lịch</title>
+    <title>Đặt lịch</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/main.css">
 </head>
+
 <body>
     <div class="wapper">
-        <!-- Header -->
         <header class="header">
             <div class="header-container">
                 <div class="header-container-heading">
                     <div class="header-container-heading__title">
                         <div class="header-container-heading__title--text">
-                            <span class="header-container-heading__title--text-name">Hơn 50 chi nhánh trên toàn quốc</span>
+                            <span class="header-container-heading__title--text-name">Hơn 50 chi nhánh trên toàn
+                                quốc</span>
                         </div>
                     </div>
                 </div>
@@ -25,11 +30,13 @@
                     <div class="header-contact-left">
                         <form role="search" method="get" action="">
                             <input type="search" name="" class="header-contact-left__search"
-                                placeholder="Thông tin tìm kiếm"/>
+                                placeholder="Thông tin tìm kiếm" />
                             <button type="submit" class="header-contact-left__button">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search header-contact-left__button--icon" viewBox="0 0 16 16">
-                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search header-contact-left__button--icon" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
                             </button>
                         </form>
                     </div>
@@ -37,8 +44,47 @@
                     <div class="header-contact-right d-flex">
                         <div class="header-contact-right__cart">
                             <button class="btn header-contact-right__cart--btn">
-                                <img src="./images/store.png" alt="" >
+                                <img src="./images/store.png" alt="">
                             </button>
+                            <div class="header-cart--notify border-1">
+                                <div class="header-cart--notify__info">
+                                    <div class="row header-cart--notify__info--top">
+                                        <div class="col-lg-4">
+                                            <div class="header-cart--notify__info--top-image">
+                                                <img src="./icon/product/img-6.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 p-0">
+                                            <div class="header-cart--notify__info--top-detail">
+                                                <h3>Tẩy tế bào chết chiết xuất từ hạt trái mơ</h3>
+                                                <div class="top-detail-amount">
+                                                    <span class="top-detail-amount__number">1</span>
+                                                    <span class="top-detail-amount_cal">x</span>
+                                                    <span class="top-detail-amount__price">70,000 đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header-cart--notify__info--top-icon">
+                                            <button>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                    <path
+                                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="header-cart--notify__info--main">
+                                        <h3 class="header-cart--notify__info--main-heading">Tổng cộng: 70,000 Đ</h3>
+                                    </div>
+                                    <div class="header-cart--notify__info--bottom">
+                                        <button class="btn header-cart--notify__info--bottom-view">Xem giỏ hàng</button>
+                                        <button class="btn header-cart--notify__info--bottom-pay">Thang toán</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <button class="header-contact-right__tel">
                             <span class="header-contact-right__tel--number">hotline 0909 999 999</span>
@@ -56,14 +102,61 @@
             <div class="header-main">
                 <div class="header-main-nav">
                     <ul class="header-main-nav__list d-flex">
-                        <li class="header-main-nav__list--item">
-                            <a href="./about.html" class="header-main-nav__list--item-link">Về Shynh Beauty</a>
+                        <li class="header-main-nav__list--item active">
+                            <a href="#!" class="header-main-nav__list--item-link font-weight-bold active">Về Shynh Beauty</a>
                         </li>
                         <li class="header-main-nav__list--item">
-                            <a href="./service.html" class="header-main-nav__list--item-link">Dịch vụ</a>
+                            <a href="#!" class="header-main-nav__list--item-link">Dịch vụ</a>
+                            <div class="header-main__subnav">
+                                <div class="header-main__subnav--list row">
+                                    <div class="header-main__subnav--list--item col l-6">
+                                        <h2 class="header-main__subnav--list--item--title">Điều trị mụn</h2>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn lưng</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn chuyên sâu</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn y khoa</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn 2x</a>
+                                    </div>
+                                    <div class="header-main__subnav--list--item col l-6">
+                                        <h2 class="header-main__subnav--list--item--title">Điều trị mụn</h2>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn lưng</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn chuyên sâu</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn y khoa</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn 2x</a>
+                                    </div>
+                                    <div class="header-main__subnav--list--item col l-6">
+                                        <h2 class="header-main__subnav--list--item--title">Điều trị mụn</h2>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn lưng</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn chuyên sâu</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn y khoa</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn 2x</a>
+                                    </div>
+                                    <div class="header-main__subnav--list--item col l-6">
+                                        <h2 class="header-main__subnav--list--item--title">Điều trị mụn</h2>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn lưng</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn chuyên sâu</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn y khoa</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn 2x</a>
+                                    </div>
+                                    <div class="header-main__subnav--list--item col l-6">
+                                        <h2 class="header-main__subnav--list--item--title">Điều trị mụn</h2>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn lưng</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn chuyên sâu</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn y khoa</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn 2x</a>
+                                    </div>
+                                    <div class="header-main__subnav--list--item col l-6">
+                                        <h2 class="header-main__subnav--list--item--title">Điều trị mụn</h2>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn lưng</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Điều trị mụn chuyên sâu</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn y khoa</a>
+                                        <a href="" class="header-main__subnav--list--item--link">Trị mụn 2x</a>
+                                    </div>
+
+                                </div>
+                            </div>
                         </li>
                         <li class="header-main-nav__list--item">
-                            <a href="./result.html" class="header-main-nav__list--item-link">Kết Quả Điều Trị</a>
+                            <a href="#!" class="header-main-nav__list--item-link">Kết Quả Điều Trị</a>
                         </li>
                         <li class="header-main-nav__list--item">
                             <a href="./training.html" class="header-main-nav__list--item-link">Đào tạo Spa</a>
@@ -71,8 +164,8 @@
                         <li class="header-main-nav__list--item">
                             <a href="./tip-beautify.html" class="header-main-nav__list--item-link">Mẹo làm đẹp</a>
                         </li>
-                        <li class="header-main-nav__list--item">
-                            <a href="./store.html" class="header-main-nav__list--item-link">Cửa hàng</a>
+                        <li class="header-main-nav__list--item ">
+                            <a href="./store.html" class="header-main-nav__list--item-link ">Cửa hàng</a>
                         </li>
                         <li class="header-main-nav__list--item">
                             <a href="./contact.html" class="header-main-nav__list--item-link">Liên Hệ</a>
@@ -81,95 +174,227 @@
                 </div>
             </div>
         </header>
+        <div class="main">
+            <div class="main-logo">
+                <img src="./images/about/imgSpa.png" alt="">
+            </div>
+            
+            <div class="booking">
+                <div class="booking-after">
 
-        <!-- Container -->
-        <div class="main-booking">
-            <div class="container">
-                <div class="main-booking-content">
-                    <h2 class="main-booking-content__heading text-center">chính sách bảo mật thông tin của Shynh</h2>
-                    <ul class="main-booking-content__info mb-42">
-                        <li class="main-booking-content__info--item">
-                            Chúng tôi biết rằng sự riêng tư và bảo mật thông tin cá nhân rất quan trọng đối với người dùng, vì vậy chúng tôi cam kết nổ lực tối đa bảo vệ sự riêng tư của bạn.
-                        </li>
-                        <li class="main-booking-content__info--item">
-                            Chính sách bảo mật mô tả cách thức chúng tôi thu thập và xử lý các thông tin cá nhân khi bạn sử dụng dịch vụ của SeoulSpa.Vn. Bạn đồng ý sử dụng dịch vụ của SeoulSpa,  có nghĩa là bạn hoàn toàn đồng ý với các nội dung chúng tôi nếu trong Chính sách bảo mật này.  Chúng tôi có thể sửa đổi nội dung của chính sách bằng cách đăng một bản sửa đổi lên Webkhoinghiep.net, phiên bản sửa đổi có hiệu lực kể từ thời điểm đăng tải.
-                        </li>
-                    </ul>
-                    <h3 class="main-booking-content__title mb-32">Thông tin chúng tôi thu nhập</h3>
-                    <p class="main-booking-content__text">Để có thể sử dụng đầy đủ các tiện ích trên SeoulSpa , bạn cần phải đăng ký thành viên và cung cấp các thông tin cá nhân của mình. Chúng tôi có thể thu thập các thông tin sau về bạn:</p>
-                    <ul class="main-booking-content__info mb-30">
-                        <li class="main-booking-content__info--item">
-                            - Tên công ty, cửa hàng, đơn vị kinh doanh
-                        </li>
-                        <li class="main-booking-content__info--item">
-                            - Họ Tên, tuổi, địa chỉ cư trú
-                        </li>
-                        <li class="main-booking-content__info--item">
-                            - Email, số điện thoại di động, số điện thoại bàn
-                        </li>
-                        <li class="main-booking-content__info--item">
-                            - Địa chỉ IP (Internet Protocol), loại trình duyệt web (Browser), tốc độ đường truyền, số trang bạn xem, thời gian bạn viếng thăm, những địa chỉ mà Browser này truy xuất đến.
-                        </li>
-                    </ul>
-                    <h3 class="main-booking-content__title mb-32">Shynh Spa bảo vệ và lưu trữ thông tin cá nhân của bạn như thế nào?</h3>
-                    <p class="main-booking-content__text mb-42">
-                        Chúng tôi lưu trữ và xử lý thông tin cá nhân của bạn trên máy chủ,  chúng tôi bảo vệ nó bằng các biện pháp bảo vệ vật lý, điện tử  bao gồm: tường lửa, mã hóa dữ liệu và thủ tục áp dụng theo quy định của luật bảo mật thông tin. SeoulSpa thực thi kiểm soát truy cập vật lý vào các thông tin, và chúng tôi chỉ cho phép  truy cập thông tin cá nhân  đối với những nhân viên cần nó để hoàn thành trách nhiệm công việc của họ trong hệ thống SeoulSpa.
-                    </p>
-                    <h3 class="main-booking-content__title mb-30">Sửa dụng thông tin của bạn</h3>
-                    <p class="main-booking-content__text mb-21">
-                        Mục tiêu của chúng tôi là mang lại cho doanh nghiệp, người dùng một hạ tầng dịch vụ phục vụ quảng bá và phát triển thương hiệu, mở rộng kinh doanh trên Internet một cách hiệu quả, tối ưu về chi phí và thời gian. Vì vậy, chúng tôi sử dụng thông tin cá nhân của bạn nhằm:
-                    </p>
-                    <ul class="main-booking-content__info mb-30">
-                        <li class="main-booking-content__info--item">
-                            - Cung cấp thông tin, các dịch vụ và sự hỗ trợ theo yêu cầu của bạn
-                        </li>
-                        <li class="main-booking-content__info--item">
-                            - Gửi email thông báo các chương trình, sự kiện tiêu biểu của chúng tôi
-                        </li>
-                        <li class="main-booking-content__info--item">
-                            - Giải quyết các tranh chấp, các vấn đề phát sinh liên quan đến việc sử dụng website
-                        </li>
-                        <li class="main-booking-content__info--item">
-                            - Ngăn chặn các hoạt động phạm pháp hoặc bị cấm được nêu trong Quy định sử dụng
-                        </li>
-                        <li class="main-booking-content__info--item">
-                            - Đo lường và cải thiện các dịch vụ của chúng tôi
-                        </li>
-                        <li class="main-booking-content__info--item">
-                            - So sánh, đối chiếu tính chính xác của thông tin mà bạn cung cấp với bên thứ ba
-                        </li>
-                    </ul>
-                    <h3 class="main-booking-content__title mb-22">Tiết lộ thông tin của bạn</h3>
-                    <p class="main-booking-content__text mb-20">Chúng tôi cam kết không cung cấp thông tin cá nhân của bạn cho bất kỳ bên thứ ba nào. Tuy nhiên, chúng tôi có thể tiết lộ thông tin cá nhân của bạn trong một số trường hợp dưới đây:</p>
-                    <ul class="main-booking-content__info mb-46">
-                        <li class="main-booking-content__info--item">
-                            Chúng tôi được bạn đồng ý tiết lộ những thông tin này
-                        </li>
-                        <li class="main-booking-content__info--item">
-                            Bên thứ ba mà bạn ủy quyền hoặc cho phép có yêu cầu chúng tôi cung cấp thông tin cá nhân của bạn    
-                        </li>
-                        <li class="main-booking-content__info--item">
-                            Theo yêu cầu pháp lý hay từ một cơ quan chính phủ hoặc nếu chúng tôi tin rằng hành động đó là cần thiết nhằm tuân theo các yêu cầu pháp lý hoặc chiếu theo luật pháp
-                        </li>
-                        <li class="main-booking-content__info--item">
-                            Bảo vệ quyền, lợi ích, tài sản, sự an toàn của một ai khác
-                        </li>
-                        <li class="main-booking-content__info--item">
-                            Ngoài những trường hợp nêu trên nhưng không giới hạn, chúng tôi sẽ không công bố thông tin cá nhân của bạn cho bên thứ ba nào khác trừ khi chúng tôi hoàn toàn tin rằng, sự công bố này là cần thiết nhằm ngăn chặn những thiệt hại vật chất hoặc tài chính do các yếu tố có dấu hiệu phạm pháp có thể gây ra.
-                        </li>
-                    </ul>
-                    <h3 class="main-booking-content__title mb-20">Quản lý thông tin trên website</h3>
-                    <p class="main-booking-content__text mb-25">Bạn có thể truy cập, sửa chữa và cập nhật thông tin trên website của mình bằng cách đăng nhập và sử dụng các tính năng quản trị. Chúng tôi hoàn toàn không chịu trách nhiệm liên quan đến tính chính xác và hợp pháp của thông tin bạn đưa lên website.
-                    </p>
-                    <h3 class="main-booking-content__title mb-42">Xử lý thông tin khi người dùng yêu cầu xóa</h3>
-                    <p class="main-booking-content__text">
-                        Để hỗ trợ tốt nhất cho khách hàng, khi bạn muốn yêu cầu xóa thông tin mà Seoul Spa đã thu thập thì vui lòng liên hệ ngay đến mail support@diemnhan.com để được hỗ trợ xóa và những thông tin về sau.
-                    </p>
+                </div>
+                <div class="booking-title">
+                    <h2>ĐẶT LỊCH HẸN</h2>
+                </div>
+                <div class="form--contact__inner--contact booking-form">
+                    <form action="">
+                        <div class="form--contact__inner--contact--form row">
+                            <div class="form--contact__inner--contact--form-group form-group col l-12">
+                                <input type="text" placeholder="Họ Tên" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form--contact__inner--contact--form row">
+                            <div class="form--contact__inner--contact--form-group form-group col l-6">
+                                <input type="email" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form--contact__inner--contact--form-group form-group col l-6">
+                                <input type="number" placeholder="Số Điện Thoại" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form--contact__inner--contact--form row">
+                            <div class="form--contact__inner--contact--form-group form-group col l-6">
+                                <select name="" placeholder="Chọn dịch vụ" id="" class="form-control">
+                                    <option value="">Chọn dịch vụ</option>
+                                    <option value="">Dịch vụ 1</option>
+                                    <option value="">Dịch vụ 2</option>
+                                    <option value="">Dịch vụ 3</option>
+                                </select>
+                            </div>
+                            <div class="form--contact__inner--contact--form-group form-group col l-6">
+                                <select name="" placeholder="Chọn Khu Vực" id="" class="form-control">
+                                    <option value="">Chọn dịch vụ</option>
+                                    <option value="">Dịch vụ 1</option>
+                                    <option value="">Dịch vụ 2</option>
+                                    <option value="">Dịch vụ 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form--contact__inner--contact--form row">
+                            <div class="form--contact__inner--contact--form-group form-group col l-6">
+                                <input type="day" placeholder="07/07/2022" class="form-control">
+                            </div>
+                            <div class="form--contact__inner--contact--form-group form-group col l-6">
+                                <input type="number" placeholder="8:00" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form--contact__inner--contact--form row">
+                            <div class="form--contact__inner--contact--form-group form-group col l-12">
+                                <textarea name="" class="form-textarea" placeholder="Ghi chú lịch hẹn" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <button class="btn send-contact__btn">ĐẶT LỊCH</button>
+                    </form>
+                </div>
+
+                <!-- <div class="form--again__inner--info booking-forms">
+                    <div class="form--again__inner--info-image booking-forms-image">
+                        <img src="./images/service/check.png" alt="">
+                    </div>
+                    <div class="form--again__inner--info-text booking-forms-text">
+                        <p>lịch hẹn của quý khách đã được đặt thành công</p>
+                    </div>
+                    <div class="form--again__inner--info-line booking-forms-line">
+                        <img src="./images/service/_Line_.png" alt="">
+                    </div>
+                    <div class="form--again__inner--info-client booking-forms-client">
+                        <p class="form--again__inner--info-client-text booking-forms-client-text">Tên khách hàng: <span class="form--again__inner--info-client-name booking-forms-client-name"> Nguyễn Thị A</span></p>
+                        <p class="form--again__inner--info-client-text booking-forms-client-text">Số điện thoại:<span class="form--again__inner--info-client-name booking-forms-client-name"> 0888 888 888</span></p>
+                    </div>
+                    <div class="form--again__inner--info-time booking-forms-time row">
+                        <div class="form--again__inner--info-time-day col l-6">
+                            <input type="date" class="form-controls" placeholder="mm/dd/yyyy">
+                        </div>
+                        <div class="form--again__inner--info-time-day col l-6">
+                            <input type="time" class="form-controls" placeholder="8:00">
+                        </div>
+                    </div>
+                    <div class="form--again__inner--info-thank booking-forms-thank">
+                        <p>Cảm ơn quý khách hẹn gặp quý khách tại Shynh Beauty Spa</p>
+                    </div> 
+                </div>
+                <button class="btn send-contact__btn">ĐẶT LỊCH</button> -->
+            </div>
+
+            <div class="address">
+                <div class="address-info">
+                    <img src="./images/logo.png" alt="" class="address-image-booking">
+                    <h2 class="address-info-title">Hệ thống hơn 50 chi nhánh</h2>
+                    <p class="address-info-caption">Nhờ sự tin yêu của khách hàng, SHYNH BEAUTY luôn có lượng khách lớn
+                        ghé thăm</p>
+                </div>
+                <div class="address-nav">
+                    <div class="container container-width">
+                        <ul class="address-nav-location row">
+                            <li class="address-nav-location__item">
+                                <a class="address-nav-location__item--link active" href="">Tất cả</a>
+                            </li>
+                            <li class="address-nav-location__item">
+                                <a class="address-nav-location__item--link" href="">Hồ Chí Minh</a>
+                            </li>
+                            <li class="address-nav-location__item">
+                                <a class="address-nav-location__item--link" href="">Hà nội</a>
+                            </li>
+                            <li class="address-nav-location__item">
+                                <a class="address-nav-location__item--link" href="">Miền nam</a>
+                            </li>
+                            <li class="address-nav-location__item">
+                                <a class="address-nav-location__item--link" href="">Miền tây</a>
+                            </li>
+                            <li class="address-nav-location__item">
+                                <a class="address-nav-location__item--link" href="">Miền trung</a>
+                            </li>
+                            <li class="address-nav-location__item">
+                                <a class="address-nav-location__item--link" href="">Tây nguyên</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="location-details">
+                    <div class="container container-width">
+                        <div class="row location-details-border">
+                            <ul class="location-details-list col-lg-6">
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 location-details-left">
+                                        <img src="./images/thanhtoan.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 location-details-right">
+                                        <h4 class="location-details-right__name">Quận 10</h4>
+                                        <p class="location-details-right__info">375 Nguyễn Thượng Hiền, Phường 11, Quận
+                                            10 (Vòng Xoay Dân Chủ)
+                                        </p>
+                                        <!-- cần chữ in nghiêng -->
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 location-details-left">
+                                        <img src="./images/shynhhouse.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 location-details-right">
+                                        <h4 class="location-details-right__name">Bình Thạnh</h4>
+                                        <p class="location-details-right__info">380 Bùi Hữu Nghĩa, Phường 2, Bình Thạnh
+                                            (Đối Diện Chợ Bà Chiểu)</p>
+                                        <!-- cần chữ in nghiêng -->
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 location-details-left">
+                                        <img src="./images/makeup.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 location-details-right">
+                                        <h4 class="location-details-right__name">Thủ Đức</h4>
+                                        <p class="location-details-right__info">314 Võ Văn Ngân, Bình Thọ, Thủ Đức (Gần
+                                            ĐH Sư Phạm Kĩ Thuật)</p>
+                                        <!-- cần chữ in nghiêng -->
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                            </ul>
+                            <ul class="location-details-list col-lg-6">
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 location-details-left">
+                                        <img src="./images/thanhtoan.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 location-details-right">
+                                        <h4 class="location-details-right__name">Quận 7</h4>
+                                        <p class="location-details-right__info">44 Nguyễn Thị Thập, Tân Hưng, Quận 7
+                                            (Gần cầu HimLam)</p>
+                                        <!-- cần chữ in nghiêng -->
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 location-details-left">
+                                        <img src="./images/makeup.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 location-details-right">
+                                        <h4 class="location-details-right__name">Gò Vấp</h4>
+                                        <p class="location-details-right__info">398 Nguyễn Văn Nghi, Phường 7, Quận Gò
+                                            Vấp</p>
+                                        <!-- cần chữ in nghiêng -->
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 location-details-left">
+                                        <img src="./images/makeup.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 location-details-right">
+                                        <h4 class="location-details-right__name">Tân Bình</h4>
+                                        <p class="location-details-right__info">120 Ni Sư Huỳnh Liên,Phường 10, Quận Tân
+                                            Bình</p>
+                                        <!-- cần chữ in nghiêng -->
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="address-near">
+                    <button class="btn address-near-btn">Tìm chi nhánh gần bạn</button>
                 </div>
             </div>
         </div>
 
-        <!-- Footer -->
         <footer class="footer">
             <div class="footer-top">
                 <div class="container footer-width">
@@ -179,11 +404,13 @@
                                 <div class="interactive-logo d-flex">
                                     <img src="./images/footerImg.png" alt="">
                                 </div>
-                                <h3 class="interactive-caption">SHYNH BEAUTY luôn nỗ lực không ngừng để đem đến cho khách hàng nhưng dịch vụ hoàn hảo nhất</h3>
+                                <h3 class="interactive-caption">SHYNH BEAUTY luôn nỗ lực không ngừng để đem đến cho
+                                    khách hàng nhưng dịch vụ hoàn hảo nhất</h3>
                                 <div class="interactive-image d-flex">
                                     <img src="./images/footer.jpg" alt="">
                                     <div class="footer-top-interactive__share--top d-flex">
-                                        <img class="footer-top-interactive__share--top-image" src="./images/footer/footer-img.png" alt="">
+                                        <img class="footer-top-interactive__share--top-image"
+                                            src="./images/footer/footer-img.png" alt="">
                                         <h5>Shynh Beauty Spa</h5>
                                     </div>
                                     <div class="footer-top-interactive__share--bottom d-flex">
@@ -231,11 +458,11 @@
                                     <h3 class="contact-title">
                                         Thời gian làm việc
                                     </h3>
-                                    <span>8H30 - 19H00 Từ thứ hai đến CN(Kể cả lễ,tết)</span>
+                                    <span class="fz16">8H30 - 19H00 Từ thứ hai đến CN(Kể cả lễ,tết)</span>
                                 </div>
                                 <div class="footer-top-contact__app d-flex">
                                     <a href="" class="footer-top-contact__app--googleplay">
-                                        <img src="./icon/icon app-02.png" alt="" >
+                                        <img src="./icon/icon app-02.png" alt="">
                                     </a>
                                     <a href="" class="footer-top-contact__app--appstore">
                                         <img src="./icon/icon app-03.png" alt="">
@@ -266,17 +493,18 @@
             </div>
             <div class="footer-bottom">
                 <div class="footer-width">
-                    <h3 class="footer-title">SHYNH BEAUTY SPA - Thẩm mỹ viện hàng đầu việt nam với 50 chi nhánh trên toàn quốc</h3>
+                    <h3 class="footer-title">SHYNH BEAUTY SPA - Thẩm mỹ viện hàng đầu việt nam với 50 chi nhánh trên
+                        toàn quốc</h3>
                     <div class="footer-contact">
                         <ul class="footer-contact-list">
                             <li class="footer-contact-list__item">
-                                <a class="footer-contact-list__item--link" href="">Hotline: 0999 999 999</a>
+                                <a class="footer-contact-list__item--link fz16" href="">Hotline: 0999 999 999</a>
                             </li>
                             <li class="footer-contact-list__item">
-                                <a class="footer-contact-list__item--link" href="">Website: shynhbeauty.com.vn</a>
+                                <a class="footer-contact-list__item--link fz16" href="">Website: shynhbeauty.com.vn</a>
                             </li>
                             <li class="footer-contact-list__item">
-                                <a class="footer-contact-list__item--link" href="">Mail:info@shynhbeauty.com</a>
+                                <a class="footer-contact-list__item--link fz16" href="">Mail:info@shynhbeauty.com</a>
                             </li>
                         </ul>
                     </div>
@@ -284,8 +512,13 @@
             </div>
         </footer>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
