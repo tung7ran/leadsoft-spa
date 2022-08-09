@@ -41,6 +41,9 @@
             width: 37rem;
             float: right;
         }
+        .navbar-mobile {
+            display: none;
+        }
         &__search{
             width: 100%;
             height: 6.65rem;
@@ -80,6 +83,12 @@
                 height: 100%;
                 padding:2rem;
             }
+            &--mobile {
+                display: none;
+            }
+        }
+        .search-mobile {
+            display:none;
         }
         &__tel{
             height: 6.65rem;

@@ -13,7 +13,7 @@ tabs.forEach((tab, index) => {
         this.classList.add('active');
         pane.classList.add('active');
     }
-})
+});
 // ------------------------------------------------------------------
 const tabCategory = $$('.tab-category');
 const tabPane = $$('.tab-product');
@@ -26,26 +26,17 @@ tabCategory.forEach((tab, index) => {
         this.classList.add('active');
         pane.classList.add('active');
     }
-})
+});
 // --------------------------------------------------------------------------------
 const cart = document.querySelector('.header-contact-right__cart')
 const notify =  document.querySelector('.header-cart--notify')
 const close =  document.querySelector('.header-cart--notify__info--top-icon')
 cart.addEventListener('click', () => {
     close.classList.toggle('show')
-})
+});
 cart.addEventListener('click', () => {
     notify.classList.toggle('show')
-})
-
-
-
-
-
-
-
-        
-        
+});
 
 // ---------------------------------------------------------------------------------
 const openModalBtn = document.getElementById("open-modal-btn");
@@ -77,7 +68,7 @@ tabRecruit.forEach((tab,index) => {
       this.classList.add('active');
       pane.classList.add('show');
     }
-})
+});
 // ----------------------------------------------------------------
 
 const openModalGift = document.getElementById("promotion--detail__btn");
