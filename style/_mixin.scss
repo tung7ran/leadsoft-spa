@@ -61,6 +61,8 @@ $res_pclow : "only screen and (max-width: 991px)";
   background-color: #ffd00f;
   border-radius: 8rem;
   font-weight: bold;
+  text-transform: uppercase;
+
 }
 
 @mixin backgroundImage {

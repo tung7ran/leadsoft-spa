@@ -3,6 +3,7 @@
         &--images{
             width: 64.7rem;
             // height: 64.7rem;
+            margin-bottom: 7rem;
             img{
                 width: 100%;
                 height: 100%;
@@ -12,9 +13,53 @@
         &--subsection{
             &--title{
                 font-size: 1.5rem;
+                margin-bottom: 2.55rem;
             }
             &--desc{
+                font-size: 1.6rem;
 
+            }
+            &--desc:nth-child(8){
+                margin-bottom: 2.6rem;
+            }
+        }
+    }
+}
+.service--detail--button{
+    text-align: center;
+    margin-top: 5.8rem;
+    .promotion--detail__btn{
+        @include buttonStyle();
+        color: $black;
+        padding: 1.2rem 3rem;
+        .icon--gift{
+            padding-right: 1rem;
+        }
+    }
+}
+.promotion-news{
+    padding-top: 0;
+    
+}
+
+.form--contact__inner--extend{
+    position: absolute;
+    top: 5rem;
+  
+    right: 43rem;
+    // background-color: $white;
+    &--list{
+        &--item{
+            cursor: pointer;
+            font-size: 1.8rem;
+            background-color: $orange;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            text-transform: uppercase;
+            margin: 0.5rem 0;
+            max-width: 14rem;
+            .icon-extend{
+                padding-right: 1rem;
             }
         }
     }

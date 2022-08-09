@@ -48,15 +48,21 @@ cart.addEventListener('click', () => {
         
 
 // ---------------------------------------------------------------------------------
-const modal = document.querySelector(".form--contact");
-const openModalBtn = document.querySelector(".open-modal-btn");
+const openModalBtn = document.getElementById("open-modal-btn");
+const modal = document.getElementById("open-contact");
+ 
 function toggleModal() {
   modal.classList.toggle("hide");
 }
-openModalBtn.addEventListener("click", toggleModal);
-modal.addEventListener("click", (e) => {
-  if (e.target == e.currentTarget) toggleModal();
-});
+if (modal){
+    modal.addEventListener("click", (e) => {
+      if (e.target == e.currentTarget) toggleModal();
+    // console.log(e.target);
+    }, false);
+}
+if (openModalBtn){
+    openModalBtn.addEventListener("click", toggleModal, false);
+}
 
 // ---------------------------------------------------------------------------------
 const tabRecruit =$$('.recruit-pagination-list__item')
@@ -72,8 +78,20 @@ tabRecruit.forEach((tab,index) => {
       pane.classList.add('show');
     }
 })
+// ----------------------------------------------------------------
 
-
-
-
+const openModalGift = document.getElementById("promotion--detail__btn");
+const modalGift = document.getElementById("open-form");
+ 
+function toggleModalGift() {
+    modalGift.classList.toggle("hide");
+}
+if (modalGift){
+    modalGift.addEventListener("click", (e) => {
+      if (e.target == e.currentTarget) toggleModalGift();
+    }, false);
+}
+if (openModalGift){
+    openModalGift.addEventListener("click", toggleModalGift, false);
+}
 
