@@ -3707,7 +3707,7 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
 .form--again__inner {
-  background-image: url(../icon/modal.png);
+  background-image: url(../images/modal.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3815,6 +3815,7 @@ a:hover {
   background-color: #ffd00f;
   border-radius: 8rem;
   font-weight: bold;
+  text-transform: uppercase;
   text-transform: uppercase;
   font-weight: 600;
   color: #fff;
@@ -4161,6 +4162,57 @@ a:hover {
   font-size: 1.5rem;
   margin-bottom: 2.55rem;
 }
+.promotion--detail__item--subsection--desc {
+  font-size: 1.6rem;
+}
+.promotion--detail__item--subsection--desc:nth-child(8) {
+  margin-bottom: 2.6rem;
+}
+
+.service--detail--button {
+  text-align: center;
+  margin-top: 5.8rem;
+}
+.service--detail--button .promotion--detail__btn {
+  font-size: 1.6rem;
+  padding: 1.5rem 5.2rem;
+  border: none;
+  outline: none;
+  color: #a1710f;
+  background-color: #ffd00f;
+  border-radius: 8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  padding: 1.2rem 3rem;
+}
+.service--detail--button .promotion--detail__btn .icon--gift {
+  padding-right: 1rem;
+}
+
+.promotion-news {
+  padding-top: 0;
+}
+
+.form--contact__inner--extend {
+  position: absolute;
+  top: 5rem;
+  right: 43rem;
+}
+.form--contact__inner--extend--list--item {
+  cursor: pointer;
+  font-size: 1.8rem;
+  background-color: #ffd00f;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+  max-width: 14rem;
+}
+.form--contact__inner--extend--list--item .icon-extend {
+  padding-right: 1rem;
+}
+
 .booking {
   background-color: #fef7d9;
   width: 100%;
@@ -4225,6 +4277,7 @@ a:hover {
   background-color: #ffd00f;
   border-radius: 8rem;
   font-weight: bold;
+  text-transform: uppercase;
   text-transform: uppercase;
   font-weight: 600;
   color: #fff;
