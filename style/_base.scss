@@ -270,7 +270,7 @@ a:hover {
 
 }
 .header-main-nav__list .active{
-  border-radius: 1.6rem;
+    border-radius: 1.6rem;
     padding: 0.5rem 2.2rem;
     font-weight: 600;
     background-color: #ffd00f;
@@ -278,6 +278,21 @@ a:hover {
 }
 .show {
   display: block !important;
+}
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  // background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+
+}
+.open {
+  transform: scaleY(1);
+  transition: 1s;
 }
 @keyframes showModal {
   from {
@@ -287,5 +302,16 @@ a:hover {
   to {
     top: 0;
     opacity: 1;
+  }
+}
+
+@keyframes drop-down {
+  from {
+      opacity: 0;
+      left: -200px;
+  }
+  to {
+    left: 0;
+      opacity: 1;
   }
 }
