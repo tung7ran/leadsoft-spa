@@ -144,30 +144,35 @@
                     left: 12rem;
                     display: none;
                     background-color: $white;
-                    min-width: 38rem;
+                    min-width: 40rem;
                     z-index: 1;
                     padding: 2rem;
                     border-radius: 2rem;
                     border: 1px solid $orange;
-                    &--list{
+                    &--menu{
                         &--item{
                             padding-bottom: 2rem;
                             &--title{
-                                font-size: 1.8rem;
+                                font-size: 1.6rem;
                                 font-weight: bold;
                                 color: $black;
                                 display: block;
                                 padding-bottom: 0.5rem;
                             }
-                            &--link{
-                                font-size: 1.4rem;
-                                color: $black;
-                                display: inline-block;
-                                padding: 0 0.3rem;
+                            &--list{
+                                &--service{
+                                    &--link{
+                                        font-size: 1.4rem;
+                                        color: $black;
+                                        display: block;
+                                        padding: 0 0.3rem;
+                                    }
+                                    &--link:hover{
+                                        background-color: #ccc;
+                                    }
+                                }
                             }
-                            &--link:hover{
-                                background-color: #ccc;
-                            }
+                            
 
                         }
                     }
