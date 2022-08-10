@@ -30,6 +30,9 @@
     }
 }
 .header-contact{
+    .moble-image {
+        display: none;
+    }
     justify-content: space-between;
     margin-top: 2.6rem;
     padding: 0 3.7rem;
@@ -74,10 +77,14 @@
             border-radius: 50%;
             background-color: $orange;
             position: relative;
-            &--image{
+            button {
                 width: 6.65rem;
                 height: 6.65rem;
-                padding:2rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    padding:2rem;
+                }
             }
             &--number {
                 content: "";

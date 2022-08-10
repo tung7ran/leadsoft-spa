@@ -30,6 +30,12 @@
     }
 }
 .header-contact{
+    .dp-nonePC {
+        display: none;
+    }
+    .dp-blockPC {
+        display: block;
+    }
     justify-content: space-between;
     margin-top: 2.6rem;
     padding: 0 3.7rem;

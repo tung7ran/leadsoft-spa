@@ -7,7 +7,7 @@
     <title>Chi Tiết Sản Phẩm</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="./css/base.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
@@ -23,7 +23,7 @@
                 </div>
                 <div class="header-contact d-flex">
                     <div class="header-contact-left">
-                        <form role="search" method="get" action="">
+                        <form role="search" method="get" action="" class="dp-none">
                             <input type="search" name="" class="header-contact-left__search"
                                 placeholder="Thông tin tìm kiếm"/>
                             <button type="submit" class="header-contact-left__button">
@@ -32,13 +32,22 @@
                                   </svg>
                             </button>
                         </form>
+                        <button class="navbar-mobile" type="button">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
                     </div>
                     <div class="header-contact-right d-flex">
+                        <button type="submit" class="search-mobile dp-block ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#fff" class="bi bi-search header-contact-left__button--icon" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg>
+                        </button>
                         <div class="header-contact-right__cart">
-                            <button class="btn header-contact-right__cart--btn">
-                                <img src="./images/store.png" alt="" >
+                            <button class="btn header-contact-right__cart--btn dp-none">
+                                <img src="./images/store.png" alt="">
+                                <span class="header-contact-right__cart--mobile">1</span>
                             </button>
-                            <div class="header-cart--notify border-1">
+                            <div class="header-cart--notify border-1 dp-none">
                                 <div class="header-cart--notify__info">
                                     <div class="row header-cart--notify__info--top">
                                         <div class="col-lg-4">
@@ -74,8 +83,14 @@
                                     </div>
                                 </div>
                             </div>
+                            <button class="dp-block dp-nonePC">
+                                <div class="moble-image">
+                                    <img src="./images/store.png" alt="">
+                                </div>
+                                <span class="header-contact-right__cart--mobile">1</span>
+                            </button>
                         </div>
-                        <button class="header-contact-right__tel">
+                        <button class="header-contact-right__tel dp-none">
                             <span class="header-contact-right__tel--number">hotline 0909 999 999</span>
                         </button>
                     </div>
@@ -89,7 +104,7 @@
                 </div>
             </div>
             <div class="header-main">
-                <div class="header-main-nav">
+                <div class="header-main-nav dp-none">
                     <ul class="header-main-nav__list d-flex">
                         <li class="header-main-nav__list--item">
                             <a href="./about.html" class="header-main-nav__list--item-link">Về Shynh Beauty</a>
