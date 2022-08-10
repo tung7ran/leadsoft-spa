@@ -1,2 +1,7 @@
 @include responsive_mobile {
+    .main {
+        .product {
+            background-image: transparent!important;
+        }
+    }
 }
