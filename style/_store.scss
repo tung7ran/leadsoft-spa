@@ -225,7 +225,14 @@
                         }
                     }
                 }
-            }
+                &-item:nth-child(1),
+                &-item:nth-child(2),
+                &-item:nth-child(6) {
+                    .product-list-item__money {
+                        margin-top: 0;
+                    }
+                }
+             }
             .product-pagination {
                 margin-top: 1rem;
                 &-list{
@@ -286,6 +293,8 @@
             height: 100%;
         }
     }
-    
+    .advise-contact {
+        display: none;
+    }
 }
 
