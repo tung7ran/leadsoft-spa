@@ -86,3 +86,19 @@ if (openModalGift){
     openModalGift.addEventListener("click", toggleModalGift, false);
 }
 
+// scroll menu
+        const navMobileBtn = document.querySelector('.js-mobile-btn')
+        const mobileMenu = document.querySelector('.js-mobile-menu')
+        var mobileOverlay = document.querySelector('.mobile-menu-overlay')
+        navMobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('show')
+            mobileOverlay.classList.toggle('show')
+        } );
+        // mobileOverlay.addEventListener('click', () => {
+        //     mobileMenu.classList.remove('show')
+        //     mobileOverlay.classList.remove('show')
+        // }
+        // );
+        // scroll menu__list
+       
+      
