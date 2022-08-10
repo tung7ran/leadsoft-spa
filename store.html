@@ -23,7 +23,7 @@
                 </div>
                 <div class="header-contact d-flex">
                     <div class="header-contact-left ">
-                        <form role="search" method="get" action="" class="dp-none ">
+                        <form role="search" method="get" action="" class="dp-none">
                             <input type="search" name="" class="header-contact-left__search"
                                 placeholder="Thông tin tìm kiếm" />
                                 <button type="submit" class="header-contact-left__button">
@@ -118,11 +118,14 @@
                               </svg>
                         </button>
                         <div class="header-contact-right__cart">
-                            <a href="" class="dp-block">
-                                <img src="./images/store.png" alt="" class="header-contact-right__cart--image">
+                            <button class="dp-block">
+                                <div class="moble-image">
+                                    <img src="./images/store.png" alt="">
+                                </div>
+                                <img src="./images/store.png" alt="">
                                 <span class="header-contact-right__cart--number dp-none ">5+</span>
                                 <span class="header-contact-right__cart--mobile">1</span>
-                            </a>
+                            </button>
                         </div>
                         <button class="header-contact-right__tel dp-none">
                             <span class="header-contact-right__tel--number">hotline 0909 999 999</span>
@@ -529,7 +532,7 @@
                 </div>
                 <div class="location-details">
                     <div class="container container-width">
-                        <div class="row location-details-border">
+                        <div class="row location-details-border location-details-mobile" id="mobile-scroll">
                             <ul class="location-details-list col-lg-6">
                                 <li class="location-details-list__item row">
                                     <div class="col-lg-4 col-5 location-details-left">
