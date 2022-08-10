@@ -68,7 +68,6 @@
     }
     &-right{
         padding-left: 0;
-        // width: 32.15%;
         &__cart{
             position: relative;
             .header-cart--notify {
@@ -78,7 +77,6 @@
                 border-radius: 1rem;
                 z-index: 1;
                 display: none;
-                z-index: 1;
                 &__info {
                     width: 30.4rem;
                     height: 24rem;
@@ -137,7 +135,6 @@
                         }
                     }
                     &--bottom {
-                        margin-left: 3rem;
                         &-view{
                             width: 23rem !important;
                             height: 3.8rem !important;

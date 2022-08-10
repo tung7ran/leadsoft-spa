@@ -301,6 +301,18 @@ a:hover {
   z-index: 1;
 }
 
+.mobile-cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  background-color: #c7ac3d;
+  opacity: 0.8;
+  z-index: 3;
+}
+
 .open {
   transform: scaleY(1);
   transition: 1s;
@@ -1737,7 +1749,6 @@ a:hover {
   border-radius: 1rem;
   z-index: 1;
   display: none;
-  z-index: 1;
 }
 .header-contact-right__cart .header-cart--notify__info {
   width: 30.4rem;
@@ -1796,9 +1807,6 @@ a:hover {
 .header-contact-right__cart .header-cart--notify__info--main-heading {
   font-weight: 600;
   font-size: 1.8rem;
-}
-.header-contact-right__cart .header-cart--notify__info--bottom {
-  margin-left: 3rem;
 }
 .header-contact-right__cart .header-cart--notify__info--bottom-view {
   width: 23rem !important;
@@ -4796,6 +4804,105 @@ a:hover {
   }
 }
 @media only screen and (max-width: 480px) {
+  .header-contact-right__cart .mobile-cart .header-cart-notify__moible {
+    position: absolute;
+    top: 8rem;
+    right: 0;
+    width: 36.4rem;
+    height: 111.8rem;
+    padding: 2rem;
+    background-color: #fff;
+    z-index: 4;
+  }
+  .header-contact-right__cart .mobile-cart .header-cart-notify__moible .header-cart--notify {
+    border-radius: 1rem;
+  }
+  .header-contact-right__cart .mobile-cart .header-cart-notify__moible .header-cart--notify__info {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .header-contact-right__cart .mobile-cart .header-cart-notify__moible .header-cart--notify__info--heading {
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 7.7rem;
+    margin-bottom: 1rem;
+  }
+  .header-contact-right__cart .mobile-cart .header-cart-notify__moible .header-cart--notify__info--top {
+    position: relative;
+  }
+  .header-contact-right__cart .mobile-cart .header-cart-notify__moible .header-cart--notify__info--top-image {
+    margin-left: 1rem;
+    margin-top: 1.6rem;
+    height: 9rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+  }
+  .header-contact-right__cart .mobile-cart .header-cart-notify__moible .header-cart--notify__info--top-icon {
+    position: absolute;
+    top: -8rem;
+    right: 1.6rem;
+    width: 3rem;
+  }
+  .header-contact-right__cart .mobile-cart .header-cart-notify__moible .header-cart--notify__info--top-icon button {
+    color: #808080;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .header-contact-right__cart .mobile-cart .header-cart-notify__moible .header-cart--notify__info--top-icon button svg {
+    padding: 0.5rem;
+    background-color: #fff;
+  }
+  .header-contact-right__cart .mobile-cart .header-cart-notify__moible .header-cart--notify__info--top-detail {
+    padding-right: 2rem;
+    padding-top: 2.2rem;
+    text-align: left;
+  }
+  .header-contact-right__cart .mobile-cart .header-cart-notify__moible .header-cart--notify__info--top-detail h3 {
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
+  .header-contact-right__cart .mobile-cart .header-cart-notify__moible .header-cart--notify__info--top-detail .top-detail-amount {
+    color: #808080;
+    font-weight: 600;
+    margin-top: 1.2rem;
+    font-size: 1.8rem;
+  }
+  .header-contact-right__cart .mobile-cart .header-cart-notify__moible .header-cart--notify__info--main {
+    margin-left: 0 !important;
+    margin-top: 0.8rem;
+    margin-bottom: 0.6rem;
+  }
+  .header-contact-right__cart .mobile-cart .header-cart-notify__moible .header-cart--notify__info--main-heading {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 3.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .header-contact-right__cart .mobile-cart .header-cart-notify__moible .header-cart--notify__info--bottom-view {
+    width: 23rem !important;
+    height: 3.8rem !important;
+    border-radius: 0;
+    padding: 0;
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem;
+  }
+  .header-contact-right__cart .mobile-cart .header-cart-notify__moible .header-cart--notify__info--bottom-pay {
+    width: 23rem !important;
+    height: 3.8rem !important;
+    border-radius: 0;
+    padding: 0;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    background-color: #a1710f;
+    color: #fff;
+  }
   .main .product-details .product-one-border {
     border: none;
   }
