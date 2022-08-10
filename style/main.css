@@ -261,6 +261,14 @@ a:hover {
   width: 100%;
 }
 
+.dp-blockPC {
+  display: block;
+}
+
+.dp-nonePC {
+  display: none;
+}
+
 .content-container {
   background-color: #fff;
   margin: 18rem 0 29rem 0;
@@ -4439,16 +4447,15 @@ a:hover {
     background-color: #ffd00d;
     border: none;
     border-radius: 1rem;
+    margin-right: 0.8rem;
   }
   .header-contact-right .search-mobile svg {
     background-color: #ffd00d;
     padding: 0.2rem;
   }
   .header-logo {
-
     margin-top: 1.5rem;
     margin-bottom: 3.6rem;
-
   }
   .header-logo__page {
     width: 20.6rem;
@@ -4629,6 +4636,7 @@ a:hover {
   }
   .main-logo-store {
     background-image: linear-gradient(90deg, #fef7dc, #fff6d6);
+    margin-top: 9rem;
   }
   .main-logo__title {
     font-weight: 600;
