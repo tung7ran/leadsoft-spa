@@ -28,7 +28,7 @@ tabCategory.forEach((tab, index) => {
     }
 });
 // --------------------------------------------------------------------------------
-const cart = document.querySelector('.header-contact-right__cart')
+const cart = document.querySelector('.header-cart')
 const notify =  document.querySelector('.header-cart--notify')
 const close =  document.querySelector('.header-cart--notify__info--top-icon')
 cart.addEventListener('click', () => {
@@ -100,5 +100,25 @@ if (openModalGift){
         // }
         // );
         // scroll menu__list
+
+// Show cart_Product-details
+const cartMobileBtn = document.querySelector('.js-mobile-btn__cart')
+const cartMobile = document.querySelector('.header-cart-notify__moible')
+var mobileOverlayCart = document.querySelector('.mobile-cart-overlay')
+const closeCart =  document.querySelector('.close-mobile-cart')
+
+cartMobileBtn.addEventListener('click', () => {
+    cartMobile.classList.toggle('show')
+    mobileOverlayCart.classList.toggle('show')
+} );
+closeCart.addEventListener('click', () => {
+    cartMobile.classList.remove('show')
+    mobileOverlayCart.classList.toggle('show')
+});
+mobileOverlayCart.addEventListener('click', () =>{
+    cartMobile.classList.toggle('show')
+    mobileOverlayCart.classList.toggle('show')
+})
+
        
       
