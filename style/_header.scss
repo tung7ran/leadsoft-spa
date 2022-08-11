@@ -24,7 +24,7 @@
                     line-height: 1.1;
                     text-align: center;
                     display: block;
-                    font-family: "UTM-Avo";
+                    font-family: UTM-Avo;
                 }
             }
         }
@@ -58,7 +58,7 @@
             border: 2px solid #FED119;
             border-radius: 5rem;
             font-size: 2.4rem;
-            font-family: "UTM-Avo";
+            font-family: UTM-Avo;
             padding: 0 4rem;
             background-color: $white;
         }
@@ -111,7 +111,7 @@
                 font-size: 2.4rem;
                 padding: 0 4rem;
                 line-height: 6.65rem;
-                font-family: "UTM-AvoBold";
+                font-family: UTM-AvoBold;
             }
         }
     }
@@ -144,7 +144,7 @@
                 &-link{
                     color: $color-text;
                     font-size: 1.8rem;
-                    font-family: "UTM-Avo";
+                    font-family: UTM-Avo;
                 }
                 &-link:hover{
                     text-decoration: none;
