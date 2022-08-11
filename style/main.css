@@ -5568,6 +5568,11 @@ a:hover {
   color: #a1710f;
 }
 
+@media only screen and (max-width: 480px) {
+  .cart-product .none {
+    display: none;
+  }
+}
 .top-banner .top-banner-1 {
   background-image: url("../images/banner1.png");
   background-size: cover;

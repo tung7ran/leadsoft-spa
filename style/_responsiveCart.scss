@@ -1,0 +1,12 @@
+@include responsive_mobile{
+    .cart{
+        &-product{
+            &-header{
+            }
+            .none{
+                display: none;
+            }
+        }
+        
+    }
+}
