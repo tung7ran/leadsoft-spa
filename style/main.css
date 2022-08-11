@@ -5569,10 +5569,100 @@ a:hover {
 }
 
 @media only screen and (max-width: 480px) {
-  .cart-product-header {
+  .cart {
     display: flex;
   }
-  .cart-product .none {
+  .cart-product {
+    width: 50%;
+  }
+  .cart-product .title-left {
+    margin-left: -8rem;
+  }
+  .cart-product .title-right {
+    margin-left: 8rem;
+  }
+  .cart-product-store {
+    margin-top: 22rem;
+    width: 20rem;
+    padding: 1.4rem 0rem;
+    margin-left: 2.2rem;
+  }
+  .cart-product-store h3 {
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .cart-product-store__one {
+    margin-top: 28rem;
+    width: 20rem;
+    padding: 1.4rem 1rem;
+    margin-left: -190%;
+    transform: translateX(0%);
+    position: inherit;
+    margin-bottom: 4rem;
+  }
+  .cart-product-store__one h3 {
+    padding-left: 0rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .cart-product-header__img {
+    height: 13rem;
+    margin: 3rem -2rem;
+  }
+  .cart-product-header__option {
+    margin-top: 7rem;
+    font-weight: 600;
+    justify-content: center;
+    margin-left: 50%;
+    transform: translateX(0%);
+  }
+  .cart-product-header__option--amount {
+    padding: 0.6rem 1rem;
+  }
+  .cart-product-header__text {
+    width: 13rem;
+    position: absolute;
+    margin-top: -15rem;
+    margin-left: 11rem;
+    font-size: 1.4rem;
+    text-align: start;
+  }
+  .cart-product-header__prices {
+    width: 15rem;
+    position: absolute;
+    margin-top: -10rem;
+    margin-left: 11rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .cart-product-border__one {
+    margin-top: 5rem;
+  }
+  .cart-product-border__one::after {
+    width: 37rem;
+  }
+  .cart-product-border__two {
+    margin-top: 3rem;
+  }
+  .cart-product-border__two::after {
+    width: 37rem;
+  }
+  .cart-product-border__three {
+    margin-top: 3rem;
+    font-weight: 600;
+  }
+  .cart-product-border__three::after {
+    width: 37rem;
+  }
+  .cart-product-border__pay a h2 {
+    font-weight: 600;
+  }
+  .cart-product-border {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .none {
     display: none;
   }
 }

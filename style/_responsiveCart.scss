@@ -1,15 +1,98 @@
 @include responsive_mobile{
     .cart{
+        display: flex;
         &-product{
-            &-header{
-                display: flex;
+            width: 50%;
+            .title-left{
+                margin-left: -8rem;
             }
-            .none{
-                display: none;
+            .title-right{
+                margin-left: 8rem;
             }
-            .amount{
-                
+            &-store{
+                margin-top: 22rem;
+                width: 20rem;
+                padding: 1.4rem 0rem;
+                margin-left: 2.2rem;
+                h3{
+                    padding-left: 1rem;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                }
+            }
+            &-store__one{
+                margin-top: 28rem;
+                width: 20rem;
+                padding: 1.4rem 1rem;
+                margin-left: -190%;
+                transform: translateX(0%);
+                position: inherit;
+                margin-bottom: 4rem;
+                h3{
+                    padding-left: 0rem;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                }
+            }
+            &-header__img {
+                height: 13rem;
+                margin: 3rem -2rem;
+            }
+            &-header__option{
+                margin-top: 7rem;
+                font-weight: 600;
+                justify-content: center;
+                margin-left: 50%;
+                transform: translateX(0%);
+                &--amount{            
+                    padding: 0.6rem 1rem;
+                }
+            }
+            &-header__text{
+                width: 13rem;
+                position: absolute;
+                margin-top: -15rem;
+                margin-left: 11rem;
+                font-size: 1.4rem;
+                text-align: start;
+            }
+            &-header__prices{
+                width: 15rem;
+                position: absolute;
+                margin-top: -10rem;
+                margin-left: 11rem;
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+            &-border__one{
+                margin-top: 5rem;
+            }
+            &-border__one::after{
+                width: 37rem;
+            }
+            &-border__two{
+                margin-top: 3rem;
+            }
+            &-border__two::after{
+                width: 37rem;
+            }
+            &-border__three{
+                margin-top: 3rem;
+                font-weight: 600;
+            }
+            &-border__three::after{
+                width: 37rem;
+            }
+            &-border__pay a h2{
+                font-weight: 600;
+            }
+            &-border{
+                width: 90%;
+                margin: 0 auto;
             }
         }
+    }
+    .none{
+        display: none;
     }
 }
