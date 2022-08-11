@@ -2,9 +2,9 @@
     margin-top: 7rem;
 
     &__heading {
-        font-size: 2.8rem;
+        font-size: 3.5rem;
+        font-family: K2D-ExtraBold;
         text-align: center;
-        font-weight: bold;
         text-transform: uppercase;
         background-color: $background-home;
         color: $more-color;
@@ -46,13 +46,14 @@
                         &--text {
                             &--title {
                                 font-size: 1.6rem;
-                                font-weight: bold;
+                                font-family: K2D-Bold;
                                 text-transform: uppercase;
                                 letter-spacing: 0.11rem;
                             }
 
                             &--desc {
                                 font-size: 1.4rem;
+                                font-family: K2D-ExtraLigh;
                                 text-align: justify;
                             }
                         }
@@ -77,23 +78,16 @@
             border: 0.2rem solid $orange;
             border-radius: 1.2rem;
             margin-right: 0.6rem;
-
             &--link {
                 padding: 1.8rem 2.3rem;
-                font-size: 2.8rem;
-                margin-top: 0.4rem;
-                margin-right: 0.1rem;
+                font-size: 3.4rem;
+                font-family: Gilroy-Heavy;
                 color: #fff;
                 display: block;
-                font-weight: bold;
             }
         }
-
-        &__prev {}
-
         &__next {
             a {
-
                 img {
                     width: 1.8rem;
                     height: 1.7rem;

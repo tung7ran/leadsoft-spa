@@ -19,8 +19,8 @@
         &__heading {
             text-transform: uppercase;
             color: $color-title;
-            font-weight: bold;
             font-size: 4rem;
+            font-family: K2D-ExtraBold;
             line-height: 1.1;
             max-width: 90%;
         }
@@ -37,18 +37,19 @@
 
                     &--title {
                         color: $color-title;
-                        font-size: 2rem;
-                        font-weight: bold;
+                        font-size: 2.4rem;
+                        font-family: K2D-Bold;
                         padding-bottom: 2.2rem;
                     }
 
                     &--desc {
                         font-size: 1.6rem;
+                        font-family: K2D-ExtraLight;
                         padding-bottom: 2.4rem;
                     }
                     &--description{
                         font-size: 1.6rem;
-
+                        font-family: K2D-ExtraLight;
                     }
 
 
@@ -94,7 +95,7 @@
             &--title {
                 font-size: 1.6rem;
                 text-transform: uppercase;
-                font-weight: bold;
+                font-family: Gilroy-XBold;
                 text-align: center;
                 color: $color-title;
                 padding-bottom: 1.8rem;
@@ -124,7 +125,7 @@
                             right: 0;
                             text-transform: uppercase;
                             font-size: 1.1rem;
-                            font-weight: bold;
+                            font-family: Gilroy-Bold;
                             max-width: 60%;
                         }
                     }
@@ -147,8 +148,8 @@
                 text-align: center;
                 text-transform: uppercase;
                 color: $color-title;
-                font-weight: bold;
-                font-size: 2.5rem;
+                font-family: Gilroy-XBold;
+                font-size: 3.5rem;
             }
         }
 
@@ -182,12 +183,10 @@
                     }
 
                     &-title {
-                        // text-align: center;
                         font-size: 1.6rem;
+                        font-family: Gilroy-Heavy;
                         padding: 3.5rem 0 1.5rem 0;
                         text-transform: uppercase;
-                        font-weight: bold;
-
                     }
 
                     &-desc {
