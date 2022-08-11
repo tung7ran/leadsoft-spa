@@ -32,7 +32,7 @@
                 }
                 &-heading{
                     text-transform: uppercase;
-                    font-weight: 600;
+                    font-family: UTM-AvoBold;
                     font-size: 2.8rem;
                     margin-bottom: 4.6rem;
                 }
@@ -62,6 +62,9 @@
                             width: 100%;
                             background-color: transparent;
                             text-transform: uppercase;
+                            font-family: Gilroy-Bold;
+                            font-size: 2.6rem;
+                            padding: 0;
                         }
                     }
                     &__advise:after{
@@ -137,7 +140,7 @@
                 }
                 &__heading{
                     text-transform: uppercase;
-                    font-weight: 600;
+                    font-family: Gilroy-Bold;
                     font-size: 2.8rem;
                     margin-bottom: 11.6rem;
                     padding: 0px 38%;
@@ -172,7 +175,7 @@
                             margin-top: 2.5rem;
                             line-height: 1.25;
                             span {
-                                font-weight: 600;
+                                font-family: Gilroy-XBold;
                             }
                         }
                         &-item:first-child {
@@ -233,61 +236,9 @@
         }
     }
     &-team { 
-        height: 70.4rem;
-        position: relative;
-        > img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        &-image {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 105rem;
-            &__top {
-                margin-top: 1.6rem;
-                img {
-                    width: 29.6rem;
-                    height: 14.1rem;
-                }
-            }
-            &__between {
-                margin-top: 1rem;
-                img {
-                    width: 87rem;
-                    height: 14.7rem;
-                }
-            }
-            &__bottom {
-                width: 78rem;
-                margin-left: 6rem;
-                &--list {
-                    justify-content: space-between;
-                    &-item {
-                        margin-top: 7.5rem;
-                        img {
-                            width: 24rem;
-                            height: 29.4rem;
-                        }
-                    }
-                    &-item1 {
-                        margin-top: 1rem;
-                        img {
-                            width: 28rem;
-                            height: 33.8rem;
-                        }
-                    }
-                    &-item2 {
-                        margin-top: 1rem;
-                        img {
-                            width: 24rem;
-                            height: 30.6rem;
-                        }
-                    }
-                }
-            }
-        }
+        background-image: url('../images/banner3.png');
+        @include backgroundImage();
+        height: 49rem;
     }
     &-papers { 
         position: relative;
@@ -315,7 +266,7 @@
             }
             &__heading {
                 font-size: 2.8rem;
-                font-weight: 700;
+                font-family: UTM-AvoBold;
                 margin-top: 1rem;
                 padding: 0 40%;
                 line-height: 1.2;
