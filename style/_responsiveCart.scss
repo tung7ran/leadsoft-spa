@@ -2,11 +2,14 @@
     .cart{
         &-product{
             &-header{
+                display: flex;
             }
             .none{
                 display: none;
             }
+            .amount{
+                
+            }
         }
-        
     }
 }

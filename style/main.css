@@ -5569,8 +5569,82 @@ a:hover {
 }
 
 @media only screen and (max-width: 480px) {
+  .cart-product-header {
+    display: flex;
+  }
   .cart-product .none {
     display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .end-product-title__text {
+    font-weight: 600;
+    padding: 0 6rem;
+    margin-top: 4rem;
+  }
+  .end-product-store {
+    padding: 0rem 0rem;
+    margin-left: 4%;
+    transform: translateX(0%);
+    margin-top: 5rem;
+  }
+  .end-product-store__comeback {
+    width: 20rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+  .end-product-store__edit {
+    width: 20rem;
+  }
+  .end-product-store__edit h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .pay {
+    display: block;
+  }
+  .order-title {
+    margin-left: 3% !important;
+    font-weight: 600;
+  }
+  .pay-product-first {
+    display: block !important;
+    text-align: center;
+  }
+  .pay-product-first__surname--text {
+    width: 95% !important;
+  }
+  .pay-product-first__name--text {
+    margin-top: 2rem;
+    width: 95% !important;
+  }
+  .pay-products {
+    border: 1px solid #fae487 !important;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+  .pay-products-header {
+    font-weight: 600;
+  }
+  .pay-products-text {
+    font-size: 1.4rem !important;
+  }
+  .pay-products-sub {
+    font-size: 1.4rem !important;
+  }
+  .pay-products .pay-products-header__three--text {
+    font-weight: 600;
+  }
+  .pay-products .pay-products-header__three--price h3 {
+    font-weight: 600;
+  }
+  .pay-products .pay-products-header__order--text h2 {
+    font-weight: 600;
+    margin-left: 21%;
+    transform: translateX(0%);
   }
 }
 .top-banner .top-banner-1 {
