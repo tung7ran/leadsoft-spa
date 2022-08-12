@@ -146,40 +146,42 @@
                     padding: 0px 38%;
                     line-height: 1.2;
                 }
-                &__right{
-                    &--one{
-                        width: 53.7rem;
-                        height: 50.4rem;
-                    }
-                    &--two {
-                        position: absolute;
-                        left: -4.8rem;
-                        bottom: 12rem;
-                        width: 33.6rem;
-                        height: 30.4rem;
-                    }
-                    &--three {
-                        position: absolute;
-                        right: 4.8rem;
-                        bottom: 2rem;
-                        width: 24.4rem;
-                        height: 23.2rem;
-                    }
-                }
-                &__left{
-                    text-align: justify;
-                    line-height: 1.4em;
-                    &--list {
-                        &-item {
-                            font-size: 1.8rem;
-                            margin-top: 2.5rem;
-                            line-height: 1.25;
-                            span {
-                                font-family: Gilroy-XBold;
-                            }
+                .main-pc {
+                    .main-inftras-content__right{
+                        &--one{
+                            width: 53.7rem;
+                            height: 50.4rem;
                         }
-                        &-item:first-child {
-                            margin-top: 0;
+                        &--two {
+                            position: absolute;
+                            left: -4.8rem;
+                            bottom: 12rem;
+                            width: 33.6rem;
+                            height: 30.4rem;
+                        }
+                        &--three {
+                            position: absolute;
+                            right: 4.8rem;
+                            bottom: 5rem;
+                            width: 24.4rem;
+                            height: 23.2rem;
+                        }
+                    }
+                    .main-inftras-content__left{
+                        text-align: justify;
+                        line-height: 1.4em;
+                        &--list {
+                            &-item {
+                                font-size: 1.8rem;
+                                margin-top: 2.5rem;
+                                line-height: 1.25;
+                                span {
+                                    font-family: Gilroy-XBold;
+                                }
+                            }
+                            &-item:first-child {
+                                margin-top: 0;
+                            }
                         }
                     }
                 }
@@ -189,56 +191,67 @@
     &-device { 
         height: 64.2rem;
         margin-top: 122.8rem;
-        &-left {
-            &__list {
-                position: relative;
-                &--item {
-                    position: absolute;
-                    top: 10rem;
-                    img {
-                        height: 37.6rem;
+        .device-pc {
+            height:100%;
+            .main-device-left {
+                &__list {
+                    position: relative;
+                    width: 100%;
+                    height: 101%;
+                    &--item {
+                        position: absolute;
+                        top: 10rem;
+                        img {
+                            height: 37.6rem;
+                        }
                     }
-                }
-                &--item1{
-                    position: absolute;
-                    top: 6rem;
-                    left: 16.5rem;
-                    img{
-                        height: 25.8rem
+                    &--item1{
+                        position: absolute;
+                        top: 6rem;
+                        left: 16.5rem;
+                        img{
+                            height: 25.8rem
+                        }
                     }
-                }
-                &--item2{
-                    position: absolute;
-                    top: 34.9rem;
-                    left: 4rem;
-                    img {
-                        width: 26.6rem;
-                        height: 22.8rem;
+                    &--item2{
+                        position: absolute;
+                        top: 34.9rem;
+                        left: 4rem;
+                        img {
+                            width: 26.6rem;
+                            height: 22.8rem;
+                        }
                     }
-                }
-                &--item3{
-                    position: absolute;
-                    top: 20.2rem;
-                    left: 26.8rem;
-                    img {
-                        width: 23.1rem;
-                        height: 40.3rem;
+                    &--item3{
+                        position: absolute;
+                        top: 20.2rem;
+                        left: 26.8rem;
+                        img {
+                            width: 23.1rem;
+                            height: 40.3rem;
+                        }
                     }
                 }
             }
-        }
-        &-right {
-            position: relative;
-            top: 18rem;
-            img {
+            .main-device-right {
+                position: relative;
+                top: 18rem;
                 width: 100%;
+                height: 101%;
+                img {
+                    width: 100%;
+                }
             }
         }
     }
     &-team { 
-        background-image: url('../images/banner3.png');
-        @include backgroundImage();
-        height: 68rem;
+        height: 48.9rem;
+        width: 100%;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
     }
     &-papers { 
         position: relative;
