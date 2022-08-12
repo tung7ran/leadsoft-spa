@@ -1,6 +1,6 @@
 
 .form--pop{
-    display: none;
+    // display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -37,7 +37,7 @@
         &--title{
             text-align: center;
             font-size: 2rem;
-            font-weight: 600;
+            font-family: Gilroy-Bold;
             margin-top: 4rem;
             margin-bottom: 2rem;
         }
@@ -62,18 +62,21 @@
                 color: $color-title;
                 letter-spacing: 0.01rem;
                 p{
-                    padding: 0 9rem;
+                    padding: 0 8rem;
+                    font-family: UTM-Avo;
                 }
             }
             &-line{
-                text-align: center;
-                padding: 0 3.6rem;
-                img{
-                    width: 100%;
-                }
+                border: 0.1rem solid #a1710f;
+                margin-top: 1.8rem;
+                margin-bottom: 0.6rem;
+                width: 80%;
+                margin-left: 50%;
+                transform: translateX(-50%);
             }
             &-client{
                 &-text{
+                    font-family: UTM-Avo;
                     font-size: 2rem;
                     padding: 0.5rem 0;
                     color: $color-title;
@@ -81,7 +84,7 @@
                 &-name{
                     font-size: 2.2rem;
                     color: $color-title;
-                    font-weight: 600;
+                    font-family: UTM-AvoBold;
                 }
             }
             &-time{
@@ -93,6 +96,7 @@
                         width: 86%;
                         height: 4.2rem;
                         font-size: 1.6rem;
+                        font-family: UTM-AvoBold;
                         border: 1px solid $more-color;
                         border-radius: 1rem;
                         outline: none;
@@ -106,8 +110,8 @@
                 p{
                     padding: 0rem 8rem;
                     font-size: 1.2rem;
+                    font-family: UTM-AvoItalic;
                     color: $color-title;
-                    font-style: italic
                 }
             }
         }
@@ -204,7 +208,7 @@
                 margin-top: 1rem;
                 margin-bottom: 1.4rem;
                 text-transform: uppercase;
-                font-weight: 600;
+                font-family: UTM-AvoBold;
                 font-size: 2.5rem;
             }
         }
@@ -219,12 +223,12 @@
                 &__item {
                     &--link {
                         font-size: 1.6rem;
+                        font-family: Gilroy-Bold;
                         text-transform: uppercase;
                         padding: 1rem 1rem;
-                        color: $black;
+                        color: $black !important;
                         width: 11rem;
                         border-radius: 3rem;
-                        font-weight: 600;
                         margin: 0 0rem;
                     }
                     .link-border {
@@ -280,8 +284,8 @@
                         &__name {
                             text-align: left;
                             font-size: 1.6rem;
+                            font-family: Gilroy-XBold;
                             margin: 0;
-                            font-weight: 600;
                         }
         
                         &__info {
@@ -296,21 +300,22 @@
                             width: 126%;
                             margin-left: -1rem;
                             &--item{
-                                border: 1px solid $more-color;
+                                border: 1px solid #a1710f;
                                 border-radius: 2rem;
                                 display: flex;
-                                width: 12rem;
+                                align-items: center;
+                                width: 10rem;
                                 height: 3rem;
-                                background-color: $white;
+                                background-color: #fff;
                                 img{
                                     width: 24%;
                                     margin-left: 1rem;
                                 }
                                 p{
+                                    font-family: Gilroy-Medium-Italic;
                                     font-size: 1.6rem;
                                     line-height: 2em;
-                                    margin-left: 1.3rem;
-                                    font-style: italic;
+                                    margin-left: 0.3rem;
                                     color: $more-color;
                                 }
                             }
@@ -321,8 +326,8 @@
                             color: $more-color;
                             border-radius: 1.6rem;
                             padding: 0.2rem 1rem;
-                            font-style: italic;
-                            font-size: 1.4rem;
+                            font-family: Gilroy-Medium-Italic;
+                            font-size: 1.6rem;
                         }
                     }
                 }
@@ -393,6 +398,7 @@
                         width: 100%;
                         height: 4.2rem;
                         font-size: 1.8rem;
+                        font-family: UTM-Avo;
                         border: 1px solid $more-color;
                         border-radius: 1rem;
                         outline: none;
@@ -401,6 +407,7 @@
                     .form-textarea{
                         width: 100%;
                         font-size: 1.8rem;
+                        font-family: UTM-Avo;
                         border: 1px solid $more-color;
                         border-radius: 1rem;
                         outline: none;
@@ -424,20 +431,19 @@
             }
             &--text{
                 font-size: 1.8rem;
-                font-weight: bold;
+                font-family: Gilroy-Bold-Italic;
                 text-align: center;
-              padding: 2rem 12rem;
+                padding: 2rem 12rem;
                 .phone-number{
                     color: $more-color;
                 }
             }
         }
     }
-  }
-
+}
 
   .form--appointment{
-    // display: none;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -487,6 +493,7 @@
                         width: 100%;
                         height: 4.2rem;
                         font-size: 1.8rem;
+                        font-family: UTM-Avo;
                         border: 1px solid $more-color;
                         border-radius: 1rem;
                         outline: none;
@@ -494,6 +501,7 @@
                     }
                     .form-textarea{
                         width: 100%;
+                        font-family: UTM-Avo;
                         font-size: 1.8rem;
                         border: 1px solid $more-color;
                         border-radius: 1rem;
@@ -545,4 +553,4 @@
             }
         }
     }
-  }
+}

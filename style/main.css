@@ -1,9 +1,72 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+@font-face {
+  font-family: K2D-Bold;
+  src: url("../fonts/K2D-Bold.ttf");
+}
+@font-face {
+  font-family: K2D-ExtraBold;
+  src: url("../fonts/K2D-ExtraBold.ttf");
+}
+@font-face {
+  font-family: K2D-ExtraLight;
+  src: url("../fonts/K2D-ExtraLight.ttf");
+}
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url("../fonts/SVN-Gilroy Bold.otf");
+}
+@font-face {
+  font-family: Gilroy-XBold;
+  src: url("../fonts/SVN-Gilroy XBold.otf");
+}
+@font-face {
+  font-family: Gilroy-Heavy;
+  src: url("../fonts/SVN-Gilroy Heavy.otf");
+}
+@font-face {
+  font-family: Gilroy-Bold-Italic;
+  src: url("../fonts/SVN-Gilroy Bold Italic.otf");
+}
+@font-face {
+  font-family: Gilroy-Regular;
+  src: url("../fonts/SVN-Gilroy Regular.otf");
+}
+@font-face {
+  font-family: Gilroy-SemiBold;
+  src: url("../fonts/SVN-Gilroy SemiBold.otf");
+}
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url("../fonts/SVN-Gilroy Medium.otf");
+}
+@font-face {
+  font-family: Gilroy-Medium-Italic;
+  src: url("../fonts/SVN-Gilroy Medium Italic.otf");
+}
+@font-face {
+  font-family: Gilroy-Light;
+  src: url("../fonts/SVN-Gilroy Light.otf");
+}
+@font-face {
+  font-family: Gilroy-Black;
+  src: url("../fonts/SVN-Gilroy Black.otf");
+}
+@font-face {
+  font-family: UTM-Avo;
+  src: url("../fonts/utm-avo/UTM Avo.ttf");
+}
+@font-face {
+  font-family: UTM-AvoBold;
+  src: url("../fonts/utm-avo/UTM AvoBold.ttf");
+}
+@font-face {
+  font-family: UTM-AvoItalic;
+  src: url("../fonts/utm-avo/UTM AvoItalic.ttf");
+}
 html,
 body {
   overflow-x: hidden;
   font-size: 1.6rem;
-  font-family: "SVN-Gliroy", sans-serif;
   line-height: 1em;
   color: #000;
   box-sizing: border-box;
@@ -102,7 +165,7 @@ video {
 
 html {
   font-size: 62.5%;
-  font-family: "SVN-Gliroy", sans-serif;
+  font-family: Gilroy-Medium;
   line-height: 2em;
   box-sizing: border-box;
 }
@@ -137,6 +200,7 @@ ul {
 a,
 a:hover {
   text-decoration: none;
+  color: #808080;
 }
 
 .btn {
@@ -150,7 +214,7 @@ a:hover {
 .active {
   background-color: #FFD00F;
   display: inline-block;
-  color: #000 !important;
+  color: #4d4d4d !important;
 }
 
 .tab-category.active,
@@ -174,7 +238,7 @@ a:hover {
 }
 
 .active-white a {
-  color: #A1710F !important;
+  color: #a1710f !important;
 }
 
 .border-1 {
@@ -192,7 +256,7 @@ a:hover {
 .contact-title {
   text-transform: uppercase;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-family: Gilroy-Bold;
   color: #000;
   margin: 0 0 0.5rem 0;
 }
@@ -248,7 +312,6 @@ a:hover {
 }
 
 .title {
-  font-weight: 600;
   font-size: 2rem;
 }
 
@@ -276,13 +339,13 @@ a:hover {
 
 .tips-beautify--category__list--item .active,
 .beautify--program__category--list-item .active {
-  font-weight: bold;
+  color: #000 !important;
 }
 
 .header-main-nav__list .active {
   border-radius: 1.6rem;
   padding: 0.5rem 2.2rem;
-  font-weight: 600;
+  font-family: UTM-AvoBold;
   background-color: #ffd00f;
   color: #000;
 }
@@ -900,6 +963,7 @@ a:hover {
   line-height: 1.1;
   text-align: center;
   display: block;
+  font-family: UTM-Avo;
 }
 
 .header-contact {
@@ -932,6 +996,7 @@ a:hover {
   border: 2px solid #FED119;
   border-radius: 5rem;
   font-size: 2.4rem;
+  font-family: UTM-Avo;
   padding: 0 4rem;
   background-color: #fff;
 }
@@ -951,15 +1016,18 @@ a:hover {
 }
 .header-contact-right__cart {
   position: relative;
-  background-color: #ffd00f;
+}
+.header-contact-right__cart button {
   border-radius: 50%;
+  border: none;
+  background-color: #ffd00f;
+  padding: 2rem;
   width: 6.65rem;
   height: 6.65rem;
 }
-.header-contact-right__cart--image {
+.header-contact-right__cart button img {
   width: 100%;
   height: 100%;
-  padding: 2rem;
 }
 .header-contact-right__cart--mobile {
   display: none;
@@ -972,13 +1040,15 @@ a:hover {
   background-color: #FED119;
   border-radius: 5rem;
   width: 37rem;
+  outline: none;
+  border: none;
 }
 .header-contact-right__tel--number {
   text-transform: uppercase;
   font-size: 2.4rem;
   padding: 0 4rem;
   line-height: 6.65rem;
-  font-weight: 600;
+  font-family: UTM-AvoBold;
 }
 
 .header-logo {
@@ -995,6 +1065,9 @@ a:hover {
   height: 100%;
 }
 
+.header-main {
+  margin-top: 4.55rem;
+}
 .header-main-nav__list {
   justify-content: center;
   align-items: center;
@@ -1006,8 +1079,8 @@ a:hover {
 }
 .header-main-nav__list--item-link {
   color: #808080;
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-family: UTM-Avo;
 }
 .header-main-nav__list--item-link:hover {
   text-decoration: none;
@@ -1016,10 +1089,10 @@ a:hover {
 .header-main-nav__list--item .header-main__subnav {
   position: absolute;
   top: 0;
-  left: 12rem;
+  left: 17rem;
   display: none;
   background-color: #fff;
-  min-width: 40rem;
+  min-width: 46rem;
   z-index: 1;
   padding: 2rem;
   border-radius: 2rem;
@@ -1030,19 +1103,28 @@ a:hover {
 }
 .header-main-nav__list--item .header-main__subnav--menu--item--title {
   font-size: 1.6rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold;
   color: #000;
   display: block;
   padding-bottom: 0.5rem;
 }
 .header-main-nav__list--item .header-main__subnav--menu--item--list--service--link {
   font-size: 1.4rem;
+  font-family: UTM-Avo;
   color: #000;
   display: block;
   padding: 0 0.3rem;
 }
 .header-main-nav__list--item .header-main__subnav--menu--item--list--service--link:hover {
   background-color: #ccc;
+}
+.header-main-nav__list--item .header-main__subnav:after {
+  content: "";
+  position: absolute;
+  top: -0.1rem;
+  left: -2.8rem;
+  height: 5rem;
+  width: 5rem;
 }
 .header-main-nav__list--item:hover .header-main__subnav {
   display: block;
@@ -1205,6 +1287,7 @@ a:hover {
   padding-bottom: 2.5rem;
   margin: 0;
   font-size: 1.75rem;
+  font-family: Gilroy-Bold;
 }
 .footer-bottom .footer-contact {
   padding-bottom: 6rem;
@@ -1238,7 +1321,7 @@ a:hover {
 }
 .contact-address-item__form-contact--address--title {
   font-size: 2rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold;
   line-height: 1.2;
   padding-bottom: 1.6rem;
 }
@@ -1252,7 +1335,7 @@ a:hover {
 .contact-address-item__form-contact--group--title {
   text-transform: uppercase;
   font-size: 2.4rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold;
   padding: 3.4rem 0 2.4rem 0;
 }
 .contact-address-item__form-contact--group--info {
@@ -1292,7 +1375,7 @@ a:hover {
   color: #a1710f;
   background-color: #ffd00f;
   border-radius: 8rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold;
   text-transform: uppercase;
   position: relative;
   border-radius: 2rem;
@@ -1351,7 +1434,7 @@ a:hover {
 }
 .beautify-program-list__item--text--title {
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: Gilroy-Heavy;
   font-size: 1.5rem;
   padding: 3.5rem 0 1.5rem 0;
 }
@@ -1371,9 +1454,9 @@ a:hover {
 .beautify-program-list__item--calendar--date {
   width: 100%;
   height: 100%;
-  font-weight: bold;
   text-align: center;
   font-size: 2.4rem;
+  font-family: Gilroy-XBold;
   display: flex;
   align-items: center;
 }
@@ -1394,12 +1477,10 @@ a:hover {
 }
 .beautify-program .product-pagination-list__item--link {
   padding: 1.8rem 2.3rem;
-  font-size: 2.8rem;
-  margin-top: 0.4rem;
-  margin-right: 0.1rem;
+  font-size: 3.5rem;
+  font-family: Gilroy-Heavy;
   color: #fff;
   display: block;
-  font-weight: bold;
 }
 .beautify-program .product-pagination-list__item--link:hover {
   text-decoration: none;
@@ -1416,119 +1497,32 @@ a:hover {
   color: #808080;
   text-transform: uppercase;
   font-size: 2rem;
+  font-family: Gilroy-XBold;
   border-radius: 1rem;
   padding: 0.7rem 2rem 0.5rem 1rem;
 }
-
-.header-container-heading {
-  position: relative;
-  height: 5.1rem;
-  background-image: linear-gradient(90deg, #F4E390, #FED119);
+.beautify--program__category--list-item:nth-child(2) a, .beautify--program__category--list-item:nth-child(3) a {
+  font-family: Gilroy-Regular;
 }
 
-.header-contact {
-  justify-content: space-between;
-  margin-top: 2.6rem;
-  padding: 0 3.7rem;
-}
 .header-contact .moble-image {
   display: none;
-}
-.header-contact-left {
-  padding-right: 0;
-}
-.header-contact-left form {
-  position: relative;
-  width: 37rem;
-  float: right;
-}
-.header-contact-left__search {
-  width: 100%;
-  height: 6.65rem;
-  outline: none;
-  border: 2px solid #FED119;
-  border-radius: 5rem;
-  font-size: 2.4rem;
-  padding: 0 4rem;
-  background-color: #fff;
-}
-.header-contact-left__button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 10%;
-  border: none;
-  color: #FED119;
-  padding: 0;
-}
-.header-contact-left__button--icon {
-  width: 3.1rem;
-  height: 4.1rem;
-  background-color: #fff;
-}
-.header-contact-right {
-  padding-left: 0;
-}
-.header-contact-right__cart {
-  border-radius: 50%;
-  background-color: #ffd00f;
-  position: relative;
-}
-.header-contact-right__cart button {
-  width: 6.65rem;
-  height: 6.65rem;
-}
-.header-contact-right__cart button img {
-  width: 100%;
-  height: 100%;
-  padding: 2rem;
 }
 .header-contact-right__cart--number {
   content: "";
   position: absolute;
   top: -1rem;
   right: -4px;
-  padding: 1rem;
+  padding: 0.8rem;
   background-color: #a0700f;
   border-radius: 50%;
   color: #fff;
-}
-.header-contact-right__tel {
-  height: 6.65rem;
-  background-color: #FED119;
-  border-radius: 5rem;
-  width: 37rem;
-  outline: none;
-  border: none;
-}
-.header-contact-right__tel--number {
-  text-transform: uppercase;
-  font-size: 2.4rem;
-  padding: 0 4rem;
-  line-height: 6.65rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-family: UTM-AvoBold;
 }
 
-.header-main {
-  margin-top: 4.55rem;
-}
 .header-main-nav__list {
-  justify-content: center;
-  align-items: center;
-  list-style: none;
   margin-bottom: 6.5rem;
-}
-.header-main-nav__list--item {
-  padding: 0 3.6rem;
-}
-.header-main-nav__list--item-link {
-  color: #808080;
-  font-size: 2rem;
-  font-weight: 500;
-}
-.header-main-nav__list--item-link:hover {
-  text-decoration: none;
-  color: #808080;
 }
 
 .main .main-logo__image {
@@ -1546,6 +1540,7 @@ a:hover {
   margin-top: 2.2rem;
   margin-bottom: 5.5rem;
   font-size: 2rem;
+  font-family: UTM-AvoBold;
   text-align: center;
 }
 .main .product-cat__menu {
@@ -1563,6 +1558,7 @@ a:hover {
 }
 .main .product-cat__menu li a {
   color: #808080;
+  font-family: Gilroy-Regular;
 }
 .main .product-cat__menu li:after {
   content: "";
@@ -1600,8 +1596,9 @@ a:hover {
   margin-top: 2.2rem;
 }
 .main .product-details .product-list-item__money--price {
-  color: #ffd00f;
+  color: #a1710f;
   font-size: 1.8rem;
+  font-family: Gilroy-Heavy;
 }
 .main .product-details .product-list-item__money .choose-product {
   border-radius: 50%;
@@ -1633,9 +1630,8 @@ a:hover {
 }
 .main .product-details .product-pagination-list__item--link {
   padding: 1.8rem 2.3rem;
-  font-size: 2.8rem;
-  margin-top: 0.4rem;
-  margin-right: 0.1rem;
+  font-size: 3.8rem;
+  font-family: Gilroy-Heavy;
   color: #fff;
   display: block;
 }
@@ -1651,7 +1647,6 @@ a:hover {
   text-align: center;
   margin-top: 4.4rem;
   margin-bottom: 4rem;
-  margin-left: 3.2rem;
 }
 .main .product-details .product-details-viewcart .product-details-btn {
   font-size: 1.6rem;
@@ -1661,12 +1656,13 @@ a:hover {
   color: #a1710f;
   background-color: #ffd00f;
   border-radius: 8rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold;
   text-transform: uppercase;
   position: relative;
   border-radius: 2rem;
   padding: 1rem 3.2rem;
   font-size: 1.8rem;
+  font-family: Gilroy-Bold;
   text-transform: uppercase;
   color: #000;
 }
@@ -1692,56 +1688,6 @@ a:hover {
   display: none;
 }
 
-.header-container-heading {
-  position: relative;
-  height: 5.1rem;
-  background-image: linear-gradient(90deg, #F4E390, #FED119);
-}
-
-.header-contact {
-  justify-content: space-between;
-  margin-top: 2.6rem;
-  padding: 0 3.7rem;
-}
-.header-contact-left {
-  padding-right: 0;
-  width: 32.15%;
-}
-.header-contact-left form {
-  position: relative;
-  width: 37rem;
-  float: right;
-}
-.header-contact-left__search {
-  width: 100%;
-  height: 6.65rem;
-  outline: none;
-  border: 2px solid #FED119;
-  border-radius: 5rem;
-  font-size: 2.4rem;
-  padding: 0 4rem;
-  background-color: #fff;
-}
-.header-contact-left__button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 10%;
-  border: none;
-  color: #FED119;
-  padding: 0;
-}
-.header-contact-left__button--icon {
-  width: 3.1rem;
-  height: 4.1rem;
-  background-color: #fff;
-}
-.header-contact-right {
-  padding-left: 0;
-}
-.header-contact-right__cart {
-  position: relative;
-}
 .header-contact-right__cart .header-cart--notify {
   position: absolute;
   top: 10.5rem;
@@ -1754,6 +1700,7 @@ a:hover {
   width: 30.4rem;
   height: 24rem;
   text-align: center;
+  box-shadow: 0.9rem 0.9rem 0.9rem rgba(0, 0, 0, 0.1);
 }
 .header-contact-right__cart .header-cart--notify__info--top {
   position: relative;
@@ -1826,66 +1773,12 @@ a:hover {
   background-color: #a1710f;
   color: #fff;
 }
-.header-contact-right__cart button {
-  border-radius: 50%;
-  border: none;
-  background-color: #ffd00f;
-  padding: 2rem;
-  width: 6.65rem !important;
-  height: 6.65rem !important;
-}
-.header-contact-right__cart button img {
-  width: 100%;
-  height: 100%;
-  padding: 0 !important;
-}
-.header-contact-right__tel {
-  height: 6.65rem;
-  background-color: #FED119;
-  border-radius: 5rem;
-  width: 37rem;
-  outline: none;
-  border: none;
-}
-.header-contact-right__tel--number {
-  text-transform: uppercase;
-  font-size: 2rem;
-  padding: 0 4rem;
-  line-height: 6.65rem;
-  font-weight: 600;
-}
-
-.header-logo {
-  margin-top: 2.5rem;
-}
-.header-logo__page {
-  width: 28.4rem;
-  height: 13.5rem;
-  margin-left: 50%;
-  transform: translateX(-50%);
-}
-.header-logo__page img {
-  width: 100%;
-  height: 100%;
-}
 
 .header-main-nav__list {
-  justify-content: center;
-  align-items: center;
-  list-style: none;
   margin-bottom: 3rem;
 }
 .header-main-nav__list--item {
   padding: 0 3.5rem;
-}
-.header-main-nav__list--item-link {
-  color: #808080;
-  font-size: 2rem;
-  font-weight: 500;
-}
-.header-main-nav__list--item-link:hover {
-  text-decoration: none;
-  color: #808080;
 }
 
 .main .product-details {
@@ -1911,7 +1804,7 @@ a:hover {
   content: "";
   position: absolute;
   top: 0;
-  left: 89.5rem;
+  left: 81rem;
   height: 1rem;
   width: 34.5%;
   border-top: 1px solid #ffd00f;
@@ -1922,13 +1815,15 @@ a:hover {
 }
 .main .product-details .product-one .product-briefing-left__image-sub {
   width: 40.8rem;
-  margin-bottom: 3.9rem;
+  position: relative;
+  margin: 0 auto 3.9rem;
 }
 .main .product-details .product-one .product-briefing-left__image-sub--item img {
   width: 100%;
 }
 .main .product-details .product-one .product-briefing-right__title {
   font-size: 2.8rem;
+  font-family: Gilroy-XBold;
   margin-top: 4rem;
   margin-right: 19.2rem;
   margin-bottom: 0;
@@ -1936,15 +1831,16 @@ a:hover {
 }
 .main .product-details .product-one .product-briefing-right__price {
   display: block;
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin-top: 3rem;
   margin-bottom: 2.8rem;
 }
 .main .product-details .product-one .product-briefing-right__capacity {
   font-size: 2rem;
+  font-family: Gilroy-XBold;
 }
-.main .product-details .product-one .product-briefing-right__capacity span {
-  font-weight: 500;
+.main .product-details .product-one .product-briefing-right__capacity > span {
+  font-family: Gilroy-Medium;
 }
 .main .product-details .product-one .product-briefing-right__list {
   list-style: none;
@@ -1955,6 +1851,9 @@ a:hover {
   line-height: 1.2em;
   font-size: 1.6rem;
 }
+.main .product-details .product-one .product-briefing-right__list-item:first-child {
+  font-family: Gilroy-XBold;
+}
 .main .product-details .product-one .product-briefing-right__amount {
   align-items: center;
 }
@@ -1963,15 +1862,18 @@ a:hover {
   align-items: center;
 }
 .main .product-details .product-one .product-briefing-right__amount--number-add, .main .product-details .product-one .product-briefing-right__amount--number-delete {
-  padding: 1.6rem 1.8rem;
+  padding: 1.4rem 1.2rem;
   background-color: #fff;
+  font-size: 2.8rem;
 }
 .main .product-details .product-one .product-briefing-right__amount--number span {
+  font-size: 2.2rem;
   margin: 0 3.4rem;
 }
 .main .product-details .product-one .product-briefing-right__add-cart {
   margin-left: 0.8rem;
   padding: 1.2rem 2.6rem;
+  font-family: Gilroy-Bold;
   text-transform: uppercase;
 }
 .main .product-details .product-one .product-info-btn {
@@ -1982,17 +1884,17 @@ a:hover {
   padding: 0.6rem 3.8rem;
   border-radius: 1.2rem;
   margin-right: 2rem;
+  font-family: Gilroy-Bold;
 }
 .main .product-details .product-one .product-info-btn__evaluate {
   color: #808080;
   border: none;
   background-color: #fff;
-  font-weight: 600;
+  font-family: Gilroy-Bold;
   font-size: 1.6rem;
 }
 .main .product-details .product-one .product-info-detail {
   margin-bottom: 3.5rem;
-  margin-right: 3.4rem;
 }
 .main .product-details .product-one .product-info-detail__list {
   list-style: none;
@@ -2000,9 +1902,12 @@ a:hover {
   line-height: 1.2em;
   font-size: 1.6rem;
 }
+.main .product-details .product-one .product-info-detail__list li:nth-child(6) {
+  margin-right: 4.5rem;
+}
 .main .product-details .product-similar-title {
   font-size: 2.8rem;
-  font-weight: 600;
+  font-family: Gilroy-Bold;
   margin-top: 9.9rem;
   margin-bottom: 4.8rem;
 }
@@ -2072,8 +1977,9 @@ a:hover {
   margin-bottom: 1.8rem;
 }
 .main .product-details .product-similar-list__item--money-price {
-  color: #ffd00f;
+  color: #a1710f;
   font-size: 1.8rem;
+  font-family: Gilroy-Heavy;
 }
 .main .product-details .product-similar-list__item--money .choose-product {
   border-radius: 50%;
@@ -2101,7 +2007,7 @@ a:hover {
 }
 .cart-product-header__title {
   text-align: center;
-  font-weight: 600;
+  font-family: Gilroy-XBold;
   font-size: 2rem;
 }
 .cart-product-header__img {
@@ -2154,6 +2060,7 @@ a:hover {
 .cart-product-store h3 {
   padding-left: 3rem;
   font-size: 1.75rem;
+  font-family: Gilroy-Bold;
 }
 .cart-product-store__one {
   position: absolute;
@@ -2170,6 +2077,7 @@ a:hover {
 .cart-product-store__one h3 {
   padding-left: 2rem;
   font-size: 1.75rem;
+  font-family: Gilroy-Bold;
 }
 .cart-product-border {
   padding: 2rem 0;
@@ -2180,7 +2088,7 @@ a:hover {
   border-bottom-right-radius: 2rem;
 }
 .cart-product-border__title {
-  font-weight: 600;
+  font-family: Gilroy-XBold;
   text-align: center;
   font-size: 2rem;
 }
@@ -2235,9 +2143,11 @@ a:hover {
 }
 .cart-product-border__three-text {
   font-size: 1.6rem;
+  font-family: Gilroy-XBold;
 }
 .cart-product-border__three-price {
   font-size: 1.6rem;
+  font-family: Gilroy-XBold;
 }
 .cart-product-border__three-price h3 {
   padding-left: 6rem;
@@ -2265,6 +2175,7 @@ a:hover {
 }
 .cart-product-border__pay a h2 {
   font-size: 2rem;
+  font-family: Gilroy-XBold;
 }
 .cart-product-border__code {
   font-size: 1.6rem;
@@ -2289,6 +2200,7 @@ a:hover {
 
 .container .order-title {
   font-size: 2.5rem;
+  font-family: Gilroy-XBold;
   margin-left: 10%;
 }
 .container .pay {
@@ -2367,10 +2279,12 @@ a:hover {
   border-top-right-radius: 2rem;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
+  box-shadow: 0.9rem 0.9rem 0.9rem rgba(0, 0, 0, 0.1);
 }
 .container .pay-products-header {
   text-align: center;
   font-size: 2rem;
+  font-family: Gilroy-XBold;
 }
 .container .pay-products-text {
   font-size: 1.6rem;
@@ -2381,6 +2295,9 @@ a:hover {
 .container .pay-products-sub {
   font-size: 1.4rem;
   padding-left: 1.5rem;
+}
+.container .pay-products-sub span {
+  font-family: Gilroy-SemiBold;
 }
 .container .pay-products-header__one {
   position: relative;
@@ -2438,8 +2355,10 @@ a:hover {
 }
 .container .pay-products-header__three--text {
   font-size: 1.6rem;
+  font-family: Gilroy-XBold;
 }
 .container .pay-products-header__three--price {
+  font-family: Gilroy-XBold;
   font-size: 1.6rem;
 }
 .container .pay-products-header__three--price h3 {
@@ -2458,6 +2377,7 @@ a:hover {
   border: 1px solid #c6c6c6;
   background-color: #ffd00f;
   color: #000;
+  font-family: Gilroy-XBold;
   font-size: 2rem;
 }
 
@@ -2507,6 +2427,7 @@ a:hover {
 .end-product-store__comeback h3 {
   padding-left: 1rem;
   font-size: 1.6rem;
+  font-family: Gilroy-Bold;
 }
 .end-product-store__edit {
   width: 22rem;
@@ -2518,12 +2439,12 @@ a:hover {
   font-size: 2rem;
 }
 .end-product-store__edit h3 {
+  font-family: Gilroy-Bold;
   font-size: 1.6rem;
 }
 
 .container-max {
   margin-top: 11rem;
-  margin-bottom: 14rem;
 }
 
 .headers {
@@ -2573,8 +2494,8 @@ a:hover {
 }
 .headers-title-heading {
   line-height: 1.2;
-  font-size: 3rem;
-  font-weight: 900;
+  font-size: 3.5rem;
+  font-family: Gilroy-Black;
   transform: skew(0.5turn, 355deg);
   -webkit-text-stroke: 2px #a1710f;
 }
@@ -2594,11 +2515,12 @@ a:hover {
 }
 .content-title h1 {
   font-size: 3rem;
-  font-weight: 700;
+  font-family: UTM-AvoBold;
 }
 .content-product {
   display: flex;
   margin-top: 5rem;
+  margin-bottom: 14rem;
 }
 .content-product-image {
   width: 25rem;
@@ -2629,7 +2551,7 @@ a:hover {
 .content-product-courses__text {
   position: absolute;
   font-size: 1.3rem;
-  font-weight: 600;
+  font-family: Gilroy-Bold;
   border: 1px solid #ffd00f;
   background-color: #ffd00f;
   border-top-left-radius: 2rem;
@@ -2663,9 +2585,9 @@ a:hover {
   padding: 4rem 0;
 }
 .home h1 {
-  color: #000;
+  color: #a1710f;
   font-size: 4rem;
-  font-weight: 700;
+  font-family: K2D-ExtraBold;
   line-height: 1.2;
   margin: 0;
   padding: 0 7rem;
@@ -2678,6 +2600,7 @@ a:hover {
   border: 1px solid #ffeb97;
   border-radius: 1rem;
   font-size: 1.6rem;
+  font-family: K2D-ExtraLight;
   padding: 1rem 1rem;
 }
 .home .details-content {
@@ -2686,24 +2609,28 @@ a:hover {
 }
 .home .details-content-list {
   background-color: #f2f2f2;
-  padding: 3.5rem 1rem;
+  padding: 2.5rem 1rem 5.2rem;
+  margin-bottom: 1.6rem;
 }
 .home .details-content-list__item--text {
   font-size: 1.6rem;
-  font-weight: 600;
+  font-family: K2D-Bold;
+  margin-top: 1.6rem;
 }
 .home .details-content-list__item--sub {
   font-size: 1.6rem;
+  font-family: K2D-ExtraLight;
 }
 .home .details-reason-title {
   padding: 0 7rem;
   font-size: 2rem;
-  font-weight: 600;
-  color: #000;
+  font-family: K2D-Bold;
+  color: #a1710f;
 }
 .home .details-reason-sub {
   padding: 0 7rem;
   font-size: 1.6rem;
+  font-family: K2D-ExtraLight;
   margin-top: 2rem;
 }
 .home .details-reason-img {
@@ -2717,12 +2644,13 @@ a:hover {
 }
 .home .details-expert-title {
   padding: 0 7rem;
-  font-size: 2rem;
-  font-weight: 500;
-  color: #000;
+  font-size: 3rem;
+  font-family: K2D-Bold;
+  color: #a1710f;
 }
 .home .details-expert-sub {
   padding: 0 7rem;
+  font-family: K2D-ExtraLight;
   font-size: 1.6rem;
   margin-top: 2rem;
 }
@@ -2751,13 +2679,14 @@ a:hover {
 }
 .home .details-courses-title {
   padding: 0 7rem;
-  font-size: 2rem;
-  font-weight: 500;
-  color: #000;
+  font-size: 3rem;
+  font-family: K2D-Bold;
+  color: #a1710f;
   margin-top: 2.6rem;
 }
 .home .details-courses-sub {
   padding: 0 7rem;
+  font-family: K2D-ExtraLight;
   font-size: 1.6rem;
   margin-top: 2rem;
 }
@@ -2777,10 +2706,11 @@ a:hover {
   margin-top: 5rem;
 }
 .home .details-graduate-title {
-  font-size: 2rem;
+  font-size: 3rem;
   padding-top: 5rem;
+  font-family: K2D-Bold;
   text-align: center;
-  color: #000;
+  color: #a1710f;
 }
 .home .details-graduate-outstanding {
   margin-top: 4rem;
@@ -2803,9 +2733,9 @@ a:hover {
   border-radius: 50%;
 }
 .home .details-graduate-outstanding__list--item--text {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-family: K2D-Bold;
   color: #a1710f;
-  font-weight: 600;
   max-width: 16rem;
   text-align: center;
   padding: 2rem 0 1rem 0;
@@ -2823,8 +2753,9 @@ a:hover {
 }
 .home .details-rated-title {
   text-align: center;
-  color: #000;
-  font-size: 2rem;
+  color: #a1710f;
+  font-family: K2D-Bold;
+  font-size: 3rem;
 }
 .home .details-rated-student__list--box {
   display: flex;
@@ -2840,17 +2771,19 @@ a:hover {
   margin-right: 1rem;
 }
 .home .details-rated-student__list--box--item h3 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #000;
+  font-size: 1.8rem;
+  color: #a1710f;
+  font-family: K2D-Bold;
 }
 .home .details-rated-student__list--box--item-faint {
+  font-family: K2D-ExtraLight;
   font-size: 1.3rem;
-  color: #808080;
+  color: #a2a2a2;
 }
 .home .details-rated-student__list--box--item-dark {
   color: #000;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-family: K2D-ExtraLight;
 }
 
 .details-menu {
@@ -2861,7 +2794,8 @@ a:hover {
 }
 .details-menu-list__item--text {
   cursor: pointer;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  font-family: Gilroy-Regular;
   color: #808080;
   border: 1px solid white;
   background-color: white;
@@ -2872,7 +2806,8 @@ a:hover {
 .details-menu-list__item .hover-gold {
   background-color: #ffd00f;
   color: #000;
-  font-weight: 600;
+  font-family: Gilroy-Bold;
+  font-size: 1.8rem;
 }
 
 .details-news {
@@ -2883,8 +2818,8 @@ a:hover {
   text-align: center;
 }
 .details-news-title {
-  color: #000;
-  font-weight: 600;
+  color: #a1710f;
+  font-family: Gilroy-XBold;
   font-size: 1.6rem;
   text-align: center;
   margin-bottom: 2rem;
@@ -2899,11 +2834,11 @@ a:hover {
   height: 8rem;
 }
 .details-news-menu__list p {
+  font-family: Gilroy-Bold;
   font-size: 1.1rem;
   position: absolute;
   width: 15rem;
   margin-left: 9.5rem;
-  font-weight: 600;
   margin-top: 0.5rem;
 }
 .details-news-menu .border-white::after {
@@ -2950,7 +2885,7 @@ a:hover {
 }
 .main-info-image .main-content-heading {
   text-transform: uppercase;
-  font-weight: 600;
+  font-family: UTM-AvoBold;
   font-size: 2.8rem;
   margin-bottom: 4.6rem;
 }
@@ -2979,6 +2914,9 @@ a:hover {
   width: 100%;
   background-color: transparent;
   text-transform: uppercase;
+  font-family: Gilroy-Bold;
+  font-size: 2.6rem;
+  padding: 0;
 }
 .main-info-image .main-content-left__advise:after {
   content: "";
@@ -3050,7 +2988,7 @@ a:hover {
 }
 .main-info .main-inftras-content__heading {
   text-transform: uppercase;
-  font-weight: 600;
+  font-family: Gilroy-Bold;
   font-size: 2.8rem;
   margin-bottom: 11.6rem;
   padding: 0px 38%;
@@ -3084,7 +3022,7 @@ a:hover {
   line-height: 1.25;
 }
 .main-info .main-inftras-content__left--list-item span {
-  font-weight: 600;
+  font-family: Gilroy-XBold;
 }
 .main-info .main-inftras-content__left--list-item:first-child {
   margin-top: 0;
@@ -3137,62 +3075,13 @@ a:hover {
   width: 100%;
 }
 .main-team {
-  height: 70.4rem;
-  position: relative;
-}
-.main-team > img {
-  width: 100%;
-  height: 100%;
+  background-image: url("../images/banner3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.main-team-image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 105rem;
-}
-.main-team-image__top {
-  margin-top: 1.6rem;
-}
-.main-team-image__top img {
-  width: 29.6rem;
-  height: 14.1rem;
-}
-.main-team-image__between {
-  margin-top: 1rem;
-}
-.main-team-image__between img {
-  width: 87rem;
-  height: 14.7rem;
-}
-.main-team-image__bottom {
-  width: 78rem;
-  margin-left: 6rem;
-}
-.main-team-image__bottom--list {
-  justify-content: space-between;
-}
-.main-team-image__bottom--list-item {
-  margin-top: 7.5rem;
-}
-.main-team-image__bottom--list-item img {
-  width: 24rem;
-  height: 29.4rem;
-}
-.main-team-image__bottom--list-item1 {
-  margin-top: 1rem;
-}
-.main-team-image__bottom--list-item1 img {
-  width: 28rem;
-  height: 33.8rem;
-}
-.main-team-image__bottom--list-item2 {
-  margin-top: 1rem;
-}
-.main-team-image__bottom--list-item2 img {
-  width: 24rem;
-  height: 30.6rem;
+  height: 68rem;
 }
 .main-papers {
   position: relative;
@@ -3222,7 +3111,7 @@ a:hover {
 }
 .main-papers-content__heading {
   font-size: 2.8rem;
-  font-weight: 700;
+  font-family: UTM-AvoBold;
   margin-top: 1rem;
   padding: 0 40%;
   line-height: 1.2;
@@ -3259,8 +3148,8 @@ a:hover {
 .tips-beautify--detail__heading {
   text-transform: uppercase;
   color: #a0710e;
-  font-weight: bold;
   font-size: 4rem;
+  font-family: K2D-ExtraBold;
   line-height: 1.1;
   max-width: 90%;
 }
@@ -3276,16 +3165,18 @@ a:hover {
 }
 .tips-beautify--detail .tips-beautify--detailing__item--text--title {
   color: #a0710e;
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2.4rem;
+  font-family: K2D-Bold;
   padding-bottom: 2.2rem;
 }
 .tips-beautify--detail .tips-beautify--detailing__item--text--desc {
   font-size: 1.6rem;
+  font-family: K2D-ExtraLight;
   padding-bottom: 2.4rem;
 }
 .tips-beautify--detail .tips-beautify--detailing__item--text--description {
   font-size: 1.6rem;
+  font-family: K2D-ExtraLight;
 }
 .tips-beautify--detail .tips-beautify--detailing__item--images {
   width: 100%;
@@ -3307,8 +3198,12 @@ a:hover {
   color: #808080;
   text-transform: uppercase;
   font-size: 2rem;
+  font-family: Gilroy-XBold;
   border-radius: 1rem;
   padding: 0.7rem 2rem 0.5rem 1rem;
+}
+.tips-beautify--category__list--item:nth-child(2) a, .tips-beautify--category__list--item:nth-child(3) a, .tips-beautify--category__list--item:nth-child(4) a {
+  font-family: Gilroy-Regular;
 }
 .tips-beautify--category .detail-news {
   background-color: #fff;
@@ -3319,7 +3214,7 @@ a:hover {
 .tips-beautify--category .detail-news--title {
   font-size: 1.6rem;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: Gilroy-XBold;
   text-align: center;
   color: #a0710e;
   padding-bottom: 1.8rem;
@@ -3350,7 +3245,7 @@ a:hover {
   right: 0;
   text-transform: uppercase;
   font-size: 1.1rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold;
   max-width: 60%;
 }
 
@@ -3365,8 +3260,8 @@ a:hover {
   text-align: center;
   text-transform: uppercase;
   color: #a0710e;
-  font-weight: bold;
-  font-size: 2.5rem;
+  font-family: Gilroy-XBold;
+  font-size: 3.5rem;
 }
 .tips-new-item__body--list {
   display: flex;
@@ -3395,12 +3290,13 @@ a:hover {
 }
 .tips-new-item__body--list--item-title {
   font-size: 1.6rem;
+  font-family: Gilroy-Heavy;
   padding: 3.5rem 0 1.5rem 0;
   text-transform: uppercase;
-  font-weight: bold;
 }
 .tips-new-item__body--list--item-desc {
   font-size: 1.6rem;
+  font-family: Gilroy-Medium;
   text-align: justify;
 }
 
@@ -3427,10 +3323,11 @@ a:hover {
 .service--detail__heading {
   text-transform: uppercase;
   color: #a0710e;
-  font-weight: bold;
+  font-family: K2D-ExtraBold;
   font-size: 4rem;
   line-height: 1.1;
   max-width: 90%;
+  margin-bottom: 3rem;
 }
 .service--detail__btn {
   font-size: 1.6rem;
@@ -3440,7 +3337,7 @@ a:hover {
   color: #a1710f;
   background-color: #ffd00f;
   border-radius: 8rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold;
   text-transform: uppercase;
   text-transform: uppercase;
   color: #000;
@@ -3477,11 +3374,12 @@ a:hover {
 .service--detail .service--detailing__item--text--title {
   color: #a0710e;
   font-size: 2rem;
-  font-weight: bold;
+  font-family: K2D-Bold;
   padding-bottom: 2.2rem;
 }
 .service--detail .service--detailing__item--text--desc {
   font-size: 1.6rem;
+  font-family: K2D-ExtraLight;
   padding-bottom: 2.4rem;
 }
 .service--detail .service--detailing__item--reason {
@@ -3492,17 +3390,18 @@ a:hover {
   margin-bottom: 2.6rem;
 }
 .service--detail .service--detailing__item--reason--title {
-  font-weight: bold;
+  font-family: K2D-Bold;
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 .service--detail .service--detailing__item--reason--list--title {
   font-size: 1.8rem;
-  font-weight: bold;
+  font-family: K2D-Bold;
   line-height: 1.4;
 }
 .service--detail .service--detailing__item--reason--list--desc {
   font-size: 1.6rem;
+  font-family: K2D-ExtraLight;
   line-height: 1.4;
 }
 .service--detail .service--detailing__item--reason--list--desc .icon-down {
@@ -3516,10 +3415,12 @@ a:hover {
   font-size: 1.6rem;
 }
 .service--detail .service--detailing__item--subsection--title {
+  font-family: K2D-ExtraLight;
   margin-bottom: 2.55rem;
 }
 .service--detail .service--detailing__item--subsection--desc {
   line-height: 1.4;
+  font-family: K2D-ExtraLight;
 }
 .service--detail .service--detailing__item--images {
   width: 70%;
@@ -3542,7 +3443,7 @@ a:hover {
 }
 .service--detail .service--detailing__item--heading {
   font-size: 3rem;
-  font-weight: bold;
+  font-family: K2D-Bold;
   color: #a1710f;
   line-height: 1.2;
   text-align: center;
@@ -3553,6 +3454,7 @@ a:hover {
   height: 4.35rem;
   width: 100%;
   font-size: 1.6rem;
+  font-family: UTM-Avo;
   border-radius: 1rem;
   outline: none;
   border: 1px solid #a1710f;
@@ -3565,7 +3467,7 @@ a:hover {
   font-size: 2.6rem;
   text-align: center;
   color: #a1710f;
-  font-weight: bold;
+  font-family: K2D-Bold;
   text-transform: uppercase;
   margin: 5.6rem 0;
 }
@@ -3586,7 +3488,7 @@ a:hover {
 .service .detail-news--title {
   font-size: 1.6rem;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: Gilroy-XBold;
   text-align: center;
   color: #a0710e;
   padding-bottom: 1.8rem;
@@ -3617,7 +3519,7 @@ a:hover {
   right: 0;
   text-transform: uppercase;
   font-size: 1.1rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold;
   max-width: 60%;
 }
 
@@ -3676,6 +3578,7 @@ a:hover {
   width: 100%;
   height: 4.2rem;
   font-size: 1.8rem;
+  font-family: UTM-Avo;
   border: 1px solid #a1710f;
   border-radius: 1rem;
   outline: none;
@@ -3700,7 +3603,7 @@ a:hover {
   color: #a1710f;
   background-color: #ffd00f;
   border-radius: 8rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold;
   text-transform: uppercase;
   text-transform: uppercase;
   font-weight: 600;
@@ -3856,7 +3759,7 @@ a:hover {
   color: #a1710f;
   background-color: #ffd00f;
   border-radius: 8rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold;
   text-transform: uppercase;
   text-transform: uppercase;
   font-weight: 600;
@@ -3917,7 +3820,7 @@ a:hover {
 }
 .main-policy-security-content__heading {
   font-size: 2.2rem;
-  font-weight: 600;
+  font-family: K2D-Bold;
   color: #a1710f;
   margin-bottom: 5.3rem;
   text-transform: uppercase;
@@ -3925,14 +3828,16 @@ a:hover {
 .main-policy-security-content__info {
   line-height: 1.3em;
   font-size: 1.6rem;
+  font-family: K2D-ExtraLight;
 }
 .main-policy-security-content__title {
   font-size: 2rem;
   color: #a1710f;
-  font-weight: 600;
+  font-family: K2D-Bold;
 }
 .main-policy-security-content__text {
   line-height: 1.3em;
+  font-family: K2D-ExtraLight;
   font-size: 1.6rem;
   margin: 0;
 }
@@ -3972,7 +3877,7 @@ a:hover {
 }
 .main-policy-content__heading {
   font-size: 2.2rem;
-  font-weight: 600;
+  font-family: K2D-Bold;
   color: #a1710f;
   margin-bottom: 5.3rem;
   text-transform: uppercase;
@@ -3980,21 +3885,24 @@ a:hover {
 .main-policy-content__info {
   line-height: 1.3em;
   font-size: 1.6rem;
+  font-family: K2D-ExtraLight;
 }
 .main-policy-content__title {
   font-size: 2rem;
   color: #a1710f;
-  font-weight: 600;
+  font-family: K2D-Bold;
 }
 .main-policy-content__text {
   font-size: 1.6rem;
   line-height: 1.3em;
   margin: 0;
+  font-family: K2D-ExtraLight;
 }
 
 .main-recruit {
   background-color: #fff6d2;
   padding-top: 12.6rem;
+  padding-bottom: 10rem;
   margin-top: 5.6rem;
 }
 .main-recruit .mb-27 {
@@ -4006,12 +3914,12 @@ a:hover {
 .main-recruit-content {
   width: 1000px;
   margin: 0 auto;
-  padding: 4.9rem 9.4rem 8.8rem 6.3rem;
+  padding: 4.9rem 9.4rem 3.8rem 6.3rem;
   background-color: #fff;
 }
 .main-recruit-content__heading {
   font-size: 2.2rem;
-  font-weight: 600;
+  font-family: K2D-Bold;
   color: #a1710f;
   margin-bottom: 1.8rem;
   margin-right: 33rem;
@@ -4021,6 +3929,7 @@ a:hover {
   line-height: 1.3em;
   margin: 0;
   font-size: 1.6rem;
+  font-family: K2D-ExtraLight;
 }
 .main-recruit-content__image {
   width: 48.7rem;
@@ -4042,18 +3951,20 @@ a:hover {
 .main-recruit-content__skin--title {
   font-size: 2rem;
   color: #a1710f;
-  font-weight: 600;
+  font-family: K2D-Bold;
   margin-top: 1.7rem;
   margin-bottom: 1.2rem;
 }
 .main-recruit-content__skin span {
   display: block;
   margin-bottom: 3rem;
+  font-family: K2D-ExtraLight;
   font-size: 1.6rem;
   color: #808080;
 }
 .main-recruit-content__skin--list {
   line-height: 1.3em;
+  font-family: K2D-ExtraLight;
   font-size: 1.6rem;
 }
 .main-recruit-content__skin--btn {
@@ -4066,6 +3977,7 @@ a:hover {
   background-image: linear-gradient(#f3e59c, #ffd113);
   border-radius: 1.6rem;
   padding: 0.5rem 1rem;
+  font-family: K2D-Bold;
   font-size: 1.8rem;
 }
 .main-recruit-content__skin--btn:hover {
@@ -4089,32 +4001,34 @@ a:hover {
   border-radius: 1.2rem;
   margin-right: 0.6rem;
   padding: 1.8rem 2.3rem;
-  font-size: 2.8rem;
+  font-size: 3.5rem;
+  font-family: Gilroy-Heavy;
   margin-top: 0.4rem;
   color: #fff;
 }
 .main-recruit-content .recruit-pagination-list__item.active {
   background-color: #fff;
-  color: #a1710f;
+  color: #a1710f !important;
 }
 .main-recruit-content .recruit-pagination-next {
   border: none;
   padding: 0;
   outline: none;
   margin-left: 1rem;
+  height: 1.7rem;
 }
 .main-recruit-content .recruit-pagination-next img {
-  width: 1.8rem;
-  height: 1.7rem;
+  width: 100%;
+  height: 100%;
 }
 
 .promotion {
   margin-top: 7rem;
 }
 .promotion__heading {
-  font-size: 2.8rem;
+  font-size: 3.5rem;
+  font-family: K2D-ExtraBold;
   text-align: center;
-  font-weight: bold;
   text-transform: uppercase;
   background-color: #fdf9e8;
   color: #a1710f;
@@ -4149,12 +4063,13 @@ a:hover {
 }
 .promotion--container--body__list--item--content--text--title {
   font-size: 1.6rem;
-  font-weight: bold;
+  font-family: K2D-Bold;
   text-transform: uppercase;
   letter-spacing: 0.11rem;
 }
 .promotion--container--body__list--item--content--text--desc {
   font-size: 1.4rem;
+  font-family: K2D-ExtraLigh;
   text-align: justify;
 }
 
@@ -4175,12 +4090,10 @@ a:hover {
 }
 .paging-list__item--link {
   padding: 1.8rem 2.3rem;
-  font-size: 2.8rem;
-  margin-top: 0.4rem;
-  margin-right: 0.1rem;
+  font-size: 3.4rem;
+  font-family: Gilroy-Heavy;
   color: #fff;
   display: block;
-  font-weight: bold;
 }
 .paging-list__next a img {
   width: 1.8rem;
@@ -4202,10 +4115,12 @@ a:hover {
 }
 .promotion--detail__item--subsection--title {
   font-size: 1.5rem;
+  font-family: K2D-ExtraLight;
   margin-bottom: 2.55rem;
 }
 .promotion--detail__item--subsection--desc {
   font-size: 1.6rem;
+  font-family: K2D-ExtraLight;
 }
 .promotion--detail__item--subsection--desc:nth-child(8) {
   margin-bottom: 2.6rem;
@@ -4223,7 +4138,7 @@ a:hover {
   color: #a1710f;
   background-color: #ffd00f;
   border-radius: 8rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold;
   text-transform: uppercase;
   color: #000;
   padding: 1.2rem 3rem;
@@ -4268,8 +4183,8 @@ a:hover {
   text-align: center;
 }
 .booking-title h2 {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 3.4rem;
+  font-family: Gilroy-Bold;
 }
 .booking-form {
   width: 40%;
@@ -4318,16 +4233,16 @@ a:hover {
   color: #a1710f;
   background-color: #ffd00f;
   border-radius: 8rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold;
   text-transform: uppercase;
   text-transform: uppercase;
-  font-weight: 600;
   color: #fff;
   margin-left: 50%;
   transform: translateX(-50%);
   background-color: #a1710f;
   position: relative;
   margin-top: 3rem;
+  font-family: Gilroy-Bold;
 }
 .booking .send-contact__btn::after {
   content: "";
@@ -4988,7 +4903,6 @@ a:hover {
   }
 }
 .form--pop {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -5029,7 +4943,7 @@ a:hover {
 .form--pop__inner--title {
   text-align: center;
   font-size: 2rem;
-  font-weight: 600;
+  font-family: Gilroy-Bold;
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
@@ -5056,16 +4970,19 @@ a:hover {
   letter-spacing: 0.01rem;
 }
 .form--pop__inner--info-text p {
-  padding: 0 9rem;
+  padding: 0 8rem;
+  font-family: UTM-Avo;
 }
 .form--pop__inner--info-line {
-  text-align: center;
-  padding: 0 3.6rem;
-}
-.form--pop__inner--info-line img {
-  width: 100%;
+  border: 0.1rem solid #a1710f;
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+  width: 80%;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 .form--pop__inner--info-client-text {
+  font-family: UTM-Avo;
   font-size: 2rem;
   padding: 0.5rem 0;
   color: #a0710e;
@@ -5073,7 +4990,7 @@ a:hover {
 .form--pop__inner--info-client-name {
   font-size: 2.2rem;
   color: #a0710e;
-  font-weight: 600;
+  font-family: UTM-AvoBold;
 }
 .form--pop__inner--info-time {
   text-align: center;
@@ -5084,6 +5001,7 @@ a:hover {
   width: 86%;
   height: 4.2rem;
   font-size: 1.6rem;
+  font-family: UTM-AvoBold;
   border: 1px solid #a1710f;
   border-radius: 1rem;
   outline: none;
@@ -5096,8 +5014,8 @@ a:hover {
 .form--pop__inner--info-thank p {
   padding: 0rem 8rem;
   font-size: 1.2rem;
+  font-family: UTM-AvoItalic;
   color: #a0710e;
-  font-style: italic;
 }
 .form--pop__inner .send-contact__btn {
   font-size: 1.6rem;
@@ -5107,7 +5025,7 @@ a:hover {
   color: #a1710f;
   background-color: #ffd00f;
   border-radius: 8rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold;
   text-transform: uppercase;
   text-transform: uppercase;
   font-weight: 600;
@@ -5215,7 +5133,7 @@ a:hover {
   margin-top: 1rem;
   margin-bottom: 1.4rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-family: UTM-AvoBold;
   font-size: 2.5rem;
 }
 .address-pop-mobile__nav--location {
@@ -5227,12 +5145,12 @@ a:hover {
 }
 .address-pop-mobile__nav--location__item--link {
   font-size: 1.6rem;
+  font-family: Gilroy-Bold;
   text-transform: uppercase;
   padding: 1rem 1rem;
-  color: #000;
+  color: #000 !important;
   width: 11rem;
   border-radius: 3rem;
-  font-weight: 600;
   margin: 0 0rem;
 }
 .address-pop-mobile__nav--location__item .link-border {
@@ -5282,8 +5200,8 @@ a:hover {
 .address-pop-mobile .pop-details-list__item .pop-details-right__name {
   text-align: left;
   font-size: 1.6rem;
+  font-family: Gilroy-XBold;
   margin: 0;
-  font-weight: 600;
 }
 .address-pop-mobile .pop-details-list__item .pop-details-right__info {
   text-align: left;
@@ -5301,7 +5219,8 @@ a:hover {
   border: 1px solid #a1710f;
   border-radius: 2rem;
   display: flex;
-  width: 12rem;
+  align-items: center;
+  width: 10rem;
   height: 3rem;
   background-color: #fff;
 }
@@ -5310,10 +5229,10 @@ a:hover {
   margin-left: 1rem;
 }
 .address-pop-mobile .pop-details-list__item .pop-details-right__booking--item p {
+  font-family: Gilroy-Medium-Italic;
   font-size: 1.6rem;
   line-height: 2em;
-  margin-left: 1.3rem;
-  font-style: italic;
+  margin-left: 0.3rem;
   color: #a1710f;
 }
 .address-pop-mobile .pop-details-list__item .pop-details-right .pop-views {
@@ -5321,8 +5240,8 @@ a:hover {
   color: #a1710f;
   border-radius: 1.6rem;
   padding: 0.2rem 1rem;
-  font-style: italic;
-  font-size: 1.4rem;
+  font-family: Gilroy-Medium-Italic;
+  font-size: 1.6rem;
 }
 .address-pop-mobile .pop-details-list__item:last-child {
   margin-bottom: 0;
@@ -5387,6 +5306,7 @@ a:hover {
   width: 100%;
   height: 4.2rem;
   font-size: 1.8rem;
+  font-family: UTM-Avo;
   border: 1px solid #a1710f;
   border-radius: 1rem;
   outline: none;
@@ -5395,6 +5315,7 @@ a:hover {
 .form--advise__inner--advise--form-group .form-textarea {
   width: 100%;
   font-size: 1.8rem;
+  font-family: UTM-Avo;
   border: 1px solid #a1710f;
   border-radius: 1rem;
   outline: none;
@@ -5409,7 +5330,7 @@ a:hover {
   color: #a1710f;
   background-color: #ffd00f;
   border-radius: 8rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold;
   text-transform: uppercase;
   text-transform: uppercase;
   font-weight: 600;
@@ -5435,7 +5356,7 @@ a:hover {
 }
 .form--advise__inner--advise--text {
   font-size: 1.8rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold-Italic;
   text-align: center;
   padding: 2rem 12rem;
 }
@@ -5444,6 +5365,7 @@ a:hover {
 }
 
 .form--appointment {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -5496,6 +5418,7 @@ a:hover {
   width: 100%;
   height: 4.2rem;
   font-size: 1.8rem;
+  font-family: UTM-Avo;
   border: 1px solid #a1710f;
   border-radius: 1rem;
   outline: none;
@@ -5503,6 +5426,7 @@ a:hover {
 }
 .form--appointment__inner--appointment--form-group .form-textarea {
   width: 100%;
+  font-family: UTM-Avo;
   font-size: 1.8rem;
   border: 1px solid #a1710f;
   border-radius: 1rem;
@@ -5534,7 +5458,7 @@ a:hover {
   color: #a1710f;
   background-color: #ffd00f;
   border-radius: 8rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold;
   text-transform: uppercase;
   text-transform: uppercase;
   font-weight: 600;
@@ -5595,9 +5519,9 @@ a:hover {
 }
 .container-item .container-heading .container-item-title {
   font-size: 2.5rem;
+  font-family: UTM-AvoBold;
   line-height: 1;
   text-transform: uppercase;
-  font-weight: bold;
   padding-top: 1.5rem;
 }
 .container-item .container-body .container-service {
@@ -5679,8 +5603,8 @@ a:hover {
 }
 .system-introduction .introduction-info .introduction-info-title {
   font-size: 3.4rem;
+  font-family: UTM-AvoBold;
   text-transform: uppercase;
-  font-weight: bold;
   line-height: 4.9rem;
 }
 .system-introduction .introduction-info .introduction-info-desc {
@@ -5722,12 +5646,13 @@ a:hover {
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 49rem;
+  height: 68rem;
 }
 
 .treatment-result {
   padding: 4.2rem 0 6.2rem 0;
   background-color: #fdf9e8;
+  margin: 0;
 }
 
 .category-nav {
@@ -5742,14 +5667,19 @@ a:hover {
   cursor: pointer;
 }
 .category-nav .category-item .category-item-link {
-  color: #000;
+  color: #808080;
   font-size: 2.4rem;
+  font-family: Gilroy-Bold;
   line-height: 6.6rem;
   text-transform: uppercase;
-  font-weight: 600;
   padding: 0 4rem;
 }
-.category-nav .active {
+.category-nav .category-item .category-item-link.active {
+  color: #000 !important;
+  background-color: transparent;
+}
+.category-nav .category-item.active {
+  color: #000 !important;
   background-color: #ffd00f;
 }
 
@@ -5765,6 +5695,8 @@ a:hover {
 
 .event {
   padding: 3.4rem 0 15.2rem 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .event .container-item .container-heading .container-item-logo {
   margin-left: 50%;
@@ -5798,7 +5730,7 @@ a:hover {
 .event .container-item .container-body .event-list .event-item .event-title {
   max-width: 23.4rem;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: Gilroy-Heavy;
   font-size: 1.6rem;
   padding: 3.5rem 0 1.5rem 0;
 }
@@ -5819,8 +5751,11 @@ a:hover {
   color: #a1710f;
   background-color: #ffd00f;
   border-radius: 8rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold;
   text-transform: uppercase;
+  font-size: 2.4rem;
+  padding: 1.2rem 2.2rem;
+  font-family: Gilroy-Medium-Italic;
 }
 
 .sale {
@@ -5857,9 +5792,9 @@ a:hover {
 }
 .sale .sale-heading-nav .container-item-title {
   font-size: 2.5rem;
+  font-family: UTM-AvoBold;
   line-height: 1;
   text-transform: uppercase;
-  font-weight: bold;
   padding-top: 1.5rem;
 }
 
@@ -5871,6 +5806,8 @@ a:hover {
 .beauty-store {
   padding: 6.1rem 0;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .beauty-store .container-item .container-heading .container-item-logo {
   margin-left: 50%;
@@ -5891,6 +5828,7 @@ a:hover {
 }
 .beauty-store .container-item .container-body .store-category .category-list .category-item .category-item__link {
   font-size: 1.8rem;
+  font-family: Gilroy-Regular;
   text-transform: uppercase;
   color: #808080;
   line-height: 3.65rem;
@@ -5938,13 +5876,15 @@ a:hover {
 }
 .beauty-store .container-item .container-body .product-list .product-slider .product-slider-item .product-item__name {
   font-size: 1.8rem;
+  text-align: left;
   padding: 0 2rem;
 }
 .beauty-store .container-item .container-body .product-list .product-slider .product-slider-item .product-item__price {
   padding: 1.55rem 2rem 2rem 2rem;
   font-size: 2.2rem;
-  font-weight: bold;
+  font-family: Gilroy-Heavy;
   color: #a1710f;
+  text-align: left;
 }
 .beauty-store .container-item .container-body .product-list .product-slider .product-slider-item .product-item__add {
   position: absolute;
@@ -5990,7 +5930,7 @@ a:hover {
   color: #a1710f;
   background-color: #ffd00f;
   border-radius: 8rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold;
   text-transform: uppercase;
   text-transform: uppercase;
   color: #000;
@@ -6053,18 +5993,19 @@ a:hover {
 .advise-contact .advise-contact__body .contact-body .contact-body__left .contact-body__column .contact__title {
   text-transform: uppercase;
   font-size: 2rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold;
   margin-top: 2.8rem;
 }
 .advise-contact .advise-contact__body .contact-body .contact-body__left .contact-body__column .contact__name {
-  font-weight: bold;
+  font-family: Gilroy-Heavy;
   font-size: 4.4rem;
   padding: 1.5rem 0;
   line-height: 3.6rem;
 }
 .advise-contact .advise-contact__body .contact-body .contact-body__left .contact-body__column .contact__desc {
-  font-size: 2rem;
-  max-width: 20rem;
+  font-size: 1.8rem;
+  font-family: Gilroy-Light;
+  max-width: 22rem;
   margin: 0 auto;
 }
 .advise-contact .advise-contact__body .contact-body .contact-body__right {
@@ -6094,7 +6035,8 @@ a:hover {
   border: 3px solid #ffd00f;
   border-radius: 5rem;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-family: Gilroy-Bold;
   padding: 0 2rem;
 }
 .advise-contact .advise-contact__body .contact-body .contact-body__right .contact-body__right-info .btn-exception {
@@ -6105,7 +6047,7 @@ a:hover {
   color: #a1710f;
   background-color: #ffd00f;
   border-radius: 8rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold;
   text-transform: uppercase;
   text-transform: uppercase;
   color: #000;
@@ -6136,18 +6078,15 @@ a:hover {
   margin-top: 1rem;
   margin-bottom: 1.4rem;
   text-transform: uppercase;
-  font-weight: 600;
   font-size: 2rem;
+  font-family: UTM-AvoBold;
 }
 .address-info-caption {
   margin-bottom: 2.6rem;
   font-size: 1.8rem;
-  font-weight: 500;
-  padding: 0 39%;
+  padding: 0 35%;
 }
 .address-image {
-  margin-left: 50%;
-  transform: translateX(-50%);
   width: 6rem;
   height: 5rem;
 }
@@ -6160,11 +6099,15 @@ a:hover {
 }
 .address-nav-location__item--link {
   font-size: 1.6rem;
+  font-family: Gilroy-Bold;
   text-transform: uppercase;
   padding: 1.8rem 2rem;
   color: #808080;
   width: 174px;
   border-radius: 1.6rem;
+}
+.address-nav-location__item--link.active {
+  color: #000 !important;
 }
 .address-nav-location__item--link:hover {
   text-decoration: none;
@@ -6196,6 +6139,7 @@ a:hover {
 .address .location-details-list__item .location-details-right__name {
   text-align: left;
   font-size: 1.8rem;
+  font-family: Gilroy-XBold;
   margin: 0;
 }
 .address .location-details-list__item .location-details-right__info {
@@ -6209,6 +6153,7 @@ a:hover {
   color: #a1710f;
   border-radius: 1.6rem;
   padding: 0.2rem 1.4rem;
+  font-family: Gilroy-Medium-Italic;
 }
 .address .location-details-list__item:last-child {
   margin-bottom: 0;
@@ -6234,6 +6179,7 @@ a:hover {
   border-radius: 2rem;
   padding: 1rem 3rem;
   font-size: 1.8rem;
+  font-family: Gilroy-Bold;
   text-transform: uppercase;
 }
 .address .address-near .address-near-btn::after {

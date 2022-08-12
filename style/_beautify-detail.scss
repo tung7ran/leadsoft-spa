@@ -81,8 +81,16 @@
                     color: #808080;
                     text-transform: uppercase;
                     font-size: 2rem;
+                    font-family: Gilroy-XBold;
                     border-radius: 1rem;
                     padding: 0.7rem 2rem 0.5rem 1rem;
+                }
+            }
+            &--item:nth-child(2),
+            &--item:nth-child(3),
+            &--item:nth-child(4) {
+                a {
+                    font-family: Gilroy-Regular;
                 }
             }
         }
@@ -191,6 +199,7 @@
 
                     &-desc {
                         font-size: 1.6rem;
+                        font-family: Gilroy-Medium;
                         text-align: justify;
                     }
                 }

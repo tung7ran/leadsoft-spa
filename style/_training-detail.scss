@@ -13,9 +13,9 @@
     border-radius: 2rem;
     padding: 4rem 0;
     h1{
-        color: $black;
+        color: $more-color;
         font-size: 4rem;
-        font-weight: 700;
+        font-family: K2D-ExtraBold;
         line-height: 1.2;
         margin: 0;
         padding: 0 7rem;
@@ -27,6 +27,7 @@
             border: 1px solid $border;
             border-radius: 1rem;
             font-size: 1.6rem;
+            font-family: K2D-ExtraLight;
             padding: 1rem 1rem;
         }
 
@@ -36,14 +37,17 @@
         padding: 0 7rem;
         &-list{
             background-color: #f2f2f2;
-            padding: 3.5rem 1rem;
+            padding: 2.5rem 1rem 5.2rem;
+            margin-bottom: 1.6rem;
             &__item{
                 &--text{
-                    font-size: 1.6rem;
-                    font-weight: 600;
+                    font-size: 1.6rem;            
+                    font-family:  K2D-Bold;
+                    margin-top: 1.6rem;
                 }
                 &--sub{
                     font-size: 1.6rem;
+                    font-family: K2D-ExtraLight;
                 }
             }
         }
@@ -52,12 +56,13 @@
         &-title{
             padding: 0 7rem;
             font-size: 2rem;
-            font-weight: 600;
-            color: $black;
+            font-family:  K2D-Bold;
+            color: $more-color;
         }
         &-sub{
             padding: 0 7rem;
             font-size: 1.6rem;
+            font-family: K2D-ExtraLight;
             margin-top: 2rem;
         }
         &-img{
@@ -71,12 +76,13 @@
         margin-top: 3rem;
         &-title{
             padding: 0 7rem;
-            font-size: 2rem;
-            font-weight: 500;
-            color: $black;
+            font-size: 3rem;            
+            font-family:  K2D-Bold;
+            color: $more-color;
         }
         &-sub{
             padding: 0 7rem;
+            font-family: K2D-ExtraLight;
             font-size: 1.6rem;
             margin-top: 2rem;
         }
@@ -105,13 +111,14 @@
         position: relative;
         &-title{
             padding: 0 7rem;
-            font-size: 2rem;
-            font-weight: 500;
-            color: $black;
+            font-size: 3rem;            
+            font-family:  K2D-Bold;
+            color: $more-color;
             margin-top: 2.6rem;
         }
         &-sub{
             padding: 0 7rem;
+            font-family: K2D-ExtraLight;
             font-size: 1.6rem;
             margin-top: 2rem;
         }
@@ -131,11 +138,11 @@
         padding: 0 7rem;
         margin-top: 5rem;
         &-title{
-            font-size: 2rem;
+            font-size: 3rem;
             padding-top: 5rem;
-           
+            font-family:  K2D-Bold;
             text-align:center;
-            color: $black;
+            color: $more-color;
         }
         &-outstanding{
             margin-top: 4rem;
@@ -159,9 +166,9 @@
                     }
                 }
                 &--text{
-                    font-size: 2rem;
+                    font-size: 1.8rem;
+                    font-family:  K2D-Bold;
                     color: $more-color;
-                    font-weight: 600;
                     max-width: 16rem;
                     text-align: center;
                     padding: 2rem 0 1rem 0;
@@ -182,8 +189,9 @@
         margin-top: 4rem;
         &-title{
             text-align:center;
-            color: $black;
-            font-size: 2rem;
+            color: $more-color;
+            font-family:  K2D-Bold;
+            font-size: 3rem;
         }
         &-student{
             &__list{
@@ -201,17 +209,19 @@
                     }
                     &--item{
                         h3{
-                            font-size: 1.6rem;
-                            font-weight: 600;
-                            color: $black;
+                            font-size: 1.8rem;
+                            color: $more-color;
+                            font-family:  K2D-Bold;
                         }
                         &-faint{
+                            font-family: K2D-ExtraLight;
                             font-size: 1.3rem;
-                            color: $faint;
+                            color: $color-textP;
                         }
                         &-dark{
                             color: $black;
-                            font-size: 1.1rem;
+                            font-size: 1.2rem;
+                            font-family: K2D-ExtraLight;
                         }
                     }
                 }
@@ -227,7 +237,8 @@
             margin-bottom: 1rem;
             &--text{
                 cursor: pointer;
-                font-size: 1.4rem;
+                font-size: 1.8rem;
+                font-family: Gilroy-Regular;
                 color: #808080;
                 border: 1px solid white;
                 background-color: white;
@@ -238,7 +249,8 @@
             .hover-gold{
                 background-color: $orange;
                 color: $black;
-                font-weight: 600;
+                font-family: Gilroy-Bold;
+                font-size: 1.8rem;
             }
         }
     }
@@ -250,8 +262,8 @@
     padding: 2rem 0.5rem;
     text-align: center;
     &-title{
-        color:$black;
-        font-weight: 600;
+        color:$more-color;
+        font-family: Gilroy-XBold;
         font-size: 1.6rem;
         text-align: center;
         margin-bottom: 2rem;
@@ -266,11 +278,11 @@
                 height: 8rem;
             }
             p{
+                font-family: Gilroy-Bold;
                 font-size: 1.1rem;
                 position: absolute;
                 width: 15rem;
                 margin-left: 9.5rem;
-                font-weight: 600;
                 margin-top: 0.5rem;
             }
         }
