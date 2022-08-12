@@ -1994,6 +1994,7 @@ a:hover {
 
 .container-max {
   margin-top: 15rem;
+  margin-bottom: 15rem;
 }
 
 .container {
@@ -2115,7 +2116,7 @@ a:hover {
 }
 .cart-product-border__two {
   position: relative;
-  margin-top: 2rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: space-between;
   padding: 0 2rem;
@@ -2135,7 +2136,7 @@ a:hover {
   padding-bottom: 2rem;
 }
 .cart-product-border__three {
-  margin-top: 2rem;
+  margin-top: 3rem;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -5493,6 +5494,9 @@ a:hover {
 }
 
 @media only screen and (max-width: 480px) {
+  .container-max {
+    margin-bottom: 5rem;
+  }
   .cart {
     display: flex;
   }
@@ -5500,35 +5504,13 @@ a:hover {
     width: 50%;
   }
   .cart-product .title-left {
-    margin-left: -8rem;
+    margin-left: -10rem;
   }
   .cart-product .title-right {
+    margin-left: 9rem;
+  }
+  .cart-product-header__title {
     margin-left: 8rem;
-  }
-  .cart-product-store {
-    margin-top: 22rem;
-    width: 20rem;
-    padding: 1.4rem 0rem;
-    margin-left: 2.2rem;
-  }
-  .cart-product-store h3 {
-    padding-left: 1rem;
-    font-size: 1.6rem;
-    font-weight: 600;
-  }
-  .cart-product-store__one {
-    margin-top: 28rem;
-    width: 20rem;
-    padding: 1.4rem 1rem;
-    margin-left: -190%;
-    transform: translateX(0%);
-    position: inherit;
-    margin-bottom: 4rem;
-  }
-  .cart-product-store__one h3 {
-    padding-left: 0rem;
-    font-size: 1.6rem;
-    font-weight: 600;
   }
   .cart-product-header__img {
     height: 13rem;
@@ -5545,16 +5527,14 @@ a:hover {
     padding: 0.6rem 1rem;
   }
   .cart-product-header__text {
-    width: 13rem;
-    position: absolute;
-    margin-top: -15rem;
+    width: 14rem;
+    margin-top: -6rem;
     margin-left: 11rem;
     font-size: 1.4rem;
     text-align: start;
   }
   .cart-product-header__prices {
     width: 15rem;
-    position: absolute;
     margin-top: -10rem;
     margin-left: 11rem;
     font-size: 1.4rem;
@@ -5585,8 +5565,24 @@ a:hover {
   .cart-product-border {
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 12rem;
+    margin-top: 21rem;
   }
   .none {
+    display: none;
+  }
+  .store-mobile {
+    margin: 6rem 0;
+  }
+  .store-mobiles {
+    margin-top: 12rem;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .cart-product-header__prices {
+    display: none;
+  }
+  .nonepc {
     display: none;
   }
 }
