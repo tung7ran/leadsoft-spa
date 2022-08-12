@@ -27,7 +27,7 @@
 @import 'responsiveFooter';
 @import 'resposiveStore';
 @import 'responsiveProduct-details';
-@import 'popup';
+@import 'responsiveAbout';
 
 // .content{
 //     margin-top: 13.5rem;
@@ -690,6 +690,8 @@
         }
     }
     &-image {
+        position: relative;
+        margin: 0 auto;
         width: 6rem;
         height: 5rem;
     }
