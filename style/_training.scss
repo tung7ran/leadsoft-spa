@@ -1,6 +1,6 @@
 .container-max{
     margin-top: 11rem;
-    margin-bottom: 14rem;
+    // margin-bottom: 14rem;
 }
 .headers{
     background-color: $background-group;
@@ -47,8 +47,8 @@
         color: $white;
         &-heading{
             line-height: 1.2;
-            font-size: 3rem;
-            font-weight: 900;
+            font-size: 3.5rem;
+            font-family: Gilroy-Black;
             transform: skew(0.5turn, 355deg);
             -webkit-text-stroke: 2px $more-color;
         }
@@ -68,12 +68,13 @@
         margin-top: 1rem;
         h1{
             font-size: 3rem;
-            font-weight: 700;
+            font-family: UTM-AvoBold;
         }
     }
     &-product{
         display: flex;
         margin-top: 5rem;
+        margin-bottom: 14rem;
         &-image{
             width: 25rem;
             position: relative;
@@ -103,7 +104,7 @@
             &__text{
                 position: absolute;
                 font-size: 1.3rem;
-                font-weight: 600;
+                font-family: Gilroy-Bold;
                 border: 1px solid $orange;
                 background-color: $orange;
                 border-top-left-radius: 2rem;
