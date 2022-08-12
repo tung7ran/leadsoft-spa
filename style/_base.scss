@@ -2,7 +2,6 @@ html,
 body {
   overflow-x: hidden;
   font-size: 1.6rem;
-  font-family: "SVN-Gliroy", sans-serif;
   line-height: 1em;
   color: #000;
   box-sizing: border-box;
@@ -103,8 +102,7 @@ video {
 
 html {
   font-size: 62.5%;
-  font-family: "SVN-Gliroy", sans-serif;
-  // font-size: 1.6rem;
+  font-family: Gilroy-Medium;
   line-height: 2em;
   box-sizing: border-box;
 }
@@ -139,6 +137,7 @@ ul {
 a,
 a:hover {
   text-decoration: none;
+  color: #808080;
 }
 
 .btn {
@@ -152,7 +151,7 @@ a:hover {
 .active {
   background-color: #FFD00F;
   display: inline-block;
-  color: #000 !important;
+  color: #4d4d4d !important;
 }
 
 .tab-category.active,
@@ -176,7 +175,7 @@ a:hover {
 }
 
 .active-white a {
-  color: #A1710F !important;
+  color: #a1710f !important;
 }
 
 .border-1 {
@@ -194,7 +193,7 @@ a:hover {
 .contact-title {
   text-transform: uppercase;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-family: Gilroy-Bold;
   color: #000;
   margin: 0 0 0.5rem 0;
 }
@@ -246,7 +245,6 @@ a:hover {
   border: 1px solid #FFD00F;
 }
 .title {
-  font-weight: 600;
   font-size: 2rem;
 }
 .wh-100{
@@ -268,15 +266,14 @@ a:hover {
 }
 .tips-beautify--category__list--item .active,
 .beautify--program__category--list-item .active{
-  font-weight: bold;
-
+  color: $black !important;
 }
 .header-main-nav__list .active{
-    border-radius: 1.6rem;
-    padding: 0.5rem 2.2rem;
-    font-weight: 600;
-    background-color: #ffd00f;
-    color: $black;
+  border-radius: 1.6rem;
+  padding: 0.5rem 2.2rem;
+  font-family: UTM-AvoBold;
+  background-color: #ffd00f;
+  color: $black;
 }
 .show {
   display: block !important;

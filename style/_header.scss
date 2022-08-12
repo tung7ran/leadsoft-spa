@@ -24,6 +24,7 @@
                     line-height: 1.1;
                     text-align: center;
                     display: block;
+                    font-family: UTM-Avo;
                 }
             }
         }
@@ -57,6 +58,7 @@
             border: 2px solid #FED119;
             border-radius: 5rem;
             font-size: 2.4rem;
+            font-family: UTM-Avo;
             padding: 0 4rem;
             background-color: $white;
         }
@@ -76,18 +78,19 @@
         }
     }
     &-right{
-        // padding-left: 0;
-        // width: 32.15%;
         &__cart{
             position: relative;
-            background-color: $orange;
-            border-radius: 50%;
-            width: 6.65rem;
-            height: 6.65rem;
-            &--image{
-                width: 100%;
-                height: 100%;
-                padding:2rem;
+            button {
+                border-radius: 50%;
+                border: none;
+                background-color: $orange;
+                padding: 2rem;
+                width: 6.65rem;
+                height: 6.65rem;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
             }
             &--mobile {
                 display: none;
@@ -101,12 +104,14 @@
             background-color: #FED119;
             border-radius: 5rem;
             width: 37rem;
+            outline: none;
+            border:none;
             &--number{
                 text-transform: uppercase;
                 font-size: 2.4rem;
                 padding: 0 4rem;
                 line-height: 6.65rem;
-                font-weight: 600;
+                font-family: UTM-AvoBold;
             }
         }
     }
@@ -126,6 +131,7 @@
    
 }
 .header-main{
+    margin-top: 4.55rem;
     &-nav{
         &__list{
             justify-content: center;
@@ -137,8 +143,8 @@
                 padding: 0 3.6rem;
                 &-link{
                     color: $color-text;
-                    font-size: 2rem;
-                    font-weight: 500;
+                    font-size: 1.8rem;
+                    font-family: UTM-Avo;
                 }
                 &-link:hover{
                     text-decoration: none;
@@ -147,10 +153,10 @@
                 .header-main__subnav{
                     position: absolute;
                     top: 0;
-                    left: 12rem;
+                    left: 17rem;
                     display: none;
                     background-color: $white;
-                    min-width: 40rem;
+                    min-width: 46rem;
                     z-index: 1;
                     padding: 2rem;
                     border-radius: 2rem;
@@ -160,7 +166,7 @@
                             padding-bottom: 2rem;
                             &--title{
                                 font-size: 1.6rem;
-                                font-weight: bold;
+                                font-family: Gilroy-Bold;
                                 color: $black;
                                 display: block;
                                 padding-bottom: 0.5rem;
@@ -169,6 +175,7 @@
                                 &--service{
                                     &--link{
                                         font-size: 1.4rem;
+                                        font-family: UTM-Avo;
                                         color: $black;
                                         display: block;
                                         padding: 0 0.3rem;
@@ -183,11 +190,18 @@
                         }
                     }
                 }
+                .header-main__subnav:after{
+                    content: "";
+                    position: absolute;
+                    top: -0.1rem;
+                    left: -2.8rem;
+                    height: 5rem;
+                    width: 5rem;
+                }
             }
              &--item:hover .header-main__subnav{
                 display: block;
-             }   
-           
+             }  
         }
     }
 }

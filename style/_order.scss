@@ -1,9 +1,8 @@
 .container{
     .order-title{
         font-size: 2.5rem;
+        font-family: Gilroy-XBold;
         margin-left: 10%;
-        // transform: translateX(-50%);
-        
     }
     .pay{
         margin-top: 3rem;
@@ -83,9 +82,11 @@
             border-top-right-radius: 2rem;
             border-bottom-left-radius: 2rem;
             border-bottom-right-radius: 2rem;
+            box-shadow: 0.9rem 0.9rem 0.9rem rgb(0 0 0 / 10%);
             &-header{
                 text-align: center;
                 font-size: 2rem;
+                font-family: Gilroy-XBold;
             }
             &-text{
                 font-size: 1.6rem;   
@@ -96,6 +97,9 @@
             &-sub{
                 font-size: 1.4rem;
                 padding-left: 1.5rem;
+                span {
+                    font-family: Gilroy-SemiBold;
+                }
             }
             &-header__one{
                 position: relative;
@@ -154,8 +158,10 @@
                 padding: 0 1.5rem;
                 &--text{
                     font-size: 1.6rem;
+                    font-family: Gilroy-XBold;
                 }
                 &--price{
+                    font-family: Gilroy-XBold;
                     font-size: 1.6rem;
                     h3{
                         padding-left: 13rem;
@@ -175,6 +181,7 @@
                         border: 1px solid #c6c6c6;
                         background-color: $orange;
                         color: $black;
+                        font-family: Gilroy-XBold;
                         font-size: 2rem;
                     }
                 }
