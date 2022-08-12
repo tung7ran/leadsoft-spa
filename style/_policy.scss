@@ -32,7 +32,7 @@
         background-color:$white;
         &__heading {
             font-size: 2.2rem;
-            font-weight: 600;
+            font-family: K2D-Bold;
             color: $more-color;
             margin-bottom: 5.3rem;
             text-transform: uppercase;
@@ -40,16 +40,18 @@
         &__info {
             line-height: 1.3em;
             font-size: 1.6rem;
+            font-family: K2D-ExtraLight;
         }
         &__title {
             font-size: 2rem;
             color: $more-color;
-            font-weight: 600;
+            font-family: K2D-Bold;
         }
         &__text {
             font-size: 1.6rem;
             line-height: 1.3em;
             margin: 0;
+            font-family: K2D-ExtraLight;
         }
 
     }
