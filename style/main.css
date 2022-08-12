@@ -5657,6 +5657,83 @@ a:hover {
     transform: translateX(0%);
   }
 }
+@media only screen and (max-width: 480px) {
+  .main-policy-security {
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+  }
+  .main-policy-security .container, .main-policy-security .container-fluid, .main-policy-security .container-lg, .main-policy-security .container-md, .main-policy-security .container-sm, .main-policy-security .container-xl {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .main-policy-security-content {
+    width: 100%;
+    padding: 0rem 2rem;
+  }
+  .main-policy-security-content__heading {
+    padding: 0 9rem;
+    line-height: 1.4em;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .main-policy-security-content__title {
+    text-align: center;
+  }
+  .main-policy-security-content__text {
+    padding-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .main-policy {
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+  }
+  .main-policy-content {
+    width: 100%;
+    padding: 0rem 2rem;
+  }
+  .main-policy-content__title {
+    text-align: center;
+  }
+  .main-policy-content__heading {
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .main-policy-content__text {
+    padding-bottom: 3rem;
+  }
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .main-recruit {
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+  }
+  .main-recruit-content {
+    width: 100%;
+    padding: 0rem 2rem;
+  }
+  .main-recruit-content__heading {
+    margin-right: 0rem;
+    text-align: center;
+    line-height: 2.8rem;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .main-recruit-content__image {
+    width: 100%;
+    height: 100%;
+  }
+  .main-recruit .recruit-pagination {
+    padding-bottom: 3rem;
+  }
+  .main-recruit .none-mobile {
+    display: none;
+  }
+}
 .top-banner .top-banner-1 {
   background-image: url("../images/banner1.png");
   background-size: cover;
