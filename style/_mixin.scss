@@ -20,37 +20,86 @@ $res_pclow : "only screen and (max-width: 991px)";
   }
 }
 
-@mixin font-face($font-name, $path, $weight: normal, $style: normal) {
+
   @font-face {
     font-family: K2D-Bold;
     src: url('../fonts/K2D-Bold.ttf');
   }
 
   @font-face {
-    font-family: ExtraBold;
-    src: url('../fonts/ExtraBold.ttf');
+    font-family: K2D-ExtraBold;
+    src: url('../fonts/K2D-ExtraBold.ttf');
   }
 
   @font-face {
-    font-family: Gilroy-Black-Italic;
-    src: url('../fonts/SVN-Gilroy Black Italic.otf');
+    font-family: K2D-ExtraLight;
+    src: url('../fonts/K2D-ExtraLight.ttf');
   }
 
   @font-face {
-    font-family: Gilroy-Black;
-    src: url('../fonts/SVN-Gilroy Black.otf');
+    font-family: Gilroy-Bold;
+    src: url('../fonts/SVN-Gilroy\ Bold.otf');
+  }
+
+  @font-face {
+    font-family: Gilroy-XBold;
+    src: url('../fonts/SVN-Gilroy\ XBold.otf');
+  }
+
+  @font-face {
+    font-family: Gilroy-Heavy;
+    src: url('../fonts/SVN-Gilroy\ Heavy.otf');
   }
 
   @font-face {
     font-family: Gilroy-Bold-Italic;
-    src: url('../fonts/SVN-Gilroy Bold Italic.otf');
+    src: url('../fonts/SVN-Gilroy\ Bold\ Italic.otf');
+  }
+
+  @font-face {
+    font-family: Gilroy-Regular;
+    src: url('../fonts/SVN-Gilroy\ Regular.otf');
+  }
+
+  @font-face {
+    font-family: Gilroy-SemiBold;
+    src: url('../fonts/SVN-Gilroy\ SemiBold.otf');
+  }
+
+  @font-face {
+    font-family: Gilroy-Medium;
+    src: url('../fonts/SVN-Gilroy\ Medium.otf');
+  }
+
+  @font-face {
+    font-family: Gilroy-Medium-Italic;
+    src: url('../fonts/SVN-Gilroy\ Medium\ Italic.otf');
+  }
+
+  @font-face {
+    font-family: Gilroy-Light;
+    src: url('../fonts/SVN-Gilroy\ Light.otf');
   }
 
   @font-face {
     font-family: Gilroy-Black;
-    src: url('../fonts/SVN-Gilroy Bold.otf');
+    src: url('../fonts/SVN-Gilroy\ Black.otf');
   }
-}
+
+  @font-face {
+    font-family: UTM-Avo;
+    src: url('../fonts/utm-avo/UTM\ Avo.ttf');
+  }
+
+  @font-face {
+    font-family: UTM-AvoBold;
+    src: url('../fonts/utm-avo/UTM\ AvoBold.ttf');
+  }
+
+  @font-face {
+    font-family: UTM-AvoItalic;
+    src: url('../fonts/utm-avo/UTM\ AvoItalic.ttf');
+  }
 
 @mixin buttonStyle {
   font-size: 1.6rem;
@@ -60,7 +109,7 @@ $res_pclow : "only screen and (max-width: 991px)";
   color: #a1710f;
   background-color: #ffd00f;
   border-radius: 8rem;
-  font-weight: bold;
+  font-family: Gilroy-Bold;
   text-transform: uppercase;
 
 }
