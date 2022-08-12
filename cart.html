@@ -27,7 +27,7 @@
                 </div>
                 <div class="header-contact d-flex">
                     <div class="header-contact-left">
-                        <form role="search" method="get" action="">
+                        <form role="search" method="get" action="" class="dp-none">
                             <input type="search" name="" class="header-contact-left__search"
                                 placeholder="Thông tin tìm kiếm" />
                             <button type="submit" class="header-contact-left__button">
@@ -245,30 +245,29 @@
         <div class="container-max">
             <div class="container">
                 <div class="row cart">
-                    <div class="cart-product col-lg-4">
-                        <div class="col-lg-6">
+                    <div class="cart-product col-lg-4 col-6">
+                        <div class="col-lg-6 mobile-cart">
                             <div class="cart-product-header">
-                                <h2 class="cart-product-header__title">SẢN PHẨM</h2>
+                                <h2 class="cart-product-header__title title-left">SẢN PHẨM</h2>
                                 <img class="cart-product-header__img" src="./images/product/img-6.png" alt="">
-                                <p class="cart-product-header__text"> Tẩy tế bào chết chiết xuất từ hạt trái mơ
-                                </p>
+                                <p class="cart-product-header__prices">1 x 70.000</p>
+                                <p class="cart-product-header__text"> Tẩy tế bào chết chiết xuất từ hạt trái mơ</p>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 none">
                             <div class="cart-product-header">
                                 <h2 class="cart-product-header__title">GIÁ</h2>
                                 <P class="cart-product-header__price">70,000Đ</P>
                             </div>
                         </div>
-
-                        <div class="cart-product-store">
+                        <div class="cart-product-store none">
                             <i class='bx bx-arrow-back'></i>
                             <h3>QUAY LẠI STORE</h3>
                         </div>
                     </div>
 
 
-                    <div class="cart-product col-lg-4">
+                    <div class="cart-product col-lg-4 col-6">
                         <div class="col-lg-6">
                             <div class="cart-product-header">
                                 <h2 class="cart-product-header__title">SỐ LƯỢNG</h2>
@@ -279,20 +278,28 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 none">
                             <div class="cart-product--header">
                                 <h2 class="cart-product-header__title">TỔNG CỘNG</h2>
                                 <P class="cart-product-header__price">70,000Đ</P>
                             </div>
                         </div>
-
-                        <div class="cart-product-store__one">
+                        <div class="cart-product-store__one none">
                             <h3>CẬP NHẬP GIỎ HÀNG</h3>
                         </div>
                     </div>
-
+                    <div class="col-12 none-pc">
+                        <div class="cart-product-store store-mobile col-6">
+                            <i class='bx bx-arrow-back'></i>
+                            <h3>QUAY LẠI STORE</h3>
+                        </div>
+                        <div class="cart-product-store__one store-mobiles col-6">
+                            <h3>CẬP NHẬP GIỎ HÀNG</h3>
+                        </div>
+                    </div>
                     <div class="cart-product-border col-lg-4">
-                        <h2 class="cart-product-border__title">TỔNG SỐ LƯỢNG</h2>
+                        <h2 class="cart-product-border__title none">TỔNG SỐ LƯỢNG</h2>
+                        <h2 class="cart-product-border__title none-pc">GIỎ HÀNG</h2>
 
                         <div class="cart-product-border__one">
                             <div class="cart-product-border__one-text">
@@ -327,8 +334,9 @@
                                 <h2>THANH TOÁN</h2>
                             </a>
                         </div>
-
-                        <input class="cart-product-border__code" type="text" placeholder="Mã ưu đãi">
+                        <form action="">
+                            <input class="cart-product-border__code" type="text" placeholder="Mã ưu đãi">
+                        </form>
                         <div class="cart-product-border__submit">Áp dụng</div>
                     </div>
                 </div>
@@ -431,7 +439,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="footer-bottom dp-none">
                 <div class="footer-width">
                     <h3 class="footer-title">SHYNH BEAUTY SPA - Thẩm mỹ viện hàng đầu việt nam với 50 chi nhánh trên
                         toàn quốc</h3>
@@ -447,6 +455,49 @@
                                 <a class="footer-contact-list__item--link fz16" href="">Mail:info@shynhbeauty.com</a>
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-mobile">
+                <div class="row">
+                    <div class="footer-bottom-mobile__image">
+                        <img src="./images/footer/mobile/BgBoxshow.png" alt="">
+                    </div>
+                    <div class="col-4 d-flex justify-content-between">
+                        <div class="footer-bottom-mobile__branch">
+                            <div class="footer-bottom-mobile__branch--image">
+                                <img src="./images/footer/mobile/imgHome.png" alt="">
+                            </div>
+                            <span class="footer-bottom-mobile__text">Chi nhánh</span>
+                        </div>
+                        <div class="footer-bottom-mobile__booking">
+                            <div class="footer-bottom-mobile__booking--image">
+                                <img src="./images/footer/mobile/imgCanlender.png" alt="">
+                            </div>
+                            <span class="footer-bottom-mobile__text">Đặt lịch</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="footer-bottom-mobile__advise text-center">
+                            <div class="footer-bottom-mobile__advise--image">
+                                <img src="./images/footer/mobile/imgUserheadset.png" alt="">
+                            </div>
+                            <span class="footer-bottom-mobile__text">Tư vấn</span>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-between">
+                        <div class="footer-bottom-mobile__tel">
+                            <div class="footer-bottom-mobile__tel--image">
+                                <img src="./images/footer/mobile/imgCall.png" alt="">
+                            </div>
+                            <span class="footer-bottom-mobile__text">1900 1234</span>
+                        </div>
+                        <div class="footer-bottom-mobile__app">
+                            <div class="footer-bottom-mobile__app--image">
+                                <img src="./images/footer/mobile/imgApp.png" alt="">
+                            </div>
+                            <span class="footer-bottom-mobile__text">Tải app</span>
+                        </div>
                     </div>
                 </div>
             </div>

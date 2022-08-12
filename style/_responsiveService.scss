@@ -1,0 +1,134 @@
+@include responsive_mobile{
+    .service{
+        width: 95%;
+        margin: 0 auto;
+        display: block;
+        margin-top: 3rem;
+        &--detail{
+            padding: 7.5rem 2.6rem 4rem 2.6rem;
+            &__heading{
+                font-size: 3rem;
+                margin: 0 auto;
+                text-align: center;
+            }
+            &__btn{
+                transform: translateX(-50%);
+                margin-left: 50%;
+                margin-top: 4.8rem;
+                margin-bottom: 10rem;
+                padding: 0.5rem 2.2rem;
+            }
+        }
+
+        &--detailing{
+            &__item--text--desc{
+                padding-bottom: 0rem;
+            }
+            &__item--reason{
+                margin-bottom: 4rem;
+            }
+            &__item--text--title{
+                margin-bottom: 3rem;
+            }
+            &__item--reason--list--title{
+                font-size: 1.6rem !important;
+            }
+            .cell{
+                width: 88%;
+            }
+            .food{
+                width: 100% !important;
+            }
+            &__item--heading{
+                font-size: 2rem !important;
+            }
+            .horizontal{
+                display: block;
+            }
+            .submit-booking{
+                padding: 1rem 1rem;
+                font-size: 1.6rem;
+                margin-bottom: 5rem;
+            }
+            &__item--result--list__item{
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    .detail-news{
+        padding: 0 2.6rem;
+        margin-top: 3rem;
+        &--menu{
+            padding: 0 2.6rem !important;
+        }
+        &--title{
+            padding-bottom: 2.8rem !important;
+        }
+    }
+    .detail-news--menu__list--item--laser,
+    .detail-news--menu__list--item--ex2,
+    .detail-news--menu__list--item--depth,
+    .detail-news--menu__list--item--bs4,
+    .detail-news--menu__list--item--secret{
+        width: 36% !important;
+        height: 10rem !important;
+        border-radius: 1rem;
+    }
+    .detail-news--menu__list--item--desc{
+        width: 28rem;
+    }
+    .none{
+        display: none;
+    }
+    .details-pagination {
+        margin-top: 1rem;
+        &-list{
+            list-style: none;
+            justify-content:center;
+            align-items: center;
+            margin: 0;
+            &__item {
+                background-color: #FFD00F;
+                border: 0.1rem solid #fff;
+                border-radius: 2rem;
+                margin-right: 0.6rem;
+                &--link {
+                    padding: 1.2rem 2rem;
+                    font-size: 2.8rem;
+                    margin-top: 0.4rem;
+                    margin-right: 0.1rem;
+                    color: #fff;
+                    display: block;
+                }
+                &--link:hover {
+                    text-decoration: none;
+                }
+            }
+            .active-white{
+                border: 0.1rem solid #FFD00F;
+            }
+        }
+        &-next {
+            img {
+                width: 1.8rem;
+                height: 2rem;
+                margin-left: 1rem;
+                margin-top: 0.6rem;
+            }
+        }
+        &-prev{
+            img{
+                width: 1.8rem;
+                height: 2rem;
+                margin-top: 0.6rem;
+                margin-right: 1.4rem;
+            }
+        }
+    }
+}
+
+@include responsive_pclow{
+    .nonepc{
+        display: none;
+    }
+}

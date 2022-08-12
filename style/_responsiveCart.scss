@@ -1,0 +1,95 @@
+@include responsive_mobile{
+    .container-max{
+        margin-bottom: 5rem;
+    }
+    .cart{
+        display: flex;
+        &-product{
+            width: 50%;
+            .title-left{
+                margin-left: -10rem;
+            }
+            .title-right{
+                margin-left: 9rem;
+            }
+            &-header__title{
+                margin-left: 8rem;
+            }
+            &-header__img {
+                height: 13rem;
+                margin: 3rem -2rem;
+            }
+            &-header__option{
+                margin-top: 7rem;
+                font-weight: 600;
+                justify-content: center;
+                margin-left: 50%;
+                transform: translateX(0%);
+                &--amount{            
+                    padding: 0.6rem 1rem;
+                }
+            }
+            &-header__text{
+                width: 14rem;
+                margin-top: -6rem;
+                margin-left: 11rem;
+                font-size: 1.4rem;
+                text-align: start;
+            }
+            &-header__prices{
+                width: 15rem;
+                margin-top: -10rem;
+                margin-left: 11rem;
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+            &-border__one{
+                margin-top: 5rem;
+            }
+            &-border__one::after{
+                width: 37rem;
+            }
+            &-border__two{
+                margin-top: 3rem;
+            }
+            &-border__two::after{
+                width: 37rem;
+            }
+            &-border__three{
+                margin-top: 3rem;
+                font-weight: 600;
+            }
+            &-border__three::after{
+                width: 37rem;
+            }
+            &-border__pay a h2{
+                font-weight: 600;
+            }
+            &-border{
+                width: 90%;
+                margin: 0 auto;
+                margin-bottom: 12rem;
+                margin-top: 21rem;
+            }
+        }
+    }
+    .none{
+        display: none;
+    }
+    .store-mobile{
+        margin: 6rem 0;
+    }
+    .store-mobiles{
+        margin-top: 12rem;
+    }
+}
+
+@include responsive_pclow{
+    .cart-product-header__prices{
+        display: none;
+    }
+    .none-pc{
+        display: none;
+    }
+}
+
