@@ -4204,10 +4204,9 @@ a:hover {
   margin: 0 auto;
 }
 .booking-forms-image img {
-  width: 7rem;
+  width: 100%;
 }
 .booking-forms-text p {
-  padding: 0 18rem;
   font-size: 2rem;
   line-height: 1.2em;
 }
@@ -4230,7 +4229,6 @@ a:hover {
   margin-bottom: 2rem;
 }
 .booking-forms-thank p {
-  padding: 0 19rem;
   font-size: 1.4rem;
   font-style: italic;
 }
@@ -5667,6 +5665,137 @@ a:hover {
     font-weight: 600;
     margin-left: 21%;
     transform: translateX(0%);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .main-policy-security {
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+  }
+  .main-policy-security .container, .main-policy-security .container-fluid, .main-policy-security .container-lg, .main-policy-security .container-md, .main-policy-security .container-sm, .main-policy-security .container-xl {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .main-policy-security-content {
+    width: 100%;
+    padding: 0rem 2rem;
+  }
+  .main-policy-security-content__heading {
+    padding: 0 9rem;
+    line-height: 1.4em;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .main-policy-security-content__title {
+    text-align: center;
+  }
+  .main-policy-security-content__text {
+    padding-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .main-policy {
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+  }
+  .main-policy-content {
+    width: 100%;
+    padding: 0rem 2rem;
+  }
+  .main-policy-content__title {
+    text-align: center;
+  }
+  .main-policy-content__heading {
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .main-policy-content__text {
+    padding-bottom: 3rem;
+  }
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .main-recruit {
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+  }
+  .main-recruit-content {
+    width: 100%;
+    padding: 0rem 2rem;
+  }
+  .main-recruit-content__heading {
+    margin-right: 0rem;
+    text-align: center;
+    line-height: 2.8rem;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .main-recruit-content__image {
+    width: 100%;
+    height: 100%;
+  }
+  .main-recruit .recruit-pagination {
+    padding-bottom: 3rem;
+  }
+  .main-recruit .none-mobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .main-logo {
+    height: 100%;
+  }
+  .booking {
+    margin-top: 10rem;
+    height: 54rem;
+  }
+  .booking-title {
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+  .booking-form {
+    width: 100%;
+  }
+  .booking-forms {
+    width: 88%;
+  }
+  .booking-forms-text p {
+    padding: 0rem 9rem;
+  }
+  .booking-forms-image {
+    padding: 2rem 0;
+  }
+  .booking-forms-client-text {
+    font-size: 2.4rem;
+  }
+  .booking-forms-client-name {
+    font-size: 2.4rem;
+  }
+  .booking-forms-thank p {
+    padding: 0 10rem;
+  }
+  .booking-after::after {
+    width: 34.8rem;
+  }
+  .send-contact-mobiles {
+    margin-top: 3rem !important;
+    padding: 0.8rem 3rem !important;
+  }
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    line-height: 3em;
+  }
+  .address .location-details-list__item .location-details-right__info {
+    height: 10rem !important;
+    margin-bottom: 0rem !important;
+  }
+  .none-mobile {
+    display: none;
   }
 }
 @media only screen and (max-width: 480px) {
