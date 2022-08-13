@@ -1,7 +1,9 @@
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
-const tabs = $$('.tab-item');
-const panes = $$('.tab-pane');
+// const $ = document.querySelector.bind(document);
+// const $$ = document.querySelectorAll.bind(document);
+// const tabs = $$('.tab-item');
+const tabs = document.querySelectorAll('.tab-item');
+const panes = document.querySelectorAll('.tab-pane');
+// const panes = $$('.tab-pane');
 const tabActive = $('.tab-item.active');
 tabs.forEach((tab, index) => {
     const pane = panes[index];
@@ -14,9 +16,11 @@ tabs.forEach((tab, index) => {
         pane.classList.add('active');
     }
 });
-// ------------------------------------------------------------------
-const tabCategory = $$('.tab-category');
-const tabPane = $$('.tab-product');
+// // ------------------------------------------------------------------
+// const tabCategory = $$('.tab-category');
+const tabCategory = document.querySelectorAll('.tab-category');
+const tabPane = document.querySelectorAll('.tab-pane');
+// const tabPane = $$('.tab-product');
 const tabsActive = $('.tab-category.active');
 tabCategory.forEach((tab, index) => {
     const pane = tabPane[index];
@@ -27,7 +31,7 @@ tabCategory.forEach((tab, index) => {
         pane.classList.add('active');
     }
 });
-// --------------------------------------------------------------------------------
+// // --------------------------------------------------------------------------------
 const cart = document.querySelector('.header-contact-right__cart')
 const notify =  document.querySelector('.header-cart--notify')
 const close =  document.querySelector('.header-cart--notify__info--top-icon')
@@ -38,7 +42,7 @@ cart.addEventListener('click', () => {
     notify.classList.toggle('show')
 });
 
-// ---------------------------------------------------------------------------------
+// // ---------------------------------------------------------------------------------
 const openModalBtn = document.getElementById("open-modal-btn");
 const modal = document.getElementById("open-contact");
  
@@ -55,21 +59,22 @@ if (openModalBtn){
     openModalBtn.addEventListener("click", toggleModal, false);
 }
 
-// ---------------------------------------------------------------------------------
-const tabRecruit =$$('.recruit-pagination-list__item')
-const paneRecruit =$$('.main-recruit-content__list')
-
-tabRecruit.forEach((tab,index) => {
-    const pane = paneRecruit[index]
-    tab.onclick = function () {
-      $('.recruit-pagination-list__item.active').classList.remove('active');
-      $('.main-recruit-content__list.show').classList.remove('show');
+// // ---------------------------------------------------------------------------------
+// const tabRecruit =$$('.recruit-pagination-list__item')
+// const paneRecruit =$$('.main-recruit-content__list')
+// const tabRecruit = document.querySelectorAll('.recruit-pagination-list__item');
+// const paneRecruit = document.querySelectorAll('.main-recruit-content__list');
+// tabRecruit.forEach((tab,index) => {
+//     const pane = paneRecruit[index]
+//     tab.onclick = function () {
+//       $('.recruit-pagination-list__item.active').classList.remove('active');
+//       $('.main-recruit-content__list.show').classList.remove('show');
   
-      this.classList.add('active');
-      pane.classList.add('show');
-    }
-});
-// ----------------------------------------------------------------
+//       this.classList.add('active');
+//       pane.classList.add('show');
+//     }
+// });
+// // ----------------------------------------------------------------
 
 const openModalGift = document.getElementById("promotion--detail__btn");
 const modalGift = document.getElementById("open-form");
@@ -87,18 +92,51 @@ if (openModalGift){
 }
 
 // scroll menu
-        const navMobileBtn = document.querySelector('.js-mobile-btn')
-        const mobileMenu = document.querySelector('.js-mobile-menu')
-        var mobileOverlay = document.querySelector('.mobile-menu-overlay')
-        navMobileBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('show')
-            mobileOverlay.classList.toggle('show')
-        } );
+        // const navMobileBtn = document.querySelector('.js-mobile-btn')
+        // const mobileMenu = document.querySelector('.js-mobile-menu')
+        // var mobileOverlay = document.querySelector('.mobile-menu-overlay')
+        // navMobileBtn.addEventListener('click', () => {
+        //     mobileMenu.classList.toggle('show')
+        //     mobileOverlay.classList.toggle('show')
+        // } );
         // mobileOverlay.addEventListener('click', () => {
         //     mobileMenu.classList.remove('show')
         //     mobileOverlay.classList.remove('show')
         // }
         // );
         // scroll menu__list
-       
-      
+/**
+ * slider show
+ */
+ var swiper = new Swiper(".slide-content", {
+    slidesPerView: 4,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        }
+    },
+  });
