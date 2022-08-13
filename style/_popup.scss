@@ -1,0 +1,556 @@
+
+.form--pop{
+    // display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    &__inner{
+        background-image: url(../images/modal.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 60.38rem;
+        height: 63.8rem;
+        margin-top: calc((100vh - 63.8rem) / 2);
+        margin-left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        animation: scrollY linear 0.3s;
+        position: relative;  
+        &--logo{
+            padding-top: 1.3rem;
+            width: 40%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            &--image{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &--title{
+            text-align: center;
+            font-size: 2rem;
+            font-family: Gilroy-Bold;
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+        }
+        &--info{
+            width: 60%;
+            text-align: center;
+            border: 1px solid #fff;
+            background-color: #fff;
+            border-radius: 1rem;
+            margin: 0 auto;
+            &-image{
+                padding: 1rem 0;
+                width: 4rem;
+                margin: 0 auto;
+                img{
+                    width: 100%;
+                }
+            }
+            &-text{
+                text-align: center;
+                font-size: 1.6rem;
+                color: $color-title;
+                letter-spacing: 0.01rem;
+                p{
+                    padding: 0 8rem;
+                    font-family: UTM-Avo;
+                }
+            }
+            &-line{
+                border: 0.1rem solid #a1710f;
+                margin-top: 1.8rem;
+                margin-bottom: 0.6rem;
+                width: 80%;
+                margin-left: 50%;
+                transform: translateX(-50%);
+            }
+            &-client{
+                &-text{
+                    font-family: UTM-Avo;
+                    font-size: 2rem;
+                    padding: 0.5rem 0;
+                    color: $color-title;
+                }
+                &-name{
+                    font-size: 2.2rem;
+                    color: $color-title;
+                    font-family: UTM-AvoBold;
+                }
+            }
+            &-time{
+                text-align: center;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                &-day{
+                    .form-controls{
+                        width: 86%;
+                        height: 4.2rem;
+                        font-size: 1.6rem;
+                        font-family: UTM-AvoBold;
+                        border: 1px solid $more-color;
+                        border-radius: 1rem;
+                        outline: none;
+                        padding: 0 1.5rem;
+                        color: $color-title;
+                    }
+                }
+            }
+            &-thank{
+                margin-bottom: 1rem;
+                p{
+                    padding: 0rem 8rem;
+                    font-size: 1.2rem;
+                    font-family: UTM-AvoItalic;
+                    color: $color-title;
+                }
+            }
+        }
+        .send-contact__btn{
+            @include buttonStyle();
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $white;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            background-color: $more-color;
+            position: relative;
+            margin-top: 3rem;
+        }
+        .send-contact__btn::after{
+            @include buttonAfter();
+        }
+    }
+    &__address{
+        cursor: pointer;
+        background-image: url(../images/icon/icon-03.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 20rem;
+        height: 5.5rem;
+        margin-top: calc((0vh - 161rem) / 2);
+        margin-left: 80%;
+    }
+
+    &__advise{
+        cursor: pointer;
+        background-image: url(../images/icon/icon-04.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 20rem;
+        height: 5.5rem;
+        margin-top: calc((0vh - -5rem) / 2);
+        margin-left: 80%;
+    }
+
+    &__appointment{
+        cursor: pointer;
+        background-image: url(../images/icon/icon-05.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 20rem;
+        height: 5.5rem;
+        margin-top: calc((0vh - -2rem) / 2);
+        margin-left: 80%;
+    }
+}
+
+.address-pop{
+    display: none;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    &-mobile{
+        background-image: linear-gradient(180deg, #F4E390, #FED119);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        margin-top: calc((100vh - 70rem) / 2);
+        margin-left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        animation: scrollY linear 0.3s;
+        position: relative;  
+        border-radius: 4rem;
+        &__info{
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+            &--image{
+                margin-left: 50%;
+                transform: translateX(-50%);
+                width: 6rem;
+                height: 5rem;
+            }
+            &--title {
+                margin-top: 1rem;
+                margin-bottom: 1.4rem;
+                text-transform: uppercase;
+                font-family: UTM-AvoBold;
+                font-size: 2.5rem;
+            }
+        }
+    
+        &__nav{
+            &--location {
+                list-style: none;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: 0;
+                margin-bottom: 2rem;
+                &__item {
+                    &--link {
+                        font-size: 1.6rem;
+                        font-family: Gilroy-Bold;
+                        text-transform: uppercase;
+                        padding: 1rem 1rem;
+                        color: $black !important;
+                        width: 11rem;
+                        border-radius: 3rem;
+                        margin: 0 0rem;
+                    }
+                    .link-border {
+                        font-size: 1.6rem;
+                        text-transform: uppercase;
+                        padding: 1rem 1rem;
+                        color: $black;
+                        width: 11rem;
+                        border-radius: 3rem;
+                        border: 1px solid $more-color;
+                        font-weight: 600;
+                    }
+                }
+                &__item {
+                    &--link:hover {
+                        text-decoration: none;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    
+        .pop-details {
+            width: 93%;
+            margin: 0 auto;
+            &-border {
+                position: relative;
+                border: 0.1rem solid $orange;
+                padding-top: 1.5rem;
+                padding-bottom: 0.5rem;
+                border-radius: 2.6rem;
+                margin-bottom: 4rem;
+                background-color: $white;
+            }
+        
+            &-list {
+                list-style: none;
+                &__item {
+                    align-items: center;
+                    margin-bottom: 2rem;
+                    .pop-details-left {
+                        img {
+                            width: 100%;
+                            height: 12rem;
+                            object-fit: cover;
+                            border-radius: 2.6rem;
+                        }
+                    }
+        
+                    .pop-details-right {
+                        padding: 0 0.5rem;
+        
+                        &__name {
+                            text-align: left;
+                            font-size: 1.6rem;
+                            font-family: Gilroy-XBold;
+                            margin: 0;
+                        }
+        
+                        &__info {
+                            text-align: left;
+                            margin-bottom: 1rem;
+                            height: 5.2rem;
+                            font-size: 1.4rem;
+                        }
+                        &__booking{
+                            display: flex;
+                            justify-content: space-evenly;
+                            width: 126%;
+                            margin-left: -1rem;
+                            &--item{
+                                border: 1px solid #a1710f;
+                                border-radius: 2rem;
+                                display: flex;
+                                align-items: center;
+                                width: 10rem;
+                                height: 3rem;
+                                background-color: #fff;
+                                img{
+                                    width: 24%;
+                                    margin-left: 1rem;
+                                }
+                                p{
+                                    font-family: Gilroy-Medium-Italic;
+                                    font-size: 1.6rem;
+                                    line-height: 2em;
+                                    margin-left: 0.3rem;
+                                    color: $more-color;
+                                }
+                            }
+                        }
+        
+                        .pop-views {
+                            float: left;
+                            color: $more-color;
+                            border-radius: 1.6rem;
+                            padding: 0.2rem 1rem;
+                            font-family: Gilroy-Medium-Italic;
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+        
+                &__item:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        
+            &-list:last-child::after {
+                border: none;
+            }
+        
+            &-list::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 96%;
+                width: 1rem;
+                border-right: 0.1rem solid #A1710F;
+            }
+        }
+    }
+}
+
+.form--advise{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    &__inner{
+        background-image: url(../images/modal.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 60.38rem;
+        height: 63.8rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: calc((100vh - 63.8rem) / 2);
+        overflow: hidden;
+        animation: showModal linear 0.3s;
+        position: relative;
+        &--logo{
+            padding-top: 1.3rem;
+            width: 40%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            &--image{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &--advise{
+            margin-top: 5.5rem;
+            padding: 0 3rem;
+            &--form{
+                &-group{
+                    .form-control{
+                        width: 100%;
+                        height: 4.2rem;
+                        font-size: 1.8rem;
+                        font-family: UTM-Avo;
+                        border: 1px solid $more-color;
+                        border-radius: 1rem;
+                        outline: none;
+                        padding: 0 1.5rem;
+                    }
+                    .form-textarea{
+                        width: 100%;
+                        font-size: 1.8rem;
+                        font-family: UTM-Avo;
+                        border: 1px solid $more-color;
+                        border-radius: 1rem;
+                        outline: none;
+                        padding: 2rem;
+                        height: 13.4rem;
+                    }
+                }
+            }
+            .send-advise__btn{
+                @include buttonStyle();
+                text-transform: uppercase;
+                font-weight: 600;
+                color: $white;
+                margin-left: 50%;
+                transform: translateX(-50%);
+                background-color: $more-color;
+                position: relative;
+            }
+            .send-advise__btn::after{
+                @include buttonAfter();
+            }
+            &--text{
+                font-size: 1.8rem;
+                font-family: Gilroy-Bold-Italic;
+                text-align: center;
+                padding: 2rem 12rem;
+                .phone-number{
+                    color: $more-color;
+                }
+            }
+        }
+    }
+}
+
+  .form--appointment{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    &__inner{
+        background-image: url(../images/modal.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 60.38rem;
+        height: 63.8rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: calc((100vh - 63.8rem) / 2);
+        overflow: hidden;
+        animation: showModal linear 0.3s;
+        position: relative;
+        &--logo{
+            padding-top: 1.3rem;
+            width: 40%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            &--image{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &--title{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-top: 4rem;
+            margin-bottom: 1rem;
+        }
+        &--appointment{
+            margin-top: 2rem;
+            padding: 0 3rem;
+            &--form{
+                &-group{
+                    .form-control{
+                        width: 100%;
+                        height: 4.2rem;
+                        font-size: 1.8rem;
+                        font-family: UTM-Avo;
+                        border: 1px solid $more-color;
+                        border-radius: 1rem;
+                        outline: none;
+                        padding: 0 1.5rem;
+                    }
+                    .form-textarea{
+                        width: 100%;
+                        font-family: UTM-Avo;
+                        font-size: 1.8rem;
+                        border: 1px solid $more-color;
+                        border-radius: 1rem;
+                        outline: none;
+                        padding: 2rem;
+                        height: 11.4rem;
+                        margin-top: 1rem;
+                    }
+                }
+            }
+            &--time{
+                text-align: center;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                &-day{
+                    .form-controls{
+                        width: 100%;
+                        height: 4.2rem;
+                        font-size: 1.6rem;
+                        border: 1px solid $more-color;
+                        border-radius: 1rem;
+                        outline: none;
+                        padding: 0 1.5rem;
+                        color: $color-title;
+                    }
+                }
+            }
+            .send-appointment__btn{
+                @include buttonStyle();
+                text-transform: uppercase;
+                font-weight: 600;
+                color: $white;
+                margin-left: 50%;
+                transform: translateX(-50%);
+                background-color: $more-color;
+                position: relative;
+            }
+            .send-appointment__btn::after{
+                @include buttonAfter();
+            }
+            &--text{
+                font-size: 1.8rem;
+                font-weight: bold;
+                text-align: center;
+                padding: 2rem 12rem;
+                .phone-number{
+                    color: $more-color;
+                }
+            }
+        }
+    }
+}

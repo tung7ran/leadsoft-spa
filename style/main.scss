@@ -22,11 +22,12 @@
 @import 'promotion';
 @import 'promotion-detail';
 @import 'booking';
+@import 'popup';
 @import 'responsiveHeader';
 @import 'responsiveFooter';
+@import 'responsiveMain';
 @import 'resposiveStore';
 @import 'responsiveProduct-details';
-@import 'responIndex';
 
 // .content{
 //     margin-top: 13.5rem;
@@ -56,9 +57,9 @@
         }
 
         .container-item-title {
+            font-size: 2.5rem;
             line-height: 1;
             text-transform: uppercase;
-            font-weight: bold;
             padding-top: 1.5rem;
         }
     }
@@ -165,8 +166,10 @@
         }
 
         .introduction-info-title {
+            font-size: 3.4rem;
             text-transform: uppercase;
             font-weight: bold;
+            line-height: 4.9rem;
         }
 
         .introduction-info-desc {
@@ -200,10 +203,12 @@
 .top-banner-3 {
     background-image: url('../images/banner3.png');
     @include backgroundImage();
+    height: 49rem;
 }
 
 .treatment-result {
     background-color: $background-home;
+    margin: 0;
 }
 
 .category-nav {
@@ -216,10 +221,12 @@
         margin: 0.2rem;
         cursor: pointer;
         .category-item-link {
-            color: $color-text;
-          
+            color: $black;
+            font-size: 2.4rem;
+            line-height: 6.6rem;
             text-transform: uppercase;
-            font-weight: bold;
+            font-weight: 600;
+            padding: 0 4rem;
         }
     }
 
@@ -233,6 +240,7 @@
 
 
 .event {
+    padding: 3.4rem 0 15.2rem 0;
 
     .container-item {
         .container-heading {
@@ -268,19 +276,20 @@
                         position: absolute;
                        
                     }
-                    .event-item-text{
-                        .event-title {
-                          
-                            text-transform: uppercase;
-                            font-weight: bold;
-                        }
-    
-                        .event-desc {
-                          
-                            text-align: justify;
-                        }
+
+                    .event-title {
+                        max-width: 23.4rem;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-size: 1.6rem;
+                        padding: 3.5rem 0 1.5rem 0;
                     }
-                    
+
+                    .event-desc {
+                        max-width: 23.4rem;
+                        font-size: 1.8rem;
+                        text-align: justify;
+                    }
                 }
 
 
@@ -293,6 +302,9 @@
 
             .btn-exception {
                 @include buttonStyle();
+                font-size: 2.4rem;
+                padding: 1.2rem 2.2rem;
+                font-family: Gilroy-Medium-Italic;
             }
         }
     }
@@ -336,9 +348,9 @@
 
         .container-item-title {
             font-size: 2.5rem;
+            font-family: UTM-AvoBold;
             line-height: 1;
             text-transform: uppercase;
-            font-weight: bold;
             padding-top: 1.5rem;
         }
     }
@@ -348,7 +360,8 @@
 
 .beauty-store {
     text-align: center;
-
+    margin-top: 0;
+    margin-bottom: 0;
     .container-item {
         .container-heading {
             .container-item-logo {
@@ -373,6 +386,7 @@
 
                         .category-item__link {
                             font-size: 1.8rem;
+                            font-family: Gilroy-Regular;
                             text-transform: uppercase;
                             color: #808080;
                             line-height: 3.65rem;
@@ -432,14 +446,16 @@
 
                         .product-item__name {
                             font-size: 1.8rem;
+                            text-align: left;
                             padding: 0 2rem;
                         }
 
                         .product-item__price {
                             padding: 1.55rem 2rem 2rem 2rem;
                             font-size: 2.2rem;
-                            font-weight: bold;
+                            font-family: Gilroy-Heavy;
                             color: $more-color;
+                            text-align: left;
                         }
 
                         .product-item__add {
@@ -544,22 +560,22 @@
                     .contact__title {
                         text-transform: uppercase;
                         font-size: 2rem;
-                        font-weight: bold;
+                        font-family: Gilroy-Bold;
                         margin-top: 2.8rem;
                     }
 
                     .contact__name {
-                        font-weight: bold;
+                        font-family: Gilroy-Heavy;
                         font-size: 4.4rem;
                         padding: 1.5rem 0;
                         line-height: 3.6rem;
                     }
 
                     .contact__desc {
-                        font-size: 2rem;
-                        max-width: 20rem;
+                        font-size: 1.8rem;
+                        font-family: Gilroy-Light;
+                        max-width: 22rem;
                         margin: 0 auto;
-                        // padding: 1.5rem 0;
                     }
                 }
             }
@@ -595,7 +611,8 @@
                             border: 3px solid $orange;
                             border-radius: 5rem;
                             text-transform: uppercase;
-                            font-size: 2rem;
+                            font-size: 1.8rem;
+                            font-family: Gilroy-Bold;
                             padding: 0 2rem;
 
                         }
@@ -623,26 +640,26 @@
 .address {
     margin-top: 6.8rem;
     text-align: center;
-
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     &-info {
         &-title {
             margin-top: 1rem;
             margin-bottom: 1.4rem;
             text-transform: uppercase;
-            font-weight: 600;
             font-size: 2rem;
+            font-family: UTM-AvoBold;
         }
 
         &-caption {
             margin-bottom: 2.6rem;
             font-size: 1.8rem;
-            font-weight: 500;
-            padding: 0 39%;
+            padding: 0 35%;
         }
     }
     &-image {
-        margin-left: 50%;
-        transform: translateX(-50%);
+        position: relative;
+        margin: 0 auto;
         width: 6rem;
         height: 5rem;
     }
@@ -658,11 +675,15 @@
             &__item {
                 &--link {
                     font-size: 1.6rem;
+                    font-family: Gilroy-Bold;
                     text-transform: uppercase;
                     padding: 1.8rem 2rem;
                     color: #808080;
                     width: 174px;
                     border-radius: 1.6rem;
+                }
+                &--link.active {
+                    color: $black !important;
                 }
             }
 
@@ -700,10 +721,10 @@
     
                 .location-details-right {
                     padding: 0 0.5rem;
-    
                     &__name {
                         text-align: left;
                         font-size: 1.8rem;
+                        font-family: Gilroy-XBold;
                         margin: 0;
                     }
     
@@ -719,6 +740,7 @@
                         color: $more-color;
                         border-radius: 1.6rem;
                         padding: 0.2rem 1.4rem;
+                        font-family: Gilroy-Medium-Italic;
                     }
                 }
             }
@@ -752,6 +774,7 @@
             border-radius: 2rem;
             padding: 1rem 3rem;
             font-size: 1.8rem;
+            font-family: Gilroy-Bold;
             text-transform: uppercase;
         }
     

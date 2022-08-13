@@ -31,7 +31,7 @@ tabCategory.forEach((tab, index) => {
         pane.classList.add('active');
     }
 });
-// // --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 const cart = document.querySelector('.header-contact-right__cart')
 const notify =  document.querySelector('.header-cart--notify')
 const close =  document.querySelector('.header-cart--notify__info--top-icon')
@@ -92,51 +92,18 @@ if (openModalGift){
 }
 
 // scroll menu
-        // const navMobileBtn = document.querySelector('.js-mobile-btn')
-        // const mobileMenu = document.querySelector('.js-mobile-menu')
-        // var mobileOverlay = document.querySelector('.mobile-menu-overlay')
-        // navMobileBtn.addEventListener('click', () => {
-        //     mobileMenu.classList.toggle('show')
-        //     mobileOverlay.classList.toggle('show')
-        // } );
+        const navMobileBtn = document.querySelector('.js-mobile-btn')
+        const mobileMenu = document.querySelector('.js-mobile-menu')
+        var mobileOverlay = document.querySelector('.mobile-menu-overlay')
+        navMobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('show')
+            mobileOverlay.classList.toggle('show')
+        } );
         // mobileOverlay.addEventListener('click', () => {
         //     mobileMenu.classList.remove('show')
         //     mobileOverlay.classList.remove('show')
         // }
         // );
         // scroll menu__list
-/**
- * slider show
- */
- var swiper = new Swiper(".slide-content", {
-    slidesPerView: 4,
-    spaceBetween: 25,
-    loop: true,
-    centerSlide: 'true',
-    fade: 'true',
-    grabCursor: 'true',
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    breakpoints:{
-        0: {
-            slidesPerView: 1,
-        },
-        520: {
-            slidesPerView: 2,
-        },
-        950: {
-            slidesPerView: 3,
-        },
-        1200: {
-            slidesPerView: 4,
-        }
-    },
-  });
+       
+      

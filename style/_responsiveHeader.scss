@@ -52,7 +52,6 @@
                 }
             }
             &-right {
-
                 justify-content: space-between;
                 align-items: center;
                 &__cart {
@@ -98,6 +97,7 @@
                     background-color: $backgroundSearch;
                     border:none;
                     border-radius: 1rem;
+                    margin-right: 0.8rem;
                     svg {
                         background-color: $backgroundSearch;
                         padding: 0.2rem

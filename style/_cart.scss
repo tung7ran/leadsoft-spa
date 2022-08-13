@@ -1,6 +1,6 @@
 .container-max{
     margin-top: 15rem;
-    // margin-bottom: 15rem;
+    margin-bottom: 15rem;
 }
 
 .container{
@@ -14,7 +14,7 @@
         &-header{
             &__title{
                 text-align: center;
-                font-weight: 600;
+                font-family: Gilroy-XBold;
                 font-size: 2rem;
             }
             &__img{
@@ -68,6 +68,7 @@
             h3{
                 padding-left: 3rem;
                 font-size: 1.75rem;
+                font-family: Gilroy-Bold;
             }
         }
 
@@ -85,6 +86,7 @@
             h3{
                 padding-left: 2rem;
                 font-size: 1.75rem;
+                font-family: Gilroy-Bold;
             }
         }
     }
@@ -97,7 +99,7 @@
         border-bottom-right-radius: 2rem;
 
         &__title{
-            font-weight: 600;
+            font-family: Gilroy-XBold;
             text-align: center;
             font-size: 2rem;
         }
@@ -109,7 +111,6 @@
             padding: 0 2rem;
             &-text{
                 font-size: 1.6rem;
-              
             }
             &-price{
                 font-size: 1.6rem;
@@ -127,7 +128,7 @@
 
         &__two{
             position: relative;
-            margin-top: 2rem;
+            margin-top: 3rem;
             display: flex;
             justify-content: space-between;
             padding: 0 2rem;
@@ -148,16 +149,18 @@
             padding-bottom: 2rem;
         }
         &__three{
-            margin-top: 2rem;
+            margin-top: 3rem;
             position: relative;
             display: flex;
             justify-content: space-between;
             padding: 0 2rem;
             &-text{
                 font-size: 1.6rem;
+                font-family: Gilroy-XBold;
             }
             &-price{
                 font-size: 1.6rem;
+                font-family: Gilroy-XBold;
                 h3{
                     padding-left: 6rem;
                 }
@@ -185,6 +188,7 @@
                 text-decoration: none !important;
                 h2{
                     font-size: 2rem;
+                    font-family: Gilroy-XBold;
                 }
             }
         }

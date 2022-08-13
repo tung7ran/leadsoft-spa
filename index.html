@@ -43,9 +43,19 @@
                                 </svg>
                             </button>
                         </form>
+                        <button class="navbar-mobile js-mobile-btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                         
+                        <div class="mobile-menu-overlay"></div>
                     </div>
 
                     <div class="header-contact-right d-flex">
+                        <button type="submit" class="search-mobile dp-block ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#fff" class="bi bi-search header-contact-left__button--icon" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg>
+                        </button>
                         <div class="header-contact-right__cart">
                             <button class="btn header-contact-right__cart--btn">
                                 <img src="./images/store.png" alt="">
@@ -90,6 +100,7 @@
                                 </div>
                             </div>
                         </div>
+                        </div>
                         <button class="header-contact-right__tel">
                             <span class="header-contact-right__tel--number">hotline 0909 999 999</span>
                         </button>
@@ -103,7 +114,7 @@
                     </a>
                 </div>
             </div>
-            <div class="header-main">
+            <div class="header-main js-mobile-menu">
                 <div class="header-main-nav">
                     <ul class="header-main-nav__list d-flex">
                         <li class="header-main-nav__list--item">
@@ -341,8 +352,7 @@
                     <div class="container-body ">
                         <div class="treatment-category">
                             <ul class="category-nav row ">
-                                <li class="category-item tab-item "><a class="category-item-link active">Điều trị
-                                        mụn</a>
+                                <li class="category-item tab-item active"><a class="category-item-link">Điều trị mụn</a>
                                 </li>
                                 <li class="category-item tab-item"><a class="category-item-link">Điều trị thâm mụn</a>
                                 </li>
@@ -798,180 +808,301 @@
 
                             </ul>
                         </div>
-                       
-                        <div class="slide-container swiper">
-                            <div class="slide-content">
-                                <div class="card-wrapper swiper-wrapper">
-                                    <div class="card swiper-slide">
-                                        <div class="image-content">
-                                            <span class="overlay"></span>
-                
-                                            <div class="card-image">
-                                                <img src="./images/product/img-5.png" alt="" class="card-img">
-                                            </div>
-                                        </div>
-                
-                                        <div class="card-content">
-                                            
-                                            <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da mịn màng, mịn màng SHINEE</p>
-                                            <h2 class="price">70 000đ</h2>
-                
-                                            <button class="button">
-                                                <img src="./images/add.png" alt="" class="add-cart">
-                                            </button>
-                                        </div>
+                        <div class="product-list tab-product active">
+                            <div class="product-slider row">
+                                <div class="product-slider-item ">
+                                    <div class="product-item__image">
+                                        <img src="./images/product/product1.png" alt="" class="product-image">
                                     </div>
-                                    <div class="card swiper-slide">
-                                        <div class="image-content">
-                                            <span class="overlay"></span>
-                
-                                            <div class="card-image">
-                                                <img src="./images/product/img-6.png" alt="" class="card-img">
-                                            </div>
-                                        </div>
-                
-                                        <div class="card-content">
-                                            <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da mịn màng, mịn màng SHINEE</p>
-                                            <h2 class="price">70 000đ</h2>
-                
-                                            <button class="button">
-                                                <img src="./images/add.png" alt="" class="add-cart">
-                                            </button>
-                                        </div>
+                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
+                                        Dưỡng ẩm da, mịn màng
+                                        SHINEE</p>
+                                    <p class="product-item__price">70.000 đ</p>
+                                    <button class="product-item__add">
+                                        <img src="./images/add.png" alt="" class="product-more">
+                                    </button>
+                                </div>
+                                <div class="product-slider-item">
+                                    <div class="product-item__image">
+                                        <img src="./images/product/product2.png" alt="" class="product-image">
                                     </div>
-                                    <div class="card swiper-slide">
-                                        <div class="image-content">
-                                            <span class="overlay"></span>
-                
-                                            <div class="card-image">
-                                                <img src="./images/product/img-7.png" alt="" class="card-img">
-                                            </div>
-                                        </div>
-                
-                                        <div class="card-content">
-                                            <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da mịn màng, mịn màng SHINEE</p>
-                                            <h2 class="price">70 000đ</h2>
-                
-                                            <button class="button">
-                                                <img src="./images/add.png" alt="" class="add-cart">
-                                            </button>
-                                        </div>
+                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
+                                        Dưỡng ẩm da, mịn màng
+                                        SHINEE</p>
+                                    <p class="product-item__price">70.000 đ</p>
+                                    <button class="product-item__add">
+                                        <img src="./images/add.png" alt="" class="product-more">
+                                    </button>
+                                </div>
+                                <div class="product-slider-item">
+                                    <div class="product-item__image">
+                                        <img src="./images/product/product3.png" alt="" class="product-image">
                                     </div>
-                                    <div class="card swiper-slide">
-                                        <div class="image-content">
-                                            <span class="overlay"></span>
-                
-                                            <div class="card-image">
-                                                <img src="./images/product/img-8.png" alt="" class="card-img">
-                                            </div>
-                                        </div>
-                
-                                        <div class="card-content">
-                                            <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da mịn màng, mịn màng SHINEE</p>
-                                            <h2 class="price">70 000đ</h2>
-                
-                                            <button class="button">
-                                                <img src="./images/add.png" alt="" class="add-cart">
-                                            </button>
-                                        </div>
+                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
+                                        Dưỡng ẩm da, mịn màng
+                                        SHINEE</p>
+                                    <p class="product-item__price">70.000 đ</p>
+                                    <button class="product-item__add">
+                                        <img src="./images/add.png" alt="" class="product-more">
+                                    </button>
+                                </div>
+                                <div class="product-slider-item">
+                                    <div class="product-item__image">
+                                        <img src="./images/product/product4.png" alt="" class="product-image">
                                     </div>
-                                    <div class="card swiper-slide">
-                                        <div class="image-content">
-                                            <span class="overlay"></span>
-                
-                                            <div class="card-image">
-                                                <img src="./images/product/img-9.png" alt="" class="card-img">
-                                            </div>
-                                        </div>
-                
-                                        <div class="card-content">
-                                            <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da mịn màng, mịn màng SHINEE</p>
-                                            <h2 class="price">70 000đ</h2>
-                
-                                            <button class="button">
-                                                <img src="./images/add.png" alt="" class="add-cart">
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="card swiper-slide">
-                                        <div class="image-content">
-                                            <span class="overlay"></span>
-                
-                                            <div class="card-image">
-                                                <img src="./images/product/img-10.png" alt="" class="card-img">
-                                            </div>
-                                        </div>
-                
-                                        <div class="card-content">
-                                            <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da mịn màng, mịn màng SHINEE</p>
-                                            <h2 class="price">70 000đ</h2>
-                
-                                            <button class="button">
-                                                <img src="./images/add.png" alt="" class="add-cart">
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="card swiper-slide">
-                                        <div class="image-content">
-                                            <span class="overlay"></span>
-                
-                                            <div class="card-image">
-                                                <img src="./images/product/img-11.png" alt="" class="card-img">
-                                            </div>
-                                        </div>
-                
-                                        <div class="card-content">
-                                            <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da mịn màng, mịn màng SHINEE</p>
-                                            <h2 class="price">70 000đ</h2>
-                
-                                            <button class="button">
-                                                <img src="./images/add.png" alt="" class="add-cart">
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="card swiper-slide">
-                                        <div class="image-content">
-                                            <span class="overlay"></span>
-                
-                                            <div class="card-image">
-                                                <img src="./images/product/img-12.png" alt="" class="card-img">
-                                            </div>
-                                        </div>
-                
-                                        <div class="card-content">
-                                            <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da mịn màng, mịn màng SHINEE</p>
-                                            <h2 class="price">70 000đ</h2>
-                
-                                            <button class="button">
-                                                <img src="./images/add.png" alt="" class="add-cart">
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="card swiper-slide">
-                                        <div class="image-content">
-                                            <span class="overlay"></span>
-                
-                                            <div class="card-image">
-                                                <img src="./images/product/img-5.png" alt="" class="card-img">
-                                            </div>
-                                        </div>
-                
-                                        <div class="card-content">
-                                            <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da mịn màng, mịn màng SHINEE</p>
-                                            <h2 class="price">70 000đ</h2>
-                
-                                            <button class="button">
-                                                <img src="./images/add.png" alt="" class="add-cart">
-                                            </button>
-                                        </div>
-                                    </div>
+                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
+                                        Dưỡng ẩm da, mịn màng
+                                        SHINEE</p>
+                                    <p class="product-item__price">70.000 đ</p>
+                                    <button class="product-item__add">
+                                        <img src="./images/add.png" alt="" class="product-more">
+                                    </button>
                                 </div>
                             </div>
-                
-                            <div class="swiper-button-next swiper-navBtn"></div>
-                            <div class="swiper-button-prev swiper-navBtn"></div>
+                            <div class="slider-more">
+                                <ul class="more-list">
+                                    <li class="more-item"><i class="fa-solid fa-caret-left icon-more"></i></li>
+                                    <li class="more-item"><i class="fa-solid fa-caret-right icon-more"></i></li>
+
+                                </ul>
+                            </div>
                         </div>
-                       
+                        <div class="product-list tab-product">
+                            <div class="product-slider row">
+                                <div class="product-slider-item ">
+                                    <div class="product-item__image">
+                                        <img src="./images/product/product1.png" alt="" class="product-image">
+                                    </div>
+                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
+                                        Dưỡng ẩm da, mịn màng
+                                        SHINEE</p>
+                                    <p class="product-item__price">70.000 đ</p>
+                                    <button class="product-item__add">
+                                        <img src="./images/add.png" alt="" class="product-more">
+                                    </button>
+                                </div>
+                                <div class="product-slider-item">
+                                    <div class="product-item__image">
+                                        <img src="./images/product/product2.png" alt="" class="product-image">
+                                    </div>
+                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
+                                        Dưỡng ẩm da, mịn màng
+                                        SHINEE</p>
+                                    <p class="product-item__price">70.000 đ</p>
+                                    <button class="product-item__add">
+                                        <img src="./images/add.png" alt="" class="product-more">
+                                    </button>
+                                </div>
+                                <div class="product-slider-item">
+                                    <div class="product-item__image">
+                                        <img src="./images/product/product3.png" alt="" class="product-image">
+                                    </div>
+                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
+                                        Dưỡng ẩm da, mịn màng
+                                        SHINEE</p>
+                                    <p class="product-item__price">70.000 đ</p>
+                                    <button class="product-item__add">
+                                        <img src="./images/add.png" alt="" class="product-more">
+                                    </button>
+                                </div>
+                                <div class="product-slider-item">
+                                    <div class="product-item__image">
+                                        <img src="./images/product/product4.png" alt="" class="product-image">
+                                    </div>
+                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
+                                        Dưỡng ẩm da, mịn màng
+                                        SHINEE</p>
+                                    <p class="product-item__price">70.000 đ</p>
+                                    <button class="product-item__add">
+                                        <img src="./images/add.png" alt="" class="product-more">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slider-more">
+                                <ul class="more-list">
+                                    <li class="more-item"><i class="fa-solid fa-caret-left icon-more"></i></li>
+                                    <li class="more-item"><i class="fa-solid fa-caret-right icon-more"></i></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-list tab-product">
+                            <div class="product-slider row">
+                                <div class="product-slider-item ">
+                                    <div class="product-item__image">
+                                        <img src="./images/product/product1.png" alt="" class="product-image">
+                                    </div>
+                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
+                                        Dưỡng ẩm da, mịn màng
+                                        SHINEE</p>
+                                    <p class="product-item__price">70.000 đ</p>
+                                    <button class="product-item__add">
+                                        <img src="./images/add.png" alt="" class="product-more">
+                                    </button>
+                                </div>
+                                <div class="product-slider-item">
+                                    <div class="product-item__image">
+                                        <img src="./images/product/product2.png" alt="" class="product-image">
+                                    </div>
+                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
+                                        Dưỡng ẩm da, mịn màng
+                                        SHINEE</p>
+                                    <p class="product-item__price">70.000 đ</p>
+                                    <button class="product-item__add">
+                                        <img src="./images/add.png" alt="" class="product-more">
+                                    </button>
+                                </div>
+                                <div class="product-slider-item">
+                                    <div class="product-item__image">
+                                        <img src="./images/product/product3.png" alt="" class="product-image">
+                                    </div>
+                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
+                                        Dưỡng ẩm da, mịn màng
+                                        SHINEE</p>
+                                    <p class="product-item__price">70.000 đ</p>
+                                    <button class="product-item__add">
+                                        <img src="./images/add.png" alt="" class="product-more">
+                                    </button>
+                                </div>
+                                <div class="product-slider-item">
+                                    <div class="product-item__image">
+                                        <img src="./images/product/product4.png" alt="" class="product-image">
+                                    </div>
+                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
+                                        Dưỡng ẩm da, mịn màng
+                                        SHINEE</p>
+                                    <p class="product-item__price">70.000 đ</p>
+                                    <button class="product-item__add">
+                                        <img src="./images/add.png" alt="" class="product-more">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slider-more">
+                                <ul class="more-list">
+                                    <li class="more-item"><i class="fa-solid fa-caret-left icon-more"></i></li>
+                                    <li class="more-item"><i class="fa-solid fa-caret-right icon-more"></i></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-list tab-product">
+                            <div class="product-slider row">
+                                <div class="product-slider-item ">
+                                    <div class="product-item__image">
+                                        <img src="./images/product/product1.png" alt="" class="product-image">
+                                    </div>
+                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
+                                        Dưỡng ẩm da, mịn màng
+                                        SHINEE</p>
+                                    <p class="product-item__price">70.000 đ</p>
+                                    <button class="product-item__add">
+                                        <img src="./images/add.png" alt="" class="product-more">
+                                    </button>
+                                </div>
+                                <div class="product-slider-item">
+                                    <div class="product-item__image">
+                                        <img src="./images/product/product2.png" alt="" class="product-image">
+                                    </div>
+                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
+                                        Dưỡng ẩm da, mịn màng
+                                        SHINEE</p>
+                                    <p class="product-item__price">70.000 đ</p>
+                                    <button class="product-item__add">
+                                        <img src="./images/add.png" alt="" class="product-more">
+                                    </button>
+                                </div>
+                                <div class="product-slider-item">
+                                    <div class="product-item__image">
+                                        <img src="./images/product/product3.png" alt="" class="product-image">
+                                    </div>
+                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
+                                        Dưỡng ẩm da, mịn màng
+                                        SHINEE</p>
+                                    <p class="product-item__price">70.000 đ</p>
+                                    <button class="product-item__add">
+                                        <img src="./images/add.png" alt="" class="product-more">
+                                    </button>
+                                </div>
+                                <div class="product-slider-item">
+                                    <div class="product-item__image">
+                                        <img src="./images/product/product4.png" alt="" class="product-image">
+                                    </div>
+                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
+                                        Dưỡng ẩm da, mịn màng
+                                        SHINEE</p>
+                                    <p class="product-item__price">70.000 đ</p>
+                                    <button class="product-item__add">
+                                        <img src="./images/add.png" alt="" class="product-more">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slider-more">
+                                <ul class="more-list">
+                                    <li class="more-item"><i class="fa-solid fa-caret-left icon-more"></i></li>
+                                    <li class="more-item"><i class="fa-solid fa-caret-right icon-more"></i></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-list tab-product">
+                            <div class="product-slider row">
+                                <div class="product-slider-item ">
+                                    <div class="product-item__image">
+                                        <img src="./images/product/product1.png" alt="" class="product-image">
+                                    </div>
+                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
+                                        Dưỡng ẩm da, mịn màng
+                                        SHINEE</p>
+                                    <p class="product-item__price">70.000 đ</p>
+                                    <button class="product-item__add">
+                                        <img src="./images/add.png" alt="" class="product-more">
+                                    </button>
+                                </div>
+                                <div class="product-slider-item">
+                                    <div class="product-item__image">
+                                        <img src="./images/product/product2.png" alt="" class="product-image">
+                                    </div>
+                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
+                                        Dưỡng ẩm da, mịn màng
+                                        SHINEE</p>
+                                    <p class="product-item__price">70.000 đ</p>
+                                    <button class="product-item__add">
+                                        <img src="./images/add.png" alt="" class="product-more">
+                                    </button>
+                                </div>
+                                <div class="product-slider-item">
+                                    <div class="product-item__image">
+                                        <img src="./images/product/product3.png" alt="" class="product-image">
+                                    </div>
+                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
+                                        Dưỡng ẩm da, mịn màng
+                                        SHINEE</p>
+                                    <p class="product-item__price">70.000 đ</p>
+                                    <button class="product-item__add">
+                                        <img src="./images/add.png" alt="" class="product-more">
+                                    </button>
+                                </div>
+                                <div class="product-slider-item">
+                                    <div class="product-item__image">
+                                        <img src="./images/product/product4.png" alt="" class="product-image">
+                                    </div>
+                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
+                                        Dưỡng ẩm da, mịn màng
+                                        SHINEE</p>
+                                    <p class="product-item__price">70.000 đ</p>
+                                    <button class="product-item__add">
+                                        <img src="./images/add.png" alt="" class="product-more">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slider-more">
+                                <ul class="more-list">
+                                    <li class="more-item"><i class="fa-solid fa-caret-left icon-more"></i></li>
+                                    <li class="more-item"><i class="fa-solid fa-caret-right icon-more"></i></li>
+
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="container-footer">
                         <button class="btn-exception">Xem cửa hàng</button>

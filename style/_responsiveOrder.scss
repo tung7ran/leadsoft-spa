@@ -1,0 +1,51 @@
+@include responsive_mobile{
+    .pay{
+        display: block;
+    }
+    .order-title{
+        margin-left: 3% !important;
+        font-weight: 600;
+    }
+    .pay-product-first{
+        display: block !important;
+        text-align: center;
+        &__surname{
+            &--text{
+                width: 95% !important;
+            }
+        }
+        &__name{
+            &--text{
+                margin-top: 2rem;
+                width: 95% !important;
+            }
+        }
+    }
+    .pay-products{
+        border: 1px solid #fae487 !important;
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 3rem;
+        &-header{
+        font-weight: 600;
+        }
+        &-text{
+            font-size: 1.4rem !important;
+        }
+        &-sub{
+            font-size: 1.4rem !important;
+        }
+        .pay-products-header__three--text{
+            font-weight: 600;
+        }
+        .pay-products-header__three--price h3{
+            font-weight: 600;
+        }
+        .pay-products-header__order--text h2{
+            font-weight: 600;
+            margin-left: 21%;
+            transform: translateX(0%);
+        }
+    }
+    
+}
