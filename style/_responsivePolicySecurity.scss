@@ -1,0 +1,26 @@
+@include responsive_mobile{
+    .main-policy-security{
+        .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+            padding-left: 0rem;
+            padding-right: 0rem;
+        }
+        padding-top: 2rem;
+        padding-bottom: 10rem;
+        &-content{
+            width: 100%;
+            padding: 0rem 2rem;
+            &__heading{
+                padding: 0 9rem;
+                line-height: 1.4em;
+                padding-top: 3rem;
+                margin-bottom: 3rem;
+            }
+            &__title{
+                text-align: center;
+            }
+            &__text{
+                padding-bottom: 3rem;
+            }
+        }
+    }
+}
