@@ -28,10 +28,10 @@
 @import 'responsiveMain';
 @import 'resposiveStore';
 @import 'responsiveProduct-details';
-@import 'popup';
 @import 'responsiveCart';
 @import 'responsivePay';
 @import 'responsiveOrder';
+@import 'responsiveTipbeautify';
 
 // .content{
 //     margin-top: 13.5rem;
@@ -677,7 +677,8 @@
 .address {
     margin-top: 6.8rem;
     text-align: center;
-
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     &-info {
         &-title {
             margin-top: 1rem;

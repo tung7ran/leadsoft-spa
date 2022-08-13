@@ -5,15 +5,13 @@
     .dp-block {
         display: block;
     }
-    .content {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
     .beautify-container {
         padding-top: 0;
     }
 
     .beautify-mobile {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
         .beautify {
             &--program{
                 &__category{
