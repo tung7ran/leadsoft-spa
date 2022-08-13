@@ -4,10 +4,12 @@
             margin-right: 4.8rem;
         }
     }
+
     .main {
         &-logo {
             height: 22rem;
         }
+
         &-info { 
             &-image {
                 height: 150rem;
@@ -17,12 +19,14 @@
                         margin-bottom: 5rem;
                         margin-left: 2rem;
                     }
+
                     &-heading{
                         font-size: 2rem;
                         padding: 0 14%;
                         line-height: 1.2em;
                         margin-bottom: 5.6rem;
                     }
+
                     &-right {
                         height: 62.1rem;
                         display: flex;
@@ -33,12 +37,14 @@
                             height: 38.6rem;
                             margin: 0;
                         }
+
                         &__two {
                             left: 1.2rem;
                             bottom: 15.2rem;
                             width: 20.3rem;
                             height: 19.4rem;
                         }
+
                         &__three {
                             right: 4.3rem;
                             bottom: 7.5rem;
@@ -57,6 +63,7 @@
                             object-fit: cover;
                         }
                     }
+
                     &__below {
                         position: absolute;
                         top: 0;
@@ -64,12 +71,14 @@
                         width: 100%;
                     }
                 }
+
                 &-content {
                     top: 96rem;
                     &__heading{ 
                         padding: 0 8%;    
                         margin-bottom: 9.6rem;
                     }
+
                     .main-mobile {
                         .main-inftras-content__right{
                             display: flex;
@@ -80,6 +89,7 @@
                                 width: 34.1rem;
                                 height: 38.6rem;
                             }
+
                             &--two {
                                 position: absolute;
                                 left: 1.9rem;
@@ -87,6 +97,7 @@
                                 width: 21.3rem;
                                 height: 19.4rem;
                             }
+
                             &--three {
                                 position: absolute;
                                 right: 5.8rem;
@@ -107,6 +118,7 @@
                                         font-family: Gilroy-XBold;
                                     }
                                 }
+
                                 &-item:first-child {
                                     margin-top: 0;
                                 }
@@ -116,6 +128,7 @@
                 }
             }
         }
+
         &-device {
             height: 74.2rem;
             margin-top: 203rem;
@@ -137,6 +150,7 @@
                                 height: 100%;
                             }
                         }
+
                         &--item1{
                             position: absolute;
                             top: -7rem;
@@ -146,6 +160,7 @@
                                 height: 100%;
                             }
                         }
+
                         &--item2{
                             position: absolute;
                             top: 16.9rem;
@@ -159,6 +174,7 @@
                                 object-fit: cover;
                             }
                         }
+
                         &--item3{
                             position: absolute;
                             top: 5.2rem;
@@ -172,6 +188,7 @@
                         }
                     }
                 }
+                
                 .main-device-right {
                     &__image {
                         position: relative;

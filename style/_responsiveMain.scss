@@ -1,0 +1,51 @@
+@include responsive_mobile {
+    .address {
+        margin-top: 3.8rem;
+        &-info {
+            &-caption {
+                padding: 0 8%;
+            }
+        }
+        .address-nav {
+            &-location {
+                &__item {
+                    &--link {
+                        padding: 0.8rem 0.8rem;
+                        width: 14rem;
+                    }
+                }
+            }
+        }
+        .location-details {
+            margin-bottom: 14.5rem;
+            &-mobile {
+                height: 61.7rem;   
+                overflow-y: scroll;
+            }
+            &-mobile::-webkit-scrollbar {
+                width: 1rem;
+            }
+            ::-webkit-scrollbar-button {
+                height: 1.5rem; 
+                }
+            ::-webkit-scrollbar-track {
+                background: #e6e6e6;
+                }
+            ::-webkit-scrollbar-thumb {
+                background-color: #ffd00d;
+                scroll-padding-right: 5rem;
+            }
+            &-list {
+                &__item {
+                    margin-bottom: 1.4rem;
+                }
+                &__item:last-child {
+                    margin-bottom: 1.4rem;
+                }
+            }
+            &-list:after {
+                display:none;
+            }
+        }
+    }
+}
