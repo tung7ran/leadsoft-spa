@@ -4196,7 +4196,7 @@ a:hover {
   margin: 0 auto;
 }
 .booking-forms-image img {
-  width: 7rem;
+  width: 100%;
 }
 .booking-forms-text p {
   padding: 0 18rem;
@@ -5731,6 +5731,60 @@ a:hover {
     padding-bottom: 3rem;
   }
   .main-recruit .none-mobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .main-logo {
+    height: 100%;
+  }
+  .booking {
+    margin-top: 10rem;
+    height: 54rem;
+  }
+  .booking-title {
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+  .booking-form {
+    width: 100%;
+  }
+  .booking-forms {
+    width: 88%;
+  }
+  .booking-forms-text p {
+    padding: 0rem 9rem;
+  }
+  .booking-forms-image {
+    padding: 2rem 0;
+  }
+  .booking-forms-client-text {
+    font-size: 2.4rem;
+  }
+  .booking-forms-client-name {
+    font-size: 2.4rem;
+  }
+  .booking-forms-thank p {
+    padding: 0 10rem;
+  }
+  .booking-after::after {
+    width: 34.8rem;
+  }
+  .send-contact-mobiles {
+    margin-top: 3rem !important;
+    padding: 0.8rem 3rem !important;
+  }
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    line-height: 3em;
+  }
+  .address .location-details-list__item .location-details-right__info {
+    height: 10rem !important;
+    margin-bottom: 0rem !important;
+  }
+  .none-mobile {
     display: none;
   }
 }
