@@ -22,17 +22,16 @@
 @import 'promotion';
 @import 'promotion-detail';
 @import 'booking';
+@import 'popup';
 @import 'responsiveHeader';
 @import 'responsiveFooter';
+@import 'responsiveMain';
 @import 'resposiveStore';
 @import 'responsiveProduct-details';
-@import 'popup';
 @import 'responsiveCart';
 @import 'responsivePay';
 @import 'responsiveOrder';
-@import 'responsivePolicySecurity';
-@import 'responsivePolicy';
-@import 'responsiveRecruit';
+@import 'responsiveTipbeautify';
 
 // .content{
 //     margin-top: 13.5rem;
@@ -678,7 +677,8 @@
 .address {
     margin-top: 6.8rem;
     text-align: center;
-
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     &-info {
         &-title {
             margin-top: 1rem;
@@ -695,6 +695,8 @@
         }
     }
     &-image {
+        position: relative;
+        margin: 0 auto;
         width: 6rem;
         height: 5rem;
     }
