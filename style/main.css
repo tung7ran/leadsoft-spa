@@ -4207,7 +4207,6 @@ a:hover {
   width: 100%;
 }
 .booking-forms-text p {
-  padding: 0 18rem;
   font-size: 2rem;
   line-height: 1.2em;
 }
@@ -4230,7 +4229,6 @@ a:hover {
   margin-bottom: 2rem;
 }
 .booking-forms-thank p {
-  padding: 0 19rem;
   font-size: 1.4rem;
   font-style: italic;
 }
