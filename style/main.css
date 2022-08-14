@@ -5314,55 +5314,6 @@ a:hover {
   }
 }
 @media only screen and (max-width: 480px) {
-  .advise-contact {
-    height: 70.7rem;
-  }
-  .advise-contact__body .contact-body__right {
-    margin-top: 1.8rem !important;
-  }
-  .advise-contact__body .contact-body__right-info {
-    margin-top: 4.35rem !important;
-  }
-  .advise-contact__body .contact-body__right-info .form-group {
-    margin-left: 0 !important;
-    transform: translateX(0) !important;
-  }
-  .advise-contact__body .contact-body__right-info .form-group .form-control {
-    position: relative;
-    margin: 0 auto;
-    width: 34.8rem !important;
-  }
-  .advise-contact__body .contact-body__right-info .btn-exception {
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  .advise-contact__body .contact-body__left {
-    display: flex;
-    justify-content: space-around;
-  }
-  .advise-contact__body .contact-body__left .contact-body__column {
-    width: 21.6rem !important;
-    height: 15.3rem !important;
-  }
-  .advise-contact__body .contact-body__left .contact-body__column .contact-logo {
-    width: 2.55rem !important;
-    height: 2.55rem !important;
-  }
-  .advise-contact__body .contact-body__left .contact-body__column .contact-logo .icon__call {
-    margin: 0.8rem 0 0 0 !important;
-  }
-  .advise-contact__body .contact-body__left .contact-body__column .contact__title {
-    font-size: 1.4rem !important;
-    margin-top: 0.8rem !important;
-  }
-  .advise-contact__body .contact-body__left .contact-body__column .contact__name {
-    font-size: 2rem !important;
-    padding: 0 !important;
-  }
-  .advise-contact__body .contact-body__left .contact-body__column .contact__desc {
-    max-width: 15rem !important;
-    font-size: 1.2rem !important;
-  }
   .address {
     margin-top: 3.8rem;
   }
@@ -6105,7 +6056,6 @@ a:hover {
   .dp-none {
     display: none;
   }
-
 }
 @media only screen and (min-width: 991px) {
   .banner-training {
@@ -6113,11 +6063,6 @@ a:hover {
   }
   .training-container .container-body-training {
     display: none;
-
-  .address .location-details-list__item .location-details-right__info {
-    height: 10rem !important;
-    margin-bottom: 0rem !important;
-
   }
   .address-training,
 .advise-contact-training {
@@ -6261,6 +6206,89 @@ a:hover {
   }
   .details-news {
     display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .dp-none {
+    display: none;
+  }
+  .dp-block {
+    display: block;
+  }
+  .beautify-container {
+    padding-top: 0;
+  }
+  .beautify-mobile {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .beautify-mobile .beautify--program__category--list {
+    align-items: center;
+    justify-content: center;
+  }
+  .beautify-mobile .beautify--program__category--list-item {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  .beautify-mobile .beautify--program__category--list-item-link {
+    font-size: 1.4rem;
+    padding: 0.7rem 1rem 0.5rem 0.5rem;
+  }
+  .beautify-mobile .beautify--program__category--list-item:nth-child(2) a, .beautify-mobile .beautify--program__category--list-item:nth-child(3) a {
+    font-family: Gilroy-Regular;
+  }
+  .beautify-mobile .beautify-program-list__item--image {
+    width: 100%;
+    height: 24.5rem;
+  }
+  .beautify-mobile .beautify-program-list__item--image--product {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .beautify-mobile .beautify-program-list__item .image-pseudo--tips::after {
+    display: none;
+  }
+  .beautify-mobile .beautify-program-list__item--text--title {
+    font-family: K2D-ExtraBold;
+  }
+  .beautify-mobile .beautify-program-list__item--text--desc {
+    position: relative;
+    font-family: K2D-ExtraLight;
+  }
+  .beautify-mobile .beautify-program-list__item--text--desc::after {
+    content: " ";
+    position: absolute;
+    top: 11rem;
+    right: 2.5rem;
+    height: 2rem;
+    width: 90%;
+    border-bottom: 0.1rem solid #b5b5b5;
+  }
+  .beautify-mobile .beautify-program-list__item--text--desc:last-child::after {
+    border: none;
+  }
+  .beautify-mobile .beautify-program-list__item--calendar {
+    top: 1.6rem;
+    right: 2.8rem;
+  }
+  .beautify-mobile .beautify-program .product-pagination-prev__btn {
+    width: 1.8rem;
+    height: 1.7rem;
+    margin-right: 1.6rem;
+    border: none;
+    background-color: transparent;
+  }
+  .beautify-mobile .beautify-program .product-pagination-prev__btn img {
+    width: 100%;
+    height: 100%;
+  }
+  .beautify-mobile .beautify-program .product-pagination-next img {
+    width: 1.8rem;
+    height: 1.7rem;
+    margin-left: 1rem;
+  }
+  .address-info-caption {
+    padding: 0 6% !important;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
