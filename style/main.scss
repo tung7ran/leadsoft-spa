@@ -28,7 +28,9 @@
 @import 'responsiveMain';
 @import 'resposiveStore';
 @import 'responsiveProduct-details';
-
+@import 'responIndex';
+@import 'responsive-training';
+@import 'responsive-training-detail';
 // .content{
 //     margin-top: 13.5rem;
 // }
@@ -57,10 +59,11 @@
         }
 
         .container-item-title {
-            font-size: 2.5rem;
+            // font-size: 2.5rem;
             line-height: 1;
             text-transform: uppercase;
             padding-top: 1.5rem;
+            font-weight: bold;
         }
     }
 
@@ -128,7 +131,6 @@
 
 .system-introduction {
     align-items: center;
-    margin-top: 9.45rem;
     flex-direction: row-reverse;
 
     .introduction-image {
@@ -166,10 +168,10 @@
         }
 
         .introduction-info-title {
-            font-size: 3.4rem;
+            // font-size: 3.4rem;
             text-transform: uppercase;
             font-weight: bold;
-            line-height: 4.9rem;
+            // line-height: 4.9rem;
         }
 
         .introduction-info-desc {
@@ -203,7 +205,6 @@
 .top-banner-3 {
     background-image: url('../images/banner3.png');
     @include backgroundImage();
-    height: 49rem;
 }
 
 .treatment-result {
@@ -222,11 +223,10 @@
         cursor: pointer;
         .category-item-link {
             color: $black;
-            font-size: 2.4rem;
-            line-height: 6.6rem;
+            // font-size: 2.4rem;
+            // line-height: 6.6rem;
             text-transform: uppercase;
-            font-weight: 600;
-            padding: 0 4rem;
+            // padding: 0 4rem;
         }
     }
 
@@ -240,7 +240,7 @@
 
 
 .event {
-    padding: 3.4rem 0 15.2rem 0;
+    // padding: 3.4rem 0 15.2rem 0;
 
     .container-item {
         .container-heading {
@@ -302,8 +302,6 @@
 
             .btn-exception {
                 @include buttonStyle();
-                font-size: 2.4rem;
-                padding: 1.2rem 2.2rem;
                 font-family: Gilroy-Medium-Italic;
             }
         }
@@ -504,7 +502,6 @@
         }
 
         .container-footer {
-            padding-top: 3.7rem;
 
             .btn-exception {
                 @include buttonStyle();

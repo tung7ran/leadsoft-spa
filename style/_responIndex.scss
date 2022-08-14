@@ -26,6 +26,8 @@
         }
     }
     .system-introduction{
+    margin-top: 9.45rem;
+
         .introduction-image{
             display: flex;
             .introduction-image-1{
@@ -85,17 +87,24 @@
     padding: 4.2rem 0 6.2rem 0;
 
     }
-    .category-nav{
-        .category-item{
-            .category-item-link{
-                font-size: 2.4rem;
-                line-height: 6.6rem;
-                padding: 0 4rem;
-
+    .container-body{
+        .treatment-category{
+            padding: 0 2rem;
+            .category-nav{
+                .category-item{
+                    .category-item-link{
+                        font-size: 2.4rem;
+                        line-height: 6.6rem;
+                        padding: 0 4rem;
+                    font-weight: 600;
+        
+                    }
+                }
+                
             }
         }
-        
     }
+   
     .treatment-result-list {
         margin-top: 4.1rem;
     
@@ -110,6 +119,7 @@
     }
     .event{
         padding: 3.4rem 0 15.2rem 0;
+        margin: 0;
         .container-item{
             .container-heading{
                 .container-item-logo{
@@ -155,6 +165,10 @@
     
                 .btn-exception {
                     @include buttonStyle();
+                font-size: 2.4rem;
+                padding: 1.2rem 2.2rem;
+
+
                 }
             }
         }
@@ -170,12 +184,16 @@
         background-color: $background-home;
         padding: 17.5rem 0 7rem 0;
     }
-    .beautify-store{
-    padding: 6.1rem 0;
-
+    .beauty-store{
+        padding: 6.1rem 0;
+        
         .container-item{
+            .container-footer{
+            padding-top: 3.7rem;
 
+            }
         }
+        
     }
 }
 @include responsive_mobile {
@@ -199,6 +217,7 @@
         }
     }
     .system-introduction{
+        margin-top: 3.9rem;
         display: block;
         .introduction-image{
             display: flex;
@@ -247,12 +266,17 @@
     }
     .treatment-result{
         padding: 1.9rem 1.5rem 6.5rem 1.5rem;
+        .container-item{
+            .treatment-result-heading{
+                padding-bottom: 2.75rem;
+            }
+        }
     }
     .category-nav{
         .category-item{
+            padding: 0rem 1rem;
             .category-item-link{
                 font-size: 1rem;
-                padding: 0rem 0.3rem;
             }
         }
         
@@ -261,7 +285,7 @@
         margin-top: 2rem;
         .treatment-result-item {
             .treatment-result-desc {
-                font-size: 1.2rem;
+                font-size: 1.4rem;
                 text-align: justify;
             }
         }
@@ -269,7 +293,8 @@
     .event{
         // padding: 3.4rem 0 15.2rem 0;
         .container-item{
-            .container-heading{
+            .event-heading{
+                padding-bottom: 5.35rem;
                 .container-item-logo{
 
                 }
@@ -318,6 +343,7 @@
     
                 .btn-exception {
                     @include buttonStyle();
+                    padding: 0.5rem 2rem;
                 }
             }
         }
@@ -337,8 +363,68 @@
             .container-body{
 
             }
+            .container-footer{
+                padding-bottom: 8.6rem;
+            }
            
         }
 
     }
+    .advise-contact {
+        height: 70.7rem;
+        &__body {
+            .contact-body {
+                flex-direction: column-reverse;
+                &__right {
+                margin-top: 1.8rem !important;
+                    &-info {
+                        margin-top: 4.35rem !important;
+                        .form-group {
+                            margin-left: 0 !important;
+                            transform: translateX(0) !important;
+                            .form-control{
+                                position: relative;
+                                margin: 0 auto;
+                                width: 34.8rem !important;
+                            } 
+                        }
+                        .btn-exception {
+                            margin-top: 1.5rem;
+                            margin-bottom: 2rem;
+                        }
+                    }
+                }
+                &__left {
+                    display:flex;
+                    justify-content: space-around;
+                    .contact-body__column {
+                        width: 21.6rem !important;
+                        height: 15.3rem !important;
+                        .contact-logo {
+                            width: 2.55rem !important;
+                            height: 2.55rem !important;
+                            .icon__call {
+                                margin: 0.8rem 0 0 0 !important;
+                            }
+                        }
+                        .contact__title {
+                            font-size: 1.4rem !important;
+                            margin-top: 0.8rem !important;
+                        }
+                        .contact__name {
+                            font-size : 2rem !important;
+                            padding: 0 !important ;
+                        }
+                        .contact__desc {
+                            max-width: 15rem !important;
+                            font-size: 1.2rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .dp-none{
+        display: none;
+      }
 }

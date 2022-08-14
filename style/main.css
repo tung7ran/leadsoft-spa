@@ -2537,7 +2537,6 @@ a:hover {
   border-bottom-right-radius: 3rem;
 }
 .content-product-courses {
-  position: absolute;
   background-color: #faf5da;
   display: flex;
   padding-top: 4rem;
@@ -2570,46 +2569,37 @@ a:hover {
   padding-top: 0.5rem;
   text-align: center;
 }
-.content-product .col {
-  margin-bottom: 16rem;
-}
-
 .training-detail {
   margin-top: 6rem;
-  background-color: #fff6d2;
+  background-color: #fdf9e8;
   position: relative;
-  padding-bottom: 18rem;
   padding-top: 6rem;
 }
 
 .home {
   background-color: #fff;
   border: 1px solid #fff;
-  border-radius: 2rem;
   padding: 4rem 0;
 }
 .home h1 {
   color: #a1710f;
-  font-size: 4rem;
   font-family: K2D-ExtraBold;
   line-height: 1.2;
   margin: 0;
-  padding: 0 7rem;
 }
 .home .details-header {
   margin-top: 2rem;
-  padding: 0 7rem;
 }
 .home .details-header p {
   border: 1px solid #ffeb97;
   border-radius: 1rem;
   font-size: 1.6rem;
   font-family: K2D-ExtraLight;
-  padding: 1rem 1rem;
+  padding: 1rem;
+  text-align: justify;
 }
 .home .details-content {
   margin-top: 2rem;
-  padding: 0 7rem;
 }
 .home .details-content-list {
   background-color: #f2f2f2;
@@ -2626,44 +2616,38 @@ a:hover {
   font-family: K2D-ExtraLight;
 }
 .home .details-reason-title {
-  padding: 0 7rem;
   font-size: 2rem;
   font-family: K2D-Bold;
   color: #a1710f;
 }
 .home .details-reason-sub {
-  padding: 0 7rem;
   font-size: 1.6rem;
   font-family: K2D-ExtraLight;
   margin-top: 2rem;
+  text-align: justify;
 }
 .home .details-reason-img {
-  text-align: center;
+  margin: 1rem 0;
 }
 .home .details-reason-img img {
-  width: 50%;
-}
-.home .details-expert {
-  margin-top: 3rem;
+  width: 100%;
 }
 .home .details-expert-title {
-  padding: 0 7rem;
-  font-size: 3rem;
   font-family: K2D-Bold;
   color: #a1710f;
 }
 .home .details-expert-sub {
-  padding: 0 7rem;
   font-family: K2D-ExtraLight;
   font-size: 1.6rem;
   margin-top: 2rem;
+  text-align: justify;
 }
 .home .details-expert-img__one {
-  text-align: center;
+  margin: 1rem 0;
 }
 .home .details-expert-img__one img {
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 .home .details-expert-img__two {
   position: absolute;
@@ -2682,14 +2666,11 @@ a:hover {
   position: relative;
 }
 .home .details-courses-title {
-  padding: 0 7rem;
-  font-size: 3rem;
   font-family: K2D-Bold;
   color: #a1710f;
   margin-top: 2.6rem;
 }
 .home .details-courses-sub {
-  padding: 0 7rem;
   font-family: K2D-ExtraLight;
   font-size: 1.6rem;
   margin-top: 2rem;
@@ -2701,16 +2682,13 @@ a:hover {
   transform: translateX(-50%);
   right: 0;
   bottom: -5rem;
-  width: 70%;
   height: 0.2rem;
   background-color: #a0700f;
 }
 .home .details-graduate {
-  padding: 0 7rem;
   margin-top: 5rem;
 }
 .home .details-graduate-title {
-  font-size: 3rem;
   padding-top: 5rem;
   font-family: K2D-Bold;
   text-align: center;
@@ -2723,7 +2701,7 @@ a:hover {
 }
 .home .details-graduate-outstanding__list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .home .details-graduate-outstanding__list--item--images {
   width: 14rem;
@@ -2737,7 +2715,6 @@ a:hover {
   border-radius: 50%;
 }
 .home .details-graduate-outstanding__list--item--text {
-  font-size: 1.8rem;
   font-family: K2D-Bold;
   color: #a1710f;
   max-width: 16rem;
@@ -2751,8 +2728,14 @@ a:hover {
 .home .details-graduate-outstanding__move--icon {
   width: 100%;
 }
+.home .details-graduate-outstanding .swiper-button-next,
+.home .details-graduate-outstanding .swiper-button-prev {
+  height: 0.5rem;
+}
+.home .details-graduate-outstanding .swiper-button-prev {
+  left: 0;
+}
 .home .details-rated {
-  padding: 0 7rem;
   margin-top: 4rem;
 }
 .home .details-rated-title {
@@ -4288,6 +4271,7 @@ a:hover {
 }
 
 .form--pop {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -5050,7 +5034,7 @@ a:hover {
     transform: translateX(-50%);
     top: -3.9rem;
     left: 0;
-    background-image: linear-gradient(90deg, #f4df81, #f9d950);
+    background-image: linear-gradient(90deg, #fbd844, #f9d950);
   }
   .footer-top-interactive .interactive-logo {
     margin-left: 50%;
@@ -5086,6 +5070,9 @@ a:hover {
   }
   .footer-top-menu {
     padding-top: 0.5rem;
+  }
+  .footer-bottom {
+    display: none;
   }
   .footer-bottom-mobile {
     position: relative;
@@ -5508,6 +5495,499 @@ a:hover {
     color: #a1710f !important;
   }
 }
+@media only screen and (min-width: 991px) {
+  .top-banner .top-banner-1 {
+    height: 59.1rem;
+  }
+  .content-container {
+    padding: 18.4rem 0;
+    margin: 18rem 0 29rem 0;
+  }
+  .container-item .container-heading {
+    padding-bottom: 8.5rem;
+  }
+  .container-item .container-heading .container-item-logo {
+    height: 9.6rem;
+  }
+  .container-item .container-heading .container-item-title {
+    font-size: 2.5rem;
+  }
+  .system-introduction {
+    margin-top: 9.45rem;
+  }
+  .system-introduction .introduction-image {
+    display: flex;
+  }
+  .system-introduction .introduction-image .introduction-image-1 {
+    height: 60rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .system-introduction .introduction-image .introduction-image-2,
+.system-introduction .introduction-image .introduction-image-3 {
+    height: 26.75rem;
+    position: absolute;
+  }
+  .system-introduction .introduction-info .introduction-info-logo {
+    height: 7.1rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .system-introduction .introduction-info .introduction-info-title {
+    font-size: 3.4rem;
+    line-height: 4.9rem;
+  }
+  .system-introduction .introduction-info .introduction-info-desc {
+    font-size: 1.6rem;
+  }
+  .top-banner-2 {
+    height: 50.1rem;
+  }
+  .top-banner-2 .top-banner-body {
+    height: 33.8rem;
+    top: 8.15rem;
+  }
+  .top-banner-2 .top-banner-body .top-banner-body-image {
+    padding: 0 1.5rem;
+    width: auto;
+    height: 100%;
+  }
+  .top-banner-3 {
+    height: 68rem;
+  }
+  .treatment-result {
+    padding: 4.2rem 0 6.2rem 0;
+  }
+  .container-body .treatment-category {
+    padding: 0 2rem;
+  }
+  .container-body .treatment-category .category-nav .category-item .category-item-link {
+    font-size: 2.4rem;
+    line-height: 6.6rem;
+    padding: 0 4rem;
+    font-weight: 600;
+  }
+  .treatment-result-list {
+    margin-top: 4.1rem;
+  }
+  .treatment-result-list .treatment-result-item .treatment-result-desc {
+    margin-top: 2.5rem;
+    font-size: 2rem;
+    padding: 0 2rem;
+    text-align: center;
+  }
+  .event {
+    padding: 3.4rem 0 15.2rem 0;
+    margin: 0;
+  }
+  .event .container-item .container-body .event-list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .event .container-item .container-body .event-list .event-item .event-item-image .event-image {
+    width: 100%;
+  }
+  .event .container-item .container-body .event-list .event-item .image-pseudo::after {
+    border-right: 2px solid #000000;
+    height: 16.5rem;
+    right: -5.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .event .container-item .container-body .event-list .event-item .event-item-text .event-title {
+    font-size: 1.6rem;
+    max-width: 23.4rem;
+    padding: 3.5rem 0 1.5rem 0;
+  }
+  .event .container-item .container-body .event-list .event-item .event-item-text .event-desc {
+    max-width: 23.4rem;
+    font-size: 1.8rem;
+  }
+  .event .container-item .container-footer {
+    text-align: center;
+    padding-top: 4.55rem;
+  }
+  .event .container-item .container-footer .btn-exception {
+    font-size: 1.6rem;
+    padding: 1.5rem 5.2rem;
+    border: none;
+    outline: none;
+    color: #a1710f;
+    background-color: #ffd00f;
+    border-radius: 8rem;
+    font-family: Gilroy-Bold;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    padding: 1.2rem 2.2rem;
+  }
+  .sale {
+    background-color: #fdf9e8;
+  }
+  .sale .sale-heading {
+    background-color: #fdf9e8;
+  }
+  .sale-container {
+    background-color: #fdf9e8;
+    padding: 17.5rem 0 7rem 0;
+  }
+  .beauty-store {
+    padding: 6.1rem 0;
+  }
+  .beauty-store .container-item .container-footer {
+    padding-top: 3.7rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .top-banner .top-banner-1 {
+    height: 27.55rem;
+  }
+  .content-container {
+    padding: 4.6rem 1.5rem;
+  }
+  .container-item .container-heading {
+    padding-bottom: 7.45rem;
+  }
+  .container-item .container-heading .container-item-logo {
+    height: 5.5rem;
+  }
+  .container-item .container-heading .container-item-title {
+    font-size: 2rem;
+  }
+  .system-introduction {
+    margin-top: 3.9rem;
+    display: block;
+  }
+  .system-introduction .introduction-image {
+    display: flex;
+  }
+  .system-introduction .introduction-image .introduction-image-1,
+.system-introduction .introduction-image .introduction-image-2,
+.system-introduction .introduction-image .introduction-image-3 {
+    width: 33.3333333333%;
+    height: auto;
+    padding: 0 0.5rem;
+  }
+  .system-introduction .introduction-info .introduction-info-logo {
+    height: 5.45rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .system-introduction .introduction-info .introduction-info-title {
+    font-size: 1.8rem;
+    padding: 1rem 0 2.2rem 0;
+  }
+  .system-introduction .introduction-info .introduction-info-desc {
+    font-size: 1.4rem;
+    padding-bottom: 5rem;
+  }
+  .top-banner-2 {
+    height: 27rem;
+  }
+  .top-banner-2 .top-banner-body {
+    top: 5.5rem;
+    height: 16rem;
+  }
+  .top-banner-2 .top-banner-body .top-banner-body-image {
+    padding: 0 1rem;
+    width: auto;
+    height: 100%;
+  }
+  .top-banner-3 {
+    width: auto;
+    height: 15.5rem;
+  }
+  .treatment-result {
+    padding: 1.9rem 1.5rem 6.5rem 1.5rem;
+  }
+  .treatment-result .container-item .treatment-result-heading {
+    padding-bottom: 2.75rem;
+  }
+  .category-nav .category-item {
+    padding: 0rem 1rem;
+  }
+  .category-nav .category-item .category-item-link {
+    font-size: 1rem;
+  }
+  .treatment-result-list {
+    margin-top: 2rem;
+  }
+  .treatment-result-list .treatment-result-item .treatment-result-desc {
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+  .event .container-item .event-heading {
+    padding-bottom: 5.35rem;
+  }
+  .event .container-item .container-body .event-list {
+    display: inline-block;
+  }
+  .event .container-item .container-body .event-list .event-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffd00f;
+    border-radius: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+  }
+  .event .container-item .container-body .event-list .event-item .event-item-image {
+    height: 13.5rem;
+    padding-right: 2rem;
+  }
+  .event .container-item .container-body .event-list .event-item .image-pseudo-mobile::after,
+.event .container-item .container-body .event-list .event-item .image-pseudo::after {
+    border-right: 1px solid #000000;
+    height: 10rem;
+    left: 0;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .event .container-item .container-body .event-list .event-item .event-item-text .event-title {
+    font-size: 1.4rem;
+  }
+  .event .container-item .container-body .event-list .event-item .event-item-text .event-desc {
+    font-size: 1.2rem;
+  }
+  .event .container-item .container-footer {
+    text-align: center;
+    padding-top: 2.45rem;
+    padding-bottom: 1.5rem;
+  }
+  .event .container-item .container-footer .btn-exception {
+    font-size: 1.6rem;
+    padding: 1.5rem 5.2rem;
+    border: none;
+    outline: none;
+    color: #a1710f;
+    background-color: #ffd00f;
+    border-radius: 8rem;
+    font-family: Gilroy-Bold;
+    text-transform: uppercase;
+    padding: 0.5rem 2rem;
+  }
+  .sale-container {
+    padding: 7rem 1.5rem 0 1.5rem;
+  }
+  .beauty-store {
+    padding: 0 1.5rem;
+    background-color: #fdf9e8;
+  }
+  .beauty-store .container-item {
+    padding-top: 2rem;
+  }
+  .beauty-store .container-item .container-heading {
+    padding-bottom: 2rem;
+  }
+  .beauty-store .container-item .container-footer {
+    padding-bottom: 8.6rem;
+  }
+  .advise-contact {
+    height: 70.7rem;
+  }
+  .advise-contact__body .contact-body {
+    flex-direction: column-reverse;
+  }
+  .advise-contact__body .contact-body__right {
+    margin-top: 1.8rem !important;
+  }
+  .advise-contact__body .contact-body__right-info {
+    margin-top: 4.35rem !important;
+  }
+  .advise-contact__body .contact-body__right-info .form-group {
+    margin-left: 0 !important;
+    transform: translateX(0) !important;
+  }
+  .advise-contact__body .contact-body__right-info .form-group .form-control {
+    position: relative;
+    margin: 0 auto;
+    width: 34.8rem !important;
+  }
+  .advise-contact__body .contact-body__right-info .btn-exception {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .advise-contact__body .contact-body__left {
+    display: flex;
+    justify-content: space-around;
+  }
+  .advise-contact__body .contact-body__left .contact-body__column {
+    width: 21.6rem !important;
+    height: 15.3rem !important;
+  }
+  .advise-contact__body .contact-body__left .contact-body__column .contact-logo {
+    width: 2.55rem !important;
+    height: 2.55rem !important;
+  }
+  .advise-contact__body .contact-body__left .contact-body__column .contact-logo .icon__call {
+    margin: 0.8rem 0 0 0 !important;
+  }
+  .advise-contact__body .contact-body__left .contact-body__column .contact__title {
+    font-size: 1.4rem !important;
+    margin-top: 0.8rem !important;
+  }
+  .advise-contact__body .contact-body__left .contact-body__column .contact__name {
+    font-size: 2rem !important;
+    padding: 0 !important;
+  }
+  .advise-contact__body .contact-body__left .contact-body__column .contact__desc {
+    max-width: 15rem !important;
+    font-size: 1.2rem !important;
+  }
+  .dp-none {
+    display: none;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .banner-training {
+    display: none;
+  }
+  .training-container .container-body-training {
+    display: none;
+  }
+  .address-training,
+.advise-contact-training {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .headers {
+    display: none;
+  }
+  .training-container {
+    margin-top: 6.4rem;
+  }
+  .training-container .content-img {
+    height: 5.5rem;
+    width: 6.7rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .training-container .content-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .training-container .content-title h1 {
+    font-size: 1.8rem;
+  }
+  .training-container .content-product-training {
+    display: none;
+  }
+  .container-body-training {
+    margin-top: 5.9rem;
+  }
+  .container-body-training .container-service .container-service-item .service-image {
+    width: 100%;
+  }
+  .advise-contact-training {
+    margin-top: 13.5rem;
+  }
+  .address-training {
+    margin-top: 3.8rem;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .training-detail {
+    padding-bottom: 18rem;
+  }
+  .home {
+    border-radius: 2rem;
+  }
+  .home h1 {
+    padding: 0 7rem;
+    font-size: 4rem;
+  }
+  .home .details-header,
+.home .details-content,
+.home .details-reason,
+.home .details-expert,
+.home .details-courses,
+.home .details-graduate,
+.home .details-rated {
+    padding: 0 7rem;
+  }
+  .home .details-expert {
+    margin-top: 3rem;
+  }
+  .home .details-expert-title {
+    font-size: 3rem;
+  }
+  .home .details-graduate-title,
+.home .details-courses-title {
+    font-size: 3rem;
+  }
+  .home .details-courses::after {
+    width: 70%;
+  }
+  .home .details-graduate-outstanding__list--item--text {
+    font-size: 1.8rem;
+  }
+  .address-training {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .training-detail-container {
+    flex-direction: column-reverse;
+    padding: 0 2rem;
+    background-color: #fdf9e8;
+  }
+  .training-detail-container .home {
+    background-color: #fff;
+  }
+  .training-detail-container .home h1 {
+    padding: 0 6rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .training-detail-container .home .details-header,
+.training-detail-container .home .details-content,
+.training-detail-container .home .details-reason,
+.training-detail-container .home .details-expert,
+.training-detail-container .home .details-courses,
+.training-detail-container .home .details-graduate,
+.training-detail-container .home .details-rated {
+    padding: 0 1rem;
+  }
+  .training-detail-container .home .details-graduate-title,
+.training-detail-container .home .details-expert-title {
+    font-size: 2rem;
+  }
+  .training-detail-container .home .details-courses-title {
+    font-size: 2rem;
+  }
+  .training-detail-container .home .details-courses::after {
+    width: 100%;
+  }
+  .training-detail-container .home .details-graduate-outstanding__list--item--text {
+    font-size: 1.4rem;
+  }
+  .address-training {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    background-color: #fff;
+  }
+  .swiper-button-next,
+.swiper-button-prev {
+    display: none;
+  }
+  .details-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    justify-content: center;
+  }
+  .details-menu-list__item {
+    margin: 0 0.5rem 0.5rem 0.5rem;
+  }
+  .details-menu-list__item--text {
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    min-width: 14rem;
+  }
+  .details-news {
+    display: none;
+  }
+}
 .top-banner .top-banner-1 {
   background-image: url("../images/banner1.png");
   background-size: cover;
@@ -5525,10 +6005,10 @@ a:hover {
   height: 100%;
 }
 .container-item .container-heading .container-item-title {
-  font-size: 2.5rem;
   line-height: 1;
   text-transform: uppercase;
   padding-top: 1.5rem;
+  font-weight: bold;
 }
 .container-item .container-body .container-service {
   flex-wrap: wrap;
@@ -5575,7 +6055,6 @@ a:hover {
 
 .system-introduction {
   align-items: center;
-  margin-top: 9.45rem;
   flex-direction: row-reverse;
 }
 .system-introduction .introduction-image {
@@ -5599,10 +6078,8 @@ a:hover {
   height: 100%;
 }
 .system-introduction .introduction-info .introduction-info-title {
-  font-size: 3.4rem;
   text-transform: uppercase;
   font-weight: bold;
-  line-height: 4.9rem;
 }
 .system-introduction .introduction-info .introduction-info-desc {
   line-height: 2.5rem;
@@ -5634,7 +6111,6 @@ a:hover {
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 49rem;
 }
 
 .treatment-result {
@@ -5655,11 +6131,7 @@ a:hover {
 }
 .category-nav .category-item .category-item-link {
   color: #000;
-  font-size: 2.4rem;
-  line-height: 6.6rem;
   text-transform: uppercase;
-  font-weight: 600;
-  padding: 0 4rem;
 }
 .category-nav .active {
   background-color: #ffd00f;
@@ -5667,9 +6139,6 @@ a:hover {
   border-radius: 50rem;
 }
 
-.event {
-  padding: 3.4rem 0 15.2rem 0;
-}
 .event .container-item .container-heading .container-item-logo {
   margin-left: 50%;
   transform: translateX(-50%);
@@ -5713,8 +6182,6 @@ a:hover {
   border-radius: 8rem;
   font-family: Gilroy-Bold;
   text-transform: uppercase;
-  font-size: 2.4rem;
-  padding: 1.2rem 2.2rem;
   font-family: Gilroy-Medium-Italic;
 }
 
@@ -5876,9 +6343,6 @@ a:hover {
 .beauty-store .container-item .container-body .product-list .slider-more .more-list .more-item .icon-more {
   font-size: 4.4rem;
   color: #a1710f;
-}
-.beauty-store .container-item .container-footer {
-  padding-top: 3.7rem;
 }
 .beauty-store .container-item .container-footer .btn-exception {
   font-size: 1.6rem;
