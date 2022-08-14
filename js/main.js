@@ -1,6 +1,7 @@
 // const $ = document.querySelector.bind(document);
 // const $$ = document.querySelectorAll.bind(document);
 // const tabs = $$('.tab-item');
+/*
 const tabs = document.querySelectorAll('.tab-item');
 const panes = document.querySelectorAll('.tab-pane');
 const tabActive = $('.tab-item.active');
@@ -15,8 +16,10 @@ tabs.forEach((tab, index) => {
         pane.classList.add('active');
     }
 });
+*/
 // // ------------------------------------------------------------------
 // const tabCategory = $$('.tab-category');
+/*
 const tabCategory = document.querySelectorAll('.tab-category');
 const tabPane = document.querySelectorAll('.tab-pane');
 // const tabPane = $$('.tab-product');
@@ -30,7 +33,9 @@ tabCategory.forEach((tab, index) => {
         pane.classList.add('active');
     }
 });
+*/
 // --------------------------------------------------------------------------------
+/*
 const cart = document.querySelector('.header-contact-right__cart')
 const notify =  document.querySelector('.header-cart--notify')
 const close =  document.querySelector('.header-cart--notify__info--top-icon')
@@ -40,7 +45,7 @@ cart.addEventListener('click', () => {
 cart.addEventListener('click', () => {
     notify.classList.toggle('show')
 });
-
+*/
 // // ---------------------------------------------------------------------------------
 const openModalBtn = document.getElementById("open-modal-btn");
 const modal = document.getElementById("open-contact");
@@ -139,4 +144,4 @@ var swiper = new Swiper(".slide-content", {
     },
   });
 
-//   slider training
+//   

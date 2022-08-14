@@ -3522,6 +3522,21 @@ a:hover {
   display: none;
 }
 
+.tab-item-heading:hover {
+  opacity: 1;
+  background-color: rgba(194, 53, 100, 0.05);
+  border-color: rgba(194, 53, 100, 0.1);
+}
+
+.tab-pane-content {
+  display: none;
+}
+
+.tab-pane-content.active {
+  display: block;
+  background-color: transparent;
+}
+
 .form--register,
 .form--contact {
   position: fixed;
@@ -3532,6 +3547,30 @@ a:hover {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
+}
+.form--register .tabs,
+.form--contact .tabs {
+  position: absolute;
+  top: 5.5rem;
+  right: 20rem;
+}
+.form--register .tabs .tab-item-heading,
+.form--contact .tabs .tab-item-heading {
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  min-width: 15rem;
+  margin: 0.2rem 0;
+  cursor: pointer;
+  background-color: #fff;
+}
+.form--register .tabs .tab-item-heading .tab-icon,
+.form--contact .tabs .tab-item-heading .tab-icon {
+  font-size: 2rem;
+}
+.form--register .tabs .active,
+.form--contact .tabs .active {
+  background-color: #ffd00f;
 }
 .form--register__inner,
 .form--contact__inner {
@@ -4459,20 +4498,9 @@ a:hover {
   margin-left: 80%;
 }
 
-.address-pop {
-  display: none;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 2;
-}
 .address-pop-mobile {
+  width: 76.8rem;
+  height: 69.3rem;
   background-image: linear-gradient(180deg, #F4E390, #FED119);
   background-size: cover;
   background-position: center;
@@ -4499,6 +4527,7 @@ a:hover {
   height: 5rem;
 }
 .address-pop-mobile__info--title {
+  text-align: center;
   margin-top: 1rem;
   margin-bottom: 1.4rem;
   text-transform: uppercase;
@@ -4610,7 +4639,7 @@ a:hover {
   border-radius: 1.6rem;
   padding: 0.2rem 1rem;
   font-family: Gilroy-Medium-Italic;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .address-pop-mobile .pop-details-list__item:last-child {
   margin-bottom: 0;
@@ -4733,18 +4762,6 @@ a:hover {
   color: #a1710f;
 }
 
-.form--appointment {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 2;
-}
 .form--appointment__inner {
   background-image: url(../images/modal.png);
   background-size: cover;
