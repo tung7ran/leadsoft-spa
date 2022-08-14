@@ -28,9 +28,11 @@
 @import 'responsiveMain';
 @import 'resposiveStore';
 @import 'responsiveProduct-details';
-@import 'responIndex';
-@import 'responsive-training';
-@import 'responsive-training-detail';
+@import 'responsiveCart';
+@import 'responsivePay';
+@import 'responsiveOrder';
+@import 'responsiveTipbeautify';
+
 // .content{
 //     margin-top: 13.5rem;
 // }
@@ -137,7 +139,9 @@
         position: relative;
         // overflow: hidden;
         .introduction-image-1 {
-         
+            height: 60rem;
+            margin-left: 50%;
+            transform: translateX(-50%);
         }
 
         .introduction-image-2 {
@@ -196,8 +200,9 @@
         right: 0;
         bottom: 0;
         .top-banner-body-image {
-            // width: auto;
-            // height: 100%;
+            padding: 0 1.5rem;
+            width: auto;
+            height: 100%;
         }
     }
 }

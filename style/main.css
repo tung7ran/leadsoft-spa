@@ -3494,9 +3494,89 @@ a:hover {
 .service .detail-news--menu__list {
   margin-bottom: 2.35rem;
 }
+.service .detail-news--menu__list--line {
+  width: 100%;
+  height: 0.1rem;
+}
 .service .detail-news--menu__list--item {
   display: flex;
   position: relative;
+}
+.service .detail-news--menu__list--item--laser {
+  background-image: url(../images/service/img4.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 36%;
+  height: 7rem;
+  text-transform: uppercase;
+}
+.service .detail-news--menu__list--item--ex2 {
+  background-image: url(../images/service/img5.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 36%;
+  height: 7rem;
+  text-transform: uppercase;
+}
+.service .detail-news--menu__list--item--ex2-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.service .detail-news--menu__list--item--depth {
+  background-image: url(../images/service/img6.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 36%;
+  height: 7rem;
+  text-transform: uppercase;
+}
+.service .detail-news--menu__list--item--depth-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.service .detail-news--menu__list--item--bs4 {
+  background-image: url(../images/service/img7.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 36%;
+  height: 7rem;
+  text-transform: uppercase;
+}
+.service .detail-news--menu__list--item--bs4-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.service .detail-news--menu__list--item--secret {
+  background-image: url(../images/service/img8.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 36%;
+  height: 7rem;
+  text-transform: uppercase;
 }
 .service .detail-news--menu__list--item--images {
   background-image: url(../images/trainning/22.png);
@@ -3515,7 +3595,10 @@ a:hover {
   text-transform: uppercase;
   font-size: 1.1rem;
   font-family: Gilroy-Bold;
+  font-size: 1.2rem;
+  font-weight: bold;
   max-width: 60%;
+  padding-top: 1rem;
 }
 
 .hide {
@@ -6113,17 +6196,7 @@ a:hover {
   }
   .training-container .container-body-training {
     display: none;
-
-  .address .location-details-list__item .location-details-right__info {
-    height: 10rem !important;
-    margin-bottom: 0rem !important;
-
-  }
-  .address-training,
-.advise-contact-training {
-    display: none;
-  }
-}
+ }
 @media only screen and (max-width: 480px) {
   .headers {
     display: none;
@@ -6183,36 +6256,8 @@ a:hover {
   .home .details-expert {
     margin-top: 3rem;
   }
-  .home .details-expert-title {
-    font-size: 3rem;
-  }
-  .home .details-graduate-title,
-.home .details-courses-title {
-    font-size: 3rem;
-  }
-  .home .details-courses::after {
-    width: 70%;
-  }
-  .home .details-graduate-outstanding__list--item--text {
-    font-size: 1.8rem;
-  }
-  .address-training {
-    display: none;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .training-detail-container {
-    flex-direction: column-reverse;
-    padding: 0 2rem;
-    background-color: #fdf9e8;
-  }
-  .training-detail-container .home {
-    background-color: #fff;
-  }
-  .training-detail-container .home h1 {
-    padding: 0 6rem;
-    font-size: 2rem;
-    text-align: center;
+  .pay-products-header {
+    font-weight: 600;
   }
   .training-detail-container .home .details-header,
 .training-detail-container .home .details-content,
@@ -6236,13 +6281,9 @@ a:hover {
   .training-detail-container .home .details-graduate-outstanding__list--item--text {
     font-size: 1.4rem;
   }
-  .address-training {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    background-color: #fff;
-  }
-  .swiper-button-next,
-.swiper-button-prev {
+}
+@media only screen and (max-width: 480px) {
+  .dp-none {
     display: none;
   }
   .details-menu-list {
@@ -6328,6 +6369,9 @@ a:hover {
     width: 1.8rem;
     height: 1.7rem;
     margin-left: 1rem;
+  }
+  .address-info-caption {
+    padding: 0 6% !important;
   }
 }
 .top-banner .top-banner-1 {
