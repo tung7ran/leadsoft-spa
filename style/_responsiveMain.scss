@@ -103,3 +103,117 @@
         }
     }
 }
+
+@include responsive_tablet {
+    .advise-contact {
+        height: 58rem !important;
+        &__body {
+            .contact-body {
+                &__right {
+                margin-top: 1.8rem !important;
+                padding-left: 2rem;
+
+                    &-heading {
+                        height: 16.7rem !important;
+                    }
+
+                    &-info {
+                        margin-top: 4.35rem !important;
+
+                        .form-group {
+                            margin-left: 0 !important;
+                            transform: translateX(0) !important;
+
+                            .form-control{
+                                position: relative;
+                                margin: 0 auto;
+                                font-size: 1.6rem !important;
+                                width: 25rem !important;
+                            } 
+                        }
+
+                        .btn-exception {
+                            margin-top: 1.5rem;
+                            margin-bottom: 2rem;
+                        }
+                    }
+                }
+                &__left {
+                    .contact-body__column {   
+                        width: 25.6rem !important;
+                        height: 18.3rem !important;
+                        .contact-logo {
+                            width: 4.55rem !important;
+                            height: 4.55rem !important;
+                            .icon__call {
+                                margin: 0.8rem 0 0 0 !important;
+                            }
+                        }
+                        .contact__title {
+                            font-size: 1.8rem !important;
+                            margin-top: 1.4rem !important;
+                        }
+                        .contact__name {
+                            font-size: 3rem !important;
+                            padding: 0 !important ;
+                        }
+                        .contact__desc {
+                            max-width: 17rem !important;
+                            font-size: 1.4rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .address {
+        margin-top: 3.8rem !important;
+
+        &-info {
+            &-caption {
+                padding: 0 22% !important;
+            }
+        }
+
+        .address-nav {
+            &-location {
+                &__item {
+                    &--link {
+                        padding: 0.8rem 0.8rem;
+                        width: 14rem;
+                    }
+                }
+            }
+        }
+        .location-details {
+            margin-bottom: 14.5rem;
+
+            &-mobile {
+                height: 61.7rem;   
+            }
+
+            &-list {
+                &__item {
+                    margin-bottom: 1.4rem !important;
+
+                    .location-details-right {
+                        &__info {
+                            font-size: 1.5rem !important;
+                        }
+                    }
+                }
+            }
+
+            &-list:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 92%;
+                width: 1rem;
+                border-right: 0.1rem solid #A1710F;
+            }
+        }
+    }
+}
