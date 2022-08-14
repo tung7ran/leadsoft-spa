@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thông tin chi tiết đào tạo</title>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -42,15 +43,17 @@
                         <button class="navbar-mobile js-mobile-btn">
                             <i class="fa-solid fa-bars"></i>
                         </button>
-                         
+
                         <div class="mobile-menu-overlay"></div>
                     </div>
 
                     <div class="header-contact-right d-flex">
                         <button type="submit" class="search-mobile dp-block ">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#fff" class="bi bi-search header-contact-left__button--icon" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#fff"
+                                class="bi bi-search header-contact-left__button--icon" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
                         </button>
                         <div class="header-contact-right__cart">
                             <div class="header-cart">
@@ -92,8 +95,10 @@
                                             <h3 class="header-cart--notify__info--main-heading">Tổng cộng: 70,000 Đ</h3>
                                         </div>
                                         <div class="header-cart--notify__info--bottom">
-                                            <button class="btn header-cart--notify__info--bottom-view">Xem giỏ hàng</button>
-                                            <button class="btn header-cart--notify__info--bottom-pay">Thang toán</button>
+                                            <button class="btn header-cart--notify__info--bottom-view">Xem giỏ
+                                                hàng</button>
+                                            <button class="btn header-cart--notify__info--bottom-pay">Thang
+                                                toán</button>
                                         </div>
                                     </div>
                                 </div>
@@ -254,8 +259,8 @@
             </div>
         </header>
         <div class="container-max training-detail">
-            <div class="container grid wide">
-                <div class="row details">
+            <div class="container grid wide ">
+                <div class="row details training-detail-container">
                     <div class="col-lg-9 home">
 
                         <h1>Khóa đào tạo chăm sóc da - học spa chuyên nghiệp</h1>
@@ -353,8 +358,7 @@
                             <div class="details-expert-img__one">
                                 <img src="./images/trainning/16.png" alt="">
                             </div>
-                            <img class="details-expert-img__two" src="./images/trainning/17.png" alt="">
-                            <img class="details-expert-img__three" src="./images/trainning/18.png" alt="">
+                           
                         </div>
 
                         <div class="details-courses">
@@ -389,40 +393,121 @@
 
                         <div class="details-graduate">
                             <h2 class="details-graduate-title">CÁC KHÓA HỌC VIÊN TỐT NGHIỆP</h2>
-                            <div class="details-graduate-outstanding">
-                                <div class="details-graduate-outstanding__list">
-                                    <div class="details-graduate-outstanding__list--item">
-                                        <div class="details-graduate-outstanding__list--item--images">
-                                            <img src="./images/trainning/19.png" alt="">
-                                        </div>
-                                        <p class="details-graduate-outstanding__list--item--text">Khóa chăm sóc da
-                                            tháng 1.2022</p>
-                                    </div>
-                                    <div class="details-graduate-outstanding__list--item">
-                                        <div class="details-graduate-outstanding__list--item--images">
-                                            <img src="./images/trainning/19.png" alt="">
-                                        </div>
-                                        <p class="details-graduate-outstanding__list--item--text">Khóa chăm sóc da
-                                            tháng 2.2022</p>
-                                    </div>
-                                    <div class="details-graduate-outstanding__list--item">
-                                        <div class="details-graduate-outstanding__list--item--images">
-                                            <img src="./images/trainning/19.png" alt="">
-                                        </div>
-                                        <p class="details-graduate-outstanding__list--item--text">Khóa chăm sóc da
-                                            tháng 3.2022</p>
-                                    </div>
+                         
+                            <section>
 
-
+                                <div class="swiper mySwiper details-graduate-outstanding">
+                                    <div class="swiper-wrapper details-graduate-outstanding__list">
+                                        <div class="swiper-slide details-graduate-outstanding__list--item">
+                                            <div class="card-content">
+                                                <div class="image details-graduate-outstanding__list--item--images">
+                                                    <img src="./images/trainning/19.png" alt="">
+                                                </div>
+                                                
+                                                    <span class="details-graduate-outstanding__list--item--text">Khóa chăm sóc da tháng 1.2022</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide details-graduate-outstanding__list--item">
+                                            <div class="card-content">
+                                                <div class="image details-graduate-outstanding__list--item--images">
+                                                    <img src="./images/trainning/19.png" alt="">
+                                                </div>
+                                                
+                                                    <span class="details-graduate-outstanding__list--item--text">Khóa chăm sóc da tháng 1.2022</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide details-graduate-outstanding__list--item">
+                                            <div class="card-content">
+                                                <div class="image details-graduate-outstanding__list--item--images">
+                                                    <img src="./images/trainning/19.png" alt="">
+                                                </div>
+                                                
+                                                    <span class="details-graduate-outstanding__list--item--text">Khóa chăm sóc da tháng 1.2022</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide details-graduate-outstanding__list--item">
+                                            <div class="card-content">
+                                                <div class="image details-graduate-outstanding__list--item--images">
+                                                    <img src="./images/trainning/19.png" alt="">
+                                                </div>
+                                                
+                                                    <span class="details-graduate-outstanding__list--item--text">Khóa chăm sóc da tháng 1.2022</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide details-graduate-outstanding__list--item">
+                                            <div class="card-content">
+                                                <div class="image details-graduate-outstanding__list--item--images">
+                                                    <img src="./images/trainning/19.png" alt="">
+                                                </div>
+                                                
+                                                    <span class="details-graduate-outstanding__list--item--text">Khóa chăm sóc da tháng 1.2022</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide details-graduate-outstanding__list--item">
+                                            <div class="card-content">
+                                                <div class="image details-graduate-outstanding__list--item--images">
+                                                    <img src="./images/trainning/19.png" alt="">
+                                                </div>
+                                                
+                                                    <span class="details-graduate-outstanding__list--item--text">Khóa chăm sóc da tháng 1.2022</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide details-graduate-outstanding__list--item">
+                                            <div class="card-content">
+                                                <div class="image details-graduate-outstanding__list--item--images">
+                                                    <img src="./images/trainning/19.png" alt="">
+                                                </div>
+                                                
+                                                    <span class="details-graduate-outstanding__list--item--text">Khóa chăm sóc da tháng 1.2022</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide details-graduate-outstanding__list--item">
+                                            <div class="card-content">
+                                                <div class="image details-graduate-outstanding__list--item--images">
+                                                    <img src="./images/trainning/19.png" alt="">
+                                                </div>
+                                                
+                                                    <span class="details-graduate-outstanding__list--item--text">Khóa chăm sóc da tháng 1.2022</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide details-graduate-outstanding__list--item">
+                                            <div class="card-content">
+                                                <div class="image details-graduate-outstanding__list--item--images">
+                                                    <img src="./images/trainning/19.png" alt="">
+                                                </div>
+                                                
+                                                    <span class="details-graduate-outstanding__list--item--text">Khóa chăm sóc da tháng 1.2022</span>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                        
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
                                 </div>
-                                <div class="details-graduate-outstanding__move">
-                                    <img class="details-graduate-outstanding__move--icon"
-                                        src="./images/_Path_ + _Path_.png" alt="">
-
-                                </div>
-
-                            </div>
+                            </section>
                         </div>
+
+
+
+
+
+
+
+
+
+
+
 
                         <div class="details-rated">
                             <h2 class="details-rated-title">ĐÁNH GIÁ TỪ HỌC VIÊN</h2>
@@ -560,6 +645,135 @@
                     </div>
                 </div>
             </div>
+            <div class="address address-training">
+                <div class="address-info">
+                    <div class="address-image">
+                        <img src="./images/butterfly-wings.png" class="w-100" alt="">
+                    </div>
+                    <h2 class="address-info-title">Hệ thống hơn 50 chi nhánh</h2>
+                    <p class="address-info-caption">Nhờ sự tin yêu của khách hàng, SHYNH BEAUTY luôn có lượng khách lớn
+                        ghé thăm</p>
+                </div>
+                <div class="address-nav">
+                    <div class="container container-width">
+                        <ul class="address-nav-location row">
+                            <li class="address-nav-location__item ">
+                                <a class="address-nav-location__item--link active" href="">Tất cả</a>
+                            </li>
+                            <li class="address-nav-location__item">
+                                <a class="address-nav-location__item--link" href="">Hồ Chí Minh</a>
+                            </li>
+                            <li class="address-nav-location__item">
+                                <a class="address-nav-location__item--link" href="">Hà nội</a>
+                            </li>
+                            <li class="address-nav-location__item">
+                                <a class="address-nav-location__item--link" href="">Miền nam</a>
+                            </li>
+                            <li class="address-nav-location__item">
+                                <a class="address-nav-location__item--link" href="">Miền tây</a>
+                            </li>
+                            <li class="address-nav-location__item">
+                                <a class="address-nav-location__item--link" href="">Miền trung</a>
+                            </li>
+                            <li class="address-nav-location__item">
+                                <a class="address-nav-location__item--link" href="">Tây nguyên</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="location-details">
+                    <div class="container container-width">
+                        <div class="row location-details-border location-details-mobile" id="mobile-scroll">
+                            <ul class="location-details-list col-lg-6">
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/thanhtoan.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Quận 10</h4>
+                                        <p class="location-details-right__info">375 Nguyễn Thượng Hiền, Phường 11, Quận
+                                            10 (Vòng Xoay Dân Chủ)
+                                        </p>
+                                        <!-- cần chữ in nghiêng -->
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/shynhhouse.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Bình Thạnh</h4>
+                                        <p class="location-details-right__info">380 Bùi Hữu Nghĩa, Phường 2, Bình Thạnh
+                                            (Đối Diện Chợ Bà Chiểu)</p>
+                                        <!-- cần chữ in nghiêng -->
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/makeup.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Thủ Đức</h4>
+                                        <p class="location-details-right__info">314 Võ Văn Ngân, Bình Thọ, Thủ Đức (Gần
+                                            ĐH Sư Phạm Kĩ Thuật)</p>
+                                        <!-- cần chữ in nghiêng -->
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                            </ul>
+                            <ul class="location-details-list col-lg-6">
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/thanhtoan.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Quận 7</h4>
+                                        <p class="location-details-right__info">44 Nguyễn Thị Thập, Tân Hưng, Quận 7
+                                            (Gần cầu HimLam)</p>
+                                        <!-- cần chữ in nghiêng -->
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/shynhhouse.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Gò Vấp</h4>
+                                        <p class="location-details-right__info">398 Nguyễn Văn Nghi, Phường 7, Quận Gò
+                                            Vấp</p>
+                                        <!-- cần chữ in nghiêng -->
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/makeup.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Tân Bình</h4>
+                                        <p class="location-details-right__info">120 Ni Sư Huỳnh Liên,Phường 10, Quận Tân
+                                            Bình</p>
+                                        <!-- cần chữ in nghiêng -->
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="address-near dp-none">
+                    <button class="btn address-near-btn">Tìm chi nhánh gần bạn</button>
+                </div>
+            </div>
         </div>
 
 
@@ -678,6 +892,49 @@
                     </div>
                 </div>
             </div>
+            <div class="footer-bottom-mobile">
+                <div class="row">
+                    <div class="footer-bottom-mobile__image">
+                        <img src="./images/footer/mobile/BgBoxshow.png" alt="">
+                    </div>
+                    <div class="col-4 d-flex justify-content-between">
+                        <div class="footer-bottom-mobile__branch">
+                            <div class="footer-bottom-mobile__branch--image">
+                                <img src="./images/footer/mobile/imgHome.png" alt="">
+                            </div>
+                            <span class="footer-bottom-mobile__text">Chi nhánh</span>
+                        </div>
+                        <div class="footer-bottom-mobile__booking">
+                            <div class="footer-bottom-mobile__booking--image">
+                                <img src="./images/footer/mobile/imgCanlender.png" alt="">
+                            </div>
+                            <span class="footer-bottom-mobile__text">Đặt lịch</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="footer-bottom-mobile__advise text-center">
+                            <div class="footer-bottom-mobile__advise--image">
+                                <img src="./images/footer/mobile/imgUserheadset.png" alt="">
+                            </div>
+                            <span class="footer-bottom-mobile__text">Tư vấn</span>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-between">
+                        <div class="footer-bottom-mobile__tel">
+                            <div class="footer-bottom-mobile__tel--image">
+                                <img src="./images/footer/mobile/imgCall.png" alt="">
+                            </div>
+                            <span class="footer-bottom-mobile__text">1900 1234</span>
+                        </div>
+                        <div class="footer-bottom-mobile__app">
+                            <div class="footer-bottom-mobile__app--image">
+                                <img src="./images/footer/mobile/imgApp.png" alt="">
+                            </div>
+                            <span class="footer-bottom-mobile__text">Tải app</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -687,6 +944,24 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>

@@ -11,6 +11,11 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="./style/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/slider.css">
+
 </head>
 
 <body>
@@ -52,48 +57,45 @@
                               </svg>
                         </button>
                         <div class="header-contact-right__cart">
-                            <div class="header-cart">
-                                <button class="btn header-contact-right__cart--btn dp-none">
-                                    <img src="./images/store.png" alt="">
-                                    <span class="header-contact-right__cart--mobile">1</span>
-                                </button>
-                                <div class="header-cart--notify border-1 dp-none">
-                                    <div class="header-cart--notify__info">
-                                        <div class="row header-cart--notify__info--top">
-                                            <div class="col-lg-4">
-                                                <div class="header-cart--notify__info--top-image">
-                                                    <img src="./images/product/img-6.png" alt="">
+                            <button class="btn header-contact-right__cart--btn">
+                                <img src="./images/store.png" alt="">
+                            </button>
+                            <div class="header-cart--notify border-1">
+                                <div class="header-cart--notify__info">
+                                    <div class="row header-cart--notify__info--top">
+                                        <div class="col-lg-4">
+                                            <div class="header-cart--notify__info--top-image">
+                                                <img src="./images/product/img-6.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 p-0">
+                                            <div class="header-cart--notify__info--top-detail">
+                                                <h3>Tẩy tế bào chết chiết xuất từ hạt trái mơ</h3>
+                                                <div class="top-detail-amount">
+                                                    <span class="top-detail-amount__number">1</span>
+                                                    <span class="top-detail-amount_cal">x</span>
+                                                    <span class="top-detail-amount__price">70,000 đ</span>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-8 p-0">
-                                                <div class="header-cart--notify__info--top-detail">
-                                                    <h3>Tẩy tế bào chết chiết xuất từ hạt trái mơ</h3>
-                                                    <div class="top-detail-amount">
-                                                        <span class="top-detail-amount__number">1</span>
-                                                        <span class="top-detail-amount_cal">x</span>
-                                                        <span class="top-detail-amount__price">70,000 đ</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="header-cart--notify__info--top-icon">
-                                                <button>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                                        fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                        <path
-                                                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                                                    </svg>
-                                                </button>
-                                            </div>
                                         </div>
-                                        <div class="header-cart--notify__info--main">
-                                            <h3 class="header-cart--notify__info--main-heading">Tổng cộng: 70,000 Đ</h3>
+                                        <div class="header-cart--notify__info--top-icon">
+                                            <button>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                    <path
+                                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                                </svg>
+                                            </button>
                                         </div>
-                                        <div class="header-cart--notify__info--bottom">
-                                            <button class="btn header-cart--notify__info--bottom-view">Xem giỏ hàng</button>
-                                            <button class="btn header-cart--notify__info--bottom-pay">Thang toán</button>
-                                        </div>
+                                    </div>
+                                    <div class="header-cart--notify__info--main">
+                                        <h3 class="header-cart--notify__info--main-heading">Tổng cộng: 70,000 Đ</h3>
+                                    </div>
+                                    <div class="header-cart--notify__info--bottom">
+                                        <button class="btn header-cart--notify__info--bottom-view">Xem giỏ hàng</button>
+                                        <button class="btn header-cart--notify__info--bottom-pay">Thang toán</button>
                                     </div>
                                 </div>
                             </div>
@@ -101,6 +103,7 @@
                         <button class="header-contact-right__tel">
                             <span class="header-contact-right__tel--number">hotline 0909 999 999</span>
                         </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -268,35 +271,35 @@
                     </div>
                     <div class="container-body">
                         <div class="container-service row">
-                            <div class="container-service-item col l-3">
+                            <div class="container-service-item col-xl-3 col-6">
                                 <img src="./images/dieutrimun.jpg" alt="" class="service-image">
 
                             </div>
-                            <div class="container-service-item col l-3">
+                            <div class="container-service-item col-xl-3 col-6">
                                 <img src="./images/dieutrithammun.jpg" alt="" class="service-image">
 
                             </div>
-                            <div class="container-service-item col l-3">
+                            <div class="container-service-item col-xl-3 col-6">
                                 <img src="./images/chamsocda.png" alt="" class="service-image">
 
                             </div>
-                            <div class="container-service-item col l-3">
+                            <div class="container-service-item col-xl-3 col-6">
                                 <img src="./images/goidau.jpg" alt="" class="service-image">
 
                             </div>
-                            <div class="container-service-item col l-3">
+                            <div class="container-service-item col-xl-3 col-6">
                                 <img src="./images/trietlong.jpg" alt="" class="service-image">
 
                             </div>
-                            <div class="container-service-item col l-3">
+                            <div class="container-service-item col-xl-3 col-6">
                                 <img src="./images/tamtrang.jpg" alt="" class="service-image">
 
                             </div>
-                            <div class="container-service-item col l-3">
+                            <div class="container-service-item col-xl-3 col-6">
                                 <img src="./images/massage-da-nong.jpg" alt="" class="service-image">
 
                             </div>
-                            <div class="container-service-item col l-3">
+                            <div class="container-service-item col-xl-3 col-6">
                                 <img src="./images/xamthammy.jpg" alt="" class="service-image">
 
                             </div>
@@ -305,13 +308,7 @@
                     </div>
                 </div>
                 <div class="system-introduction row">
-                    <div class="introduction-image col l-6">
-                        <img src="./images/phongmassage.png" alt="" class="introduction-image-1">
-                        <img src="./images/thanhtoan.png" alt="" class="introduction-image-2">
-                        <img src="./images/makeup.png" alt="" class="introduction-image-3">
-
-                    </div>
-                    <div class="introduction-info col l-4 l-o-1">
+                    <div class="introduction-info col l-6">
                         <div class="introduction-info-logo">
                             <img src="./images/butterfly-wings.png" alt="" class="info-logo-img">
                         </div>
@@ -322,6 +319,14 @@
                             là các trang thiết bị máy móc công nghệ được nhập khẩu cao cấp, xuất xứ rõ ràng, đạt chuẩn
                             an toàn với nhiều tính năng vượt trội.</div>
                     </div>
+
+                    <div class="introduction-image col l-6">
+                        <img src="./images/phongmassage.png" alt="" class="introduction-image-1">
+                        <img src="./images/thanhtoan.png" alt="" class="introduction-image-2">
+                        <img src="./images/makeup.png" alt="" class="introduction-image-3">
+
+                    </div>
+
                 </div>
             </div>
             <div class="top-banner-2">
@@ -337,17 +342,17 @@
             </div>
             <div class="content-container treatment-result">
                 <div class="container-item grid wide">
-                    <div class="container-heading">
+                    <div class="container-heading treatment-result-heading">
                         <div class="container-item-logo">
                             <img src="./images/butterfly-wings.png" class="container-item-logo-image" alt="">
                         </div>
                         <h2 class="container-item-title">Kết quả điều trị</h2>
 
                     </div>
-                    <div class="container-body ">
+                    <div class="container-body">
                         <div class="treatment-category">
                             <ul class="category-nav row ">
-                                <li class="category-item tab-item active"><a class="category-item-link active">Điều trị mụn</a>
+                                <li class="category-item tab-item active"><a class="category-item-link">Điều trị mụn</a>
                                 </li>
                                 <li class="category-item tab-item"><a class="category-item-link">Điều trị thâm mụn</a>
                                 </li>
@@ -363,7 +368,7 @@
                         </div>
                         <div class="tab-pane active">
                             <div class="treatment-result-list row">
-                                <div class="treatment-result-item col l-3">
+                                <div class="treatment-result-item col-xl-3 col-6">
                                     <div class="treatment-result-image">
                                         <img src="./images/result/_Clip Group_.png" class="w-100" alt="">
                                     </div>
@@ -371,7 +376,7 @@
                                         Chị Hạnh, 23 tuổi hài lòng về da mặt sau hơn 3 tháng điều trị mụn trứng cá
                                     </div>
                                 </div>
-                                <div class="treatment-result-item col l-3">
+                                <div class="treatment-result-item col-xl-3 col-6">
                                     <div class="treatment-result-image">
                                         <img src="./images/result/_Clip Group2_.png" class="w-100" alt="">
                                     </div>
@@ -379,7 +384,7 @@
                                         Chị Hạnh, 23 tuổi hài lòng về da mặt sau hơn 3 tháng điều trị mụn trứng cá
                                     </div>
                                 </div>
-                                <div class="treatment-result-item col l-3">
+                                <div class="treatment-result-item col-xl-3 col-6">
                                     <div class="treatment-result-image">
                                         <img src="./images/result/_Clip Group3_.png" class="w-100" alt="">
                                     </div>
@@ -387,7 +392,7 @@
                                         Chị Hạnh, 23 tuổi hài lòng về da mặt sau hơn 3 tháng điều trị mụn trứng cá
                                     </div>
                                 </div>
-                                <div class="treatment-result-item col l-3">
+                                <div class="treatment-result-item col-xl-3 col-6">
                                     <div class="treatment-result-image">
                                         <img src="./images/result/_Clip Group4_.png" class="w-100" alt="">
                                     </div>
@@ -664,7 +669,7 @@
             </div>
             <div class="content-container event">
                 <div class="container-item grid wide">
-                    <div class="container-heading">
+                    <div class="container-heading event-heading">
                         <div class="container-item-logo">
                             <img src="./images/butterfly-wings.png" class="container-item-logo-image" alt="">
                         </div>
@@ -673,29 +678,41 @@
                     </div>
                     <div class="container-body ">
                         <div class="event-list">
-                            <div class="event-item">
-                                <div class="event-item-image image-pseudo">
+                            <div class="event-item col-xl-3">
+                                <div class="event-item-image image-pseudo ">
                                     <img src="./images/event/event1.png" alt="" class="event-image">
                                 </div>
-                                <h2 class="event-title">Khai trương SHYNH spa chi nhánh quận 2</h2>
-                                <p class="event-desc">Cơ sở mới của SHYNH SPA được mở rộng hoàn toàn mới tại địa chỉ mới
-                                    ...</p>
+                                <div class="event-item-text ">
+
+                                    <h2 class="event-title">Khai trương SHYNH spa chi nhánh quận 2</h2>
+                                    <p class="event-desc">Cơ sở mới của SHYNH SPA được mở rộng hoàn toàn mới tại địa chỉ
+                                        mới
+                                        ...</p>
+                                </div>
                             </div>
-                            <div class="event-item">
+                            <div class="event-item col-xl-3">
                                 <div class="event-item-image image-pseudo">
                                     <img src="./images/event/event2.png" alt="" class="event-image">
                                 </div>
-                                <h2 class="event-title">Ngày của mẹ-tặng mẹ combo tận hưởng 699k</h2>
-                                <p class="event-desc">Cảm ơn mẹ đã luôn hi sinh, lo lắng cho con suốt những năm tháng
-                                    qua...</p>
+                                <div class="event-item-text">
+
+                                    <h2 class="event-title">Ngày của mẹ-tặng mẹ combo tận hưởng 699k</h2>
+                                    <p class="event-desc">Cảm ơn mẹ đã luôn hi sinh, lo lắng cho con suốt những năm
+                                        tháng
+                                        qua...</p>
+                                </div>
                             </div>
-                            <div class="event-item">
-                                <div class="event-item-image">
+                            <div class="event-item col-xl-3">
+                                <div class="event-item-image image-pseudo-mobile">
                                     <img src="./images/event/event3.png" alt="" class="event-image">
                                 </div>
-                                <h2 class="event-title">đăng ký thành viên vip cơ hội trúng xe sh</h2>
-                                <p class="event-desc">Đăng ký thành viên để tận hưởng những ưu đãi đồng thời có cơ hội
-                                    ....</p>
+                                <div class="event-item-text">
+
+                                    <h2 class="event-title">đăng ký thành viên vip cơ hội trúng xe sh</h2>
+                                    <p class="event-desc">Đăng ký thành viên để tận hưởng những ưu đãi đồng thời có cơ
+                                        hội
+                                        ....</p>
+                                </div>
                             </div>
                         </div>
 
@@ -721,29 +738,41 @@
 
                     <div class="container-body ">
                         <div class="event-list">
-                            <div class="event-item">
+                            <div class="event-item col-xl-3">
                                 <div class="event-item-image image-pseudo">
                                     <img src="./images/sale/sale1.png" alt="" class="event-image">
                                 </div>
-                                <h2 class="event-title">Khai trương SHYNH spa chi nhánh quận 2</h2>
-                                <p class="event-desc">Cơ sở mới của SHYNH SPA được mở rộng hoàn toàn mới tại địa chỉ mới
-                                    ...</p>
+                                <div class="event-item-text">
+                                    <h2 class="event-title">Khai trương SHYNH spa chi nhánh quận 2</h2>
+
+                                    <p class="event-desc">Cơ sở mới của SHYNH SPA được mở rộng hoàn toàn mới tại địa chỉ
+                                        mới
+                                        ...</p>
+                                </div>
                             </div>
-                            <div class="event-item">
+                            <div class="event-item col-xl-3">
                                 <div class="event-item-image image-pseudo">
                                     <img src="./images/sale/sale2.png" alt="" class="event-image">
                                 </div>
-                                <h2 class="event-title">Ngày của mẹ-tặng mẹ combo tận hưởng 699k</h2>
-                                <p class="event-desc">Cảm ơn mẹ đã luôn hi sinh, lo lắng cho con suốt những năm tháng
-                                    qua...</p>
+                                <div class="event-item-text">
+
+                                    <h2 class="event-title">Ngày của mẹ-tặng mẹ combo tận hưởng 699k</h2>
+                                    <p class="event-desc">Cảm ơn mẹ đã luôn hi sinh, lo lắng cho con suốt những năm
+                                        tháng
+                                        qua...</p>
+                                </div>
                             </div>
-                            <div class="event-item">
-                                <div class="event-item-image">
+                            <div class="event-item col-xl-3">
+                                <div class="event-item-image image-pseudo-mobile">
                                     <img src="./images/sale/sale3.png" alt="" class="event-image">
                                 </div>
-                                <h2 class="event-title">đăng ký thành viên vip cơ hội trúng xe sh</h2>
-                                <p class="event-desc">Đăng ký thành viên để tận hưởng những ưu đãi đồng thời có cơ hội
-                                    ....</p>
+                                <div class="event-item-text">
+
+                                    <h2 class="event-title">đăng ký thành viên vip cơ hội trúng xe sh</h2>
+                                    <p class="event-desc">Đăng ký thành viên để tận hưởng những ưu đãi đồng thời có cơ
+                                        hội
+                                        ....</p>
+                                </div>
                             </div>
                         </div>
 
@@ -756,7 +785,7 @@
             </div>
             <div class="content-container beauty-store">
                 <div class="container-item grid wide">
-                    <div class="container-heading">
+                    <div class="container-heading heading-store">
                         <div class="container-item-logo">
                             <img src="./images/butterfly-wings.png" class="container-item-logo-image" alt="">
                         </div>
@@ -779,300 +808,178 @@
 
                             </ul>
                         </div>
-                        <div class="product-list tab-product active">
-                            <div class="product-slider row">
-                                <div class="product-slider-item ">
-                                    <div class="product-item__image">
-                                        <img src="./images/product/product1.png" alt="" class="product-image">
+                        <div class="slide-container swiper">
+                            <div class="slide-content">
+                                <div class="card-wrapper swiper-wrapper">
+                                    <div class="card swiper-slide ">
+                                        <div class="image-content">
+                                            <span class="overlay"></span>
+                
+                                            <div class="card-image">
+                                                <img src="./images/product/img-5.png" alt="" class="card-img">
+                                            </div>
+                                        </div>
+                
+                                        <div class="card-content">
+                                            <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.</p>
+                                            <h2 class="price">70 000đ</h2>
+                
+                                            <button class="button">
+                                                <img src="./images/add.png" alt="" class="add-cart" />
+                                            </button>
+                                        </div>
                                     </div>
-                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
-                                        Dưỡng ẩm da, mịn màng
-                                        SHINEE</p>
-                                    <p class="product-item__price">70.000 đ</p>
-                                    <button class="product-item__add">
-                                        <img src="./images/add.png" alt="" class="product-more">
-                                    </button>
-                                </div>
-                                <div class="product-slider-item">
-                                    <div class="product-item__image">
-                                        <img src="./images/product/product2.png" alt="" class="product-image">
+                                    <div class="card swiper-slide ">
+                                        <div class="image-content">
+                                            <span class="overlay"></span>
+                
+                                            <div class="card-image">
+                                                <img src="./images/product/img-6.png" alt="" class="card-img">
+                                            </div>
+                                        </div>
+                
+                                        <div class="card-content">
+                                            <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.</p>
+                                            <h2 class="price">70 000đ</h2>
+                
+                                            <button class="button">
+                                                <img src="./images/add.png" alt="" class="add-cart" />
+                                            </button>
+                                        </div>
                                     </div>
-                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
-                                        Dưỡng ẩm da, mịn màng
-                                        SHINEE</p>
-                                    <p class="product-item__price">70.000 đ</p>
-                                    <button class="product-item__add">
-                                        <img src="./images/add.png" alt="" class="product-more">
-                                    </button>
-                                </div>
-                                <div class="product-slider-item">
-                                    <div class="product-item__image">
-                                        <img src="./images/product/product3.png" alt="" class="product-image">
+                                    <div class="card swiper-slide ">
+                                        <div class="image-content">
+                                            <span class="overlay"></span>
+                
+                                            <div class="card-image">
+                                                <img src="./images/product/img-7.png" alt="" class="card-img">
+                                            </div>
+                                        </div>
+                
+                                        <div class="card-content">
+                                            <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.</p>
+                                            <h2 class="price">70 000đ</h2>
+                
+                                            <button class="button">
+                                                <img src="./images/add.png" alt="" class="add-cart" />
+                                            </button>
+                                        </div>
                                     </div>
-                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
-                                        Dưỡng ẩm da, mịn màng
-                                        SHINEE</p>
-                                    <p class="product-item__price">70.000 đ</p>
-                                    <button class="product-item__add">
-                                        <img src="./images/add.png" alt="" class="product-more">
-                                    </button>
-                                </div>
-                                <div class="product-slider-item">
-                                    <div class="product-item__image">
-                                        <img src="./images/product/product4.png" alt="" class="product-image">
+                                    <div class="card swiper-slide ">
+                                        <div class="image-content">
+                                            <span class="overlay"></span>
+                
+                                            <div class="card-image">
+                                                <img src="./images/product/img-8.png" alt="" class="card-img">
+                                            </div>
+                                        </div>
+                
+                                        <div class="card-content">
+                                            <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.</p>
+                                            <h2 class="price">70 000đ</h2>
+                
+                                            <button class="button">
+                                                <img src="./images/add.png" alt="" class="add-cart" />
+                                            </button>
+                                        </div>
                                     </div>
-                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
-                                        Dưỡng ẩm da, mịn màng
-                                        SHINEE</p>
-                                    <p class="product-item__price">70.000 đ</p>
-                                    <button class="product-item__add">
-                                        <img src="./images/add.png" alt="" class="product-more">
-                                    </button>
+                                    <div class="card swiper-slide ">
+                                        <div class="image-content">
+                                            <span class="overlay"></span>
+                
+                                            <div class="card-image">
+                                                <img src="./images/product/img-9.png" alt="" class="card-img">
+                                            </div>
+                                        </div>
+                
+                                        <div class="card-content">
+                                            <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.</p>
+                                            <h2 class="price">70 000đ</h2>
+                
+                                            <button class="button">
+                                                <img src="./images/add.png" alt="" class="add-cart" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide ">
+                                        <div class="image-content">
+                                            <span class="overlay"></span>
+                
+                                            <div class="card-image">
+                                                <img src="./images/product/img-10.png" alt="" class="card-img">
+                                            </div>
+                                        </div>
+                
+                                        <div class="card-content">
+                                            <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.</p>
+                                            <h2 class="price">70 000đ</h2>
+                
+                                            <button class="button">
+                                                <img src="./images/add.png" alt="" class="add-cart" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide ">
+                                        <div class="image-content">
+                                            <span class="overlay"></span>
+                
+                                            <div class="card-image">
+                                                <img src="./images/product/img-11.png" alt="" class="card-img">
+                                            </div>
+                                        </div>
+                
+                                        <div class="card-content">
+                                            <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.</p>
+                                            <h2 class="price">70 000đ</h2>
+                
+                                            <button class="button">
+                                                <img src="./images/add.png" alt="" class="add-cart" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide ">
+                                        <div class="image-content">
+                                            <span class="overlay"></span>
+                
+                                            <div class="card-image">
+                                                <img src="./images/product/img-12.png" alt="" class="card-img">
+                                            </div>
+                                        </div>
+                
+                                        <div class="card-content">
+                                            <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.</p>
+                                            <h2 class="price">70 000đ</h2>
+                
+                                            <button class="button">
+                                                <img src="./images/add.png" alt="" class="add-cart" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide ">
+                                        <div class="image-content">
+                                            <span class="overlay"></span>
+                
+                                            <div class="card-image">
+                                                <img src="./images/product/img-5.png" alt="" class="card-img">
+                                            </div>
+                                        </div>
+                
+                                        <div class="card-content">
+                                            <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.</p>
+                                            <h2 class="price">70 000đ</h2>
+                
+                                            <button class="button">
+                                                <img src="./images/add.png" alt="" class="add-cart" />
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="slider-more">
-                                <ul class="more-list">
-                                    <li class="more-item"><i class="fa-solid fa-caret-left icon-more"></i></li>
-                                    <li class="more-item"><i class="fa-solid fa-caret-right icon-more"></i></li>
-
-                                </ul>
-                            </div>
+                
+                            <div class="swiper-button-next swiper-navBtn"></div>
+                            <div class="swiper-button-prev swiper-navBtn"></div>
                         </div>
-                        <div class="product-list tab-product">
-                            <div class="product-slider row">
-                                <div class="product-slider-item ">
-                                    <div class="product-item__image">
-                                        <img src="./images/product/product1.png" alt="" class="product-image">
-                                    </div>
-                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
-                                        Dưỡng ẩm da, mịn màng
-                                        SHINEE</p>
-                                    <p class="product-item__price">70.000 đ</p>
-                                    <button class="product-item__add">
-                                        <img src="./images/add.png" alt="" class="product-more">
-                                    </button>
-                                </div>
-                                <div class="product-slider-item">
-                                    <div class="product-item__image">
-                                        <img src="./images/product/product2.png" alt="" class="product-image">
-                                    </div>
-                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
-                                        Dưỡng ẩm da, mịn màng
-                                        SHINEE</p>
-                                    <p class="product-item__price">70.000 đ</p>
-                                    <button class="product-item__add">
-                                        <img src="./images/add.png" alt="" class="product-more">
-                                    </button>
-                                </div>
-                                <div class="product-slider-item">
-                                    <div class="product-item__image">
-                                        <img src="./images/product/product3.png" alt="" class="product-image">
-                                    </div>
-                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
-                                        Dưỡng ẩm da, mịn màng
-                                        SHINEE</p>
-                                    <p class="product-item__price">70.000 đ</p>
-                                    <button class="product-item__add">
-                                        <img src="./images/add.png" alt="" class="product-more">
-                                    </button>
-                                </div>
-                                <div class="product-slider-item">
-                                    <div class="product-item__image">
-                                        <img src="./images/product/product4.png" alt="" class="product-image">
-                                    </div>
-                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
-                                        Dưỡng ẩm da, mịn màng
-                                        SHINEE</p>
-                                    <p class="product-item__price">70.000 đ</p>
-                                    <button class="product-item__add">
-                                        <img src="./images/add.png" alt="" class="product-more">
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="slider-more">
-                                <ul class="more-list">
-                                    <li class="more-item"><i class="fa-solid fa-caret-left icon-more"></i></li>
-                                    <li class="more-item"><i class="fa-solid fa-caret-right icon-more"></i></li>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-list tab-product">
-                            <div class="product-slider row">
-                                <div class="product-slider-item ">
-                                    <div class="product-item__image">
-                                        <img src="./images/product/product1.png" alt="" class="product-image">
-                                    </div>
-                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
-                                        Dưỡng ẩm da, mịn màng
-                                        SHINEE</p>
-                                    <p class="product-item__price">70.000 đ</p>
-                                    <button class="product-item__add">
-                                        <img src="./images/add.png" alt="" class="product-more">
-                                    </button>
-                                </div>
-                                <div class="product-slider-item">
-                                    <div class="product-item__image">
-                                        <img src="./images/product/product2.png" alt="" class="product-image">
-                                    </div>
-                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
-                                        Dưỡng ẩm da, mịn màng
-                                        SHINEE</p>
-                                    <p class="product-item__price">70.000 đ</p>
-                                    <button class="product-item__add">
-                                        <img src="./images/add.png" alt="" class="product-more">
-                                    </button>
-                                </div>
-                                <div class="product-slider-item">
-                                    <div class="product-item__image">
-                                        <img src="./images/product/product3.png" alt="" class="product-image">
-                                    </div>
-                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
-                                        Dưỡng ẩm da, mịn màng
-                                        SHINEE</p>
-                                    <p class="product-item__price">70.000 đ</p>
-                                    <button class="product-item__add">
-                                        <img src="./images/add.png" alt="" class="product-more">
-                                    </button>
-                                </div>
-                                <div class="product-slider-item">
-                                    <div class="product-item__image">
-                                        <img src="./images/product/product4.png" alt="" class="product-image">
-                                    </div>
-                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
-                                        Dưỡng ẩm da, mịn màng
-                                        SHINEE</p>
-                                    <p class="product-item__price">70.000 đ</p>
-                                    <button class="product-item__add">
-                                        <img src="./images/add.png" alt="" class="product-more">
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="slider-more">
-                                <ul class="more-list">
-                                    <li class="more-item"><i class="fa-solid fa-caret-left icon-more"></i></li>
-                                    <li class="more-item"><i class="fa-solid fa-caret-right icon-more"></i></li>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-list tab-product">
-                            <div class="product-slider row">
-                                <div class="product-slider-item ">
-                                    <div class="product-item__image">
-                                        <img src="./images/product/product1.png" alt="" class="product-image">
-                                    </div>
-                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
-                                        Dưỡng ẩm da, mịn màng
-                                        SHINEE</p>
-                                    <p class="product-item__price">70.000 đ</p>
-                                    <button class="product-item__add">
-                                        <img src="./images/add.png" alt="" class="product-more">
-                                    </button>
-                                </div>
-                                <div class="product-slider-item">
-                                    <div class="product-item__image">
-                                        <img src="./images/product/product2.png" alt="" class="product-image">
-                                    </div>
-                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
-                                        Dưỡng ẩm da, mịn màng
-                                        SHINEE</p>
-                                    <p class="product-item__price">70.000 đ</p>
-                                    <button class="product-item__add">
-                                        <img src="./images/add.png" alt="" class="product-more">
-                                    </button>
-                                </div>
-                                <div class="product-slider-item">
-                                    <div class="product-item__image">
-                                        <img src="./images/product/product3.png" alt="" class="product-image">
-                                    </div>
-                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
-                                        Dưỡng ẩm da, mịn màng
-                                        SHINEE</p>
-                                    <p class="product-item__price">70.000 đ</p>
-                                    <button class="product-item__add">
-                                        <img src="./images/add.png" alt="" class="product-more">
-                                    </button>
-                                </div>
-                                <div class="product-slider-item">
-                                    <div class="product-item__image">
-                                        <img src="./images/product/product4.png" alt="" class="product-image">
-                                    </div>
-                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
-                                        Dưỡng ẩm da, mịn màng
-                                        SHINEE</p>
-                                    <p class="product-item__price">70.000 đ</p>
-                                    <button class="product-item__add">
-                                        <img src="./images/add.png" alt="" class="product-more">
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="slider-more">
-                                <ul class="more-list">
-                                    <li class="more-item"><i class="fa-solid fa-caret-left icon-more"></i></li>
-                                    <li class="more-item"><i class="fa-solid fa-caret-right icon-more"></i></li>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-list tab-product">
-                            <div class="product-slider row">
-                                <div class="product-slider-item ">
-                                    <div class="product-item__image">
-                                        <img src="./images/product/product1.png" alt="" class="product-image">
-                                    </div>
-                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
-                                        Dưỡng ẩm da, mịn màng
-                                        SHINEE</p>
-                                    <p class="product-item__price">70.000 đ</p>
-                                    <button class="product-item__add">
-                                        <img src="./images/add.png" alt="" class="product-more">
-                                    </button>
-                                </div>
-                                <div class="product-slider-item">
-                                    <div class="product-item__image">
-                                        <img src="./images/product/product2.png" alt="" class="product-image">
-                                    </div>
-                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
-                                        Dưỡng ẩm da, mịn màng
-                                        SHINEE</p>
-                                    <p class="product-item__price">70.000 đ</p>
-                                    <button class="product-item__add">
-                                        <img src="./images/add.png" alt="" class="product-more">
-                                    </button>
-                                </div>
-                                <div class="product-slider-item">
-                                    <div class="product-item__image">
-                                        <img src="./images/product/product3.png" alt="" class="product-image">
-                                    </div>
-                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
-                                        Dưỡng ẩm da, mịn màng
-                                        SHINEE</p>
-                                    <p class="product-item__price">70.000 đ</p>
-                                    <button class="product-item__add">
-                                        <img src="./images/add.png" alt="" class="product-more">
-                                    </button>
-                                </div>
-                                <div class="product-slider-item">
-                                    <div class="product-item__image">
-                                        <img src="./images/product/product4.png" alt="" class="product-image">
-                                    </div>
-                                    <p class="product-item__name">Mặt nạ sợi tre bamboo
-                                        Dưỡng ẩm da, mịn màng
-                                        SHINEE</p>
-                                    <p class="product-item__price">70.000 đ</p>
-                                    <button class="product-item__add">
-                                        <img src="./images/add.png" alt="" class="product-more">
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="slider-more">
-                                <ul class="more-list">
-                                    <li class="more-item"><i class="fa-solid fa-caret-left icon-more"></i></li>
-                                    <li class="more-item"><i class="fa-solid fa-caret-right icon-more"></i></li>
-                                </ul>
-                            </div>
-                        </div>
+                       
                     </div>
                     <div class="container-footer">
                         <button class="btn-exception">Xem cửa hàng</button>
@@ -1161,13 +1068,13 @@
                 </div>
                 <div class="location-details">
                     <div class="container container-width">
-                        <div class="row location-details-border">
+                        <div class="row location-details-border location-details-mobile" id="mobile-scroll">
                             <ul class="location-details-list col-lg-6">
                                 <li class="location-details-list__item row">
-                                    <div class="col-lg-4 location-details-left">
+                                    <div class="col-lg-4 col-5 location-details-left">
                                         <img src="./images/thanhtoan.png" alt="" class="">
                                     </div>
-                                    <div class="col-lg-6 location-details-right">
+                                    <div class="col-lg-6 col-7 location-details-right">
                                         <h4 class="location-details-right__name">Quận 10</h4>
                                         <p class="location-details-right__info">375 Nguyễn Thượng Hiền, Phường 11, Quận
                                             10 (Vòng Xoay Dân Chủ)
@@ -1178,10 +1085,10 @@
                                     <div class="col-lg-2"></div>
                                 </li>
                                 <li class="location-details-list__item row">
-                                    <div class="col-lg-4 location-details-left">
+                                    <div class="col-lg-4 col-5 location-details-left">
                                         <img src="./images/shynhhouse.png" alt="" class="">
                                     </div>
-                                    <div class="col-lg-6 location-details-right">
+                                    <div class="col-lg-6 col-7 location-details-right">
                                         <h4 class="location-details-right__name">Bình Thạnh</h4>
                                         <p class="location-details-right__info">380 Bùi Hữu Nghĩa, Phường 2, Bình Thạnh
                                             (Đối Diện Chợ Bà Chiểu)</p>
@@ -1191,10 +1098,10 @@
                                     <div class="col-lg-2"></div>
                                 </li>
                                 <li class="location-details-list__item row">
-                                    <div class="col-lg-4 location-details-left">
+                                    <div class="col-lg-4 col-5 location-details-left">
                                         <img src="./images/makeup.png" alt="" class="">
                                     </div>
-                                    <div class="col-lg-6 location-details-right">
+                                    <div class="col-lg-6 col-7 location-details-right">
                                         <h4 class="location-details-right__name">Thủ Đức</h4>
                                         <p class="location-details-right__info">314 Võ Văn Ngân, Bình Thọ, Thủ Đức (Gần
                                             ĐH Sư Phạm Kĩ Thuật)</p>
@@ -1206,10 +1113,10 @@
                             </ul>
                             <ul class="location-details-list col-lg-6">
                                 <li class="location-details-list__item row">
-                                    <div class="col-lg-4 location-details-left">
+                                    <div class="col-lg-4 col-5 location-details-left">
                                         <img src="./images/thanhtoan.png" alt="" class="">
                                     </div>
-                                    <div class="col-lg-6 location-details-right">
+                                    <div class="col-lg-6 col-7 location-details-right">
                                         <h4 class="location-details-right__name">Quận 7</h4>
                                         <p class="location-details-right__info">44 Nguyễn Thị Thập, Tân Hưng, Quận 7
                                             (Gần cầu HimLam)</p>
@@ -1219,10 +1126,10 @@
                                     <div class="col-lg-2"></div>
                                 </li>
                                 <li class="location-details-list__item row">
-                                    <div class="col-lg-4 location-details-left">
-                                        <img src="./images/makeup.png" alt="" class="">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/shynhhouse.png" alt="" class="">
                                     </div>
-                                    <div class="col-lg-6 location-details-right">
+                                    <div class="col-lg-6 col-7 location-details-right">
                                         <h4 class="location-details-right__name">Gò Vấp</h4>
                                         <p class="location-details-right__info">398 Nguyễn Văn Nghi, Phường 7, Quận Gò
                                             Vấp</p>
@@ -1232,10 +1139,10 @@
                                     <div class="col-lg-2"></div>
                                 </li>
                                 <li class="location-details-list__item row">
-                                    <div class="col-lg-4 location-details-left">
+                                    <div class="col-lg-4 col-5 location-details-left">
                                         <img src="./images/makeup.png" alt="" class="">
                                     </div>
-                                    <div class="col-lg-6 location-details-right">
+                                    <div class="col-lg-6 col-7 location-details-right">
                                         <h4 class="location-details-right__name">Tân Bình</h4>
                                         <p class="location-details-right__info">120 Ni Sư Huỳnh Liên,Phường 10, Quận Tân
                                             Bình</p>
@@ -1248,7 +1155,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="address-near">
+                <div class="address-near dp-none">
                     <button class="btn address-near-btn">Tìm chi nhánh gần bạn</button>
                 </div>
             </div>
@@ -1368,9 +1275,57 @@
                     </div>
                 </div>
             </div>
+            <div class="footer-bottom-mobile">
+                <div class="row">
+                    <div class="footer-bottom-mobile__image">
+                        <img src="./images/footer/mobile/BgBoxshow.png" alt="">
+                    </div>
+                    <div class="col-4 d-flex justify-content-between">
+                        <div class="footer-bottom-mobile__branch">
+                            <div class="footer-bottom-mobile__branch--image">
+                                <img src="./images/footer/mobile/imgHome.png" alt="">
+                            </div>
+                            <span class="footer-bottom-mobile__text">Chi nhánh</span>
+                        </div>
+                        <div class="footer-bottom-mobile__booking">
+                            <div class="footer-bottom-mobile__booking--image">
+                                <img src="./images/footer/mobile/imgCanlender.png" alt="">
+                            </div>
+                            <span class="footer-bottom-mobile__text">Đặt lịch</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="footer-bottom-mobile__advise text-center">
+                            <div class="footer-bottom-mobile__advise--image">
+                                <img src="./images/footer/mobile/imgUserheadset.png" alt="">
+                            </div>
+                            <span class="footer-bottom-mobile__text">Tư vấn</span>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-between">
+                        <div class="footer-bottom-mobile__tel">
+                            <div class="footer-bottom-mobile__tel--image">
+                                <img src="./images/footer/mobile/imgCall.png" alt="">
+                            </div>
+                            <span class="footer-bottom-mobile__text">1900 1234</span>
+                        </div>
+                        <div class="footer-bottom-mobile__app">
+                            <div class="footer-bottom-mobile__app--image">
+                                <img src="./images/footer/mobile/imgApp.png" alt="">
+                            </div>
+                            <span class="footer-bottom-mobile__text">Tải app</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
+    <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
 </body>
 
 </html>
