@@ -7061,6 +7061,105 @@ a:hover {
     height: 24.3rem;
   }
 }
+@media only screen and (max-width: 480px) {
+  .promotion__heading {
+    width: 35rem;
+  }
+  .promotion--container--body {
+    width: 90%;
+  }
+  .advise-contact {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .service--detail {
+    border-radius: 0rem;
+  }
+  .service-promotion-mobile {
+    width: 90%;
+  }
+  .service--category {
+    display: none;
+  }
+  .promotion--detail__item--images {
+    width: 100%;
+    height: 100%;
+  }
+  .service--detail__heading {
+    padding-bottom: 3rem;
+  }
+  .tips-new {
+    display: none;
+  }
+  .promotion-mobile {
+    margin-top: 7rem;
+  }
+  .promotion-mobile__heading {
+    font-size: 3rem;
+    font-family: K2D-ExtraBold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #a1710f;
+    padding-top: 4.35rem;
+    width: 45.5rem;
+    margin: 0 auto;
+    border-top-left-radius: 70rem;
+    border-top-right-radius: 70rem;
+  }
+  .promotion-mobile--container--body__list {
+    justify-content: center;
+    padding-top: 4.65rem;
+    padding-bottom: 5.5rem;
+  }
+  .promotion-mobile--container--body__list--item {
+    cursor: pointer;
+    margin: 0 0.5rem 2.95rem 0.5rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    border: 2px solid #ffd00f;
+    padding: 0.7rem 5rem 3.5rem 1.38rem;
+  }
+  .promotion-mobile--container--body__list--item--content--images {
+    width: 20.5rem;
+  }
+  .promotion-mobile--container--body__list--item--content--images img {
+    width: 100%;
+    height: 100%;
+  }
+  .promotion-mobile--container--body__list--item--content--text--title {
+    font-size: 1.6rem;
+    font-family: K2D-Bold;
+    text-transform: uppercase;
+    letter-spacing: 0.11rem;
+  }
+  .promotion-mobile--container--body__list--item--content--text--desc {
+    font-size: 1.4rem;
+    font-family: K2D-ExtraLigh;
+    text-align: justify;
+  }
+  .form--register {
+    z-index: 2;
+  }
+  .contact_inner-mobile {
+    width: 90%;
+    border-radius: 6rem;
+  }
+  .contact_inner-mobile--form {
+    padding-top: 3rem;
+  }
+  .contact_inner-mobile--extend {
+    display: none;
+  }
+  .contact_inner-mobile--text {
+    padding: 1rem 4rem;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .promotion-mobile {
+    display: none;
+  }
+}
 .top-banner .top-banner-1 {
   background-image: url("../images/banner1.png");
   background-size: cover;

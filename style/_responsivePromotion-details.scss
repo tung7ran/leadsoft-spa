@@ -1,0 +1,104 @@
+@include responsive_mobile{
+    .service--detail{
+        border-radius: 0rem;
+    }
+    .service-promotion-mobile{
+        width: 90%;
+    }
+    .service--category{
+        display: none;
+    }
+    .promotion--detail__item--images{
+        width: 100%;
+        height: 100%;
+    }
+    .service--detail__heading{
+        padding-bottom: 3rem;
+    }
+    .tips-new{
+        display: none;
+    }
+    .promotion-mobile{
+        margin-top: 7rem;
+    
+        &__heading {
+            font-size: 3rem;
+            font-family: K2D-ExtraBold;
+            text-align: center;
+            text-transform: uppercase;
+            color: $more-color;
+            padding-top: 4.35rem;
+            width: 45.5rem;
+            margin: 0 auto;
+            border-top-left-radius: 70rem;
+            border-top-right-radius: 70rem;
+        }
+    
+        &--container {
+            &--body {
+                &__list {
+                    justify-content: center;
+                    padding-top: 4.65rem;
+                    padding-bottom: 5.5rem;
+    
+                    &--item {
+                        cursor: pointer;
+                        margin: 0 0.5rem 2.95rem 0.5rem;
+                        background-color: $white;
+                        border-radius: 2rem;
+                        border: 2px solid $orange;
+                        padding: 0.7rem 5rem 3.5rem 1.38rem;
+    
+                        &--content {
+                            &--images {
+                                width: 20.5rem;
+    
+                                // height: 20.6rem;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+    
+                            &--text {
+                                &--title {
+                                    font-size: 1.6rem;
+                                    font-family: K2D-Bold;
+                                    text-transform: uppercase;
+                                    letter-spacing: 0.11rem;
+                                }
+    
+                                &--desc {
+                                    font-size: 1.4rem;
+                                    font-family: K2D-ExtraLigh;
+                                    text-align: justify;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .form--register{
+        z-index: 2;
+    }
+    .contact_inner-mobile{
+        width: 90%;
+        border-radius: 6rem;
+        &--form{
+            padding-top: 3rem;
+        }
+        &--extend{
+            display: none;
+        }
+        &--text{
+            padding: 1rem 4rem;
+        }
+    }
+}
+@include responsive_pclow{
+    .promotion-mobile{
+        display: none;
+    }
+}
