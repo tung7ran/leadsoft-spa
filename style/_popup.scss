@@ -170,19 +170,22 @@
     }
 }
 
+// Địa chỉ
 .address-pop{
-    display: none;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 2;
+    // display: none;
+    // text-align: center;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    // width: 100vw;
+    // height: 100vh;
+    // background-color: rgba(0, 0, 0, 0.6);
+    // z-index: 2;
     &-mobile{
+        width: 76.8rem;
+        height: 69.3rem;
         background-image: linear-gradient(180deg, #F4E390, #FED119);
         background-size: cover;
         background-position: center;
@@ -205,6 +208,7 @@
                 height: 5rem;
             }
             &--title {
+                text-align: center;
                 margin-top: 1rem;
                 margin-bottom: 1.4rem;
                 text-transform: uppercase;
@@ -327,7 +331,7 @@
                             border-radius: 1.6rem;
                             padding: 0.2rem 1rem;
                             font-family: Gilroy-Medium-Italic;
-                            font-size: 1.6rem;
+                            font-size: 1.4rem;
                         }
                     }
                 }
@@ -441,18 +445,19 @@
         }
     }
 }
+// Đặt lịch
 
   .form--appointment{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 2;
+    // display: none;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    // width: 100vw;
+    // height: 100vh;
+    // background-color: rgba(0, 0, 0, 0.6);
+    // z-index: 2;
     &__inner{
         background-image: url(../images/modal.png);
         background-size: cover;

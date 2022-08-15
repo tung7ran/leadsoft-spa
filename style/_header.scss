@@ -1,9 +1,11 @@
 @import 'variables';
+
 .header-container {
     &-heading {
         position: relative;
         height: 5.1rem;
         background-image: linear-gradient(90deg, #F4E390, #FED119);
+
         &__title {
             position: absolute;
             width: 43.4rem;
@@ -14,12 +16,14 @@
             transform: translateX(-50%);
             border-bottom-right-radius: 70rem;
             border-bottom-left-radius: 70rem;
+
             &--text {
                 text-transform: uppercase;
                 font-size: 2.2rem;
                 font-weight: 500;
                 margin-left: 50%;
                 transform: translateX(-50%);
+
                 &-name {
                     line-height: 1.1;
                     text-align: center;
@@ -30,28 +34,35 @@
         }
     }
 }
-.header-contact{
+
+.header-contact {
     .dp-nonePC {
         display: none;
     }
+
     .dp-blockPC {
         display: block;
     }
+
     justify-content: space-between;
     margin-top: 2.6rem;
     padding: 0 3.7rem;
-    &-left{
+
+    &-left {
         padding-right: 0;
         width: 32.15%;
+
         form {
             position: relative;
             width: 37rem;
             float: right;
         }
+
         .navbar-mobile {
             display: none;
         }
-        &__search{
+
+        &__search {
             width: 100%;
             height: 6.65rem;
             outline: none;
@@ -62,7 +73,8 @@
             padding: 0 4rem;
             background-color: $white;
         }
-        &__button{
+
+        &__button {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -70,43 +82,56 @@
             border: none;
             color: #FED119;
             padding: 0;
-            &--icon{
+
+            &--icon {
                 width: 3.1rem;
                 height: 4.1rem;
                 background-color: $white;
             }
         }
     }
-    &-right{
-        &__cart{
+
+    &-right {
+        &__cart {
             position: relative;
-            button {
+
+            &--btn {
                 border-radius: 50%;
                 border: none;
                 background-color: $orange;
                 padding: 2rem;
                 width: 6.65rem;
                 height: 6.65rem;
+                position: relative;
+
                 img {
-                    width: 100%;
-                    height: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 2rem;
+                    height: 2rem;
                 }
             }
+
             &--mobile {
                 display: none;
             }
         }
+
         .search-mobile {
-            display:none;
+            display: none;
         }
-        &__tel{
+
+        &__tel {
             height: 6.65rem;
             background-color: #FED119;
             border-radius: 5rem;
             width: 37rem;
             outline: none;
-            border:none;
-            &--number{
+            border: none;
+
+            &--number {
                 text-transform: uppercase;
                 font-size: 2.4rem;
                 padding: 0 4rem;
@@ -116,44 +141,53 @@
         }
     }
 }
+
 .header-logo {
     margin-top: 2.5rem;
-    &__page{
+
+    &__page {
         width: 28.4rem;
         height: 13.5rem;
         margin-left: 50%;
         transform: translateX(-50%);
-        img{
+
+        img {
             width: 100%;
             height: 100%;
         }
     }
-   
+
 }
-.header-main{
+
+.header-main {
     margin-top: 4.55rem;
-    &-nav{
-        &__list{
+
+    &-nav {
+        &__list {
             justify-content: center;
             align-items: center;
             list-style: none;
+
             // margin-bottom: 6.5rem;
-            &--item{
+            &--item {
                 position: relative;
                 padding: 0 3.6rem;
-                &-link{
+
+                &-link {
                     color: $color-text;
                     font-size: 1.8rem;
                     font-family: UTM-Avo;
                 }
-                &-link:hover{
+
+                &-link:hover {
                     text-decoration: none;
                     color: $color-text;
                 }
-                .header-main__subnav{
+
+                .header-main__subnav {
                     position: absolute;
                     top: 0;
-                    left: 17rem;
+                    left: 12rem;
                     display: none;
                     background-color: $white;
                     min-width: 46rem;
@@ -161,36 +195,41 @@
                     padding: 2rem;
                     border-radius: 2rem;
                     border: 1px solid $orange;
-                    &--menu{
-                        &--item{
+
+                    &--menu {
+                        &--item {
                             padding-bottom: 2rem;
-                            &--title{
+
+                            &--title {
                                 font-size: 1.6rem;
                                 font-family: Gilroy-Bold;
                                 color: $black;
                                 display: block;
                                 padding-bottom: 0.5rem;
                             }
-                            &--list{
-                                &--service{
-                                    &--link{
+
+                            &--list {
+                                &--service {
+                                    &--link {
                                         font-size: 1.4rem;
                                         font-family: UTM-Avo;
                                         color: $black;
                                         display: block;
                                         padding: 0 0.3rem;
                                     }
-                                    &--link:hover{
+
+                                    &--link:hover {
                                         background-color: #ccc;
                                     }
                                 }
                             }
-                            
+
 
                         }
                     }
                 }
-                .header-main__subnav:after{
+
+                .header-main__subnav:after {
                     content: "";
                     position: absolute;
                     top: -0.1rem;
@@ -199,9 +238,10 @@
                     width: 5rem;
                 }
             }
-             &--item:hover .header-main__subnav{
+
+            &--item:hover .header-main__subnav {
                 display: block;
-             }  
+            }
         }
     }
 }

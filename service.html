@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="./style/main.css">
 </head>
 
@@ -41,15 +43,17 @@
                         <button class="navbar-mobile js-mobile-btn">
                             <i class="fa-solid fa-bars"></i>
                         </button>
-                         
+
                         <div class="mobile-menu-overlay"></div>
                     </div>
 
                     <div class="header-contact-right d-flex">
                         <button type="submit" class="search-mobile dp-block ">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#fff" class="bi bi-search header-contact-left__button--icon" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#fff"
+                                class="bi bi-search header-contact-left__button--icon" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
                         </button>
                         <div class="header-contact-right__cart">
                             <div class="header-cart">
@@ -90,8 +94,10 @@
                                             <h3 class="header-cart--notify__info--main-heading">Tổng cộng: 70,000 Đ</h3>
                                         </div>
                                         <div class="header-cart--notify__info--bottom">
-                                            <button class="btn header-cart--notify__info--bottom-view">Xem giỏ hàng</button>
-                                            <button class="btn header-cart--notify__info--bottom-pay">Thang toán</button>
+                                            <button class="btn header-cart--notify__info--bottom-view">Xem giỏ
+                                                hàng</button>
+                                            <button class="btn header-cart--notify__info--bottom-pay">Thang
+                                                toán</button>
                                         </div>
                                     </div>
                                 </div>
@@ -692,59 +698,332 @@
                 </div>
             </div>
         </footer>
+
+
+
         <div class="form--contact hide" id="open-contact">
-            <div class="form--contact__inner">
-                <div class="form--contact__inner--logo">
-                    <img src="./images/footerImg.png" alt="" class="form--contact__inner--logo--image">
+            <!-- tabs Items -->
+            <div class="tabs">
+                <div class="tab-item-heading active">
+                    <i class="tab-icon fa-solid fa-headset"></i> Tư Vấn
                 </div>
-                <div class="form--contact__inner--contact">
-                    <form action="">
-                        <div class="form--contact__inner--contact--form row">
-                            <div class="form--contact__inner--contact--form-group form-group col l-12">
-                                <input type="text" placeholder="Họ Tên" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="form--contact__inner--contact--form row">
-                            <div class="form--contact__inner--contact--form-group form-group col l-6">
-                                <input type="email" placeholder="Email" class="form-control">
-                            </div>
-                            <div class="form--contact__inner--contact--form-group form-group col l-6">
-                                <input type="number" placeholder="Số Điện Thoại" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form--contact__inner--contact--form row">
-                            <div class="form--contact__inner--contact--form-group form-group col l-6">
-                                <select name="" placeholder="Chọn dịch vụ" id="" class="form-control">
-                                    <option value="">Chọn dịch vụ</option>
-                                    <option value="">Dịch vụ 1</option>
-                                    <option value="">Dịch vụ 2</option>
-                                    <option value="">Dịch vụ 3</option>
-                                </select>
-                            </div>
-                            <div class="form--contact__inner--contact--form-group form-group col l-6">
-                                <select name="" placeholder="Chọn Khu Vực" id="" class="form-control">
-                                    <option value="">Chọn dịch vụ</option>
-                                    <option value="">Dịch vụ 1</option>
-                                    <option value="">Dịch vụ 2</option>
-                                    <option value="">Dịch vụ 3</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form--contact__inner--contact--form row">
-                            <div class="form--contact__inner--contact--form-group form-group col l-12">
-                                <textarea name="" class="form-textarea" placeholder="Nội dung tư vấn" id="" cols="30"
-                                    rows="10"></textarea>
-                            </div>
-
-                        </div>
-                        <button class="btn send-contact__btn">đăng ký tư vấn</button>
-
-                    </form>
-
-                    <p class="form--contact__inner--contact--text">Hoặc liên hệ hotline <span class="phone-number">0909 999 999</span>  để được tư vấn nhanh nhất</p>
+                <div class="tab-item-heading ">
+                    <i class="tab-icon fa-solid fa-location-dot"></i> Chi Nhánh
                 </div>
+
+                <div class="tab-item-heading">
+                    <i class="tab-icon fa-solid fa-calendar-days"></i> Đặt Lịch
+                </div>
+
             </div>
+
+            <!-- Tabs content -->
+            <div class="tab-content">
+                <div class="tab-pane-content active">
+                    <div class="form--contact__inner">
+                        <div class="form--contact__inner--logo">
+                            <img src="./images/footerImg.png" alt="" class="form--contact__inner--logo--image">
+                        </div>
+                        <div class="form--contact__inner--contact">
+                            <form action="">
+                                <div class="form--contact__inner--contact--form row">
+                                    <div class="form--contact__inner--contact--form-group form-group col l-12">
+                                        <input type="text" placeholder="Họ Tên" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form--contact__inner--contact--form row">
+                                    <div class="form--contact__inner--contact--form-group form-group col l-6">
+                                        <input type="email" placeholder="Email" class="form-control">
+                                    </div>
+                                    <div class="form--contact__inner--contact--form-group form-group col l-6">
+                                        <input type="number" placeholder="Số Điện Thoại" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form--contact__inner--contact--form row">
+                                    <div class="form--contact__inner--contact--form-group form-group col l-6">
+                                        <select name="" placeholder="Chọn dịch vụ" id="" class="form-control">
+                                            <option value="">Chọn dịch vụ</option>
+                                            <option value="">Dịch vụ 1</option>
+                                            <option value="">Dịch vụ 2</option>
+                                            <option value="">Dịch vụ 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="form--contact__inner--contact--form-group form-group col l-6">
+                                        <select name="" placeholder="Chọn Khu Vực" id="" class="form-control">
+                                            <option value="">Chọn dịch vụ</option>
+                                            <option value="">Dịch vụ 1</option>
+                                            <option value="">Dịch vụ 2</option>
+                                            <option value="">Dịch vụ 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form--contact__inner--contact--form row">
+                                    <div class="form--contact__inner--contact--form-group form-group col l-12">
+                                        <textarea name="" class="form-textarea" placeholder="Nội dung tư vấn" id=""
+                                            cols="30" rows="10"></textarea>
+                                    </div>
+
+                                </div>
+                                <button class="btn send-contact__btn">đăng ký tư vấn</button>
+
+                            </form>
+
+                            <p class="form--contact__inner--contact--text">Hoặc liên hệ hotline <span
+                                    class="phone-number">0909 999 999</span> để được tư vấn nhanh nhất</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane-content">
+
+                    <div class="address-pop" id="address-pop">
+                        <div class="address-pop-mobile">
+                            <div class="address-pop-mobile__info">
+                                <div class="address-pop-mobile__info--image">
+                                    <img src="./images/butterfly-wings.png" class="w-100" alt="">
+                                </div>
+                                <h2 class="address-pop-mobile__info--title">Hệ thống hơn 50 chi nhánh</h2>
+                            </div>
+                            <div class="address-pop-mobile__nav">
+                                <div class="container container-width">
+                                    <ul class="address-pop-mobile__nav--location row">
+                                        <li class="address-pop-mobile__nav--location__item">
+                                            <a class="address-pop-mobile__nav--location__item--link active link-border"
+                                                href="">Tất cả</a>
+                                        </li>
+                                        <li class="address-pop-mobile__nav--location__item">
+                                            <a class="address-pop-mobile__nav--location__item--link" href="">Hồ Chí
+                                                Minh</a>
+                                        </li>
+                                        <li class="address-pop-mobile__nav--location__item">
+                                            <a class="address-pop-mobile__nav--location__item--link" href="">Hà nội</a>
+                                        </li>
+                                        <li class="address-pop-mobile__nav--location__item">
+                                            <a class="address-pop-mobile__nav--location__item--link" href="">Miền
+                                                nam</a>
+                                        </li>
+                                        <li class="address-pop-mobile__nav--location__item">
+                                            <a class="address-pop-mobile__nav--location__item--link" href="">Miền
+                                                tây</a>
+                                        </li>
+                                        <li class="address-pop-mobile__nav--location__item">
+                                            <a class="address-pop-mobile__nav--location__item--link" href="">Miền
+                                                trung</a>
+                                        </li>
+                                        <li class="address-pop-mobile__nav--location__item">
+                                            <a class="address-pop-mobile__nav--location__item--link" href="">Tây
+                                                nguyên</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pop-details">
+                                <div class="container container-width">
+                                    <div class="row pop-details-border">
+                                        <ul class="pop-details-list col-lg-6">
+                                            <li class="pop-details-list__item row">
+                                                <div class="col-lg-4 pop-details-left">
+                                                    <img src="./images/thanhtoan.png" alt="" class="">
+                                                </div>
+                                                <div class="col-lg-6 pop-details-right">
+                                                    <h4 class="pop-details-right__name">Quận 10</h4>
+                                                    <p class="pop-details-right__info">375 Nguyễn Thượng Hiền, Phường
+                                                        11, Quận
+                                                        10 (Vòng Xoay Dân Chủ)
+                                                    </p>
+                                                    <div class="pop-details-right__booking">
+                                                        <button class="btn pop-views">Xem địa chỉ</button>
+                                                        <button class="pop-details-right__booking--item">
+                                                            <img src="./images/icon/iconPopup.png" alt="">
+                                                            <p>Đặt lịch</p>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2"></div>
+                                            </li>
+                                            <li class="pop-details-list__item row">
+                                                <div class="col-lg-4 pop-details-left">
+                                                    <img src="./images/shynhhouse.png" alt="" class="">
+                                                </div>
+                                                <div class="col-lg-6 pop-details-right">
+                                                    <h4 class="pop-details-right__name">Bình Thạnh</h4>
+                                                    <p class="pop-details-right__info">380 Bùi Hữu Nghĩa, Phường 2, Bình
+                                                        Thạnh
+                                                        (Đối Diện Chợ Bà Chiểu)</p>
+                                                    <div class="pop-details-right__booking">
+                                                        <button class="btn pop-views">Xem địa chỉ</button>
+                                                        <button class="pop-details-right__booking--item">
+                                                            <img src="./images/icon/iconPopup.png" alt="">
+                                                            <p>Đặt lịch</p>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2"></div>
+                                            </li>
+                                            <li class="pop-details-list__item row">
+                                                <div class="col-lg-4 pop-details-left">
+                                                    <img src="./images/makeup.png" alt="" class="">
+                                                </div>
+                                                <div class="col-lg-6 pop-details-right">
+                                                    <h4 class="pop-details-right__name">Thủ Đức</h4>
+                                                    <p class="pop-details-right__info">314 Võ Văn Ngân, Bình Thọ, Thủ
+                                                        Đức (Gần
+                                                        ĐH Sư Phạm Kĩ Thuật)</p>
+                                                    <div class="pop-details-right__booking">
+                                                        <button class="btn pop-views">Xem địa chỉ</button>
+                                                        <button class="pop-details-right__booking--item">
+                                                            <img src="./images/icon/iconPopup.png" alt="">
+                                                            <p>Đặt lịch</p>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2"></div>
+                                            </li>
+                                        </ul>
+                                        <ul class="pop-details-list col-lg-6">
+                                            <li class="pop-details-list__item row">
+                                                <div class="col-lg-4 pop-details-left">
+                                                    <img src="./images/thanhtoan.png" alt="" class="">
+                                                </div>
+                                                <div class="col-lg-6 pop-details-right">
+                                                    <h4 class="pop-details-right__name">Quận 7</h4>
+                                                    <p class="pop-details-right__info">44 Nguyễn Thị Thập, Tân Hưng,
+                                                        Quận 7
+                                                        (Gần cầu HimLam)</p>
+                                                    <div class="pop-details-right__booking">
+                                                        <button class="btn pop-views">Xem địa chỉ</button>
+                                                        <button class="pop-details-right__booking--item">
+                                                            <img src="./images/icon/iconPopup.png" alt="">
+                                                            <p>Đặt lịch</p>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2"></div>
+                                            </li>
+                                            <li class="pop-details-list__item row">
+                                                <div class="col-lg-4 pop-details-left">
+                                                    <img src="./images/shynhhouse.png" alt="" class="">
+                                                </div>
+                                                <div class="col-lg-6 pop-details-right">
+                                                    <h4 class="pop-details-right__name">Gò Vấp</h4>
+                                                    <p class="pop-details-right__info">398 Nguyễn Văn Nghi, Phường 7,
+                                                        Quận Gò
+                                                        Vấp</p>
+                                                    <div class="pop-details-right__booking">
+                                                        <button class="btn pop-views">Xem địa chỉ</button>
+                                                        <button class="pop-details-right__booking--item">
+                                                            <img src="./images/icon/iconPopup.png" alt="">
+                                                            <p>Đặt lịch</p>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2"></div>
+                                            </li>
+                                            <li class="pop-details-list__item row">
+                                                <div class="col-lg-4 pop-details-left">
+                                                    <img src="./images/makeup.png" alt="" class="">
+                                                </div>
+                                                <div class="col-lg-6 pop-details-right">
+                                                    <h4 class="pop-details-right__name">Tân Bình</h4>
+                                                    <p class="pop-details-right__info">120 Ni Sư Huỳnh Liên,Phường 10,
+                                                        Quận Tân
+                                                        Bình</p>
+                                                    <div class="pop-details-right__booking">
+                                                        <button class="btn pop-views">Xem địa chỉ</button>
+                                                        <button class="pop-details-right__booking--item">
+                                                            <img src="./images/icon/iconPopup.png" alt="">
+                                                            <p>Đặt lịch</p>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane-content">
+                    <div class="form--appointment" id="open-appointment">
+                        <div class="form--appointment__inner">
+                            <div class="form--appointment__inner--logo">
+                                <img src="./images/footerImg.png" alt="" class="form--appointment__inner--logo--image">
+                            </div>
+                            <div class="form--appointment__inner--title">
+                                <h3>ĐẶT LỊCH HẸN</h3>
+                            </div>
+                            <div class="form--appointment__inner--appointment">
+                                <form action="">
+                                    <div class="form--appointment__inner--appointment--form row">
+                                        <div
+                                            class="form--appointment__inner--appointment--form-group form-group col l-12">
+                                            <input type="text" placeholder="Họ Tên" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form--appointment__inner--appointment--form row">
+                                        <div
+                                            class="form--appointment__inner--appointment--form-group form-group col l-6">
+                                            <input type="email" placeholder="Email" class="form-control">
+                                        </div>
+                                        <div
+                                            class="form--appointment__inner--appointment--form-group form-group col l-6">
+                                            <input type="number" placeholder="Số Điện Thoại" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form--appointment__inner--appointment--form row">
+                                        <div
+                                            class="form--appointment__inner--appointment--form-group form-group col l-6">
+                                            <select name="" placeholder="Chọn dịch vụ" id="" class="form-control">
+                                                <option value="">Chọn dịch vụ</option>
+                                                <option value="">Dịch vụ 1</option>
+                                                <option value="">Dịch vụ 2</option>
+                                                <option value="">Dịch vụ 3</option>
+                                            </select>
+                                        </div>
+                                        <div
+                                            class="form--appointment__inner--appointment--form-group form-group col l-6">
+                                            <select name="" placeholder="Chọn Khu Vực" id="" class="form-control">
+                                                <option value="">Chọn khu vực</option>
+                                                <option value="">Khu vực 1</option>
+                                                <option value="">Khu vực 2</option>
+                                                <option value="">Khu vực 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form--appointment__inner--appointment---time row">
+                                        <div class="form--appointment__inner--appointment--time-day col l-6">
+                                            <input type="date" class="form-controls" placeholder="mm/dd/yyyy">
+                                        </div>
+                                        <div class="form--appointment__inner--appointment--time-day col l-6">
+                                            <input type="time" class="form-controls" placeholder="8:00">
+                                        </div>
+                                    </div>
+                                    <div class="form--appointment__inner--appointment--form row">
+                                        <div
+                                            class="form--appointment__inner--appointment--form-group form-group col l-12">
+                                            <textarea name="" class="form-textarea" placeholder="Ghi chú lịch hẹn"
+                                                id="" cols="30" rows="10"></textarea>
+                                        </div>
+                                    </div>
+                                    <button class="btn send-appointment__btn">ĐẶT LỊCH</button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
         </div>
 
         <div class="form--again">
@@ -766,8 +1045,10 @@
                         <img src="./images/service/_Line_.png" alt="">
                     </div>
                     <div class="form--again__inner--info-client">
-                        <p class="form--again__inner--info-client-text">Tên khách hàng: <span class="form--again__inner--info-client-name"> Nguyễn Thị A</span></p>
-                        <p class="form--again__inner--info-client-text">Số điện thoại:<span class="form--again__inner--info-client-name"> 0888 888 888</span></p>
+                        <p class="form--again__inner--info-client-text">Tên khách hàng: <span
+                                class="form--again__inner--info-client-name"> Nguyễn Thị A</span></p>
+                        <p class="form--again__inner--info-client-text">Số điện thoại:<span
+                                class="form--again__inner--info-client-name"> 0888 888 888</span></p>
                     </div>
                     <div class="form--again__inner--info-time row">
                         <div class="form--again__inner--info-time-day col l-6">
@@ -779,7 +1060,7 @@
                     </div>
                     <div class="form--again__inner--info-thank">
                         <p>Cảm ơn quý khách hẹn gặp quý khách tại Shynh Beauty Spa</p>
-                    </div> 
+                    </div>
                 </div>
                 <button class="btn send-contact__btn">SỬA LỊCH HẸN</button>
             </div>
@@ -804,8 +1085,10 @@
                     <div class="form--pop__inner--info-line">
                     </div>
                     <div class="form--pop__inner--info-client">
-                        <p class="form--pop__inner--info-client-text">Tên khách hàng: <span class="form--pop__inner--info-client-name"> Nguyễn Thị A</span></p>
-                        <p class="form--pop__inner--info-client-text">Số điện thoại:<span class="form--pop__inner--info-client-name"> 0888 888 888</span></p>
+                        <p class="form--pop__inner--info-client-text">Tên khách hàng: <span
+                                class="form--pop__inner--info-client-name"> Nguyễn Thị A</span></p>
+                        <p class="form--pop__inner--info-client-text">Số điện thoại:<span
+                                class="form--pop__inner--info-client-name"> 0888 888 888</span></p>
                     </div>
                     <div class="form--pop__inner--info-time row">
                         <div class="form--pop__inner--info-time-day col l-6">
@@ -817,7 +1100,7 @@
                     </div>
                     <div class="form--pop__inner--info-thank">
                         <p>Cảm ơn quý khách hẹn gặp quý khách tại Shynh Beauty Spa</p>
-                    </div> 
+                    </div>
                 </div>
                 <button class="btn send-contact__btn">SỬA LỊCH HẸN</button>
             </div>
@@ -829,170 +1112,9 @@
                 <div class="form--pop__appointment">
                 </div>
             </div>
-        </div> 
-
-        <div class="address-pop" id="address-pop">
-            <div class="address-pop-mobile">
-                <div class="address-pop-mobile__info">
-                    <div class="address-pop-mobile__info--image">
-                        <img src="./images/butterfly-wings.png" class="w-100" alt="">
-                    </div>
-                    <h2 class="address-pop-mobile__info--title">Hệ thống hơn 50 chi nhánh</h2>
-                </div>
-                <div class="address-pop-mobile__nav">
-                    <div class="container container-width">
-                        <ul class="address-pop-mobile__nav--location row">
-                            <li class="address-pop-mobile__nav--location__item">
-                                <a class="address-pop-mobile__nav--location__item--link active link-border" href="">Tất cả</a>
-                            </li>
-                            <li class="address-pop-mobile__nav--location__item">
-                                <a class="address-pop-mobile__nav--location__item--link" href="">Hồ Chí Minh</a>
-                            </li>
-                            <li class="address-pop-mobile__nav--location__item">
-                                <a class="address-pop-mobile__nav--location__item--link" href="">Hà nội</a>
-                            </li>
-                            <li class="address-pop-mobile__nav--location__item">
-                                <a class="address-pop-mobile__nav--location__item--link" href="">Miền nam</a>
-                            </li>
-                            <li class="address-pop-mobile__nav--location__item">
-                                <a class="address-pop-mobile__nav--location__item--link" href="">Miền tây</a>
-                            </li>
-                            <li class="address-pop-mobile__nav--location__item">
-                                <a class="address-pop-mobile__nav--location__item--link" href="">Miền trung</a>
-                            </li>
-                            <li class="address-pop-mobile__nav--location__item">
-                                <a class="address-pop-mobile__nav--location__item--link" href="">Tây nguyên</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="pop-details">
-                    <div class="container container-width">
-                        <div class="row pop-details-border">
-                            <ul class="pop-details-list col-lg-6">
-                                <li class="pop-details-list__item row">
-                                    <div class="col-lg-4 pop-details-left">
-                                        <img src="./images/thanhtoan.png" alt="" class="">
-                                    </div>
-                                    <div class="col-lg-6 pop-details-right">
-                                        <h4 class="pop-details-right__name">Quận 10</h4>
-                                        <p class="pop-details-right__info">375 Nguyễn Thượng Hiền, Phường 11, Quận
-                                            10 (Vòng Xoay Dân Chủ)
-                                        </p>
-                                        <div class="pop-details-right__booking">
-                                            <button class="btn pop-views">Xem địa chỉ</button>
-                                            <button class="pop-details-right__booking--item">
-                                                <img src="./images/icon/iconPopup.png" alt="">
-                                                <p>Đặt lịch</p>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2"></div>
-                                </li>
-                                <li class="pop-details-list__item row">
-                                    <div class="col-lg-4 pop-details-left">
-                                        <img src="./images/shynhhouse.png" alt="" class="">
-                                    </div>
-                                    <div class="col-lg-6 pop-details-right">
-                                        <h4 class="pop-details-right__name">Bình Thạnh</h4>
-                                        <p class="pop-details-right__info">380 Bùi Hữu Nghĩa, Phường 2, Bình Thạnh
-                                            (Đối Diện Chợ Bà Chiểu)</p>
-                                        <div class="pop-details-right__booking">
-                                            <button class="btn pop-views">Xem địa chỉ</button>
-                                            <button class="pop-details-right__booking--item">
-                                                <img src="./images/icon/iconPopup.png" alt="">
-                                                <p>Đặt lịch</p>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2"></div>
-                                </li>
-                                <li class="pop-details-list__item row">
-                                    <div class="col-lg-4 pop-details-left">
-                                        <img src="./images/makeup.png" alt="" class="">
-                                    </div>
-                                    <div class="col-lg-6 pop-details-right">
-                                        <h4 class="pop-details-right__name">Thủ Đức</h4>
-                                        <p class="pop-details-right__info">314 Võ Văn Ngân, Bình Thọ, Thủ Đức (Gần
-                                            ĐH Sư Phạm Kĩ Thuật)</p>
-                                        <div class="pop-details-right__booking">
-                                            <button class="btn pop-views">Xem địa chỉ</button>
-                                            <button class="pop-details-right__booking--item">
-                                                <img src="./images/icon/iconPopup.png" alt="">
-                                                <p>Đặt lịch</p>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2"></div>
-                                </li>
-                            </ul>
-                            <ul class="pop-details-list col-lg-6">
-                                <li class="pop-details-list__item row">
-                                    <div class="col-lg-4 pop-details-left">
-                                        <img src="./images/thanhtoan.png" alt="" class="">
-                                    </div>
-                                    <div class="col-lg-6 pop-details-right">
-                                        <h4 class="pop-details-right__name">Quận 7</h4>
-                                        <p class="pop-details-right__info">44 Nguyễn Thị Thập, Tân Hưng, Quận 7
-                                            (Gần cầu HimLam)</p>
-                                        <div class="pop-details-right__booking">
-                                            <button class="btn pop-views">Xem địa chỉ</button>
-                                            <button class="pop-details-right__booking--item">
-                                                <img src="./images/icon/iconPopup.png" alt="">
-                                                <p>Đặt lịch</p>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2"></div>
-                                </li>
-                                <li class="pop-details-list__item row">
-                                    <div class="col-lg-4 pop-details-left">
-                                        <img src="./images/shynhhouse.png" alt="" class="">
-                                    </div>
-                                    <div class="col-lg-6 pop-details-right">
-                                        <h4 class="pop-details-right__name">Gò Vấp</h4>
-                                        <p class="pop-details-right__info">398 Nguyễn Văn Nghi, Phường 7, Quận Gò
-                                            Vấp</p>
-                                        <div class="pop-details-right__booking">
-                                            <button class="btn pop-views">Xem địa chỉ</button>
-                                            <button class="pop-details-right__booking--item">
-                                                <img src="./images/icon/iconPopup.png" alt="">
-                                                <p>Đặt lịch</p>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2"></div>
-                                </li>
-                                <li class="pop-details-list__item row">
-                                    <div class="col-lg-4 pop-details-left">
-                                        <img src="./images/makeup.png" alt="" class="">
-                                    </div>
-                                    <div class="col-lg-6 pop-details-right">
-                                        <h4 class="pop-details-right__name">Tân Bình</h4>
-                                        <p class="pop-details-right__info">120 Ni Sư Huỳnh Liên,Phường 10, Quận Tân
-                                            Bình</p>
-                                        <div class="pop-details-right__booking">
-                                            <button class="btn pop-views">Xem địa chỉ</button>
-                                            <button class="pop-details-right__booking--item">
-                                                <img src="./images/icon/iconPopup.png" alt="">
-                                                <p>Đặt lịch</p>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2"></div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="form--pop__address">
-            </div>
-            <div class="form--pop__advise">
-            </div>
-            <div class="form--pop__appointment">
-            </div>
         </div>
+
+
 
         <div class="form--advise" id="open-advise">
             <div class="form--advise__inner">
@@ -1044,7 +1166,8 @@
 
                     </form>
 
-                    <p class="form--advise__inner--advise--text">Hoặc liên hệ hotline <span class="phone-number">0909 999 999</span>  để được tư vấn nhanh nhất</p>
+                    <p class="form--advise__inner--advise--text">Hoặc liên hệ hotline <span class="phone-number">0909
+                            999 999</span> để được tư vấn nhanh nhất</p>
                 </div>
             </div>
             <div class="form--pop__address">
@@ -1055,75 +1178,39 @@
             </div>
         </div>
 
-        <!-- <div class="form--appointment" id="open-appointment">
-            <div class="form--appointment__inner">
-                <div class="form--appointment__inner--logo">
-                    <img src="./images/footerImg.png" alt="" class="form--appointment__inner--logo--image">
-                </div>
-                <div class="form--appointment__inner--title">
-                    <h3>ĐẶT LỊCH HẸN</h3>
-                </div>
-                <div class="form--appointment__inner--appointment">
-                    <form action="">
-                        <div class="form--appointment__inner--appointment--form row">
-                            <div class="form--appointment__inner--appointment--form-group form-group col l-12">
-                                <input type="text" placeholder="Họ Tên" class="form-control">
-                            </div>
-                        </div>
 
-                        <div class="form--appointment__inner--appointment--form row">
-                            <div class="form--appointment__inner--appointment--form-group form-group col l-6">
-                                <input type="email" placeholder="Email" class="form-control">
-                            </div>
-                            <div class="form--appointment__inner--appointment--form-group form-group col l-6">
-                                <input type="number" placeholder="Số Điện Thoại" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form--appointment__inner--appointment--form row">
-                            <div class="form--appointment__inner--appointment--form-group form-group col l-6">
-                                <select name="" placeholder="Chọn dịch vụ" id="" class="form-control">
-                                    <option value="">Chọn dịch vụ</option>
-                                    <option value="">Dịch vụ 1</option>
-                                    <option value="">Dịch vụ 2</option>
-                                    <option value="">Dịch vụ 3</option>
-                                </select>
-                            </div>
-                            <div class="form--appointment__inner--appointment--form-group form-group col l-6">
-                                <select name="" placeholder="Chọn Khu Vực" id="" class="form-control">
-                                    <option value="">Chọn khu vực</option>
-                                    <option value="">Khu vực 1</option>
-                                    <option value="">Khu vực 2</option>
-                                    <option value="">Khu vực 3</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form--appointment__inner--appointment---time row">
-                            <div class="form--appointment__inner--appointment--time-day col l-6">
-                                <input type="date" class="form-controls" placeholder="mm/dd/yyyy">
-                            </div>
-                            <div class="form--appointment__inner--appointment--time-day col l-6">
-                                <input type="time" class="form-controls" placeholder="8:00">
-                            </div>
-                        </div>
-                        <div class="form--appointment__inner--appointment--form row">
-                            <div class="form--appointment__inner--appointment--form-group form-group col l-12">
-                                <textarea name="" class="form-textarea" placeholder="Ghi chú lịch hẹn" id="" cols="30"
-                                    rows="10"></textarea>
-                            </div>
-                        </div>
-                        <button class="btn send-appointment__btn">ĐẶT LỊCH</button>
-                    </form>
-                </div>
-            </div>
-            <div class="form--pop__address">
-            </div>
-            <div class="form--pop__advise">
-            </div>
-            <div class="form--pop__appointment">
-            </div>
-        </div> -->
     </div>
+
     <script src="./js/main.js"></script>
+
+
+    <script type="text/javascript">
+      
+        
+                const tabsHeading = document.querySelectorAll('.tab-item-heading');
+                const panesContent = document.querySelectorAll('.tab-pane-content');
+        
+        
+        
+                tabsHeading.forEach((tab, index) => {
+                    const paneContent = panesContent[index];
+        
+                    tab.onclick = function () {
+        
+                        $('.tab-item-heading.active').classList.remove('active');
+                        $('.tab-pane-content.active').classList.remove('active');
+        
+        
+        
+                        this.classList.add('active');
+                        paneContent.classList.add('active');
+                    }
+                })
+            </script>
+       
+
+       
+    </script>
 </body>
 
 </html>

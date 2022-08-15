@@ -319,6 +319,20 @@
 .hide{
     display: none;
 }
+
+
+.tab-item-heading:hover {
+    opacity: 1;
+    background-color: rgba(194, 53, 100, 0.05);
+    border-color: rgba(194, 53, 100, 0.1);
+}
+.tab-pane-content {
+    display: none;
+}
+.tab-pane-content.active {
+    display: block;
+    background-color: transparent;
+}
 .form--register,
 .form--contact {
     position: fixed;
@@ -329,6 +343,27 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
+    .tabs{
+        position: absolute;
+        top: 5.5rem;
+        right: 20rem;
+        .tab-item-heading{
+            font-size: 1.8rem;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            min-width: 15rem;
+            margin: 0.2rem 0;
+            cursor: pointer;
+            background-color: #fff;
+            .tab-icon{
+                font-size: 2rem;
+            }
+        }
+        .active{
+            background-color: $orange;
+        }
+    }
+    .tabs-content{}
     &__inner{
         background-image: url(../images/modal.png);
         background-size: cover;
