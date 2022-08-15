@@ -1,4 +1,27 @@
 @include responsive_pclow {
+    .header-container{
+        &-heading{
+            &__title{
+            width: 43.4rem;
+
+                &--text{
+                font-size: 2.2rem;
+
+                    &--name{
+                        
+                    }
+                }
+            }
+        }
+    }
+    .header-contact{
+        &-left{
+
+        }
+        &-right{
+            
+        }
+    }
     .header-main {
         &-nav {
             &__list {
@@ -45,6 +68,19 @@
     }
 }
 
+@include responsive_tablet{
+    .header-container{
+        &-heading{
+            &__title{
+                width: 35rem;
+                &--text{
+                    font-size: 1.8rem;
+                    
+                }
+            }
+        }
+    }
+}
 
 //Mobile
 @include responsive_mobile {

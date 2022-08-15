@@ -946,7 +946,6 @@ a:hover {
 }
 .header-container-heading__title {
   position: absolute;
-  width: 43.4rem;
   height: 5.8rem;
   background-image: linear-gradient(90deg, #f7dd66, #fbd844);
   top: 4.8rem;
@@ -957,8 +956,7 @@ a:hover {
 }
 .header-container-heading__title--text {
   text-transform: uppercase;
-  font-size: 2.2rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-left: 50%;
   transform: translateX(-50%);
 }
@@ -4871,6 +4869,12 @@ a:hover {
 }
 
 @media only screen and (min-width: 991px) {
+  .header-container-heading__title {
+    width: 43.4rem;
+  }
+  .header-container-heading__title--text {
+    font-size: 2.2rem;
+  }
   .header-main-nav__list--item .header-main__subnav {
     position: absolute;
     top: 0;
@@ -4887,6 +4891,14 @@ a:hover {
   }
   .header-main-nav__list--item .header-main__subnav--menu--item--title {
     padding-bottom: 0.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header-container-heading__title {
+    width: 35rem;
+  }
+  .header-container-heading__title--text {
+    font-size: 1.8rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -6134,8 +6146,8 @@ a:hover {
   height: 100%;
 }
 .container-item .container-heading .container-item-title {
-  line-height: 1;
   text-transform: uppercase;
+  line-height: 1;
   padding-top: 1.5rem;
   font-weight: bold;
 }
