@@ -1,0 +1,27 @@
+@include responsive_mobile{
+    .contact-address-item{
+        margin: 0 3rem;
+    }
+    .contact-address-item__maps--link{
+        width: 100%;
+        height: 100%;
+    }
+    .contact-address-item__maps {
+        width: 100%;
+        height: 30rem;
+        margin-bottom: 5rem;
+    }
+    .contact-address{
+        margin-bottom: -6rem;
+    }
+    .none-mobile{
+        display: none;
+    }
+    .align-mobile{
+       margin-left: 3rem !important;
+       margin-right: 3rem !important;
+    }
+    .line-height_mobile{
+        line-height: 3em;
+    }
+}
