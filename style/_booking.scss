@@ -18,6 +18,7 @@
         margin: 0 auto;
     }
     &-forms{
+        display: none;
         width: 31%;
         margin: 0 auto;
         &-image{
@@ -55,6 +56,9 @@
                 font-style:italic;
             }
         }
+    }
+    .send-contact-mobiles{
+        display: none
     }
     .send-contact__btn{
         @include buttonStyle();

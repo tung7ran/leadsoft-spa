@@ -4200,6 +4200,7 @@ a:hover {
   margin: 0 auto;
 }
 .booking-forms {
+  display: none;
   width: 31%;
   margin: 0 auto;
 }
@@ -4231,6 +4232,9 @@ a:hover {
 .booking-forms-thank p {
   font-size: 1.4rem;
   font-style: italic;
+}
+.booking .send-contact-mobiles {
+  display: none;
 }
 .booking .send-contact__btn {
   font-size: 1.6rem;
