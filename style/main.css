@@ -1095,26 +1095,18 @@ a:hover {
   color: #808080;
 }
 .header-main-nav__list--item .header-main__subnav {
-  position: absolute;
-  top: 0;
-  left: 12rem;
   display: none;
-  background-color: #fff;
-  min-width: 46rem;
-  z-index: 1;
-  padding: 2rem;
-  border-radius: 2rem;
-  border: 1px solid #ffd00f;
-}
-.header-main-nav__list--item .header-main__subnav--menu--item {
-  padding-bottom: 2rem;
 }
 .header-main-nav__list--item .header-main__subnav--menu--item--title {
   font-size: 1.6rem;
   font-family: Gilroy-Bold;
   color: #000;
   display: block;
-  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.header-main-nav__list--item .header-main__subnav--menu--item--title .down--icon {
+  display: none;
+  color: red;
 }
 .header-main-nav__list--item .header-main__subnav--menu--item--list--service--link {
   font-size: 1.4rem;
@@ -1319,16 +1311,11 @@ a:hover {
 .contact-address {
   margin-bottom: 24.5rem;
 }
-.contact-address-item__maps {
-  width: 52.8rem;
-  height: 60.8rem;
-}
 .contact-address-item__maps--link {
   width: 100%;
   height: 100%;
 }
 .contact-address-item__form-contact--address--title {
-  font-size: 2rem;
   font-family: Gilroy-Bold;
   line-height: 1.2;
   padding-bottom: 1.6rem;
@@ -1707,7 +1694,6 @@ a:hover {
 }
 .header-contact-right__cart .header-cart--notify__info {
   width: 30.4rem;
-  height: 24rem;
   text-align: center;
   box-shadow: 0.9rem 0.9rem 0.9rem rgba(0, 0, 0, 0.1);
 }
@@ -4884,6 +4870,25 @@ a:hover {
   color: #a1710f;
 }
 
+@media only screen and (min-width: 991px) {
+  .header-main-nav__list--item .header-main__subnav {
+    position: absolute;
+    top: 0;
+    left: 12rem;
+    background-color: #fff;
+    min-width: 46rem;
+    z-index: 1;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 1px solid #ffd00f;
+  }
+  .header-main-nav__list--item .header-main__subnav--menu--item {
+    padding-bottom: 2rem;
+  }
+  .header-main-nav__list--item .header-main__subnav--menu--item--title {
+    padding-bottom: 0.5rem;
+  }
+}
 @media only screen and (max-width: 480px) {
   .header {
     position: relative;
@@ -5021,7 +5026,7 @@ a:hover {
   }
   .header-main-nav__list--item {
     padding: 0;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     position: relative;
   }
   .header-main-nav__list--item-link {
@@ -5037,13 +5042,25 @@ a:hover {
     border-bottom: 1px solid #000000;
     width: 100%;
     height: 0.2rem;
-    bottom: -2rem;
+    bottom: -1.5rem;
   }
   .header-main-nav__list .active {
     background-color: transparent;
     padding: 0;
     border-radius: 0;
     width: 100%;
+  }
+  .header-main-nav__list .header-main__subnav--menu {
+    display: block;
+  }
+  .header-main-nav__list .header-main__subnav--menu--item--title {
+    margin-top: 1rem;
+  }
+  .header-main-nav__list .header-main__subnav--menu--item--list {
+    display: none;
+  }
+  .header-main-nav__list .header-main__subnav--menu--item:hover .header-main__subnav--menu--item--list {
+    display: block;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -5344,7 +5361,7 @@ a:hover {
 @media only screen and (max-width: 480px) {
   .header-contact-right__cart .mobile-cart .header-cart-notify__moible {
     position: absolute;
-    top: 8rem;
+    top: 8rem !important;
     right: 0;
     width: 36.4rem;
     height: 111.8rem;
@@ -6014,6 +6031,41 @@ a:hover {
     min-width: 14rem;
   }
   .details-news {
+    display: none;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .contact-address-item {
+    display: flex;
+  }
+  .contact-address-item__maps {
+    width: 52.8rem;
+    height: 60.8rem;
+  }
+  .contact-address-item__form-contact--address--title {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .contact-address-item {
+    display: block;
+    padding: 0 1.5rem;
+  }
+  .contact-address-item__maps {
+    height: 28.3rem;
+    width: 100%;
+  }
+  .contact-address-item__form-contact {
+    margin-top: 6.1rem;
+  }
+  .contact-address-item__form-contact--address {
+    margin-bottom: 2.8rem;
+  }
+  .contact-address-item__form-contact--address--title {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  .contact-address-item__form-contact--group--title {
     display: none;
   }
 }

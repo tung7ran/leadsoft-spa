@@ -185,27 +185,23 @@
                 }
 
                 .header-main__subnav {
-                    position: absolute;
-                    top: 0;
-                    left: 12rem;
                     display: none;
-                    background-color: $white;
-                    min-width: 46rem;
-                    z-index: 1;
-                    padding: 2rem;
-                    border-radius: 2rem;
-                    border: 1px solid $orange;
+                   
 
                     &--menu {
                         &--item {
-                            padding-bottom: 2rem;
 
                             &--title {
                                 font-size: 1.6rem;
                                 font-family: Gilroy-Bold;
                                 color: $black;
                                 display: block;
-                                padding-bottom: 0.5rem;
+                                text-transform: uppercase;
+
+                                .down--icon{
+                                    display: none;
+                                    color: red;
+                                }
                             }
 
                             &--list {

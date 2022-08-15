@@ -1,0 +1,50 @@
+@include responsive_pclow{
+    .contact-address{
+        &-item{
+            display: flex;
+            &__maps{
+                width: 52.8rem;
+                height: 60.8rem;
+            }
+            &__form{
+                &-contact{
+                    &--address{
+                        &--title{
+                        font-size: 2rem;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include responsive_mobile {
+    .contact-address{
+        &-item{
+            display: block;
+            padding: 0 1.5rem;
+            &__maps{
+                height: 28.3rem;
+                width: 100%;
+            }
+            &__form{
+                &-contact{
+                    margin-top: 6.1rem;
+                    &--address{
+                        margin-bottom: 2.8rem;
+                        &--title{
+                            font-size: 1.6rem;
+                            line-height: 1.4;
+                        }
+                    }
+                    &--group{
+                        &--title{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
