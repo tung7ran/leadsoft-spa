@@ -1118,30 +1118,34 @@
     </div>
 
     <script src="./js/main.js"></script>
+
+
     <script type="text/javascript">
       
-const $ = document.querySelector.bind(document);
+        
+                const tabsHeading = document.querySelectorAll('.tab-item-heading');
+                const panesContent = document.querySelectorAll('.tab-pane-content');
+        
+        
+        
+                tabsHeading.forEach((tab, index) => {
+                    const paneContent = panesContent[index];
+        
+                    tab.onclick = function () {
+        
+                        $('.tab-item-heading.active').classList.remove('active');
+                        $('.tab-pane-content.active').classList.remove('active');
+        
+        
+        
+                        this.classList.add('active');
+                        paneContent.classList.add('active');
+                    }
+                })
+            </script>
+       
 
-        const tabsHeading = document.querySelectorAll('.tab-item-heading');
-        const panesContent = document.querySelectorAll('.tab-pane-content');
-        const tabActive = document.querySelector('.tab-item-heading.active');
-
-
-
-        tabsHeading.forEach((tab, index) => {
-            const paneContent = panesContent[index];
-
-            tab.onclick = function () {
-
-                $('.tab-item-heading.active').classList.remove('active');
-                $('.tab-pane-content.active').classList.remove('active');
-
-
-
-                this.classList.add('active');
-                paneContent.classList.add('active');
-            }
-        })
+       
     </script>
 </body>
 

@@ -1,7 +1,6 @@
-// const $ = document.querySelector.bind(document);
-// const $$ = document.querySelectorAll.bind(document);
-// const tabs = $$('.tab-item');
-/*
+const $ = document.querySelector.bind(document);
+
+
 const tabs = document.querySelectorAll('.tab-item');
 const panes = document.querySelectorAll('.tab-pane');
 const tabActive = $('.tab-item.active');
@@ -16,13 +15,11 @@ tabs.forEach((tab, index) => {
         pane.classList.add('active');
     }
 });
-*/
+
 // // ------------------------------------------------------------------
-// const tabCategory = $$('.tab-category');
 /*
 const tabCategory = document.querySelectorAll('.tab-category');
-const tabPane = document.querySelectorAll('.tab-pane');
-// const tabPane = $$('.tab-product');
+const tabPane = document.querySelectorAll('.tab-product');
 const tabsActive = $('.tab-category.active');
 tabCategory.forEach((tab, index) => {
     const pane = tabPane[index];
@@ -35,7 +32,7 @@ tabCategory.forEach((tab, index) => {
 });
 */
 // --------------------------------------------------------------------------------
-/*
+
 const cart = document.querySelector('.header-contact-right__cart')
 const notify =  document.querySelector('.header-cart--notify')
 const close =  document.querySelector('.header-cart--notify__info--top-icon')
@@ -45,7 +42,7 @@ cart.addEventListener('click', () => {
 cart.addEventListener('click', () => {
     notify.classList.toggle('show')
 });
-*/
+
 // // ---------------------------------------------------------------------------------
 const openModalBtn = document.getElementById("open-modal-btn");
 const modal = document.getElementById("open-contact");
@@ -66,18 +63,18 @@ if (openModalBtn){
 // // ---------------------------------------------------------------------------------
 // const tabRecruit =$$('.recruit-pagination-list__item')
 // const paneRecruit =$$('.main-recruit-content__list')
-// const tabRecruit = document.querySelectorAll('.recruit-pagination-list__item');
-// const paneRecruit = document.querySelectorAll('.main-recruit-content__list');
-// tabRecruit.forEach((tab,index) => {
-//     const pane = paneRecruit[index]
-//     tab.onclick = function () {
-//       $('.recruit-pagination-list__item.active').classList.remove('active');
-//       $('.main-recruit-content__list.show').classList.remove('show');
+const tabRecruit = document.querySelectorAll('.recruit-pagination-list__item');
+const paneRecruit = document.querySelectorAll('.main-recruit-content__list');
+tabRecruit.forEach((tab,index) => {
+    const pane = paneRecruit[index]
+    tab.onclick = function () {
+      $('.recruit-pagination-list__item.active').classList.remove('active');
+      $('.main-recruit-content__list.show').classList.remove('show');
   
-//       this.classList.add('active');
-//       pane.classList.add('show');
-//     }
-// });
+      this.classList.add('active');
+      pane.classList.add('show');
+    }
+});
 // // ----------------------------------------------------------------
 
 const openModalGift = document.getElementById("promotion--detail__btn");
@@ -103,11 +100,11 @@ if (openModalGift){
             mobileMenu.classList.toggle('show')
             mobileOverlay.classList.toggle('show')
         } );
-        // mobileOverlay.addEventListener('click', () => {
-        //     mobileMenu.classList.remove('show')
-        //     mobileOverlay.classList.remove('show')
-        // }
-        // );
+        mobileOverlay.addEventListener('click', () => {
+            mobileMenu.classList.remove('show')
+            mobileOverlay.classList.remove('show')
+        }
+        );
         // scroll menu__list
        
 // slider
@@ -144,4 +141,5 @@ var swiper = new Swiper(".slide-content", {
     },
   });
 
-//   
+  
+  //  tabs service
