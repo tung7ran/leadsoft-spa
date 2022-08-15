@@ -116,3 +116,102 @@
         }
     }
 }
+
+//Tablet
+@include responsive_tablet{
+    .beautify {
+        &--program{
+            &__category{
+                &--list{
+                    align-items: center;
+                    justify-content: center;
+                    &-item{
+                        margin-top: 2rem;
+                        margin-bottom: 4rem;
+                        &-link{   
+                            font-size: 1.4rem;
+                            padding: 0.7rem 1rem 0.5rem 0.5rem;
+                        }
+                    }
+
+                    &-item:nth-child(2),
+                    &-item:nth-child(3) {
+                        a {
+                            font-family: Gilroy-Regular;
+                        }
+                    }
+                }
+            }
+        }
+        &-program {
+            &-list {
+                &__item {
+                    &--image {
+                        width: 100%;
+                        height: 24.5rem;
+                        &--product {
+                            object-fit: cover;
+                        }
+                    }
+
+                    .image-pseudo--tips::after{
+                        display: none;
+                    }
+    
+                    &--text {
+                        &--title {
+                            font-family: K2D-ExtraBold;
+                        }
+    
+                        &--desc {
+                            position: relative;
+                            font-family: K2D-ExtraLight;
+                        }
+
+                        &--desc::after{
+                            content: " ";
+                            position: absolute;
+                            top: 11rem;
+                            right: 2.5rem;
+                            height: 2rem;
+                            width: 90%;
+                            border-bottom: 0.1rem solid #b5b5b5;
+                        }
+
+                        &--desc:last-child::after{
+                            border: none;
+                        }
+                    }
+    
+                    &--calendar {
+                        top: 1.6rem;
+                        right: 2.8rem;
+                    }
+                }
+            }
+            .product-pagination {
+                &-prev {
+                    &__btn {
+                        width: 1.8rem;
+                        height: 1.7rem;
+                        margin-right: 1.6rem;
+                        border: none;
+                        background-color: transparent;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                
+                &-next {
+                    img {
+                        width: 1.8rem;
+                        height:1.7rem;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

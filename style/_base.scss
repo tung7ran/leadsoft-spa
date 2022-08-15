@@ -260,9 +260,9 @@ a:hover {
 .dp-nonePC {
   display: none;
 }
+
 .content-container{
   background-color: #fff;
-  margin: 18rem 0 29rem 0;
 }
 .tips-beautify--category__list--item .active,
 .beautify--program__category--list-item .active{
@@ -301,6 +301,9 @@ a:hover {
 .open {
   transform: scaleY(1);
   transition: 1s;
+}
+.start{
+  margin-left: 0;
 }
 @keyframes showModal {
   from {

@@ -1,8 +1,7 @@
 .training-detail{
     margin-top: 6rem;
-    background-color: $background-content;
+    background-color: $background-home;
     position: relative;
-    padding-bottom: 18rem;
     padding-top: 6rem;
 }
 
@@ -10,31 +9,27 @@
     // position: absolute;
     background-color: $white;
     border: 1px solid $white;
-    border-radius: 2rem;
     padding: 4rem 0;
     h1{
         color: $more-color;
-        font-size: 4rem;
         font-family: K2D-ExtraBold;
         line-height: 1.2;
         margin: 0;
-        padding: 0 7rem;
     }
     .details-header{
         margin-top: 2rem;
-        padding: 0 7rem;
         p{
             border: 1px solid $border;
             border-radius: 1rem;
             font-size: 1.6rem;
             font-family: K2D-ExtraLight;
-            padding: 1rem 1rem;
+            padding: 1rem;
+            text-align: justify;
         }
 
     }
     .details-content{
         margin-top: 2rem;
-        padding: 0 7rem;
         &-list{
             background-color: #f2f2f2;
             padding: 2.5rem 1rem 5.2rem;
@@ -54,43 +49,40 @@
     }
     .details-reason{
         &-title{
-            padding: 0 7rem;
             font-size: 2rem;
             font-family:  K2D-Bold;
             color: $more-color;
         }
         &-sub{
-            padding: 0 7rem;
             font-size: 1.6rem;
             font-family: K2D-ExtraLight;
             margin-top: 2rem;
+            text-align: justify;
         }
         &-img{
-            text-align: center;
+            margin: 1rem 0;
             img{
-                width: 50%;
+                width: 100%;
             }
         }
     }
     .details-expert{
-        margin-top: 3rem;
         &-title{
-            padding: 0 7rem;
-            font-size: 3rem;            
             font-family:  K2D-Bold;
             color: $more-color;
         }
         &-sub{
-            padding: 0 7rem;
             font-family: K2D-ExtraLight;
             font-size: 1.6rem;
             margin-top: 2rem;
+            text-align: justify;
         }
         &-img__one{
-            text-align: center;
+            margin: 1rem 0;
+
             img{
                 position: relative;
-                width: 50%;
+                width: 100%;
             }
         }
         &-img__two{
@@ -110,14 +102,11 @@
     .details-courses{
         position: relative;
         &-title{
-            padding: 0 7rem;
-            font-size: 3rem;            
             font-family:  K2D-Bold;
             color: $more-color;
             margin-top: 2.6rem;
         }
         &-sub{
-            padding: 0 7rem;
             font-family: K2D-ExtraLight;
             font-size: 1.6rem;
             margin-top: 2rem;
@@ -130,15 +119,12 @@
         transform: translateX(-50%);
         right: 0;
         bottom: -5rem;
-        width: 70%;
         height: 0.2rem;
         background-color: $colorStoreNumber;
     }
     .details-graduate{
-        padding: 0 7rem;
         margin-top: 5rem;
         &-title{
-            font-size: 3rem;
             padding-top: 5rem;
             font-family:  K2D-Bold;
             text-align:center;
@@ -151,7 +137,7 @@
             &__list{
                 
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: center;
                 
               &--item{
                 &--images{
@@ -166,7 +152,6 @@
                     }
                 }
                 &--text{
-                    font-size: 1.8rem;
                     font-family:  K2D-Bold;
                     color: $more-color;
                     max-width: 16rem;
@@ -182,10 +167,16 @@
                     width: 100%;
                 }
             }
+            .swiper-button-next,
+            .swiper-button-prev{
+                height: 0.5rem;
+            }
+            .swiper-button-prev{
+                left: 0;
+            }
         }
     }
     .details-rated{
-        padding: 0 7rem;
         margin-top: 4rem;
         &-title{
             text-align:center;

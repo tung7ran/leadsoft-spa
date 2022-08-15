@@ -1,0 +1,57 @@
+@include responsive_pclow{
+    .banner-training{
+        display: none;
+    }
+    .training-container{
+        .container-body-training{
+            display: none;
+        }
+    }
+    .address-training,
+    .advise-contact-training{
+        display: none;
+    }
+}
+@include responsive_mobile {
+   .headers{
+    display: none;
+   }
+   .training-container{
+    margin-top: 6.4rem;
+    .content-img{
+        height: 5.5rem;
+        width: 6.7rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .content-title{
+        h1{
+            font-size: 1.8rem;
+        }
+    }
+    .content-product-training{
+        display: none;
+       
+    }
+   }
+   .container-body-training{
+    margin-top: 5.9rem;
+    .container-service{
+        .container-service-item{
+            .service-image{
+                width: 100%;
+            }
+        }
+    }
+   }
+   .advise-contact-training{
+    margin-top: 13.5rem;
+   }
+   .address-training{
+    margin-top: 3.8rem;
+   }
+}
