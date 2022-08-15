@@ -1,0 +1,11 @@
+@include responsive_mobile{
+    .promotion__heading{
+        width: 35rem;
+    }
+    .promotion--container--body {
+        width: 90%;
+    }
+    .advise-contact{
+        display: none;
+    }
+}
