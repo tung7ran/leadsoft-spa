@@ -153,17 +153,17 @@ a:hover {
   display: inline-block;
   color: #4d4d4d !important;
 }
-
+.address-nav-location__item.active,
 .tab-category.active,
 .tab-item.active {
   opacity: 1;
 }
-
+.location-details,
 .slide-container,
 .tab-pane {
   display: none;
 }
-
+.location-details.active,
 .slide-container.active,
 .tab-pane.active {
   display: block;

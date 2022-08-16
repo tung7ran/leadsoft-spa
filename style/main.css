@@ -217,16 +217,19 @@ a:hover {
   color: #4d4d4d !important;
 }
 
+.address-nav-location__item.active,
 .tab-category.active,
 .tab-item.active {
   opacity: 1;
 }
 
+.location-details,
 .slide-container,
 .tab-pane {
   display: none;
 }
 
+.location-details.active,
 .slide-container.active,
 .tab-pane.active {
   display: block;
@@ -2466,7 +2469,7 @@ a:hover {
 }
 .headers-image__three {
   height: 40rem;
-  z-index: 1000;
+  z-index: 1;
   position: absolute;
   margin-top: -7rem;
   margin-left: 7rem;
@@ -2524,7 +2527,6 @@ a:hover {
 .content-product-image {
   width: 25rem;
   position: relative;
-  z-index: 100;
   border: 3px solid #ffd00f;
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
@@ -2544,7 +2546,6 @@ a:hover {
 .content-product-courses__icon {
   width: 8rem;
   position: relative;
-  z-index: 100;
 }
 .content-product-courses__text {
   position: absolute;
@@ -2649,7 +2650,6 @@ a:hover {
   margin-top: -15.3rem;
   margin-left: 41.2rem;
   width: 2.4rem;
-  z-index: 100;
 }
 .home .details-expert-img__three {
   position: absolute;
@@ -2726,6 +2726,7 @@ a:hover {
 .home .details-graduate-outstanding .swiper-button-next,
 .home .details-graduate-outstanding .swiper-button-prev {
   height: 0.5rem;
+  color: #ffd00f;
 }
 .home .details-graduate-outstanding .swiper-button-prev {
   left: 0;
@@ -4971,7 +4972,7 @@ a:hover {
     left: 12rem;
     background-color: #fff;
     min-width: 46rem;
-    z-index: 1;
+    z-index: 2;
     padding: 2rem;
     border-radius: 2rem;
     border: 1px solid #ffd00f;
@@ -7776,20 +7777,19 @@ a:hover {
   padding: 0;
   margin-bottom: 2rem;
 }
+.address-nav-location__item {
+  padding: 1.8rem 2rem;
+  border-radius: 1.6rem;
+  cursor: pointer;
+}
 .address-nav-location__item--link {
+  color: #808080;
   font-size: 1.6rem;
   font-family: Gilroy-Bold;
   text-transform: uppercase;
-  padding: 1.8rem 2rem;
-  color: #808080;
-  width: 174px;
-  border-radius: 1.6rem;
 }
-.address-nav-location__item--link.active {
+.address-nav .active {
   color: #000 !important;
-}
-.address-nav-location__item--link:hover {
-  text-decoration: none;
 }
 .address .location-details-border {
   position: relative;

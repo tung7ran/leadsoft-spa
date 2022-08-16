@@ -90,7 +90,7 @@
             margin-top: -15.3rem;
             margin-left: 41.2rem;
             width: 2.4rem;
-            z-index: 100;
+            // z-index: 100;
         }
         &-img__three{
             position: absolute;
@@ -170,6 +170,7 @@
             .swiper-button-next,
             .swiper-button-prev{
                 height: 0.5rem;
+                color: $orange;
             }
             .swiper-button-prev{
                 left: 0;
