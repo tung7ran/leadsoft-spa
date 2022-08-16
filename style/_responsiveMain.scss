@@ -49,3 +49,196 @@
         }
     }
 }
+
+
+@include responsive_tablet {
+    .advise-contact {
+        height: 49rem ;
+
+        &__body {
+            .contact-body {
+                &__right {
+                    margin-top: 1.8rem !important;
+
+                    &-heading {
+                        height: 14.7rem !important;
+                    }
+
+                    &-info {
+                        margin-top: 4.35rem !important;
+
+                        .form-group {
+                            margin-left: 0 !important;
+                            transform: translateX(0) !important;
+
+                            .form-control{
+                                position: relative;
+                                margin: 0 auto;
+                                width: 26.8rem !important;
+                                height: 5.1rem !important;
+                            } 
+                        }
+
+                        .btn-exception {
+                            margin-top: 1.5rem;
+                            margin-bottom: 2rem;
+                            padding: 1.2rem 3.2rem !important;
+                        }
+                    }
+                }
+
+                &__left {
+                    display:block;
+
+                    .contact-body__column {
+                        width: 100%!important;
+                        height: 18.3rem !important;
+
+                        .contact-logo {
+                            width: 3.55rem !important;
+                            height: 3.55rem !important;
+
+                            .icon__call {
+                                margin: 0.8rem 0 0 0 !important;
+                            }
+                        }
+
+                        .contact__title {
+                            font-size: 1.4rem !important;
+                            margin-top: 1.2rem !important;
+                        }
+
+                        .contact__name {
+                            font-size: 3.2rem !important;
+                            padding: 0.5rem !important;
+                        }
+
+                        .contact__desc {
+                            max-width: 17rem !important;
+                            font-size: 1.4rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .address {
+        margin-top: 3.8rem;
+        &-info {
+            &-caption {
+                padding: 0 23% !important;
+            }
+        }
+        .address-nav {
+            &-location {
+                &__item {
+                    &--link {
+                        padding: 0.8rem 0.8rem;
+                        width: 14rem;
+                    }
+                }
+            }
+        }
+        .location-details {
+            margin-bottom: 14.5rem;
+
+            &-mobile {
+                height: 61.7rem;   
+                overflow-y: scroll;
+            }
+
+            &-list {
+                &__item {
+                    margin-bottom: 1.4rem;
+                }
+                &__item:last-child {
+                    margin-bottom: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+@include responsive_pclow{
+    .advise-contact {
+        height: 49rem !important;
+
+        &__body {
+            .contact-body {
+                &__right {
+                    margin-top: 1.8rem !important;
+
+                    &-heading {
+                        height: 14.7rem !important;
+                    }
+
+                    &-info {
+                        margin-top: 4.35rem !important;
+
+                        .form-group {
+                            margin-left: 0 !important;
+                            transform: translateX(0) !important;
+
+                            .form-control{
+                                position: relative;
+                                margin: 0 auto;
+                                width: 26.8rem !important;
+                                height: 5.1rem !important;
+                            } 
+                        }
+
+                        .btn-exception {
+                            margin-top: 1.5rem;
+                            margin-bottom: 2rem;
+                            padding: 1.2rem 4.2rem;
+                        }
+                    }
+                }
+
+                &__left {
+                    display:block;
+
+                    .contact-body__column {
+                        width: 100%!important;
+                        height: 18.3rem !important;
+
+                        .contact-logo {
+                            width: 3.55rem !important;
+                            height: 3.55rem !important;
+
+                            .icon__call {
+                                margin: 0.8rem 0 0 0 !important;
+                            }
+                        }
+
+                        .contact__title {
+                            font-size: 1.4rem !important;
+                            margin-top: 1.2rem !important;
+                        }
+
+                        .contact__name {
+                            font-size: 3.2rem !important;
+                            padding: 0.5rem !important;
+                        }
+
+                        .contact__desc {
+                            max-width: 17rem !important;
+                            font-size: 1.4rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .address {
+        margin-top: 3.8rem;
+        &-info {
+            &-caption {
+                padding: 0 29% !important;
+            }
+        }
+    }
+}
+
