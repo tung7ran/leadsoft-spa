@@ -24,3 +24,33 @@
         }
     }
 }
+
+@include responsive_tablet{
+    .container-policy_security{
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .main-policy-security{
+        padding-top: 3rem;
+        padding-bottom: 20rem; 
+        &-content{
+            width: 100%;
+            padding: 5.8rem 2rem;
+        }
+    }
+}
+
+// @include responsive_pclow{
+//     .container-policy_security{
+//         padding-left: 0rem;
+//         padding-right: 0rem;
+//     }
+//     .main-policy-security{
+//         padding-top: 4rem;
+//         padding-bottom: 22rem; 
+//         &-content{
+//             width: 100%;
+//             padding: 5.8rem 3rem;
+//         }
+//     }
+// }

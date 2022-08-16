@@ -50,3 +50,27 @@
         display: none;
     }
 }
+
+@include responsive_tablet{
+    .main{
+        &-logo{
+            height: 40rem;
+        }
+    }
+    .booking-form {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+// @include responsive_pclow{
+//     .main{
+//         &-logo{
+//             height: 40rem;
+//         }
+//     }
+//     .booking-form {
+//         width: 90%;
+//         margin: 0 auto;
+//     }
+// }

@@ -22,3 +22,33 @@
         padding-right: 0rem;
     }
 }
+
+@include responsive_tablet{
+    .container-policy{
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .main-policy{
+        padding-top: 3rem;
+        padding-bottom: 20rem; 
+        &-content{
+            width: 100%;
+            padding: 5.8rem 2rem;
+        }
+    }
+}
+
+// @include responsive_pclow{
+//     .container-policy{
+//         padding-left: 0rem;
+//         padding-right: 0rem;
+//     }
+//     .main-policy{
+//         padding-top: 4rem;
+//         padding-bottom: 22rem; 
+//         &-content{
+//             width: 100%;
+//             padding: 5.8rem 3rem;
+//         }
+//     }
+// }
