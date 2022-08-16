@@ -95,6 +95,7 @@
 .swiper-navBtn::before,
 .swiper-navBtn::after{
   font-size: 35px;
+  color: #ffd00F;
 }
 .swiper-button-next{
   right: 0;

@@ -1,21 +1,111 @@
+@include responsive_pclow {
+    .header-container{
+        &-heading{
+            &__title{
+            width: 43.4rem;
+
+                &--text{
+                font-size: 2.2rem;
+
+                    &--name{
+                        
+                    }
+                }
+            }
+        }
+    }
+    .header-contact{
+        &-left{
+
+        }
+        &-right{
+            
+        }
+    }
+    .header-main {
+        &-nav {
+            &__list {
+                &--item {
+                    &-link {}
+
+                    &-link:hover {}
+
+                    .header-main__subnav {
+                        position: absolute;
+                        top: 0;
+                        left: 12rem;
+                        background-color: $white;
+                        min-width: 46rem;
+                        z-index: 2;
+                        padding: 2rem;
+                        border-radius: 2rem;
+                        border: 1px solid $orange;
+
+                        &--menu {
+                            &--item {
+                                padding-bottom: 2rem;
+
+                                &--title {
+                                    padding-bottom: 0.5rem;
+                                    
+                                  
+                                }
+
+                                &--list {
+                                    &--service {
+                                        &--link {}
+    
+                                        &--link:hover {}
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive_tablet{
+    .header-container{
+        &-heading{
+            &__title{
+                width: 35rem;
+                &--text{
+                    font-size: 1.8rem;
+                    
+                }
+            }
+        }
+    }
+}
+
 //Mobile
 @include responsive_mobile {
+
     //header
     .header {
         position: relative;
+
         .dp-none {
             display: none;
         }
+
         .dp-block {
             display: block;
         }
+
         &-container {
             &-heading {
                 height: 4rem;
+
                 &__title {
                     height: 4rem;
                     width: 26rem;
                     top: 4rem;
+
                     &--text {
                         position: relative;
                         font-size: 1.6rem;
@@ -26,13 +116,16 @@
                 }
             }
         }
+
         &-contact {
             align-items: center;
             margin-top: 3.6rem;
             padding-left: 1.2rem;
             padding-right: 1.2rem;
+
             &-left {
                 width: 0;
+
                 .navbar-mobile {
                     display: block;
                     width: 2.4rem;
@@ -41,29 +134,36 @@
                     background-color: transparent;
                     position: relative;
                     z-index: 3;
-                    i  {
+
+                    i {
                         font-size: 3.5rem;
                     }
                 }
-                &__search{
+
+                &__search {
                     display: none;
                 }
+
                 &__button {
                     &--icon {
-                        height:3.1rem;
+                        height: 3.1rem;
                     }
                 }
             }
+
             &-right {
                 justify-content: space-between;
                 align-items: center;
+
                 &__cart {
                     width: 4.1rem !important;
                     height: 4rem !important;
+
                     button {
                         width: 4.1rem !important;
                         height: 4rem !important;
                         position: relative;
+
                         .moble-image {
                             display: block;
                             width: 2.1rem;
@@ -71,6 +171,7 @@
                             position: absolute;
                             top: 8px;
                             left: 11px;
+
                             img {
                                 width: 100%;
                                 height: 100%;
@@ -78,6 +179,7 @@
                             }
                         }
                     }
+
                     &--mobile {
                         content: "";
                         position: absolute;
@@ -94,16 +196,19 @@
                         font-size: 1.4rem;
                     }
                 }
-                &__tel{
+
+                &__tel {
                     display: none;
                 }
+
                 .search-mobile {
                     width: 4.1rem;
                     height: 4rem;
                     background-color: $backgroundSearch;
-                    border:none;
+                    border: none;
                     border-radius: 1rem;
                     margin-right: 0.8rem;
+
                     svg {
                         background-color: $backgroundSearch;
                         padding: 0.2rem
@@ -111,6 +216,7 @@
                 }
             }
         }
+
         &-logo {
 
             margin-top: 1.5rem;
@@ -121,6 +227,7 @@
                 height: 9.9rem;
             }
         }
+
         &-main {
             position: absolute;
             top: 7rem;
@@ -128,44 +235,79 @@
             z-index: 3;
             display: none;
             animation: drop-down 0.2s ease-out;
+
             &-nav {
                 display: block;
+
                 &__list {
-                    display: block!important;
+                    display: block !important;
                     border: 2px solid $orange;
                     padding: 2rem;
                     border-radius: 1rem;
                     background-color: #e6e6e6;
-                  
-                   
+
+
                     &--item {
                         // padding: 2rem 0;
                         padding: 0;
-                        margin-bottom: 4rem;
+                        margin-bottom: 3rem;
                         position: relative;
-                        &-link{
+
+                        &-link {
                             color: $black;
                         }
-                        .active{
+
+                        .active {
                             background-color: transparent;
                         }
                     }
-                    &--item::before{
+
+                    &--item::before {
                         content: " ";
                         display: block;
                         position: absolute;
                         border-bottom: 1px solid #000000;
                         width: 100%;
                         height: 0.2rem;
-                        bottom: -2rem;
+                        bottom: -1.5rem;
                     }
+
                     .active {
                         background-color: transparent;
-                       
+
                         padding: 0;
                         border-radius: 0;
                         width: 100%;
                     }
+
+
+                    .header-main__subnav {
+
+                        &--menu {
+                            display: block;
+
+                            &--item {
+                                &--title {
+                                    margin-top: 1rem;
+                                }
+
+                                &--list {
+                                    display: none;
+
+                                    &--service {
+                                        &--link {}
+
+                                        &--link:hover {}
+                                    }
+                                }
+                            }
+
+                            &--item:hover .header-main__subnav--menu--item--list {
+                                display: block;
+                            }
+                        }
+                    }
+
                 }
             }
         }
@@ -260,10 +402,12 @@
                     &--item.active {
                         padding: 0.5rem 1.2rem;
                     }
+
                 }
             }
         }
     }
+
 }
 
 //pclow
@@ -365,3 +509,4 @@
 //         }
 //     }
 // }
+

@@ -20,7 +20,7 @@
         }
         &__three{
             height: 40rem;
-            z-index: 1000;
+            z-index: 1;
             position: absolute;
             margin-top: -7rem;
             margin-left: 7rem;
@@ -78,7 +78,7 @@
         &-image{
             width: 25rem;
             position: relative;
-            z-index: 100;
+            // z-index: 100;
             border: 3px solid $orange;
             border-top-left-radius: 3rem;
             border-top-right-radius: 3rem;
@@ -99,7 +99,7 @@
             &__icon{
                 width: 8rem;
                 position: relative;
-                z-index: 100;
+                // z-index: 100;
             }
             &__text{
                 position: absolute;
