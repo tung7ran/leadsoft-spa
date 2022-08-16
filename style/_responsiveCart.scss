@@ -84,6 +84,38 @@
     }
 }
 
+@include responsive_tablet{
+    .cart-product-header__prices{
+        display: none;
+    }
+    .none-mobile{
+        display: none;
+    }
+    .none-store-mobile{
+        display: none;
+    }
+    .cart-product-border {
+        margin: 10rem auto;
+        width: 90%;
+    }
+    .cart-product-store{
+        margin-left: 5rem;
+    }
+    .cart-product-border__code{
+        width: 94%;
+    }
+    .cart-product-border__one::after {
+        width: 94%;
+    }
+    .cart-product-border__two::after {
+        width: 94%;
+    }
+    .cart-product-border__three::after {
+        width: 94%;
+    }
+    
+}
+
 @include responsive_pclow{
     .cart-product-header__prices{
         display: none;
@@ -92,4 +124,5 @@
         display: none;
     }
 }
+
 
