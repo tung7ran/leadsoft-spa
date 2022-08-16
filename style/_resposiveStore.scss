@@ -58,9 +58,14 @@
                     flex-wrap: wrap;
                     li {
                         padding: 1rem 1rem;
+                        font-size: 1.6rem;
                         a {
                             margin-left: 0.5rem;
                         }
+                    }
+
+                    li::after { 
+                        height: 70%;
                     }
                 }
             }
