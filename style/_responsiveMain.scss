@@ -9,10 +9,18 @@
         .address-nav {
             &-location {
                 &__item {
+
                     padding: 1rem;
+
                     &--link {
                         padding: 0.8rem 0.8rem;
                         width: 14rem;
+                        font-size: 1.4rem;
+                    }
+                }
+                &__item.active {
+                    a {
+                        color: $black;
                     }
                 }
             }

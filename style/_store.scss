@@ -124,10 +124,27 @@
                     }
                 }
                 &-item:nth-child(1),
-                &-item:nth-child(2),
-                &-item:nth-child(6) {
+                &-item:nth-child(2) {
                     .product-list-item__money {
                         margin-top: 0;
+                    }
+                }
+
+                &-item:nth-child(6) {
+                    .product-list-item__money {
+                        margin-top: -0.4rem;
+                    }
+                }
+
+                &-item:nth-child(5) {
+                    .product-list-item__money {
+                        margin-top: 1.6rem;
+                    }
+                }
+
+                &-item:nth-child(9) {
+                    .product-list-item__money {
+                        margin-top: 1.6rem;
                     }
                 }
              }
