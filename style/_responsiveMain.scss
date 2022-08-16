@@ -106,7 +106,7 @@
 
 @include responsive_tablet {
     .advise-contact {
-        height: 49rem !important;
+        height: 49rem ;
 
         &__body {
             .contact-body {
@@ -135,7 +135,7 @@
                         .btn-exception {
                             margin-top: 1.5rem;
                             margin-bottom: 2rem;
-                            padding: 1.2rem 4.2rem;
+                            padding: 1.2rem 3.2rem !important;
                         }
                     }
                 }
