@@ -159,12 +159,12 @@ a:hover {
   opacity: 1;
 }
 
-.tab-product,
+.slide-container,
 .tab-pane {
   display: none;
 }
 
-.tab-product.active,
+.slide-container.active,
 .tab-pane.active {
   display: block;
   background-color: transparent;

@@ -222,12 +222,12 @@ a:hover {
   opacity: 1;
 }
 
-.tab-product,
+.slide-container,
 .tab-pane {
   display: none;
 }
 
-.tab-product.active,
+.slide-container.active,
 .tab-pane.active {
   display: block;
   background-color: transparent;
@@ -1309,6 +1309,10 @@ a:hover {
 .contact-address {
   margin-bottom: 24.5rem;
 }
+.contact-address-item__maps {
+  width: 52.8rem;
+  height: 60.8rem;
+}
 .contact-address-item__maps--link {
   width: 100%;
   height: 100%;
@@ -1317,6 +1321,7 @@ a:hover {
   font-family: Gilroy-Bold;
   line-height: 1.2;
   padding-bottom: 1.6rem;
+  font-size: 2rem;
 }
 .contact-address-item__form-contact--address--text {
   font-size: 1.6rem;
@@ -2840,7 +2845,6 @@ a:hover {
 .main-info-image {
   position: relative;
   height: 106rem;
-  z-index: 999;
 }
 .main-info-image > img {
   height: 100%;

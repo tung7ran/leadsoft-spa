@@ -17,20 +17,20 @@ tabs.forEach((tab, index) => {
 });
 
 // // ------------------------------------------------------------------
-/*
+
 const tabCategory = document.querySelectorAll('.tab-category');
-const tabPane = document.querySelectorAll('.tab-product');
+const tabPane = document.querySelectorAll('.slide-container');
 const tabsActive = $('.tab-category.active');
 tabCategory.forEach((tab, index) => {
     const pane = tabPane[index];
     tab.onclick = function(){
         $('.tab-category.active').classList.remove('active');
-        $('.tab-product.active').classList.remove('active');
+        $('.slide-container.active').classList.remove('active');
         this.classList.add('active');
         pane.classList.add('active');
     }
 });
-*/
+
 // --------------------------------------------------------------------------------
 
 const cart = document.querySelector('.header-contact-right__cart')
@@ -61,8 +61,6 @@ if (openModalBtn){
 }
 
 // // ---------------------------------------------------------------------------------
-// const tabRecruit =$$('.recruit-pagination-list__item')
-// const paneRecruit =$$('.main-recruit-content__list')
 const tabRecruit = document.querySelectorAll('.recruit-pagination-list__item');
 const paneRecruit = document.querySelectorAll('.main-recruit-content__list');
 tabRecruit.forEach((tab,index) => {
