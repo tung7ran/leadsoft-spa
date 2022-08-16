@@ -1,4 +1,4 @@
-//mobile
+//main Store
 @include responsive_mobile {
     .header {
         &-contact {
@@ -115,194 +115,54 @@
                 }
             }
         }
-    }
-}
-
-//Tablet
-@include responsive_tablet {
-    .mr-one {
-        margin: 0;
-    }
-
-    .mr-top8 {
-        margin-top: 5rem;
-    }
-
-    .mr-top44 {
-        margin-top: 4.4rem !important;
-    }
-
-    .mr-top32 {
-        margin-top: 3.2rem !important;
-    }
-
-    .wdth-hegh {
-        height: 60% !important;
-    }
-
-    .header {
-        &-container {
-            .header-contact {
-                &-right {
-                    &__cart {
-                        &--number {
-                            top: -1.3rem;
-                            padding: 0.2rem 0.4rem;
-                            font-size: 1.2rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .main {
-        .product {
-            &-cat {
-                &__menu {
-                    li {
-                        padding: 1.2rem 1.4rem;
-                        font-size: 1.6rem;
-                    }
-
-                    li.active {
-                        a {
-                            color: $black;
-                        }
-                    }
-                }
-            }
-
-            &-details {
-                margin-top: 4rem;
-                margin-left: 3.5rem;
-                margin-right: 3.5rem; 
-                
-                .product-list{
-                    &-item {
-                        max-width: 17rem;
-                        height: 29.4rem;
-                        margin-left: -1.5rem;
-                        margin-right: -1.5rem;
-
-                        &__image {
-                            height: 14.9rem;
-                            display: flex;
-                            justify-content: center;
-
-                            img {
-                                height: 100%;
+        .advise-contact {
+            height: 70.7rem;
+            &__body {
+                .contact-body {
+                    &__right {
+                    margin-top: 1.8rem !important;
+                        &-info {
+                            margin-top: 4.35rem !important;
+                            .form-group {
+                                margin-left: 0 !important;
+                                transform: translateX(0) !important;
+                                .form-control{
+                                    position: relative;
+                                    margin: 0 auto;
+                                    width: 34.8rem !important;
+                                } 
+                            }
+                            .btn-exception {
+                                margin-top: 1.5rem;
+                                margin-bottom: 2rem;
                             }
                         }
-
-                        &__name {
-                            font-size: 1.4rem;
-                        }
-
-                        &__money {
-                            margin-top: 1.2rem;
-                        }
                     }
-
-                    &-item:nth-child(1),
-                    &-item:nth-child(2),
-                    &-item:nth-child(6) {
-                        .product-list-item__money {
-                            margin-top: 1.2rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-//pclow
-@include responsive_pclow {
-    .mr-one {
-        margin: 0;
-    }
-
-    .mr-top0 {
-        margin-top: 0;
-    }
-
-    .mr-top8 {
-        margin-top: 5rem;
-    }
-
-    .mr-top44 {
-        margin-top: 4.4rem !important;
-    }
-
-    .wdth-hegh {
-        height: 60% !important;
-    }
-
-    .main {
-        .product {
-            &-cat {
-                &__menu {
-                    li {
-                        padding: 1.2rem 2.4rem;
-                        font-size: 1.8rem;
-                    }
-
-                    li.active {
-                        a {
-                            color: $black;
-                        }
-                    }
-                }
-            }
-
-            &-details {
-                margin-top: 4rem;
-                margin-left: 3.5rem;
-                margin-right: 3.5rem; 
-                
-                .product-list{
-                    &-item {
-                        max-width: 23rem;
-                        height: 34.4rem;
-                        margin-left: -1.5rem;
-                        margin-right: -1.5rem;
-
-                        &__image {
-                            height: 21.9rem;
-                            display: flex;
-                            justify-content: center;
-
-                            img {
-                                height: 100%;
+                    &__left {
+                        display:flex;
+                        justify-content: space-around;
+                        .contact-body__column {
+                            width: 21.6rem !important;
+                            height: 15.3rem !important;
+                            .contact-logo {
+                                width: 2.55rem !important;
+                                height: 2.55rem !important;
+                                .icon__call {
+                                    margin: 0.8rem 0 0 0 !important;
+                                }
                             }
-                        }
-
-                        &__name {
-                            font-size: 1.4rem;
-                        }
-
-                        &__money {
-                            margin-top: 1.2rem;
-                        }
-                    }
-
-                    &-item:nth-child(1),
-                    &-item:nth-child(2) {
-                        .product-list-item__money {
-                            margin-top: 1.2rem !important;
-                        }
-                    }
-
-                    &-item:nth-child(4) {
-                        .product-list-item__money {
-                            margin-top: 3.2rem !important;
-                        }
-                    }
-
-                    &-item:nth-child(5), 
-                    &-item:nth-child(6) {
-                        .product-list-item__money {
-                            margin-top: -0.5rem;
+                            .contact__title {
+                                font-size: 1.4rem !important;
+                                margin-top: 0.8rem !important;
+                            }
+                            .contact__name {
+                                font-size : 2rem !important;
+                                padding: 0 !important ;
+                            }
+                            .contact__desc {
+                                max-width: 15rem !important;
+                                font-size: 1.2rem !important;
+                            }
                         }
                     }
                 }
