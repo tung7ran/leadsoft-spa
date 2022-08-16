@@ -1,28 +1,21 @@
-.content-beautify-detail {
+
+ .content-beautify-detail {
     background-color: $background-content;
-
+    padding-bottom: 8rem;
 }
 
-.tips-beautify-container {
-    padding-top: 2.4rem;
-}
 
 .tips-beautify {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+   
 
     &--detail {
         background-color: $white;
-        padding: 7.5rem 5rem 4rem 5rem;
-        border-radius: 2rem;
 
         &__heading {
             text-transform: uppercase;
             color: $color-title;
-            font-size: 4rem;
             font-family: K2D-ExtraBold;
             line-height: 1.1;
-            max-width: 90%;
         }
 
         .tips-beautify--detailing {
@@ -46,6 +39,7 @@
                         font-size: 1.6rem;
                         font-family: K2D-ExtraLight;
                         padding-bottom: 2.4rem;
+                        text-align: justify;
                     }
                     &--description{
                         font-size: 1.6rem;
@@ -71,19 +65,16 @@
         &__list {
             background-color: $white;
             padding: 2.55rem 0;
-            border-radius: 2rem;
-
+            margin-bottom: 1rem;
             &--item {
                 text-align: center;
-                margin-bottom: 2.5rem;
+                
 
                 &--link {
                     color: #808080;
                     text-transform: uppercase;
-                    font-size: 2rem;
                     font-family: Gilroy-XBold;
                     border-radius: 1rem;
-                    padding: 0.7rem 2rem 0.5rem 1rem;
                 }
             }
             &--item:nth-child(2),
@@ -145,32 +136,25 @@
 
 
 .tips-new {
-    padding-top: 12rem;
-    padding-bottom: 10rem;
+   
 
     &-item {
         &__heading {
-            padding-bottom: 6.35rem;
 
             &--title {
                 text-align: center;
                 text-transform: uppercase;
                 color: $color-title;
                 font-family: Gilroy-XBold;
-                font-size: 3.5rem;
             }
         }
 
         &__body {
             &--list {
-                display: flex;
-                justify-content: space-evenly;
-
+              
                 &--item {
-                    width: 25.85rem;
 
                     &-images {
-                        height: 26rem;
                         position: relative;
 
                         img {
@@ -185,22 +169,23 @@
                         position: absolute;
                         border-right: 2px solid #000000;
                         height: 16.5rem;
-                        right: -5.5rem;
+                        right: -4rem;
                         top: 50%;
                         transform: translateY(-50%);
                     }
+                    &--text{
+                        &-title {
+                            font-size: 1.6rem;
+                            font-family: Gilroy-Heavy;
+                            text-transform: uppercase;
+                        }
+    
+                        &-desc {
+                            font-size: 1.6rem;
+                            font-family: Gilroy-Medium;
+                            text-align: justify;
+                        }
 
-                    &-title {
-                        font-size: 1.6rem;
-                        font-family: Gilroy-Heavy;
-                        padding: 3.5rem 0 1.5rem 0;
-                        text-transform: uppercase;
-                    }
-
-                    &-desc {
-                        font-size: 1.6rem;
-                        font-family: Gilroy-Medium;
-                        text-align: justify;
                     }
                 }
             }

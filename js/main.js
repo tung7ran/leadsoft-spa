@@ -42,18 +42,23 @@ cart.addEventListener("click", () => {
 });
 
 // // ---------------------------------------------------------------------------------
-const openModalBtn = document.getElementById("open-modal-btn");
-const modal = document.getElementById("open-contact");
+const openModalBtn = document.querySelector(".service--detail__btn");
+const modal = document.querySelector(".form--contact");
 
 function toggleModal() {
   modal.classList.toggle("hide");
 }
+// openModalBtn.addEventListener("click", toggleModal);
+// modal.addEventListener("click", toggleModal);
+
+// modal.addEventListener("click", (e) => {
+//   if(e.target == e.currentTarget) toggleModal();
+// })
 if (modal) {
   modal.addEventListener(
     "click",
     (e) => {
       if (e.target == e.currentTarget) toggleModal();
-      // console.log(e.target);
     },
     false
   );

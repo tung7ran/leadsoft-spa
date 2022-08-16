@@ -326,20 +326,24 @@
     background-color: rgba(194, 53, 100, 0.05);
     border-color: rgba(194, 53, 100, 0.1);
 }
+.tab-item-heading.active{
+    opacity: 1;
+}
 .tab-pane-content {
     display: none;
 }
 .tab-pane-content.active {
-    display: block;
+    display: contents;
     background-color: transparent;
+ 
 }
+
 .form--register,
 .form--contact {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+   
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
@@ -363,7 +367,7 @@
             background-color: $orange;
         }
     }
-    .tabs-content{}
+  
     &__inner{
         background-image: url(../images/modal.png);
         background-size: cover;
