@@ -56,3 +56,44 @@
         }
     }
 }
+
+
+//Tablet
+@include responsive_tablet {
+    .address {
+        margin-top: 3.8rem;
+        &-info {
+            &-caption {
+                padding: 0 23% !important;
+            }
+        }
+        .address-nav {
+            &-location {
+                &__item {
+                    padding: 0.8rem 1rem;
+                    &--link {
+                        padding: 0.8rem 0.8rem;
+                        width: 14rem;
+                        font-size: 1.4rem;
+                    }
+                }
+                &__item.active {
+                    a {
+                        color: $black;
+                    }
+                }
+            }
+        }
+        .location-details {
+            margin-bottom: 14.5rem;
+            &-list {
+                &__item {
+                    margin-bottom: 1.4rem;
+                }
+                &__item:last-child {
+                    margin-bottom: 1.4rem;
+                }
+            }
+        }
+    }
+}
