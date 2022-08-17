@@ -5929,6 +5929,10 @@ a:hover {
     padding: 1rem 2.6rem;
     margin-left: 0;
   }
+  .main .product-details .product-one .product-info {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
   .main .product-details .product-one .product-info-btn {
     margin-bottom: 1.5rem;
   }
@@ -5983,8 +5987,16 @@ a:hover {
     height: 1rem;
     width: 50.5%;
   }
+  .main .product-details .product-one-border::after {
+    top: 38%;
+    left: 0rem;
+    height: 62%;
+  }
+  .main .product-details .product-one .product-briefing-left__image {
+    height: 22.5rem;
+  }
   .main .product-details .product-one .product-briefing-left__image-sub {
-    width: 101%;
+    width: 100%;
     margin-bottom: 0;
   }
   .main .product-details .product-one .product-briefing-left__image-sub--item {
@@ -6020,6 +6032,9 @@ a:hover {
     padding: 1rem 1.6rem;
     margin-left: 0;
   }
+  .main .product-details .product-one .product-info {
+    margin-top: 2rem;
+  }
   .main .product-details .product-one .product-info-btn {
     margin-bottom: 1.5rem;
   }
@@ -6028,26 +6043,41 @@ a:hover {
     margin-right: 1.2rem;
   }
   .main .product-similar-list {
-    width: 42rem;
+    width: 100%;
     height: 33rem !important;
-    margin: 0 auto;
     margin-bottom: 13.6rem;
   }
   .main .product-similar-list__item {
-    width: 0;
-    height: 100% !important;
     margin-right: -0.4rem;
     margin-left: -0.4rem;
+    max-width: 17rem !important;
+    height: 30.4rem !important;
   }
   .main .product-similar-list__item--image {
     padding-top: 0 !important;
+  }
+  .main .product-similar-list__item--image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .main .product-similar-list__item--name {
+    margin-top: 0 !important;
   }
   .main .product-similar-list__item--money-price {
     font-weight: 800;
     color: #a1710f !important;
   }
-  .main .product-similar-title {
-    margin-left: 1.5rem;
+  .main .product-similar-list__item:nth-child(3) .product-similar-list__item--image, .main .product-similar-list__item:nth-child(4) .product-similar-list__item--image {
+    height: 16rem;
+    margin-top: 1.9rem;
+  }
+  .main .product-similar-list__item:nth-child(3) .product-similar-list__item--image img, .main .product-similar-list__item:nth-child(4) .product-similar-list__item--image img {
+    height: 100%;
+  }
+  .main .product-similar-list__item:nth-child(3) .product-similar-list__item--name, .main .product-similar-list__item:nth-child(4) .product-similar-list__item--name {
+    margin-top: 2rem !important;
   }
 }
 @media (max-width: 480px) {
