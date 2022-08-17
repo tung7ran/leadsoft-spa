@@ -1813,7 +1813,7 @@ a:hover {
   content: "";
   position: absolute;
   top: 0;
-  left: 81rem;
+  right: 35.1rem;
   height: 1rem;
   width: 34.5%;
   border-top: 1px solid #ffd00f;
@@ -5812,6 +5812,87 @@ a:hover {
   .main .product-similar-list__item--money-price {
     font-weight: 800;
     color: #a1710f !important;
+  }
+  .main .product-similar-title {
+    margin-left: 1.5rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .main .product-details {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .main .product-details .product-one-border::before {
+    top: 0;
+    right: 0;
+    height: 1rem;
+    width: 50.5%;
+  }
+  .main .product-details .product-one .product-briefing-left__image-sub {
+    width: 101%;
+    margin-bottom: 0;
+  }
+  .main .product-details .product-one .product-briefing-left__image-sub--item {
+    background-color: #f3e59f;
+  }
+  .main .product-details .product-one .product-briefing-right__title {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-right: 8.2rem;
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+  .main .product-details .product-one .product-briefing-right > span {
+    margin-top: 2.2rem;
+    margin-bottom: 2.1rem;
+    font-weight: 600;
+  }
+  .main .product-details .product-one .product-briefing-right__list {
+    margin-top: 0.8rem;
+    margin-bottom: 0.6rem;
+  }
+  .main .product-details .product-one .product-briefing-right__amount {
+    margin-bottom: 3.3rem;
+  }
+  .main .product-details .product-one .product-briefing-right__amount--number-add, .main .product-details .product-one .product-briefing-right__amount--number-delete {
+    padding: 1.2rem 1.2rem;
+    font-size: 2rem;
+  }
+  .main .product-details .product-one .product-briefing-right__amount--number > span {
+    font-size: 2rem;
+  }
+  .main .product-details .product-one .product-briefing-right__add-cart {
+    padding: 1rem 1.6rem;
+    margin-left: 0;
+  }
+  .main .product-details .product-one .product-info-btn {
+    margin-bottom: 1.5rem;
+  }
+  .main .product-details .product-one .product-info-btn__describe {
+    border-radius: 1.6rem;
+    margin-right: 1.2rem;
+  }
+  .main .product-similar-list {
+    width: 42rem;
+    height: 33rem !important;
+    margin: 0 auto;
+    margin-bottom: 13.6rem;
+  }
+  .main .product-similar-list__item {
+    width: 0;
+    height: 100% !important;
+    margin-right: -0.4rem;
+    margin-left: -0.4rem;
+  }
+  .main .product-similar-list__item--image {
+    padding-top: 0 !important;
+  }
+  .main .product-similar-list__item--money-price {
+    font-weight: 800;
+    color: #a1710f !important;
+  }
+  .main .product-similar-title {
+    margin-left: 1.5rem;
   }
 }
 @media (max-width: 480px) {
