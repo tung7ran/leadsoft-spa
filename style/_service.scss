@@ -1,31 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 
-.wapper{
+.wapper {
     position: relative;
 }
+
 .service-content {
     background-color: $background-content;
 
 }
+
 .service-container {
     padding-top: 2.4rem;
 }
-.service{
+
+.service {
     padding-bottom: 14.6rem;
-    &--detail{
+
+    &--detail {
         background-color: $white;
         padding: 7.5rem 5rem 4rem 5rem;
         border-radius: 2rem;
-        &__heading{
+
+        &__heading {
             text-transform: uppercase;
             color: $color-title;
-            font-family:  K2D-ExtraBold;
+            font-family: K2D-ExtraBold;
             font-size: 4rem;
             line-height: 1.1;
             max-width: 90%;
             margin-bottom: 3rem;
         }
-        &__btn{
+
+        &__btn {
             @include buttonStyle;
             text-transform: uppercase;
             color: $black;
@@ -33,100 +39,115 @@
             position: relative;
             margin: 2.5rem 0;
         }
-        &__btn::after{
+
+        &__btn::after {
             @include buttonAfter;
         }
-        .service--detailing{
-            .form-contact{
+
+        .service--detailing {
+            .form-contact {
                 border-radius: 2rem;
                 border: 1px solid $more-color;
                 padding: 2.05rem;
             }
-            &__item{
+
+            &__item {
                 padding-bottom: 4rem;
 
-                &--text{
+                &--text {
                     padding-left: 0.35rem;
                     // padding-bottom: 2.8rem;
                     padding-bottom: 2.1rem;
 
-                    &--title{
+                    &--title {
                         color: $color-title;
                         font-size: 2rem;
                         font-family: K2D-Bold;
                         padding-bottom: 2.2rem;
                     }
-                    &--desc{
+
+                    &--desc {
                         font-size: 1.6rem;
                         font-family: K2D-ExtraLight;
                         padding-bottom: 2.4rem;
                     }
                 }
-                &--reason{
+
+                &--reason {
                     border: 1px solid $black;
                     border-radius: 2rem;
                     padding: 2rem;
                     background-color: $background-form;
                     margin-bottom: 2.6rem;
-                    &--title{
+
+                    &--title {
                         font-family: K2D-Bold;
                         font-size: 1.8rem;
                         margin-bottom: 1rem;
 
                     }
-                    &--list{
-                        &--title{
+
+                    &--list {
+                        &--title {
                             font-size: 1.8rem;
                             font-family: K2D-Bold;
                             line-height: 1.4;
                         }
-                        &--desc{
+
+                        &--desc {
                             font-size: 1.6rem;
                             font-family: K2D-ExtraLight;
                             line-height: 1.4;
-                            .icon-down{
+
+                            .icon-down {
                                 color: $color-icon;
                                 line-height: 2.24rem;
-                               padding-right: 0.5rem;
+                                padding-right: 0.5rem;
                             }
                         }
                     }
                 }
-                &--subsection{
+
+                &--subsection {
                     margin-top: 3.65rem;
                     margin-bottom: 1.65rem;
                     font-size: 1.6rem;
-                    &--title{
+
+                    &--title {
                         font-family: K2D-ExtraLight;
                         margin-bottom: 2.55rem;
                     }
-                    &--desc{
+
+                    &--desc {
                         line-height: 1.4;
                         font-family: K2D-ExtraLight;
                     }
                 }
-                &--images{
+
+                &--images {
                     width: 70%;
                     margin-left: 50%;
                     transform: translateX(-50%);
-                    
-                    img{
+
+                    img {
                         width: 100%;
                         height: 100%;
                     }
                 }
-             
-                &--logo{
+
+                &--logo {
                     width: 13.85rem;
                     height: 6.2rem;
                     margin-left: 50%;
                     transform: translateX(-50%);
-                    img{
+
+                    img {
                         width: 100%;
                         height: 100%;
                     }
                 }
-                &--heading{
+
+                &--heading {
                     font-size: 3rem;
                     font-family: K2D-Bold;
                     color: $more-color;
@@ -135,10 +156,11 @@
                     transform: translateX(-50%);
                     margin: 2.35rem 0 3.1rem 50%;
                 }
-                &--contact{
-                    &--form{
-                        .form-group{
-                            .form-control{
+
+                &--contact {
+                    &--form {
+                        .form-group {
+                            .form-control {
                                 height: 4.35rem;
                                 width: 100%;
                                 font-size: 1.6rem;
@@ -149,29 +171,33 @@
                             }
                         }
                     }
-                    .button-submit{
+
+                    .button-submit {
                         margin-left: 50%;
                         transform: translateX(-50%);
                     }
                 }
-                &--header{
+
+                &--header {
                     font-size: 2.6rem;
                     text-align: center;
                     color: $more-color;
-                    font-family:  K2D-Bold;
+                    font-family: K2D-Bold;
                     text-transform: uppercase;
                     margin: 5.6rem 0;
                 }
-                &--result{
-                    &--list{
-                        &__item{
-                            &--images{
-                                img{
+
+                &--result {
+                    &--list {
+                        &__item {
+                            &--images {
+                                img {
                                     width: 100%;
                                     height: 100%;
                                 }
                             }
-                            &--desc{
+
+                            &--desc {
                                 font-size: 1.4rem;
                                 text-align: center;
                             }
@@ -181,12 +207,13 @@
             }
         }
     }
-    
+
     .detail-news {
         background-color: $white;
         border-radius: 2rem;
-       margin-bottom: 2rem;
+        margin-bottom: 2rem;
         padding: 2.75rem 0;
+
         &--title {
             font-size: 1.6rem;
             text-transform: uppercase;
@@ -198,16 +225,20 @@
 
         &--menu {
             padding: 0 1rem;
+
             &__list {
                 margin-bottom: 2.35rem;
-                &--line{
+
+                &--line {
                     width: 100%;
                     height: 0.1rem;
                 }
+
                 &--item {
                     display: flex;
                     position: relative;
-                    &--laser{
+
+                    &--laser {
                         background-image: url(../images/service/img4.png);
                         background-size: cover;
                         background-position: center;
@@ -218,7 +249,8 @@
                         height: 7rem;
                         text-transform: uppercase;
                     }
-                    &--ex2{
+
+                    &--ex2 {
                         background-image: url(../images/service/img5.png);
                         background-size: cover;
                         background-position: center;
@@ -229,14 +261,16 @@
                         height: 7rem;
                         text-transform: uppercase;
                     }
-                    &--ex2-text{
+
+                    &--ex2-text {
                         font-size: 1.2rem;
                         font-weight: 600;
                         text-transform: uppercase;
                         padding-left: 1rem;
                         padding-top: 1rem;
                     }
-                    &--depth{
+
+                    &--depth {
                         background-image: url(../images/service/img6.png);
                         background-size: cover;
                         background-position: center;
@@ -247,14 +281,16 @@
                         height: 7rem;
                         text-transform: uppercase;
                     }
-                    &--depth-text{
+
+                    &--depth-text {
                         font-size: 1.2rem;
                         font-weight: 600;
                         text-transform: uppercase;
                         padding-left: 1rem;
                         padding-top: 1rem;
                     }
-                    &--bs4{
+
+                    &--bs4 {
                         background-image: url(../images/service/img7.png);
                         background-size: cover;
                         background-position: center;
@@ -265,14 +301,16 @@
                         height: 7rem;
                         text-transform: uppercase;
                     }
-                    &--bs4-text{
+
+                    &--bs4-text {
                         font-size: 1.2rem;
                         font-weight: 600;
                         text-transform: uppercase;
                         padding-left: 1rem;
                         padding-top: 1rem;
                     }
-                    &--secret{
+
+                    &--secret {
                         background-image: url(../images/service/img8.png);
                         background-size: cover;
                         background-position: center;
@@ -282,9 +320,10 @@
                         width: 36%;
                         height: 7rem;
                         text-transform: uppercase;
-                        
+
                     }
-                    &--images{
+
+                    &--images {
                         background-image: url(../images/trainning/22.png);
                         background-size: cover;
                         background-position: center;
@@ -316,7 +355,7 @@
 
 
 // --------------------------------------------------------------------
-.hide{
+.hide {
     display: none;
 }
 
@@ -326,16 +365,19 @@
     background-color: rgba(194, 53, 100, 0.05);
     border-color: rgba(194, 53, 100, 0.1);
 }
-.tab-item-heading.active{
+
+.tab-item-heading.active {
     opacity: 1;
 }
+
 .tab-pane-content {
     display: none;
 }
+
 .tab-pane-content.active {
     display: contents;
     background-color: transparent;
- 
+
 }
 
 .form--register,
@@ -343,15 +385,17 @@
     position: fixed;
     top: 0;
     left: 0;
-   
+
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
-    .tabs{
+
+    .tabs {
         position: absolute;
         top: 5.5rem;
         right: 20rem;
-        .tab-item-heading{
+
+        .tab-item-heading {
             font-size: 1.8rem;
             padding: 1rem 2rem;
             border-radius: 1rem;
@@ -359,16 +403,18 @@
             margin: 0.2rem 0;
             cursor: pointer;
             background-color: #fff;
-            .tab-icon{
+
+            .tab-icon {
                 font-size: 2rem;
             }
         }
-        .active{
+
+        .active {
             background-color: $orange;
         }
     }
-  
-    &__inner{
+
+    &__inner {
         background-image: url(../images/modal.png);
         background-size: cover;
         background-position: center;
@@ -382,22 +428,26 @@
         overflow: hidden;
         animation: showModal linear 0.3s;
         position: relative;
-        &--logo{
+
+        &--logo {
             padding-top: 1.3rem;
             width: 40%;
             margin-left: 50%;
             transform: translateX(-50%);
-            &--image{
+
+            &--image {
                 width: 100%;
                 height: 100%;
             }
         }
-        &--contact{
+
+        &--contact {
             margin-top: 5.5rem;
             padding: 0 3rem;
-            &--form{
-                &-group{
-                    .form-control{
+
+            &--form {
+                &-group {
+                    .form-control {
                         width: 100%;
                         height: 4.2rem;
                         font-size: 1.8rem;
@@ -407,7 +457,8 @@
                         outline: none;
                         padding: 0 1.5rem;
                     }
-                    .form-textarea{
+
+                    .form-textarea {
                         width: 100%;
                         font-size: 1.8rem;
                         border: 1px solid $more-color;
@@ -418,7 +469,8 @@
                     }
                 }
             }
-            .send-contact__btn{
+
+            .send-contact__btn {
                 @include buttonStyle();
                 text-transform: uppercase;
                 font-weight: 600;
@@ -428,21 +480,24 @@
                 background-color: $more-color;
                 position: relative;
             }
-            .send-contact__btn::after{
+
+            .send-contact__btn::after {
                 @include buttonAfter();
             }
-            &--text{
+
+            &--text {
                 font-size: 1.8rem;
                 font-weight: bold;
                 text-align: center;
-              padding: 2rem 12rem;
-                .phone-number{
+                padding: 2rem 12rem;
+
+                .phone-number {
                     color: $more-color;
                 }
             }
         }
     }
-  }
+}
 
 // --------------------------------------------------------------------
 
@@ -456,7 +511,8 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
-    &__inner{
+
+    &__inner {
         background-image: url(../images/modal.png);
         background-size: cover;
         background-position: center;
@@ -470,72 +526,86 @@
         overflow: hidden;
         animation: showModal linear 0.3s;
         position: relative;
-        &--logo{
+
+        &--logo {
             padding-top: 1.3rem;
             width: 40%;
             margin-left: 50%;
             transform: translateX(-50%);
-            &--image{
+
+            &--image {
                 width: 100%;
                 height: 100%;
             }
         }
-        &--title{
+
+        &--title {
             text-align: center;
             font-size: 2rem;
             font-weight: 600;
             margin-top: 4rem;
             margin-bottom: 2rem;
         }
-        &--info{
+
+        &--info {
             width: 60%;
             text-align: center;
             border: 1px solid #fff;
             background-color: #fff;
             border-radius: 1rem;
             margin: 0 auto;
-            &-image{
+
+            &-image {
                 padding: 1rem 0;
                 width: 4rem;
                 margin: 0 auto;
-                img{
+
+                img {
                     width: 100%;
                 }
             }
-            &-text{
+
+            &-text {
                 text-align: center;
                 font-size: 1.6rem;
                 color: $color-title;
                 letter-spacing: 0.01rem;
-                p{
+
+                p {
                     padding: 0 9rem;
                 }
             }
-            &-line{
+
+            &-line {
                 text-align: center;
                 padding: 0 3.6rem;
-                img{
+
+                img {
                     width: 100%;
                 }
             }
-            &-client{
-                &-text{
+
+            &-client {
+                &-text {
                     font-size: 2rem;
                     padding: 0.5rem 0;
                     color: $color-title;
                 }
-                &-name{
+
+                &-name {
                     font-size: 2.2rem;
                     color: $color-title;
                     font-weight: 600;
                 }
             }
-            &-time{
+
+            &-time {
                 text-align: center;
                 margin-top: 1rem;
                 margin-bottom: 1rem;
-                &-day{
-                    .form-controls{
+
+                &-day {
+                    .form-controls {
                         width: 86%;
                         height: 4.2rem;
                         font-size: 1.6rem;
@@ -547,9 +617,11 @@
                     }
                 }
             }
-            &-thank{
+
+            &-thank {
                 margin-bottom: 1rem;
-                p{
+
+                p {
                     padding: 0rem 8rem;
                     font-size: 1.2rem;
                     color: $color-title;
@@ -557,7 +629,8 @@
                 }
             }
         }
-        .send-contact__btn{
+
+        .send-contact__btn {
             @include buttonStyle();
             text-transform: uppercase;
             font-weight: 600;
@@ -568,8 +641,9 @@
             position: relative;
             margin-top: 3rem;
         }
-        .send-contact__btn::after{
+
+        .send-contact__btn::after {
             @include buttonAfter();
         }
     }
-  }
+}

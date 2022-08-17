@@ -1,35 +1,41 @@
-@include responsive_mobile{
+@include responsive_mobile {
     .footer {
         .dp-none {
             display: none !important;
         }
+
         .dp-block {
             display: block !important;
         }
-        &-top {    
+
+        &-top {
             padding-bottom: 4.5rem;
-            .footer-after::after { 
+
+            .footer-after::after {
                 height: 4rem;
                 width: 26rem;
                 margin-left: 50%;
                 transform: translateX(-50%);
                 top: -3.9rem;
                 left: 0;
-                background-image: linear-gradient(90deg, #fbd844,#f9d950);
+                background-image: linear-gradient(90deg, #fbd844, #f9d950);
             }
+
             &-interactive {
-                .interactive-logo { 
+                .interactive-logo {
                     margin-left: 50%;
                     transform: translateX(-50%);
                     width: 20.4rem;
                     height: 8.8rem;
                     top: -16rem;
+
                     img {
                         width: 100%;
                         height: 100%;
                     }
                 }
-                .interactive-caption {    
+
+                .interactive-caption {
                     top: -6.4rem;
                     width: 22.8rem;
                     margin-left: 50%;
@@ -37,76 +43,93 @@
                     font-size: 1.4rem;
                     padding: 0;
                 }
+
                 .interactive-image {
                     display: block !important;
                     padding-top: 1rem;
+
                     .footer-top-interactive__share {
-                        &--top { 
+                        &--top {
                             top: 2rem;
-                            h5 { 
+
+                            h5 {
                                 font-size: 1.4rem;
                             }
                         }
                     }
                 }
             }
+
             &-contact {
                 padding-top: 1rem;
             }
-            &-menu{
+
+            &-menu {
                 padding-top: 0.5rem;
             }
         }
-        &-bottom{
+
+        &-bottom {
             display: none;
+
             &-mobile {
                 position: relative;
                 display: block;
                 height: 8.9rem;
                 width: 100%;
+
                 &__image {
                     position: absolute;
                     top: -4.7rem;
+
                     img {
                         width: 100%;
                         height: 100%;
                     }
                 }
+
                 &__branch,
                 &__booking,
                 &__tel,
-                &__app{
+                &__app {
                     margin-top: 1.7rem;
-                    &--image{
+
+                    &--image {
                         position: relative;
                         margin: 0 auto 0.5rem;
                         width: 3.3rem;
-                        height: 3rem; 
+                        height: 3rem;
+
                         img {
                             width: 100%;
                             height: 100%;
                         }
                     }
+
                     .footer-bottom-mobile__text {
                         font-size: 1.4rem;
                     }
                 }
-                &__advise{
+
+                &__advise {
                     position: absolute;
                     top: -2.4rem;
                     left: 0.5rem;
                     right: 0;
-                    &--image{
+
+                    &--image {
                         width: 5.3rem;
-                        height: 6.1rem; 
+                        height: 6.1rem;
                         position: relative;
                         margin: 0 auto;
                         z-index: 1;
+
                         img {
                             width: 100%;
                             height: 100%;
                         }
                     }
+
                     .footer-bottom-mobile__text {
                         font-size: 1.4rem;
                         display: block;
@@ -123,41 +146,46 @@
         .dp-noneTL {
             display: none;
         }
+
         .dp-blockTL {
             display: block;
         }
+
         .contact-title {
             font-size: 1.6rem;
         }
+
         .fz16 {
             font-size: 1.4rem;
         }
-        &-top {    
+
+        &-top {
             padding-bottom: 4.5rem;
             padding-left: 1.5rem;
             padding-right: 1.5rem;
 
-            .footer-after::after { 
+            .footer-after::after {
                 height: 4rem;
                 width: 25rem;
                 top: -3.9rem;
                 left: 0;
-                background-image: linear-gradient(90deg, #f4df81,#f9d950);
+                background-image: linear-gradient(90deg, #f4df81, #f9d950);
             }
 
             &-interactive {
-                .interactive-logo { 
+                .interactive-logo {
                     margin-left: 50%;
                     transform: translateX(-50%);
                     width: 20.4rem;
                     height: 8.8rem;
                     top: -16rem;
+
                     img {
                         width: 100%;
                     }
                 }
 
-                .interactive-caption {    
+                .interactive-caption {
                     top: -6.6rem;
                     width: 19.8rem;
                     font-size: 1.2rem;
@@ -173,14 +201,14 @@
                     height: 14rem;
                     width: 23rem;
 
-                    > img {
+                    >img {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
                     }
 
                     .footer-top-interactive__share {
-                        &--top { 
+                        &--top {
                             top: 2rem;
                             left: 1.5rem;
                             width: 15.4rem;
@@ -191,12 +219,13 @@
                                 height: 100%;
                             }
 
-                            h5 { 
+                            h5 {
                                 font-size: 1.2rem;
                                 width: 100%;
                                 margin-left: 1rem;
                             }
                         }
+
                         &--bottom {
                             left: 1rem;
                             width: 21rem;
@@ -206,11 +235,13 @@
 
                                 a {
                                     align-items: center;
+
                                     h5 {
                                         margin-top: 0;
                                     }
                                 }
                             }
+
                             &-right {
                                 a {
                                     align-items: center;
@@ -245,12 +276,13 @@
                 }
 
                 &__time {
-                    > h3 {
+                    >h3 {
                         margin: 0.8rem 0 0.5rem 0;
                     }
                 }
 
                 &__app {
+
                     &--googleplay,
                     &--appstore {
                         width: 50%;
@@ -258,7 +290,7 @@
                 }
             }
 
-            &-menu{
+            &-menu {
                 padding-top: 3rem;
 
                 &__list {
@@ -276,7 +308,7 @@
 
             .footer-title {
                 padding-right: 36%;
-                padding-bottom: 1.5rem;    
+                padding-bottom: 1.5rem;
                 font-size: 1.6rem;
             }
 

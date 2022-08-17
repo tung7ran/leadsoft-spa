@@ -163,3 +163,19 @@ addressItems.forEach((tab, index) => {
     pane.classList.add("active");
   };
 });
+
+// Show contect service
+const tabsHeading = document.querySelectorAll(".tab-item-heading");
+const panesContent = document.querySelectorAll(".tab-pane-content");
+
+tabsHeading.forEach((tab, index) => {
+  const paneContent = panesContent[index];
+
+  tab.onclick = function () {
+    $(".tab-item-heading.active").classList.remove("active");
+    $(".tab-pane-content.active").classList.remove("active");
+
+    this.classList.add("active");
+    paneContent.classList.add("active");
+  };
+});
