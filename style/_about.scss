@@ -2,6 +2,7 @@
     &-logo {
         width: 100%;
         height: 85rem;
+
         img {
             width: 100%;
             height: 101%;
@@ -10,11 +11,12 @@
     }
 
     &-info {
-        &-image{
+        &-image {
             position: relative;
             height: 106rem;
+
             // z-index: 999;
-            > img {
+            >img {
                 height: 100%;
                 width: 100%;
             }
@@ -24,16 +26,18 @@
                 top: 0;
                 right: 0;
                 left: 0;
+
                 &--logo {
-                    margin-top: 10.1rem;    
+                    margin-top: 10.1rem;
                     margin-bottom: 0.5rem;
-                    img{
-                       width: 8.4rem;
-                       height: 6.9rem;
+
+                    img {
+                        width: 8.4rem;
+                        height: 6.9rem;
                     }
                 }
 
-                &-heading{
+                &-heading {
                     text-transform: uppercase;
                     font-family: UTM-AvoBold;
                     font-size: 2.8rem;
@@ -45,6 +49,7 @@
                         text-align: justify;
                         line-height: 1.4em;
                         margin-bottom: 1rem;
+
                         &--item {
                             font-size: 1.8rem;
                             margin-top: 2.5rem;
@@ -55,12 +60,13 @@
                     &__advise {
                         position: relative;
                         border-radius: 2rem;
-                        padding:1rem 3rem;
-                        font-size:1.8rem;
+                        padding: 1rem 3rem;
+                        font-size: 1.8rem;
                         text-transform: uppercase;
                         width: 28.7rem;
                         background-color: $white;
                         margin: 0 auto;
+
                         button {
                             color: #a1710f;
                             width: 100%;
@@ -72,7 +78,7 @@
                         }
                     }
 
-                    &__advise:after{
+                    &__advise:after {
                         content: "";
                         position: absolute;
                         top: 0.3rem;
@@ -113,25 +119,27 @@
                 }
             }
         }
+
         .main-inftras {
             position: absolute;
             bottom: -123rem;
             right: 0;
             left: 0;
             z-index: -1;
+
             &-image {
                 position: relative;
                 height: 144rem;
 
                 &__above {
                     position: relative;
-                    height:100%;
+                    height: 100%;
                 }
 
                 &__below {
                     position: absolute;
                     top: 0;
-                    height:100%;
+                    height: 100%;
                     width: 100%;
                 }
             }
@@ -143,15 +151,16 @@
                 left: 0;
 
                 &__logo {
-                    margin-top: 11.8rem;   
+                    margin-top: 11.8rem;
                     margin-bottom: 0.5rem;
-                    img{
+
+                    img {
                         width: 8.4rem;
                         height: 6.9rem;
                     }
                 }
 
-                &__heading{
+                &__heading {
                     text-transform: uppercase;
                     font-family: Gilroy-Bold;
                     font-size: 2.8rem;
@@ -161,9 +170,9 @@
                 }
 
                 .main-pc {
-                    .main-inftras-content__right{
+                    .main-inftras-content__right {
 
-                        &--one{
+                        &--one {
                             width: 53.7rem;
                             height: 50.4rem;
                         }
@@ -185,15 +194,17 @@
                         }
                     }
 
-                    .main-inftras-content__left{
+                    .main-inftras-content__left {
                         text-align: justify;
                         line-height: 1.4em;
+
                         &--list {
                             &-item {
 
                                 font-size: 1.8rem;
                                 margin-top: 2.5rem;
                                 line-height: 1.25;
+
                                 span {
                                     font-family: Gilroy-XBold;
                                 }
@@ -208,13 +219,16 @@
             }
         }
     }
-    &-device { 
+
+    &-device {
         height: 64.2rem;
         margin-top: 122.8rem;
+
         .device-pc {
-            height:100%;
+            height: 100%;
+
             .main-device-left {
-                
+
                 &__list {
                     position: relative;
                     width: 100%;
@@ -223,34 +237,38 @@
                     &--item {
                         position: absolute;
                         top: 10rem;
+
                         img {
                             height: 37.6rem;
                         }
                     }
 
-                    &--item1{
+                    &--item1 {
                         position: absolute;
                         top: 6rem;
                         left: 16.5rem;
-                        img{
+
+                        img {
                             height: 25.8rem
                         }
                     }
 
-                    &--item2{
+                    &--item2 {
                         position: absolute;
                         top: 34.9rem;
                         left: 4rem;
+
                         img {
                             width: 26.6rem;
                             height: 22.8rem;
                         }
                     }
 
-                    &--item3{
+                    &--item3 {
                         position: absolute;
                         top: 20.2rem;
                         left: 26.8rem;
+
                         img {
                             width: 23.1rem;
                             height: 40.3rem;
@@ -264,6 +282,7 @@
                 top: 18rem;
                 width: 100%;
                 height: 101%;
+
                 img {
                     width: 100%;
                 }
@@ -271,9 +290,10 @@
         }
     }
 
-    &-team { 
+    &-team {
         height: 48.9rem;
         width: 100%;
+
         img {
             height: 100%;
             width: 100%;
@@ -281,11 +301,12 @@
         }
     }
 
-    &-papers { 
+    &-papers {
         position: relative;
         height: 39.8rem;
         margin-top: 12.4rem;
-        > img {
+
+        >img {
             width: 100%;
             height: 100%;
         }
@@ -295,13 +316,14 @@
             top: 0;
             right: 0;
             left: 0;
-            
+
             &__logo {
                 width: 8.6rem;
-                height:6.8rem;
+                height: 6.8rem;
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -315,12 +337,13 @@
                 padding: 0 40%;
                 line-height: 1.2;
             }
-            
+
             &__image {
                 width: 124.5rem;
                 margin-right: auto;
                 margin-left: auto;
                 margin-top: 3.8rem;
+
                 &--list {
                     &-item {
                         img {
@@ -333,5 +356,5 @@
             }
         }
     }
-  
+
 }

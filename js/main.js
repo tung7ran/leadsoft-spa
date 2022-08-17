@@ -42,18 +42,23 @@ cart.addEventListener("click", () => {
 });
 
 // // ---------------------------------------------------------------------------------
-const openModalBtn = document.getElementById("open-modal-btn");
-const modal = document.getElementById("open-contact");
+const openModalBtn = document.querySelector(".service--detail__btn");
+const modal = document.querySelector(".form--contact");
 
 function toggleModal() {
   modal.classList.toggle("hide");
 }
+// openModalBtn.addEventListener("click", toggleModal);
+// modal.addEventListener("click", toggleModal);
+
+// modal.addEventListener("click", (e) => {
+//   if(e.target == e.currentTarget) toggleModal();
+// })
 if (modal) {
   modal.addEventListener(
     "click",
     (e) => {
       if (e.target == e.currentTarget) toggleModal();
-      // console.log(e.target);
     },
     false
   );
@@ -156,5 +161,21 @@ addressItems.forEach((tab, index) => {
 
     this.classList.add("active");
     pane.classList.add("active");
+  };
+});
+
+// Show contect service
+const tabsHeading = document.querySelectorAll(".tab-item-heading");
+const panesContent = document.querySelectorAll(".tab-pane-content");
+
+tabsHeading.forEach((tab, index) => {
+  const paneContent = panesContent[index];
+
+  tab.onclick = function () {
+    $(".tab-item-heading.active").classList.remove("active");
+    $(".tab-pane-content.active").classList.remove("active");
+
+    this.classList.add("active");
+    paneContent.classList.add("active");
   };
 });
