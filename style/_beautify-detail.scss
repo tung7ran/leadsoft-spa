@@ -106,37 +106,61 @@
 
             &--menu {
                 padding: 0 1rem;
-
+                
                 &__list {
                     margin-bottom: 2.35rem;
-
+                    
                     &--item {
-                        display: flex;
                         position: relative;
-
-                        &--images {
-                            background-image: url(../images/trainning/22.png);
-                            background-size: cover;
-                            background-position: center;
-                            background-repeat: no-repeat;
-                            -o-object-fit: cover;
-                            object-fit: cover;
+                        .detail-news-boder {
+                            display: flex;
+                            margin-top: 4rem;
+                        }
+                        .detail-news-boder::after {
+                            content: "";
+                            position: absolute;
+                            bottom: -1.6rem;
                             width: 100%;
-                            height: 9rem;
+                            border: 0.1rem solid $more-color;
+
+                        }
+                        
+                        &--images {
+                            padding: 0;
+                            height: 6.8rem;
+                            width: 10.7rem;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
                         }
 
                         &--desc {
-                            position: absolute;
-                            top: 0;
-                            right: 0;
                             text-transform: uppercase;
                             font-size: 1.1rem;
                             font-family: Gilroy-Bold;
-                            max-width: 60%;
+                            padding-right: 0;
+                            padding-left: 1rem;
                         }
                     }
+
+                    &--item:first-child {
+                        .detail-news-boder {
+                            margin-top: 0;
+                        }
+                    }
+
+                    &--item:last-child {
+                        .detail-news-boder::after {
+                            border: none;
+                        }
+                    }
+
                 }
             }
+        }
+        .detail-new-tablet {
+            display: none;
         }
     }
 }

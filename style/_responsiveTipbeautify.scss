@@ -1,6 +1,6 @@
 @include responsive_mobile{
     .dp-none {
-        display: none;
+        display: none !important;
     }
     .dp-block {
         display: block;
@@ -114,5 +114,102 @@
                 padding: 0 6%!important;
             }
         }
+    }
+}
+
+@include responsive_tablet {
+    .wide {
+        width: 700px;
+    }
+    .beautify-container {
+        padding-top: 4.24rem;
+    }
+    .beautify {
+        &-program {
+            &-list {
+                &__item {
+                    margin: 0 0 6rem 0;
+                    width: 14.5rem;
+    
+                    &--image {
+                        width: 100%;
+                        height: 15.5rem;
+    
+                        &--product {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .image-pseudo--tips::after{
+                        height: 9.5rem;
+                        right: -1.8rem;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+    
+                    &--text {
+                        &--title {
+                            font-size: 1.2rem;
+                            padding: 2rem 0 0 0;
+                            max-height: 7rem;
+                        }
+    
+                        &--desc {
+                            font-size: 1.2rem;
+                            margin-top: 0.5rem;
+                        }
+                    }
+    
+                    &--calendar {
+                        top: -3.1rem;
+                        right: 0.2rem;
+                        width: 5rem;
+                        height: 5rem;
+    
+                        &--date {
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+            .product-pagination {
+                &-list{
+                    list-style: none;
+                    justify-content:center;
+                    align-items: center;
+                    margin: 0;
+                    &__item {
+                        border-radius: 1.2rem;
+                        margin-right: 0.6rem;
+                        &--link {
+                            padding: 1.8rem 2.3rem;
+                            font-size: 3.5rem;
+                        }
+                    }
+                }
+                &-next {
+                    img {
+                        width: 1.8rem;
+                        height:1.7rem;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+        &--program{
+            padding-right: 0;
+            &__category{
+                &--list{
+                    &-item{
+                        margin: 1.25rem 0;
+                        &-link{
+                            font-size: 1.4rem;
+                            padding: 0.7rem 0 0.5rem 0;
+                        }
+                    }
+                }
+            }
+        }
+    
     }
 }
