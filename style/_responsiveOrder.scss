@@ -49,3 +49,15 @@
     }
     
 }
+
+@include responsive_tablet{
+    .pay-product-first__surname--text{
+        margin-left: 1rem;
+    }
+    .pay-product-first__name--text{
+        width: 97% !important;
+    }
+    .pay-products{
+        margin-top: 5rem;
+    }
+}
