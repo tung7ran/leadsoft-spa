@@ -10,13 +10,13 @@
             justify-content: space-evenly;
 
             &__item {
-                margin: 0 1.79rem 6.55rem 1.79rem;
                 position: relative;
                 width: 20.5rem;
+                margin-bottom: 5rem;
 
                 &--image {
-                    width: 20.5rem;
-                    height: 20.6rem;
+                    width: 90%;
+                    height: 24rem;
                     position: relative;
 
                     &--product {
@@ -30,29 +30,32 @@
                     position: absolute;
                     border-right: 2px solid #000000;
                     height: 16.5rem;
-                    right: -4.3rem;
+                    right: -3rem;
                     top: 50%;
                     transform: translateY(-50%);
                 }
 
                 &--text {
+                    width: 90%;
                     &--title {
                         text-transform: uppercase;
                         font-family: Gilroy-Heavy;
                         font-size: 1.5rem;
                         padding: 3.5rem 0 1.5rem 0;
+                        max-height: 7rem;
                     }
 
                     &--desc {
                         font-size: 1.6rem;
                         text-align: justify;
+                        margin-top: 1rem;
                     }
                 }
 
                 &--calendar {
                     position: absolute;
                     top: -3.1rem;
-                    right: 0;
+                    right: 6.8rem;
                     width: 6.2rem;
                     height: 6.2rem;
                     border-radius: 50%;

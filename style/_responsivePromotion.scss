@@ -9,3 +9,58 @@
         display: none;
     }
 }
+
+
+//tablet
+@include responsive_tablet {
+    .promotion {
+        margin-top: 7rem;
+    
+        &__heading {
+            font-size: 3.5rem;
+            text-align: center;
+            padding-top: 4.35rem;
+            width: 45.5rem;
+            margin: 0 auto;
+        }
+    
+        &--container {
+            &--body {
+                &__list {
+                    padding-top: 4.65rem;
+                    padding-bottom: 5.5rem;
+    
+                    &--item {
+                        margin: 0 0.5rem 2.95rem 0.5rem;
+                        border-radius: 2rem;
+                        padding: 0.7rem 2rem 1.5rem 1.38rem;
+    
+                        &--content {
+                            height: 100%;
+
+                            &--images {
+                                width: 20.5rem;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+    
+                            &--text {
+                                &--title {
+                                    font-size: 1.4rem;
+                                    letter-spacing: 0;
+                                }
+    
+                                &--desc {
+                                    font-size: 1.3rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
