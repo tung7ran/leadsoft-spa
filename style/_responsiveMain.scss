@@ -1,4 +1,7 @@
 @include responsive_mobile {
+    .dp-none {
+        display: none;
+    }
     .advise-contact {
         height: 70.7rem;
         &__body {
@@ -223,6 +226,16 @@
                 &__item:last-child {
                     margin-bottom: 1.4rem;
                 }
+            }
+        }
+    }
+}
+
+@include responsive_pclow {
+    .address {
+        &-info {
+            &-caption { 
+                padding: 0 39% !important;
             }
         }
     }
