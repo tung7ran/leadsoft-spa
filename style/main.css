@@ -1086,6 +1086,7 @@ a:hover {
 }
 .header-main-nav__list {
   justify-content: center;
+  align-items: center;
   list-style: none;
 }
 .header-main-nav__list--item {
@@ -4369,6 +4370,7 @@ a:hover {
   position: relative;
   margin-top: 3rem;
   font-family: Gilroy-Bold;
+  border-radius: 2rem;
 }
 .booking .send-contact__btn::after {
   content: "";
@@ -4383,6 +4385,7 @@ a:hover {
   border-bottom-right-radius: 8rem;
   border-top-left-radius: 8rem;
   border-top-right-radius: 8rem;
+  border-radius: 2rem;
 }
 .booking-after::after {
   content: "";
@@ -4395,6 +4398,10 @@ a:hover {
   border-top-right-radius: 150px 100px;
   margin-left: 50%;
   transform: translateX(-50%);
+}
+
+.address {
+  display: block;
 }
 
 .address-image-booking {
@@ -8356,7 +8363,7 @@ a:hover {
   .tips-new-item__body--list--item--text-title {
     padding: 3.5rem 0 1.5rem 0;
   }
-  .address {
+  .address-beautify {
     display: none;
   }
 }

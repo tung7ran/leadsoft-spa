@@ -84,10 +84,13 @@
         position: relative;
         margin-top: 3rem;
         font-family: Gilroy-Bold;
+        border-radius: 2rem;
+
     }
 
     .send-contact__btn::after {
         @include buttonAfter();
+        border-radius: 2rem;
     }
 
     &-after::after {
@@ -103,7 +106,9 @@
         transform: translateX(-50%);
     }
 }
-
+.address{
+    display: block;
+}
 .address-image-booking {
     width: 7rem;
 }
