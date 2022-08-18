@@ -25,10 +25,19 @@
   align-items: center;
   padding: 10px 14px;
 }
+.money {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 .image-content{
   position: relative;
   row-gap: 5px;
   padding: 25px 0;
+  width: 80%;
+  margin: 0 auto;
+  top: 0.5rem;
 }
 
 
@@ -42,7 +51,7 @@
 }
 .card-image {
   width: auto;
-  height: 30.6rem;
+  height: 16.6rem;
 }
 
 .card-img{
@@ -52,7 +61,7 @@
 }
 
 .price{
-    padding: 1.55rem 2rem 2rem 2rem;
+    padding: 1.55rem 0 2rem 0;
     font-size: 2.2rem;
     font-weight: bold;
     color: #a1710f;
@@ -60,19 +69,14 @@
 .description{
   font-size: 1.8rem;
   color: #000;
-  text-align: center;
+  text-align: left;
 }
 .button{
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
+   
   border: none;
-  /* font-size: 16px; */
   color: #FFF;
-  /* padding: 8px 16px; */
   background-color: #ffd00f;
   border-radius: 50%;
-  /* margin: 14px; */
   cursor: pointer;
   transition: all 0.3s ease;
   width: 3rem;
@@ -86,22 +90,34 @@
     height: 1rem;
 }
 .swiper-navBtn{
-  color: #6E93f7;
   transition: color 0.3s ease;
 }
 .swiper-navBtn:hover{
   color: #4070F4;
 }
-.swiper-navBtn::before,
+/* .swiper-navBtn::before,
 .swiper-navBtn::after{
   font-size: 35px;
   color: #ffd00F;
+} */
+.swiper-button-next,
+.swiper-button-prev{
+  width: 2rem;
+  height: 2rem;
+}
+.swiper-icon{
+  width: 100%;
+  height: 100%;
 }
 .swiper-button-next{
   right: 0;
 }
 .swiper-button-prev{
   left: 0;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  display: none;
 }
 .swiper-pagination-bullet{
   background-color: #6E93f7;

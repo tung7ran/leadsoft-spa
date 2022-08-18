@@ -967,10 +967,11 @@ a:hover {
   transform: translateX(-50%);
 }
 .header-container-heading__title--text-name {
-  line-height: 1.1;
+  line-height: 1.2em;
   text-align: center;
   display: block;
   font-family: UTM-Avo;
+  font-weight: 500;
 }
 
 .header-contact {
@@ -986,7 +987,6 @@ a:hover {
 }
 .header-contact-left {
   padding-right: 0;
-  width: 32.15%;
 }
 .header-contact-left form {
   position: relative;
@@ -1021,8 +1021,13 @@ a:hover {
   height: 4.1rem;
   background-color: #fff;
 }
+.header-contact-right {
+  display: flex;
+  padding: 0;
+}
 .header-contact-right__cart {
   position: relative;
+  margin-right: 0.5rem;
 }
 .header-contact-right__cart--btn {
   border-radius: 50%;
@@ -1038,8 +1043,8 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 2rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
 }
 .header-contact-right__cart--mobile {
   display: none;
@@ -1051,7 +1056,6 @@ a:hover {
   height: 6.65rem;
   background-color: #FED119;
   border-radius: 5rem;
-  width: 37rem;
   outline: none;
   border: none;
 }
@@ -1082,7 +1086,6 @@ a:hover {
 }
 .header-main-nav__list {
   justify-content: center;
-  align-items: center;
   list-style: none;
 }
 .header-main-nav__list--item {
@@ -1090,9 +1093,10 @@ a:hover {
   padding: 0 3.6rem;
 }
 .header-main-nav__list--item-link {
-  color: #808080;
+  color: #4d4d4d;
   font-size: 2rem;
   font-family: UTM-Avo;
+  font-weight: 500;
 }
 .header-main-nav__list--item-link:hover {
   text-decoration: none;
@@ -1396,7 +1400,7 @@ a:hover {
   right: 0;
   width: 98%;
   height: 90%;
-  border: 0.2rem dashed #fff;
+  border: 0.2rem dotted #fff;
   border-bottom-left-radius: 8rem;
   border-bottom-right-radius: 8rem;
   border-top-left-radius: 8rem;
@@ -1692,7 +1696,7 @@ a:hover {
   right: 0;
   width: 98%;
   height: 90%;
-  border: 0.2rem dashed #fff;
+  border: 0.2rem dotted #fff;
   border-bottom-left-radius: 8rem;
   border-bottom-right-radius: 8rem;
   border-top-left-radius: 8rem;
@@ -3348,7 +3352,7 @@ a:hover {
   right: 0;
   width: 98%;
   height: 90%;
-  border: 0.2rem dashed #fff;
+  border: 0.2rem dotted #fff;
   border-bottom-left-radius: 8rem;
   border-bottom-right-radius: 8rem;
   border-top-left-radius: 8rem;
@@ -3742,7 +3746,7 @@ a:hover {
   right: 0;
   width: 98%;
   height: 90%;
-  border: 0.2rem dashed #fff;
+  border: 0.2rem dotted #fff;
   border-bottom-left-radius: 8rem;
   border-bottom-right-radius: 8rem;
   border-top-left-radius: 8rem;
@@ -3898,7 +3902,7 @@ a:hover {
   right: 0;
   width: 98%;
   height: 90%;
-  border: 0.2rem dashed #fff;
+  border: 0.2rem dotted #fff;
   border-bottom-left-radius: 8rem;
   border-bottom-right-radius: 8rem;
   border-top-left-radius: 8rem;
@@ -4374,7 +4378,7 @@ a:hover {
   right: 0;
   width: 98%;
   height: 90%;
-  border: 0.2rem dashed #fff;
+  border: 0.2rem dotted #fff;
   border-bottom-left-radius: 8rem;
   border-bottom-right-radius: 8rem;
   border-top-left-radius: 8rem;
@@ -4540,7 +4544,7 @@ a:hover {
   right: 0;
   width: 98%;
   height: 90%;
-  border: 0.2rem dashed #fff;
+  border: 0.2rem dotted #fff;
   border-bottom-left-radius: 8rem;
   border-bottom-right-radius: 8rem;
   border-top-left-radius: 8rem;
@@ -4834,7 +4838,7 @@ a:hover {
   right: 0;
   width: 98%;
   height: 90%;
-  border: 0.2rem dashed #fff;
+  border: 0.2rem dotted #fff;
   border-bottom-left-radius: 8rem;
   border-bottom-right-radius: 8rem;
   border-top-left-radius: 8rem;
@@ -4950,7 +4954,7 @@ a:hover {
   right: 0;
   width: 98%;
   height: 90%;
-  border: 0.2rem dashed #fff;
+  border: 0.2rem dotted #fff;
   border-bottom-left-radius: 8rem;
   border-bottom-right-radius: 8rem;
   border-top-left-radius: 8rem;
@@ -5510,6 +5514,9 @@ a:hover {
   }
 }
 @media (max-width: 480px) {
+  .dp-none {
+    display: none;
+  }
   .advise-contact {
     height: 70.7rem;
   }
@@ -5688,6 +5695,11 @@ a:hover {
   }
   .address .location-details-list__item:last-child {
     margin-bottom: 1.4rem;
+  }
+}
+@media (min-width: 991px) {
+  .address-info-caption {
+    padding: 0 39% !important;
   }
 }
 @media (max-width: 480px) {
@@ -6585,11 +6597,20 @@ a:hover {
   }
 }
 @media (min-width: 991px) {
+  .dp-blockPC {
+    display: block;
+  }
+  .pd-5 {
+    padding-left: 5rem;
+  }
+  .pd-1 {
+    padding-left: 1rem;
+  }
   .top-banner .top-banner-1 {
     height: 59.1rem;
   }
   .content-container {
-    padding: 18.4rem 0;
+    padding: 18.4rem 0 14rem;
     margin: 18rem 0 29rem 0;
   }
   .container-item .container-heading {
@@ -6619,8 +6640,9 @@ a:hover {
   }
   .system-introduction .introduction-info .introduction-info-logo {
     height: 7.1rem;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    text-align: left;
+    margin-left: 16%;
+    margin-bottom: 3.2rem;
   }
   .system-introduction .introduction-info .introduction-info-title {
     font-size: 3.4rem;
@@ -6630,7 +6652,13 @@ a:hover {
     font-size: 1.6rem;
   }
   .top-banner-2 {
-    height: 50.1rem;
+    height: 49.9rem;
+  }
+  .top-banner-2 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .top-banner-2 .top-banner-body {
     height: 33.8rem;
@@ -6664,6 +6692,7 @@ a:hover {
     font-size: 2rem;
     padding: 0 2rem;
     text-align: center;
+    color: #000;
   }
   .event {
     padding: 3.4rem 0 15.2rem 0;
@@ -6803,6 +6832,7 @@ a:hover {
   .treatment-result-list .treatment-result-item .treatment-result-desc {
     font-size: 1.4rem;
     text-align: justify;
+    color: #000;
   }
   .event .container-item .event-heading {
     padding-bottom: 5.35rem;
@@ -8869,7 +8899,7 @@ a:hover {
   position: relative;
 }
 .system-introduction .introduction-image .introduction-image-2 {
-  left: 0;
+  left: 1.2rem;
   bottom: -3.6rem;
   z-index: 1;
 }
@@ -8880,6 +8910,7 @@ a:hover {
 }
 .system-introduction .introduction-info {
   text-align: center;
+  padding-left: 8rem;
 }
 .system-introduction .introduction-info .introduction-info-logo .info-logo-img {
   width: auto;
@@ -8888,19 +8919,17 @@ a:hover {
 .system-introduction .introduction-info .introduction-info-title {
   text-transform: uppercase;
   font-weight: bold;
+  text-align: left;
+  padding-right: 46%;
+  margin-bottom: 1.1rem;
 }
 .system-introduction .introduction-info .introduction-info-desc {
   line-height: 2.5rem;
   text-align: justify;
+  width: 57%;
 }
 
 .top-banner-2 {
-  background-image: url("../images/banner2.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
   position: relative;
 }
 .top-banner-2 .top-banner-body {
@@ -8938,13 +8967,15 @@ a:hover {
   cursor: pointer;
 }
 .category-nav .category-item .category-item-link {
-  color: #000;
   text-transform: uppercase;
 }
 .category-nav .active {
   background-color: #ffd00f;
   color: #000;
   border-radius: 50rem;
+}
+.category-nav .category-item.active a {
+  color: #000;
 }
 
 .event .container-item .container-heading .container-item-logo {
@@ -8990,6 +9021,9 @@ a:hover {
   border-radius: 8rem;
   font-family: Gilroy-Bold;
   text-transform: uppercase;
+  font-size: 2.4rem;
+  padding: 1.5rem 3.2rem;
+  border-radius: 3rem;
   font-family: Gilroy-Medium-Italic;
 }
 
@@ -9073,8 +9107,10 @@ a:hover {
   transform: translateY(-50%);
 }
 .beauty-store .container-item .container-body .store-category .category-list .active {
-  color: #000;
   background-color: #ffd00f;
+}
+.beauty-store .container-item .container-body .store-category .category-list .category-item.active a {
+  color: #000;
 }
 .beauty-store .container-item .container-body .product-list {
   position: relative;
@@ -9162,6 +9198,8 @@ a:hover {
   border-radius: 8rem;
   font-family: Gilroy-Bold;
   text-transform: uppercase;
+  font-size: 2rem;
+  padding: 1.5rem 2.2rem;
   text-transform: uppercase;
   color: #000;
   position: relative;
@@ -9174,7 +9212,7 @@ a:hover {
   right: 0;
   width: 98%;
   height: 90%;
-  border: 0.2rem dashed #fff;
+  border: 0.2rem dotted #fff;
   border-bottom-left-radius: 8rem;
   border-bottom-right-radius: 8rem;
   border-top-left-radius: 8rem;
@@ -9293,7 +9331,7 @@ a:hover {
   right: 0;
   width: 98%;
   height: 90%;
-  border: 0.2rem dashed #fff;
+  border: 0.2rem dotted #fff;
   border-bottom-left-radius: 8rem;
   border-bottom-right-radius: 8rem;
   border-top-left-radius: 8rem;
@@ -9332,7 +9370,7 @@ a:hover {
   margin-bottom: 2rem;
 }
 .address-nav-location__item {
-  padding: 1.8rem 2rem;
+  padding: 1rem 4rem;
   border-radius: 1.6rem;
   cursor: pointer;
 }
@@ -9341,6 +9379,9 @@ a:hover {
   font-size: 1.6rem;
   font-family: Gilroy-Bold;
   text-transform: uppercase;
+}
+.address-nav-location__item.active a {
+  color: #000 !important;
 }
 .address-nav .active {
   color: #000 !important;
@@ -9374,12 +9415,14 @@ a:hover {
   font-size: 1.8rem;
   font-family: Gilroy-XBold;
   margin: 0;
+  color: #000;
 }
 .address .location-details-list__item .location-details-right__info {
   text-align: left;
   margin-bottom: 2.4rem;
   height: 5.2rem;
   font-size: 1.6rem;
+  color: #000;
 }
 .address .location-details-list__item .location-details-right .location-view {
   float: left;
@@ -9423,7 +9466,7 @@ a:hover {
   right: 0;
   width: 98%;
   height: 90%;
-  border: 0.2rem dashed #fff;
+  border: 0.2rem dotted #fff;
   border-bottom-left-radius: 8rem;
   border-bottom-right-radius: 8rem;
   border-top-left-radius: 8rem;
