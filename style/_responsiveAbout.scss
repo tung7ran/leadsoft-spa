@@ -12,8 +12,11 @@
 
         &-info { 
             &-image {
-                height: 150rem;
+                height: 146rem;
                 .main-content { 
+                    margin-left: 1.5rem;
+                    margin-right: 1.5rem;
+
                     &--logo {
                         margin-top: 3.9rem;
                         margin-bottom: 5rem;
@@ -39,14 +42,14 @@
                         }
 
                         &__two {
-                            left: 1.2rem;
+                            left: 2.8rem;
                             bottom: 15.2rem;
                             width: 20.3rem;
                             height: 19.4rem;
                         }
 
                         &__three {
-                            right: 4.3rem;
+                            right: 5.9rem;
                             bottom: 7.5rem;
                             width: 15.2rem;
                             height: 15.1rem;
@@ -74,6 +77,9 @@
 
                 &-content {
                     top: 96rem;
+                    margin-left: 1.5rem;
+                    margin-right: 1.5rem;
+
                     &__heading{ 
                         padding: 0 8%;    
                         margin-bottom: 9.6rem;
@@ -205,7 +211,285 @@
             }
         }
         &-team { 
-            height: 24.3rem;
+            height: 17.3rem;
+        }
+    }
+}
+
+@include responsive_tablet {
+    .pd-0 {
+        padding: 0;
+    }
+    .main {
+        &-logo {
+            height: 36rem;
+        }
+    
+        &-info {
+            &-image {
+                height: 85rem;
+    
+                .main-content {
+                    top: 0;
+                    right: 0;
+                    left: 0;
+    
+                    &--logo {
+                        margin-top: 10.1rem;
+                        margin-bottom: 0.5rem;
+    
+                        img {
+                            width: 8.4rem;
+                            height: 6.9rem;
+                        }
+                    }
+    
+                    &-heading {
+                        font-size: 2rem;
+                        margin-bottom: 4.6rem;
+                    }
+    
+                    &-left {
+                        &__list {
+                            line-height: 1.2em;
+                            margin-bottom: 3rem;
+    
+                            &--item {
+                                font-size: 1.4rem;
+                                margin-top: 1rem;
+                            }
+                        }
+    
+                        &__advise {
+                            padding: 0.5rem 1rem;
+                            font-size: 1.8rem;
+                            width: 16.7rem;
+    
+                            button {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+    
+                    &-right {
+                        &__one {
+                            width: 90%;
+                            height: 40rem;
+                            margin-left: 3.5rem;
+                        }
+    
+                        &__two {
+                            left: 1.2rem;
+                            bottom: 6.9rem;
+                            width: 19.3rem;
+                            height: 19.4rem;
+                        }
+    
+                        &__three {
+                            right: 1.6rem;
+                            bottom: 1rem;
+                            width: 13.8rem;
+                            height: 13.1rem;
+                        }
+                    }
+                }
+            }
+    
+            .main-inftras {
+                bottom: -109rem;
+                right: 0;
+                left: 0;
+                z-index: -1;
+    
+                &-image {
+                    height: 130rem;
+    
+                    &__above {
+                        height: 100%;
+                    }
+    
+                    &__below {
+                        top: 0;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+    
+                &-content {
+                    top: 17rem;
+                    right: 0;
+                    left: 0;
+    
+                    &__logo {
+                        position: relative;
+                        margin: 9.8rem auto 0.5rem;
+                        width: 8.4rem;
+                        height: 6.9rem;
+    
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+    
+                    &__heading {
+                        font-size: 2rem;
+                        margin-bottom: 9.6rem;
+                        padding: 0px 30%;
+                    }
+    
+                    .main-pc {
+                        .main-inftras-content__right {
+    
+                            &--one {
+                                width: 90%;
+                                height: 40rem;
+                                margin-left: 3.5rem;
+                            }
+    
+                            &--two {
+                                left: 1.6rem;
+                                bottom: 22.5rem;
+                                width: 19.3rem;
+                                height: 19.4rem;
+                            }
+    
+                            &--three {
+                                right: 1.6rem;
+                                bottom: 16.5rem;
+                                width: 13.8rem;
+                                height: 13.1rem;
+                            }
+                        }
+    
+                        .main-inftras-content__left {
+                            line-height: 1.4em;
+    
+                            &--list {
+                                &-item {
+    
+                                    font-size: 1.4rem;
+                                    margin-top: 1.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        &-device {
+            height: 53.2rem;
+            margin-top: 106.8rem;
+    
+            .device-pc {
+                .main-device-left {
+                    &__list {
+                        &--item {
+                            top: 10rem;
+                            height: 30.6rem;
+    
+                            img {
+                                height: 100%;
+                            }
+                        }
+    
+                        &--item1 {
+                            top: 6rem;
+                            left: 13.5rem;
+                            height: 21.8rem;
+    
+                            img {
+                                height: 100%;
+                            }
+                        }
+    
+                        &--item2 {
+                            top: 29.9rem;
+                            left: 3rem;
+                            width: 19.6rem;
+                            height: 17.8rem;
+    
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+    
+                        &--item3 {
+                            top: 18.2rem;
+                            left: 21.2rem;
+                            width: 15.1rem;
+                            height: 31.3rem;
+    
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+    
+                .main-device-right {
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    
+        &-team {
+            height: 26.9rem;
+        }
+    
+        &-papers {
+            height: 26.8rem;
+            margin-top: 8.4rem;
+    
+            &-content {
+                top: 0;
+                right: 0;
+                left: 0;
+    
+                &__logo {
+                    width: 6.6rem;
+                    height: 4.8rem;
+                }
+    
+                &__heading {
+                    font-size: 2rem;
+                    margin-top: 1rem;
+                    padding: 0 35%;
+                    line-height: 1.2;
+                }
+    
+                &__image {
+                    width: 100%;
+                    margin-top: 3.8rem;
+    
+                    &--list {
+                        justify-content: space-evenly;
+                        &-item {
+                            width: 12.5rem;
+                            height: 6.8rem;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 1.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .address .location-details {
+            margin-bottom: 3.5rem;
+        }
+        
+        .address .address-near {
+            margin-bottom: 10.6rem;
         }
     }
 }

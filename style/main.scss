@@ -138,7 +138,7 @@
 
 
         .introduction-image-2 {
-            left: 0;
+            left: 1.2rem;
             bottom: -3.6rem;
             z-index: 1;
         }
@@ -151,6 +151,8 @@
     }
     .introduction-info {
         text-align: center;
+        padding-left: 8rem;
+
         .introduction-info-logo {
             .info-logo-img {
                 width: auto;
@@ -160,17 +162,21 @@
         .introduction-info-title {
             text-transform: uppercase;
             font-weight: bold;
+            text-align: left;
+            padding-right: 46%;
+            margin-bottom: 1.1rem;
         }
         .introduction-info-desc {
             line-height: 2.5rem;
             text-align: justify;
+            width: 57%;
         }
     }
 }
 
 .top-banner-2 {
-    background-image: url('../images/banner2.png');
-    @include backgroundImage();
+    // background-image: url('../images/banner2.png');
+    // @include backgroundImage();
     position: relative;
 
     .top-banner-body {
@@ -206,7 +212,6 @@
         margin: 0.2rem;
         cursor: pointer;
         .category-item-link {
-            color: $black;
             text-transform: uppercase;
         }
     }
@@ -214,6 +219,12 @@
         background-color: $orange;
         color: $black;
         border-radius: 50rem;
+    }
+
+    .category-item.active { 
+        a  {
+            color: $black;
+        }
     }
 }
 .event {
@@ -259,6 +270,9 @@
 
             .btn-exception {
                 @include buttonStyle();
+                font-size: 2.4rem;
+                padding: 1.5rem 3.2rem;
+                border-radius: 3rem;
                 font-family: Gilroy-Medium-Italic;
             }
         }
@@ -344,8 +358,12 @@
                         }
                     }
                     .active {
-                        color: $black;
                         background-color: $orange;
+                    }
+                    .category-item.active { 
+                        a {
+                            color: $black;
+                        }
                     }
                 }
             }
@@ -432,6 +450,8 @@
         .container-footer {
             .btn-exception {
                 @include buttonStyle();
+                font-size: 2rem;
+                padding: 1.5rem 2.2rem;
                 text-transform: uppercase;
                 color: $black;
                 position: relative;
@@ -594,7 +614,7 @@
             margin-bottom: 2rem;
             
             &__item {
-                padding: 1.8rem 2rem;
+                padding: 1rem 4rem;
                 border-radius: 1.6rem;
                 cursor: pointer;
                 &--link {
@@ -606,6 +626,11 @@
                 }
             }
             
+            &__item.active {
+                a {
+                    color: $black !important;
+                }
+            }
             
         }
         .active {
@@ -644,6 +669,7 @@
                         font-size: 1.8rem;
                         font-family: Gilroy-XBold;
                         margin: 0;
+                        color: #000;
                     }
     
                     &__info {
@@ -651,6 +677,7 @@
                         margin-bottom: 2.4rem;
                         height: 5.2rem;
                         font-size: 1.6rem;
+                        color: #000;
                     }
     
                     .location-view {

@@ -1,10 +1,10 @@
 //mobile
 @include responsive-mobile {
     .dp-noneTL {
-        display: none !important;
+        display: none ;
     }
     .dp-blockTL {
-        display: block !important;
+        display: block ;
     }
     .event-detail-mobile {
         .tips-beautify {
@@ -47,7 +47,6 @@
         
                             &--description {
                                 font-size: 1.6rem;
-                                font-family: K2D-ExtraLight;
                             }
         
         
@@ -82,7 +81,6 @@
         
             &--category {
                 &__list {
-                    background-color: $white;
                     padding: 2.55rem 0;
                     margin-bottom: 1rem;
         
@@ -92,31 +90,18 @@
         
                         &--link {
                             color: #808080;
-                            text-transform: uppercase;
-                            font-family: Gilroy-XBold;
                             border-radius: 1rem;
-                        }
-                    }
-        
-                    &--item:nth-child(2),
-                    &--item:nth-child(3),
-                    &--item:nth-child(4) {
-                        a {
-                            font-family: Gilroy-Regular;
                         }
                     }
                 }
         
                 .detail-news {
-                    background-color: $white;
                     border-radius: 2rem;
                     margin-bottom: 1.5rem;
                     padding: 2.75rem 0;
         
                     &--title {
                         font-size: 1.6rem;
-                        text-transform: uppercase;
-                        font-family: Gilroy-XBold;
                         text-align: center;
                         color: $color-title;
                         padding-bottom: 1.8rem;
@@ -154,9 +139,7 @@
                                 }
         
                                 &--desc {
-                                    text-transform: uppercase;
                                     font-size: 1.1rem;
-                                    font-family: Gilroy-Bold;
                                     padding-right: 0;
                                     padding-left: 1rem;
                                 }
@@ -210,12 +193,6 @@
                             }
                             &--text{
                                 margin-left: 2rem;
-                                &-title{
-    
-                                }
-                                &-desc{
-    
-                                }
                             }
                         }
                         
@@ -323,6 +300,7 @@
             }
         
             &--category {
+                margin-top: 2rem;
                 &__list {
                     background-color: $white;
                     padding: 2.55rem 0;
@@ -339,12 +317,11 @@
                 }
         
                 .detail-news {
-                    border-radius: 2rem;
-                    margin-bottom: 1.5rem;
-                    padding: 2.75rem 0;
+                    border-radius: 1.6rem;
+                    padding: 1.75rem 0;
         
                     &--title {
-                        font-size: 1.6rem;
+                        font-size: 1.4rem;
                         padding-bottom: 1.8rem;
                     }
         
@@ -355,41 +332,13 @@
                             margin-bottom: 2.35rem;
                             
                             &--item {
-                                .detail-news-boder {
-                                    margin-top: 4rem;
-                                }
-                                .detail-news-boder::after {
-                                    bottom: -1.6rem;
-                                    width: 100%;
-        
-                                }
-                                
                                 &--images {
-                                    padding: 0;
-                                    height: 6.8rem;
-                                    width: 10.7rem;
-                                    img {
-                                        width: 100%;
-                                        height: 100%;
-                                    }
+                                    width: 11.6rem;
                                 }
         
                                 &--desc {
-                                    font-size: 1.1rem;
-                                    padding-right: 0;
-                                    padding-left: 1rem;
-                                }
-                            }
-        
-                            &--item:first-child {
-                                .detail-news-boder {
-                                    margin-top: 0;
-                                }
-                            }
-        
-                            &--item:last-child {
-                                .detail-news-boder::after {
-                                    border: none;
+                                    font-size: 0.8rem;
+                                    line-height: 1.8em;
                                 }
                             }
         
@@ -405,23 +354,23 @@
         .tips-new {
             &-item {
                 &__heading {
-        
                     &--title {
-                        text-align: center;
-                        text-transform: uppercase;
-                        color: $color-title;
-                        font-family: Gilroy-XBold;
+                        margin-top: 10.1rem;
+                        margin-bottom: 5rem;
+                        font-size: 2.2rem;
                     }
                 }
         
                 &__body {
                     &--list {
-        
+                        display: flex;
+                        justify-content: space-evenly;
+
                         &--item {
-        
+                            padding: 0;
+
                             &-images {
-                                position: relative;
-                                margin-bottom: 3rem;
+                                margin-bottom: 2rem;
         
                                 img {
                                     width: 100%;
@@ -430,26 +379,16 @@
                             }
         
                             .image-pseudo::after {
-                                content: " ";
-                                display: block;
-                                position: absolute;
-                                border-right: 2px solid #000000;
-                                height: 16.5rem;
-                                right: -4rem;
-                                top: 50%;
-                                transform: translateY(-50%);
+                                height: 11.5rem;
+                                right: -2.4rem;
                             }
         
                             &-title {
-                                font-size: 1.6rem;
-                                font-family: Gilroy-Heavy;
-                                text-transform: uppercase;
+                                font-size: 1.4rem;
                             }
         
                             &-desc {
-                                font-size: 1.6rem;
-                                font-family: Gilroy-Medium;
-                                text-align: justify;
+                                font-size: 1.2rem;
                             }
         
                         }
