@@ -24,3 +24,10 @@
         }
     }
 }
+
+@include responsive_tablet{
+    .end-product-store{
+        display: flex;
+        justify-content: center;
+    }
+}
