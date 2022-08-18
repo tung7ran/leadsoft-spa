@@ -2524,6 +2524,10 @@ a:hover {
   -webkit-text-stroke: 2px #a1710f;
 }
 
+.pd-05 {
+  padding: 0.5rem;
+}
+
 .content {
   margin-top: 4rem;
 }
@@ -2546,8 +2550,11 @@ a:hover {
   margin-top: 5rem;
   margin-bottom: 14rem;
 }
+.content-product-training__image img {
+  width: 100%;
+  height: 100%;
+}
 .content-product-image {
-  width: 25rem;
   position: relative;
   border: 3px solid #ffd00f;
   border-top-left-radius: 3rem;
@@ -2561,7 +2568,7 @@ a:hover {
   padding-top: 4rem;
   padding-bottom: 1rem;
   margin-top: -3rem;
-  width: 25rem;
+  width: 100%;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }
@@ -2597,6 +2604,10 @@ a:hover {
   background-color: #fdf9e8;
   position: relative;
   padding-top: 6rem;
+}
+
+.container-max {
+  margin-bottom: 0;
 }
 
 .home {
@@ -2669,9 +2680,25 @@ a:hover {
 .home .details-expert-img__one {
   margin: 3rem auto;
   width: 60rem;
+  position: relative;
+}
+.home .details-expert-img__one--play {
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  border: none;
+  background-color: #b9b1ad;
+  left: 45%;
+  top: 40%;
+  padding: 2rem 2rem 2rem 2.5rem;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.home .details-expert-img__one--play img {
+  width: 100%;
+  height: 100%;
 }
 .home .details-expert-img__one img {
-  position: relative;
   width: 100%;
 }
 .home .details-expert-img__two {
@@ -2752,13 +2779,8 @@ a:hover {
 .home .details-graduate-outstanding__move--icon {
   width: 100%;
 }
-.home .details-graduate-outstanding .swiper-button-next,
-.home .details-graduate-outstanding .swiper-button-prev {
-  height: 0.5rem;
-  color: #ffd00f;
-}
-.home .details-graduate-outstanding .swiper-button-prev {
-  left: 0;
+.home .details-graduate-outstanding .swiper-button-next {
+  top: 8rem;
 }
 .home .details-rated {
   margin-top: 4rem;
@@ -2779,23 +2801,23 @@ a:hover {
 .home .details-rated-student__list--box img {
   width: 5rem;
   height: 5rem;
-  margin-top: 1rem;
-  margin-right: 1rem;
+  margin: 0.5rem 1.5rem 0 2rem;
 }
 .home .details-rated-student__list--box--item h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #a1710f;
   font-family: K2D-Bold;
 }
 .home .details-rated-student__list--box--item-faint {
   font-family: K2D-ExtraLight;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #a2a2a2;
 }
 .home .details-rated-student__list--box--item-dark {
   color: #000;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-family: K2D-ExtraLight;
+  margin-bottom: 2rem;
 }
 
 .details-menu {
@@ -2812,7 +2834,7 @@ a:hover {
   border: 1px solid white;
   background-color: white;
   border-radius: 0.5rem;
-  padding: 0.5rem 0.5rem;
+  padding: 1rem 0.5rem;
   text-align: center;
 }
 .details-menu-list__item .hover-gold {
@@ -3159,7 +3181,7 @@ a:hover {
   text-transform: uppercase;
   color: #a0710e;
   font-family: K2D-ExtraBold;
-  line-height: 1.1;
+  line-height: 1.2em;
 }
 .tips-beautify--detail .tips-beautify--detailing {
   margin-top: 4.75rem;
