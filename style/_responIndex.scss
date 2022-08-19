@@ -52,6 +52,8 @@
             }
         }
         .introduction-info{
+         padding-left: 8rem;
+
             .introduction-info-logo{
                 height: 7.1rem;
                 text-align: left;
@@ -62,11 +64,13 @@
             .introduction-info-title{
             font-size: 3.4rem;
             line-height: 4.9rem;
+            text-align: left;
 
 
             }
             .introduction-info-desc{
             font-size: 1.6rem;
+            width: 57%;
 
             }
         }
@@ -204,6 +208,7 @@
         padding: 6.1rem 0;
         
         .container-item{
+            
             .container-footer{
             padding-top: 3.7rem;
 
@@ -211,6 +216,10 @@
         }
         
     }
+}
+
+@include responsive_tablet{
+    
 }
 @include responsive_mobile {
     .top-banner{
@@ -246,6 +255,7 @@
             }
         }
         .introduction-info{
+            padding: 0;
             .introduction-info-logo{
             height: 5.45rem;
             margin-left: 50%;
@@ -255,6 +265,7 @@
             .introduction-info-title{
                 font-size: 1.8rem;
                 padding: 1rem 0 2.2rem 0;
+                text-align: center;
 
             }
             .introduction-info-desc{
@@ -318,7 +329,7 @@
             }
             .container-body{
                 .event-list{
-                    display: inline-block;
+                    // display: inline-block;
                     .event-item{
                         display: flex;
                         align-items: center;
@@ -378,7 +389,29 @@
                 // background-color: #fff;
             }
             .container-body{
+                .slide-container{
+                    .slide-content{
+                        margin: 0;
+                        .card-wrapper{
+                            .swiper-slide{
+                                width: 0!important;
+                                margin-right: 0.7rem!important;
+                                padding-left: 0!important;
+                                padding-right: 0!important;
+                                .image-content{
+                                    padding: 0;
+                                }
+                                .card-content{
+                                    .description{
+                                        font-size: 1.2rem;
+                                        line-height: 1.1;
+                                    }
+                                }
+                            }
+                        }
 
+                    }
+                }
             }
             .container-footer{
                 padding-bottom: 8.6rem;
@@ -386,6 +419,9 @@
            
         }
 
+    }
+    .advise-contactIndex{
+        display: block!important;
     }
     .advise-contact {
         height: 70.7rem;

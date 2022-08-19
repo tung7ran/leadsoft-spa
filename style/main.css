@@ -3293,7 +3293,7 @@ a:hover {
   position: absolute;
   border-right: 2px solid #000000;
   height: 16.5rem;
-  right: -4rem;
+  right: -5.5rem;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -6742,6 +6742,9 @@ a:hover {
     height: 26.75rem;
     position: absolute;
   }
+  .system-introduction .introduction-info {
+    padding-left: 8rem;
+  }
   .system-introduction .introduction-info .introduction-info-logo {
     height: 7.1rem;
     text-align: left;
@@ -6751,9 +6754,11 @@ a:hover {
   .system-introduction .introduction-info .introduction-info-title {
     font-size: 3.4rem;
     line-height: 4.9rem;
+    text-align: left;
   }
   .system-introduction .introduction-info .introduction-info-desc {
     font-size: 1.6rem;
+    width: 57%;
   }
   .top-banner-2 {
     height: 49.9rem;
@@ -6889,6 +6894,9 @@ a:hover {
     height: auto;
     padding: 0 0.5rem;
   }
+  .system-introduction .introduction-info {
+    padding: 0;
+  }
   .system-introduction .introduction-info .introduction-info-logo {
     height: 5.45rem;
     margin-left: 50%;
@@ -6897,6 +6905,7 @@ a:hover {
   .system-introduction .introduction-info .introduction-info-title {
     font-size: 1.8rem;
     padding: 1rem 0 2.2rem 0;
+    text-align: center;
   }
   .system-introduction .introduction-info .introduction-info-desc {
     font-size: 1.4rem;
@@ -6940,9 +6949,6 @@ a:hover {
   }
   .event .container-item .event-heading {
     padding-bottom: 5.35rem;
-  }
-  .event .container-item .container-body .event-list {
-    display: inline-block;
   }
   .event .container-item .container-body .event-list .event-item {
     display: flex;
@@ -7001,8 +7007,27 @@ a:hover {
   .beauty-store .container-item .container-heading {
     padding-bottom: 2rem;
   }
+  .beauty-store .container-item .container-body .slide-container .slide-content {
+    margin: 0;
+  }
+  .beauty-store .container-item .container-body .slide-container .slide-content .card-wrapper .swiper-slide {
+    width: 0 !important;
+    margin-right: 0.7rem !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .beauty-store .container-item .container-body .slide-container .slide-content .card-wrapper .swiper-slide .image-content {
+    padding: 0;
+  }
+  .beauty-store .container-item .container-body .slide-container .slide-content .card-wrapper .swiper-slide .card-content .description {
+    font-size: 1.2rem;
+    line-height: 1.1;
+  }
   .beauty-store .container-item .container-footer {
     padding-bottom: 8.6rem;
+  }
+  .advise-contactIndex {
+    display: block !important;
   }
   .advise-contact {
     height: 70.7rem;
@@ -9099,7 +9124,6 @@ a:hover {
 }
 .system-introduction .introduction-info {
   text-align: center;
-  padding-left: 8rem;
 }
 .system-introduction .introduction-info .introduction-info-logo .info-logo-img {
   width: auto;
@@ -9108,17 +9132,20 @@ a:hover {
 .system-introduction .introduction-info .introduction-info-title {
   text-transform: uppercase;
   font-weight: bold;
-  text-align: left;
-  padding-right: 46%;
   margin-bottom: 1.1rem;
 }
 .system-introduction .introduction-info .introduction-info-desc {
   line-height: 2.5rem;
   text-align: justify;
-  width: 57%;
 }
 
 .top-banner-2 {
+  background-image: url("../images/banner2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
 }
 .top-banner-2 .top-banner-body {
@@ -9145,6 +9172,7 @@ a:hover {
 }
 
 .category-nav {
+  padding: 0 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -9154,6 +9182,7 @@ a:hover {
   border: 1px solid #ffd00f;
   margin: 0.2rem;
   cursor: pointer;
+  padding: 0.5rem 1rem;
 }
 .category-nav .category-item .category-item-link {
   text-transform: uppercase;

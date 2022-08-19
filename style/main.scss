@@ -151,7 +151,6 @@
     }
     .introduction-info {
         text-align: center;
-        padding-left: 8rem;
 
         .introduction-info-logo {
             .info-logo-img {
@@ -162,23 +161,20 @@
         .introduction-info-title {
             text-transform: uppercase;
             font-weight: bold;
-            text-align: left;
-            padding-right: 46%;
             margin-bottom: 1.1rem;
         }
         .introduction-info-desc {
             line-height: 2.5rem;
             text-align: justify;
-            width: 57%;
         }
     }
 }
 
 .top-banner-2 {
-    // background-image: url('../images/banner2.png');
-    // @include backgroundImage();
+    background-image: url('../images/banner2.png');
+    @include backgroundImage();
     position: relative;
-
+    
     .top-banner-body {
         position: absolute;
         display: flex;
@@ -203,6 +199,7 @@
 }
 
 .category-nav {
+    padding: 0 1.5rem;
     justify-content: center;
     flex-wrap: wrap;
     .category-item {
@@ -211,6 +208,7 @@
         border: 1px solid $orange;
         margin: 0.2rem;
         cursor: pointer;
+        padding: 0.5rem 1rem;
         .category-item-link {
             text-transform: uppercase;
         }

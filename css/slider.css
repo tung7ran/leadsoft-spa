@@ -10,12 +10,11 @@
 .slide-content{
   margin: 0 40px;
   overflow: hidden;
-  border-radius: 25px;
 }
 .card{
-  border-radius: 25px;
+  border-radius: 15px;
   background-color: #FFF;
-  border: 0.2rem solid #ffd00f;
+  border: 0.1rem solid #ffd00f;
   /* padding: 0 2rem; */
 }
 .image-content,
@@ -132,6 +131,6 @@
     margin: 0 10px;
   }
   .swiper-navBtn{
-    display: none;
+    /* display: none; */
   }
 }
