@@ -5,6 +5,10 @@
     padding-top: 6rem;
 }
 
+.container-max {
+    margin-bottom: 0;
+}
+
 .home{
     // position: absolute;
     background-color: $white;
@@ -19,7 +23,7 @@
     .details-header{
         margin-top: 2rem;
         p{
-            border: 1px solid $border;
+            border: 1px solid $border-color;
             border-radius: 1rem;
             font-size: 1.6rem;
             font-family: K2D-ExtraLight;
@@ -81,9 +85,37 @@
         &-img__one{
             margin: 3rem auto;
             width: 60rem;
+            position: relative;
+            &--play {
+                position: absolute;
+                width: 8rem;
+                height: 8rem;
+                border: none;
+                background-color: #b9b1ad;
+                left: 45%;
+                top: 40%;
+                padding: 2rem 2rem 2rem 2.5rem;
+                border-radius: 50%;
+                opacity: 0.7;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            margin: 1rem 0;
+            position: relative;
+            
             img{
-                position: relative;
                 width: 100%;
+            }
+
+            &--icon {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                text-align: center;
+                img {
+                }
             }
         }
         &-img__two{
@@ -168,13 +200,10 @@
                     width: 100%;
                 }
             }
-            .swiper-button-next,
-            .swiper-button-prev{
-                height: 0.5rem;
-                color: $orange;
+            .swiper-button-next{
+                top: 8rem
             }
             .swiper-button-prev{
-                left: 0;
             }
         }
     }
@@ -197,24 +226,24 @@
                     img{
                         width: 5rem;
                         height: 5rem;
-                        margin-top: 1rem;
-                        margin-right: 1rem;
+                        margin: 0.5rem 1.5rem 0 2rem;
                     }
                     &--item{
                         h3{
-                            font-size: 1.8rem;
+                            font-size: 2rem;
                             color: $more-color;
                             font-family:  K2D-Bold;
                         }
                         &-faint{
                             font-family: K2D-ExtraLight;
-                            font-size: 1.3rem;
+                            font-size: 1.4rem;
                             color: $color-textP;
                         }
                         &-dark{
                             color: $black;
-                            font-size: 1.2rem;
+                            font-size: 1.6rem;
                             font-family: K2D-ExtraLight;
+                            margin-bottom: 2rem;
                         }
                     }
                 }
@@ -235,8 +264,8 @@
                 color: #808080;
                 border: 1px solid white;
                 background-color: white;
-                border-radius: 0.5rem;
-                padding: 0.5rem 0.5rem;
+                border-radius: 0.5rem;    
+                padding: 1rem 0.5rem;
                 text-align: center;
             }
             .hover-gold{

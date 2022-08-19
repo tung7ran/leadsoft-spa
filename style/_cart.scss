@@ -7,6 +7,15 @@
     max-width: 1200px;
 }
 .cart{
+    .cart-two {
+        position: absolute;
+        display: flex;
+        margin-top: 39rem;
+        margin-left: 29.5rem;
+        width: 24rem;
+        border: 1px solid #ffeb97;
+        padding: 1.3rem 1rem;
+    }
     &-product{
         position: relative;
         padding: 2rem 0;
@@ -22,11 +31,12 @@
                 height: 17rem;
                 margin-top: 5rem;
                 margin-bottom: 4rem;
-                margin-left: 3.4rem;
+                margin-left: 2.4rem;
             }
             &__text{
                 font-size: 1.6rem;
-                text-align: center;
+                text-align: left;
+                margin-left: 3.4rem;
             }
             &__price{
                 font-size: 1.6rem;
@@ -57,7 +67,7 @@
             position: absolute;
             display: flex;
             margin-top: 37rem;
-            margin-left: 0;
+            margin-left: 5rem;
             width: 24rem;
             background-color: $orange;
             padding: 1.4rem 1rem;
@@ -73,13 +83,6 @@
         }
 
         &-store__one{
-            position: absolute;
-            display: flex;
-            margin-top: 37rem;
-            margin-left: 0;
-            width: 24rem;
-            border: 1px solid$border;
-            padding: 1.4rem 1rem;
             i{
                 font-size: 2rem;
             }

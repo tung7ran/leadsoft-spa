@@ -1538,6 +1538,10 @@ a:hover {
 .header-main-nav__list {
   margin-bottom: 6.5rem;
 }
+.header-main-nav__list--item.active a {
+  color: #4d4d4d;
+  font-weight: 600;
+}
 
 .main .main-logo__image {
   width: 8.6rem;
@@ -1585,6 +1589,9 @@ a:hover {
 .main .product-cat__menu li:last-child:after {
   border-right: none !important;
 }
+.main .product-cat__menu li.active a {
+  color: #000;
+}
 .main .product-details .product-list {
   justify-content: space-between;
 }
@@ -1602,6 +1609,7 @@ a:hover {
   max-height: 6rem;
   margin-top: 2.4rem;
   font-size: 1.5rem;
+  color: #000;
 }
 .main .product-details .product-list-item__money {
   display: flex;
@@ -1623,6 +1631,7 @@ a:hover {
   height: 2rem;
   color: #9a7214;
   font-size: 1.6rem;
+  margin-bottom: 0.1rem;
 }
 .main .product-details .product-list-item:nth-child(1) .product-list-item__money, .main .product-details .product-list-item:nth-child(2) .product-list-item__money {
   margin-top: 0;
@@ -1714,7 +1723,7 @@ a:hover {
 .header-contact-right__cart .header-cart--notify {
   position: absolute;
   top: 10.5rem;
-  right: 0;
+  left: -1rem;
   background-color: #fff;
   border-radius: 1rem;
   z-index: 1;
@@ -1776,7 +1785,9 @@ a:hover {
 }
 .header-contact-right__cart .header-cart--notify__info--main-heading {
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  padding-right: 3rem;
+  margin-bottom: 1.4rem;
 }
 .header-contact-right__cart .header-cart--notify__info--bottom-view {
   width: 23rem !important;
@@ -2013,6 +2024,7 @@ a:hover {
   height: 2rem;
   color: #9a7214;
   font-size: 1.6rem;
+  margin-bottom: 0.11rem;
 }
 
 .container-max {
@@ -2024,6 +2036,15 @@ a:hover {
   max-width: 1200px;
 }
 
+.cart .cart-two {
+  position: absolute;
+  display: flex;
+  margin-top: 39rem;
+  margin-left: 29.5rem;
+  width: 24rem;
+  border: 1px solid #ffeb97;
+  padding: 1.3rem 1rem;
+}
 .cart-product {
   position: relative;
   padding: 2rem 0;
@@ -2038,11 +2059,12 @@ a:hover {
   height: 17rem;
   margin-top: 5rem;
   margin-bottom: 4rem;
-  margin-left: 3.4rem;
+  margin-left: 2.4rem;
 }
 .cart-product-header__text {
   font-size: 1.6rem;
-  text-align: center;
+  text-align: left;
+  margin-left: 3.4rem;
 }
 .cart-product-header__price {
   font-size: 1.6rem;
@@ -2072,7 +2094,7 @@ a:hover {
   position: absolute;
   display: flex;
   margin-top: 37rem;
-  margin-left: 0;
+  margin-left: 5rem;
   width: 24rem;
   background-color: #ffd00f;
   padding: 1.4rem 1rem;
@@ -2085,15 +2107,6 @@ a:hover {
   padding-left: 3rem;
   font-size: 1.75rem;
   font-family: Gilroy-Bold;
-}
-.cart-product-store__one {
-  position: absolute;
-  display: flex;
-  margin-top: 37rem;
-  margin-left: 0;
-  width: 24rem;
-  border: 1px solid #ffeb97;
-  padding: 1.4rem 1rem;
 }
 .cart-product-store__one i {
   font-size: 2rem;
@@ -2225,7 +2238,7 @@ a:hover {
 .container .order-title {
   font-size: 2.5rem;
   font-family: Gilroy-XBold;
-  margin-left: 10%;
+  margin-left: 17%;
 }
 .container .pay {
   margin-top: 3rem;
@@ -2298,7 +2311,7 @@ a:hover {
 }
 .container .pay-products {
   padding: 2rem 1.5rem;
-  border: 1px solid #c6c6c6;
+  border: 1px solid #ffd00f;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
   border-bottom-left-radius: 2rem;
@@ -2343,7 +2356,7 @@ a:hover {
   content: "";
   position: absolute;
   margin-top: 2.15rem;
-  width: 100%;
+  width: 94%;
   border-bottom: 1px solid #c6c6c6;
   padding-bottom: 2rem;
 }
@@ -2367,7 +2380,7 @@ a:hover {
   content: "";
   position: absolute;
   margin-top: 2.15rem;
-  width: 100%;
+  width: 94%;
   border-bottom: 1px solid #c6c6c6;
   padding-bottom: 2rem;
 }
@@ -2392,13 +2405,11 @@ a:hover {
   text-decoration: none !important;
 }
 .container .pay-products-header__order--text h2 {
-  padding: 1rem 0rem;
-  margin-top: 6rem;
-  margin-left: 18rem;
+  padding: 1.2rem 0 1rem;
+  margin: 6rem auto 0;
   width: 23rem;
   height: 4.3rem;
   text-align: center;
-  border: 1px solid #c6c6c6;
   background-color: #ffd00f;
   color: #000;
   font-family: Gilroy-XBold;
@@ -2524,6 +2535,10 @@ a:hover {
   -webkit-text-stroke: 2px #a1710f;
 }
 
+.pd-05 {
+  padding: 0.5rem;
+}
+
 .content {
   margin-top: 4rem;
 }
@@ -2546,8 +2561,11 @@ a:hover {
   margin-top: 5rem;
   margin-bottom: 14rem;
 }
+.content-product-training__image img {
+  width: 100%;
+  height: 100%;
+}
 .content-product-image {
-  width: 25rem;
   position: relative;
   border: 3px solid #ffd00f;
   border-top-left-radius: 3rem;
@@ -2561,7 +2579,7 @@ a:hover {
   padding-top: 4rem;
   padding-bottom: 1rem;
   margin-top: -3rem;
-  width: 25rem;
+  width: 100%;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }
@@ -2599,6 +2617,10 @@ a:hover {
   padding-top: 6rem;
 }
 
+.container-max {
+  margin-bottom: 0;
+}
+
 .home {
   background-color: #fff;
   border: 1px solid #fff;
@@ -2614,7 +2636,7 @@ a:hover {
   margin-top: 2rem;
 }
 .home .details-header p {
-  border: 1px solid #ffeb97;
+  border: 1px solid #b38c3c;
   border-radius: 1rem;
   font-size: 1.6rem;
   font-family: K2D-ExtraLight;
@@ -2669,10 +2691,34 @@ a:hover {
 .home .details-expert-img__one {
   margin: 3rem auto;
   width: 60rem;
+  position: relative;
+  margin: 1rem 0;
+  position: relative;
+}
+.home .details-expert-img__one--play {
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  border: none;
+  background-color: #b9b1ad;
+  left: 45%;
+  top: 40%;
+  padding: 2rem 2rem 2rem 2.5rem;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.home .details-expert-img__one--play img {
+  width: 100%;
+  height: 100%;
 }
 .home .details-expert-img__one img {
-  position: relative;
   width: 100%;
+}
+.home .details-expert-img__one--icon {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
 }
 .home .details-expert-img__two {
   position: absolute;
@@ -2752,13 +2798,8 @@ a:hover {
 .home .details-graduate-outstanding__move--icon {
   width: 100%;
 }
-.home .details-graduate-outstanding .swiper-button-next,
-.home .details-graduate-outstanding .swiper-button-prev {
-  height: 0.5rem;
-  color: #ffd00f;
-}
-.home .details-graduate-outstanding .swiper-button-prev {
-  left: 0;
+.home .details-graduate-outstanding .swiper-button-next {
+  top: 8rem;
 }
 .home .details-rated {
   margin-top: 4rem;
@@ -2779,23 +2820,23 @@ a:hover {
 .home .details-rated-student__list--box img {
   width: 5rem;
   height: 5rem;
-  margin-top: 1rem;
-  margin-right: 1rem;
+  margin: 0.5rem 1.5rem 0 2rem;
 }
 .home .details-rated-student__list--box--item h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #a1710f;
   font-family: K2D-Bold;
 }
 .home .details-rated-student__list--box--item-faint {
   font-family: K2D-ExtraLight;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #a2a2a2;
 }
 .home .details-rated-student__list--box--item-dark {
   color: #000;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-family: K2D-ExtraLight;
+  margin-bottom: 2rem;
 }
 
 .details-menu {
@@ -2812,7 +2853,7 @@ a:hover {
   border: 1px solid white;
   background-color: white;
   border-radius: 0.5rem;
-  padding: 0.5rem 0.5rem;
+  padding: 1rem 0.5rem;
   text-align: center;
 }
 .details-menu-list__item .hover-gold {
@@ -3159,7 +3200,7 @@ a:hover {
   text-transform: uppercase;
   color: #a0710e;
   font-family: K2D-ExtraBold;
-  line-height: 1.1;
+  line-height: 1.2em;
 }
 .tips-beautify--detail .tips-beautify--detailing {
   margin-top: 4.75rem;
