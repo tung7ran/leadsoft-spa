@@ -2726,12 +2726,12 @@ a:hover {
 .home .details-graduate-outstanding__list {
   display: flex;
   justify-content: center;
+  margin-left: 2.5em;
 }
-.home .details-graduate-outstanding__list--item--images {
-  width: 14rem;
-  height: 14rem;
-  margin-left: 50%;
-  transform: translateX(-50%);
+.home .details-graduate-outstanding__list--item {
+  width: 0 !important;
+  margin: 0 3.2rem;
+  padding: 0;
 }
 .home .details-graduate-outstanding__list--item--images img {
   width: 100%;
@@ -2741,7 +2741,6 @@ a:hover {
 .home .details-graduate-outstanding__list--item--text {
   font-family: K2D-Bold;
   color: #a1710f;
-  max-width: 16rem;
   text-align: center;
   padding: 2rem 0 1rem 0;
 }
@@ -2756,6 +2755,9 @@ a:hover {
 .home .details-graduate-outstanding .swiper-button-prev {
   height: 0.5rem;
   color: #ffd00f;
+}
+.home .details-graduate-outstanding .swiper-button-next {
+  right: 0;
 }
 .home .details-graduate-outstanding .swiper-button-prev {
   left: 0;
