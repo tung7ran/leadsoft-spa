@@ -1605,7 +1605,7 @@ a:hover {
 .main .product-cat__menu li:hover a {
   cursor: pointer;
 }
-.main .product-details {
+.main .product .store {
   display: none;
 }
 .main .product-details .product-list {

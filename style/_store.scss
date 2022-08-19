@@ -98,9 +98,10 @@
                 }
             }
         }
-
-        &-details{
+        .store {
             display: none;
+        }
+        &-details{
             .product-list {
                 justify-content: space-between;
                 &-item {
