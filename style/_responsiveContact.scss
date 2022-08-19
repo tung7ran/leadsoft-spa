@@ -12,8 +12,16 @@
     }
 }
 @include responsive_mobile{
+    .mt-10 {
+        margin-top: 0 !important;
+    }
     .contact-address-item{
         margin: 0 3rem;
+        &__form{
+            &-contact {
+                padding: 0;
+            }
+        }
     }
     .contact-address-item__maps--link{
         width: 100%;
