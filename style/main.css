@@ -1458,8 +1458,8 @@ a:hover {
 }
 .beautify-program-list__item--calendar {
   position: absolute;
-  top: -3.1rem;
-  right: 6.8rem;
+  top: -3.8rem;
+  right: 3.8rem;
   width: 6.2rem;
   height: 6.2rem;
   border-radius: 50%;
@@ -2550,6 +2550,7 @@ a:hover {
 }
 .content-img {
   text-align: center;
+  padding-left: 5rem;
 }
 .content-img img {
   width: 12rem;
@@ -2607,10 +2608,11 @@ a:hover {
   height: 5rem;
   margin-top: 1.5rem;
   padding-left: 4rem;
-  width: 19rem;
+  width: 23rem;
   margin-left: 4rem;
   padding-top: 0.5rem;
   text-align: center;
+  padding-right: 1rem;
 }
 .content .training-col {
   margin-bottom: 6rem;
@@ -2872,7 +2874,7 @@ a:hover {
 .details-news {
   border: 1px solid white;
   background-color: white;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   padding: 2rem 0.5rem;
   text-align: center;
 }
@@ -2959,7 +2961,7 @@ a:hover {
 }
 .main-info-image .main-content-left__advise {
   position: relative;
-  border-radius: 2rem;
+  border-radius: 3rem;
   padding: 1rem 3rem;
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -2997,15 +2999,15 @@ a:hover {
 }
 .main-info-image .main-content-right__two {
   position: absolute;
-  left: 5.2rem;
-  bottom: 3.9rem;
+  left: 4.8rem;
+  bottom: 0.1rem;
   width: 30.3rem;
   height: 30.4rem;
 }
 .main-info-image .main-content-right__three {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -6.5rem;
   width: 21.2rem;
   height: 21.1rem;
 }
@@ -3039,6 +3041,7 @@ a:hover {
 .main-info .main-inftras-content__logo {
   margin-top: 11.8rem;
   margin-bottom: 0.5rem;
+  padding-left: 3rem;
 }
 .main-info .main-inftras-content__logo img {
   width: 8.4rem;
@@ -3176,7 +3179,7 @@ a:hover {
   font-size: 2.8rem;
   font-family: UTM-AvoBold;
   margin-top: 1rem;
-  padding: 0 40%;
+  padding: 0px 42%;
   line-height: 1.2;
 }
 .main-papers-content__image {
@@ -3235,7 +3238,8 @@ a:hover {
   font-family: K2D-ExtraLight;
 }
 .tips-beautify--detail .tips-beautify--detailing__item--images {
-  width: 100%;
+  width: 60%;
+  margin: 0 auto 3rem;
 }
 .tips-beautify--detail .tips-beautify--detailing__item--images img {
   width: 100%;
@@ -3398,6 +3402,7 @@ a:hover {
   font-size: 1.8rem;
   position: relative;
   margin: 2.5rem 0;
+  padding: 1rem 2.2rem;
 }
 .service--detail__btn::after {
   content: "";
@@ -3417,6 +3422,9 @@ a:hover {
   border-radius: 2rem;
   border: 1px solid #a1710f;
   padding: 2.05rem;
+  width: 70%;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 .service--detail .service--detailing__item {
   padding-bottom: 4rem;
@@ -3496,13 +3504,18 @@ a:hover {
   height: 100%;
 }
 .service--detail .service--detailing__item--heading {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: K2D-Bold;
   color: #a1710f;
   line-height: 1.2;
   text-align: center;
   transform: translateX(-50%);
   margin: 2.35rem 0 3.1rem 50%;
+  padding: 0 2rem;
+}
+.service--detail .service--detailing__item--contact {
+  width: 90%;
+  margin: 0 auto;
 }
 .service--detail .service--detailing__item--contact--form .form-group .form-control {
   height: 4.35rem;
@@ -3537,7 +3550,7 @@ a:hover {
   background-color: #fff;
   border-radius: 2rem;
   margin-bottom: 2rem;
-  padding: 2.75rem 0;
+  padding: 1rem 0 1.75rem;
 }
 .service .detail-news--title {
   font-size: 1.6rem;
@@ -3773,6 +3786,16 @@ a:hover {
   padding: 2rem;
   height: 13.4rem;
 }
+.form--register__inner--contact select,
+.form--contact__inner--contact select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(../images/arrowdown.png);
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 1.5rem;
+  background-size: 1.5rem 1.1rem;
+}
 .form--register__inner--contact .send-contact__btn,
 .form--contact__inner--contact .send-contact__btn {
   font-size: 1.6rem;
@@ -3996,6 +4019,7 @@ a:hover {
   margin: 0 auto;
   padding: 4.9rem 9.4rem 8.8rem 6.3rem;
   background-color: #fff;
+  border-radius: 2rem;
 }
 .main-policy-security-content__heading {
   font-size: 2.2rem;
@@ -4053,6 +4077,7 @@ a:hover {
   margin: 0 auto;
   padding: 4.9rem 9.4rem 8.8rem 6.3rem;
   background-color: #fff;
+  border-radius: 2rem;
 }
 .main-policy-content__heading {
   font-size: 2.2rem;
@@ -4095,6 +4120,7 @@ a:hover {
   margin: 0 auto;
   padding: 4.9rem 9.4rem 3.8rem 6.3rem;
   background-color: #fff;
+  border-radius: 2rem;
 }
 .main-recruit-content__heading {
   font-size: 2.2rem;
@@ -4126,6 +4152,7 @@ a:hover {
 .main-recruit-content__skin {
   padding-left: 1.3rem;
   border-radius: 1.2rem;
+  border: 1px solid #a1710f;
 }
 .main-recruit-content__skin--title {
   font-size: 2rem;
@@ -4153,7 +4180,7 @@ a:hover {
   position: relative;
   margin: 1.2rem auto 1.4rem;
   color: #a1710f;
-  background-image: linear-gradient(#f3e59c, #ffd113);
+  background-image: linear-gradient(to right, #f3e59c, #ffd113);
   border-radius: 1.6rem;
   padding: 0.5rem 1rem;
   font-family: K2D-Bold;
@@ -8019,7 +8046,8 @@ a:hover {
     display: none;
   }
   .promotion--detail__item--images {
-    width: 56.7rem;
+    width: 74.7rem;
+    height: 70.3rem;
   }
 }
 @media (max-width: 480px) {
