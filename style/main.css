@@ -2805,18 +2805,11 @@ a:hover {
 .home .details-graduate-outstanding__move--icon {
   width: 100%;
 }
-
-.home .details-graduate-outstanding .swiper-button-next,
-.home .details-graduate-outstanding .swiper-button-prev {
-  height: 0.5rem;
-  color: #ffd00f;
+.home .details-graduate-outstanding .swiper-button-next {
+  top: 8rem;
 }
 .home .details-graduate-outstanding .swiper-button-next {
   right: 0;
-}
-.home .details-graduate-outstanding .swiper-button-prev {
-  left: 0;
-
 }
 .home .details-rated {
   margin-top: 4rem;
@@ -6941,8 +6934,17 @@ a:hover {
   .beauty-store {
     padding: 6.1rem 0;
   }
+  .beauty-store .container-item .container-body .slide-container .slide-content .card-wrapper .card {
+    width: 0 !important;
+    margin-right: 1rem !important;
+  }
   .beauty-store .container-item .container-footer {
     padding-top: 3.7rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .top-banner .top-banner-1 {
+    height: 27.55rem;
   }
 }
 @media (max-width: 480px) {

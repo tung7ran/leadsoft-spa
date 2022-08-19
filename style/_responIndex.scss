@@ -17,7 +17,7 @@
     }
     .content-container {
         padding: 18.4rem 0 14rem;
-    margin: 18rem 0 29rem 0;
+        margin: 18rem 0 29rem 0;
 
     }
     .container-item{
@@ -208,7 +208,18 @@
         padding: 6.1rem 0;
         
         .container-item{
-            
+            .container-body{
+                .slide-container{
+                    .slide-content{
+                        .card-wrapper{
+                            .card{
+                                width: 0!important;
+                                margin-right: 1.0rem!important;
+                            }
+                        }
+                    }
+                }
+            }
             .container-footer{
             padding-top: 3.7rem;
 
@@ -219,7 +230,11 @@
 }
 
 @include responsive_tablet{
-    
+    .top-banner{
+        .top-banner-1{
+            height: 27.55rem;
+        }
+    }
 }
 @include responsive_mobile {
     .top-banner{
