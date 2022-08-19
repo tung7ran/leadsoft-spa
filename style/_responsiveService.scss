@@ -32,7 +32,8 @@
             }
             &__item--reason--list--title{
                 font-size: 1.6rem !important;
-            }
+            } 
+            
             .cell{
                 width: 88%;
             }
@@ -40,7 +41,7 @@
                 width: 100% !important;
             }
             &__item--heading{
-                font-size: 2rem !important;
+                font-size: 1.8rem !important;
             }
             .horizontal{
                 display: block;
@@ -52,6 +53,164 @@
             }
             &__item--result--list__item{
                 margin-bottom: 2rem;
+            }
+            &__item{
+                &--result{
+                    width: 75%;
+                    margin: 0 auto;
+                }
+            }
+            .form-contact {
+                width: 100% !important;
+            }
+        }
+    }
+    .service--category-one__mobile {
+        display: block;
+        height: 90rem;
+        z-index: 2;
+        .detail-news {
+            // background-color: $white;
+            border-radius: 2rem;
+            margin-bottom: 2rem;
+            padding: 1rem 0 1.75rem;
+            height: 100%;
+    
+            &--title {
+                font-size: 1.6rem;
+                text-transform: uppercase;
+                font-family: Gilroy-XBold;
+                text-align: center;
+                color: $color-title;
+                padding-bottom: 1.8rem;
+            }
+    
+            &--menu {
+                padding: 0 1rem;
+    
+                &__list {
+                    margin-bottom: 2.35rem;
+    
+                    &--line {
+                        width: 100%;
+                        height: 0.1rem;
+                    }
+    
+                    &--item {
+                        display: flex;
+                        position: relative;
+    
+                        &--laser {
+                            background-image: url(../images/service/img4.png);
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            -o-object-fit: cover;
+                            object-fit: cover;
+                            width: 36%;
+                            height: 7rem;
+                            text-transform: uppercase;
+                        }
+    
+                        &--ex2 {
+                            background-image: url(../images/service/img5.png);
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            -o-object-fit: cover;
+                            object-fit: cover;
+                            width: 36%;
+                            height: 7rem;
+                            text-transform: uppercase;
+                        }
+    
+                        &--ex2-text {
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            padding-left: 1rem;
+                            padding-top: 1rem;
+                        }
+    
+                        &--depth {
+                            background-image: url(../images/service/img6.png);
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            -o-object-fit: cover;
+                            object-fit: cover;
+                            width: 36%;
+                            height: 7rem;
+                            text-transform: uppercase;
+                        }
+    
+                        &--depth-text {
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            padding-left: 1rem;
+                            padding-top: 1rem;
+                        }
+    
+                        &--bs4 {
+                            background-image: url(../images/service/img7.png);
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            -o-object-fit: cover;
+                            object-fit: cover;
+                            width: 36%;
+                            height: 7rem;
+                            text-transform: uppercase;
+                        }
+    
+                        &--bs4-text {
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            padding-left: 1rem;
+                            padding-top: 1rem;
+                        }
+    
+                        &--secret {
+                            background-image: url(../images/service/img8.png);
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            -o-object-fit: cover;
+                            object-fit: cover;
+                            width: 36%;
+                            height: 7rem;
+                            text-transform: uppercase;
+    
+                        }
+    
+                        &--images {
+                            background-image: url(../images/trainning/22.png);
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            -o-object-fit: cover;
+                            object-fit: cover;
+                            width: 100%;
+                            height: 9rem;
+                        }
+    
+                        &--desc {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            text-transform: uppercase;
+                            font-family: Gilroy-Bold;
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                            max-width: 60%;
+                            padding-top: 1rem;
+                        }
+                    }
+                }
             }
         }
     }
