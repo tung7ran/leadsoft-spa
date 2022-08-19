@@ -59,7 +59,7 @@
 
                     &__advise {
                         position: relative;
-                        border-radius: 2rem;
+                        border-radius: 3rem;
                         padding: 1rem 3rem;
                         font-size: 1.8rem;
                         text-transform: uppercase;
@@ -103,8 +103,8 @@
 
                     &__two {
                         position: absolute;
-                        left: 5.2rem;
-                        bottom: 3.9rem;
+                        left: 4.8rem;
+                        bottom: 0.1rem;
                         width: 30.3rem;
                         height: 30.4rem;
                     }
@@ -112,7 +112,7 @@
                     &__three {
                         position: absolute;
                         right: 0;
-                        bottom: 0;
+                        bottom: -6.5rem;
                         width: 21.2rem;
                         height: 21.1rem;
                     }
@@ -153,6 +153,7 @@
                 &__logo {
                     margin-top: 11.8rem;
                     margin-bottom: 0.5rem;
+                    padding-left: 3rem;
 
                     img {
                         width: 8.4rem;
@@ -330,7 +331,7 @@
                 font-size: 2.8rem;
                 font-family: UTM-AvoBold;
                 margin-top: 1rem;
-                padding: 0 40%;
+                padding: 0px 42%;
                 line-height: 1.2;
             }
 

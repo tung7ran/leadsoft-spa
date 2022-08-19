@@ -25,6 +25,12 @@
     &-nav{
         &__list{
             margin-bottom: 6.5rem;
+            &--item.active {
+                a {
+                    color: $header-color;
+                    font-weight: 600;
+                }
+            }
         }
     }
 }
@@ -79,6 +85,11 @@
                 li:last-child:after {
                     border-right:none !important;
                 }
+                li.active {
+                    a {
+                        color: $black;
+                    }
+                }
             }
         }
 
@@ -100,6 +111,7 @@
                         max-height: 6rem;
                         margin-top: 2.4rem;
                         font-size: 1.5rem;
+                        color: $black;
                     }
                     &__money {
                         display:flex;
@@ -119,6 +131,7 @@
                                 height: 2rem;
                                 color: $brown;
                                 font-size: 1.6rem;
+                                margin-bottom: 0.1rem;
                             }
                         }
                     }

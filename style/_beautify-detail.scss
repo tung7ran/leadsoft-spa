@@ -14,7 +14,7 @@
             text-transform: uppercase;
             color: $color-title;
             font-family: K2D-ExtraBold;
-            line-height: 1.1;
+            line-height: 1.2em;
         }
 
         .tips-beautify--detailing {
@@ -50,9 +50,8 @@
                 }
 
                 &--images {
-                    width: 100%;
-
-                    // height: 100%;
+                    width: 60%;
+                    margin: 0 auto 3rem;
                     img {
                         width: 100%;
                         height: 100%;
