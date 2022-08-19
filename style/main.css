@@ -6952,6 +6952,9 @@ a:hover {
   .sale .sale-heading {
     background-color: #fdf9e8;
   }
+  .sale .sale-heading-nav {
+    position: absolute;
+  }
   .sale-container {
     background-color: #fdf9e8;
     padding: 17.5rem 0 7rem 0;
@@ -6968,8 +6971,104 @@ a:hover {
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
+  .top-banner {
+    margin-bottom: 2rem;
+  }
   .top-banner .top-banner-1 {
-    height: 27.55rem;
+    height: 41rem;
+  }
+  .container-item .container-heading {
+    padding-bottom: 6.5rem;
+  }
+  .container-item .container-heading .container-item-logo {
+    height: 7.6rem;
+  }
+  .container-item .container-heading .container-item-title {
+    font-size: 2.5rem;
+  }
+  .system-introduction .introduction-info .introduction-info-logo {
+    height: 7.6rem;
+  }
+  .system-introduction .introduction-info .introduction-info-title {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+  .system-introduction .introduction-info .introduction-info-desc {
+    font-size: 1.6rem;
+  }
+  .system-introduction .introduction-image {
+    display: flex;
+    margin-top: 3.5rem;
+    margin-bottom: 4rem;
+  }
+  .system-introduction .introduction-image .introduction-image-1,
+.system-introduction .introduction-image .introduction-image-2,
+.system-introduction .introduction-image .introduction-image-3 {
+    width: 33.3333333333%;
+    height: auto;
+    padding: 0 0.5rem;
+  }
+  .top-banner-2 {
+    height: 34rem;
+  }
+  .top-banner-2 .top-banner-body {
+    height: 22rem;
+    top: 6rem;
+  }
+  .top-banner-2 .top-banner-body .top-banner-body-image {
+    width: auto;
+    height: 100%;
+    padding: 0 2rem;
+  }
+  .top-banner-3 {
+    height: 30rem;
+  }
+  .treatment-result {
+    padding-top: 2.5rem;
+  }
+  .treatment-result .container-item .container-body .treatment-category .category-nav .category-item .category-item-link {
+    font-size: 1.8rem;
+  }
+  .treatment-result .container-item .container-body .tab-pane .treatment-result-list .treatment-result-item .treatment-result-desc {
+    font-size: 1.8rem;
+  }
+  .event {
+    margin-top: 3.5rem;
+  }
+  .event .container-item .container-body .event-list .event-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffd00f;
+    border-radius: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+  }
+  .event .container-item .container-body .event-list .event-item .event-item-image {
+    height: 24.5rem;
+    padding-right: 6rem;
+    position: relative;
+  }
+  .event .container-item .container-body .event-list .event-item .event-item-image::after {
+    border-right: 1px solid #000000;
+    height: 15rem;
+    left: 0;
+    right: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .event .container-item .container-body .event-list .event-item .event-item-text .event-desc,
+.event .container-item .container-body .event-list .event-item .event-item-text .event-title {
+    max-width: 35.5rem;
+    margin: 2rem 0;
+  }
+  .event .container-item .container-footer {
+    margin: 1rem 0 5rem 0;
+  }
+  .sale .sale-heading {
+    display: none;
+  }
+  .advise-contactIndex {
+    margin-top: 2rem;
   }
 }
 @media (max-width: 480px) {
@@ -9330,7 +9429,6 @@ a:hover {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.6rem;
-  padding: 3.5rem 0 1.5rem 0;
 }
 .event .container-item .container-body .event-list .event-item .event-desc {
   max-width: 23.4rem;
@@ -9370,7 +9468,6 @@ a:hover {
   border-top-right-radius: 70rem;
 }
 .sale .sale-heading-nav {
-  position: absolute;
   text-align: center;
   left: 0;
   right: 0;
