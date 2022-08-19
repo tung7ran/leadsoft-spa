@@ -1,5 +1,7 @@
 @import 'variables';
-
+.mb-20 {
+    margin-bottom: 20rem !important;
+}
 .end-product{
     text-align: center;
     &-img{
@@ -36,24 +38,23 @@
     margin-top: 5.5rem;
     &__comeback{
         display: flex;
-        width: 22rem;
+        width: 18rem;
         background-color: $orange;
         padding: 1.4rem 1rem;
         i{
             font-size: 2rem;
-            padding-left: 1rem;
         }
         h3{
-            padding-left: 1rem;
+            padding-left: 0.5rem;
             font-size: 1.6rem;
             font-family: Gilroy-Bold;
         }
     }
     &__edit{
-        width: 22rem;
+        width: 20rem;
         border: 1px solid $border;
         padding: 1.4rem 1rem;
-        margin-left: 2rem;
+        margin-left: 1rem;
         i{
             font-size: 2rem;
         }
