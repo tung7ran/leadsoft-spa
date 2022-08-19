@@ -2,6 +2,7 @@ $res_mobile : "(max-width: 480px)";
 $res_tablet : "(min-width: 481px) and (max-width: 768px)";
 $res_pclow : "(min-width: 991px)";
 
+
 @mixin responsive_mobile() {
   @media #{$res_mobile} {
     @content;

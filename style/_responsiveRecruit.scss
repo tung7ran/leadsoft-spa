@@ -25,3 +25,22 @@
         }
     }
 }
+
+@include responsive_tablet{
+    .container-recruit{
+        padding: 0rem 0rem;
+    }
+    .main-recruit{
+        padding-top: 2rem;
+        padding-bottom: 10rem;
+        &-content{
+            width: 100%;
+            padding: 3rem 2rem;
+            &__heading{
+                margin-right: 0rem;
+                text-align: center;
+                padding: 2rem 0;
+            }
+        }
+    }        
+}

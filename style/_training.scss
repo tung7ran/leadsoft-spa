@@ -99,7 +99,7 @@
             &__icon{
                 width: 8rem;
                 position: relative;
-                // z-index: 100;
+                z-index: 1;
             }
             &__text{
                 position: absolute;
@@ -120,8 +120,8 @@
                 text-align: center;
             }
         }
-        .col{
-            // padding-bottom: 16rem;
-        }
+    }
+    .training-col{
+        margin-bottom: 6rem;
     }
 }
