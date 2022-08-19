@@ -14,6 +14,7 @@
         margin: 0 auto;
         padding: 4.9rem 9.4rem 3.8rem 6.3rem;
         background-color:$white;
+        border-radius: 2rem;
         &__heading {
             font-size: 2.2rem;
             font-family: K2D-Bold;
@@ -44,6 +45,7 @@
         &__skin {
             padding-left: 1.3rem;
             border-radius: 1.2rem;
+            border: 1px solid $more-color;
             &--title{
                 font-size: 2rem;
                 color: $more-color;           
@@ -70,7 +72,7 @@
                 position: relative;
                 margin: 1.2rem auto 1.4rem;
                 color: $more-color;
-                background-image: linear-gradient(#f3e59c,#ffd113);
+                background-image: linear-gradient(to right,#f3e59c,#ffd113);
                 border-radius: 1.6rem;
                 padding: 0.5rem 1rem;
                 font-family: K2D-Bold;
