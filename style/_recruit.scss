@@ -22,6 +22,7 @@
             margin-bottom: 1.8rem;
             margin-right: 33rem;
             text-transform: uppercase;
+            line-height: 1.24em;
         }
         &__text {
             line-height: 1.3em;
@@ -87,6 +88,8 @@
         }
         .recruit-pagination {
             margin-top: 6rem;
+            margin-left: 5rem;
+
             &-list{
                 list-style: none;
                 justify-content:center;

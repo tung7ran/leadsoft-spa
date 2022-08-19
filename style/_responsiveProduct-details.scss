@@ -1,5 +1,14 @@
 @include responsive_pclow{
-
+    .main {
+        .product-details { 
+            margin: 0 1.5rem;
+            .product-one { 
+                &-border::after {
+                    left: 0;
+                }
+            }
+        }
+    }
 }
 @include responsive_mobile {
     .header {

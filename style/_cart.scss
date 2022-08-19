@@ -11,8 +11,8 @@
         position: absolute;
         display: flex;
         margin-top: 37rem;
-        margin-left: -10rem;
-        width: 24rem;
+        margin-left: -15rem;
+        width: 20rem;
         border: 1px solid #ffeb97;
         padding: 1.3rem 1rem;
         background-color: transparent;
@@ -69,7 +69,7 @@
             display: flex;
             margin-top: 37rem;
             margin-left: 5rem;
-            width: 24rem;
+            width: 19rem;
             background-color: $orange;
             padding: 1.4rem 1rem;
             border: none;
@@ -78,17 +78,15 @@
                     font-size: 2rem;
                 }
                 h3{
-                    padding-left: 2rem;
                     font-size: 1.75rem;
                     font-family: Gilroy-Bold;
                 }
             }
             i{
                 font-size: 2rem;
-                padding-left: 2rem;
             }
             h3{
-                padding-left: 3rem;
+                padding-left: 0.5rem;
                 font-size: 1.75rem;
                 font-family: Gilroy-Bold;
             }
