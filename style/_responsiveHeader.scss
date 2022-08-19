@@ -81,110 +81,138 @@
                     }
                 }
             }
-            .header-contact {
-                padding: 0 0.7rem;
+        }
+        &-contact {
+            padding: 0 0.7rem;
 
-                &-left {
-                    width: 26.15%;
+            &-left {
+                width: 26.15%;
 
-                    form {
+                form {
+                    width: 100%;
+                }
+
+                &__search{
+                    height: 3.65rem;
+                    padding: 0 1rem;
+                    font-size: 1.2rem;
+                }
+
+                &__button{
+                    &--icon {
+                        width: 2.1rem;
+                        height: 2.1rem;
+                    }
+                }
+            }
+
+            &-right {
+                align-items: center;
+                margin-right: 1.4rem;
+
+                &__cart {
+                    background-color: #ffd00f;
+                    width: 4.5rem;
+                    height: 3.5rem;
+                    border-radius: 50%;
+                    padding: 0.5rem;
+                    > button {
+                        background-color: transparent;
                         width: 100%;
-                    }
-
-                    &__search{
-                        height: 3.65rem;
-                        padding: 0 1rem;
-                        font-size: 1.4rem;
-                    }
-
-                    &__button{
-                        &--icon {
-                            width: 2.1rem;
-                            height: 2.1rem;
+                        height: 100%;
+                        padding: 1rem;
+                        img {
+                            width: 2rem;
+                            height: 2rem;
                         }
+                    }
+
+                    &--number {
+                        top: -1.2rem;
+                        right: -0.6rem;
+                        padding: 0.2rem 0.4rem;
+                        font-size: 1.2rem;
                     }
                 }
 
-                &-right {
-                    align-items: center;
+                &__tel {
+                    height: 3.65rem;
+                    width: 18rem;
 
-                    &__cart {
-                        button {
-                            width: 3.65rem;
-                            height: 3.65rem;
-                            padding: 1rem;
-                        }
-
-                        &--number {
-                            top: -1.2rem;
-                            right: -0.6rem;
-                            padding: 0.2rem 0.4rem;
-                            font-size: 1.2rem;
-                        }
+                    &--number {
+                        font-size: 1.2rem;
+                        padding: 0;
+                        line-height: 3.65rem;
                     }
+                }
 
-                    &__tel {
-                        height: 3.65rem;
-                        width: 18rem;
+                .header-cart--notify {
+                    width: 25rem;
+                    height: 25rem;
+                    top: 5.5rem;
+                    right: 0;
+                    left: -6rem;
+                
 
-                        &--number {
-                            font-size: 1.4rem;
-                            padding: 0;
-                            line-height: 3.65rem;
-                        }
-                    }
-
-                    .header-cart--notify {
-                        width: 25rem;
-                        height: 25rem;
-                        top: 5.5rem;
-                        right: -17rem;
-                    
-
-                        &__info {
+                    &__info {
+                        width: 100%;
+                        height: 100%;
+                        
+                        &--top {
                             width: 100%;
-                            height: 100%;
-                            
-                            &--top {
-                                width: 100%;
 
-                                &-image { 
-                                    height: 9rem;
-                                    width: 5rem;  
-                                    margin-left: 1.2rem;  
-                                    margin-top: 2rem;
+                            &-image { 
+                                height: 6rem;
+                                width: 4rem;
+                                margin-left: 1.2rem;
+                                margin-top: 1rem;;
+                            }
+
+                            &-detail {
+                                padding-right: 0;
+                                padding-top: 2.4rem;
+                                h3 {
+                                    font-size: 1.2rem;
                                 }
 
-                                &-detail {
-                                    padding-right: 0;
-                                    padding-top: 3.2rem;
-
-                                    .top-detail-amount {
-                                        margin-top: 0.4rem;
-                                    }
-                                }
-
-                                &-icon {
-                                    right: -0.4rem;
-                                    z-index: -1;
-
-                                    > button {
-                                        padding: 0;
-                                    }
+                                .top-detail-amount {
+                                    margin-top: 0.4rem;
+                                    font-size: 1.2rem;
                                 }
                             }
 
-                            &--main {
-                                margin-left: 0;
-                            }
+                            &-icon {
+                                right: -0.4rem;
+                                z-index: -1;
 
-                            &--bottom { 
-                                margin-top: 1.6rem;
-
-                                &-view {
-                                    padding: 0 !important;
-                                    font-size: 1.6rem
+                                > button {
+                                    padding: 0;
+                                    svg {
+                                        padding: 0.8rem;
+                                    }
                                 }
+                            }
+                        }
+
+                        &--main {
+                            margin-left: 0;
+                            &-heading {
+                                font-size: 1.6rem;
+                                padding-right: 0;
+                            }
+                        }
+
+                        &--bottom { 
+                            margin-top: 1.6rem;
+
+                            &-view {
+                                padding: 0 !important;
+                                font-size: 1.4rem;
+                                width: 21rem !important;
+                            }
+                            &-pay {
+                                font-size: 1.4rem;
+                                width: 21rem !important;
                             }
                         }
                     }
@@ -296,6 +324,7 @@
             &-right {
                 justify-content: space-between;
                 align-items: center;
+                padding-left: 7rem;
 
                 &__cart {
                     width: 4.1rem !important;
