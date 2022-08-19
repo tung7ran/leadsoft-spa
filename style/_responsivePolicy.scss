@@ -24,10 +24,10 @@
 }
 
 @include responsive_tablet{
-    .container-policy{
-        padding-left: 0rem;
-        padding-right: 0rem;
-    }
+    // .container-policy{
+    //     padding-left: 0rem;
+    //     padding-right: 0rem;
+    // }
     .main-policy{
         padding-top: 3rem;
         padding-bottom: 20rem; 

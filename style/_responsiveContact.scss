@@ -1,3 +1,16 @@
+@include responsive_tablet{
+    .contact-address{
+        margin-bottom: -3rem;
+    }
+    .contact-address-item__form-contact{
+        &--address{
+            margin-top: 2rem;
+        }
+    }
+    .promotion--container--body__list{
+        justify-content: space-evenly;
+    }
+}
 @include responsive_mobile{
     .contact-address-item{
         margin: 0 3rem;
@@ -12,7 +25,7 @@
         margin-bottom: 5rem;
     }
     .contact-address{
-        margin-bottom: -6rem;
+        margin-bottom: -3rem;
     }
     .none-mobile{
         display: none;
