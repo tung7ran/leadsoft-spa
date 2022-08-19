@@ -16,3 +16,17 @@ mobileOverlayCart.addEventListener('click', () =>{
     cartMobile.classList.toggle('show')
     mobileOverlayCart.classList.toggle('show')
 })
+
+//product store
+const productItems = document.querySelectorAll(".product-cat__menu-item");
+const productPans = document.querySelectorAll(".product-details");
+productItems.forEach((tab, index) => {
+  const pane = productPans[index];
+  tab.onclick = function () {
+    $(".product-cat__menu-item.active").classList.remove("active");
+    $(".product-details.show").classList.remove("show");
+
+    this.classList.add("active");
+    pane.classList.add("show");
+  };
+});
