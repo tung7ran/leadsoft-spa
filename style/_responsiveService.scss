@@ -317,10 +317,148 @@
             }
         }
     }
+
+    .form--contact {
+        .tabs{
+            display: flex;
+            right: 1.5rem;
+            
+
+            .tab-item-heading{
+                margin: 0 0.5rem;
+            }
+        }
+        .tab-pane-content {
+            .form--appointment__inner,
+            .form--contact__inner {
+                width: 45rem;
+                height: 55rem;
+                border-radius: 3rem;
+                margin-top: calc((100vh - 55rem) / 2);
+
+                &--logo {
+                    width: 33%;
+                }
+                
+                &--contact {
+                    margin-top: 6.5rem;
+
+                    &--form {
+                        &-group {
+                            .form-textarea {
+                                height: 10rem;
+
+                            }
+                        }
+                    }
+
+                    .send-contact__btn {
+                        padding: 1rem 2rem;
+                    }
+                    &--text{
+                        font-size: 1.6rem;
+                        padding: 1rem 5rem;
+                    }
+                }
+                &--title{
+                    margin-top: 5rem;
+                }
+                &--appointment{
+                    margin-top: 0;
+                    &--form{
+                        &-group{
+                            .form-textarea{
+                                height: 10rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .address{
+                margin-top: calc((100vh - 55rem) / 2);
+                background-color: $background-address-mobile;
+                border-radius: 2rem;
+                padding: 2rem;
+
+                &-info{
+                    &-title{
+                        margin-bottom: 1rem;
+                    }
+                }
+                .location-details{
+                    background-color: $white;
+                    border-radius: 2rem;
+                    .location-details-mobile{
+                        height: 44rem;
+                        .location-detail-btn{
+                            display: flex;
+                        .pop-details-right__booking--item{
+                            display: flex;
+                            align-items: center;
+                            padding: 0.2rem 1rem;
+                            margin-left: 0.5rem;
+                            border-radius: 1rem;
+                            color: $more-color;
+                            border: $more-color 1px solid;
+                            img{
+                                height: 2rem;
+                            }
+                        }
+
+                        }
+                    }
+                }
+            }
+           
+        }
+    }
 }
 
-@include responsive_pclow{
-    .nonepc{
+@include responsive_pclow {
+    .nonepc {
         display: none;
+    }
+
+    .form--contact {
+        .tabs{
+        right: 20rem;
+
+        .tab-item-heading{
+            min-width: 15rem;
+        }
+        }
+        .tab-pane-content {
+            .form--contact__inner {
+                width: 60.38rem;
+                // height: 60.38rem;
+                border-radius: 5rem;
+                margin-top: calc((100vh - 63.8rem) / 2);
+
+                &--logo {
+                    width: 40%;
+                }
+
+                &--contact {
+                    margin-top: 5.5rem;
+
+                    &--form {
+                        &-group {
+                            .form-textarea {
+                                height: 13.4rem;
+
+                            }
+                        }
+                    }
+
+                    .send-contact__btn {}
+
+                    &--text {
+                        padding: 2rem 12rem;
+                        font-size: 1.8rem;
+
+                    }
+                }
+            }
+        }
     }
 }

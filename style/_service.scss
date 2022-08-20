@@ -752,11 +752,9 @@
         background-position: center;
         background-repeat: no-repeat;
         object-fit: cover;
-        width: 60.38rem;
-        height: 63.8rem;
+        
         margin-left: 50%;
         transform: translateX(-50%);
-        margin-top: calc((100vh - 63.8rem) / 2);
         overflow: hidden;
         animation: showModal linear 0.3s;
         position: relative;
@@ -806,7 +804,7 @@
                 letter-spacing: 0.01rem;
 
                 p {
-                    padding: 0 9rem;
+                    padding: 0 5rem;
                 }
             }
 

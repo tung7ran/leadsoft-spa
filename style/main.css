@@ -4067,11 +4067,8 @@ a:hover {
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 60.38rem;
-  height: 63.8rem;
   margin-left: 50%;
   transform: translateX(-50%);
-  margin-top: calc((100vh - 63.8rem) / 2);
   overflow: hidden;
   -webkit-animation: showModal linear 0.3s;
           animation: showModal linear 0.3s;
@@ -4117,7 +4114,7 @@ a:hover {
   letter-spacing: 0.01rem;
 }
 .form--again__inner--info-text p {
-  padding: 0 9rem;
+  padding: 0 5rem;
 }
 .form--again__inner--info-line {
   text-align: center;
@@ -8131,6 +8128,12 @@ a:hover {
   .form--contact .tab-pane-content .address .location-details .location-details-mobile .location-detail-btn .pop-details-right__booking--item img {
     height: 2rem;
   }
+  .form--again__inner {
+    width: 45rem;
+    height: 50rem;
+    margin-top: calc((100vh - 50rem) / 2);
+    border-radius: 3rem;
+  }
 }
 @media (min-width: 991px) {
   .nonepc {
@@ -8159,6 +8162,11 @@ a:hover {
   .form--contact .tab-pane-content .form--contact__inner--contact--text {
     padding: 2rem 12rem;
     font-size: 1.8rem;
+  }
+  .form--again__inner {
+    width: 60.38rem;
+    height: 63.8rem;
+    margin-top: calc((100vh - 63.8rem) / 2);
   }
 }
 @media (max-width: 480px) {
@@ -9160,6 +9168,12 @@ a:hover {
   .form--contact .tab-pane-content .address .location-details .location-details-mobile .location-detail-btn .pop-details-right__booking--item img {
     height: 2rem;
   }
+  .form--again__inner {
+    width: 45rem;
+    height: 50rem;
+    margin-top: calc((100vh - 50rem) / 2);
+    border-radius: 3rem;
+  }
 }
 @media (min-width: 991px) {
   .nonepc {
@@ -9188,6 +9202,11 @@ a:hover {
   .form--contact .tab-pane-content .form--contact__inner--contact--text {
     padding: 2rem 12rem;
     font-size: 1.8rem;
+  }
+  .form--again__inner {
+    width: 60.38rem;
+    height: 63.8rem;
+    margin-top: calc((100vh - 63.8rem) / 2);
   }
 }
 @media (max-width: 480px) {
