@@ -15,6 +15,9 @@
 .service--category-one__mobile {
     display: none;
 }
+.advise-contact-mobile {
+    display: none;
+}
 .service {
     padding-bottom: 14.6rem;
 
@@ -791,8 +794,8 @@
                 width: 4rem;
                 margin: 0 auto;
 
-                img {
-                    width: 100%;
+                > img {
+                    width: 4rem !important;
                 }
             }
 

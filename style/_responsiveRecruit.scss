@@ -3,14 +3,15 @@
         padding-top: 2rem;
         padding-bottom: 10rem;
         &-content{
-            width: 100%;
+            width: unset;
             padding: 0rem 2rem;
+            margin: 0 1.5rem;
             &__heading{
                 margin-right: 0rem;
                 text-align: center;
                 line-height: 2.8rem;
-                padding-top: 3rem;
-                margin-bottom: 3rem;
+                padding: 3rem 9% 0;
+                margin-bottom: 1rem;            
             }
             &__image{
                 width: 100%;
@@ -19,6 +20,11 @@
         }
         .recruit-pagination{
             padding-bottom: 3rem;
+            &-list {
+                &__item {
+                    border-radius: 2rem;
+                }
+            }
         }
         .none-mobile{
             display: none;

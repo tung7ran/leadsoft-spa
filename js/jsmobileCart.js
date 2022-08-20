@@ -1,6 +1,6 @@
 // Show cart_Product-details
 const cartMobileBtn = document.querySelector('.js-mobile-btn__cart')
-const cartMobile = document.querySelector('.header-cart-notify__moible')
+const cartMobile = document.querySelector('.mobile-cart .header-cart-notify__moible')
 var mobileOverlayCart = document.querySelector('.mobile-cart-overlay')
 const closeCart =  document.querySelector('.close-mobile-cart')
 

@@ -29,10 +29,10 @@
                 </div>
             </div>
             <div class="header-contact d-flex row">
-                <div class="header-contact-left col-lg-4">
+                <div class="header-contact-left col-xl-4 col-md-3 col-4">
                     <form role="search" method="get" action="">
                         <input type="search" name="" class="header-contact-left__search" placeholder="Thông tin tìm kiếm" />
-                        <button type="submit" class="header-contact-left__button">
+                        <button type="submit" class="header-contact-left__button dp-none">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search header-contact-left__button--icon" viewBox="0 0 16 16">
                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5
                                         5.5 0 0 1 11 0z" />
@@ -46,51 +46,55 @@
                     <div class="mobile-menu-overlay"></div>
                 </div>
 
-                <div class="header-contact-right col-lg-4">
+                <div class="header-contact-right col-xl-4 col-md-3 col-4">
                     <button type="submit" class="search-mobile dp-block ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#fff" class="bi bi-search header-contact-left__button--icon" viewBox="0 0 16 16">
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                         </svg>
                     </button>
-                    <div class="header-contact-right__cart">
-                        <button class="btn header-contact-right__cart--btn">
-                            <img src="./images/store.png" alt="">
-                        </button>
-                        <div class="header-cart--notify border-1">
-                            <div class="header-cart--notify__info">
-                                <div class="row header-cart--notify__info--top">
-                                    <div class="col-lg-4">
-                                        <div class="header-cart--notify__info--top-image">
-                                            <img src="./images/product/img-6.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 p-0">
-                                        <div class="header-cart--notify__info--top-detail">
-                                            <h3>Tẩy tế bào chết chiết xuất từ hạt trái mơ</h3>
-                                            <div class="top-detail-amount">
-                                                <span class="top-detail-amount__number">1</span>
-                                                <span class="top-detail-amount_cal">x</span>
-                                                <span class="top-detail-amount__price">70,000 đ</span>
+                    <div class="header-contact-right__cart dp-none">
+                        <div class="header-cart-pc dp-none dp-blockPC">
+                            <button class="header-contact-right__cart--btn">
+                                <img src="./images/store.png" alt="">
+                            </button>
+
+                            <div class="header-cart--notify border-1 dp-none">
+                                <div class="header-cart--notify__info">
+                                    <div class="row header-cart--notify__info--top">
+                                        <div class="col-lg-4 col-md-4">
+                                            <div class="header-cart--notify__info--top-image">
+                                                <img src="./images/product/img-6.png" alt="">
                                             </div>
                                         </div>
+                                        <div class="col-lg-8 col-md-8 p-0">
+                                            <div class="header-cart--notify__info--top-detail">
+                                                <h3>Tẩy tế bào chết chiết xuất từ hạt trái mơ</h3>
+                                                <div class="top-detail-amount">
+                                                    <span class="top-detail-amount__number">1</span>
+                                                    <span class="top-detail-amount_cal">x</span>
+                                                    <span class="top-detail-amount__price">70,000 đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header-cart--notify__info--top-icon">
+                                            <button>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                    <path
+                                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                                </svg>
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="header-cart--notify__info--top-icon">
-                                        <button>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                                fill="currentColor" class="bi
-                                                            bi-x-circle" viewBox="0 0 16 16">
-                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                                            </svg>
-                                        </button>
+                                    <div class="header-cart--notify__info--main">
+                                        <h3 class="header-cart--notify__info--main-heading">Tổng cộng: 70,000 Đ</h3>
                                     </div>
-                                </div>
-                                <div class="header-cart--notify__info--main">
-                                    <h3 class="header-cart--notify__info--main-heading">Tổng cộng: 70,000 Đ</h3>
-                                </div>
-                                <div class="header-cart--notify__info--bottom">
-                                    <button class="btn header-cart--notify__info--bottom-view">Xem giỏ hàng</button>
-                                    <button class="btn header-cart--notify__info--bottom-pay">Thang toán</button>
+                                    <div class="header-cart--notify__info--bottom">
+                                        <button class="btn header-cart--notify__info--bottom-view">Xem giỏ hàng</button>
+                                        <button class="btn header-cart--notify__info--bottom-pay">Thang toán</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -406,8 +410,36 @@
                 </div>
                 <div class="container-body container-body-training">
                     <div class="container-service row">
-                        <div class="container-service-item col-lg-3 col-6">
+                        <div class="container-service-item col-xl-3 col-6">
                             <img src="./images/dieutrimun.jpg" alt="" class="service-image">
+
+                        </div>
+                        <div class="container-service-item col-xl-3 col-6 pd-05">
+                            <img src="./images/dieutrithammun.jpg" alt="" class="service-image">
+
+                        </div>
+                        <div class="container-service-item col-xl-3 col-6 pd-05">
+                            <img src="./images/chamsocda.png" alt="" class="service-image">
+
+                        </div>
+                        <div class="container-service-item col-xl-3 col-6 pd-05">
+                            <img src="./images/goidau.jpg" alt="" class="service-image">
+
+                        </div>
+                        <div class="container-service-item col-xl-3 col-6 pd-05">
+                            <img src="./images/trietlong.jpg" alt="" class="service-image">
+
+                        </div>
+                        <div class="container-service-item col-xl-3 col-6 pd-05">
+                            <img src="./images/tamtrang.jpg" alt="" class="service-image">
+
+                        </div>
+                        <div class="container-service-item col-xl-3 col-6 pd-05">
+                            <img src="./images/massage-da-nong.jpg" alt="" class="service-image">
+
+                        </div>
+                        <div class="container-service-item col-xl-3 col-6">
+                            <img src="./images/xamthammy.jpg" alt="" class="service-image">
 
                         </div>
                         <div class="container-service-item col-lg-3 col-6">
@@ -422,26 +454,6 @@
                             <img src="./images/goidau.jpg" alt="" class="service-image">
 
                         </div>
-                        <div class="container-service-item col-lg-3 col-6">
-                            <img src="./images/trietlong.jpg" alt="" class="service-image">
-
-                        </div>
-                        <div class="container-service-item col-lg-3 col-6">
-                            <img src="./images/tamtrang.jpg" alt="" class="service-image">
-
-                        </div>
-                        <div class="container-service-item col-lg-3 col-6">
-                            <img src="./images/massage-da-nong.jpg" alt="" class="service-image">
-
-                        </div>
-                        <div class="container-service-item col-lg-3 col-6">
-                            <img src="./images/xamthammy.jpg" alt="" class="service-image">
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
             <!-- advise-contact -->
             <div class="advise-contact advise-contact-training">
                 <div class="advise-contact__body grid wide">
@@ -451,19 +463,19 @@
                                 <div class="contact-logo">
                                     <img src="./images/contact/call.png" alt="" class="icon__call">
                                 </div>
-                                <div class="contact__title">Liên hệ hotline</div>
-                                <div class="contact__name">1900 0000 00</div>
-                                <div class="contact__desc">Giải đáp tất cả thắc mắc của quý khách hàng, phục vụ tận tâm
-                                    24/7</div>
-                            </div>
-                            <div class="contact-body__column">
-                                <div class="contact-logo">
-                                    <img src="./images/contact/calendar.png" alt="" class="icon__call">
-                                </div>
-                                <div class="contact__title">đặt lịch hẹn</div>
-                                <div class="contact__name">Nhận ưu đãi</div>
-                                <div class="contact__desc">Đặt ngay lịch hẹn hôm nay để nhận hàng ngàn ưu đãi</div>
-                            </div>
+                        <div class="container-service-item col-lg-3 col-6">
+                            <img src="./images/tamtrang.jpg" alt="" class="service-image">
+
+                        </div>
+                        <div class="container-service-item col-lg-3 col-6">
+                            <img src="./images/massage-da-nong.jpg" alt="" class="service-image">
+
+                        </div>
+                        <div class="container-service-item col-lg-3 col-6">
+>>>>>>> main
+                            <img src="./images/xamthammy.jpg" alt="" class="service-image">
+
+                        </div>
 
                         </div>
                         <div class="contact-body__right col l-7">
@@ -492,40 +504,40 @@
                         <img src="./images/butterfly-wings.png" class="w-100" alt="">
                     </div>
                     <h2 class="address-info-title">Hệ thống hơn 50 chi nhánh</h2>
-                    <p class="address-info-caption">Nhờ sự tin yêu của khách hàng, SHYNH BEAUTY luôn có lượng khách lớn
+                    <p class="address-info-caption pd-6">Nhờ sự tin yêu của khách hàng, SHYNH BEAUTY luôn có lượng khách lớn
                         ghé thăm</p>
                 </div>
                 <div class="address-nav">
                     <div class="container container-width">
                         <ul class="address-nav-location row">
-                            <li class="address-nav-location__item ">
-                                <a class="address-nav-location__item--link active" href="">Tất cả</a>
+                            <li class="address-nav-location__item active">
+                                <a class="address-nav-location__item--link">Tất cả</a>
                             </li>
                             <li class="address-nav-location__item">
-                                <a class="address-nav-location__item--link" href="">Hồ Chí Minh</a>
+                                <a class="address-nav-location__item--link">Hồ Chí Minh</a>
                             </li>
                             <li class="address-nav-location__item">
-                                <a class="address-nav-location__item--link" href="">Hà nội</a>
+                                <a class="address-nav-location__item--link">Hà nội</a>
                             </li>
                             <li class="address-nav-location__item">
-                                <a class="address-nav-location__item--link" href="">Miền nam</a>
+                                <a class="address-nav-location__item--link">Miền nam</a>
                             </li>
                             <li class="address-nav-location__item">
-                                <a class="address-nav-location__item--link" href="">Miền tây</a>
+                                <a class="address-nav-location__item--link">Miền tây</a>
                             </li>
                             <li class="address-nav-location__item">
-                                <a class="address-nav-location__item--link" href="">Miền trung</a>
+                                <a class="address-nav-location__item--link">Miền trung</a>
                             </li>
                             <li class="address-nav-location__item">
-                                <a class="address-nav-location__item--link" href="">Tây nguyên</a>
+                                <a class="address-nav-location__item--link">Tây nguyên</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="location-details">
+                <div class="location-details active">
                     <div class="container container-width">
                         <div class="row location-details-border location-details-mobile" id="mobile-scroll">
-                            <ul class="location-details-list col-lg-6">
+                            <ul class="location-details-list col-lg-6 col-md-6">
                                 <li class="location-details-list__item row">
                                     <div class="col-lg-4 col-5 location-details-left">
                                         <img src="./images/thanhtoan.png" alt="" class="">
@@ -535,7 +547,7 @@
                                         <p class="location-details-right__info">375 Nguyễn Thượng Hiền, Phường 11, Quận
                                             10 (Vòng Xoay Dân Chủ)
                                         </p>
-                                        <!-- cần chữ in nghiêng -->
+
                                         <button class="btn location-view">Xem địa chỉ</button>
                                     </div>
                                     <div class="col-lg-2"></div>
@@ -548,7 +560,7 @@
                                         <h4 class="location-details-right__name">Bình Thạnh</h4>
                                         <p class="location-details-right__info">380 Bùi Hữu Nghĩa, Phường 2, Bình Thạnh
                                             (Đối Diện Chợ Bà Chiểu)</p>
-                                        <!-- cần chữ in nghiêng -->
+
                                         <button class="btn location-view">Xem địa chỉ</button>
                                     </div>
                                     <div class="col-lg-2"></div>
@@ -561,13 +573,13 @@
                                         <h4 class="location-details-right__name">Thủ Đức</h4>
                                         <p class="location-details-right__info">314 Võ Văn Ngân, Bình Thọ, Thủ Đức (Gần
                                             ĐH Sư Phạm Kĩ Thuật)</p>
-                                        <!-- cần chữ in nghiêng -->
+
                                         <button class="btn location-view">Xem địa chỉ</button>
                                     </div>
                                     <div class="col-lg-2"></div>
                                 </li>
                             </ul>
-                            <ul class="location-details-list col-lg-6">
+                            <ul class="location-details-list col-lg-6 col-md-6">
                                 <li class="location-details-list__item row">
                                     <div class="col-lg-4 col-5 location-details-left">
                                         <img src="./images/thanhtoan.png" alt="" class="">
@@ -576,7 +588,7 @@
                                         <h4 class="location-details-right__name">Quận 7</h4>
                                         <p class="location-details-right__info">44 Nguyễn Thị Thập, Tân Hưng, Quận 7
                                             (Gần cầu HimLam)</p>
-                                        <!-- cần chữ in nghiêng -->
+
                                         <button class="btn location-view">Xem địa chỉ</button>
                                     </div>
                                     <div class="col-lg-2"></div>
@@ -589,7 +601,7 @@
                                         <h4 class="location-details-right__name">Gò Vấp</h4>
                                         <p class="location-details-right__info">398 Nguyễn Văn Nghi, Phường 7, Quận Gò
                                             Vấp</p>
-                                        <!-- cần chữ in nghiêng -->
+
                                         <button class="btn location-view">Xem địa chỉ</button>
                                     </div>
                                     <div class="col-lg-2"></div>
@@ -602,7 +614,7 @@
                                         <h4 class="location-details-right__name">Tân Bình</h4>
                                         <p class="location-details-right__info">120 Ni Sư Huỳnh Liên,Phường 10, Quận Tân
                                             Bình</p>
-                                        <!-- cần chữ in nghiêng -->
+
                                         <button class="btn location-view">Xem địa chỉ</button>
                                     </div>
                                     <div class="col-lg-2"></div>
@@ -611,6 +623,541 @@
                         </div>
                     </div>
                 </div>
+                <div class="location-details">
+                    <div class="container container-width">
+                        <div class="row location-details-border location-details-mobile" id="mobile-scroll">
+                            <ul class="location-details-list col-lg-6 col-md-6">
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/thanhtoan.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">HỒ CHÍ MINH</h4>
+                                        <p class="location-details-right__info">375 Nguyễn Thượng Hiền, Phường 11, Quận
+                                            10 (Vòng Xoay Dân Chủ)
+                                        </p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/shynhhouse.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Bình Thạnh</h4>
+                                        <p class="location-details-right__info">380 Bùi Hữu Nghĩa, Phường 2, Bình Thạnh
+                                            (Đối Diện Chợ Bà Chiểu)</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/makeup.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Thủ Đức</h4>
+                                        <p class="location-details-right__info">314 Võ Văn Ngân, Bình Thọ, Thủ Đức (Gần
+                                            ĐH Sư Phạm Kĩ Thuật)</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                            </ul>
+                            <ul class="location-details-list col-lg-6 col-md-6">
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/thanhtoan.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Quận 7</h4>
+                                        <p class="location-details-right__info">44 Nguyễn Thị Thập, Tân Hưng, Quận 7
+                                            (Gần cầu HimLam)</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/shynhhouse.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Gò Vấp</h4>
+                                        <p class="location-details-right__info">398 Nguyễn Văn Nghi, Phường 7, Quận Gò
+                                            Vấp</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/makeup.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Tân Bình</h4>
+                                        <p class="location-details-right__info">120 Ni Sư Huỳnh Liên,Phường 10, Quận Tân
+                                            Bình</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-details">
+                    <div class="container container-width">
+                        <div class="row location-details-border location-details-mobile" id="mobile-scroll">
+                            <ul class="location-details-list col-lg-6 col-md-6">
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/thanhtoan.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Quận 10</h4>
+                                        <p class="location-details-right__info">375 Nguyễn Thượng Hiền, Phường 11, Quận
+                                            10 (Vòng Xoay Dân Chủ)
+                                        </p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/shynhhouse.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Bình Thạnh</h4>
+                                        <p class="location-details-right__info">380 Bùi Hữu Nghĩa, Phường 2, Bình Thạnh
+                                            (Đối Diện Chợ Bà Chiểu)</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/makeup.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Thủ Đức</h4>
+                                        <p class="location-details-right__info">314 Võ Văn Ngân, Bình Thọ, Thủ Đức (Gần
+                                            ĐH Sư Phạm Kĩ Thuật)</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                            </ul>
+                            <ul class="location-details-list col-lg-6 col-md-6">
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/thanhtoan.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Quận 7</h4>
+                                        <p class="location-details-right__info">44 Nguyễn Thị Thập, Tân Hưng, Quận 7
+                                            (Gần cầu HimLam)</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/shynhhouse.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Gò Vấp</h4>
+                                        <p class="location-details-right__info">398 Nguyễn Văn Nghi, Phường 7, Quận Gò
+                                            Vấp</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/makeup.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Tân Bình</h4>
+                                        <p class="location-details-right__info">120 Ni Sư Huỳnh Liên,Phường 10, Quận Tân
+                                            Bình</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-details">
+                    <div class="container container-width">
+                        <div class="row location-details-border location-details-mobile" id="mobile-scroll">
+                            <ul class="location-details-list col-lg-6 col-md-6">
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/thanhtoan.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Quận 10</h4>
+                                        <p class="location-details-right__info">375 Nguyễn Thượng Hiền, Phường 11, Quận
+                                            10 (Vòng Xoay Dân Chủ)
+                                        </p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/shynhhouse.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Bình Thạnh</h4>
+                                        <p class="location-details-right__info">380 Bùi Hữu Nghĩa, Phường 2, Bình Thạnh
+                                            (Đối Diện Chợ Bà Chiểu)</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/makeup.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Thủ Đức</h4>
+                                        <p class="location-details-right__info">314 Võ Văn Ngân, Bình Thọ, Thủ Đức (Gần
+                                            ĐH Sư Phạm Kĩ Thuật)</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                            </ul>
+                            <ul class="location-details-list col-lg-6 col-md-6">
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/thanhtoan.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Quận 7</h4>
+                                        <p class="location-details-right__info">44 Nguyễn Thị Thập, Tân Hưng, Quận 7
+                                            (Gần cầu HimLam)</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/shynhhouse.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Gò Vấp</h4>
+                                        <p class="location-details-right__info">398 Nguyễn Văn Nghi, Phường 7, Quận Gò
+                                            Vấp</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/makeup.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Tân Bình</h4>
+                                        <p class="location-details-right__info">120 Ni Sư Huỳnh Liên,Phường 10, Quận Tân
+                                            Bình</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-details">
+                    <div class="container container-width">
+                        <div class="row location-details-border location-details-mobile" id="mobile-scroll">
+                            <ul class="location-details-list col-lg-6 col-md-6">
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/thanhtoan.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Quận 10</h4>
+                                        <p class="location-details-right__info">375 Nguyễn Thượng Hiền, Phường 11, Quận
+                                            10 (Vòng Xoay Dân Chủ)
+                                        </p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/shynhhouse.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Bình Thạnh</h4>
+                                        <p class="location-details-right__info">380 Bùi Hữu Nghĩa, Phường 2, Bình Thạnh
+                                            (Đối Diện Chợ Bà Chiểu)</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/makeup.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Thủ Đức</h4>
+                                        <p class="location-details-right__info">314 Võ Văn Ngân, Bình Thọ, Thủ Đức (Gần
+                                            ĐH Sư Phạm Kĩ Thuật)</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                            </ul>
+                            <ul class="location-details-list col-lg-6 col-md-6">
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/thanhtoan.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Quận 7</h4>
+                                        <p class="location-details-right__info">44 Nguyễn Thị Thập, Tân Hưng, Quận 7
+                                            (Gần cầu HimLam)</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/shynhhouse.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Gò Vấp</h4>
+                                        <p class="location-details-right__info">398 Nguyễn Văn Nghi, Phường 7, Quận Gò
+                                            Vấp</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/makeup.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Tân Bình</h4>
+                                        <p class="location-details-right__info">120 Ni Sư Huỳnh Liên,Phường 10, Quận Tân
+                                            Bình</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-details">
+                    <div class="container container-width">
+                        <div class="row location-details-border location-details-mobile" id="mobile-scroll">
+                            <ul class="location-details-list col-lg-6 col-md-6">
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/thanhtoan.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Quận 10</h4>
+                                        <p class="location-details-right__info">375 Nguyễn Thượng Hiền, Phường 11, Quận
+                                            10 (Vòng Xoay Dân Chủ)
+                                        </p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/shynhhouse.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Bình Thạnh</h4>
+                                        <p class="location-details-right__info">380 Bùi Hữu Nghĩa, Phường 2, Bình Thạnh
+                                            (Đối Diện Chợ Bà Chiểu)</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/makeup.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Thủ Đức</h4>
+                                        <p class="location-details-right__info">314 Võ Văn Ngân, Bình Thọ, Thủ Đức (Gần
+                                            ĐH Sư Phạm Kĩ Thuật)</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                            </ul>
+                            <ul class="location-details-list col-lg-6 col-md-6">
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/thanhtoan.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Quận 7</h4>
+                                        <p class="location-details-right__info">44 Nguyễn Thị Thập, Tân Hưng, Quận 7
+                                            (Gần cầu HimLam)</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/shynhhouse.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Gò Vấp</h4>
+                                        <p class="location-details-right__info">398 Nguyễn Văn Nghi, Phường 7, Quận Gò
+                                            Vấp</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/makeup.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Tân Bình</h4>
+                                        <p class="location-details-right__info">120 Ni Sư Huỳnh Liên,Phường 10, Quận Tân
+                                            Bình</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-details">
+                    <div class="container container-width">
+                        <div class="row location-details-border location-details-mobile" id="mobile-scroll">
+                            <ul class="location-details-list col-lg-6 col-md-6">
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/thanhtoan.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Quận 10</h4>
+                                        <p class="location-details-right__info">375 Nguyễn Thượng Hiền, Phường 11, Quận
+                                            10 (Vòng Xoay Dân Chủ)
+                                        </p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/shynhhouse.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Bình Thạnh</h4>
+                                        <p class="location-details-right__info">380 Bùi Hữu Nghĩa, Phường 2, Bình Thạnh
+                                            (Đối Diện Chợ Bà Chiểu)</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/makeup.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Thủ Đức</h4>
+                                        <p class="location-details-right__info">314 Võ Văn Ngân, Bình Thọ, Thủ Đức (Gần
+                                            ĐH Sư Phạm Kĩ Thuật)</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                            </ul>
+                            <ul class="location-details-list col-lg-6 col-md-6">
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/thanhtoan.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Quận 7</h4>
+                                        <p class="location-details-right__info">44 Nguyễn Thị Thập, Tân Hưng, Quận 7
+                                            (Gần cầu HimLam)</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/shynhhouse.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Gò Vấp</h4>
+                                        <p class="location-details-right__info">398 Nguyễn Văn Nghi, Phường 7, Quận Gò
+                                            Vấp</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                                <li class="location-details-list__item row">
+                                    <div class="col-lg-4 col-5 location-details-left">
+                                        <img src="./images/makeup.png" alt="" class="">
+                                    </div>
+                                    <div class="col-lg-6 col-7 location-details-right">
+                                        <h4 class="location-details-right__name">Tân Bình</h4>
+                                        <p class="location-details-right__info">120 Ni Sư Huỳnh Liên,Phường 10, Quận Tân
+                                            Bình</p>
+
+                                        <button class="btn location-view">Xem địa chỉ</button>
+                                    </div>
+                                    <div class="col-lg-2"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="address-near dp-none">
                     <button class="btn address-near-btn">Tìm chi nhánh gần bạn</button>
                 </div>

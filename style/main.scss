@@ -53,7 +53,9 @@
 
 
 
-
+.seemore-mobile {
+    display: none;
+}
 
 .top-banner {
     .top-banner-1 {
@@ -617,7 +619,7 @@
                 cursor: pointer;
                 &--link {
                     color: #808080;
-                    font-size: 1.6rem;
+                    font-size: 1.8rem;
                     font-family: Gilroy-Bold;
                     text-transform: uppercase;
                    

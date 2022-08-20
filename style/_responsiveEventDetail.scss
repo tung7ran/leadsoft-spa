@@ -6,6 +6,12 @@
     .dp-blockTL {
         display: block ;
     }
+    .wth-100 {
+        width: 100% !important;
+    }
+    .wth-80 {
+        width: 80% !important;
+    }
     .event-detail-mobile {
         .tips-beautify {
             &--detail {
@@ -29,6 +35,7 @@
                             &--title {
                                 font-size: 2rem;
                                 padding-bottom: 2.2rem;
+                                color: $more-color;
                             }
 
                             .mobile-title {
@@ -53,8 +60,8 @@
                         }
         
                         &--images {
-                            width: 42.5rem;
-                            margin-left: -1rem;
+                            width: 47.5rem;
+                            margin: 0 auto;
                             img {
                                 width: 100%;
                                 height: 100%;

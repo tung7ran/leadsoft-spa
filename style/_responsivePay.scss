@@ -1,8 +1,11 @@
 // pay
 @include responsive_mobile{
+    .end-product {
+        margin-top: 9rem;
+    }
     .end-product-title__text{
         font-weight: 600;
-        padding: 0 6rem;
+        padding: 0 23%;
         margin-top: 4rem;
     }
     .end-product-store{

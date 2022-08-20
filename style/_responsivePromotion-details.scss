@@ -1,12 +1,12 @@
 @include responsive_mobile{
-    .service--detail{
-        border-radius: 0rem;
-    }
     .service-promotion-mobile{
         width: 90%;
     }
     .service--category{
         display: none;
+    }
+    .promotion--detail-mobile {
+        display: none !important;
     }
     .promotion--detail__item--images{
         width: 100%;
@@ -14,11 +14,15 @@
     }
     .service--detail__heading{
         padding-bottom: 3rem;
+        font-size: 2rem !important;
     }
     .tips-new{
         display: none;
     }
     .promotion-mobile{
+        .service--detail{
+            border-radius: 0rem;
+        }
         margin-top: 7rem;
     
         &__heading {

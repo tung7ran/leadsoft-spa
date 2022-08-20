@@ -3,8 +3,9 @@
         padding-top: 2rem;
         padding-bottom: 10rem;
         &-content{
-            width: 100%;
+            width: unset;
             padding: 0rem 2rem;
+            margin: 0 1.5rem;
             &__title{
                 text-align: center;
             }
