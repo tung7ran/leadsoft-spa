@@ -170,7 +170,7 @@
         display: none;
     }
     .service-promotion-mobile{
-        padding-bottom: 3rem;
+        // padding-bottom: 3rem;
     }
     .tips-new-item__body--list--item-images img,
     .tips-new-item__body--list--item-desc{
@@ -178,6 +178,9 @@
     }
     .form--register{
         z-index: 2;
+    }
+    .service-promotion-mobile{
+        padding: 0;
     }
 }
 
