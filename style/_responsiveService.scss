@@ -19,7 +19,8 @@
                 margin: 0 auto;
                 text-align: center;
             }
-            &__btn{
+
+            &__btn {
                 transform: translateX(-50%);
                 margin-left: 50%;
                 margin-top: 4.8rem;
@@ -28,46 +29,56 @@
             }
         }
 
-        &--detailing{
-            &__item--text--desc{
+        &--detailing {
+            &__item--text--desc {
                 padding-bottom: 0rem;
             }
-            &__item--reason{
+
+            &__item--reason {
                 margin-bottom: 4rem;
             }
-            &__item--text--title{
+
+            &__item--text--title {
                 margin-bottom: 3rem;
             }
-            &__item--reason--list--title{
+
+            &__item--reason--list--title {
                 font-size: 1.6rem !important;
-            } 
-            
-            .cell{
+            }
+
+            .cell {
                 width: 88%;
             }
-            .food{
+
+            .food {
                 width: 100% !important;
             }
-            &__item--heading{
+
+            &__item--heading {
                 font-size: 1.8rem !important;
             }
-            .horizontal{
+
+            .horizontal {
                 display: block;
             }
-            .submit-booking{
+
+            .submit-booking {
                 padding: 1rem 1rem;
                 font-size: 1.6rem;
                 margin-bottom: 5rem;
             }
-            &__item--result--list__item{
+
+            &__item--result--list__item {
                 margin-bottom: 2rem;
             }
-            &__item{
-                &--result{
+
+            &__item {
+                &--result {
                     width: 75%;
                     margin: 0 auto;
                 }
             }
+
             .form-contact {
                 width: 100% !important;
             }
@@ -86,7 +97,7 @@
             border-radius: 2rem;
             margin-bottom: 2rem;
             padding: 1rem 0 1.75rem;
-            height: 86%;
+            height: 100%;
     
             &--title {
                 font-size: 2.2rem;
@@ -96,22 +107,22 @@
                 color: #a0710e;
                 padding-top: 2rem;
             }
-    
+
             &--menu {
                 padding: 0 1rem;
-    
+
                 &__list {
                     margin-bottom: 2.35rem;
-    
+
                     &--line {
                         width: 100%;
                         height: 0.1rem;
                     }
-    
+
                     &--item {
                         display: flex;
                         position: relative;
-    
+
                         &--laser {
                             background-image: url(../images/service/img4.png);
                             background-size: cover;
@@ -123,7 +134,7 @@
                             height: 7rem;
                             text-transform: uppercase;
                         }
-    
+
                         &--ex2 {
                             background-image: url(../images/service/img5.png);
                             background-size: cover;
@@ -135,7 +146,7 @@
                             height: 7rem;
                             text-transform: uppercase;
                         }
-    
+
                         &--ex2-text {
                             font-size: 1.6rem;
                             font-weight: 600;
@@ -143,7 +154,7 @@
                             padding-left: 1rem;
                             padding-top: 1rem;
                         }
-    
+
                         &--depth {
                             background-image: url(../images/service/img6.png);
                             background-size: cover;
@@ -155,7 +166,7 @@
                             height: 7rem;
                             text-transform: uppercase;
                         }
-    
+
                         &--depth-text {
                             font-size: 1.6rem;
                             font-weight: 600;
@@ -164,7 +175,7 @@
                             padding-top: 1rem;
                             padding-right: 10%;
                         }
-    
+
                         &--bs4 {
                             background-image: url(../images/service/img7.png);
                             background-size: cover;
@@ -176,7 +187,7 @@
                             height: 7rem;
                             text-transform: uppercase;
                         }
-    
+
                         &--bs4-text {
                             font-size: 1.6rem;
                             font-weight: 600;
@@ -184,7 +195,7 @@
                             padding-left: 1rem;
                             padding-top: 1rem;
                         }
-    
+
                         &--secret {
                             background-image: url(../images/service/img8.png);
                             background-size: cover;
@@ -195,9 +206,9 @@
                             width: 36%;
                             height: 7rem;
                             text-transform: uppercase;
-    
+
                         }
-    
+
                         &--images {
                             background-image: url(../images/trainning/22.png);
                             background-size: cover;
@@ -208,7 +219,7 @@
                             width: 100%;
                             height: 9rem;
                         }
-    
+
                         &--desc {
                             font-size: 1.6rem;
                             font-weight: bold;
@@ -222,43 +233,53 @@
             }
         }
     }
-    .detail-news{
+
+    .detail-news {
         padding: 0 2.6rem;
         margin-top: 3rem;
-        &--menu{
+
+        &--menu {
             padding: 0 2.6rem !important;
         }
-        &--title{
+
+        &--title {
             padding-bottom: 2.8rem !important;
         }
     }
+
     .detail-news--menu__list--item--laser,
     .detail-news--menu__list--item--ex2,
     .detail-news--menu__list--item--depth,
     .detail-news--menu__list--item--bs4,
-    .detail-news--menu__list--item--secret{
+    .detail-news--menu__list--item--secret {
         width: 36% !important;
         height: 10rem !important;
         border-radius: 1rem;
     }
-    .detail-news--menu__list--item--desc{
+
+    .detail-news--menu__list--item--desc {
         width: 28rem;
     }
-    .none{
+
+    .none {
         display: none;
     }
+
     .details-pagination {
         margin-top: 1rem;
-        &-list{
+
+        &-list {
             list-style: none;
-            justify-content:center;
+            justify-content: center;
             align-items: center;
             margin: 0;
+
             &__item {
                 background-color: #FFD00F;
                 border: 0.1rem solid #fff;
                 border-radius: 2rem;
                 margin-right: 0.6rem;
+
                 &--link {
                     padding: 1.2rem 2rem;
                     font-size: 2.8rem;
@@ -267,14 +288,17 @@
                     color: #fff;
                     display: block;
                 }
+
                 &--link:hover {
                     text-decoration: none;
                 }
             }
-            .active-white{
+
+            .active-white {
                 border: 0.1rem solid #FFD00F;
             }
         }
+
         &-next {
             img {
                 width: 1.8rem;
@@ -283,8 +307,9 @@
                 margin-top: 0.6rem;
             }
         }
-        &-prev{
-            img{
+
+        &-prev {
+            img {
                 width: 1.8rem;
                 height: 2rem;
                 margin-top: 0.6rem;

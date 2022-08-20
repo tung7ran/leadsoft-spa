@@ -93,7 +93,11 @@
                 height: 61.7rem;
                 overflow-y: scroll;
             }
-
+            &-mobile::-webkit-scrollbar{
+                display: none;
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+            }
             &-mobile::-webkit-scrollbar {
                 width: 1rem;
             }

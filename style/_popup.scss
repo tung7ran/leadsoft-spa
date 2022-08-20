@@ -221,7 +221,7 @@
             &--location {
                 list-style: none;
                 align-items: center;
-                justify-content: space-evenly;
+                justify-content: center;
                 padding: 0;
                 margin-bottom: 2rem;
                 &__item {
@@ -229,7 +229,7 @@
                         font-size: 1.6rem;
                         font-family: Gilroy-Bold;
                         text-transform: uppercase;
-                        padding: 1rem 1rem;
+                        padding: 0.5rem 1rem;
                         color: $black !important;
                         width: 11rem;
                         border-radius: 3rem;
@@ -516,6 +516,15 @@
                         margin-top: 1rem;
                     }
                 }
+            }
+            select {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                background-image: url(../images/arrowdown.png);
+                background-repeat: no-repeat;
+                background-position-x: 95%;
+                background-position-y: 1.5rem;
+                background-size: 1.5rem 1.1rem;
             }
             &--time{
                 text-align: center;

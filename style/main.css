@@ -75,7 +75,6 @@ body {
 html,
 body,
 div,
-span,
 applet,
 object,
 iframe,
@@ -347,6 +346,7 @@ a:hover {
   color: #000 !important;
 }
 
+.header-main-nav__list--item-link .active,
 .header-main-nav__list .active {
   border-radius: 1.6rem;
   padding: 0.5rem 2.2rem;
@@ -1114,7 +1114,6 @@ a:hover {
   text-transform: uppercase;
 }
 .header-main-nav__list--item .header-main__subnav--menu--item--title .down--icon {
-  display: none;
   color: red;
 }
 .header-main-nav__list--item .header-main__subnav--menu--item--list--service--link {
@@ -3918,6 +3917,7 @@ a:hover {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
@@ -3926,14 +3926,12 @@ a:hover {
 .form--contact .tabs {
   position: absolute;
   top: 5.5rem;
-  right: 20rem;
 }
 .form--register .tabs .tab-item-heading,
 .form--contact .tabs .tab-item-heading {
   font-size: 1.8rem;
   padding: 1rem 2rem;
   border-radius: 1rem;
-  min-width: 15rem;
   margin: 0.2rem 0;
   cursor: pointer;
   background-color: #fff;
@@ -3954,11 +3952,8 @@ a:hover {
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 60.38rem;
-  height: 63.8rem;
   margin-left: 50%;
   transform: translateX(-50%);
-  margin-top: calc((100vh - 63.8rem) / 2);
   overflow: hidden;
   -webkit-animation: showModal linear 0.3s;
           animation: showModal linear 0.3s;
@@ -3967,7 +3962,6 @@ a:hover {
 .form--register__inner--logo,
 .form--contact__inner--logo {
   padding-top: 1.3rem;
-  width: 40%;
   margin-left: 50%;
   transform: translateX(-50%);
 }
@@ -3978,7 +3972,6 @@ a:hover {
 }
 .form--register__inner--contact,
 .form--contact__inner--contact {
-  margin-top: 5.5rem;
   padding: 0 3rem;
 }
 .form--register__inner--contact--form-group .form-control,
@@ -4000,7 +3993,6 @@ a:hover {
   border-radius: 1rem;
   outline: none;
   padding: 2rem;
-  height: 13.4rem;
 }
 .form--register__inner--contact select,
 .form--contact__inner--contact select {
@@ -4048,10 +4040,9 @@ a:hover {
 }
 .form--register__inner--contact--text,
 .form--contact__inner--contact--text {
-  font-size: 1.8rem;
   font-weight: bold;
   text-align: center;
-  padding: 2rem 12rem;
+  font-style: italic;
 }
 .form--register__inner--contact--text .phone-number,
 .form--contact__inner--contact--text .phone-number {
@@ -4937,7 +4928,7 @@ a:hover {
 .address-pop-mobile__nav--location {
   list-style: none;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 0;
   margin-bottom: 2rem;
 }
@@ -4945,7 +4936,7 @@ a:hover {
   font-size: 1.6rem;
   font-family: Gilroy-Bold;
   text-transform: uppercase;
-  padding: 1rem 1rem;
+  padding: 0.5rem 1rem;
   color: #000 !important;
   width: 11rem;
   border-radius: 3rem;
@@ -5221,6 +5212,15 @@ a:hover {
   height: 11.4rem;
   margin-top: 1rem;
 }
+.form--appointment__inner--appointment select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(../images/arrowdown.png);
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 1.5rem;
+  background-size: 1.5rem 1.1rem;
+}
 .form--appointment__inner--appointment--time {
   text-align: center;
   margin-top: 1rem;
@@ -5301,6 +5301,9 @@ a:hover {
   }
   .header-main-nav__list--item .header-main__subnav--menu--item--title {
     padding-bottom: 0.5rem;
+  }
+  .header-main-nav__list--item .header-main__subnav--menu--item--title .down--icon {
+    display: none;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -5486,7 +5489,6 @@ a:hover {
     color: #ffd00f;
     background-color: transparent;
     position: relative;
-    z-index: 3;
   }
   .header-contact-left .navbar-mobile i {
     font-size: 3.5rem;
@@ -5584,26 +5586,24 @@ a:hover {
     padding: 0;
     margin-bottom: 3rem;
     position: relative;
+    min-width: 20.5rem;
   }
   .header-main-nav__list--item-link {
     color: #000;
   }
-  .header-main-nav__list--item .active {
-    background-color: transparent;
-  }
   .header-main-nav__list--item::before {
     content: " ";
-    display: block;
     position: absolute;
+    left: 0;
+    right: 0;
     border-bottom: 1px solid #000000;
     width: 100%;
     height: 0.2rem;
     bottom: -1.5rem;
   }
   .header-main-nav__list .active {
-    background-color: transparent;
-    padding: 0;
-    border-radius: 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
     width: 100%;
   }
   .header-main-nav__list .header-main__subnav--menu {
@@ -5934,6 +5934,11 @@ a:hover {
   .address .location-details-mobile {
     height: 61.7rem;
     overflow-y: scroll;
+  }
+  .address .location-details-mobile::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
   .address .location-details-mobile::-webkit-scrollbar {
     width: 1rem;
@@ -8048,10 +8053,112 @@ a:hover {
     margin-top: 0.6rem;
     margin-right: 1.4rem;
   }
+  .form--contact .tabs {
+    display: flex;
+    right: 1.5rem;
+  }
+  .form--contact .tabs .tab-item-heading {
+    margin: 0 0.5rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner,
+.form--contact .tab-pane-content .form--contact__inner {
+    width: 45rem;
+    height: 55rem;
+    border-radius: 3rem;
+    margin-top: calc((100vh - 55rem) / 2);
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--logo,
+.form--contact .tab-pane-content .form--contact__inner--logo {
+    width: 33%;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--contact,
+.form--contact .tab-pane-content .form--contact__inner--contact {
+    margin-top: 6.5rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--contact--form-group .form-textarea,
+.form--contact .tab-pane-content .form--contact__inner--contact--form-group .form-textarea {
+    height: 10rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--contact .send-contact__btn,
+.form--contact .tab-pane-content .form--contact__inner--contact .send-contact__btn {
+    padding: 1rem 2rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--contact--text,
+.form--contact .tab-pane-content .form--contact__inner--contact--text {
+    font-size: 1.6rem;
+    padding: 1rem 5rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--title,
+.form--contact .tab-pane-content .form--contact__inner--title {
+    margin-top: 5rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--appointment,
+.form--contact .tab-pane-content .form--contact__inner--appointment {
+    margin-top: 0;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--appointment--form-group .form-textarea,
+.form--contact .tab-pane-content .form--contact__inner--appointment--form-group .form-textarea {
+    height: 10rem;
+  }
+  .form--contact .tab-pane-content .address {
+    margin-top: calc((100vh - 55rem) / 2);
+    background-color: #f5e28b;
+    border-radius: 2rem;
+    padding: 2rem;
+  }
+  .form--contact .tab-pane-content .address-info-title {
+    margin-bottom: 1rem;
+  }
+  .form--contact .tab-pane-content .address .location-details {
+    background-color: #fff;
+    border-radius: 2rem;
+  }
+  .form--contact .tab-pane-content .address .location-details .location-details-mobile {
+    height: 44rem;
+  }
+  .form--contact .tab-pane-content .address .location-details .location-details-mobile .location-detail-btn {
+    display: flex;
+  }
+  .form--contact .tab-pane-content .address .location-details .location-details-mobile .location-detail-btn .pop-details-right__booking--item {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 1rem;
+    margin-left: 0.5rem;
+    border-radius: 1rem;
+    color: #a1710f;
+    border: #a1710f 1px solid;
+  }
+  .form--contact .tab-pane-content .address .location-details .location-details-mobile .location-detail-btn .pop-details-right__booking--item img {
+    height: 2rem;
+  }
 }
 @media (min-width: 991px) {
   .nonepc {
     display: none;
+  }
+  .form--contact .tabs {
+    right: 20rem;
+  }
+  .form--contact .tabs .tab-item-heading {
+    min-width: 15rem;
+  }
+  .form--contact .tab-pane-content .form--contact__inner {
+    width: 60.38rem;
+    border-radius: 5rem;
+    margin-top: calc((100vh - 63.8rem) / 2);
+  }
+  .form--contact .tab-pane-content .form--contact__inner--logo {
+    width: 40%;
+  }
+  .form--contact .tab-pane-content .form--contact__inner--contact {
+    margin-top: 5.5rem;
+  }
+  .form--contact .tab-pane-content .form--contact__inner--contact--form-group .form-textarea {
+    height: 13.4rem;
+  }
+  .form--contact .tab-pane-content .form--contact__inner--contact--text {
+    padding: 2rem 12rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 480px) {
@@ -8975,10 +9082,112 @@ a:hover {
     margin-top: 0.6rem;
     margin-right: 1.4rem;
   }
+  .form--contact .tabs {
+    display: flex;
+    right: 1.5rem;
+  }
+  .form--contact .tabs .tab-item-heading {
+    margin: 0 0.5rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner,
+.form--contact .tab-pane-content .form--contact__inner {
+    width: 45rem;
+    height: 55rem;
+    border-radius: 3rem;
+    margin-top: calc((100vh - 55rem) / 2);
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--logo,
+.form--contact .tab-pane-content .form--contact__inner--logo {
+    width: 33%;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--contact,
+.form--contact .tab-pane-content .form--contact__inner--contact {
+    margin-top: 6.5rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--contact--form-group .form-textarea,
+.form--contact .tab-pane-content .form--contact__inner--contact--form-group .form-textarea {
+    height: 10rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--contact .send-contact__btn,
+.form--contact .tab-pane-content .form--contact__inner--contact .send-contact__btn {
+    padding: 1rem 2rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--contact--text,
+.form--contact .tab-pane-content .form--contact__inner--contact--text {
+    font-size: 1.6rem;
+    padding: 1rem 5rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--title,
+.form--contact .tab-pane-content .form--contact__inner--title {
+    margin-top: 5rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--appointment,
+.form--contact .tab-pane-content .form--contact__inner--appointment {
+    margin-top: 0;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--appointment--form-group .form-textarea,
+.form--contact .tab-pane-content .form--contact__inner--appointment--form-group .form-textarea {
+    height: 10rem;
+  }
+  .form--contact .tab-pane-content .address {
+    margin-top: calc((100vh - 55rem) / 2);
+    background-color: #f5e28b;
+    border-radius: 2rem;
+    padding: 2rem;
+  }
+  .form--contact .tab-pane-content .address-info-title {
+    margin-bottom: 1rem;
+  }
+  .form--contact .tab-pane-content .address .location-details {
+    background-color: #fff;
+    border-radius: 2rem;
+  }
+  .form--contact .tab-pane-content .address .location-details .location-details-mobile {
+    height: 44rem;
+  }
+  .form--contact .tab-pane-content .address .location-details .location-details-mobile .location-detail-btn {
+    display: flex;
+  }
+  .form--contact .tab-pane-content .address .location-details .location-details-mobile .location-detail-btn .pop-details-right__booking--item {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 1rem;
+    margin-left: 0.5rem;
+    border-radius: 1rem;
+    color: #a1710f;
+    border: #a1710f 1px solid;
+  }
+  .form--contact .tab-pane-content .address .location-details .location-details-mobile .location-detail-btn .pop-details-right__booking--item img {
+    height: 2rem;
+  }
 }
 @media (min-width: 991px) {
   .nonepc {
     display: none;
+  }
+  .form--contact .tabs {
+    right: 20rem;
+  }
+  .form--contact .tabs .tab-item-heading {
+    min-width: 15rem;
+  }
+  .form--contact .tab-pane-content .form--contact__inner {
+    width: 60.38rem;
+    border-radius: 5rem;
+    margin-top: calc((100vh - 63.8rem) / 2);
+  }
+  .form--contact .tab-pane-content .form--contact__inner--logo {
+    width: 40%;
+  }
+  .form--contact .tab-pane-content .form--contact__inner--contact {
+    margin-top: 5.5rem;
+  }
+  .form--contact .tab-pane-content .form--contact__inner--contact--form-group .form-textarea {
+    height: 13.4rem;
+  }
+  .form--contact .tab-pane-content .form--contact__inner--contact--text {
+    padding: 2rem 12rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 480px) {
