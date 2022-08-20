@@ -6,6 +6,7 @@
 .container{
     max-width: 1200px;
 }
+
 .cart{
     .cart-two {
         position: absolute;
@@ -99,6 +100,7 @@
         border-top-right-radius: 2rem;
         border-bottom-left-radius: 2rem;
         border-bottom-right-radius: 2rem;
+        box-shadow: 0.9rem 0.9rem 0.9rem rgb(0 0 0 / 10%);
 
         &__title{
             font-family: Gilroy-XBold;

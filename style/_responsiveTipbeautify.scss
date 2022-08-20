@@ -9,6 +9,10 @@
         padding-top: 0;
     }
 
+    .address {
+        display: block !important;
+    }
+
     .beautify-mobile {
         margin-left: 1.5rem;
         margin-right: 1.5rem;
@@ -54,6 +58,7 @@
                         }
         
                         &--text {
+                            width: 100%;
                             &--title {
                                 font-family: K2D-ExtraBold;
                             }

@@ -33,6 +33,8 @@
                                     height: 100%;
                                     text-align: center;
                                     box-shadow: none;
+                                    border-radius: 2rem;
+
                                     &--heading {
                                         font-size: 2.4rem;
                                         font-weight: 600;
@@ -53,9 +55,9 @@
                                         }
                                         &-icon {
                                             position: absolute;
-                                            top: -8rem;
+                                            top: -9rem;
                                             right: 1.6rem;
-                                            width: 3rem;
+                                            width: 4rem;
                                             button {
                                                 color: $color-text;
                                                 border:none;
@@ -126,12 +128,16 @@
                 }
             }
         }
+        &-logo {
+            margin-top: 0;
+        }
     }
     .main {
         .product-details {
             .product-one {
                 &-border {
                     border: none;
+                    margin-top: 8rem;
                 }
                 &-border::after,
                 &-border::before {
@@ -144,12 +150,14 @@
                                 width: 101%;
                                 margin-bottom: 0;
                                 &--item {
-                                    background-color: #f3e59f;
+                                    padding: 0 0.5rem;
                                 }
                             }
                         }
                     }
                     &-right { 
+                        margin:0 2rem;
+
                         &__title {
                             font-size: 2rem;
                             margin-top: 3rem;
@@ -186,8 +194,8 @@
                     }
                 }
                 .product-info {
-                    margin-left: 1.5rem;
-                    margin-right: 1.5rem;
+                    margin-left: 2rem;
+                    margin-right: 2rem;
 
                     &-btn{
                         margin-bottom: 1.5rem;
@@ -239,7 +247,7 @@
                 }
             }
             &-title {
-                margin-left: 1.5rem;
+                margin-left: 2rem;
             }
         }
     }

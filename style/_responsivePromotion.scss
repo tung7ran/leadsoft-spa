@@ -4,6 +4,9 @@
     }
     .promotion--container--body {
         width: 90%;
+        &__list {
+            padding-top: 2.65rem;
+        }
     }
     .advise-contact{
         display: none;

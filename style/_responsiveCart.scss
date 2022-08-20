@@ -4,6 +4,14 @@
     }
     .cart{
         display: flex;
+        margin: 0 2rem;
+
+        .cart-two {
+            margin-top: 25.5rem;
+            margin-left: -20.5rem;
+            width: 19rem;
+            padding: 1.3rem 0.6rem;
+        }
         &-product{
             width: 50%;
             .title-left{
@@ -46,21 +54,17 @@
             &-border__one{
                 margin-top: 5rem;
             }
-            &-border__one::after{
-                width: 37rem;
+            &-border__one::after,
+            &-border__two::after,
+            &-border__three::after{
+                width: 35.5rem;
             }
             &-border__two{
                 margin-top: 3rem;
             }
-            &-border__two::after{
-                width: 37rem;
-            }
             &-border__three{
                 margin-top: 3rem;
                 font-weight: 600;
-            }
-            &-border__three::after{
-                width: 37rem;
             }
             &-border__pay a h2{
                 font-weight: 600;
@@ -80,7 +84,7 @@
         margin: 6rem 0;
     }
     .store-mobiles{
-        margin-top: 12rem;
+        display: none;
     }
 }
 
