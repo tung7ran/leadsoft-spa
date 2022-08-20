@@ -614,7 +614,7 @@
     position: fixed;
     top: 0;
     left: 0;
-
+    z-index: 1;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
@@ -622,13 +622,12 @@
     .tabs {
         position: absolute;
         top: 5.5rem;
-        right: 20rem;
 
         .tab-item-heading {
             font-size: 1.8rem;
             padding: 1rem 2rem;
             border-radius: 1rem;
-            min-width: 15rem;
+            
             margin: 0.2rem 0;
             cursor: pointer;
             background-color: #fff;
@@ -649,18 +648,16 @@
         background-position: center;
         background-repeat: no-repeat;
         object-fit: cover;
-        width: 60.38rem;
-        height: 63.8rem;
+        // height: 63.8rem;
         margin-left: 50%;
         transform: translateX(-50%);
-        margin-top: calc((100vh - 63.8rem) / 2);
         overflow: hidden;
         animation: showModal linear 0.3s;
         position: relative;
 
         &--logo {
             padding-top: 1.3rem;
-            width: 40%;
+           
             margin-left: 50%;
             transform: translateX(-50%);
 
@@ -671,7 +668,6 @@
         }
 
         &--contact {
-            margin-top: 5.5rem;
             padding: 0 3rem;
 
             &--form {
@@ -694,7 +690,6 @@
                         border-radius: 1rem;
                         outline: none;
                         padding: 2rem;
-                        height: 13.4rem;
                     }
                 }
             }
@@ -724,11 +719,9 @@
             }
 
             &--text {
-                font-size: 1.8rem;
                 font-weight: bold;
                 text-align: center;
-                padding: 2rem 12rem;
-
+                font-style: italic;
                 .phone-number {
                     color: $more-color;
                 }
