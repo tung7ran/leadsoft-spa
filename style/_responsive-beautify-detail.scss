@@ -94,11 +94,11 @@
         // margin: 0 2rem;
         &--category{
             padding: 0;
-            // margin: 0 -2rem 0 -2rem;
             &__list{
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
+                margin-bottom: 1rem;
                 &--item{
                     &--link{
                         font-size: 1.4rem;
@@ -108,13 +108,29 @@
             }
         }
         &--detail{
-            padding: 5.24rem 2rem 3.85rem 2rem;
+            padding: 5.24rem 2rem 1rem 2rem;
             margin-top: 2.5rem;
             margin-left: 50%;
             transform: translateX(-50%);
             &__heading{
-                font-size: 2.4rem;
+                font-size: 2.2rem;
                 text-align: center;
+            }
+            .tips-beautify--detailing {
+                &__item{
+                    &--text{ 
+                        &--title {
+                            color: $black;
+                        }
+                    }
+                    &--images {
+                        margin-bottom: 1rem;
+                    }
+                }
+                .mobile-srouce{
+                    display: block;
+                    font-size: 1.2rem;
+                }
             }
         }
     }
@@ -159,6 +175,32 @@
                     }
                     
     
+                }
+            }
+            .tip-detail-mobile {
+                background-color: transparent;
+                .promotion--container--body {
+                    background-color: $white;
+                    &__list {
+                        justify-content: center;
+                        padding-top: 0;
+                        padding-bottom: 0;
+        
+                        &--item {
+                            cursor: pointer;
+                            margin: 0 0.5rem 0 0.5rem;
+                            background-color: $white;
+                            border-radius: 2rem;
+                            border: none;
+                            padding: 0.7rem 0.8rem 0.5rem 1.38rem;
+                        }
+                        &--item:first-child {
+                            margin-top: 1rem;
+                        }
+                        &--item:last-child {
+                            margin-bottom: 1rem;
+                        }
+                    }
                 }
             }
         }
