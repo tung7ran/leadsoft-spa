@@ -7865,7 +7865,7 @@ a:hover {
     border-radius: 2rem;
     margin-bottom: 2rem;
     padding: 1rem 0 1.75rem;
-    height: 86%;
+    height: 100%;
   }
   .service--category-one__mobile .detail-news--title {
     font-size: 2.2rem;
@@ -8062,7 +8062,7 @@ a:hover {
     width: 45rem;
     height: 55rem;
     border-radius: 3rem;
-    margin-top: calc((100vh - 55rem) / 2);
+    margin-top: calc((100vh - 45rem) / 2);
   }
   .form--contact .tab-pane-content .form--appointment__inner--logo,
 .form--contact .tab-pane-content .form--contact__inner--logo {
@@ -8128,12 +8128,6 @@ a:hover {
   .form--contact .tab-pane-content .address .location-details .location-details-mobile .location-detail-btn .pop-details-right__booking--item img {
     height: 2rem;
   }
-  .form--again__inner {
-    width: 45rem;
-    height: 50rem;
-    margin-top: calc((100vh - 50rem) / 2);
-    border-radius: 3rem;
-  }
 }
 @media (min-width: 991px) {
   .nonepc {
@@ -8162,11 +8156,6 @@ a:hover {
   .form--contact .tab-pane-content .form--contact__inner--contact--text {
     padding: 2rem 12rem;
     font-size: 1.8rem;
-  }
-  .form--again__inner {
-    width: 60.38rem;
-    height: 63.8rem;
-    margin-top: calc((100vh - 63.8rem) / 2);
   }
 }
 @media (max-width: 480px) {
@@ -8905,7 +8894,7 @@ a:hover {
     border-radius: 2rem;
     margin-bottom: 2rem;
     padding: 1rem 0 1.75rem;
-    height: 86%;
+    height: 100%;
   }
   .service--category-one__mobile .detail-news--title {
     font-size: 2.2rem;
@@ -9102,7 +9091,7 @@ a:hover {
     width: 45rem;
     height: 55rem;
     border-radius: 3rem;
-    margin-top: calc((100vh - 55rem) / 2);
+    margin-top: calc((100vh - 45rem) / 2);
   }
   .form--contact .tab-pane-content .form--appointment__inner--logo,
 .form--contact .tab-pane-content .form--contact__inner--logo {
@@ -9168,12 +9157,6 @@ a:hover {
   .form--contact .tab-pane-content .address .location-details .location-details-mobile .location-detail-btn .pop-details-right__booking--item img {
     height: 2rem;
   }
-  .form--again__inner {
-    width: 45rem;
-    height: 50rem;
-    margin-top: calc((100vh - 50rem) / 2);
-    border-radius: 3rem;
-  }
 }
 @media (min-width: 991px) {
   .nonepc {
@@ -9202,11 +9185,6 @@ a:hover {
   .form--contact .tab-pane-content .form--contact__inner--contact--text {
     padding: 2rem 12rem;
     font-size: 1.8rem;
-  }
-  .form--again__inner {
-    width: 60.38rem;
-    height: 63.8rem;
-    margin-top: calc((100vh - 63.8rem) / 2);
   }
 }
 @media (max-width: 480px) {
