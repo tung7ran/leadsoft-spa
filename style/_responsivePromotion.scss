@@ -40,7 +40,7 @@
     
                         &--content {
                             height: 100%;
-
+                            align-items: center;
                             &--images {
                                 width: 20.5rem;
 
@@ -52,18 +52,26 @@
     
                             &--text {
                                 &--title {
-                                    font-size: 1.4rem;
+                                    font-size: 1.8rem;
                                     letter-spacing: 0;
+                                    padding-bottom: 2rem;
                                 }
     
                                 &--desc {
-                                    font-size: 1.3rem;
+                                    font-size: 1.4rem;
                                 }
                             }
                         }
                     }
                 }
             }
+        }
+    }
+    .promotion-news{
+        padding-bottom: 7.5rem;
+        .tips-new-item__heading--title{
+            font-size: 2rem;
+            margin-bottom: 2rem;
         }
     }
 }

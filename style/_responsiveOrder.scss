@@ -1,3 +1,11 @@
+@include responsive_tablet{
+    .container .order-title{
+        margin-left: 2%;
+    }
+}
+@responsive_pclow{
+
+}
 @include responsive_mobile{
     .pay{
         display: block;
@@ -59,6 +67,6 @@
         width: 97% !important;
     }
     .pay-products{
-        margin-top: 5rem;
+        // margin-top: 5rem;
     }
 }

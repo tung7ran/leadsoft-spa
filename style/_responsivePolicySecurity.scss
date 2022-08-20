@@ -27,10 +27,10 @@
 }
 
 @include responsive_tablet{
-    .container-policy_security{
-        padding-left: 0rem;
-        padding-right: 0rem;
-    }
+    // .container-policy_security{
+    //     padding-left: 0rem;
+    //     padding-right: 0rem;
+    // }
     .main-policy-security{
         padding-top: 3rem;
         padding-bottom: 20rem; 

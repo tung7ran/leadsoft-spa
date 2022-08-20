@@ -8,7 +8,9 @@
 .container-max {
     margin-bottom: 0;
 }
-
+.container-payment{
+    margin-bottom: 12rem;
+}
 .home{
     // position: absolute;
     background-color: $white;
@@ -205,14 +207,14 @@
                     width: 100%;
                 }
             }
+            .swiper-button-prev,
             .swiper-button-next{
-                top: 8rem
+                top: 11rem
             }
             .swiper-button-next{
                 right: 0;
             }
-            .swiper-button-prev{
-            }
+            
         }
     }
     .details-rated{
