@@ -52,44 +52,49 @@
                         </svg>
                     </button>
                     <div class="header-contact-right__cart dp-none">
-                        <button class="btn header-contact-right__cart--btn">
-                            <img src="./images/store.png" alt="">
-                        </button>
-                        <div class="header-cart--notify border-1">
-                            <div class="header-cart--notify__info">
-                                <div class="row header-cart--notify__info--top">
-                                    <div class="col-lg-4 col-md-4">
-                                        <div class="header-cart--notify__info--top-image">
-                                            <img src="./images/product/img-6.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-md-8 p-0">
-                                        <div class="header-cart--notify__info--top-detail">
-                                            <h3>Tẩy tế bào chết chiết xuất từ hạt trái mơ</h3>
-                                            <div class="top-detail-amount">
-                                                <span class="top-detail-amount__number">1</span>
-                                                <span class="top-detail-amount_cal">x</span>
-                                                <span class="top-detail-amount__price">70,000 đ</span>
+                        <div class="header-cart-pc dp-none dp-blockPC">
+                            <button class="header-contact-right__cart--btn">
+                                <img src="./images/store.png" alt="">
+                                <span class="header-contact-right__cart--number dp-none">5+</span>
+                            </button>
+
+                            <div class="header-cart--notify border-1 dp-none">
+                                <div class="header-cart--notify__info">
+                                    <div class="row header-cart--notify__info--top">
+                                        <div class="col-lg-4 col-md-4">
+                                            <div class="header-cart--notify__info--top-image">
+                                                <img src="./images/product/img-6.png" alt="">
                                             </div>
                                         </div>
+                                        <div class="col-lg-8 col-md-8 p-0">
+                                            <div class="header-cart--notify__info--top-detail">
+                                                <h3>Tẩy tế bào chết chiết xuất từ hạt trái mơ</h3>
+                                                <div class="top-detail-amount">
+                                                    <span class="top-detail-amount__number">1</span>
+                                                    <span class="top-detail-amount_cal">x</span>
+                                                    <span class="top-detail-amount__price">70,000 đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header-cart--notify__info--top-icon">
+                                            <button>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                    <path
+                                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                                </svg>
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="header-cart--notify__info--top-icon">
-                                        <button>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                                fill="currentColor" class="bi
-                                                            bi-x-circle" viewBox="0 0 16 16">
-                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                                            </svg>
-                                        </button>
+                                    <div class="header-cart--notify__info--main">
+                                        <h3 class="header-cart--notify__info--main-heading">Tổng cộng: 70,000 Đ</h3>
                                     </div>
-                                </div>
-                                <div class="header-cart--notify__info--main">
-                                    <h3 class="header-cart--notify__info--main-heading">Tổng cộng: 70,000 Đ</h3>
-                                </div>
-                                <div class="header-cart--notify__info--bottom">
-                                    <button class="btn header-cart--notify__info--bottom-view">Xem giỏ hàng</button>
-                                    <button class="btn header-cart--notify__info--bottom-pay">Thang toán</button>
+                                    <div class="header-cart--notify__info--bottom">
+                                        <button class="btn header-cart--notify__info--bottom-view">Xem giỏ hàng</button>
+                                        <button class="btn header-cart--notify__info--bottom-pay">Thang toán</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -324,13 +329,13 @@
                     </div>
                 </div>
             </div>
-            <div class="address">
+            <div class="address dp-blockPC">
                 <div class="address-info">
                     <div class="address-image">
                         <img src="./images/butterfly-wings.png" class="w-100" alt="">
                     </div>
                     <h2 class="address-info-title">Hệ thống hơn 50 chi nhánh</h2>
-                    <p class="address-info-caption">Nhờ sự tin yêu của khách hàng, SHYNH BEAUTY luôn có lượng khách lớn
+                    <p class="address-info-caption pd-6">Nhờ sự tin yêu của khách hàng, SHYNH BEAUTY luôn có lượng khách lớn
                         ghé thăm</p>
                 </div>
                 <div class="address-nav">
@@ -363,7 +368,7 @@
                 <div class="location-details active">
                     <div class="container container-width">
                         <div class="row location-details-border location-details-mobile" id="mobile-scroll">
-                            <ul class="location-details-list col-lg-6">
+                            <ul class="location-details-list col-lg-6 col-md-6">
                                 <li class="location-details-list__item row">
                                     <div class="col-lg-4 col-5 location-details-left">
                                         <img src="./images/thanhtoan.png" alt="" class="">
@@ -405,7 +410,7 @@
                                     <div class="col-lg-2"></div>
                                 </li>
                             </ul>
-                            <ul class="location-details-list col-lg-6">
+                            <ul class="location-details-list col-lg-6 col-md-6">
                                 <li class="location-details-list__item row">
                                     <div class="col-lg-4 col-5 location-details-left">
                                         <img src="./images/thanhtoan.png" alt="" class="">
@@ -452,7 +457,7 @@
                 <div class="location-details">
                     <div class="container container-width">
                         <div class="row location-details-border location-details-mobile" id="mobile-scroll">
-                            <ul class="location-details-list col-lg-6">
+                            <ul class="location-details-list col-lg-6 col-md-6">
                                 <li class="location-details-list__item row">
                                     <div class="col-lg-4 col-5 location-details-left">
                                         <img src="./images/thanhtoan.png" alt="" class="">
@@ -494,7 +499,7 @@
                                     <div class="col-lg-2"></div>
                                 </li>
                             </ul>
-                            <ul class="location-details-list col-lg-6">
+                            <ul class="location-details-list col-lg-6 col-md-6">
                                 <li class="location-details-list__item row">
                                     <div class="col-lg-4 col-5 location-details-left">
                                         <img src="./images/thanhtoan.png" alt="" class="">
@@ -630,7 +635,7 @@
                 <div class="location-details">
                     <div class="container container-width">
                         <div class="row location-details-border location-details-mobile" id="mobile-scroll">
-                            <ul class="location-details-list col-lg-6">
+                            <ul class="location-details-list col-lg-6 col-md-6">
                                 <li class="location-details-list__item row">
                                     <div class="col-lg-4 col-5 location-details-left">
                                         <img src="./images/thanhtoan.png" alt="" class="">
@@ -672,7 +677,7 @@
                                     <div class="col-lg-2"></div>
                                 </li>
                             </ul>
-                            <ul class="location-details-list col-lg-6">
+                            <ul class="location-details-list col-lg-6 col-md-6">
                                 <li class="location-details-list__item row">
                                     <div class="col-lg-4 col-5 location-details-left">
                                         <img src="./images/thanhtoan.png" alt="" class="">
@@ -719,7 +724,7 @@
                 <div class="location-details">
                     <div class="container container-width">
                         <div class="row location-details-border location-details-mobile" id="mobile-scroll">
-                            <ul class="location-details-list col-lg-6">
+                            <ul class="location-details-list col-lg-6 col-md-6">
                                 <li class="location-details-list__item row">
                                     <div class="col-lg-4 col-5 location-details-left">
                                         <img src="./images/thanhtoan.png" alt="" class="">
@@ -761,7 +766,7 @@
                                     <div class="col-lg-2"></div>
                                 </li>
                             </ul>
-                            <ul class="location-details-list col-lg-6">
+                            <ul class="location-details-list col-lg-6 col-md-6">
                                 <li class="location-details-list__item row">
                                     <div class="col-lg-4 col-5 location-details-left">
                                         <img src="./images/thanhtoan.png" alt="" class="">
@@ -808,7 +813,7 @@
                 <div class="location-details">
                     <div class="container container-width">
                         <div class="row location-details-border location-details-mobile" id="mobile-scroll">
-                            <ul class="location-details-list col-lg-6">
+                            <ul class="location-details-list col-lg-6 col-md-6">
                                 <li class="location-details-list__item row">
                                     <div class="col-lg-4 col-5 location-details-left">
                                         <img src="./images/thanhtoan.png" alt="" class="">
@@ -850,7 +855,7 @@
                                     <div class="col-lg-2"></div>
                                 </li>
                             </ul>
-                            <ul class="location-details-list col-lg-6">
+                            <ul class="location-details-list col-lg-6 col-md-6">
                                 <li class="location-details-list__item row">
                                     <div class="col-lg-4 col-5 location-details-left">
                                         <img src="./images/thanhtoan.png" alt="" class="">
@@ -897,7 +902,7 @@
                 <div class="location-details">
                     <div class="container container-width">
                         <div class="row location-details-border location-details-mobile" id="mobile-scroll">
-                            <ul class="location-details-list col-lg-6">
+                            <ul class="location-details-list col-lg-6 col-md-6">
                                 <li class="location-details-list__item row">
                                     <div class="col-lg-4 col-5 location-details-left">
                                         <img src="./images/thanhtoan.png" alt="" class="">
@@ -939,7 +944,7 @@
                                     <div class="col-lg-2"></div>
                                 </li>
                             </ul>
-                            <ul class="location-details-list col-lg-6">
+                            <ul class="location-details-list col-lg-6 col-md-6">
                                 <li class="location-details-list__item row">
                                     <div class="col-lg-4 col-5 location-details-left">
                                         <img src="./images/thanhtoan.png" alt="" class="">
