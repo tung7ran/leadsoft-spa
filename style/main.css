@@ -3222,6 +3222,10 @@ a:hover {
   padding-bottom: 8rem;
 }
 
+.mobile-srouce {
+  display: none;
+}
+
 .tips-beautify--detail {
   background-color: #fff;
 }
@@ -3848,7 +3852,7 @@ a:hover {
   content: "";
   position: absolute;
   bottom: -1.6rem;
-  width: 100%;
+  width: 96%;
   border: 0.1rem solid #a1710f;
 }
 .service .details-news .detail-news--menu__list--item--images {
@@ -5295,89 +5299,119 @@ a:hover {
     font-size: 1.8rem;
     width: 53%;
   }
-  .header-container .header-contact {
+  .header-contact {
     padding: 0 0.7rem;
   }
-  .header-container .header-contact-left {
+  .header-contact-left {
     width: 26.15%;
   }
-  .header-container .header-contact-left form {
+  .header-contact-left form {
     width: 100%;
   }
-  .header-container .header-contact-left__search {
+  .header-contact-left__search {
     height: 3.65rem;
     padding: 0 1rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
-  .header-container .header-contact-left__button--icon {
+  .header-contact-left__button--icon {
     width: 2.1rem;
     height: 2.1rem;
   }
-  .header-container .header-contact-right {
+  .header-contact-right {
     align-items: center;
+    margin-right: 1.4rem;
   }
-  .header-container .header-contact-right__cart button {
-    width: 3.65rem;
-    height: 3.65rem;
+  .header-contact-right__cart {
+    background-color: #ffd00f;
+    width: 4.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+  }
+  .header-contact-right__cart > button {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
     padding: 1rem;
   }
-  .header-container .header-contact-right__cart--number {
+  .header-contact-right__cart > button img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .header-contact-right__cart--number {
     top: -1.2rem;
     right: -0.6rem;
     padding: 0.2rem 0.4rem;
     font-size: 1.2rem;
   }
-  .header-container .header-contact-right__tel {
+  .header-contact-right__tel {
     height: 3.65rem;
     width: 18rem;
   }
-  .header-container .header-contact-right__tel--number {
-    font-size: 1.4rem;
+  .header-contact-right__tel--number {
+    font-size: 1.2rem;
     padding: 0;
     line-height: 3.65rem;
   }
-  .header-container .header-contact-right .header-cart--notify {
+  .header-contact-right .header-cart--notify {
     width: 25rem;
     height: 25rem;
     top: 5.5rem;
-    right: -17rem;
+    right: 0;
+    left: -6rem;
   }
-  .header-container .header-contact-right .header-cart--notify__info {
+  .header-contact-right .header-cart--notify__info {
     width: 100%;
     height: 100%;
   }
-  .header-container .header-contact-right .header-cart--notify__info--top {
+  .header-contact-right .header-cart--notify__info--top {
     width: 100%;
   }
-  .header-container .header-contact-right .header-cart--notify__info--top-image {
-    height: 9rem;
-    width: 5rem;
+  .header-contact-right .header-cart--notify__info--top-image {
+    height: 6rem;
+    width: 4rem;
     margin-left: 1.2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
-  .header-container .header-contact-right .header-cart--notify__info--top-detail {
+  .header-contact-right .header-cart--notify__info--top-detail {
     padding-right: 0;
-    padding-top: 3.2rem;
+    padding-top: 2.4rem;
   }
-  .header-container .header-contact-right .header-cart--notify__info--top-detail .top-detail-amount {
+  .header-contact-right .header-cart--notify__info--top-detail h3 {
+    font-size: 1.2rem;
+  }
+  .header-contact-right .header-cart--notify__info--top-detail .top-detail-amount {
     margin-top: 0.4rem;
+    font-size: 1.2rem;
   }
-  .header-container .header-contact-right .header-cart--notify__info--top-icon {
+  .header-contact-right .header-cart--notify__info--top-icon {
     right: -0.4rem;
     z-index: -1;
   }
-  .header-container .header-contact-right .header-cart--notify__info--top-icon > button {
+  .header-contact-right .header-cart--notify__info--top-icon > button {
     padding: 0;
   }
-  .header-container .header-contact-right .header-cart--notify__info--main {
+  .header-contact-right .header-cart--notify__info--top-icon > button svg {
+    padding: 0.8rem;
+  }
+  .header-contact-right .header-cart--notify__info--main {
     margin-left: 0;
   }
-  .header-container .header-contact-right .header-cart--notify__info--bottom {
+  .header-contact-right .header-cart--notify__info--main-heading {
+    font-size: 1.6rem;
+    padding-right: 0;
+  }
+  .header-contact-right .header-cart--notify__info--bottom {
     margin-top: 1.6rem;
   }
-  .header-container .header-contact-right .header-cart--notify__info--bottom-view {
+  .header-contact-right .header-cart--notify__info--bottom-view {
     padding: 0 !important;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    width: 21rem !important;
+  }
+  .header-contact-right .header-cart--notify__info--bottom-pay {
+    font-size: 1.4rem;
+    width: 21rem !important;
   }
   .header-logo__page {
     width: 23.4rem;
@@ -5420,9 +5454,6 @@ a:hover {
     width: 20rem;
     margin: 0 auto;
     transform: none;
-  }
-  .header-container-heading__title--text-name {
-    padding: 0 5%;
   }
   .header-contact {
     align-items: center;
@@ -6685,6 +6716,7 @@ a:hover {
   .beautify-mobile .beautify--program__category--list-item {
     margin-top: 2rem;
     margin-bottom: 4rem;
+    margin-right: 0.5rem;
   }
   .beautify-mobile .beautify--program__category--list-item-link {
     font-size: 1.4rem;
@@ -6726,6 +6758,9 @@ a:hover {
   .beautify-mobile .beautify-program-list__item--calendar {
     top: 1.6rem;
     right: 2.8rem;
+  }
+  .beautify-mobile .beautify-program .product-pagination-list__item {
+    border-radius: 2rem;
   }
   .beautify-mobile .beautify-program .product-pagination-prev__btn {
     width: 1.8rem;
@@ -6835,6 +6870,9 @@ a:hover {
   }
 }
 @media (max-width: 480px) {
+  .mt-10 {
+    margin-top: 0 !important;
+  }
   .contact-address-item {
     margin: 0 3rem;
   }
@@ -7872,7 +7910,7 @@ a:hover {
     margin-right: 1.5rem;
   }
   .main-info .main-inftras-content__heading {
-    padding: 0 6%;
+    padding: 0 8%;
     margin-bottom: 9.6rem;
   }
   .main-info .main-inftras-content .main-mobile .main-inftras-content__right {
@@ -8610,7 +8648,7 @@ a:hover {
     margin-right: 1.5rem;
   }
   .main-info .main-inftras-content__heading {
-    padding: 0 6%;
+    padding: 0 8%;
     margin-bottom: 9.6rem;
   }
   .main-info .main-inftras-content .main-mobile .main-inftras-content__right {
@@ -9003,20 +9041,31 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 1rem;
   }
   .tips-beautify--category__list--item--link {
     font-size: 1.4rem;
     padding: 0 0.5rem;
   }
   .tips-beautify--detail {
-    padding: 5.24rem 2rem 3.85rem 2rem;
+    padding: 5.24rem 2rem 1rem 2rem;
     margin-top: 2.5rem;
     margin-left: 50%;
     transform: translateX(-50%);
   }
   .tips-beautify--detail__heading {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     text-align: center;
+  }
+  .tips-beautify--detail .tips-beautify--detailing__item--text--title {
+    color: #000;
+  }
+  .tips-beautify--detail .tips-beautify--detailing__item--images {
+    margin-bottom: 1rem;
+  }
+  .tips-beautify--detail .tips-beautify--detailing .mobile-srouce {
+    display: block;
+    font-size: 1.2rem;
   }
   .tips-new {
     display: block;
@@ -9048,6 +9097,31 @@ a:hover {
   }
   .tips-new-item__body--list--item--text {
     margin-left: 2rem;
+  }
+  .tips-new-item .tip-detail-mobile {
+    background-color: transparent;
+  }
+  .tips-new-item .tip-detail-mobile .promotion--container--body {
+    background-color: #fff;
+  }
+  .tips-new-item .tip-detail-mobile .promotion--container--body__list {
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .tips-new-item .tip-detail-mobile .promotion--container--body__list--item {
+    cursor: pointer;
+    margin: 0 0.5rem 0 0.5rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    border: none;
+    padding: 0.7rem 0.8rem 0.5rem 1.38rem;
+  }
+  .tips-new-item .tip-detail-mobile .promotion--container--body__list--item:first-child {
+    margin-top: 1rem;
+  }
+  .tips-new-item .tip-detail-mobile .promotion--container--body__list--item:last-child {
+    margin-bottom: 1rem;
   }
   .address {
     background-color: #fff;
