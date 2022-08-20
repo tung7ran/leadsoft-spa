@@ -115,13 +115,6 @@
             }
         }
     }
-    .address {
-        &-info {
-            &-caption {
-                padding: 0 6%!important;
-            }
-        }
-    }
 }
 
 @include responsive_tablet {

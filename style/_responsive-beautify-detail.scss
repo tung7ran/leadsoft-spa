@@ -83,9 +83,6 @@
     .tips-beautify--category__list--item:nth-child(4){
         display: none;
     }
-    .detail-news{
-        display: none;
-    }
     .mr-48 {
         margin-right: 4.8rem;
     }
@@ -132,6 +129,9 @@
                     font-size: 1.2rem;
                 }
             }
+        }
+        .detail-news {
+            display: none;
         }
     }
     .tips-new{

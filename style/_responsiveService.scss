@@ -1,11 +1,16 @@
 @include responsive_mobile{
+    .mb-7 {
+        margin-bottom: 7rem;
+    }
     .service{
         width: 95%;
         margin: 0 auto;
         display: block;
         margin-top: 3rem;
+        padding-bottom: 0;
         &--detail{
             padding: 7.5rem 2.6rem 4rem 2.6rem;
+            border-radius: 2rem;
             &__heading{
                 font-size: 3rem;
                 margin: 0 auto;
@@ -65,24 +70,28 @@
             }
         }
     }
+    .details-pagination-mobile {
+        margin-top: 3rem;
+        padding-bottom: 14rem;
+    }
     .service--category-one__mobile {
         display: block;
-        height: 90rem;
-        z-index: 2;
+        padding: 0 1.2rem;
+
         .detail-news {
-            // background-color: $white;
+            background-color: $white;
             border-radius: 2rem;
             margin-bottom: 2rem;
             padding: 1rem 0 1.75rem;
-            height: 100%;
+            height: 86%;
     
             &--title {
-                font-size: 1.6rem;
+                font-size: 2.2rem;
                 text-transform: uppercase;
                 font-family: Gilroy-XBold;
                 text-align: center;
-                color: $color-title;
-                padding-bottom: 1.8rem;
+                color: #a0710e;
+                padding-top: 2rem;
             }
     
             &--menu {
@@ -125,7 +134,7 @@
                         }
     
                         &--ex2-text {
-                            font-size: 1.2rem;
+                            font-size: 1.6rem;
                             font-weight: 600;
                             text-transform: uppercase;
                             padding-left: 1rem;
@@ -145,11 +154,12 @@
                         }
     
                         &--depth-text {
-                            font-size: 1.2rem;
+                            font-size: 1.6rem;
                             font-weight: 600;
                             text-transform: uppercase;
                             padding-left: 1rem;
                             padding-top: 1rem;
+                            padding-right: 10%;
                         }
     
                         &--bs4 {
@@ -165,7 +175,7 @@
                         }
     
                         &--bs4-text {
-                            font-size: 1.2rem;
+                            font-size: 1.6rem;
                             font-weight: 600;
                             text-transform: uppercase;
                             padding-left: 1rem;
@@ -197,17 +207,12 @@
                         }
     
                         &--desc {
-                            position: absolute;
-                            top: 0;
-                            right: 0;
-                            text-transform: uppercase;
-                            font-family: Gilroy-Bold;
-                            font-size: 1.2rem;
-                            font-weight: bold;
-                            font-size: 1.2rem;
+                            font-size: 1.6rem;
                             font-weight: bold;
                             max-width: 60%;
                             padding-top: 1rem;
+                            padding-left: 1rem;
+                            padding-right: 10%;
                         }
                     }
                 }

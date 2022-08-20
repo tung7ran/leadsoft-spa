@@ -2,6 +2,9 @@
     .dp-none {
         display: none;
     }
+    .pd-6 {
+        padding: 0 6% !important;
+    }
     .advise-contact {
         height: 70.7rem;
         &__body {
@@ -58,12 +61,6 @@
 
     .address {
         margin-top: 3.8rem;
-
-        &-info {
-            &-caption {
-                padding: 0 8%;
-            }
-        }
 
         .address-nav {
             &-location {
@@ -235,7 +232,7 @@
     .address {
         &-info {
             &-caption { 
-                padding: 0 39% !important;
+                padding: 0 39%;
             }
         }
     }

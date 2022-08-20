@@ -1,7 +1,4 @@
 @include responsive_mobile{
-    .service--detail{
-        border-radius: 0rem;
-    }
     .service-promotion-mobile{
         width: 90%;
     }
@@ -19,6 +16,9 @@
         display: none;
     }
     .promotion-mobile{
+        .service--detail{
+            border-radius: 0rem;
+        }
         margin-top: 7rem;
     
         &__heading {

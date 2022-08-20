@@ -16,13 +16,21 @@
    .headers{
     display: none;
    }
+   
+   .container-max {
+        margin-top: 0;
+    }
+    .pd-05{
+        padding: 0.5rem;
+    }
    .training-container{
-    margin-top: 6.4rem;
+        margin-top: 6.4rem;
     .content-img{
         height: 5.5rem;
         width: 6.7rem;
         margin-left: 50%;
         transform: translateX(-50%);
+        padding-left: 0;
         img{
             width: 100%;
             height: 100%;
@@ -39,14 +47,15 @@
     }
    }
    .container-body-training{
-    margin-top: 5.9rem;
-    .container-service{
-        .container-service-item{
-            .service-image{
-                width: 100%;
+        margin: 5.9rem 3rem 7rem 3rem;
+
+        .container-service{
+            .container-service-item{
+                .service-image{
+                    width: 100%;
+                }
             }
         }
-    }
    }
    .advise-contact-training{
     margin-top: 13.5rem;

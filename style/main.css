@@ -1624,7 +1624,7 @@ a:hover {
 .main .product-details .product-list-item__name {
   max-height: 6rem;
   margin-top: 2.4rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #000;
 }
 .main .product-details .product-list-item__money {
@@ -2599,6 +2599,9 @@ a:hover {
 .content .training-col {
   margin-bottom: 6rem;
 }
+.content .address {
+  display: none;
+}
 
 .training-detail {
   margin-top: 6rem;
@@ -3386,6 +3389,10 @@ a:hover {
 }
 
 .service--category-one__mobile {
+  display: none;
+}
+
+.advise-contact {
   display: none;
 }
 
@@ -5454,6 +5461,9 @@ a:hover {
     margin: 0 auto;
     transform: none;
   }
+  .header-container-heading__title--text-name {
+    padding: 0 2%;
+  }
   .header-contact {
     align-items: center;
     margin-top: 3.6rem;
@@ -5484,7 +5494,7 @@ a:hover {
   .header-contact-right {
     justify-content: space-between;
     align-items: center;
-    padding-left: 7rem;
+    padding-left: 6rem;
   }
   .header-contact-right__cart {
     width: 4.1rem !important;
@@ -5532,7 +5542,6 @@ a:hover {
     background-color: #ffd00d;
     border: none;
     border-radius: 1rem;
-    margin-right: 0.8rem;
   }
   .header-contact-right .search-mobile svg {
     background-color: #ffd00d;
@@ -5843,6 +5852,9 @@ a:hover {
   .dp-none {
     display: none;
   }
+  .pd-6 {
+    padding: 0 6% !important;
+  }
   .advise-contact {
     height: 70.7rem;
   }
@@ -5894,9 +5906,6 @@ a:hover {
   }
   .address {
     margin-top: 3.8rem;
-  }
-  .address-info-caption {
-    padding: 0 8%;
   }
   .address .address-nav-location {
     justify-content: center;
@@ -6025,7 +6034,7 @@ a:hover {
 }
 @media (min-width: 991px) {
   .address-info-caption {
-    padding: 0 39% !important;
+    padding: 0 39%;
   }
 }
 @media (max-width: 480px) {
@@ -6048,13 +6057,23 @@ a:hover {
   .main .pd-2 {
     padding: 0;
   }
+  .main-logo__image {
+    width: 7.6rem !important;
+    height: 5.8rem !important;
+    position: relative;
+    top: -4rem;
+    left: 1.5rem;
+    z-index: 1;
+  }
   .main-logo-store {
     background-image: linear-gradient(90deg, #fef7dc, #fff6d6);
     margin-top: 9rem;
   }
   .main-logo__title {
-    font-weight: 600;
-    padding-bottom: 2.2rem;
+    margin-top: 0 !important;
+    position: relative;
+    top: -3rem;
+    font-size: 1.8rem !important;
     margin-bottom: 0 !important;
   }
   .main-logo-store:after {
@@ -6070,8 +6089,8 @@ a:hover {
   }
   .main .product {
     background-image: linear-gradient(90deg, #fef7dc, #fff6d6);
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
   .main .product-cat__menu {
     flex-wrap: wrap;
@@ -6091,6 +6110,7 @@ a:hover {
     height: 28.4rem;
     margin: 0 -0.5rem 1rem;
     background-color: #fff;
+    border-radius: 1.4rem;
   }
   .main .product-details .product-list-item__image {
     width: 9rem;
@@ -6195,6 +6215,7 @@ a:hover {
     padding: 2rem;
     background-color: #fff;
     z-index: 4;
+    display: none;
   }
   .header-contact-right__cart .mobile-cart .header-cart-notify__moible .header-cart--notify {
     border-radius: 1rem;
@@ -6285,6 +6306,9 @@ a:hover {
     margin-bottom: 1.5rem;
     background-color: #a1710f;
     color: #fff;
+  }
+  .header-contact-right__cart .mobile-cart .mobile-cart-overlay {
+    display: none;
   }
   .main .product-details .product-one-border {
     border: none;
@@ -6773,9 +6797,6 @@ a:hover {
     width: 1.8rem;
     height: 1.7rem;
     margin-left: 1rem;
-  }
-  .address-info-caption {
-    padding: 0 6% !important;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -7562,6 +7583,15 @@ a:hover {
   }
 }
 @media (max-width: 480px) {
+  .address {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .address-nav,
+.address .location-details {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
   .training-detail-container {
     flex-direction: column-reverse;
     padding: 0 2rem;
@@ -7570,10 +7600,19 @@ a:hover {
   .training-detail-container .home {
     background-color: #fff;
   }
-  .training-detail-container .home h1 {
-    padding: 0 6rem;
+  .training-detail-container .home > .heading-mobile {
+    display: block;
+    padding: 0 10rem;
+    margin-bottom: 5rem;
     font-size: 2rem;
     text-align: center;
+  }
+  .training-detail-container .home .details-reason-img,
+.training-detail-container .home .details-expert-img__one {
+    width: 100%;
+  }
+  .training-detail-container .home .details-rated-title {
+    font-size: 2.5rem;
   }
   .training-detail-container .home .details-header,
 .training-detail-container .home .details-content,
@@ -7606,18 +7645,16 @@ a:hover {
 .swiper-button-prev {
     display: none;
   }
-  .details-menu-list {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 2rem;
-    justify-content: center;
+  .details-menu-mobile {
+    display: block;
+    padding-bottom: 4rem;
   }
-  .details-menu-list__item {
-    margin: 0 0.5rem 0.5rem 0.5rem;
+  .details-menu-mobile .details-menu-list__item {
+    margin: 0 0 0.5rem 0;
   }
-  .details-menu-list__item--text {
+  .details-menu-mobile .details-menu-list__item--text {
     padding: 0.5rem 1rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     min-width: 14rem;
   }
   .details-news {
@@ -7640,6 +7677,12 @@ a:hover {
   .headers {
     display: none;
   }
+  .container-max {
+    margin-top: 0;
+  }
+  .pd-05 {
+    padding: 0.5rem;
+  }
   .training-container {
     margin-top: 6.4rem;
   }
@@ -7648,6 +7691,7 @@ a:hover {
     width: 6.7rem;
     margin-left: 50%;
     transform: translateX(-50%);
+    padding-left: 0;
   }
   .training-container .content-img img {
     width: 100%;
@@ -7660,7 +7704,7 @@ a:hover {
     display: none;
   }
   .container-body-training {
-    margin-top: 5.9rem;
+    margin: 5.9rem 3rem 7rem 3rem;
   }
   .container-body-training .container-service .container-service-item .service-image {
     width: 100%;
@@ -7673,14 +7717,19 @@ a:hover {
   }
 }
 @media (max-width: 480px) {
+  .mb-7 {
+    margin-bottom: 7rem;
+  }
   .service {
     width: 95%;
     margin: 0 auto;
     display: block;
     margin-top: 3rem;
+    padding-bottom: 0;
   }
   .service--detail {
     padding: 7.5rem 2.6rem 4rem 2.6rem;
+    border-radius: 2rem;
   }
   .service--detail__heading {
     font-size: 3rem;
@@ -7733,24 +7782,28 @@ a:hover {
   .service--detailing .form-contact {
     width: 100% !important;
   }
+  .details-pagination-mobile {
+    margin-top: 3rem;
+    padding-bottom: 14rem;
+  }
   .service--category-one__mobile {
     display: block;
-    height: 90rem;
-    z-index: 2;
+    padding: 0 1.2rem;
   }
   .service--category-one__mobile .detail-news {
+    background-color: #fff;
     border-radius: 2rem;
     margin-bottom: 2rem;
     padding: 1rem 0 1.75rem;
-    height: 100%;
+    height: 86%;
   }
   .service--category-one__mobile .detail-news--title {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     text-transform: uppercase;
     font-family: Gilroy-XBold;
     text-align: center;
     color: #a0710e;
-    padding-bottom: 1.8rem;
+    padding-top: 2rem;
   }
   .service--category-one__mobile .detail-news--menu {
     padding: 0 1rem;
@@ -7789,7 +7842,7 @@ a:hover {
     text-transform: uppercase;
   }
   .service--category-one__mobile .detail-news--menu__list--item--ex2-text {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     text-transform: uppercase;
     padding-left: 1rem;
@@ -7807,11 +7860,12 @@ a:hover {
     text-transform: uppercase;
   }
   .service--category-one__mobile .detail-news--menu__list--item--depth-text {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     text-transform: uppercase;
     padding-left: 1rem;
     padding-top: 1rem;
+    padding-right: 10%;
   }
   .service--category-one__mobile .detail-news--menu__list--item--bs4 {
     background-image: url(../images/service/img7.png);
@@ -7825,7 +7879,7 @@ a:hover {
     text-transform: uppercase;
   }
   .service--category-one__mobile .detail-news--menu__list--item--bs4-text {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     text-transform: uppercase;
     padding-left: 1rem;
@@ -7853,17 +7907,12 @@ a:hover {
     height: 9rem;
   }
   .service--category-one__mobile .detail-news--menu__list--item--desc {
-    position: absolute;
-    top: 0;
-    right: 0;
-    text-transform: uppercase;
-    font-family: Gilroy-Bold;
-    font-size: 1.2rem;
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: bold;
     max-width: 60%;
     padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 10%;
   }
   .detail-news {
     padding: 0 2.6rem;
@@ -8419,9 +8468,6 @@ a:hover {
   }
 }
 @media (max-width: 480px) {
-  .service--detail {
-    border-radius: 0rem;
-  }
   .service-promotion-mobile {
     width: 90%;
   }
@@ -8440,6 +8486,9 @@ a:hover {
   }
   .promotion-mobile {
     margin-top: 7rem;
+  }
+  .promotion-mobile .service--detail {
+    border-radius: 0rem;
   }
   .promotion-mobile__heading {
     font-size: 3rem;
@@ -8579,14 +8628,19 @@ a:hover {
   }
 }
 @media (max-width: 480px) {
+  .mb-7 {
+    margin-bottom: 7rem;
+  }
   .service {
     width: 95%;
     margin: 0 auto;
     display: block;
     margin-top: 3rem;
+    padding-bottom: 0;
   }
   .service--detail {
     padding: 7.5rem 2.6rem 4rem 2.6rem;
+    border-radius: 2rem;
   }
   .service--detail__heading {
     font-size: 3rem;
@@ -8639,24 +8693,28 @@ a:hover {
   .service--detailing .form-contact {
     width: 100% !important;
   }
+  .details-pagination-mobile {
+    margin-top: 3rem;
+    padding-bottom: 14rem;
+  }
   .service--category-one__mobile {
     display: block;
-    height: 90rem;
-    z-index: 2;
+    padding: 0 1.2rem;
   }
   .service--category-one__mobile .detail-news {
+    background-color: #fff;
     border-radius: 2rem;
     margin-bottom: 2rem;
     padding: 1rem 0 1.75rem;
-    height: 100%;
+    height: 86%;
   }
   .service--category-one__mobile .detail-news--title {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     text-transform: uppercase;
     font-family: Gilroy-XBold;
     text-align: center;
     color: #a0710e;
-    padding-bottom: 1.8rem;
+    padding-top: 2rem;
   }
   .service--category-one__mobile .detail-news--menu {
     padding: 0 1rem;
@@ -8695,7 +8753,7 @@ a:hover {
     text-transform: uppercase;
   }
   .service--category-one__mobile .detail-news--menu__list--item--ex2-text {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     text-transform: uppercase;
     padding-left: 1rem;
@@ -8713,11 +8771,12 @@ a:hover {
     text-transform: uppercase;
   }
   .service--category-one__mobile .detail-news--menu__list--item--depth-text {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     text-transform: uppercase;
     padding-left: 1rem;
     padding-top: 1rem;
+    padding-right: 10%;
   }
   .service--category-one__mobile .detail-news--menu__list--item--bs4 {
     background-image: url(../images/service/img7.png);
@@ -8731,7 +8790,7 @@ a:hover {
     text-transform: uppercase;
   }
   .service--category-one__mobile .detail-news--menu__list--item--bs4-text {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     text-transform: uppercase;
     padding-left: 1rem;
@@ -8759,17 +8818,12 @@ a:hover {
     height: 9rem;
   }
   .service--category-one__mobile .detail-news--menu__list--item--desc {
-    position: absolute;
-    top: 0;
-    right: 0;
-    text-transform: uppercase;
-    font-family: Gilroy-Bold;
-    font-size: 1.2rem;
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: bold;
     max-width: 60%;
     padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 10%;
   }
   .detail-news {
     padding: 0 2.6rem;
@@ -9293,9 +9347,6 @@ a:hover {
   .tips-beautify--category__list--item:nth-child(4) {
     display: none;
   }
-  .detail-news {
-    display: none;
-  }
   .mr-48 {
     margin-right: 4.8rem;
   }
@@ -9331,6 +9382,9 @@ a:hover {
   .tips-beautify--detail .tips-beautify--detailing .mobile-srouce {
     display: block;
     font-size: 1.2rem;
+  }
+  .tips-beautify .detail-news {
+    display: none;
   }
   .tips-new {
     display: block;
@@ -10323,7 +10377,7 @@ a:hover {
 .address-info-caption {
   margin-bottom: 2.6rem;
   font-size: 1.8rem;
-  padding: 0 35%;
+  padding: 0 38%;
 }
 .address-image {
   position: relative;
@@ -10345,7 +10399,7 @@ a:hover {
 }
 .address-nav-location__item--link {
   color: #808080;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: Gilroy-Bold;
   text-transform: uppercase;
 }

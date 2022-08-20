@@ -61,6 +61,15 @@
 }
 
 @include responsive_mobile {
+    .address { 
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        &-nav,
+        .location-details {
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+        }
+    }
     .training-detail-container {
         flex-direction: column-reverse;
         
@@ -69,11 +78,19 @@
         .home {
             background-color: $white;
 
-            // margin: 0 2rem;
-            h1 {
-                padding: 0 6rem;
+            > .heading-mobile {
+                display: block;
+                padding: 0 10rem;
+                margin-bottom: 5rem;
                 font-size: 2rem;
                 text-align: center;
+            }
+            .details-reason-img,
+            .details-expert-img__one {
+                width: 100%;
+            }
+            .details-rated-title {
+                font-size: 2.5rem;
             }
 
             .details-header,
@@ -124,19 +141,19 @@
     .swiper-button-prev {
         display: none;
     }
-    .details-menu-list {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 2rem;
-        justify-content: center;
+    .details-menu-mobile {
+        display: block;
+        padding-bottom: 4rem;
 
-        &__item {
-            margin: 0 0.5rem 0.5rem 0.5rem;
-
-            &--text {
-                padding: 0.5rem 1rem;
-                font-size: 1.4rem;
-                min-width: 14rem;
+        .details-menu-list {
+            &__item {
+                margin: 0 0 0.5rem 0;
+    
+                &--text {
+                    padding: 0.5rem 1rem;
+                    font-size: 1.2rem;
+                    min-width: 14rem;
+                }
             }
         }
     }

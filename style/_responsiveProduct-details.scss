@@ -25,6 +25,7 @@
                             padding: 2rem;
                             background-color: #fff;
                             z-index: 4;
+                            display: none;
                             .header-cart--notify {
                                 border-radius: 1rem;
                                 &__info {
@@ -117,6 +118,9 @@
                                     }
                                 }
                             }
+                        }
+                        .mobile-cart-overlay {
+                            display: none;
                         }
                     }
                 }
