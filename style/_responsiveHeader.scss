@@ -287,9 +287,6 @@
                         width: 20rem;
                         margin: 0 auto;
                         transform: none;
-                        &-name {
-                            padding: 0 2%;
-                        }
                     }
                 }
             }
@@ -331,7 +328,7 @@
             &-right {
                 justify-content: space-between;
                 align-items: center;
-                padding-left: 6rem;
+                padding-left: 7rem;
 
                 &__cart {
                     width: 4.1rem !important;
@@ -385,6 +382,7 @@
                     background-color: $backgroundSearch;
                     border: none;
                     border-radius: 1rem;
+                    margin-right: 0.8rem;
 
                     svg {
                         background-color: $backgroundSearch;
