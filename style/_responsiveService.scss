@@ -318,7 +318,7 @@
         .tabs{
             display: flex;
             right: 1.5rem;
-            
+
 
             .tab-item-heading{
                 margin: 0 0.5rem;
@@ -335,7 +335,7 @@
                 &--logo {
                     width: 33%;
                 }
-                
+
                 &--contact {
                     margin-top: 6.5rem;
 
@@ -370,6 +370,7 @@
                     }
                 }
             }
+
            
             .address{
                 padding: 2rem 0;
@@ -383,11 +384,12 @@
                             &__item{
                                 padding: 0.5rem 1rem;
                             }
+
                         }
                     }
                 }
             }
-           
+
         }
     }
 }
@@ -443,6 +445,7 @@
             .address{
                 width: 55rem;
 
+
                 .location-details{
                     height: 42rem;
                 }
@@ -450,6 +453,7 @@
         }
     }
 }
+
 @include responsive_pclow {
     .nonepc {
         display: none;
@@ -457,11 +461,13 @@
 
     .form--contact {
         .tabs{
+
         right: 20rem;
 
         .tab-item-heading{
             min-width: 15rem;
         }
+
         }
         .tab-pane-content {
             .form--contact__inner {
@@ -495,6 +501,7 @@
                     }
                 }
             }
+
             .address{
                 width: 80rem;
                 .location-details{
@@ -506,6 +513,7 @@
                     }
                 }
             }
+
         }
     }
 }
