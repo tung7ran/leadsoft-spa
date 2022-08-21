@@ -159,6 +159,8 @@ video {
   font: inherit;
   vertical-align: baseline;
   outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -390,17 +392,6 @@ a:hover {
   margin-left: 0;
 }
 
-@-webkit-keyframes showModal {
-  from {
-    top: -200px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
 @keyframes showModal {
   from {
     top: -200px;
@@ -408,16 +399,6 @@ a:hover {
   }
   to {
     top: 0;
-    opacity: 1;
-  }
-}
-@-webkit-keyframes drop-down {
-  from {
-    opacity: 0;
-    left: -200px;
-  }
-  to {
-    left: 0;
     opacity: 1;
   }
 }
@@ -2941,8 +2922,7 @@ a:hover {
 .main-logo img {
   width: 100%;
   height: 101%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .main-info-image {
   position: relative;
@@ -3169,8 +3149,7 @@ a:hover {
 .main-team img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .main-papers {
   position: relative;
@@ -3950,13 +3929,11 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
-  -webkit-animation: showModal linear 0.3s;
-          animation: showModal linear 0.3s;
+  animation: showModal linear 0.3s;
   position: relative;
 }
 .form--register__inner--logo,
@@ -4065,16 +4042,14 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 60.38rem;
   height: 63.8rem;
   margin-left: 50%;
   transform: translateX(-50%);
   margin-top: calc((100vh - 63.8rem) / 2);
   overflow: hidden;
-  -webkit-animation: showModal linear 0.3s;
-          animation: showModal linear 0.3s;
+  animation: showModal linear 0.3s;
   position: relative;
 }
 .form--again__inner--logo {
@@ -4717,16 +4692,14 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 60.38rem;
   height: 63.8rem;
   margin-top: calc((100vh - 63.8rem) / 2);
   margin-left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
-  -webkit-animation: scrollY linear 0.3s;
-          animation: scrollY linear 0.3s;
+  animation: scrollY linear 0.3s;
   position: relative;
 }
 .form--pop__inner--logo {
@@ -4855,8 +4828,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 20rem;
   height: 5.5rem;
   margin-top: calc((0vh - 161rem) / 2);
@@ -4868,8 +4840,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 20rem;
   height: 5.5rem;
   margin-top: calc((0vh + 5rem) / 2);
@@ -4881,8 +4852,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 20rem;
   height: 5.5rem;
   margin-top: calc((0vh + 2rem) / 2);
@@ -4896,14 +4866,12 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-top: calc((100vh - 70rem) / 2);
   margin-left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
-  -webkit-animation: scrollY linear 0.3s;
-          animation: scrollY linear 0.3s;
+  animation: scrollY linear 0.3s;
   position: relative;
   border-radius: 4rem;
 }
@@ -4979,8 +4947,7 @@ a:hover {
 .address-pop-mobile .pop-details-list__item .pop-details-left img {
   width: 100%;
   height: 12rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 2.6rem;
 }
 .address-pop-mobile .pop-details-list__item .pop-details-right {
@@ -5065,16 +5032,14 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 60.38rem;
   height: 63.8rem;
   margin-left: 50%;
   transform: translateX(-50%);
   margin-top: calc((100vh - 63.8rem) / 2);
   overflow: hidden;
-  -webkit-animation: showModal linear 0.3s;
-          animation: showModal linear 0.3s;
+  animation: showModal linear 0.3s;
   position: relative;
 }
 .form--advise__inner--logo {
@@ -5158,16 +5123,14 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 60.38rem;
   height: 63.8rem;
   margin-left: 50%;
   transform: translateX(-50%);
   margin-top: calc((100vh - 63.8rem) / 2);
   overflow: hidden;
-  -webkit-animation: showModal linear 0.3s;
-          animation: showModal linear 0.3s;
+  animation: showModal linear 0.3s;
   position: relative;
 }
 .form--appointment__inner--logo {
@@ -5569,8 +5532,7 @@ a:hover {
     left: 1.2rem;
     z-index: 3;
     display: none;
-    -webkit-animation: drop-down 0.2s ease-out;
-            animation: drop-down 0.2s ease-out;
+    animation: drop-down 0.2s ease-out;
   }
   .header-main-nav {
     display: block;
@@ -5782,8 +5744,7 @@ a:hover {
   .footer-top-interactive .interactive-image > img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .footer-top-interactive .interactive-image .footer-top-interactive__share--top {
     top: 2rem;
@@ -6133,8 +6094,7 @@ a:hover {
     width: 100%;
     height: 100%;
     margin: 0;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .main .product-details .product-list-item__name {
     font-size: 1.4rem;
@@ -6189,8 +6149,7 @@ a:hover {
   .main .product-details .product-list-item__image img {
     height: 100%;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .main .product-details .product-list-item__name {
     font-size: 1.4rem;
@@ -6502,8 +6461,7 @@ a:hover {
   .main .product-similar-list__item--image img {
     width: 100%;
     height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .main .product-similar-list__item--name {
     margin-top: 0 !important;
@@ -6780,8 +6738,7 @@ a:hover {
     height: 24.5rem;
   }
   .beautify-mobile .beautify-program-list__item--image--product {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .beautify-mobile .beautify-program-list__item .image-pseudo--tips::after {
     display: none;
@@ -7163,8 +7120,7 @@ a:hover {
   .top-banner-2 img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .top-banner-2 .top-banner-body {
     height: 33.8rem;
@@ -7787,22 +7743,14 @@ a:hover {
   }
 }
 @media (max-width: 480px) {
-  .mb-7 {
-    margin-bottom: 7rem;
-  }
-  .advise-contact-mobile {
-    display: block;
-  }
   .service {
     width: 95%;
     margin: 0 auto;
     display: block;
     margin-top: 3rem;
-    padding-bottom: 0;
   }
   .service--detail {
     padding: 7.5rem 2.6rem 4rem 2.6rem;
-    border-radius: 2rem;
   }
   .service--detail__heading {
     font-size: 3rem;
@@ -7855,28 +7803,24 @@ a:hover {
   .service--detailing .form-contact {
     width: 100% !important;
   }
-  .details-pagination-mobile {
-    margin-top: 3rem;
-    padding-bottom: 14rem;
-  }
   .service--category-one__mobile {
     display: block;
-    padding: 0 1.2rem;
+    height: 90rem;
+    z-index: 2;
   }
   .service--category-one__mobile .detail-news {
-    background-color: #fff;
     border-radius: 2rem;
     margin-bottom: 2rem;
     padding: 1rem 0 1.75rem;
     height: 100%;
   }
   .service--category-one__mobile .detail-news--title {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     font-family: Gilroy-XBold;
     text-align: center;
     color: #a0710e;
-    padding-top: 2rem;
+    padding-bottom: 1.8rem;
   }
   .service--category-one__mobile .detail-news--menu {
     padding: 0 1rem;
@@ -7915,7 +7859,7 @@ a:hover {
     text-transform: uppercase;
   }
   .service--category-one__mobile .detail-news--menu__list--item--ex2-text {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
     padding-left: 1rem;
@@ -7933,12 +7877,11 @@ a:hover {
     text-transform: uppercase;
   }
   .service--category-one__mobile .detail-news--menu__list--item--depth-text {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
     padding-left: 1rem;
     padding-top: 1rem;
-    padding-right: 10%;
   }
   .service--category-one__mobile .detail-news--menu__list--item--bs4 {
     background-image: url(../images/service/img7.png);
@@ -7952,7 +7895,7 @@ a:hover {
     text-transform: uppercase;
   }
   .service--category-one__mobile .detail-news--menu__list--item--bs4-text {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
     padding-left: 1rem;
@@ -7980,12 +7923,17 @@ a:hover {
     height: 9rem;
   }
   .service--category-one__mobile .detail-news--menu__list--item--desc {
-    font-size: 1.6rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-transform: uppercase;
+    font-family: Gilroy-Bold;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
     font-weight: bold;
     max-width: 60%;
     padding-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 10%;
   }
   .detail-news {
     padding: 0 2.6rem;
@@ -8053,10 +8001,112 @@ a:hover {
     margin-top: 0.6rem;
     margin-right: 1.4rem;
   }
+  .form--contact .tabs {
+    display: flex;
+    right: 1.5rem;
+  }
+  .form--contact .tabs .tab-item-heading {
+    margin: 0 0.5rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner,
+.form--contact .tab-pane-content .form--contact__inner {
+    width: 45rem;
+    height: 55rem;
+    border-radius: 3rem;
+    margin-top: calc((100vh - 55rem) / 2);
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--logo,
+.form--contact .tab-pane-content .form--contact__inner--logo {
+    width: 33%;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--contact,
+.form--contact .tab-pane-content .form--contact__inner--contact {
+    margin-top: 6.5rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--contact--form-group .form-textarea,
+.form--contact .tab-pane-content .form--contact__inner--contact--form-group .form-textarea {
+    height: 10rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--contact .send-contact__btn,
+.form--contact .tab-pane-content .form--contact__inner--contact .send-contact__btn {
+    padding: 1rem 2rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--contact--text,
+.form--contact .tab-pane-content .form--contact__inner--contact--text {
+    font-size: 1.6rem;
+    padding: 1rem 5rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--title,
+.form--contact .tab-pane-content .form--contact__inner--title {
+    margin-top: 5rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--appointment,
+.form--contact .tab-pane-content .form--contact__inner--appointment {
+    margin-top: 0;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--appointment--form-group .form-textarea,
+.form--contact .tab-pane-content .form--contact__inner--appointment--form-group .form-textarea {
+    height: 10rem;
+  }
+  .form--contact .tab-pane-content .address {
+    margin-top: calc((100vh - 55rem) / 2);
+    background-color: #f5e28b;
+    border-radius: 2rem;
+    padding: 2rem;
+  }
+  .form--contact .tab-pane-content .address-info-title {
+    margin-bottom: 1rem;
+  }
+  .form--contact .tab-pane-content .address .location-details {
+    background-color: #fff;
+    border-radius: 2rem;
+  }
+  .form--contact .tab-pane-content .address .location-details .location-details-mobile {
+    height: 44rem;
+  }
+  .form--contact .tab-pane-content .address .location-details .location-details-mobile .location-detail-btn {
+    display: flex;
+  }
+  .form--contact .tab-pane-content .address .location-details .location-details-mobile .location-detail-btn .pop-details-right__booking--item {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 1rem;
+    margin-left: 0.5rem;
+    border-radius: 1rem;
+    color: #a1710f;
+    border: #a1710f 1px solid;
+  }
+  .form--contact .tab-pane-content .address .location-details .location-details-mobile .location-detail-btn .pop-details-right__booking--item img {
+    height: 2rem;
+  }
 }
 @media (min-width: 991px) {
   .nonepc {
     display: none;
+  }
+  .form--contact .tabs {
+    right: 20rem;
+  }
+  .form--contact .tabs .tab-item-heading {
+    min-width: 15rem;
+  }
+  .form--contact .tab-pane-content .form--contact__inner {
+    width: 60.38rem;
+    border-radius: 5rem;
+    margin-top: calc((100vh - 63.8rem) / 2);
+  }
+  .form--contact .tab-pane-content .form--contact__inner--logo {
+    width: 40%;
+  }
+  .form--contact .tab-pane-content .form--contact__inner--contact {
+    margin-top: 5.5rem;
+  }
+  .form--contact .tab-pane-content .form--contact__inner--contact--form-group .form-textarea {
+    height: 13.4rem;
+  }
+  .form--contact .tab-pane-content .form--contact__inner--contact--text {
+    padding: 2rem 12rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 480px) {
@@ -8149,8 +8199,7 @@ a:hover {
     height: 294rem;
   }
   .main-info .main-inftras-image__above img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .main-info .main-inftras-image__below {
     position: absolute;
@@ -8249,8 +8298,7 @@ a:hover {
     width: 100%;
     height: 100%;
     border-radius: 3rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .main-device .device-mobile .main-device-left__list--item3 {
     position: absolute;
@@ -8427,8 +8475,7 @@ a:hover {
   .main-device .device-pc .main-device-left__list--item2 img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .main-device .device-pc .main-device-left__list--item3 {
     top: 18.2rem;
@@ -8714,22 +8761,14 @@ a:hover {
   }
 }
 @media (max-width: 480px) {
-  .mb-7 {
-    margin-bottom: 7rem;
-  }
-  .advise-contact-mobile {
-    display: block;
-  }
   .service {
     width: 95%;
     margin: 0 auto;
     display: block;
     margin-top: 3rem;
-    padding-bottom: 0;
   }
   .service--detail {
     padding: 7.5rem 2.6rem 4rem 2.6rem;
-    border-radius: 2rem;
   }
   .service--detail__heading {
     font-size: 3rem;
@@ -8782,28 +8821,24 @@ a:hover {
   .service--detailing .form-contact {
     width: 100% !important;
   }
-  .details-pagination-mobile {
-    margin-top: 3rem;
-    padding-bottom: 14rem;
-  }
   .service--category-one__mobile {
     display: block;
-    padding: 0 1.2rem;
+    height: 90rem;
+    z-index: 2;
   }
   .service--category-one__mobile .detail-news {
-    background-color: #fff;
     border-radius: 2rem;
     margin-bottom: 2rem;
     padding: 1rem 0 1.75rem;
     height: 100%;
   }
   .service--category-one__mobile .detail-news--title {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     font-family: Gilroy-XBold;
     text-align: center;
     color: #a0710e;
-    padding-top: 2rem;
+    padding-bottom: 1.8rem;
   }
   .service--category-one__mobile .detail-news--menu {
     padding: 0 1rem;
@@ -8842,7 +8877,7 @@ a:hover {
     text-transform: uppercase;
   }
   .service--category-one__mobile .detail-news--menu__list--item--ex2-text {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
     padding-left: 1rem;
@@ -8860,12 +8895,11 @@ a:hover {
     text-transform: uppercase;
   }
   .service--category-one__mobile .detail-news--menu__list--item--depth-text {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
     padding-left: 1rem;
     padding-top: 1rem;
-    padding-right: 10%;
   }
   .service--category-one__mobile .detail-news--menu__list--item--bs4 {
     background-image: url(../images/service/img7.png);
@@ -8879,7 +8913,7 @@ a:hover {
     text-transform: uppercase;
   }
   .service--category-one__mobile .detail-news--menu__list--item--bs4-text {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
     padding-left: 1rem;
@@ -8907,12 +8941,17 @@ a:hover {
     height: 9rem;
   }
   .service--category-one__mobile .detail-news--menu__list--item--desc {
-    font-size: 1.6rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-transform: uppercase;
+    font-family: Gilroy-Bold;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
     font-weight: bold;
     max-width: 60%;
     padding-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 10%;
   }
   .detail-news {
     padding: 0 2.6rem;
@@ -8980,10 +9019,112 @@ a:hover {
     margin-top: 0.6rem;
     margin-right: 1.4rem;
   }
+  .form--contact .tabs {
+    display: flex;
+    right: 1.5rem;
+  }
+  .form--contact .tabs .tab-item-heading {
+    margin: 0 0.5rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner,
+.form--contact .tab-pane-content .form--contact__inner {
+    width: 45rem;
+    height: 55rem;
+    border-radius: 3rem;
+    margin-top: calc((100vh - 55rem) / 2);
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--logo,
+.form--contact .tab-pane-content .form--contact__inner--logo {
+    width: 33%;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--contact,
+.form--contact .tab-pane-content .form--contact__inner--contact {
+    margin-top: 6.5rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--contact--form-group .form-textarea,
+.form--contact .tab-pane-content .form--contact__inner--contact--form-group .form-textarea {
+    height: 10rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--contact .send-contact__btn,
+.form--contact .tab-pane-content .form--contact__inner--contact .send-contact__btn {
+    padding: 1rem 2rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--contact--text,
+.form--contact .tab-pane-content .form--contact__inner--contact--text {
+    font-size: 1.6rem;
+    padding: 1rem 5rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--title,
+.form--contact .tab-pane-content .form--contact__inner--title {
+    margin-top: 5rem;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--appointment,
+.form--contact .tab-pane-content .form--contact__inner--appointment {
+    margin-top: 0;
+  }
+  .form--contact .tab-pane-content .form--appointment__inner--appointment--form-group .form-textarea,
+.form--contact .tab-pane-content .form--contact__inner--appointment--form-group .form-textarea {
+    height: 10rem;
+  }
+  .form--contact .tab-pane-content .address {
+    margin-top: calc((100vh - 55rem) / 2);
+    background-color: #f5e28b;
+    border-radius: 2rem;
+    padding: 2rem;
+  }
+  .form--contact .tab-pane-content .address-info-title {
+    margin-bottom: 1rem;
+  }
+  .form--contact .tab-pane-content .address .location-details {
+    background-color: #fff;
+    border-radius: 2rem;
+  }
+  .form--contact .tab-pane-content .address .location-details .location-details-mobile {
+    height: 44rem;
+  }
+  .form--contact .tab-pane-content .address .location-details .location-details-mobile .location-detail-btn {
+    display: flex;
+  }
+  .form--contact .tab-pane-content .address .location-details .location-details-mobile .location-detail-btn .pop-details-right__booking--item {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 1rem;
+    margin-left: 0.5rem;
+    border-radius: 1rem;
+    color: #a1710f;
+    border: #a1710f 1px solid;
+  }
+  .form--contact .tab-pane-content .address .location-details .location-details-mobile .location-detail-btn .pop-details-right__booking--item img {
+    height: 2rem;
+  }
 }
 @media (min-width: 991px) {
   .nonepc {
     display: none;
+  }
+  .form--contact .tabs {
+    right: 20rem;
+  }
+  .form--contact .tabs .tab-item-heading {
+    min-width: 15rem;
+  }
+  .form--contact .tab-pane-content .form--contact__inner {
+    width: 60.38rem;
+    border-radius: 5rem;
+    margin-top: calc((100vh - 63.8rem) / 2);
+  }
+  .form--contact .tab-pane-content .form--contact__inner--logo {
+    width: 40%;
+  }
+  .form--contact .tab-pane-content .form--contact__inner--contact {
+    margin-top: 5.5rem;
+  }
+  .form--contact .tab-pane-content .form--contact__inner--contact--form-group .form-textarea {
+    height: 13.4rem;
+  }
+  .form--contact .tab-pane-content .form--contact__inner--contact--text {
+    padding: 2rem 12rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 480px) {
@@ -9041,8 +9182,7 @@ a:hover {
     height: 294rem;
   }
   .main-info .main-inftras-image__above img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .main-info .main-inftras-image__below {
     position: absolute;
@@ -9141,8 +9281,7 @@ a:hover {
     width: 100%;
     height: 100%;
     border-radius: 3rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .main-device .device-mobile .main-device-left__list--item3 {
     position: absolute;
@@ -9319,8 +9458,7 @@ a:hover {
   .main-device .device-pc .main-device-left__list--item2 img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .main-device .device-pc .main-device-left__list--item3 {
     top: 18.2rem;
@@ -9950,8 +10088,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .container-item .pd-05 {
@@ -10052,8 +10189,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: relative;
 }
 .top-banner-2 .top-banner-body {
@@ -10070,8 +10206,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .treatment-result {
@@ -10262,8 +10397,7 @@ a:hover {
   border-radius: 2rem;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .beauty-store .container-item .container-body .product-list .product-slider .product-slider-item .product-item__name {
   font-size: 1.8rem;
@@ -10347,8 +10481,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: relative;
   height: 76.7rem;
 }
@@ -10364,8 +10497,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 37.6rem;
   height: 26.5rem;
   margin: 1.5rem 0;
@@ -10405,8 +10537,7 @@ a:hover {
 .advise-contact .advise-contact__body .contact-body .contact-body__right .contact-body__right-heading {
   width: auto;
   height: 20.7rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .advise-contact .advise-contact__body .contact-body .contact-body__right .contact-body__right-heading .contact__heading {
   width: 100%;
@@ -10526,8 +10657,7 @@ a:hover {
 .address .location-details-list__item .location-details-left img {
   width: 100%;
   height: 18rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 2.6rem;
 }
 .address .location-details-list__item .location-details-right {
@@ -10594,4 +10724,6 @@ a:hover {
   border-bottom-right-radius: 8rem;
   border-top-left-radius: 8rem;
   border-top-right-radius: 8rem;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
