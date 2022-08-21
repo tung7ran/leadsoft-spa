@@ -159,6 +159,8 @@ video {
   font: inherit;
   vertical-align: baseline;
   outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -390,17 +392,6 @@ a:hover {
   margin-left: 0;
 }
 
-@-webkit-keyframes showModal {
-  from {
-    top: -200px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
 @keyframes showModal {
   from {
     top: -200px;
@@ -408,16 +399,6 @@ a:hover {
   }
   to {
     top: 0;
-    opacity: 1;
-  }
-}
-@-webkit-keyframes drop-down {
-  from {
-    opacity: 0;
-    left: -200px;
-  }
-  to {
-    left: 0;
     opacity: 1;
   }
 }
@@ -2941,8 +2922,7 @@ a:hover {
 .main-logo img {
   width: 100%;
   height: 101%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .main-info-image {
   position: relative;
@@ -3169,8 +3149,7 @@ a:hover {
 .main-team img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .main-papers {
   position: relative;
@@ -3946,13 +3925,11 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
-  -webkit-animation: showModal linear 0.3s;
-          animation: showModal linear 0.3s;
+  animation: showModal linear 0.3s;
   position: relative;
 }
 .form--register__inner--logo,
@@ -4121,16 +4098,14 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 60.38rem;
   height: 63.8rem;
   margin-left: 50%;
   transform: translateX(-50%);
   margin-top: calc((100vh - 63.8rem) / 2);
   overflow: hidden;
-  -webkit-animation: showModal linear 0.3s;
-          animation: showModal linear 0.3s;
+  animation: showModal linear 0.3s;
   position: relative;
 }
 .form--again__inner--logo {
@@ -4773,16 +4748,14 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 60.38rem;
   height: 63.8rem;
   margin-top: calc((100vh - 63.8rem) / 2);
   margin-left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
-  -webkit-animation: scrollY linear 0.3s;
-          animation: scrollY linear 0.3s;
+  animation: scrollY linear 0.3s;
   position: relative;
 }
 .form--pop__inner--logo {
@@ -4911,8 +4884,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 20rem;
   height: 5.5rem;
   margin-top: calc((0vh - 161rem) / 2);
@@ -4924,8 +4896,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 20rem;
   height: 5.5rem;
   margin-top: calc((0vh + 5rem) / 2);
@@ -4937,8 +4908,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 20rem;
   height: 5.5rem;
   margin-top: calc((0vh + 2rem) / 2);
@@ -4952,14 +4922,12 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-top: calc((100vh - 70rem) / 2);
   margin-left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
-  -webkit-animation: scrollY linear 0.3s;
-          animation: scrollY linear 0.3s;
+  animation: scrollY linear 0.3s;
   position: relative;
   border-radius: 4rem;
 }
@@ -5035,8 +5003,7 @@ a:hover {
 .address-pop-mobile .pop-details-list__item .pop-details-left img {
   width: 100%;
   height: 12rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 2.6rem;
 }
 .address-pop-mobile .pop-details-list__item .pop-details-right {
@@ -5121,16 +5088,14 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 60.38rem;
   height: 63.8rem;
   margin-left: 50%;
   transform: translateX(-50%);
   margin-top: calc((100vh - 63.8rem) / 2);
   overflow: hidden;
-  -webkit-animation: showModal linear 0.3s;
-          animation: showModal linear 0.3s;
+  animation: showModal linear 0.3s;
   position: relative;
 }
 .form--advise__inner--logo {
@@ -5214,16 +5179,14 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 60.38rem;
   height: 63.8rem;
   margin-left: 50%;
   transform: translateX(-50%);
   margin-top: calc((100vh - 63.8rem) / 2);
   overflow: hidden;
-  -webkit-animation: showModal linear 0.3s;
-          animation: showModal linear 0.3s;
+  animation: showModal linear 0.3s;
   position: relative;
 }
 .form--appointment__inner--logo {
@@ -5399,19 +5362,19 @@ a:hover {
     border-radius: 50%;
     padding: 0.5rem;
   }
-  .header-contact-right__cart > button {
+  .header-contact-right__cart .header-cart-pc .header-contact-right__cart--btn {
     background-color: transparent;
     width: 100%;
     height: 100%;
     padding: 1rem;
   }
-  .header-contact-right__cart > button img {
+  .header-contact-right__cart .header-cart-pc .header-contact-right__cart--btn img {
     width: 2rem;
     height: 2rem;
   }
-  .header-contact-right__cart--number {
-    top: -1.2rem;
-    right: -0.6rem;
+  .header-contact-right__cart .header-cart-pc .header-contact-right__cart--number {
+    top: -2rem;
+    right: -0.8rem;
     padding: 0.2rem 0.4rem;
     font-size: 1.2rem;
   }
@@ -5623,8 +5586,7 @@ a:hover {
     left: 1.2rem;
     z-index: 3;
     display: none;
-    -webkit-animation: drop-down 0.2s ease-out;
-            animation: drop-down 0.2s ease-out;
+    animation: drop-down 0.2s ease-out;
   }
   .header-main-nav {
     display: block;
@@ -5836,8 +5798,7 @@ a:hover {
   .footer-top-interactive .interactive-image > img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .footer-top-interactive .interactive-image .footer-top-interactive__share--top {
     top: 2rem;
@@ -6187,8 +6148,7 @@ a:hover {
     width: 100%;
     height: 100%;
     margin: 0;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .main .product-details .product-list-item__name {
     font-size: 1.4rem;
@@ -6243,8 +6203,7 @@ a:hover {
   .main .product-details .product-list-item__image img {
     height: 100%;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .main .product-details .product-list-item__name {
     font-size: 1.4rem;
@@ -6556,8 +6515,7 @@ a:hover {
   .main .product-similar-list__item--image img {
     width: 100%;
     height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .main .product-similar-list__item--name {
     margin-top: 0 !important;
@@ -6834,8 +6792,7 @@ a:hover {
     height: 24.5rem;
   }
   .beautify-mobile .beautify-program-list__item--image--product {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .beautify-mobile .beautify-program-list__item .image-pseudo--tips::after {
     display: none;
@@ -7217,8 +7174,7 @@ a:hover {
   .top-banner-2 img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .top-banner-2 .top-banner-body {
     height: 33.8rem;
@@ -8332,8 +8288,7 @@ a:hover {
     height: 294rem;
   }
   .main-info .main-inftras-image__above img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .main-info .main-inftras-image__below {
     position: absolute;
@@ -8432,8 +8387,7 @@ a:hover {
     width: 100%;
     height: 100%;
     border-radius: 3rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .main-device .device-mobile .main-device-left__list--item3 {
     position: absolute;
@@ -8610,8 +8564,7 @@ a:hover {
   .main-device .device-pc .main-device-left__list--item2 img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .main-device .device-pc .main-device-left__list--item3 {
     top: 18.2rem;
@@ -9357,8 +9310,7 @@ a:hover {
     height: 294rem;
   }
   .main-info .main-inftras-image__above img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .main-info .main-inftras-image__below {
     position: absolute;
@@ -9457,8 +9409,7 @@ a:hover {
     width: 100%;
     height: 100%;
     border-radius: 3rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .main-device .device-mobile .main-device-left__list--item3 {
     position: absolute;
@@ -9635,8 +9586,7 @@ a:hover {
   .main-device .device-pc .main-device-left__list--item2 img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .main-device .device-pc .main-device-left__list--item3 {
     top: 18.2rem;
@@ -10266,8 +10216,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .container-item .pd-05 {
@@ -10368,8 +10317,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: relative;
 }
 .top-banner-2 .top-banner-body {
@@ -10386,8 +10334,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .treatment-result {
@@ -10578,8 +10525,7 @@ a:hover {
   border-radius: 2rem;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .beauty-store .container-item .container-body .product-list .product-slider .product-slider-item .product-item__name {
   font-size: 1.8rem;
@@ -10663,8 +10609,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: relative;
   height: 76.7rem;
 }
@@ -10680,8 +10625,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 37.6rem;
   height: 26.5rem;
   margin: 1.5rem 0;
@@ -10721,8 +10665,7 @@ a:hover {
 .advise-contact .advise-contact__body .contact-body .contact-body__right .contact-body__right-heading {
   width: auto;
   height: 20.7rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .advise-contact .advise-contact__body .contact-body .contact-body__right .contact-body__right-heading .contact__heading {
   width: 100%;
@@ -10842,8 +10785,7 @@ a:hover {
 .address .location-details-list__item .location-details-left img {
   width: 100%;
   height: 18rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 2.6rem;
 }
 .address .location-details-list__item .location-details-right {
@@ -10910,4 +10852,6 @@ a:hover {
   border-bottom-right-radius: 8rem;
   border-top-left-radius: 8rem;
   border-top-right-radius: 8rem;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
