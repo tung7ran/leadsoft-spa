@@ -31,7 +31,7 @@ tabCategory.forEach((tab, index) => {
 
 // --------------------------------------------------------------------------------
 
-const cart = document.querySelector(".header-cart-pc");
+const cart = document.querySelector(".header-contact-right__cart");
 const notify = document.querySelector(".header-cart--notify");
 const close = document.querySelector(".header-cart--notify__info--top-icon");
 cart.addEventListener("click", () => {
