@@ -370,35 +370,19 @@
                     }
                 }
             }
-            .address{
-                margin-top: calc((100vh - 55rem) / 2);
-                background-color: $background-address-mobile;
-                border-radius: 2rem;
-                padding: 2rem;
 
-                &-info{
-                    &-title{
-                        margin-bottom: 1rem;
-                    }
-                }
+           
+            .address{
+                padding: 2rem 0;
+                width: 45rem;
                 .location-details{
-                    background-color: $white;
-                    border-radius: 2rem;
-                    .location-details-mobile{
-                        height: 44rem;
-                        .location-detail-btn{
-                            display: flex;
-                            .pop-details-right__booking--item{
-                                display: flex;
-                                align-items: center;
-                                padding: 0.2rem 1rem;
-                                margin-left: 0.5rem;
-                                border-radius: 1rem;
-                                color: $more-color;
-                                border: $more-color 1px solid;
-                                img{
-                                    height: 2rem;
-                                }
+                    height: 50rem;
+                }
+                &-nav{
+                    .container-width{
+                        .address-nav-location{
+                            &__item{
+                                padding: 0.5rem 1rem;
                             }
 
                         }
@@ -406,6 +390,66 @@
                 }
             }
 
+        }
+    }
+}
+@include responsive_tablet{
+    .form--contact{
+        .tabs{
+            right: 1.5rem;
+            .tab-item-heading{
+                span{
+                    display: none;
+                }
+            }
+        }
+        .tab-pane-content{
+            .form--appointment__inner,
+            .form--contact__inner{
+                margin-top: calc((100vh - 55rem) / 2);
+                width: 55rem;
+                height: 55rem;
+                border-radius: 5rem;
+                &--logo{
+                    width: 20rem;
+                }
+                &--title{
+                    margin-top: 2rem;
+                }
+                &--appointment{
+                    margin-top: 1rem;
+                    .send-appointment__btn{
+                        padding: 1rem 3rem;
+                    }
+                }
+                &--contact{
+                    padding: 3rem;
+                    &--form{
+                        &-group{
+                            .form-textarea{
+                                height: 12rem;
+                            }
+                        }
+                    }
+                    .send-contact__btn{
+                        padding: 1rem 3rem;
+                    }
+                    
+                    &--text{
+                        font-size: 1.6rem;
+                        padding: 1rem 9rem;
+                    }
+                }
+            }
+
+            .address{
+                width: 55rem;
+
+
+                .location-details{
+                    height: 42rem;
+                }
+            }
         }
     }
 }
@@ -417,11 +461,13 @@
 
     .form--contact {
         .tabs{
-            right: 20rem;
 
-            .tab-item-heading{
-                min-width: 15rem;
-            }
+        right: 20rem;
+
+        .tab-item-heading{
+            min-width: 15rem;
+        }
+
         }
         .tab-pane-content {
             .form--contact__inner {
@@ -455,6 +501,19 @@
                     }
                 }
             }
+
+            .address{
+                width: 80rem;
+                .location-details{
+                    .container-width{
+                        .location-details-border{
+                        padding: 1rem;
+
+                        }
+                    }
+                }
+            }
+
         }
     }
 }

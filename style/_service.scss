@@ -15,9 +15,6 @@
 .service--category-one__mobile {
     display: none;
 }
-.advise-contact-mobile {
-    display: none;
-}
 .service {
     padding-bottom: 14.6rem;
 
@@ -731,6 +728,79 @@
             }
         }
     }
+    .tab-pane-content{
+        .address{
+           
+            // height: 63.8rem;
+            margin-top: calc((100vh - 63.8rem) / 2);
+            animation: showModal linear 0.3s;
+            
+            padding: 2rem 1rem;
+            background-color: $background-address-mobile;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            border-radius: 3rem;
+           
+            &-nav{
+                .container-width{
+                    .address-nav-location{
+                        &__item{
+                            padding: 0.5rem 1.5rem;
+                        }
+                    }
+                }
+            }
+            .location-details{
+                height: 40rem;
+                overflow: auto;
+                background-color: $white;
+                border-radius: 2rem;
+                .container-width{
+                    .location-details-border{
+                        border: none;
+                        .location-details-list{
+                            &__item{
+                                .location-details-left{
+                                    
+                                    img{
+                                        width: 13.8rem;
+                                        height: 13.8rem;
+                                    }
+                                }
+                                .location-details-right{
+                                    .location-detail-btn{
+                                        display: flex;
+                                        align-items: center;
+                                        .pop-details-right__booking--item{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: space-evenly;
+                                            border: $more-color solid 1px;
+                                            border-radius: 2rem;
+                                            padding: 0.3rem 1rem;
+                                            img{
+                                                width: 2rem;
+                                                height: 2rem;
+                                            }
+                                            p{
+                                                font-style: italic;
+                                                color: $more-color;
+                                                font-weight: 600;
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .location-details::-webkit-scrollbar{
+                display: none;
+            }
+        }
+    }
 }
 
 // --------------------------------------------------------------------
@@ -794,8 +864,8 @@
                 width: 4rem;
                 margin: 0 auto;
 
-                > img {
-                    width: 4rem !important;
+                img {
+                    width: 100%;
                 }
             }
 
@@ -806,7 +876,7 @@
                 letter-spacing: 0.01rem;
 
                 p {
-                    padding: 0 9rem;
+                    padding: 0 5rem;
                 }
             }
 
