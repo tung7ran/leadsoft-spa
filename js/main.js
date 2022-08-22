@@ -54,6 +54,7 @@ function toggleModal() {
 // modal.addEventListener("click", (e) => {
 //   if(e.target == e.currentTarget) toggleModal();
 // })
+
 if (modal) {
   modal.addEventListener(
     "click",
