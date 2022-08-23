@@ -4048,7 +4048,7 @@ a:hover {
 }
 .form--register .tab-pane-content .address-nav .container-width .address-nav-location__item,
 .form--contact .tab-pane-content .address-nav .container-width .address-nav-location__item {
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
 }
 .form--register .tab-pane-content .address .location-details,
 .form--contact .tab-pane-content .address .location-details {
@@ -7330,6 +7330,9 @@ a:hover {
   .beauty-store .container-item .container-footer {
     padding-top: 3.7rem;
   }
+  .modal--maps--address {
+    width: 60.38rem;
+  }
 }
 @media (min-width: 481px) and (max-width: 768px) {
   .top-banner {
@@ -7431,6 +7434,9 @@ a:hover {
   }
   .advise-contactIndex {
     margin-top: 2rem;
+  }
+  .modal--maps--address {
+    width: 60rem;
   }
 }
 @media (max-width: 480px) {
@@ -7674,6 +7680,9 @@ a:hover {
   }
   .dp-none {
     display: none;
+  }
+  .modal--maps--address {
+    width: 45rem;
   }
 }
 @media (min-width: 769px) {
@@ -8830,7 +8839,7 @@ a:hover {
     text-align: justify;
   }
   .form--register {
-    z-index: 2;
+    z-index: 1;
   }
   .contact_inner-mobile {
     width: 90%;
@@ -8904,7 +8913,7 @@ a:hover {
     display: none;
   }
   .form--register {
-    z-index: 2;
+    z-index: 1;
   }
   .service-promotion-mobile {
     padding: 0;
@@ -10297,6 +10306,10 @@ a:hover {
     font-size: 1.4rem;
   }
 }
+.wapper {
+  position: relative;
+}
+
 .seemore-mobile {
   display: none;
 }
@@ -10949,4 +10962,73 @@ a:hover {
   border-bottom-right-radius: 8rem;
   border-top-left-radius: 8rem;
   border-top-right-radius: 8rem;
+}
+
+.modal--maps {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  display: none;
+}
+.modal--maps--address {
+  min-height: 60.38rem;
+  position: relative;
+  -webkit-animation: showModal ease 0.3s;
+          animation: showModal ease 0.3s;
+  border-radius: 1rem;
+}
+.modal--maps--address-close .close-icon {
+  position: absolute;
+  color: #000;
+  right: 0;
+  top: 0;
+  padding: 15px;
+  cursor: pointer;
+  opacity: 0.8;
+  font-size: 1.8rem;
+}
+.modal--maps--address-close .close-icon:hover {
+  opacity: 1;
+}
+.modal--maps--address__search iframe {
+  border-radius: 1rem;
+  width: 100%;
+  height: 60.38rem;
+}
+
+.modal--maps.open {
+  display: flex;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  z-index: 1;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 50%;
+  font-size: 1.6rem;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
 }/*# sourceMappingURL=main.css.map */
