@@ -4,9 +4,9 @@
         margin: 0 auto;
         display: block;
         margin-top: 3rem;
-
+        margin-bottom: 0;
         &--detail {
-            padding: 7.5rem 2.6rem 4rem 2.6rem;
+            padding: 7.5rem 2rem 4rem 2rem;
 
             &__heading {
                 font-size: 3rem;
@@ -68,8 +68,8 @@
 
             &__item {
                 &--result {
-                    width: 75%;
-                    margin: 0 auto;
+                    // width: 75%;
+                    // margin: 0 auto;
                 }
             }
 
@@ -89,7 +89,6 @@
             border-radius: 2rem;
             margin-bottom: 2rem;
             padding: 1rem 0 1.75rem;
-            height: 100%;
 
             &--title {
                 font-size: 1.6rem;
@@ -231,11 +230,12 @@
     }
 
     .detail-news {
-        padding: 0 2.6rem;
+        
         margin-top: 3rem;
-
+        background-color: $white;
+        margin-left: 1rem;
+        margin-right: 1rem;
         &--menu {
-            padding: 0 2.6rem !important;
         }
 
         &--title {
@@ -394,6 +394,24 @@
     }
 }
 @include responsive_tablet{
+    .nonepc {
+        display: none;
+    }
+    .service{
+        &--detail{
+            padding: 7.5rem 3rem 4rem 3rem;
+        }
+    }
+    .service--detailing__item{
+        &--result{
+            &--list{
+                &__item{
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                }
+            }
+        }
+    }
     .form--contact{
         .tabs{
             right: 1.5rem;
@@ -455,6 +473,18 @@
 }
 
 @include responsive_pclow {
+    .service{
+        padding-bottom: 14.6rem;
+
+    }
+    .service--detailing{
+        .form-contact{
+            .service--detailing__item--heading {
+                padding: 0 22rem;
+
+            }
+        }
+    }
     .nonepc {
         display: none;
     }

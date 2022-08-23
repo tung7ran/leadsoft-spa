@@ -16,7 +16,6 @@
     display: none;
 }
 .service {
-    padding-bottom: 14.6rem;
 
     &--detail {
         background-color: $white;
@@ -52,9 +51,7 @@
                 border-radius: 2rem;
                 border: 1px solid $more-color;
                 padding: 2.05rem;
-                width: 70%;
-                margin-left: 50%;
-                transform: translateX(-50%);
+              
             }
 
             &__item {
@@ -159,9 +156,8 @@
                     color: #a1710f;
                     line-height: 1.2;
                     text-align: center;
-                    transform: translateX(-50%);
-                    margin: 2.35rem 0 3.1rem 50%;
-                    padding: 0 2rem;
+                  
+                    margin: 2.35rem 0 3.1rem 0;
                 }
 
                 &--contact {
@@ -745,7 +741,7 @@
                 .container-width{
                     .address-nav-location{
                         &__item{
-                            padding: 0.5rem 1.5rem;
+                            padding: 0.5rem 1rem;
                         }
                     }
                 }

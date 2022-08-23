@@ -259,10 +259,12 @@
                                 margin-top: 1rem;
                             }
                         }
-    
+                        .service--detail__btn{
+                            font-size: 1.8rem;
+                            padding: 1rem 2.5rem;
+                        }
                         &__advise {
                             padding: 0.5rem 1rem;
-                            font-size: 1.8rem;
                             width: 16.7rem;
     
                             button {
@@ -272,6 +274,7 @@
                     }
     
                     &-right {
+                        position: relative;
                         &__one {
                             width: 90%;
                             height: 40rem;
