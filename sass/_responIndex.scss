@@ -244,23 +244,20 @@
     .beauty-store {
         padding: 6.1rem 0;
 
-        .container-item {
-            .container-body {
-                .slide-container {
-                    .slide-content {
-                        .card-wrapper {
-                            .card {
-                                width: 0 !important;
-                                margin-right: 1.0rem !important;
-                            }
-                        }
+        .container-body{
+            .slide-container{
+                &--list{
+                    &--item{
+                        margin: 1rem;
+
+                    }
+                  
+                }
+                &--control{
+                    img{
+                        max-width: 1050px;
                     }
                 }
-            }
-
-            .container-footer {
-                padding-top: 3.7rem;
-
             }
         }
 
@@ -430,6 +427,22 @@
         }
         .sale-heading-nav{
 
+        }
+    }
+    .beauty-store{
+        .container-body{
+            .slide-container{
+                &--list{
+                    &--item{
+                        margin: 1rem;
+                    }
+                }
+                &--control{
+                    img{
+                        max-width: 70rem;
+                    }
+                }
+            }
         }
     }
     .advise-contactIndex{
@@ -666,30 +679,21 @@
 
             .container-body {
                 .slide-container {
-                    .slide-content {
-                        margin: 0;
-
-                        .card-wrapper {
-                            .swiper-slide {
-                                width: 0 !important;
-                                margin-right: 0.7rem !important;
-                                padding-left: 0 !important;
-                                padding-right: 0 !important;
-
-                                .image-content {
-                                    padding: 0;
-                                }
-
-                                .card-content {
-                                    .description {
-                                        font-size: 1.2rem;
-                                        line-height: 1.1;
-                                    }
-                                }
-                            }
-                        }
-
+                   &--list{
+                    &--item{
+                        display: none;
                     }
+                    &--item:nth-child(1){
+                        display: block;
+                        margin-bottom: 2rem;
+                    }
+                   }
+                   &--control{
+                    img{
+                        max-width: 400px;
+                        height: 1rem;
+                    }
+                   }
                 }
             }
 
@@ -698,7 +702,17 @@
             }
 
         }
-
+     
+            .container-body{
+                .slide-container{
+                    &--control{
+                        img{
+                            max-width: 70rem;
+                        }
+                    }
+                }
+            }
+        
     }
 
     .advise-contactIndex {
