@@ -1,0 +1,306 @@
+// @import 'variables';
+
+.header-contact{
+    &-right{
+        &__cart{
+            .header-cart--notify {
+                position: absolute;
+                top: 10.5rem;
+                left: -1rem;
+                background-color: $white;
+                border-radius: 1rem;
+                z-index: 1;
+                display: none;
+                &__info {
+                    width: 30.4rem;
+                    // height: 24rem;
+                    text-align: center;
+                    box-shadow: 0.9rem 0.9rem 0.9rem rgb(0 0 0 / 10%);
+                    &--top{
+                        position: relative;
+                        &-image{
+                            margin-left: 1rem;
+                            margin-top: 1.6rem;
+                            height: 9rem;
+                            width: 7rem;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        &-icon {
+                            position: absolute;
+                            right: 1.6rem;
+                            top: 0.2rem;
+                            width: 3rem;
+                            button {
+                                color: $color-text;
+                                border:none;
+                                padding: 0;
+                                background-color: transparent;
+                                width: 100% !important;
+                                height: 100% !important;
+                                svg {
+                                    padding: 0.5rem;
+                                    background-color: #fff;
+                                }
+                            }
+                        }
+                        &-detail{
+                            padding-right: 3rem;
+                            padding-top: 2.2rem;
+                            text-align: left;
+                            h3{
+                                font-family: Gilroy-XBold;
+                                font-size: 1.6rem;
+                            }
+                            .top-detail-amount {
+                                color: $color-text;
+                                font-weight: 600;
+                                margin-top: 1.2rem;
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                    &--main {
+                        margin-left: 3rem;
+                        margin-top: 0.8rem;
+                        margin-bottom: 0.6rem;
+                        &-heading {
+                            font-weight: 600;
+                            font-size: 2rem;
+                            padding-right: 3rem;
+                            margin-bottom: 1.4rem;
+                        }
+                    }
+                    &--bottom {
+                        &-view{
+                            width: 23rem !important;
+                            height: 3.8rem !important;
+                            border-radius: 0;
+                            padding: 0;
+                            font-size: 1.8rem;
+                            margin-bottom: 0.8rem;
+                        }
+                        &-pay {
+                            width: 23rem !important;
+                            height: 3.8rem !important;
+                            border-radius: 0;
+                            padding: 0;
+                            font-size: 1.8rem;
+                            margin-bottom: 1.5rem;
+                            background-color: $more-color;
+                            color: $white
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.header-main{
+    &-nav{
+        &__list{
+            margin-bottom: 3rem;
+            &--item{
+                padding: 0 3.5rem;
+            }
+          
+        }
+    }
+}
+
+.main {
+    .product-details {
+        margin-top: 3rem;
+        .product-one {
+            position: relative;
+            &-border {
+                border-right: 1px solid $orange;
+                border-bottom: 1px solid $orange;
+            }
+            &-border::after {
+                content: "";
+                position: absolute;
+                left: 18.5%;
+                top: 48%;
+                height: 52%;
+                width: 1rem;
+                border-left: 1px solid $orange;
+            }
+            &-border::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 35.1rem;
+                height: 1rem;
+                width: 34.5%;
+                border-top: 1px solid $orange;
+            }
+            .product-briefing {
+                &-left {
+                    &__image {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    &__image{
+                        &-sub {
+                            width: 40.8rem;
+                            position: relative;
+                            margin: 0 auto 3.9rem;
+                            &--item {
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                &-right {
+                    &__title {
+                        font-size: 2.8rem;
+                        font-family: Gilroy-XBold;
+                        margin-top: 4rem;
+                        margin-right: 19.2rem;
+                        margin-bottom: 0;
+                        line-height: 1.2;
+                    }
+                    &__price {
+                        display: block;
+                        font-size: 2.4rem;
+                        margin-top: 3rem;
+                        margin-bottom: 2.8rem;
+                    }
+                    &__capacity {
+                        font-size: 2rem;
+                        font-family: Gilroy-XBold;
+                        > span {
+                            font-family: Gilroy-Medium;
+                        }
+                    }
+                    &__list {
+                        list-style: none;
+                        padding: 0;
+                        margin-bottom: 4.6rem;
+                        &-item {
+                            line-height: 1.2em;
+                            font-size: 1.6rem;
+                        }
+                        &-item:first-child {
+                            font-family: Gilroy-XBold;
+                        }
+                    }
+                    &__amount {
+                        align-items: center;
+                        &--number {
+                            width: 17.2rem;
+                            align-items: center;
+                            &-add,
+                            &-delete {
+                                padding: 1.4rem 1.2rem;
+                                background-color: #fff;
+                                font-size: 2.8rem;                            
+                            }
+                            span {
+                                font-size: 2.2rem;                            
+                                margin: 0 3.4rem;
+                            }
+                        }
+                    }
+                    &__add-cart {
+                        padding: 1.2rem 2.6rem;
+                        font-family: Gilroy-Bold;
+                        text-transform: uppercase;
+                    }
+
+                }
+            }
+            .product-info {
+                &-btn{
+                    align-items:center;
+                    margin-bottom: 1.5rem;
+                    &__describe {
+                        padding: 0.6rem 3.8rem;
+                        border-radius: 1.2rem;
+                        margin-right: 2rem;
+                        font-family: Gilroy-Bold;
+                    }
+                    &__evaluate {
+                        color: #808080;
+                        border: none;
+                        background-color: $white;                        
+                        font-family: Gilroy-Bold;
+                        font-size: 1.6rem;
+                    }
+                }
+                &-detail {
+                    margin-bottom: 3.5rem;
+                    &__list {
+                        list-style: none;
+                        padding: 2.5rem 0 3rem 2.1rem;
+                        line-height: 1.2em;
+                        font-size: 1.6rem;
+                    }
+                    &__list {
+                        li:nth-child(6) {
+                            margin-right: 4.5rem;
+                        }
+                    }
+                }
+            }
+        }
+        .product-similar {
+            &-title {
+                font-size:2.8rem;    
+                font-family: Gilroy-Bold;
+                margin-top: 9.9rem;
+                margin-bottom: 4.8rem;
+            }
+            &-list {
+                position: relative;
+                justify-content: space-between;
+                margin-bottom: 11.6rem;
+                &__item {
+                    border-radius: 0.8rem;
+                    margin-bottom: 3.4rem;
+                    max-width: 29rem;
+                    height: 39.4rem;
+                    &--image {
+                        padding-top: 6.5rem;
+                        display:flex;
+                        justify-content:center;
+                        img {
+                            height: 20rem;
+                        }
+                    }
+                    &--name {
+                        height: 6rem;
+                        margin-top: 2.2rem;
+                        margin-bottom: 0;
+                        font-size: 1.8rem;
+                    }
+                    &--money {
+                        display:flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 1.8rem;
+                        &-price {
+                            color: $more-color;
+                            font-size: 1.8rem;
+                            font-family: Gilroy-Heavy;
+                        }
+                        .choose-product {
+                            border-radius: 50%;
+                            margin-bottom: 0.6rem;
+                            svg {
+                                width: 2rem;
+                                height: 2rem;
+                                color: $brown;
+                                font-size: 1.6rem;
+                                margin-bottom: 0.11rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
