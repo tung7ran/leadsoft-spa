@@ -2802,8 +2802,18 @@ a:hover {
 .home .details-graduate-outstanding .swiper-button-next {
   top: 11rem;
 }
+.home .details-graduate-outstanding .swiper-button-prev .swiper-icon,
+.home .details-graduate-outstanding .swiper-button-next .swiper-icon {
+  width: 2rem;
+}
+.home .details-graduate-outstanding .swiper-button-prev {
+  left: 0;
+}
 .home .details-graduate-outstanding .swiper-button-next {
   right: 0;
+}
+.home .details-graduate-outstanding .swiper-navBtn::after {
+  display: none;
 }
 .home .details-rated {
   margin-top: 4rem;

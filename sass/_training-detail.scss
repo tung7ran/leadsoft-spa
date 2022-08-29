@@ -209,10 +209,20 @@
             }
             .swiper-button-prev,
             .swiper-button-next{
-                top: 11rem
+                top: 11rem;
+
+                .swiper-icon{
+                    width: 2rem;
+                }
+            }
+            .swiper-button-prev{
+                left: 0;
             }
             .swiper-button-next{
                 right: 0;
+            }
+            .swiper-navBtn::after{
+                display: none;
             }
             
         }
