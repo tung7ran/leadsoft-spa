@@ -1,0 +1,192 @@
+.mb-15 {
+    margin-bottom: 15rem !important;
+}
+.container{
+    .order-title{
+        font-size: 2.5rem;
+        font-family: Gilroy-XBold;
+        margin-left: 17%;
+    }
+    .pay{
+        margin-top: 3rem;
+        &-product{
+            
+            &-first{
+                display: flex;
+                &__surname{
+                    &--text{
+                        width: 100%;
+                        border: 1px solid #c6c6c6;
+                        padding: 1rem 2rem;
+                        border-radius: 1rem; 
+                        font-size: 1.6rem;
+                        outline: none;
+                    }
+                }
+                &__name{
+                    &--text{
+                        width: 100%;
+                        border: 1px solid #c6c6c6;
+                        padding: 1rem 2rem;
+                        border-radius: 1rem;
+                        font-size: 1.6rem;
+                        outline: none;
+    
+                    }
+                }
+            }
+            &-phone{
+                &__text{
+                    @include property();
+                    outline: none;
+    
+                }
+            }
+            &-address{
+                &__text{
+                    @include property();
+                    outline: none;
+    
+                }
+            }
+            &-city{
+                &__text{
+                    @include property();
+                    outline: none;
+    
+                }
+            }
+            &-email{
+                &__text{
+                    @include property();
+                    outline: none;
+    
+                }
+            }
+            &-note{
+                &__text{
+                    width: 100%;
+                    border: 1px solid #c6c6c6;
+                    border-radius: 1rem;
+                    font-size: 1.6rem;
+                    margin-top: 2rem;
+                    padding-bottom: 5rem;
+                    padding-left: 2rem;
+                    height: 10rem;
+                    outline: none;
+    
+                }
+            }
+        }
+        &-products{
+            padding: 2rem 1.5rem;
+            border: 1px solid $orange;
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            box-shadow: 0.9rem 0.9rem 0.9rem rgb(0 0 0 / 10%);
+            &-header{
+                text-align: center;
+                font-size: 2rem;
+                font-family: Gilroy-XBold;
+            }
+            &-text{
+                font-size: 1.6rem;   
+                margin-top: 2rem;
+                margin-bottom: 2.4rem;
+                padding-left: 1.5rem;
+            }
+            &-sub{
+                font-size: 1.4rem;
+                padding-left: 1.5rem;
+                span {
+                    font-family: Gilroy-SemiBold;
+                }
+            }
+            &-header__one{
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 1.5rem;
+                margin-top: 3.75rem;
+                &--text{
+                    font-size: 1.6rem;
+                }
+                &--price{
+                    font-size: 1.6rem;
+                    p{
+                        padding-left: 14rem;
+                    }
+                }
+            }
+            &-header__one::after{
+                content: "";
+                position: absolute;
+                margin-top: 2.15rem;
+                width: 94%;
+                border-bottom: 1px solid #c6c6c6;
+                padding-bottom: 2rem;
+            }
+            
+            &-header__two{
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 1.5rem;
+                margin-top: 4.3rem;
+                &--text{
+                    font-size: 1.6rem;
+                }
+                &--sub{
+                    font-size: 1.6rem;
+                    p{
+                        padding-left: 5rem;
+                    }
+                }
+            }
+            &-header__two::after{
+                content: "";
+                position: absolute;
+                margin-top: 2.15rem;
+                width: 94%;
+                border-bottom: 1px solid #c6c6c6;
+                padding-bottom: 2rem;
+            }
+        
+            &-header__three{
+                margin-top: 4.3rem;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 1.5rem;
+                &--text{
+                    font-size: 1.6rem;
+                    font-family: Gilroy-XBold;
+                }
+                &--price{
+                    font-family: Gilroy-XBold;
+                    font-size: 1.6rem;
+                    h3{
+                        padding-left: 13rem;
+                    }
+                }
+            }
+            &-header__order{
+                &--text{
+                    text-decoration: none !important;    
+                    h2{
+                        padding: 1.2rem 0 1rem;
+                        margin: 6rem auto 0;
+                        width: 23rem;
+                        height: 4.3rem;
+                        text-align: center;
+                        background-color: $orange;
+                        color: $black;
+                        font-family: Gilroy-XBold;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}

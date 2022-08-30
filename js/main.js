@@ -117,7 +117,6 @@ mobileOverlay.addEventListener("click", () => {
 // scroll menu__list
 
 // slider
-/*
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 4,
   spaceBetween: 25,
@@ -150,7 +149,7 @@ var swiper = new Swiper(".slide-content", {
     },
   },
 });
-*/
+
 //  address single page
 const addressItems = document.querySelectorAll(".address-nav-location__item");
 const addressPanes = document.querySelectorAll(".location-details");

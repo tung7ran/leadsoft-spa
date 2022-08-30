@@ -1,0 +1,141 @@
+.container-max{
+    margin-top: 11rem;
+    // margin-bottom: 14rem;
+}
+.headers{
+    background-color: $background-group;
+    height: 60rem;
+    padding-top: 10rem;
+    &-image{
+        position: relative;
+        text-align: center;
+        &__one{
+            height: 26rem;
+        }
+        &__two{
+            height: 31.4rem;
+            position: absolute;
+            margin-left: -8rem;
+            margin-top: -3rem;
+        }
+        &__three{
+            height: 40rem;
+            z-index: 1;
+            position: absolute;
+            margin-top: -7rem;
+            margin-left: 7rem;
+            border: 3px solid $orange;
+            border-top-left-radius: 3rem;
+            border-top-right-radius: 3rem;
+            border-bottom-left-radius: 3rem;
+            border-bottom-right-radius: 3rem;
+        }
+        &__four{
+            height: 31.4rem;
+            padding-left: 27.6rem;
+            position: absolute;
+            margin-top: -3rem;
+        }
+        &__five{
+            height: 26rem;
+            padding-left:44.2rem;
+        }
+    }
+    &-title{
+        margin-top: 10rem;
+        text-align: center;
+        color: $white;
+        &-heading{
+            line-height: 1.2;
+            font-size: 3.5rem;
+            font-family: Gilroy-Black;
+            transform: skew(0.5turn, 355deg);
+            -webkit-text-stroke: 2px $more-color;
+        }
+    }
+}
+
+.pd-05 {
+    padding: 0.5rem;
+}
+
+.content{
+    margin-top: 4rem;
+    &-img{
+        text-align: center;
+        padding-left: 5rem;
+        img{
+            width: 12rem;
+        }
+    }
+    &-title{
+        text-align: center;
+        margin-top: 1rem;
+        h1{
+            font-size: 3rem;
+            font-family: UTM-AvoBold;
+        }
+    }
+    &-product{
+        display: flex;
+        margin-top: 5rem;
+        margin-bottom: 14rem;
+        &-training{
+            &__image {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        &-image{
+            position: relative;
+            border: 3px solid $orange;
+            border-top-left-radius: 3rem;
+            border-top-right-radius: 3rem;
+            border-bottom-left-radius: 3rem;
+            border-bottom-right-radius: 3rem;
+        }
+        &-courses{
+            background-color: $background-icon;
+            display: flex;
+            padding-top: 4rem;
+            padding-bottom: 1rem;
+            margin-top: -3rem;
+            width: 100%;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+
+            &__icon{
+                width: 8rem;
+                position: relative;
+                z-index: 1;
+            }
+            &__text{
+                position: absolute;
+                font-size: 1.3rem;
+                font-family: Gilroy-Bold;
+                border: 1px solid $orange;
+                background-color: $orange;
+                border-top-left-radius: 2rem;
+                border-top-right-radius: 2rem;
+                border-bottom-left-radius: 2rem;
+                border-bottom-right-radius: 2rem;
+                height: 5rem;
+                margin-top: 1.5rem;
+                padding-left: 4rem;
+                width: 23rem;
+                margin-left: 4rem;
+                padding-top: 0.5rem;
+                text-align: center;
+                padding-right: 1rem;
+            }
+        }
+    }
+    .training-col{
+        margin-bottom: 6rem;
+    }
+    .address {
+        display: none;
+    }
+}

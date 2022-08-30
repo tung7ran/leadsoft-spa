@@ -1,0 +1,66 @@
+@import 'variables';
+.mb-20 {
+    margin-bottom: 20rem !important;
+}
+.end-product{
+    text-align: center;
+    &-img{
+        &__one{
+            width: 14.4rem;
+            height: 17rem;
+            position: relative;
+        }
+        &__two{
+            width: 8rem;
+            height: 8rem;
+            position: absolute;
+            margin: 6.5rem -11rem;
+        }
+    }
+}
+.end-product-title{
+    &__text{
+        color: $black;
+        font-size: 1.6rem;
+        margin-top: 3.6rem;
+    }
+}
+.end-product-store{
+    a{
+        text-decoration: none !important;
+        color: $black;
+    }
+    a:hover{
+        color: $black;
+    }
+    display: flex;
+    justify-content: center;
+    margin-top: 5.5rem;
+    &__comeback{
+        display: flex;
+        width: 18rem;
+        background-color: $orange;
+        padding: 1.4rem 1rem;
+        i{
+            font-size: 2rem;
+        }
+        h3{
+            padding-left: 0.5rem;
+            font-size: 1.6rem;
+            font-family: Gilroy-Bold;
+        }
+    }
+    &__edit{
+        width: 20rem;
+        border: 1px solid $border;
+        padding: 1.4rem 1rem;
+        margin-left: 1rem;
+        i{
+            font-size: 2rem;
+        }
+        h3{
+            font-family: Gilroy-Bold;
+            font-size: 1.6rem;
+        }
+    }
+}
