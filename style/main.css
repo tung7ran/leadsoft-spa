@@ -1107,30 +1107,30 @@ a:hover {
   text-decoration: none;
   color: #808080;
 }
-.header-main-nav__list--item .header-main__subnav {
+.header-main-nav__list--item .sub-menu {
   display: none;
 }
-.header-main-nav__list--item .header-main__subnav--menu--item--title {
+.header-main-nav__list--item .sub-menu--item--title {
   font-size: 1.6rem;
   font-family: Gilroy-Bold;
   color: #000;
   display: block;
   text-transform: uppercase;
 }
-.header-main-nav__list--item .header-main__subnav--menu--item--title .down--icon {
+.header-main-nav__list--item .sub-menu--item--title .down--icon {
   color: red;
 }
-.header-main-nav__list--item .header-main__subnav--menu--item--list--service--link {
+.header-main-nav__list--item .sub-menu--item--list--service--link {
   font-size: 1.4rem;
   font-family: UTM-Avo;
   color: #000;
   display: block;
   padding: 0 0.3rem;
 }
-.header-main-nav__list--item .header-main__subnav--menu--item--list--service--link:hover {
+.header-main-nav__list--item .sub-menu--item--list--service--link:hover {
   background-color: #ccc;
 }
-.header-main-nav__list--item .header-main__subnav:after {
+.header-main-nav__list--item .sub-menu:after {
   content: "";
   position: absolute;
   top: -0.1rem;
@@ -1138,8 +1138,8 @@ a:hover {
   height: 5rem;
   width: 5rem;
 }
-.header-main-nav__list--item:hover .header-main__subnav {
-  display: block;
+.header-main-nav__list--item:hover .sub-menu {
+  display: flex;
 }
 
 .footer-width {
@@ -5332,7 +5332,7 @@ a:hover {
   .header-container-heading__title--text {
     font-size: 2.2rem;
   }
-  .header-main-nav__list--item .header-main__subnav {
+  .header-main-nav__list--item .sub-menu {
     position: absolute;
     top: 0;
     left: 12rem;
@@ -5343,13 +5343,13 @@ a:hover {
     border-radius: 2rem;
     border: 1px solid #ffd00f;
   }
-  .header-main-nav__list--item .header-main__subnav--menu--item {
+  .header-main-nav__list--item .sub-menu--item {
     padding-bottom: 2rem;
   }
-  .header-main-nav__list--item .header-main__subnav--menu--item--title {
+  .header-main-nav__list--item .sub-menu--item--title {
     padding-bottom: 0.5rem;
   }
-  .header-main-nav__list--item .header-main__subnav--menu--item--title .down--icon {
+  .header-main-nav__list--item .sub-menu--item--title .down--icon {
     display: none;
   }
 }
@@ -5488,7 +5488,7 @@ a:hover {
   .header-main-nav__list--item-link.active {
     padding: 0.5rem 1.2rem;
   }
-  .header-main-nav__list--item .header-main__subnav {
+  .header-main-nav__list--item .sub-menu {
     position: absolute;
     top: 0;
     left: 7.5rem;
@@ -5499,7 +5499,7 @@ a:hover {
     border: 1px solid #ffd00f;
     padding: 1.5rem;
   }
-  .header-main-nav__list--item .header-main__subnav .down--icon {
+  .header-main-nav__list--item .sub-menu .down--icon {
     display: none;
   }
   .header-main-nav__list--item.active {
@@ -5665,16 +5665,13 @@ a:hover {
     border-radius: 0.5rem;
     width: 100%;
   }
-  .header-main-nav__list .header-main__subnav--menu {
-    display: block;
-  }
-  .header-main-nav__list .header-main__subnav--menu--item--title {
+  .header-main-nav__list .sub-menu--item--title {
     margin-top: 1rem;
   }
-  .header-main-nav__list .header-main__subnav--menu--item--list {
+  .header-main-nav__list .sub-menu--item--list {
     display: none;
   }
-  .header-main-nav__list .header-main__subnav--menu--item:hover .header-main__subnav--menu--item--list {
+  .header-main-nav__list .sub-menu--item:hover .sub-menu--item--list {
     display: block;
   }
 }
