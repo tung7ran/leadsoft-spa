@@ -265,6 +265,11 @@
         }
 
     }
+    .modal--maps{
+        &--address{
+            width: 60.38rem;
+        }
+    }
 }
 
 @include responsive_tablet {
@@ -352,6 +357,7 @@
                         .category-item {
                             .category-item-link {
                                 font-size: 1.8rem;
+                                
                             }
                         }
                     }
@@ -361,7 +367,8 @@
                     .treatment-result-list {
                         .treatment-result-item {
                             .treatment-result-desc {
-                                font-size: 1.8rem;
+                                font-size: 1.6rem;
+                                text-align: justify;
                             }
                         }
                     }
@@ -428,7 +435,11 @@
     .advise-contactIndex{
         margin-top: 2rem;
     }
-
+    .modal--maps{
+        &--address{
+            width: 60rem;
+        }
+    }
 }
 
 @include responsive_mobile {
@@ -764,5 +775,10 @@
 
     .dp-none {
         display: none;
+    }
+    .modal--maps{
+        &--address{
+            width: 45rem;
+        }
     }
 }

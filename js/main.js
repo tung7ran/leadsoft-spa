@@ -80,6 +80,7 @@ function toggleModal() {
 // modal.addEventListener("click", (e) => {
 //   if(e.target == e.currentTarget) toggleModal();
 // })
+
 if (modal) {
   modal.addEventListener(
     "click",
@@ -206,3 +207,49 @@ tabsHeading.forEach((tab, index) => {
     paneContent.classList.add("active");
   };
 });
+
+// show google maps
+const showBtns = document.querySelectorAll(".location-view");
+const modalMaps = document.querySelector('.modal--maps');
+const modalContainer = document.querySelector(".modal--maps--address");
+const modalClose = document.querySelector('.js-modal-close')
+
+function showModalMaps(){
+  modalMaps.classList.add('open');
+}
+function hideModalMaps(){
+  modalMaps.classList.remove('open');
+}
+
+for(const showBtn of showBtns){
+  showBtn.addEventListener("click", showModalMaps);
+}
+
+modalClose.addEventListener("click", hideModalMaps);
+modalMaps.addEventListener('click', hideModalMaps)
+modalContainer.addEventListener('click', function(e) {
+    e.stopPropagation()
+})
+
+// Scroll To Top
+
+      var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+          window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              })
+        }

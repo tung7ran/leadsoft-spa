@@ -30,18 +30,18 @@
 
                     &-link:hover {}
 
-                    .header-main__subnav {
-                        position: absolute;
-                        top: 0;
-                        left: 12rem;
-                        background-color: $white;
-                        min-width: 46rem;
-                        z-index: 2;
-                        padding: 2rem;
-                        border-radius: 2rem;
-                        border: 1px solid $orange;
-
-                        &--menu {
+                    
+                        
+                        .sub-menu {
+                            position: absolute;
+                            top: 0;
+                            left: 12rem;
+                            background-color: $white;
+                            min-width: 46rem;
+                            z-index: 2;
+                            padding: 2rem;
+                            border-radius: 2rem;
+                            border: 1px solid $orange;
                             &--item {
                                 padding-bottom: 2rem;
 
@@ -63,7 +63,7 @@
                             }
 
                         }
-                    }
+                    
                 }
             }
         }
@@ -244,6 +244,20 @@
 
                         &-link.active {
                             padding: 0.5rem 1.2rem;
+                        }
+                        .sub-menu{
+                            position: absolute;
+                            top: 0;
+                            left: 7.5rem;
+                            min-width: 40rem;
+                            background-color: $white;
+                            z-index: 1;
+                            border-radius: 2rem;
+                            border: 1px solid $orange;  
+                            padding: 1.5rem;    
+                            .down--icon{
+                                display: none;
+                            }
                         }
                     }
 
@@ -457,10 +471,10 @@
                         width: 100%;
                     }
 
-                    .header-main__subnav {
+                    
 
-                        &--menu {
-                            display: block;
+                        .sub-menu {
+                            // display: block;
 
                             &--item {
                                 &--title {
@@ -478,11 +492,11 @@
                                 }
                             }
 
-                            &--item:hover .header-main__subnav--menu--item--list {
+                            &--item:hover .sub-menu--item--list {
                                 display: block;
                             }
                         }
-                    }
+                    
                 }
             }
         }

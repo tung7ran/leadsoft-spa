@@ -1,0 +1,351 @@
+.main {
+    &-logo {
+        width: 100%;
+        height: 85rem;
+
+        img {
+            width: 100%;
+            height: 101%;
+            object-fit: cover;
+        }
+    }
+
+    &-info {
+        &-image {
+            position: relative;
+            height: 106rem;
+
+            // z-index: 999;
+            >img {
+                height: 100%;
+                width: 100%;
+            }
+
+            .main-content {
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+
+                &--logo {
+                    margin-top: 10.1rem;
+                    margin-bottom: 0.5rem;
+
+                    img {
+                        width: 8.4rem;
+                        height: 6.9rem;
+                    }
+                }
+
+                &-heading {
+                    text-transform: uppercase;
+                    font-family: UTM-AvoBold;
+                    font-size: 2.8rem;
+                    margin-bottom: 4.6rem;
+                }
+
+                &-left {
+                    &__list {
+                        text-align: justify;
+                        line-height: 1.4em;
+                        margin-bottom: 1rem;
+
+                        &--item {
+                            font-size: 1.8rem;
+                            margin-top: 2.5rem;
+                            line-height: 1.25;
+                        }
+                    }
+                    .service--detail__btn{
+                        margin-left: 50%;
+                        transform: translateX(-50%);
+                        background-color: #fff;
+                        padding: 1rem 5rem;
+                        color: $more-color;
+                        position: relative;
+                        font-size: 2.6rem;
+                        font-family: Gilroy-Bold;
+                        text-transform: uppercase;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+                    .service--detail__btn::after {
+                        content: "";
+                        position: absolute;
+                        top: 0.3rem;
+                        left: 0.3rem;
+                        right: 0.3rem;
+                        bottom: 0.3rem;
+                        width: 98%;
+                        height: 90%;
+                        border: 0.2rem dashed $orange;
+                        border-radius: 8rem;
+                    }
+                    
+
+                    
+                }
+
+                &-right {
+                    position: relative;
+                    &__one {
+                        width: 47.4rem;
+                        height: 50.6rem;
+                        margin-left: 9.6rem;
+                    }
+
+                    &__two {
+                        position: absolute;
+                        left: 4.8rem;
+                        bottom: 0.1rem;
+                        width: 30.3rem;
+                        height: 30.4rem;
+                    }
+
+                    &__three {
+                        position: absolute;
+                        right: 0;
+                        bottom: -6.5rem;
+                        width: 21.2rem;
+                        height: 21.1rem;
+                    }
+                }
+            }
+        }
+
+        .main-inftras {
+            position: absolute;
+            bottom: -123rem;
+            right: 0;
+            left: 0;
+            z-index: -1;
+
+            &-image {
+                position: relative;
+                height: 144rem;
+
+                &__above {
+                    position: relative;
+                    height: 100%;
+                }
+
+                &__below {
+                    position: absolute;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            &-content {
+                position: absolute;
+                top: 17rem;
+                right: 0;
+                left: 0;
+
+                &__logo {
+                    margin-top: 11.8rem;
+                    margin-bottom: 0.5rem;
+                    padding-left: 3rem;
+
+                    img {
+                        width: 8.4rem;
+                        height: 6.9rem;
+                    }
+                }
+
+                &__heading {
+                    text-transform: uppercase;
+                    font-family: Gilroy-Bold;
+                    font-size: 2.8rem;
+                    margin-bottom: 11.6rem;
+                    padding: 0px 38%;
+                    line-height: 1.2;
+                }
+
+                .main-pc {
+                    .main-inftras-content__right {
+
+                        &--one {
+                            width: 53.7rem;
+                            height: 50.4rem;
+                        }
+
+                        &--two {
+                            position: absolute;
+                            left: -4.8rem;
+                            bottom: 12rem;
+                            width: 33.6rem;
+                            height: 30.4rem;
+                        }
+
+                        &--three {
+                            position: absolute;
+                            right: 4.8rem;
+                            bottom: 5rem;
+                            width: 24.4rem;
+                            height: 23.2rem;
+                        }
+                    }
+
+                    .main-inftras-content__left {
+                        text-align: justify;
+                        line-height: 1.4em;
+
+                        &--list {
+                            &-item {
+
+                                font-size: 1.8rem;
+                                margin-top: 2.5rem;
+                                line-height: 1.25;
+
+                                span {
+                                    font-family: Gilroy-XBold;
+                                }
+                            }
+
+                            &-item:first-child {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-device {
+        height: 64.2rem;
+        margin-top: 122.8rem;
+
+        .device-pc {
+            height: 100%;
+
+            .main-device-left {
+
+                &__list {
+                    position: relative;
+                    width: 100%;
+                    height: 101%;
+
+                    &--item {
+                        position: absolute;
+                        top: 10rem;
+
+                        img {
+                            height: 37.6rem;
+                        }
+                    }
+
+                    &--item1 {
+                        position: absolute;
+                        top: 6rem;
+                        left: 16.5rem;
+
+                        img {
+                            height: 25.8rem
+                        }
+                    }
+
+                    &--item2 {
+                        position: absolute;
+                        top: 34.9rem;
+                        left: 4rem;
+
+                        img {
+                            width: 26.6rem;
+                            height: 22.8rem;
+                        }
+                    }
+
+                    &--item3 {
+                        position: absolute;
+                        top: 20.2rem;
+                        left: 26.8rem;
+
+                        img {
+                            width: 23.1rem;
+                            height: 40.3rem;
+                        }
+                    }
+                }
+            }
+
+            .main-device-right {
+                text-align: right;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &-team {
+        height: 68.9rem;
+        width: 100%;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-papers {
+        position: relative;
+        height: 39.8rem;
+        margin-top: 12.4rem;
+
+        >img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &-content {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+
+            &__logo {
+                width: 8.6rem;
+                height: 6.8rem;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &__heading {
+                font-size: 2.8rem;
+                font-family: UTM-AvoBold;
+                margin-top: 1rem;
+                padding: 0px 42%;
+                line-height: 1.2;
+            }
+
+            &__image {
+                width: 124.5rem;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 3.8rem;
+
+                &--list {
+                    justify-content: space-between;
+                    &-item {
+                        img {
+                            width: 21.5rem;
+                            height: 12.8rem;
+                            border-radius: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
