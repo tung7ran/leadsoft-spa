@@ -10578,6 +10578,7 @@ a:hover {
 .beauty-store .container-item .container-body .store-category .category-list .category-item {
   position: relative;
   border-radius: 1rem;
+  margin: 0 0.5rem;
 }
 .beauty-store .container-item .container-body .store-category .category-list .category-item .category-item__link {
   font-size: 1.8rem;
