@@ -187,11 +187,11 @@
                     color: $color-text;
                 }
 
-                .header-main__subnav {
-                    display: none;
-                   
-
-                    &--menu {
+                
+                    
+                    
+                    .sub-menu {
+                        display: none;
                         &--item {
 
                             &--title {
@@ -226,9 +226,9 @@
 
                         }
                     }
-                }
+                
 
-                .header-main__subnav:after {
+                .sub-menu:after {
                     content: "";
                     position: absolute;
                     top: -0.1rem;
@@ -238,8 +238,8 @@
                 }
             }
 
-            &--item:hover .header-main__subnav {
-                display: block;
+            &--item:hover .sub-menu {
+                display: flex;
             }
         }
     }
