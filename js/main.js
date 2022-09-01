@@ -41,6 +41,32 @@ cart.addEventListener("click", () => {
   notify.classList.toggle("show");
 });
 
+// // ------------------------------
+const TipBeautyItems = document.querySelectorAll(".beautify--program__category--list-item");
+const TipBeautyPanes = document.querySelectorAll(".beautify-program-list");
+// const tabActive = $(".address-nav-location__item.active");
+TipBeautyItems.forEach((tab, index) => {
+  const pane = TipBeautyPanes[index];
+  tab.onclick = function () {
+    $(".beautify--program__category--list-item.active").classList.remove("active");
+    $(".beautify-program-list").classList.remove("show");
+
+    this.classList.add("active");
+    pane.classList.add("show");
+  };
+});
+
+// phần js ở trang traninng-detail
+//------------------------------
+const TraningItems = document.querySelectorAll(".details-menu-list__item--link");
+TraningItems.forEach((tab) => {
+  tab.onclick = function () {
+    $(".details-menu-list__item--link.active").classList.remove("active");
+
+    this.classList.add("active");
+  };
+});
+
 // // ---------------------------------------------------------------------------------
 const openModalBtn = document.querySelector(".service--detail__btn");
 const modal = document.querySelector(".form--contact");
