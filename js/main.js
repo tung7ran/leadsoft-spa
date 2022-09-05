@@ -210,3 +210,17 @@ modalContainer.addEventListener('click', function(e) {
                 behavior: "smooth",
               })
         }
+
+
+// Search mobile
+const formSearch = document.querySelector('.search-mobile-form');
+const searchBtn = document.querySelector('.search-mobile');
+
+function toggleModal() {
+  formSearch.classList.toggle("hide");
+}
+searchBtn.addEventListener("click", toggleModal);
+
+formSearch.addEventListener("click", (e) => {
+  if (e.target == e.currentTarget) toggleModal();
+});

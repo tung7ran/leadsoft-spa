@@ -22,6 +22,9 @@
             
         }
     }
+    .search-mobile-form{
+        display: none;
+    }
     .header-main {
         &-nav {
             &__list {
@@ -224,7 +227,9 @@
                 }
             }
         }
-
+        .search-mobile-form{
+            display: none;
+        }
         &-logo{
             &__page {
                 width: 23.4rem;
@@ -403,9 +408,15 @@
                         padding: 0.2rem
                     }
                 }
+                // .search-mobile-title{
+                //     position: absolute;
+                //     left: 0;
+                //     right: 0;
+                //     bottom: 0;
+                // }
             }
         }
-
+       
         &-logo {
 
             margin-top: 1.5rem;
