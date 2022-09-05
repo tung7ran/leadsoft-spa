@@ -2962,7 +2962,6 @@ a:hover {
   top: 0;
   right: 0;
   left: 0;
-  padding: 2rem;
 }
 .main-info-image .main-content--logo {
   margin-top: 10.1rem;
@@ -4040,7 +4039,8 @@ a:hover {
 .form--register .tab-pane-content .address,
 .form--contact .tab-pane-content .address {
   margin-top: calc((100vh - 63.8rem) / 2);
-  animation: showModal linear 0.3s;
+  -webkit-animation: showModal linear 0.3s;
+          animation: showModal linear 0.3s;
   padding: 2rem 1rem;
   background-color: #f5e28b;
   margin-left: 50%;
@@ -10304,6 +10304,40 @@ a:hover {
     font-size: 1.4rem;
   }
 }
+.bg-color {
+  background-color: #fef7de;
+}
+
+.header-main-nav__list {
+  margin-bottom: 0;
+}
+
+.content-landing-acne {
+  position: relative;
+}
+.content-landing-acne__left {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.content-landing-acne__left--heading {
+  position: absolute;
+  top: 0;
+}
+.content-landing-acne__left--text {
+  position: absolute;
+  top: 0;
+}
+.content-landing-acne__right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  width: 68rem;
+}
+
 .wapper {
   position: relative;
 }
