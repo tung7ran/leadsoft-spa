@@ -83,24 +83,7 @@ tabRecruit.forEach((tab, index) => {
 });
 // // ----------------------------------------------------------------
 
-const openModalGift = document.getElementById("promotion--detail__btn");
-const modalGift = document.getElementById("open-form");
 
-function toggleModalGift() {
-  modalGift.classList.toggle("hide");
-}
-if (modalGift) {
-  modalGift.addEventListener(
-    "click",
-    (e) => {
-      if (e.target == e.currentTarget) toggleModalGift();
-    },
-    false
-  );
-}
-if (openModalGift) {
-  openModalGift.addEventListener("click", toggleModalGift, false);
-}
 
 // scroll menu
 const navMobileBtn = document.querySelector(".js-mobile-btn");
