@@ -102,6 +102,11 @@ $res_pclow : "(min-width: 769px)";
     src: url('../fonts/utm-avo/UTM\ AvoItalic.ttf');
   }
 
+  @font-face {
+    font-family: iCielPanton-Black;
+    src: url('../fonts/iCielPanton-Black_0.otf');
+  }
+
 @mixin buttonStyle {
   font-size: 1.6rem;
   padding: 1.5rem 5.2rem;
