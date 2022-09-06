@@ -246,16 +246,16 @@
 
         .container-item {
             .container-body {
-                .slide-container {
-                    .slide-content {
-                        .card-wrapper {
-                            .card {
-                                width: 0 !important;
-                                margin-right: 1.0rem !important;
-                            }
-                        }
-                    }
-                }
+                // .slide-container {
+                //     .slide-content {
+                //         .card-wrapper {
+                //             .card {
+                                
+                //                 margin-right: 1.0rem !important;
+                //             }
+                //         }
+                //     }
+                // }
             }
 
             .container-footer {
@@ -376,7 +376,15 @@
             }
         }
     }
-
+    .beauty-store{
+        .container-item{
+            .container-body{
+                .slide-container{
+                    padding: 2rem;
+                }
+            }
+        }
+    }
     .event {
         margin-top: 3.5rem;
 
@@ -666,30 +674,7 @@
 
             .container-body {
                 .slide-container {
-                    .slide-content {
-                        margin: 0;
-
-                        .card-wrapper {
-                            .swiper-slide {
-                                width: 0 !important;
-                                margin-right: 0.7rem !important;
-                                padding-left: 0 !important;
-                                padding-right: 0 !important;
-
-                                .image-content {
-                                    padding: 0;
-                                }
-
-                                .card-content {
-                                    .description {
-                                        font-size: 1.2rem;
-                                        line-height: 1.1;
-                                    }
-                                }
-                            }
-                        }
-
-                    }
+                   padding: 3rem;
                 }
             }
 

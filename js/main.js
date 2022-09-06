@@ -104,9 +104,9 @@ var swiper = new Swiper(".slide-content", {
   slidesPerView: 4,
   spaceBetween: 25,
   loop: true,
-  centerSlide: "true",
-  fade: "true",
-  grabCursor: "true",
+  centerSlide: 'true',
+  fade: 'true',
+  grabCursor: 'true',
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -117,19 +117,20 @@ var swiper = new Swiper(".slide-content", {
     prevEl: ".swiper-button-prev",
   },
 
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    520: {
-      slidesPerView: 2,
-    },
-    950: {
-      slidesPerView: 3,
-    },
-    1200: {
-      slidesPerView: 4,
-    },
+  breakpoints:{
+      0: {
+          slidesPerView: 1,
+      },
+      520: {
+          slidesPerView: 2,
+      },
+      950: {
+          slidesPerView: 3,
+      },
+      1040: {
+        slidesPerView: 4,
+      }
+
   },
 });
 

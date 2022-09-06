@@ -7356,10 +7356,6 @@ a:hover {
   .beauty-store {
     padding: 6.1rem 0;
   }
-  .beauty-store .container-item .container-body .slide-container .slide-content .card-wrapper .card {
-    width: 0 !important;
-    margin-right: 1rem !important;
-  }
   .beauty-store .container-item .container-footer {
     padding-top: 3.7rem;
   }
@@ -7429,6 +7425,9 @@ a:hover {
   .treatment-result .container-item .container-body .tab-pane .treatment-result-list .treatment-result-item .treatment-result-desc {
     font-size: 1.6rem;
     text-align: justify;
+  }
+  .beauty-store .container-item .container-body .slide-container {
+    padding: 2rem;
   }
   .event {
     margin-top: 3.5rem;
@@ -7637,21 +7636,8 @@ a:hover {
   .beauty-store .container-item .container-heading {
     padding-bottom: 2rem;
   }
-  .beauty-store .container-item .container-body .slide-container .slide-content {
-    margin: 0;
-  }
-  .beauty-store .container-item .container-body .slide-container .slide-content .card-wrapper .swiper-slide {
-    width: 0 !important;
-    margin-right: 0.7rem !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-  .beauty-store .container-item .container-body .slide-container .slide-content .card-wrapper .swiper-slide .image-content {
-    padding: 0;
-  }
-  .beauty-store .container-item .container-body .slide-container .slide-content .card-wrapper .swiper-slide .card-content .description {
-    font-size: 1.2rem;
-    line-height: 1.1;
+  .beauty-store .container-item .container-body .slide-container {
+    padding: 3rem;
   }
   .beauty-store .container-item .container-footer {
     padding-bottom: 8.6rem;
