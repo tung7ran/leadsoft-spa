@@ -979,6 +979,7 @@ a:hover {
 }
 
 .header-contact {
+  position: relative;
   justify-content: space-between;
   margin-top: 2.6rem;
   padding: 0 3.7rem;
@@ -1028,6 +1029,7 @@ a:hover {
 .header-contact-right {
   display: flex;
   padding: 0;
+  position: relative;
 }
 .header-contact-right__cart {
   position: relative;
@@ -1069,6 +1071,34 @@ a:hover {
   padding: 0 4rem;
   line-height: 6.65rem;
   font-family: UTM-AvoBold;
+}
+
+.search-mobile-form {
+  padding: 0.5rem 3rem 0 3rem;
+  -webkit-animation: showModal linear 0.3s;
+          animation: showModal linear 0.3s;
+}
+.search-mobile-form .form-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: relative;
+}
+.search-mobile-form .form-group .form-search-mobile {
+  font-size: 1.4rem;
+  outline: none;
+}
+.search-mobile-form .form-group .search-mobile-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 0.2rem;
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 0 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .header-logo {
@@ -5333,6 +5363,9 @@ a:hover {
   .header-container-heading__title--text {
     font-size: 2.2rem;
   }
+  .search-mobile-form {
+    display: none;
+  }
   .header-main-nav__list--item .sub-menu {
     position: absolute;
     top: 0;
@@ -5475,6 +5508,9 @@ a:hover {
   .header-contact-right .header-cart--notify__info--bottom-pay {
     font-size: 1.4rem;
     width: 21rem !important;
+  }
+  .header .search-mobile-form {
+    display: none;
   }
   .header-logo__page {
     width: 23.4rem;
