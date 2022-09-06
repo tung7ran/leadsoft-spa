@@ -109,24 +109,7 @@ tabRecruit.forEach((tab, index) => {
 });
 // // ----------------------------------------------------------------
 
-const openModalGift = document.getElementById("promotion--detail__btn");
-const modalGift = document.getElementById("open-form");
 
-function toggleModalGift() {
-  modalGift.classList.toggle("hide");
-}
-if (modalGift) {
-  modalGift.addEventListener(
-    "click",
-    (e) => {
-      if (e.target == e.currentTarget) toggleModalGift();
-    },
-    false
-  );
-}
-if (openModalGift) {
-  openModalGift.addEventListener("click", toggleModalGift, false);
-}
 
 // scroll menu
 const navMobileBtn = document.querySelector(".js-mobile-btn");
@@ -253,3 +236,17 @@ modalContainer.addEventListener('click', function(e) {
                 behavior: "smooth",
               })
         }
+
+
+// Search mobile
+const formSearch = document.querySelector('.search-mobile-form');
+const searchBtn = document.querySelector('.search-mobile');
+
+function toggleModal() {
+  formSearch.classList.toggle("hide");
+}
+searchBtn.addEventListener("click", toggleModal);
+
+formSearch.addEventListener("click", (e) => {
+  if (e.target == e.currentTarget) toggleModal();
+});
