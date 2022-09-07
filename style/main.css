@@ -435,6 +435,30 @@ a:hover {
     opacity: 1;
   }
 }
+.slick-prev {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  top: 35%;
+  left: -1rem;
+  z-index: 1;
+}
+
+.slick-next {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  top: 35%;
+  right: -1rem;
+  z-index: 1;
+}
+
+.slick-prev,
+.slick-next {
+  color: #a1710f;
+  font-size: 3.6rem;
+}
+
 /* Column: .col
    Prefix class:
    -c - mobile
@@ -2802,12 +2826,10 @@ a:hover {
 }
 .home .details-graduate-outstanding__list {
   display: flex;
-  justify-content: center;
-  margin-left: 2.5em;
+  align-items: center;
 }
 .home .details-graduate-outstanding__list--item {
-  width: 0 !important;
-  margin: 0 3.2rem;
+  margin-right: 0 !important;
   padding: 0;
 }
 .home .details-graduate-outstanding__list--item--images img {
@@ -2830,7 +2852,7 @@ a:hover {
 }
 .home .details-graduate-outstanding .swiper-button-prev,
 .home .details-graduate-outstanding .swiper-button-next {
-  top: 11rem;
+  top: 12.5rem;
 }
 .home .details-graduate-outstanding .swiper-button-next {
   right: 0;
