@@ -170,20 +170,16 @@
             text-align: center;
             position: relative;
             &__list{
-                
                 display: flex;
-                justify-content: center;
-               margin-left: 2.5em;
+           
+               align-items: center;
               &--item{
-                width: 0!important;
-                // margin-right: 0!important;
-                margin: 0 3.2rem;
+                
+                margin-right: 0!important;
+               
                 padding: 0;
                 &--images{
-                    // width: 14rem;
-                    // height: 14rem;
-                    // margin-left: 50%;
-                    // transform: translateX(-50%);
+                   
                     img{
                         width: 100%;
                         height: 100%;
@@ -193,10 +189,8 @@
                 &--text{
                     font-family:  K2D-Bold;
                     color: $more-color;
-                    // max-width: 14rem;
                     text-align: center;
                     padding: 2rem 0 1rem 0;
-                    // display: none;
                 }
               }
             }
@@ -209,7 +203,7 @@
             }
             .swiper-button-prev,
             .swiper-button-next{
-                top: 11rem
+                top: 12.5rem
             }
             .swiper-button-next{
                 right: 0;
