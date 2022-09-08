@@ -11,5 +11,13 @@ $(document).ready(function(){
                 nextArrow: "<button type='button' class='slick-next pull-left'><i class='fa-sharp fa-solid fa-caret-right'></i></button>",
     
         });
+        $('.product-similar-list').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa-sharp fa-solid fa-caret-left'></i></button>",
+                nextArrow: "<button type='button' class='slick-next pull-left'><i class='fa-sharp fa-solid fa-caret-right'></i></button>",
+    
+        });
     });
  
