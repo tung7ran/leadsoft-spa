@@ -2024,9 +2024,8 @@ a:hover {
 }
 .main .product-details .product-similar-list__item {
   border-radius: 0.8rem;
-  margin-bottom: 3.4rem;
-  max-width: 29rem;
-  height: 39.4rem;
+  padding: 0 2rem;
+  margin: 0 0.5rem 3.4rem 0.5rem;
 }
 .main .product-details .product-similar-list__item--image {
   padding-top: 6.5rem;

@@ -260,9 +260,10 @@
                 margin-bottom: 11.6rem;
                 &__item {
                     border-radius: 0.8rem;
-                    margin-bottom: 3.4rem;
-                    max-width: 29rem;
-                    height: 39.4rem;
+                    padding: 0 2rem;
+                    margin: 0 0.5rem 3.4rem 0.5rem;
+                    // max-width: 29rem;
+                    // height: 39.4rem;
                     &--image {
                         padding-top: 6.5rem;
                         display:flex;
