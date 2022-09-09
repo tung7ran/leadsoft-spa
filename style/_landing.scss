@@ -1,5 +1,5 @@
 .bg-color{
-    background-color: #fef7de;
+    // background-color: #fef7de;
 }
 .header-main-nav__list {
     margin-bottom: 0;
@@ -10,12 +10,14 @@
     height: 100%;
     top: -98%;
 }
+
 .form--contact {
     z-index: 2;
 }
 .jc-center {
     justify-content: center;
 }
+
 .content-landing {
     .wth-height {
         width: 7.2rem;
@@ -234,7 +236,7 @@
                 width: 60%;
                 left: 34%;
 
-                &-image {
+                &-image { 
                     img {
                         width: 100%;
                         height: 100%;
