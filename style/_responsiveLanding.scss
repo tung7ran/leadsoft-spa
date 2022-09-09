@@ -23,7 +23,7 @@
         z-index: 1;
     }
     .content-landing {
-        height: 725rem;
+        height: 725rem !important;
         &-acne {
             height: 118rem;
             &__left {
@@ -504,7 +504,7 @@
         padding: 0 1rem;
     }
     .content-landing {
-        height: 706rem;
+        height: 706rem !important;
         .pd-20 {
             padding: 0 2rem;
         }

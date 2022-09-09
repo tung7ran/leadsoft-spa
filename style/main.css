@@ -10957,7 +10957,7 @@ a:hover {
     z-index: 1;
   }
   .content-landing {
-    height: 725rem;
+    height: 725rem !important;
   }
   .content-landing-acne {
     height: 118rem;
@@ -11350,7 +11350,7 @@ a:hover {
     padding: 0 1rem;
   }
   .content-landing {
-    height: 706rem;
+    height: 706rem !important;
   }
   .content-landing .pd-20 {
     padding: 0 2rem;
