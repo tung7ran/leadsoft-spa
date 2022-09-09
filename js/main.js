@@ -1,20 +1,22 @@
-const $ = document.querySelector.bind(document);
+// const $ = document.querySelector.bind(document);
 
-const tabs = document.querySelectorAll(".tab-item");
-const panes = document.querySelectorAll(".tab-pane");
-const tabActive = $(".tab-item.active");
-tabs.forEach((tab, index) => {
-  const pane = panes[index];
-  tab.onclick = function () {
-    $(".tab-item.active").classList.remove("active");
-    $(".tab-pane.active").classList.remove("active");
 
-    this.classList.add("active");
-    pane.classList.add("active");
-  };
-});
 
-// // ------------------------------------------------------------------
+  const tabs = document.querySelectorAll(".tab-item");
+  const panes = document.querySelectorAll(".tab-pane");
+  const tabActive = $(".tab-item.active");
+  tabs.forEach((tab, index) => {
+    const pane = panes[index];
+    tab.onclick = function () {
+      $(".tab-item.active").classList.remove("active");
+      $(".tab-pane.active").classList.remove("active");
+  
+      this.classList.add("active");
+      pane.classList.add("active");
+    };
+  });
+
+  // // ------------------------------------------------------------------
 
 const tabCategory = document.querySelectorAll(".tab-category");
 const tabPane = document.querySelectorAll(".slide-container");
@@ -75,12 +77,7 @@ const modal = document.querySelector(".form--contact");
 function toggleModal() {
   modal.classList.toggle("hide");
 }
-// openModalBtn.addEventListener("click", toggleModal);
-// modal.addEventListener("click", toggleModal);
 
-// modal.addEventListener("click", (e) => {
-//   if(e.target == e.currentTarget) toggleModal();
-// })
 
 if (modal) {
   modal.addEventListener(
@@ -113,8 +110,6 @@ tabRecruit.forEach((tab, index) => {
 });
 // // ----------------------------------------------------------------
 
-
-
 // scroll menu
 const navMobileBtn = document.querySelector(".js-mobile-btn");
 const mobileMenu = document.querySelector(".js-mobile-menu");
@@ -134,9 +129,9 @@ var swiper = new Swiper(".slide-content", {
   slidesPerView: 4,
   spaceBetween: 25,
   loop: true,
-  centerSlide: "true",
-  fade: "true",
-  grabCursor: "true",
+  centerSlide: 'true',
+  fade: 'true',
+  grabCursor: 'true',
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -147,19 +142,20 @@ var swiper = new Swiper(".slide-content", {
     prevEl: ".swiper-button-prev",
   },
 
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    520: {
-      slidesPerView: 2,
-    },
-    950: {
-      slidesPerView: 3,
-    },
-    1200: {
-      slidesPerView: 4,
-    },
+  breakpoints:{
+      0: {
+          slidesPerView: 1,
+      },
+      520: {
+          slidesPerView: 2,
+      },
+      950: {
+          slidesPerView: 3,
+      },
+      1040: {
+        slidesPerView: 4,
+      }
+
   },
 });
 
@@ -238,7 +234,7 @@ modalContainer.addEventListener('click', function(e) {
           window.scrollTo({
                 top: 0,
                 behavior: "smooth",
-              })
+              });
         }
 
 
@@ -247,11 +243,23 @@ modalContainer.addEventListener('click', function(e) {
 const formSearch = document.querySelector('.search-mobile-form');
 const searchBtn = document.querySelector('.search-mobile');
 
-function toggleModal() {
+function toggleModalSearch() {
   formSearch.classList.toggle("hide");
 }
-searchBtn.addEventListener("click", toggleModal);
+searchBtn.addEventListener("click", toggleModalSearch);
 
-formSearch.addEventListener("click", (e) => {
-  if (e.target == e.currentTarget) toggleModal();
-});
+// formSearch.addEventListener("click", (e) => {
+//   if (e.target == e.currentTarget) toggleModalSearch();
+// });
+
+
+
+
+
+
+
+
+
+
+
+
