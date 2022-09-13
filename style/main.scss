@@ -92,11 +92,40 @@
         .container-service {
             flex-wrap: wrap;
             .container-service-item {
-                margin-bottom: 2.4rem;
+                margin-bottom: 2rem;
+                position: relative;
                 .service-image {
                     width: 100%;
                     height: 100%;
-                    border-radius: 3rem;
+                    border-radius: 4rem;
+                    border: 4px solid $orange;
+                }
+                .container-service-item__note{
+                    position: absolute;
+                    // bottom: 0.5rem;
+                    // left: 0.5rem;
+                    display: flex;
+                    align-items: center;
+                    z-index: 1;
+                    &--image{
+                        
+                       
+                    }
+                    &--desc{
+                        text-transform: uppercase;
+                        color: $black;
+                        // font-size: 1.6rem;
+                        background-color: $orange;
+                        // line-height: 5rem;
+                        border-radius: 3rem;
+                        text-align: center;
+                        // padding: 0 3rem;
+                        font-weight: 700;
+                        // min-width: 22rem;
+                        // margin-left: -3.5rem;
+                        z-index: -1;
+                        font-family: Gilroy-Bold;
+                    }
                 }
                 .service-information {
                     position: absolute;
@@ -188,19 +217,90 @@
     .top-banner-body {
         position: absolute;
         display: flex;
-        justify-content: center;
         align-items: center;
         left: 0;
         right: 0;
         bottom: 0;
-        .top-banner-body-image {
-
+        &__item{
+            background-image: url('../images/Rectangle.svg');
+            @include backgroundImage();
+          
+            &--heading{
+               
+                position: relative;
+                text-transform: uppercase;
+                // font-size: 2.8rem;
+                line-height: 1.2;
+                text-align: center;
+                font-family: Gilroy-Black;
+                // padding: 5rem;
+                &--title{
+                    color: $white;
+                    -webkit-text-stroke: 1px $black;
+                    display: block;
+                }
+            }
+            &--heading::before{
+                content: " ";
+                position: absolute;
+                // height: 1rem;
+                width: 80%;
+                border-bottom: 1.5px solid $black;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                // right: 0;
+                z-index: 1;
+                display: block;
+            }
+            &--desc{
+                // font-size: 1.6rem;
+                // padding: 2rem 5rem 0 5rem;
+                text-align: justify;
+                
+                
+            }
         }
     }
 }
 .top-banner-3 {
-    background-image: url('../images/banner3.png');
+    background-image: url('../images/banner.png');
     @include backgroundImage();
+    .banner--images{
+    
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .banner--title{
+        text-align: center;
+        color: $white;
+        .banner--title--text{
+           
+            font-family: Gilroy-Black;
+            transform: skew(0.5turn, 357deg);
+            // -webkit-text-stroke: 3px #a1710f;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+    }
+    .banner--images__desc{
+        justify-content: center;
+        // margin-top: 4rem;
+        
+        &--service{
+            // width: 16rem;
+            margin: 0 0.5rem;
+        }
+        &--service:nth-child(1){
+            margin-top: 2rem;
+        }
+        &--service:nth-child(2){
+            // width: 18rem;
+        }
+        &--service:nth-child(3){
+            margin-top: -2rem;
+        }
+    }
 }
 
 .treatment-result {
