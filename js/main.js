@@ -1,4 +1,4 @@
-// const $ = document.querySelector.bind(document);
+const $ = document.querySelector.bind(document);
 
 
 
@@ -71,6 +71,7 @@ TraningItems.forEach((tab) => {
 
 // // ---------------------------------------------------------------------------------
 const openModalBtn = document.querySelector(".service--detail__btn");
+const openModalBtnlanding = document.querySelector(".content-landing-acne__btn");
 const modal = document.querySelector(".form--contact");
 
 function toggleModal() {
@@ -89,6 +90,9 @@ if (modal) {
 }
 if (openModalBtn) {
   openModalBtn.addEventListener("click", toggleModal, false);
+}
+if (openModalBtnlanding) {
+  openModalBtnlanding.addEventListener("click", toggleModal, false);
 }
 
 // // ---------------------------------------------------------------------------------
@@ -230,8 +234,10 @@ modalContainer.addEventListener('click', function(e) {
           window.scrollTo({
                 top: 0,
                 behavior: "smooth",
-              });
+              })
         }
+
+
 
 
 // Search mobile
@@ -246,7 +252,6 @@ searchBtn.addEventListener("click", toggleModalSearch);
 // formSearch.addEventListener("click", (e) => {
 //   if (e.target == e.currentTarget) toggleModalSearch();
 // });
-
 
 
 
