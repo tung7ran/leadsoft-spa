@@ -261,7 +261,8 @@
     &-list{
         &__item{
             margin-bottom: 1rem;
-            &--text{
+            // sửa lại tên và thêm css
+            &--link{
                 cursor: pointer;
                 font-size: 1.8rem;
                 font-family: Gilroy-Regular;
@@ -271,10 +272,11 @@
                 border-radius: 0.5rem;    
                 padding: 1rem 0.5rem;
                 text-align: center;
+                display: block;
             }
-            .hover-gold{
+            &--link.active{ 
                 background-color: $orange;
-                color: $black;
+                color: $black !important;
                 font-family: Gilroy-Bold;
                 font-size: 1.8rem;
             }
@@ -365,3 +367,4 @@
         }
     }
 }
+

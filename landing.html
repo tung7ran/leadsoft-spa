@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+    <link rel="icon" type="image/png" sizes="" href="./images/butterfly-wings.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./style/main.css">
+
+</head>
+
+<body>
+    <div class="wapper bg-color">
+        <header class="header">
+            <div class="header-container">
+                <div class="header-container-heading">
+                    <div class="header-container-heading__title">
+                        <div class="header-container-heading__title--text">
+                            <span class="header-container-heading__title--text-name">Hơn 50 chi nhánh trên toàn quốc</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-contact d-flex row">
+                <div class="header-contact-left col-lg-4 col-md-3 col-4">
+                    <form role="search" method="get" action="">
+                        <input type="search" name="" class="header-contact-left__search" placeholder="Thông tin tìm kiếm" />
+                        <button type="submit" class="header-contact-left__button dp-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search header-contact-left__button--icon" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5
+                                        5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                    </form>
+                    <button class="navbar-mobile js-mobile-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="mobile-menu-overlay"></div>
+                </div>
+
+                <div class="header-contact-right col-lg-4 col-md-3 col-4">
+                    <button type="submit" class="search-mobile dp-block ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#fff" class="bi bi-search header-contact-left__button--icon" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </button>
+                    <div class="header-contact-right__cart">
+                        <div class="header-cart-pc dp-none dp-blockPC">
+                            <button class="header-contact-right__cart--btn">
+                                <img src="./images/store.png" alt="">
+                                <span class="header-contact-right__cart--number dp-none">5+</span>
+                            </button>
+
+                            <div class="header-cart--notify border-1 dp-none">
+                                <div class="header-cart--notify__info">
+                                    <div class="row header-cart--notify__info--top">
+                                        <div class="col-lg-4 col-md-4">
+                                            <div class="header-cart--notify__info--top-image">
+                                                <img src="./images/product/img-6.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8 p-0">
+                                            <div class="header-cart--notify__info--top-detail">
+                                                <h3>Tẩy tế bào chết chiết xuất từ hạt trái mơ</h3>
+                                                <div class="top-detail-amount">
+                                                    <span class="top-detail-amount__number">1</span>
+                                                    <span class="top-detail-amount_cal">x</span>
+                                                    <span class="top-detail-amount__price">70,000 đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header-cart--notify__info--top-icon">
+                                            <button>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                    <path
+                                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="header-cart--notify__info--main">
+                                        <h3 class="header-cart--notify__info--main-heading">Tổng cộng: 70,000 Đ</h3>
+                                    </div>
+                                    <div class="header-cart--notify__info--bottom">
+                                        <button class="btn header-cart--notify__info--bottom-view">Xem giỏ hàng</button>
+                                        <button class="btn header-cart--notify__info--bottom-pay">Thang toán</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="header-contact-right__tel">
+                        <span class="header-contact-right__tel--number">hotline 0909 999 999</span>
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="header-logo">
+                <div class="header-logo__page">
+                    <a href="index.html"> <img src="./images/footerImg.png" alt=""> </a>
+                </div>
+            </div>
+            <div class="header-main js-mobile-menu">
+                <div class="header-main-nav">
+                    <ul class="header-main-nav__list d-flex">
+                        <li class="header-main-nav__list--item">
+                            <a href="./about.html" class="header-main-nav__list--item-link">Về Shynh Beauty</a>
+                        </li>
+                        <li class="header-main-nav__list--item">
+                            <a class="header-main-nav__list--item-link active">Dịch vụ</a>
+                                <ul class="sub-menu row">
+                                    <li class="sub-menu--item col-lg-6 col-sm-6 col-md-6">
+                                        <h2 class="sub-menu--item--title">Điều trị mụn
+                                            <i class="down--icon fa-solid fa-caret-down "></i>
+                                        </h2>
+                                        <ul class="sub-menu--item--list">
+                                            <li class="sub-menu--item--list--service">
+                                                <a href="./service.html" class="sub-menu--item--list--service--link">Điều trị mụn lưng</a>
+                                            </li>
+                                            <li class="sub-menu--item--list--service">
+                                                <a href="./service.html" class="sub-menu--item--list--service--link">Điều trị mụn chuyên sâu</a>
+                                            </li>
+                                            <li class="sub-menu--item--list--service">
+                                                <a href="./service.html" class="sub-menu--item--list--service--link">Trị mụn y khoa</a>
+                                            </li>
+                                            <li class="sub-menu--item--list--service">
+                                                <a href="./service.html" class="sub-menu--item--list--service--link">Trị mụn 2x</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub-menu--item col-lg-6 col-sm-6 col-md-6">
+                                        <h2 class="sub-menu--item--title">TRIỆT LÔNG
+                                            <span class="down--icon fa-solid fa-caret-down "></span>
+                                        </h2>
+                                        <ul class="sub-menu--item--list">
+                                            <li class="sub-menu--item--list--service">
+                                                <a href="./service.html" class="sub-menu--item--list--service--link">Triệt lông tay</a>
+                                            </li>
+                                            <li class="sub-menu--item--list--service">
+                                                <a href="./service.html" class="sub-menu--item--list--service--link">Triệt lông chân</a>
+                                            </li>
+                                            <li class="sub-menu--item--list--service">
+                                                <a href="./service.html" class="sub-menu--item--list--service--link">Triệt lông vùng kín</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="sub-menu--item col-lg-6 col-sm-6 col-md-6">
+                                        <h2 class="sub-menu--item--title">CHĂM SÓC DA
+                                            <i class="down--icon fa-solid fa-caret-down "></i>
+                                        </h2>
+                                        <ul class="sub-menu--item--list">
+                                            <li class="sub-menu--item--list--service">
+                                                <a href="./service.html" class="sub-menu--item--list--service--link">Thải độc da</a>
+                                            </li>
+                                            <li class="sub-menu--item--list--service">
+                                                <a href="./service.html" class="sub-menu--item--list--service--link">Điện di c</a>
+                                            </li>
+                                            <li class="sub-menu--item--list--service">
+                                                <a href="./service.html" class="sub-menu--item--list--service--link">Cấy collagen</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="sub-menu--item col-lg-6 col-sm-6 col-md-6">
+                                        <h2 class="sub-menu--item--title">ĐIỀU TRỊ THÂM MỤN
+                                            <i class="down--icon fa-solid fa-caret-down "></i>
+                                        </h2>
+                                        <ul class="sub-menu--item--list">
+                                            <li class="sub-menu--item--list--service">
+                                                <a href="./service.html" class="sub-menu--item--list--service--link">Điều trị mụn lưng</a>
+                                            </li>
+                                            <li class="sub-menu--item--list--service">
+                                                <a href="./service.html"
+                                                    class="sub-menu--item--list--service--link">Điều trị mụn chuyên sâu</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li class="sub-menu--item col-lg-6 col-sm-6 col-md-6">
+                                        <h2 class="sub-menu--item--title">GỘI ĐẦU
+                                            <i class="down--icon fa-solid fa-caret-down "></i>
+                                        </h2>
+                                        <ul class="sub-menu--item--list">
+                                            <li class="sub-menu--item--list--service">
+                                                <a href="./service.html"
+                                                    class="sub-menu--item--list--service--link">Gội đầu thảo dược</a>
+                                            </li>
+                                            <li class="sub-menu--item--list--service">
+                                                <a href="./service.html"
+                                                    class="sub-menu--item--list--service--link">Gội đầu thư giãn</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="sub-menu--item col-lg-6 col-sm-6 col-md-6">
+                                        <h2 class="sub-menu--item--title">TẮM TRẮNG</h2>
+                                        <h2 class="sub-menu--item--title">MASSAGE</h2>
+                                        <h2 class="sub-menu--item--title">PHUN XĂM THẨM MỸ</h2>
+                                    </li>
+                                </ul>
+                           
+                        </li>
+
+
+
+                        <li class="header-main-nav__list--item">
+                            <a href="./result.html" class="header-main-nav__list--item-link">Kết Quả Điều Trị</a>
+                        </li>
+                        <li class="header-main-nav__list--item">
+                            <a href="./training.html" class="header-main-nav__list--item-link">Đào tạo Spa</a>
+                        </li>
+                        <li class="header-main-nav__list--item">
+                            <a href="./tip-beautify.html" class="header-main-nav__list--item-link">Mẹo làm đẹp</a>
+                        </li>
+                        <li class="header-main-nav__list--item">
+                            <a href="./store.html" class="header-main-nav__list--item-link">Cửa hàng</a>
+                        </li>
+                        <li class="header-main-nav__list--item">
+                            <a href="./contact.html" class="header-main-nav__list--item-link">Liên Hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="content-landing">
+
+            <div class="content-landing-acne">
+                <img src="./images/landing/bg-color2.png" alt="">
+                <div class="container-width landing-acne">
+                    <div class="content-landing-acne__left">
+                        <img src="./images/landing/bgColor1.png" alt="">
+                        <div class="content-landing-acne__left--heading">
+                            <div class="content-landing-acne__left--heading-above">
+                                <img src="./images/landing/letter1.png" alt="">
+                            </div>
+                            <div class="content-landing-acne__left--heading-below">
+                                <img src="./images/landing/letter2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content-landing-acne__left--text">
+                            <div class="content-landing-acne__left--text-left">
+                                <img src="./images/landing/groudImg1.png" alt="">
+                            </div>
+                            <div class="content-landing-acne__left--text-between">
+                                <img src="./images/landing/groudImg2.png" alt="">
+                            </div>
+                            <div class="content-landing-acne__left--text-right">
+                                <img src="./images/landing/groudImg3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-landing-acne__right">
+                        <div class="content-landing-acne__right--image1">
+                            <img src="./images/landing/image1.png" alt="">
+                        </div>
+                        <div class="content-landing-acne__right--image2">
+                            <img src="./images/landing/image2.png" alt="">
+                        </div>
+                        <div class="content-landing-acne__right--image3">
+                            <img src="./images/landing/image3.png" alt="">
+                        </div>
+                        <div class="content-landing-acne__right--image4">
+                            <img src="./images/landing/image4.png" alt="">
+                        </div>
+                    </div>
+                    <button class="content-landing-acne__btn">
+                        đặt lịch ngay
+                    </button>
+                </div>
+            </div>
+
+            <div class="content-landing-outside">
+                <img src="./images/landing/bgColor3.png" alt="">
+                <div class="container-width landing-outside">
+                    <div class="content-landing-outside__human">
+                        <div class="content-landing-outside__human--top">
+                            <div class="content-landing-outside__human--top-image1">
+                                <img src="./images/landing/image5.png" alt="">
+                            </div>
+                            <div class="content-landing-outside__human--top-image2">
+                                <img src="./images/landing/image6.png" alt="">
+                            </div>
+                            <div class="content-landing-outside__human--top-image3">
+                                <img src="./images/landing/image7.png" alt="">
+                            </div>
+                            <div class="content-landing-outside__human--top-image4">
+                                <img src="./images/landing/image8.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content-landing-outside__human--logo">
+                            <img src="./images/footerImg.png" alt="">
+                        </div>
+                        <div class="content-landing-outside__human--text">
+                            <div class="content-landing-outside__human--text-image">
+                                <img src="./images/landing/letter3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-landing-outside__course">
+                        <h3 class="content-landing-outside__course--heading">lý do chọn liệu trình</h3>
+                       <div class="row jc-center jc-space-around jc-space-evenly">
+                            <div class="content-landing-outside__course--left">
+                                <div class="content-landing-outside__course--left-above">
+                                    <img src="./images/landing/bgColor4.png" alt="">
+                                    <div class="course-left-above__text">
+                                        <img src="./images/landing/letter5.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="content-landing-outside__course--left-below">
+                                    <div class="course-left-below__text">
+                                        <img src="./images/landing/bgImage.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="content-landing-outside__course--right">
+                                <li class="content-landing-outside__course--right-item">
+                                    Liệu trình an toàn, khép kín
+                                </li>
+                                <li class="content-landing-outside__course--right-item">
+                                    trang thiết bị hiện đại  
+                                </li>
+                                <li class="content-landing-outside__course--right-item">
+                                    nhân viên được đào tạo
+                                </li>
+                                <li class="content-landing-outside__course--right-item">
+                                    chế độ chăm sóc tốt
+                                </li>
+                            </ul>
+                       </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-landing-device">
+                <div class="container-width wh-100">
+                    <div class="wh-100">
+                        <div class="row wh-100 align-items-center pc-device">
+                            <div class="col-xl-6 col-md-6 content-landing-device-left">
+                                <ul class="content-landing-device-left__list">
+                                    <li class="content-landing-device-left__list--item">
+                                        <img src="./images/about/img7.png" alt="">
+                                    </li>
+                                    <li class="content-landing-device-left__list--item1">
+                                        <img src="./images/about/img6.png" alt="">
+                                    </li>
+                                    <li class="content-landing-device-left__list--item2">
+                                        <img src="./images/landing/image10.png" alt="">
+                                    </li>
+                                    <li class="content-landing-device-left__list--item3">
+                                        <img src="./images/about/Image.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-6 col-md-6 content-landing-device-right">
+                                <img src="./images/about/Bgtext.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="pc-mobile">
+                            <div class="content-landing-device-right">
+                                <img src="./images/about/Bgtext.png" alt="">
+                            </div>
+                            <div class="content-landing-device-left">
+                                <ul class="content-landing-device-left__list">
+                                    <li class="content-landing-device-left__list--item">
+                                        <img src="./images/about/img7.png" alt="">
+                                    </li>
+                                    <li class="content-landing-device-left__list--item1">
+                                        <img src="./images/about/img6.png" alt="">
+                                    </li>
+                                    <li class="content-landing-device-left__list--item2">
+                                        <img src="./images/landing/image10.png" alt="">
+                                    </li>
+                                    <li class="content-landing-device-left__list--item3">
+                                        <img src="./images/about/Image.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-landing-endow">
+                <img src="./images/landing/imgBig.png" alt="">
+            </div>
+
+            <div class="content-landing-procedure">
+                <img src="./images/landing/bgColor5.png" alt="">
+                <div class="landing-procedure">
+                    <div class="container-width">
+                        <h3 class="content-landing-procedure__heading">quy trình dịch vụ</h3>
+                        <div class="row pd-12 pd-20 pd-60">
+                            <div class="col-xl-4 col-md-4 col-6 pd-10 pd-05">
+                                <div class="content-landing-procedure__outside">
+                                    <a href="">
+                                        <div class="content-landing-procedure__outside--image">
+                                            <img src="./images/landing/imgProcedure1.png" alt="">
+                                        </div>
+                                        <div class="content-landing-procedure__outside--title">
+                                            <div class="content-landing-procedure__outside--title-image">
+                                                <img src="./images/landing/bgColor6.png" alt="">
+                                            </div>
+                                            <span class="content-landing-procedure__outside--title-number left-22">
+                                                1
+                                            </span> 
+                                            <p class="content-landing-procedure__outside--title-text">Soi da VISIA</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-md-4 col-6 pd-10 pd-05">
+                                <div class="content-landing-procedure__outside">
+                                   <a href="">
+                                        <div class="content-landing-procedure__outside--image">
+                                            <img src="./images/landing/imgProcedure2.png" alt="">
+                                        </div>
+                                        <div class="content-landing-procedure__outside--title">
+                                            <div class="content-landing-procedure__outside--title-image">
+                                                <img src="./images/landing/bgColor6.png" alt="">
+                                            </div>
+                                            <span class="content-landing-procedure__outside--title-number">
+                                                2
+                                            </span> 
+                                            <p class="content-landing-procedure__outside--title-text wth-22">Sát khuẩn đường đen</p>
+                                        </div>
+                                   </a>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-md-4 col-6 pd-10 pd-05">
+                                <div class="content-landing-procedure__outside">
+                                    <a href="">
+                                        <div class="content-landing-procedure__outside--image">
+                                            <img src="./images/landing/imgProcedure3.png" alt="">
+                                        </div>
+                                        <div class="content-landing-procedure__outside--title">
+                                            <div class="content-landing-procedure__outside--title-image wth-height">
+                                                <img src="./images/landing/bgColor6.png" alt="">
+                                            </div>
+                                            <span class="content-landing-procedure__outside--title-number">
+                                                3
+                                            </span> 
+                                            <p class="content-landing-procedure__outside--title-text wth-16">Nặn sạch nhân mụn chuẩn y khoa</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-md-4 col-6 pd-10 pd-05">
+                                <div class="content-landing-procedure__outside">
+                                    <a href="">
+                                        <div class="content-landing-procedure__outside--image">
+                                            <img src="./images/landing/imgProcedure4.png" alt="">
+                                        </div>
+                                        <div class="content-landing-procedure__outside--title">
+                                            <div class="content-landing-procedure__outside--title-image">
+                                                <img src="./images/landing/bgColor6.png" alt="">
+                                            </div>
+                                            <span class="content-landing-procedure__outside--title-number">
+                                                4
+                                            </span> 
+                                            <p class="content-landing-procedure__outside--title-text wth-15">Cấy diệp lục tái tạo</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-md-4 col-6 pd-10 pd-05">
+                                <div class="content-landing-procedure__outside">
+                                    <a href="">
+                                        <div class="content-landing-procedure__outside--image">
+                                            <img src="./images/landing/imgProcedure5.png" alt="">
+                                        </div>
+                                        <div class="content-landing-procedure__outside--title">
+                                            <div class="content-landing-procedure__outside--title-image">
+                                                <img src="./images/landing/bgColor6.png" alt="">
+                                            </div>
+                                            <span class="content-landing-procedure__outside--title-number">
+                                                5
+                                            </span> 
+                                            <p class="content-landing-procedure__outside--title-text wth-14">Đắp nạ Cooling hồi phục</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-md-4 col-6 pd-10 pd-05">
+                                <div class="content-landing-procedure__outside">
+                                    <a href="">
+                                        <div class="content-landing-procedure__outside--image">
+                                            <img src="./images/landing/imgProcedure6.png" alt="">
+                                        </div>
+                                        <div class="content-landing-procedure__outside--title">
+                                            <div class="content-landing-procedure__outside--title-image wth-height">
+                                                <img src="./images/landing/bgColor6.png" alt="">
+                                            </div>
+                                            <span class="content-landing-procedure__outside--title-number">
+                                                6
+                                            </span> 
+                                            <p class="content-landing-procedure__outside--title-text wth-14">Thoa kem dưỡng ngăn ngừa mụn</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-landing-procedure__bottom">
+                            <div class="content-landing-procedure__bottom--heading">
+                                <div class="content-landing-procedure__bottom--heading-image">
+                                    <img src="./images/landing/letter3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="content-landing-procedure__bottom--image">
+                                <div class="content-landing-procedure__bottom--image-one">
+                                    <img src="./images/about/img9.png" alt="">
+                                </div>
+                                <div class="content-landing-procedure__bottom--image-two">
+                                    <img src="./images/about/img10.png" alt="">
+                                </div>
+                                <div class="content-landing-procedure__bottom--image-three">
+                                    <img src="./images/about/img11.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-landing-cover">
+                <img src="./images/landing/bgColor7.png" alt="">
+                <div class="container-width landing-cover">
+                    <div class="content-landing-cover__result">
+                        <div class="content-landing-cover__result--heading">
+                            <img src="./images/landing/letter7.png" alt="">
+                        </div>
+                        <div class="content-landing-cover__result--body">
+                            <div class="content-landing-cover__result--body-list row pd-6">
+                                <div class="content-landing-cover__result--body-list--item col-xl-3 col-sm-3 col-6 pd-05">
+                                    <a href="">
+                                        <div class="result-image">
+                                            <img src="./images/result/_Clip_Group_.png" alt="">
+                                        </div>
+                                        <div class="result-desc">Chị
+                                            Hạnh, 23 tuổi hài
+                                            lòng về da mặt sau
+                                            hơn 3 tháng điều trị
+                                            mụn trứng cá
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="content-landing-cover__result--body-list--item col-xl-3 col-sm-3 col-6 pd-05">
+                                    <a href="">
+                                        <div class="result-image">
+                                            <img src="./images/result/_Clip_Group2_.png" alt="">
+                                        </div>
+                                        <div class="result-desc">
+                                            Chị Hạnh, 23 tuổi
+                                            hài lòng về da mặt
+                                            sau hơn 3 tháng điều
+                                            trị mụn trứng cá
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="content-landing-cover__result--body-list--item col-xl-3 col-sm-3 col-6 pd-05 dp-none">
+                                    <a href="">
+                                        <div class="result-image">
+                                            <img src="./images/result/_Clip_Group3_.png" alt="">
+                                        </div>
+                                        <div class="result-desc">Chị
+                                            Hạnh, 23 tuổi hài
+                                            lòng về da mặt sau
+                                            hơn 3 tháng điều trị
+                                            mụn trứng cá
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="content-landing-cover__result--body-list--item col-xl-3 col-sm-3 col-6 pd-05 dp-none">
+                                    <a href="">
+                                        <div class="result-image">
+                                            <img src="./images/result/_Clip_Group4_.png" alt="">
+                                        </div>
+                                        <div class="result-desc">Chị
+                                            Hạnh, 23 tuổi hài
+                                            lòng về da mặt sau
+                                            hơn 3 tháng điều trị
+                                            mụn trứng cá
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="content-landing-cover__advertiver">
+                            <div class="content-landing-cover__advertiver--image1">
+                                <img src="./images/landing/imgAdvertiver1.png" alt="">
+                            </div>
+                            <div class="content-landing-cover__advertiver--image2">
+                                <img src="./images/landing/imgAdvertiver2.png" alt="">
+                            </div>
+                            <div class="content-landing-cover__advertiver--image3">
+                                <img src="./images/landing/imgAdvertiver3.png" alt="">
+                            </div>
+                            <div class="content-landing-cover__advertiver--image4">
+                                <img src="./images/landing/imgAdvertiver4.png" alt="">
+                            </div>
+                            <div class="content-landing-cover__advertiver--image5">
+                                <img src="./images/landing/imgAdvertiver5.png" alt="">
+                            </div>
+                            <div class="content-landing-cover__advertiver--title">
+                                Ca Sỹ Nguyễn A
+                            </div>
+                    </div>
+
+                    <div class="content-landing-cover__feedback">
+                        <div class="content-landing-cover__feedback--heading">
+                            <img src="./images/landing/letter8.png" alt="">
+                        </div>
+                        <div class="row pd-20">
+                            <div class="col-xl-4 col-md-4 col-6 pd-10">
+                                <div class="content-landing-cover__feedback--image">
+                                    <img src="./images/landing/imgFeedback1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 col-6 pd-10">
+                                <div class="content-landing-cover__feedback--image">
+                                    <img src="./images/landing/imgFeedback2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 dp-none pd-10">
+                                <div class="content-landing-cover__feedback--image">
+                                    <img src="./images/landing/imgFeedback3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-landing-cover__form">
+                        <img src="./images/landing/bgColor8.png" alt="">
+                        <div class="content-landing-cover__form--inner">
+                            <h3 class="content-landing-cover__form--inner-title">
+                                đăng ký nhận thông tin
+                            </h3>
+                            <form action="">
+                                <div class="content-landing-cover__form--inner-body row">
+                                    <div class="content-landing-cover__form--inner-body--group col l-12">
+                                        <input type="text" placeholder="Họ Tên" class="cover-form-control">
+                                    </div>
+                                </div>
+    
+                                <div class="content-landing-cover__form--inner-body row">
+                                    <div class="content-landing-cover__form--inner-body--group col l-6">
+                                        <input type="email" placeholder="Email" class="cover-form-control">
+                                    </div>
+                                    <div class="content-landing-cover__form--inner-body--group col l-6">
+                                        <input type="number" placeholder="Số Điện Thoại" class="cover-form-control">
+                                    </div>
+                                </div>
+                                <div class="content-landing-cover__form--inner-body row">
+                                    <div class="content-landing-cover__form--inner-body--group col l-6">
+                                        <select name="" placeholder="Chọn dịch vụ" id="" class="cover-form-control">
+                                            <option value="">Chọn Dịch Vụ</option>
+                                            <option value="">Dịch vụ 1</option>
+                                            <option value="">Dịch vụ 2</option>
+                                            <option value="">Dịch vụ 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="content-landing-cover__form--inner-body--group col l-6">
+                                        <select name="" placeholder="Chọn Khu Vực" id="" class="cover-form-control">
+                                            <option value="">Chọn Khu Vực</option>
+                                            <option value="">Khu vực 1</option>
+                                            <option value="">Khu vực 2</option>
+                                            <option value="">Khu vực 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="content-landing-cover__form--inner-body row">
+                                    <div class="content-landing-cover__form--inner-body--group col l-12">
+                                        <textarea name="" class="form-note" placeholder="Ghi chú " id=""
+                                            cols="30" rows="10"></textarea>
+                                    </div>
+                                </div>
+                                <button class="btn send-appointment__btn">GỬI</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container footer-width">
+                    <div class="row footer-after">
+                        <div class="col-lg-4 pd-top12">
+                            <div class="footer-top-interactive">
+                                <div class="interactive-logo d-flex">
+                                    <img src="./images/footerImg.png" alt="">
+                                </div>
+                                <h3 class="interactive-caption">SHYNH BEAUTY luôn nỗ lực không ngừng để đem đến cho
+                                    khách hàng nhưng dịch vụ hoàn hảo nhất</h3>
+                                <div class="interactive-image d-flex">
+                                    <img src="./images/footer.jpg" alt="">
+                                    <div class="footer-top-interactive__share--top d-flex">
+                                        <img class="footer-top-interactive__share--top-image"
+                                            src="./images/footer/footer-img.png" alt="">
+                                        <h5>Shynh Beauty Spa</h5>
+                                    </div>
+                                    <div class="footer-top-interactive__share--bottom d-flex">
+                                        <div class="footer-top-interactive__share--bottom-left">
+                                            <a href="" class="d-flex">
+                                                <img src="./images/footer/imgFb.png" alt="">
+                                                <h5>Thích Trang</h5>
+                                            </a>
+                                        </div>
+                                        <div class="footer-top-interactive__share--bottom-right">
+                                            <a href="" class="d-flex">
+                                                <img src="./images/footer/share.png" alt="">
+                                                <h5>Chia Sẻ</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footer-top-contact">
+                                <div class="footer-top-contact__tel">
+                                    <h3 class="contact-title"> HOTLINE </h3>
+                                    <a href="#">0909 999 999 - 0888 888 888</a>
+                                </div>
+                                <div class="footer-top-contact__info">
+                                    <h3 class="contact-title"> Thông tin liên hệ
+                                    </h3>
+                                    <ul class="footer-top-contact__info-list">
+                                        <li class="footer-top-contact__info-list--item">
+                                            <a href="">cskh@shynhbeauty.vn</a>
+                                        </li>
+                                        <li class="footer-top-contact__info-list--item">
+                                            <a href="">info@shynhbeauty.vn</a>
+                                        </li>
+                                        <li class="footer-top-contact__info-list--item">
+                                            <a href="">13/9 Kỳ Đồng,P.9,Q3 TP HCM</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-top-contact__time">
+                                    <h3 class="contact-title"> Thời gian làm việc
+                                    </h3>
+                                    <span class="fz16">8H30 - 19H00 Từ thứ hai đến CN(Kể cả lễ,tết)</span>
+                                </div>
+                                <div class="footer-top-contact__app d-flex">
+                                    <a href="" class="footer-top-contact__app--googleplay">
+                                        <img src="./images/icon/icon-app-02.png" alt="">
+                                    </a>
+                                    <a href="" class="footer-top-contact__app--appstore">
+                                        <img src="./images/icon/icon-app-03.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footer-top-menu">
+                                <h3 class="contact-title"> Menu
+                                </h3>
+                                <ul class="footer-top-menu__list">
+                                    <li class="footer-top-menu__list">
+                                        <a class="footer-top-menu__list--link" href="">Chính sách bảo mật</a>
+                                    </li>
+                                    <li class="footer-top-menu__list">
+                                        <a class="footer-top-menu__list--link" href="">Hướng dẫn đặt lịch</a>
+                                    </li>
+                                    <li class="footer-top-menu__list">
+                                        <a class="footer-top-menu__list--link" href="">Tuyển dụng Shynh Beauty Spa</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-mobile">
+                <div class="row">
+                    <div class="footer-bottom-mobile__image">
+                        <img src="./images/footer/mobile/BgBoxshow.png" alt="">
+                    </div>
+                    <div class="col-4 d-flex justify-content-between">
+                        <div class="footer-bottom-mobile__branch">
+                            <div class="footer-bottom-mobile__branch--image">
+                                <img src="./images/footer/mobile/imgHome.png" alt="">
+                            </div>
+                            <span class="footer-bottom-mobile__text">Chi nhánh</span>
+                        </div>
+                        <div class="footer-bottom-mobile__booking">
+                            <div class="footer-bottom-mobile__booking--image">
+                                <img src="./images/footer/mobile/imgCanlender.png" alt="">
+                            </div>
+                            <span class="footer-bottom-mobile__text">Đặt lịch</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="footer-bottom-mobile__advise text-center">
+                            <div class="footer-bottom-mobile__advise--image">
+                                <img src="./images/footer/mobile/imgUserheadset.png" alt="">
+                            </div>
+                            <span class="footer-bottom-mobile__text">Tư vấn</span>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-between">
+                        <div class="footer-bottom-mobile__tel">
+                            <div class="footer-bottom-mobile__tel--image">
+                                <img src="./images/footer/mobile/imgCall.png" alt="">
+                            </div>
+                            <span class="footer-bottom-mobile__text">1900 1234</span>
+                        </div>
+                        <div class="footer-bottom-mobile__app">
+                            <div class="footer-bottom-mobile__app--image">
+                                <img src="./images/footer/mobile/imgApp.png" alt="">
+                            </div>
+                            <span class="footer-bottom-mobile__text">Tải app</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="form--contact hide">
+            <div class="form--appointment__inner">
+                <div class="form--appointment__inner--logo">
+                    <img src="./images/footerImg.png" alt="" class="form--appointment__inner--logo--image">
+                </div>
+                <div class="form--appointment__inner--title">
+                    <h3>ĐẶT LỊCH HẸN</h3>
+                </div>
+                <div class="form--appointment__inner--appointment">
+                    <form action="">
+                        <div class="form--appointment__inner--appointment--form row">
+                            <div class="form--appointment__inner--appointment--form-group form-group col l-12">
+                                <input type="text" placeholder="Họ Tên" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form--appointment__inner--appointment--form row">
+                            <div class="form--appointment__inner--appointment--form-group form-group col l-6">
+                                <input type="email" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form--appointment__inner--appointment--form-group form-group col l-6">
+                                <input type="number" placeholder="Số Điện Thoại" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form--appointment__inner--appointment--form row">
+                            <div class="form--appointment__inner--appointment--form-group form-group col l-6">
+                                <select name="" placeholder="Chọn dịch vụ" id="" class="form-control">
+                                    <option value="">Chọn dịch vụ</option>
+                                    <option value="">Dịch vụ 1</option>
+                                    <option value="">Dịch vụ 2</option>
+                                    <option value="">Dịch vụ 3</option>
+                                </select>
+                            </div>
+                            <div class="form--appointment__inner--appointment--form-group form-group col l-6">
+                                <select name="" placeholder="Chọn Khu Vực" id="" class="form-control">
+                                    <option value="">Chọn khu vực</option>
+                                    <option value="">Khu vực 1</option>
+                                    <option value="">Khu vực 2</option>
+                                    <option value="">Khu vực 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form--appointment__inner--appointment---time row">
+                            <div class="form--appointment__inner--appointment--time-day col l-6">
+                                <input type="date" class="form-controls" placeholder="mm/dd/yyyy">
+                            </div>
+                            <div class="form--appointment__inner--appointment--time-day col l-6">
+                                <input type="time" class="form-controls" placeholder="8:00">
+                            </div>
+                        </div>
+                        <div class="form--appointment__inner--appointment--form row">
+                            <div class="form--appointment__inner--appointment--form-group form-group col l-12">
+                                <textarea name="" class="form-textarea" placeholder="Ghi chú lịch hẹn" id=""
+                                    cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <button class="btn send-appointment__btn">ĐẶT LỊCH</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</body>
+
+</html>
