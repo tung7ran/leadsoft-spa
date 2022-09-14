@@ -7245,38 +7245,23 @@ a:hover {
   .container-item .container-heading .container-item-title {
     font-size: 2.5rem;
   }
-  .container-item .container-body .container-service .container-service-item .service-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 4rem;
-    border: 4px solid #ffd00f;
+  .container-item .container-body .container-service .container-service-item {
+    margin-bottom: 2rem;
   }
   .container-item .container-body .container-service .container-service-item .container-service-item__note {
-    position: absolute;
     bottom: 0.5rem;
     left: 0.5rem;
-    display: flex;
-    align-items: center;
-    z-index: 1;
   }
   .container-item .container-body .container-service .container-service-item .container-service-item__note--image {
     width: 8rem;
     height: 8rem;
   }
   .container-item .container-body .container-service .container-service-item .container-service-item__note--desc {
-    text-transform: uppercase;
-    color: #000;
     font-size: 1.6rem;
-    background-color: #ffd00f;
     line-height: 5rem;
-    border-radius: 3rem;
-    text-align: center;
     padding: 0 3rem;
-    font-weight: 700;
     min-width: 22rem;
     margin-left: -3.5rem;
-    z-index: -1;
-    font-family: Gilroy-Bold;
   }
   .container-item .container-body .container-service .container-service-item .service-information {
     position: absolute;
@@ -7521,15 +7506,8 @@ a:hover {
     margin-bottom: 2rem;
     position: relative;
   }
-  .container-item .container-body .container-service .container-service-item .service-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 4rem;
-    border: 4px solid #ffd00f;
-  }
   .container-item .container-body .container-service .container-service-item .container-service-item__note {
-    position: absolute;
-    bottom: 1rem;
+    bottom: 0.5rem;
     left: 1rem;
   }
   .container-item .container-body .container-service .container-service-item .container-service-item__note--image {
@@ -7722,6 +7700,9 @@ a:hover {
   }
   .top-banner .top-banner-1 {
     height: 27.55rem;
+  }
+  .container-item .container-body .container-service .container-service-item {
+    margin-bottom: 2rem;
   }
   .container-item .container-body .container-service .container-service-item .container-service-item__note {
     bottom: 1rem;
@@ -8147,6 +8128,33 @@ a:hover {
 .advise-contact-training {
     display: none;
   }
+  .container-item .container-body .container-service .training--item {
+    margin-bottom: 15rem;
+  }
+  .container-item .container-body .container-service .training--item a {
+    background-color: #faf5da;
+    padding-bottom: 10rem;
+    padding-top: 5rem;
+    border-radius: 0 0 2rem 2rem;
+  }
+  .container-item .container-body .container-service .training--item a .container-service-item__note {
+    bottom: -8rem;
+    left: 1rem;
+  }
+  .container-item .container-body .container-service .training--item a .container-service-item__note--desc {
+    display: none;
+  }
+  .container-item .container-body .container-service .training--item a .container-service-item__note .training--desc {
+    display: block;
+    line-height: 2.4rem;
+    padding: 0 1rem 0 3rem;
+    max-width: 22rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .container-item .container-body .container-service .training--item a .container-service-item__note .training--desc {
+    display: none;
+  }
 }
 @media (max-width: 480px) {
   .headers {
@@ -8157,6 +8165,9 @@ a:hover {
   }
   .pd-05 {
     padding: 0.5rem;
+  }
+  .container-item .container-body .container-service .training--item a .container-service-item__note .training--desc {
+    display: none;
   }
   .training-container {
     margin-top: 6.4rem;
@@ -10660,7 +10671,7 @@ a:hover {
 }
 
 .container-item .pd-05 {
-  padding: 0.5rem;
+  padding: 0 0.5rem;
 }
 .container-item .container-heading {
   text-align: center;
@@ -10675,23 +10686,22 @@ a:hover {
   padding-top: 1.5rem;
   font-weight: bold;
 }
-.container-item .container-body .container-service {
-  flex-wrap: wrap;
-}
 .container-item .container-body .container-service .container-service-item {
-  margin-bottom: 2rem;
   position: relative;
 }
 .container-item .container-body .container-service .container-service-item .service-image {
   width: 100%;
   height: 100%;
-  border-radius: 4rem;
+  border-radius: 4.5rem;
   border: 4px solid #ffd00f;
 }
 .container-item .container-body .container-service .container-service-item .container-service-item__note {
   position: absolute;
   display: flex;
   align-items: center;
+  z-index: 1;
+}
+.container-item .container-body .container-service .container-service-item .container-service-item__note--image {
   z-index: 1;
 }
 .container-item .container-body .container-service .container-service-item .container-service-item__note--desc {
@@ -10701,7 +10711,6 @@ a:hover {
   border-radius: 3rem;
   text-align: center;
   font-weight: 700;
-  z-index: -1;
   font-family: Gilroy-Bold;
 }
 .container-item .container-body .container-service .container-service-item .service-information {

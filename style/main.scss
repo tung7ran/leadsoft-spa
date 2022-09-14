@@ -69,7 +69,7 @@
 
 .container-item {
     .pd-05 {
-        padding: 0.5rem;
+        padding: 0 0.5rem;
     }
     .container-heading {
         text-align: center;
@@ -88,40 +88,33 @@
     }
     .container-body {
         .container-service {
-            flex-wrap: wrap;
             .container-service-item {
-                margin-bottom: 2rem;
+               
                 position: relative;
                 .service-image {
                     width: 100%;
                     height: 100%;
-                    border-radius: 4rem;
+                    border-radius: 4.5rem;
                     border: 4px solid $orange;
                 }
                 .container-service-item__note{
                     position: absolute;
-                    // bottom: 0.5rem;
-                    // left: 0.5rem;
+                   
                     display: flex;
                     align-items: center;
                     z-index: 1;
                     &--image{
                         
-                       
+                       z-index: 1;
                     }
                     &--desc{
                         text-transform: uppercase;
                         color: $black;
-                        // font-size: 1.6rem;
                         background-color: $orange;
-                        // line-height: 5rem;
                         border-radius: 3rem;
                         text-align: center;
-                        // padding: 0 3rem;
                         font-weight: 700;
-                        // min-width: 22rem;
-                        // margin-left: -3.5rem;
-                        z-index: -1;
+                       
                         font-family: Gilroy-Bold;
                     }
                 }

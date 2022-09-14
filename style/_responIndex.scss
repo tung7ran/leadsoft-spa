@@ -45,39 +45,33 @@
         .container-body {
             .container-service {
                 .container-service-item {
-                   
+                    margin-bottom: 2rem;
+                
                     .service-image {
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 4rem;
-                        border: 4px solid $orange;
+                      
                     }
                     .container-service-item__note{
-                        position: absolute;
                         bottom: 0.5rem;
                         left: 0.5rem;
-                        display: flex;
-                        align-items: center;
-                        z-index: 1;
+                        
                         &--image{
                             width: 8rem;
                             height: 8rem;
                            
                         }
                         &--desc{
-                            text-transform: uppercase;
-                            color: $black;
+                         
                             font-size: 1.6rem;
-                            background-color: $orange;
+                          
                             line-height: 5rem;
-                            border-radius: 3rem;
-                            text-align: center;
+                          
+                           
                             padding: 0 3rem;
-                            font-weight: 700;
+                         
                             min-width: 22rem;
                             margin-left: -3.5rem;
-                            z-index: -1;
-                            font-family: Gilroy-Bold;
+                          
+                          
                         }
                     }
                     .service-information {
@@ -421,14 +415,10 @@
                     margin-bottom: 2rem;
                     position: relative;
                     .service-image {
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 4rem;
-                        border: 4px solid $orange;
+                      
                     }
                     .container-service-item__note{
-                        position: absolute;
-                        bottom: 1rem;
+                        bottom: 0.5rem;
                         left: 1rem;
                        
                         &--image{
@@ -709,7 +699,8 @@
         .container-body {
             .container-service {
                 .container-service-item {
-                    
+                    margin-bottom: 2rem;
+                
                     .service-image {
                        
                     }
