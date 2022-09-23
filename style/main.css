@@ -8575,6 +8575,14 @@ a:hover {
   .service--category-one__mobile .detail-news--menu__list {
     margin-bottom: 2.35rem;
   }
+
+  .container-item .container-body .container-service .container-service-item {
+    margin-bottom: 2rem;
+  }
+  .container-item .container-body .container-service .container-service-item .container-service-item__note {
+    bottom: 0.5rem;
+    left: 0.5rem;
+
   .service--category-one__mobile .detail-news--menu__list--line {
     width: 100%;
     height: 0.1rem;
@@ -8611,6 +8619,7 @@ a:hover {
     text-transform: uppercase;
     padding-left: 1rem;
     padding-top: 1rem;
+
   }
   .service--category-one__mobile .detail-news--menu__list--item--depth {
     background-image: url(../images/service/img6.png);
@@ -8623,12 +8632,21 @@ a:hover {
     height: 7rem;
     text-transform: uppercase;
   }
+
+  .container-item .container-body .container-service .container-service-item .container-service-item__note--desc {
+    font-size: 1.6rem;
+    line-height: 5rem;
+    padding: 0 3rem;
+    min-width: 22rem;
+    margin-left: -3.5rem;
+
   .service--category-one__mobile .detail-news--menu__list--item--depth-text {
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
     padding-left: 1rem;
     padding-top: 1rem;
+
   }
   .service--category-one__mobile .detail-news--menu__list--item--bs4 {
     background-image: url(../images/service/img7.png);
@@ -8845,6 +8863,11 @@ a:hover {
 .form--contact .tab-pane-content .form--contact__inner--appointment .send-appointment__btn {
     padding: 1rem 3rem;
   }
+
+  .container-item .container-body .container-service .container-service-item .container-service-item__note {
+    bottom: 0.5rem;
+    left: 1rem;
+
   .form--contact .tab-pane-content .form--appointment__inner--contact,
 .form--contact .tab-pane-content .form--contact__inner--contact {
     padding: 3rem;
@@ -8852,6 +8875,7 @@ a:hover {
   .form--contact .tab-pane-content .form--appointment__inner--contact--form-group .form-textarea,
 .form--contact .tab-pane-content .form--contact__inner--contact--form-group .form-textarea {
     height: 12rem;
+
   }
   .form--contact .tab-pane-content .form--appointment__inner--contact .send-contact__btn,
 .form--contact .tab-pane-content .form--contact__inner--contact .send-contact__btn {
@@ -9064,11 +9088,20 @@ a:hover {
   .main-device .device-mobile {
     height: 100%;
   }
+
+  .container-item .container-body .container-service .container-service-item {
+    margin-bottom: 2rem;
+  }
+  .container-item .container-body .container-service .container-service-item .container-service-item__note {
+    bottom: 1rem;
+    left: 1rem;
+
   .main-device .device-mobile .main-device-left__list {
     position: relative;
     top: 15rem;
     width: 100%;
     height: 100%;
+
   }
   .main-device .device-mobile .main-device-left__list--item {
     position: absolute;
@@ -9486,8 +9519,37 @@ a:hover {
   .contact_inner-mobile--extend {
     display: none;
   }
+
+  .container-item .container-body .container-service .training--item {
+    margin-bottom: 15rem;
+  }
+  .container-item .container-body .container-service .training--item a {
+    background-color: #faf5da;
+    padding-bottom: 10rem;
+    padding-top: 5rem;
+    border-radius: 0 0 2rem 2rem;
+  }
+  .container-item .container-body .container-service .training--item a .container-service-item__note {
+    bottom: -8rem;
+    left: 1rem;
+  }
+  .container-item .container-body .container-service .training--item a .container-service-item__note--desc {
+    display: none;
+  }
+  .container-item .container-body .container-service .training--item a .container-service-item__note .training--desc {
+    display: block;
+    line-height: 2.4rem;
+    padding: 0 1rem 0 3rem;
+    max-width: 22rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .container-item .container-body .container-service .training--item a .container-service-item__note .training--desc {
+    display: none;
+
   .contact_inner-mobile--text {
     padding: 1rem 4rem;
+
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -9501,6 +9563,13 @@ a:hover {
   .promotion-mobile {
     margin-top: 7rem;
   }
+
+  .container-item .container-body .container-service .training--item a .container-service-item__note .training--desc {
+    display: none;
+  }
+  .training-container {
+    margin-top: 6.4rem;
+
   .promotion-mobile__heading {
     font-size: 3rem;
     font-family: K2D-ExtraBold;
@@ -9512,6 +9581,7 @@ a:hover {
     margin: 0 auto;
     border-top-left-radius: 70rem;
     border-top-right-radius: 70rem;
+
   }
   .promotion-mobile--container--body__list {
     justify-content: center;
@@ -11693,7 +11763,7 @@ a:hover {
 }
 
 .container-item .pd-05 {
-  padding: 0.5rem;
+  padding: 0 0.5rem;
 }
 .container-item .container-heading {
   text-align: center;
@@ -11708,23 +11778,22 @@ a:hover {
   padding-top: 1.5rem;
   font-weight: bold;
 }
-.container-item .container-body .container-service {
-  flex-wrap: wrap;
-}
 .container-item .container-body .container-service .container-service-item {
-  margin-bottom: 2rem;
   position: relative;
 }
 .container-item .container-body .container-service .container-service-item .service-image {
   width: 100%;
   height: 100%;
-  border-radius: 4rem;
+  border-radius: 4.5rem;
   border: 4px solid #ffd00f;
 }
 .container-item .container-body .container-service .container-service-item .container-service-item__note {
   position: absolute;
   display: flex;
   align-items: center;
+  z-index: 1;
+}
+.container-item .container-body .container-service .container-service-item .container-service-item__note--image {
   z-index: 1;
 }
 .container-item .container-body .container-service .container-service-item .container-service-item__note--desc {
@@ -11734,7 +11803,6 @@ a:hover {
   border-radius: 3rem;
   text-align: center;
   font-weight: 700;
-  z-index: -1;
   font-family: Gilroy-Bold;
 }
 .container-item .container-body .container-service .container-service-item .service-information {

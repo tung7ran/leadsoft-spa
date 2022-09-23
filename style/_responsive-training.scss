@@ -11,6 +11,73 @@
     .advise-contact-training{
         display: none;
     }
+    .container-item {
+       
+        
+        .container-body {
+            .container-service {
+                .training--item {
+                    margin-bottom: 15rem;
+                    a{
+                        background-color: #faf5da;
+                        padding-bottom: 10rem;
+                        padding-top: 5rem;
+                        border-radius: 0 0 2rem 2rem;
+                       
+
+                        .container-service-item__note{
+                           
+                              bottom: -8rem;
+                              left: 1rem;
+                              &--desc{
+                                display: none;
+                              }
+                            .training--desc{
+                                display: block;
+                                line-height: 2.4rem;
+                                padding: 0 1rem 0 3rem;
+                                max-width: 22rem;
+                            } 
+                            
+                           
+                           
+                        }
+                    }
+                       
+                }
+            }
+        }
+    }
+    
+}
+@include responsive_tablet{
+    .container-item {
+       
+        
+        .container-body {
+            .container-service {
+                .training--item {
+                 
+                    a{
+                      
+                       
+
+                        .container-service-item__note{
+                           
+                            .training--desc{
+                                display: none;
+                             
+                            } 
+                            
+                           
+                           
+                        }
+                    }
+                       
+                }
+            }
+        }
+    }
 }
 @include responsive_mobile {
    .headers{
@@ -22,6 +89,33 @@
     }
     .pd-05{
         padding: 0.5rem;
+    }
+    .container-item {
+       
+        
+        .container-body {
+            .container-service {
+                .training--item {
+                 
+                    a{
+                      
+                       
+
+                        .container-service-item__note{
+                           
+                            .training--desc{
+                                display: none;
+                             
+                            } 
+                            
+                           
+                           
+                        }
+                    }
+                       
+                }
+            }
+        }
     }
    .training-container{
         margin-top: 6.4rem;
